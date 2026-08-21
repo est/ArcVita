@@ -1,0 +1,40 @@
+[project]
+name = "arcvita"
+version = "0.1.0"
+description = "ArcVita — 人物传记结构化采集：人物-时间-地点，做事时间流"
+license = { text = "MIT (code) + CC BY-SA 4.0 (data, see LICENSE-DATA.md)" }
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+    "pyyaml>=6.0",
+    "pydantic>=2.0",
+]
+
+[tool.uv.sources]
+# local package
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/arcvita"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8",
+    "pyright>=1.1",
+    "pytest>=8.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["E501"]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+pythonVersion = "3.10"

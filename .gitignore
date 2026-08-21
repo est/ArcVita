@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.uv/
+dist/
+.ruff_cache/
+data/raw/
+!data/processed/
+data/processed/_report.md
+data/curated/
+_tmp/
+.mimocode/.cron-lock
+.mimocode/scheduled_tasks.json

@@ -1,0 +1,611 @@
+- qid: Q4604
+  name_zh: 孔子
+  name_en: Confucius
+  aliases: []
+  birth_date: -551-09-28
+  death_date: -479-04-11
+  birth_place: 曲阜
+  death_place: null
+  occupations:
+  - 思想家
+  - 教育家
+  domains: []
+  era: 春秋
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 在不被采纳时，转而做可传承的体系。
+  summary_zh: 春秋时期思想家、教育家，儒家学派创始人，以仁与礼为核心，整理六经、讲学授徒。
+  summary_first_person: 我周游列国而不得用，归而修诗书——若道不行，便让它在后世行。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q4604
+  status: needs_review
+  needs_review_reason: null
+- qid: Q162427
+  name_zh: 秦始皇
+  name_en: Qin Shi Huang
+  aliases: []
+  birth_date: -259-02-18
+  death_date: -210-07-10
+  birth_place: 邯郸
+  death_place: null
+  occupations:
+  - 皇帝
+  domains: []
+  era: 战国末/秦
+  role: 教训
+  sensitivity: none
+  visibility: public
+  lesson: 以速度完成的统一，若无制度与人心的消化，终会反噬。
+  summary_zh: 首位完成华夏大一统的君主，统一度量衡与文字，北击匈奴、南征百越，亦以严刑峻法埋下速亡之因。
+  summary_first_person: 我以铁与法把六国压成一块版图，却忘了版图需要人心来粘合。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q162427
+  status: needs_review
+  needs_review_reason: null
+- qid: Q179544
+  name_zh: 诸葛亮
+  name_en: Zhuge Liang
+  aliases: []
+  birth_date: 181-01-01
+  death_date: 234-10-08
+  birth_place: 阳都
+  death_place: null
+  occupations:
+  - 政治家
+  - 军事家
+  domains: []
+  era: 三国
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 明知胜算不大仍做最周密的准备，是另一种勇敢。
+  summary_zh: 蜀汉丞相，隆中对策定三分，治蜀以严明，六出祁山未竟而殁。
+  summary_first_person: 我知天时不在蜀，却仍以人事尽天命——鞠躬尽瘁，死而后已。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q179544
+  status: needs_review
+  needs_review_reason: null
+- qid: Q7074
+  name_zh: 李白
+  name_en: Li Bai
+  aliases: []
+  birth_date: 701-01-01
+  death_date: 762-01-01
+  birth_place: 碎叶
+  death_place: null
+  occupations:
+  - 诗人
+  domains: []
+  era: 唐
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 把漂泊活成风格，也是一种做事。
+  summary_zh: 唐代浪漫主义诗人，诗风豪放飘逸，与杜甫并称李杜，一生漂泊而诗不辍。
+  summary_first_person: 我欲乘风归去，又在人间把酒——诗是我对无常的回击。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q7074
+  status: needs_review
+  needs_review_reason: null
+- qid: Q316452
+  name_zh: 王阳明
+  name_en: Wang Yangming
+  aliases: []
+  birth_date: '1472-10-31'
+  death_date: '1529-01-09'
+  birth_place: 余姚
+  death_place: null
+  occupations:
+  - 思想家
+  - 军事家
+  domains: []
+  era: 明
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 把内修与实干合一，学问才不悬空。
+  summary_zh: 心学集大成者，龙场悟道，知行合一；平宁王之乱，立德立功立言。
+  summary_first_person: 我在龙场的瘴气里悟到：心外无物，破山中贼易，破心中贼难。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q316452
+  status: needs_review
+  needs_review_reason: null
+- qid: Q193533
+  name_zh: 张衡
+  name_en: Zhang Heng
+  aliases: []
+  birth_date: 78-01-01
+  death_date: 139-01-01
+  birth_place: 南阳
+  death_place: null
+  occupations:
+  - 科学家
+  - 文学家
+  domains: []
+  era: 东汉
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 把好奇心做成可用的器物，影响才长久。
+  summary_zh: 东汉科学家、文学家，发明地动仪、浑天仪，兼通历算与辞赋。
+  summary_first_person: 我在简陋的铜壶里听见大地的颤动，想用器物让天人可测。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q193533
+  status: needs_review
+  needs_review_reason: null
+- qid: Q133847
+  name_zh: 郑和
+  name_en: Zheng He
+  aliases: []
+  birth_date: '1371-01-01'
+  death_date: '1433-01-01'
+  birth_place: 昆明
+  death_place: null
+  occupations:
+  - 航海家
+  - 外交家
+  domains: []
+  era: 明
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 以开放换来的秩序，比以封闭求得的安全更广阔。
+  summary_zh: 明代航海家，七下西洋，船队远至非洲东岸，开海上丝路先声。
+  summary_first_person: 我以船为笔，在无边的海上写下朝贡与贸易的两行字。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q133847
+  status: needs_review
+  needs_review_reason: null
+- qid: Q334053
+  name_zh: 林则徐
+  name_en: Lin Zexu
+  aliases: []
+  birth_date: '1785-08-30'
+  death_date: '1850-11-22'
+  birth_place: 福州
+  death_place: null
+  occupations:
+  - 政治家
+  domains: []
+  era: 清
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 在众醉时保持清醒，需要付出代价也必须去做。
+  summary_zh: 清末政治家，虎门销烟，睁眼看世界第一人，力主禁烟抗英。
+  summary_first_person: 我在虎门点起的那把火，烧的是鸦片，也是国人的沉睡。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q334053
+  status: needs_review
+  needs_review_reason: null
+- qid: Q23114
+  name_zh: 鲁迅
+  name_en: Lu Xun
+  aliases: []
+  birth_date: '1881-09-25'
+  death_date: '1936-10-19'
+  birth_place: 绍兴
+  death_place: null
+  occupations:
+  - 作家
+  - 思想家
+  domains: []
+  era: 民国
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 在沉默的时代，说真话本身就是行动。
+  summary_zh: 现代文学奠基人，以笔为刀，解剖国民性；弃医从文，欲医人心。
+  summary_first_person: 我在铁屋子里呐喊，明知未必能醒，也不能沉默。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q23114
+  status: needs_review
+  needs_review_reason: null
+- qid: Q184080
+  name_zh: 钱学森
+  name_en: Qian Xuesen
+  aliases: []
+  birth_date: '1911-12-11'
+  death_date: '2009-10-31'
+  birth_place: 杭州
+  death_place: null
+  occupations:
+  - 科学家
+  domains: []
+  era: 现代
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 把个人专长与家国需要对齐，价值会被放大百倍。
+  summary_zh: 空气动力学家，两弹一星元勋，历经羁留而归，奠定中国航天事业。
+  summary_first_person: 我在异国的实验室里计算归期——科学无国界，但科学家有祖国。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q184080
+  status: needs_review
+  needs_review_reason: null
+- qid: Q37230
+  name_zh: 邓小平
+  name_en: Deng Xiaoping
+  aliases: []
+  birth_date: '1904-08-22'
+  death_date: '1997-02-19'
+  birth_place: 广安
+  death_place: null
+  occupations:
+  - 政治家
+  domains: []
+  era: 现代
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 在争议中用可验证的小步快跑换取大方向的正确。
+  summary_zh: 改革开放总设计师，三起三落而不改其志，以务实推动中国现代化。
+  summary_first_person: 我三次跌倒，三次爬起——不争论，先让一部分人试试看。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q37230
+  status: needs_review
+  needs_review_reason: null
+- qid: Q334642
+  name_zh: 袁隆平
+  name_en: Yuan Longping
+  aliases: []
+  birth_date: '1930-09-07'
+  death_date: '2021-05-22'
+  birth_place: 北京
+  death_place: null
+  occupations:
+  - 科学家
+  domains: []
+  era: 现代
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 在一个问题上做到极致，就是对世界最大的善意。
+  summary_zh: 杂交水稻之父，毕生在稻田里解决吃饭问题，让中国人把饭碗端在自己手里。
+  summary_first_person: 我愿做一粒种子，在田垄间寻找让更多人吃饱的答案。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q334642
+  status: needs_review
+  needs_review_reason: null
+- qid: Q913
+  name_zh: 苏格拉底
+  name_en: Socrates
+  aliases: []
+  birth_date: -470-01-01
+  death_date: -399-01-01
+  birth_place: 雅典
+  death_place: null
+  occupations:
+  - 哲学家
+  domains: []
+  era: 古希腊
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 敢于质疑常识，是走出迷茫的第一步。
+  summary_zh: 古希腊哲学奠基人，以诘问法探求真知，因坚持信念而饮鸩就义。
+  summary_first_person: 我自知无知——在不断的追问里，人才能靠近真实的自己。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q913
+  status: needs_review
+  needs_review_reason: null
+- qid: Q1048
+  name_zh: 凯撒
+  name_en: Julius Caesar
+  aliases: []
+  birth_date: -100-07-12
+  death_date: -44-03-15
+  birth_place: 罗马
+  death_place: null
+  occupations:
+  - 政治家
+  - 军事家
+  domains: []
+  era: 古罗马
+  role: 中性
+  sensitivity: none
+  visibility: public
+  lesson: 跨过关键的卢比孔河前，必须想清退路已断的代价。
+  summary_zh: 罗马统帅与独裁官，征服高卢，跨过卢比孔河，终遇刺于元老院。
+  summary_first_person: 我跨过卢比孔河时知道已无退路——骰子已经掷下。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q1048
+  status: needs_review
+  needs_review_reason: null
+- qid: Q720
+  name_zh: 成吉思汗
+  name_en: Genghis Khan
+  aliases: []
+  birth_date: '1162-01-01'
+  death_date: '1227-08-18'
+  birth_place: 斡难河
+  death_place: null
+  occupations:
+  - 政治家
+  - 军事家
+  domains: []
+  era: 蒙古帝国
+  role: 中性
+  sensitivity: none
+  visibility: public
+  lesson: 把乌合之众组织起来，比单打独斗走得更远。
+  summary_zh: 蒙古帝国奠基者，以骑射与组织力统一草原，西征欧亚。
+  summary_first_person: 我从被逐的少年到万户之主，靠的是让分散的力量拧成一股。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q720
+  status: needs_review
+  needs_review_reason: null
+- qid: Q762
+  name_zh: 达·芬奇
+  name_en: Leonardo da Vinci
+  aliases: []
+  birth_date: '1452-04-15'
+  death_date: '1519-05-02'
+  birth_place: 芬奇
+  death_place: null
+  occupations:
+  - 艺术家
+  - 科学家
+  domains: []
+  era: 文艺复兴
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 跨界不是分心，而是用一领域的深度照亮另一领域。
+  summary_zh: 文艺复兴全才，画《蒙娜丽莎》与《最后的晚餐》，手稿遍及解剖、飞行与水利。
+  summary_first_person: 我在画布与解剖台之间往返——想画得像，先要看得真。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q762
+  status: needs_review
+  needs_review_reason: null
+- qid: Q935
+  name_zh: 牛顿
+  name_en: Isaac Newton
+  aliases: []
+  birth_date: '1643-01-04'
+  death_date: '1727-03-31'
+  birth_place: 伍尔斯索普
+  death_place: null
+  occupations:
+  - 科学家
+  domains: []
+  era: 17世纪
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 长期沉淀后的一次体系化交付，能改变时代坐标。
+  summary_zh: 英国物理学家，奠定经典力学与光学，著《自然哲学的数学原理》。
+  summary_first_person: 我站在巨人的肩上——把零散的直觉压成可计算的定律。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q935
+  status: needs_review
+  needs_review_reason: null
+- qid: Q517
+  name_zh: 拿破仑
+  name_en: Napoleon
+  aliases: []
+  birth_date: '1769-08-15'
+  death_date: '1821-05-05'
+  birth_place: 阿雅克肖
+  death_place: null
+  occupations:
+  - 政治家
+  - 军事家
+  domains: []
+  era: 19世纪初
+  role: 教训
+  sensitivity: none
+  visibility: public
+  lesson: 早期胜利最易让人高估边界，过度扩张会反噬。
+  summary_zh: 法国皇帝，以军事天才与《民法典》闻名，远征俄国后帝国崩溃。
+  summary_first_person: 我在意大利的急行军里学会用意志改写地图，却在俄国的寒冬里学会敬畏边界。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q517
+  status: needs_review
+  needs_review_reason: null
+- qid: Q7186
+  name_zh: 居里夫人
+  name_en: Marie Curie
+  aliases: []
+  birth_date: '1867-11-07'
+  death_date: '1934-07-04'
+  birth_place: 华沙
+  death_place: null
+  occupations:
+  - 科学家
+  domains: []
+  era: 19-20世纪
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 在艰苦的条件下坚持精确，是对未来的投资。
+  summary_zh: 波兰裔法国物理学家，两获诺贝尔奖，发现镭与钋，开放射性研究先河。
+  summary_first_person: 我在漏风的棚屋里提炼镭——微光虽弱，却足以照见一个新世界。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q7186
+  status: needs_review
+  needs_review_reason: null
+- qid: Q937
+  name_zh: 爱因斯坦
+  name_en: Albert Einstein
+  aliases: []
+  birth_date: '1879-03-14'
+  death_date: '1955-04-18'
+  birth_place: 乌尔姆
+  death_place: null
+  occupations:
+  - 科学家
+  domains: []
+  era: 20世纪
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 给自己一段不被打扰的深思期，答案会在尽头等你。
+  summary_zh: 德裔物理学家，提出相对论，1905奇迹年改写时空观念。
+  summary_first_person: 我在专利局的桌前追光——想让时间与空间从背景变成主角。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q937
+  status: needs_review
+  needs_review_reason: null
+- qid: Q1001
+  name_zh: 甘地
+  name_en: Mahatma Gandhi
+  aliases: []
+  birth_date: '1869-10-02'
+  death_date: '1948-01-30'
+  birth_place: 波尔班达尔
+  death_place: null
+  occupations:
+  - 政治家
+  domains: []
+  era: 20世纪
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 以非暴力的自律去对抗庞大的不公，需要更大的勇气。
+  summary_zh: 印度民族运动领袖，以非暴力不合作争取独立，苦行而坚定。
+  summary_first_person: 我以纺车与绝食对抗帝国——柔软的坚持比坚硬的对抗更难被摧毁。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q1001
+  status: needs_review
+  needs_review_reason: null
+- qid: Q8016
+  name_zh: 丘吉尔
+  name_en: Winston Churchill
+  aliases: []
+  birth_date: '1874-11-30'
+  death_date: '1965-01-24'
+  birth_place: 伦敦
+  death_place: null
+  occupations:
+  - 政治家
+  - 作家
+  domains: []
+  era: 20世纪
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 在至暗时刻，清晰的叙事本身就是领导力。
+  summary_zh: 英国首相，二战中以演讲与决断领导英国渡过至暗时刻，获诺贝尔文学奖。
+  summary_first_person: 我在伦敦的废墟里对议会说：我们将在海滩上战斗——语言成了武器。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q8016
+  status: needs_review
+  needs_review_reason: null
+- qid: Q8023
+  name_zh: 曼德拉
+  name_en: Nelson Mandela
+  aliases: []
+  birth_date: '1918-07-18'
+  death_date: '2013-12-05'
+  birth_place: 库努
+  death_place: null
+  occupations:
+  - 政治家
+  domains: []
+  era: 20世纪
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 最长的坚持需要最柔软的心去收尾。
+  summary_zh: 南非反种族隔离领袖，27年狱中不改其志，出狱后以和解而非复仇建国。
+  summary_first_person: 我在罗本岛的石场里学会：仇恨是自己的囚笼，和解才是自由。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q8023
+  status: needs_review
+  needs_review_reason: null
+- qid: Q19837
+  name_zh: 乔布斯
+  name_en: Steve Jobs
+  aliases: []
+  birth_date: '1955-02-24'
+  death_date: '2011-10-05'
+  birth_place: 旧金山
+  death_place: null
+  occupations:
+  - 企业家
+  domains: []
+  era: 当代
+  role: 模范
+  sensitivity: none
+  visibility: public
+  lesson: 被逐是重生的机会，专注比聪明更稀缺。
+  summary_zh: 苹果公司创始人，以产品与设计重塑个人计算与移动时代，历经被逐而回归。
+  summary_first_person: 我被自己创立的公司赶走，却在荒野里找回了对产品的直觉。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q19837
+  status: needs_review
+  needs_review_reason: null
+- qid: Q352
+  name_zh: 希特勒
+  name_en: Adolf Hitler
+  aliases: []
+  birth_date: '1889-04-20'
+  death_date: '1945-04-30'
+  birth_place: 布劳瑙
+  death_place: null
+  occupations:
+  - 政治家
+  domains: []
+  era: 20世纪
+  role: 教训
+  sensitivity: sensitive
+  visibility: restricted
+  lesson: 以仇恨为燃料的动员，短期有效、长期必毁。
+  summary_zh: 德国纳粹党首，发动二战与大屠杀，极端教训人物。
+  summary_first_person: （教训人物，不作第一视角美化）以仇恨与谎言动员的权力，终将以毁灭自证其错。
+  dilemmas: []
+  keywords: []
+  source_urls:
+  - https://www.wikidata.org/wiki/Q352
+  status: needs_review
+  needs_review_reason: null

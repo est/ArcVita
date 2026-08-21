@@ -1,0 +1,21 @@
+wikidata:
+  endpoint: https://query.wikidata.org/sparql
+  api: https://www.wikidata.org/w/api.php
+  wikipedia_api: https://zh.wikipedia.org/w/api.php
+  user_agent: 'ArcVita/0.1 (biography research; contact: local)'
+  batch_size: 3
+  qps: 0.5
+  timeout: 30
+  retries: 5
+
+paths:
+  seed: data/seed_persons.yaml
+  raw_dir: data/raw
+  persons_yaml: data/processed/persons.yaml
+  events_yaml: data/processed/events.yaml
+  endeavors_yaml: data/processed/endeavors.yaml
+  db: data/biography.db
+
+languages:
+  primary: zh
+  fallback: en
