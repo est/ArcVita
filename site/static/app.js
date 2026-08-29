@@ -29,11 +29,7 @@ async function init(){
 function setupZoom(){
   const wrap=document.getElementById('wrap');
   wrap.addEventListener('wheel',e=>{
-    if(e.ctrlKey||e.metaKey){
-      e.preventDefault();
-      zoomLevel=Math.max(0.1,Math.min(50,zoomLevel*(e.deltaY<0?1.2:0.83)));
-      renderTimeline();
-    }
+    if(e.ctrlKey||e.metaKey){e.preventDefault();zoomLevel=Math.max(0.1,Math.min(50,zoomLevel*(e.deltaY<0?1.2:0.83)));renderTimeline()}
   },{passive:false});
   document.getElementById('zoomIn').onclick=()=>{zoomLevel=Math.min(50,zoomLevel*1.5);renderTimeline()};
   document.getElementById('zoomOut').onclick=()=>{zoomLevel=Math.max(0.1,zoomLevel*0.67);renderTimeline()};
@@ -73,9 +69,8 @@ function renderTimeline(){
   const ppx=zoomLevel*BASE_PX;
   const W=Math.max(800,span*ppx+160);
   const ROW_N=50,ROW_E=160;
-  const LH=42,LABEL_W=160;
+  const LABEL_W=160;
 
-  // adaptive ticks
   const yearsVisible=span/ppx;
   const step=yearsVisible<30?5:yearsVisible<80?10:yearsVisible<200?20:yearsVisible<500?50:100;
   let ticks='';
@@ -84,7 +79,6 @@ function renderTimeline(){
     ticks+=`<div class="tick" style="left:${x}px"><span class="tl">${y<0?Math.abs(y)+' BCE':y}</span><div class="line"></div></div>`;
   }
 
-  // person rows
   let rows='';if(!filtered.length)filtered=DATA.persons;
   filtered.forEach(p=>{
     const by=py(p.birth_date),dy=py(p.death_date);
@@ -101,7 +95,6 @@ function renderTimeline(){
     let track=`<div class="lifespan" style="left:${x1}px;width:${Math.max(4,x2-x1)}px;background:var(--accent)"></div>`;
 
     if(isFocused&&pEds.length){
-      // focused: endeavor bars + phases + events
       const edColors={'军事/政治':'#8b4513','政治/军事':'#8b4513','政治':'#2e8b57','军事':'#8b0000','科学':'#4169e1','文化':'#8b4513','文化/政治':'#6b4226','航海/外交':'#2e8b57','艺术/科学':'#9370db','商业/技术':'#daa520','思想':'#8b0000'};
       pEds.forEach((ed,ei)=>{
         const esy=py(ed.start_date),eey=py(ed.end_date);if(!esy||!eey)return;
@@ -119,7 +112,7 @@ function renderTimeline(){
             const phx2=80+(pey-minY)/span*(W-160);
             const phTop=barTop+18+pi*5;
             track+=`<div style="position:absolute;left:${phx1}px;top:${phTop}px;width:${Math.max(4,phx2-phx1)}px;height:4px;border-radius:2px;background:${color};opacity:.5" title="${ph.name}: ${ph.highlight||''}"></div>`;
-            if(phx2-phx1>40)track+=`<div style="position:absolute;left:${phx1+2}px;top:${phTop-10}px;font-size:9px;color:${color};white-space:nowrap">${ph.name} ${ph.start_date||''}~${ph.end_date||''}</div>`;
+            if(phx2-phx1>40)track+=`<div style="position:absolute;left:${phx1+2}px;top:${phTop-10}px;font-size:9px;color:${color};white-space:nowrap">${ph.name}</div>`;
             if(ph.highlight&&phx2-phx1>80)track+=`<div style="position:absolute;left:${(phx1+phx2)/2}px;top:${phTop-20}px;font-size:8px;color:var(--gold);white-space:nowrap;transform:translateX(-50%);font-style:italic">${ph.highlight}</div>`;
           });
         }
@@ -130,25 +123,17 @@ function renderTimeline(){
           const cls=ev.is_highlight?'highlight':ev.event_type==='出生'?'birth':ev.event_type==='逝世'?'death':'normal';
           const evTop=barTop+16;
           track+=`<div class="ev-dot ${cls}" style="left:${ex}px;top:${evTop}px;width:${ev.is_highlight?12:8}px;height:${ev.is_highlight?12:8}px;transform:translateX(-50%)" data-qid="${p.qid}" data-date="${ev.date}" data-title="${ev.title_zh||''}" data-place="${ev.place_name||''}" data-desc="${(ev.description||ev.description_zh||'').replace(/"/g,'&quot;')}" data-hl="${ev.highlight_note||''}" data-age="${age??''}" data-type="${ev.highlight_type||ev.event_type||''}"></div>`;
-          if(ev.title_zh){
-            track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop-2}px;font-size:9px;color:var(--ink);white-space:nowrap;max-width:160px;overflow:hidden;text-overflow:ellipsis" title="${ev.title_zh}">${ev.title_zh}</div>`;
-            track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop+10}px;font-size:8px;color:var(--mist)">${ev.date||''} ${age?age+'岁':''} ${ev.place_name||''}</div>`;
-          }
+          if(ev.title_zh){track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop-2}px;font-size:9px;color:var(--ink);white-space:nowrap;max-width:160px;overflow:hidden;text-overflow:ellipsis" title="${ev.title_zh}">${ev.title_zh}</div>`;track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop+10}px;font-size:8px;color:var(--mist)">${ev.date||''} ${age?age+'岁':''} ${ev.place_name||''}</div>`}
         });
       });
     }else{
-      // compact: all events as dots along lifespan, highlighted ones bigger
       pEvents.forEach(ev=>{
         const ey=py(ev.date);if(!ey)return;
         const ex=80+(ey-minY)/span*(W-160);
         const age=ageAt(by,ey);
         const cls=ev.is_highlight?'highlight':ev.event_type==='出生'?'birth':ev.event_type==='逝世'?'death':'normal';
         track+=`<div class="ev-dot ${cls}" style="left:${ex}px" data-qid="${p.qid}" data-date="${ev.date}" data-title="${ev.title_zh||''}" data-place="${ev.place_name||''}" data-desc="${(ev.description||ev.description_zh||'').replace(/"/g,'&quot;')}" data-hl="${ev.highlight_note||''}" data-age="${age??''}" data-type="${ev.highlight_type||ev.event_type||''}"></div>`;
-        // show title on highlighted events and birth/death
-        if((ev.is_highlight||ev.event_type==='出生'||ev.event_type==='逝世')&&ev.title_zh){
-          track+=`<div class="ev-title" style="left:${ex}px">${ev.title_zh}</div>`;
-          track+=`<div class="ev-age" style="left:${ex}px">${age!==null?age+'岁':''}</div>`;
-        }
+        if((ev.is_highlight||ev.event_type==='出生'||ev.event_type==='逝世')&&ev.title_zh){track+=`<div class="ev-title" style="left:${ex}px">${ev.title_zh}</div>`;track+=`<div class="ev-age" style="left:${ex}px">${age!==null?age+'岁':''}</div>`}
       });
     }
     rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${RH}px"><div class="p-label" onclick="focusPerson('${p.qid}')"><span class="dot ${roleClass}"></span>${p.name_zh}<span class="arch">${p.archetype||''}</span>${pEds.length?`<span style="font-size:8px;color:var(--gold);margin-left:auto">${isFocused?'▾':'▸'}${pEds.length}事</span>`:''}</div><div class="p-track" style="width:${W-LABEL_W}px">${track}</div></div>`;
@@ -163,45 +148,84 @@ function renderTimeline(){
   if(focusedQid){const fp=DATA.persons.find(p=>p.qid===focusedQid);zEl.textContent=`聚焦 ${fp?.name_zh||''}`;zEl.style.color='var(--accent)'}
   else{zEl.textContent=`${zoomLevel.toFixed(1)}x (${Math.round(span)}年)`;zEl.style.color='var(--mist)'}
 
+  // tooltip + cursor age line
   const tip=document.getElementById('tip');
   const同期=document.getElementById('同期');
+  // remove old cursor line
+  document.querySelectorAll('.cursor-line,.age-badge').forEach(e=>e.remove());
+
   inner.querySelectorAll('.ev-dot').forEach(d=>{
     d.addEventListener('mouseenter',()=>{
-      // tooltip
       let t=`<div class="t-name">${d.dataset.title}</div><div class="t-date">${d.dataset.date}</div>`;
       if(d.dataset.age&&d.dataset.age!=='')t+=`<div class="t-age">${d.dataset.age}岁</div>`;
       if(d.dataset.place)t+=`<div class="t-place">📍 ${d.dataset.place}</div>`;
       if(d.dataset.desc)t+=`<div class="t-desc">${d.dataset.desc}</div>`;
       if(d.dataset.hl)t+=`<div class="t-hl">★ ${d.dataset.hl}</div>`;
       tip.innerHTML=t;tip.style.display='block';
-      // 同期人物年龄
+
+      // 如果视图里只有一个人，不显示同期
+      if(filtered.length<=1){同期.style.display='none';return}
+
+      // 同期年龄：在每条p-row上放一个小年龄框
       const evtDate=py(d.dataset.date);
-      if(evtDate!==null){
-        let ch=`<h4>${d.dataset.date} · 同期人物</h4>`;
-        const ages=[];
-        DATA.persons.forEach(p=>{
-          const by=py(p.birth_date),dy=py(p.death_date);
-          if(!by)return;
-          const age=ageAt(by,evtDate);
-          const alive=!dy||evtDate<=dy;
-          ages.push({name:p.name_zh,era:p.era||'',age,alive,isMe:p.qid===d.dataset.qid});
-        });
-        ages.sort((a,b)=>(b.age===null?-1:a.age===null?1:b.age-a.age));
-        ages.forEach(a=>{
-          if(a.age===null||a.age<-50)return; // skip unknown or too far
-          const cls=a.isMe?'me':a.alive?'alive':'dead';
-          const ageStr=a.age<0?`${Math.abs(a.age)}年前出生`:`${a.age}岁`;
-          ch+=`<div class="yr ${cls}"><span class="nm">${a.name}</span><span class="age">${ageStr}</span><span class="era">${a.era}</span></div>`;
-        });
-        同期.innerHTML=ch;同期.classList.add('open');
-      }
+      if(evtDate===null){同期.style.display='none';return}
+
+      // 先画一条竖线
+      const row=d.closest('.p-row');
+      if(!row)return;
+      const trackEl=row.querySelector('.p-track');
+      const dotLeft=parseFloat(d.style.left)||0;
+      const line=document.createElement('div');
+      line.className='cursor-line';
+      line.style.cssText=`position:absolute;left:${dotLeft}px;top:0;width:1px;height:100%;background:var(--gold);opacity:.3;pointer-events:none;z-index:1`;
+      trackEl.appendChild(line);
+
+      // 在每条p-row上放年龄框
+      const allRows=inner.querySelectorAll('.p-row');
+      allRows.forEach(r=>{
+        const qid=r.dataset.qid;
+        const p=DATA.persons.find(x=>x.qid===qid);
+        if(!p)return;
+        const by=py(p.birth_date),dy=py(p.death_date);
+        if(!by)return;
+        const age=ageAt(by,evtDate);
+        if(age===null||age<-50)return;
+        const alive=!dy||evtDate<=dy;
+        const t2=r.querySelector('.p-track');
+        if(!t2)return;
+        const badge=document.createElement('div');
+        badge.className='age-badge';
+        const isMe=qid===d.dataset.qid;
+        badge.style.cssText=`position:absolute;left:${dotLeft}px;top:calc(var(--row-h)/2 - 10px);transform:translateX(-50%);z-index:4;font-size:9px;padding:2px 5px;border-radius:3px;white-space:nowrap;pointer-events:none;background:${isMe?'var(--accent)':alive?'#fff':'#f0f0f0'};color:${isMe?'#fff':alive?'var(--ink)':'#999'};border:1px solid ${isMe?'var(--accent)':alive?'var(--ruler)':'#ddd'};`;
+        badge.textContent=age<0?`${Math.abs(age)}前生`:`${age}岁`;
+        t2.appendChild(badge);
+      });
+
+      // 同期面板：显示存活人物列表
+      let ch=`<h4>${d.dataset.date} · 同期人物</h4>`;
+      const alivePersons=[];
+      filtered.forEach(p=>{
+        const by=py(p.birth_date),dy=py(p.death_date);
+        if(!by)return;
+        const age=ageAt(by,evtDate);
+        if(age===null||age<-50)return;
+        const alive=!dy||evtDate<=dy;
+        if(alive)alivePersons.push({name:p.name_zh,era:p.era||'',age,isMe:p.qid===d.dataset.qid});
+      });
+      alivePersons.sort((a,b)=>(b.age===null?-1:a.age===null?1:b.age-a.age));
+      alivePersons.forEach(a=>{
+        const cls=a.isMe?'me':'';
+        ch+=`<div class="yr ${cls}"><span class="nm">${a.name}</span><span class="age">${a.age}岁</span><span class="era">${a.era}</span></div>`;
+      });
+      if(alivePersons.length<=1){同期.style.display='none'}
+      else{同期.innerHTML=ch;同期.style.display='block';同期.style.left=(d.closest('.p-track').getBoundingClientRect().right+8)+'px'}
     });
-    d.addEventListener('mousemove',e=>{
-      tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px';
-      // 同期面板跟随
-      同期.style.left=(e.clientX+320)+'px';
+    d.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px'});
+    d.addEventListener('mouseleave',()=>{
+      tip.style.display='none';
+      同期.style.display='none';
+      document.querySelectorAll('.cursor-line,.age-badge').forEach(e=>e.remove());
     });
-    d.addEventListener('mouseleave',()=>{tip.style.display='none';同期.classList.remove('open')});
   });
 }
 
@@ -226,12 +250,10 @@ function showDetail(qid){
     });
     h+=`</div>`;
   }
-  // 事件直接展开（不需悬停）
   const pEvents=DATA.events.filter(e=>e.person_qid===p.qid);
   if(pEvents.length){
     h+=`<div class="section"><h3>事件时间线</h3>`;
     pEvents.forEach(ev=>{
-      const col=ev.is_highlight?'var(--gold)':'var(--ink)';
       h+=`<div style="padding:4px 0;border-bottom:1px solid #f5f0e8">`;
       h+=`<span style="color:${ev.is_highlight?'var(--gold)':'var(--ink)'};font-weight:${ev.is_highlight?'bold':'normal'}">`;
       if(ev.is_highlight&&ev.highlight_type)h+=`<span class="hl-tag" style="background:${HL_COLORS[ev.highlight_type]||'var(--gold)'};font-size:8px">${ev.highlight_type}</span> `;
