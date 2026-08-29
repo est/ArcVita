@@ -97,9 +97,8 @@ header .stats{margin-left:auto;font-size:10px;color:var(--mist);text-align:right
   .age-panel{right:12px;left:12px;width:auto;top:auto;bottom:12px;max-height:42vh}
 }
 /* timeline.css — 仅时间轴几何与行样式 */
-.timeline-wrap{flex:1;overflow-x:auto;overflow-y:auto;position:relative;cursor:grab;background:var(--paper)}
-.timeline-wrap:active{cursor:grabbing}
-.tl-inner{position:relative}
+.timeline-wrap{flex:1;overflow:auto;position:relative;cursor:grab;background:var(--paper);min-height:0}
+.tl-inner{position:relative;min-width:100%}
 .axis-row{position:sticky;top:0;z-index:8;height:var(--axis-h);background:var(--paper);border-bottom:1px solid var(--ruler);display:block}
 .tick{position:absolute;transform:translateX(-50%);font-size:10px;color:var(--mist);white-space:nowrap;text-align:center}
 .tick .tl{display:block;text-align:center}
@@ -114,8 +113,8 @@ header .stats{margin-left:auto;font-size:10px;color:var(--mist);text-align:right
 .p-label .dot.模范{background:var(--jade)}
 .p-label .dot.教训{background:var(--crimson)}
 .p-label .dot.中性{background:var(--mist)}
-.p-label .arch{font-size:9px;color:var(--mist);overflow:hidden;text-overflow:ellipsis}
-.p-label .p-name{font-size:12px;overflow:hidden;text-overflow:ellipsis}
+.p-label .arch{font-size:9px;color:var(--mist);overflow:hidden;text-overflow:ellipsis;flex-shrink:0}
+.p-label .p-name{font-size:12px;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
 .p-track{position:absolute;top:0;left:var(--label-w);right:0;height:var(--row-h)}
 .lifespan{position:absolute;top:calc(var(--row-h)/2 - 2px);height:4px;border-radius:2px;opacity:.22;background:var(--accent)}
 .ev-dot{position:absolute;top:calc(var(--row-h)/2 - 5px);width:10px;height:10px;border-radius:50%;transform:translateX(-50%);cursor:pointer;z-index:2;transition:transform .12s var(--ease), opacity .12s; border:2px solid var(--paper)}

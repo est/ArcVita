@@ -4,9 +4,8 @@
 let DATA={ persons:[], events:[], highlights:[], index:null };
 let filtered=[];
 let zoom=1, focusedQid=null;
-let filters={ era:null, q:'' };
+let filters={ q:'' };
 let minY=-600, maxY=2000;
-let minimap=null;
 const BASE_PX=10;
 const LABEL_W=160;
 const ROW_N=52, ROW_F=148;
@@ -71,57 +70,19 @@ function showTip(html,x,y){
   tipEl.style.left=lx+'px'; tipEl.style.top=ty+'px';
 }
 function hideTip(){ if(tipEl) tipEl.style.display='none'; }
-// minimap (inline)
-function initMinimap(canvas, persons, onJump){
-  if(!canvas) return null;
-  const ctx=canvas.getContext('2d');
-  function draw(gMin,gMax, viewMin,viewMax){
-    const W=canvas.width,H=canvas.height;
-    ctx.clearRect(0,0,W,H);
-    ctx.fillStyle='#f5f0e8'; ctx.fillRect(0,0,W,H);
-    const span=gMax-gMin||100;
-    ctx.strokeStyle='rgba(139,69,19,.18)'; ctx.lineWidth=1;
-    persons.forEach(p=>{
-      const by=parseYear(p.birth_date), dy=parseYear(p.death_date)||by+60;
-      if(by==null) return;
-      const x1=(by-gMin)/span*W, x2=(dy-gMin)/span*W;
-      ctx.beginPath(); ctx.moveTo(x1,H*0.4); ctx.lineTo(x2,H*0.4); ctx.stroke();
-    });
-    const vx1=(viewMin-gMin)/span*W, vx2=(viewMax-gMin)/span*W;
-    ctx.fillStyle='rgba(139,69,19,.12)'; ctx.fillRect(vx1,0,vx2-vx1,H);
-    ctx.strokeStyle='rgba(139,69,19,.6)'; ctx.lineWidth=1.5; ctx.strokeRect(vx1,0,vx2-vx1,H);
-  }
-  let gMin=-600,gMax=2000, viewMin=-600,viewMax=2000;
-  canvas.addEventListener('click', e=>{
-    const r=canvas.getBoundingClientRect(); const pct=(e.clientX-r.left)/r.width;
-    const center=gMin+pct*(gMax-gMin); const span=viewMax-viewMin;
-    onJump(center-span/2, center+span/2);
-  });
-  let dragging=false;
-  canvas.addEventListener('mousedown',()=>dragging=true);
-  window.addEventListener('mouseup',()=>dragging=false);
-  canvas.addEventListener('mousemove', e=>{
-    if(!dragging) return;
-    const r=canvas.getBoundingClientRect(); const pct=(e.clientX-r.left)/r.width;
-    const center=gMin+pct*(gMax-gMin); const span=viewMax-viewMin;
-    onJump(center-span/2, center+span/2);
-  });
-  return { draw: (mn,mx,vm,vM)=>{ gMin=mn; gMax=mx; viewMin=vm; viewMax=vM; draw(mn,mx,vm,vM); } };
-}
+
 
 function readHash(){
   const h=new URLSearchParams(location.hash.slice(1));
   const f=h.get('focus'); if(f) focusedQid=f;
   const z=parseFloat(h.get('z')||''); if(!isNaN(z)) zoom=Math.max(0.15,Math.min(40,z));
   const q=h.get('q'); if(q!=null) filters.q=q;
-  const era=h.get('era'); if(era) filters.era=era;
 }
 function writeHash(){
   const h=new URLSearchParams();
   if(focusedQid) h.set('focus',focusedQid);
   if(Math.abs(zoom-1)>0.01) h.set('z', String(Math.round(zoom*10)/10));
   if(filters.q) h.set('q', filters.q);
-  if(filters.era) h.set('era', filters.era);
   history.replaceState(null,'', h.toString() ? '#'+h.toString() : location.pathname+location.search);
 }
 
@@ -129,17 +90,9 @@ async function init(){
   try{
     readHash();
     DATA=await loadAll();
-    document.getElementById('stats').textContent=DATA.persons.length+'人物 · '+DATA.events.length+'事件 · '+DATA.highlights.length+'名场面';
-    buildFilterUI();
+    const s=document.getElementById('stats'); if(s) s.textContent=DATA.persons.length+'人物 · '+DATA.events.length+'事件 · '+DATA.highlights.length+'名场面';
     initTip();
     setupInteractions();
-    const cv=document.getElementById('minimap');
-    if(cv){
-      // ensure canvas has size
-      const w=cv.clientWidth||320;
-      cv.width=w*2; cv.height=48*2; cv.style.width=w+'px'; cv.style.height='48px';
-      minimap=initMinimap(cv, DATA.persons, (a,b)=>{ minY=a; maxY=b; const wrapW=document.getElementById('wrap').clientWidth||900; const ppx=zoom*BASE_PX; zoom=Math.max(0.15, (maxY-minY)*BASE_PX/(wrapW-160)); render(); });
-    }
     const qInput=document.getElementById('q');
     if(qInput){ qInput.value=filters.q||''; qInput.addEventListener('input', debounce(e=>{ filters.q=e.target.value.trim(); applyFilter(); },200)); }
     applyFilter();
@@ -150,49 +103,7 @@ async function init(){
   }
 }
 
-function uniq(arr){ return [...new Set(arr.filter(Boolean))]; }
-
-function buildFilterUI(){
-  const wrap=document.getElementById('filters');
-  if(!wrap) return;
-  // 仅保留朝代
-  const eras=uniq(DATA.persons.map(p=>p.era)).filter(Boolean);
-  eras.sort();
-  let html='<span class="flabel">朝代</span>';
-  html+='<button class="fb '+( !filters.era ? 'active':'')+'" data-k="era" data-v="">全部</button>';
-  eras.forEach(v=>{ html+='<button class="fb '+(filters.era===v?'active':'')+'" data-k="era" data-v="'+escapeHtml(v)+'">'+escapeHtml(v)+'</button>'; });
-  wrap.innerHTML=html;
-  wrap.querySelectorAll('.fb').forEach(b=>{
-    b.addEventListener('click', ()=>{
-      const v=b.dataset.v;
-      filters.era=v||null;
-      wrap.querySelectorAll('.fb').forEach(x=>x.classList.toggle('active', x===b));
-      writeHash(); applyFilter();
-    });
-  });
-  // century chips
-  const cc=document.getElementById('centuryChips');
-  if(cc && DATA.index){
-    cc.innerHTML=Object.entries(DATA.index.centuries).sort((a,b)=>a[0].localeCompare(b[0])).map(([ck,info])=>{
-      return '<button class="chip" data-ck="'+ck+'">'+escapeHtml(info.label)+'<span class="cnt">'+info.count+'</span></button>';
-    }).join('');
-    cc.querySelectorAll('.chip').forEach(c=>{
-      c.addEventListener('click', ()=>{
-        const ck=c.dataset.ck;
-        let y=0;
-        if(ck.startsWith('bce')) y=-parseInt(ck.slice(3));
-        else if(ck.startsWith('ce')) y=parseInt(ck.slice(2));
-        zoom=1.2;
-        const span=400/zoom;
-        minY=y-span/2; maxY=y+span/2;
-        render();
-      });
-    });
-  }
-}
-
 function personMatches(p){
-  if(filters.era && p.era!==filters.era) return false;
   if(filters.q){
     const q=filters.q.toLowerCase();
     const hay=[p.name_zh, p.name_en, p.archetype, p.era, ...(p.dilemmas||[])].join(' ').toLowerCase();
@@ -243,6 +154,53 @@ function setupInteractions(){
     if(e.key==='-'){ zoom=Math.max(0.15, zoom*0.8); render(); }
   });
   document.getElementById('clearSearch')?.addEventListener('click', ()=>{ filters.q=''; const q=document.getElementById('q'); if(q) q.value=''; applyFilter(); });
+  // delegated hover / click (once)
+  const innerEl=document.getElementById('inner');
+  if(innerEl && !innerEl._hoverBound){
+    innerEl._hoverBound=true;
+    let raf=null, lastTarget=null;
+    innerEl.addEventListener('mouseover', e=>{
+      const dot=e.target.closest('.ev-dot');
+      if(!dot){ hideTip(); clearAges(); lastTarget=null; return; }
+      lastTarget=dot;
+      if(raf) cancelAnimationFrame(raf);
+      raf=requestAnimationFrame(()=>{ if(!lastTarget) return; showDotTip(lastTarget); syncAges(lastTarget); });
+    });
+    innerEl.addEventListener('mousemove', e=>{
+      const dot=e.target.closest('.ev-dot');
+      if(dot){
+        if(dot!==lastTarget){
+          lastTarget=dot;
+          if(raf) cancelAnimationFrame(raf);
+          raf=requestAnimationFrame(()=>{ showDotTip(dot); syncAges(dot); });
+        }
+        // move tip with cursor only when over dot
+        showTip(document.getElementById('tip').innerHTML, e.clientX, e.clientY);
+      }else{
+        hideTip(); clearAges(); lastTarget=null;
+      }
+    });
+    innerEl.addEventListener('mouseleave', ()=>{ hideTip(); clearAges(); lastTarget=null; });
+    innerEl.addEventListener('mouseout', e=>{
+      if(!e.relatedTarget || !innerEl.contains(e.relatedTarget)){ hideTip(); clearAges(); lastTarget=null; }
+    });
+    innerEl.addEventListener('click', e=>{
+      const label=e.target.closest('.p-label');
+      if(label){
+        const qid=label.dataset.qid;
+        focusedQid= focusedQid===qid?null:qid;
+        writeHash(); render();
+        return;
+      }
+      const dot=e.target.closest('.ev-dot');
+      if(dot && dot.dataset.cluster!=='1'){
+        const qid=dot.dataset.qid;
+        const p=DATA.persons.find(x=>x.qid===qid);
+        if(p) showDetail(p, dot.dataset.date);
+        e.stopPropagation();
+      }
+    });
+  }
 }
 
 function clusterEvents(events, W){
@@ -317,7 +275,7 @@ function render(){
     const x1=80+(by-minY)/span*(W-160);
     const x2=80+(endY-minY)/span*(W-160);
     const roleClass=p.role||'中性';
-    const pEvents=DATA.events.filter(e=>e.person_qid===p.qid);
+    const pEvents=(p.events && p.events.length? p.events : DATA.events.filter(e=>e.person_qid===p.qid));
     const clustered=clusterEvents(pEvents, W);
 
     let trackInner='<div class="lifespan" style="left:'+x1+'px;width:'+Math.max(4,x2-x1)+'px"></div>';
@@ -380,54 +338,6 @@ function render(){
     if(focusedQid){ const fp=DATA.persons.find(p=>p.qid===focusedQid); zEl.textContent='聚焦 '+(fp?.name_zh||''); zEl.style.color='var(--accent)'; }
     else{ zEl.textContent=zoom.toFixed(1)+'x · '+Math.round(maxY-minY)+'年'; zEl.style.color='var(--mist)'; }
   }
-  if(minimap){
-    try{
-      const allBy=DATA.persons.map(p=>parseYear(p.birth_date)).filter(v=>v!=null);
-      const allDy=DATA.persons.map(p=>parseYear(p.death_date)).filter(v=>v!=null);
-      const gmin=Math.min(...allBy)-50, gmax=Math.max(...allDy, ...allBy.map(v=>v+60))+50;
-      minimap.draw(gmin,gmax,minY,maxY);
-    }catch(e){}
-  }
-
-  inner.querySelectorAll('.p-label').forEach(el=>{
-    el.addEventListener('click', ()=>{ const qid=el.dataset.qid; focusedQid= focusedQid===qid?null:qid; writeHash(); render(); });
-  });
-
-  // delegated hover
-  let raf=null, lastTarget=null;
-  inner.addEventListener('mouseover', e=>{
-    const dot=e.target.closest('.ev-dot');
-    if(!dot){ hideTip(); clearAges(); return; }
-    lastTarget=dot;
-    if(raf) cancelAnimationFrame(raf);
-    raf=requestAnimationFrame(()=>{
-      const d=lastTarget; if(!d) return;
-      showDotTip(d);
-      syncAges(d);
-    });
-  });
-  inner.addEventListener('mousemove', e=>{
-    const dot=e.target.closest('.ev-dot');
-    if(dot && dot!==lastTarget){
-      lastTarget=dot;
-      if(raf) cancelAnimationFrame(raf);
-      raf=requestAnimationFrame(()=>{ showDotTip(dot); syncAges(dot); });
-    }
-    if(lastTarget) showTip(document.getElementById('tip').innerHTML, e.clientX, e.clientY);
-  });
-  inner.addEventListener('mouseout', e=>{
-    const to=e.relatedTarget;
-    if(!to || !inner.contains(to)){ hideTip(); clearAges(); }
-  });
-  inner.addEventListener('click', e=>{
-    const dot=e.target.closest('.ev-dot');
-    if(dot && dot.dataset.cluster!=='1'){
-      const qid=dot.dataset.qid;
-      const p=DATA.persons.find(x=>x.qid===qid);
-      if(p) showDetail(p, dot.dataset.date);
-      e.stopPropagation();
-    }
-  });
 }
 
 function showDotTip(d){
