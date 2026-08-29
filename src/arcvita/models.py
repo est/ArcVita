@@ -9,6 +9,7 @@ Sensitivity = Literal["none", "sensitive"]
 Visibility = Literal["public", "restricted"]
 Status = Literal["verified", "needs_review", "ai_filled"]
 DatePrecision = Literal["day", "month", "year"]
+HighlightType = Literal["成语", "代表作", "名言", "战役", "发明", "制度", "演讲", "奖项", "远航", "决策"]
 
 
 class Person(BaseModel):
@@ -29,12 +30,21 @@ class Person(BaseModel):
     lesson: str | None = None
     summary_zh: str | None = Field(default=None, description="一句话厚重感概述")
     summary_first_person: str | None = Field(default=None, description="第一视角自述引述或拟述，突出境遇与抉择")
-    # 境遇-启发检索：用于“迷茫时查找类似境遇人物”
-    dilemmas: list[str] = Field(default_factory=list, description="境遇标签，如 流放/被贬/众叛亲离/从零开始/技术瓶颈/至暗时刻/被误解")
-    keywords: list[str] = Field(default_factory=list, description="检索关键词，与 dilemmas 联动，可扩展至领域/心态标签")
+    archetype: str | None = Field(default=None, description="成事儿原型，如 统筹型/攻关型/开拓型/文化型")
+    dilemmas: list[str] = Field(default_factory=list, description="境遇标签，如 流放/被贬/技术瓶颈/至暗时刻")
+    keywords: list[str] = Field(default_factory=list)
     source_urls: list[str] = Field(default_factory=list)
     status: Status = "needs_review"
     needs_review_reason: str | None = None
+
+
+class Phase(BaseModel):
+    name: str = Field(description="阶段名，如 酝酿/破局/收束")
+    start_date: str | None = None
+    end_date: str | None = None
+    place: str | None = None
+    description_zh: str | None = None
+    highlight: str | None = Field(default=None, description="本阶段名场面一句话")
 
 
 class Endeavor(BaseModel):
@@ -52,10 +62,11 @@ class Endeavor(BaseModel):
     description_zh: str | None = Field(default=None, description="厚重叙述：背景-动机-阻力-抉择")
     outcome: str | None = None
     lesson: str | None = Field(default=None, description="对后人的启发/教训")
-    # 境遇-启发检索：做事维度的境遇标签，便于按“技术瓶颈/至暗时刻”等检索做事流
-    dilemmas: list[str] = Field(default_factory=list, description="境遇标签，如 流放/被贬/技术瓶颈/至暗时刻")
-    keywords: list[str] = Field(default_factory=list, description="检索关键词，与 dilemmas 联动")
+    phases: list[Phase] = Field(default_factory=list, description="成事儿周期分解，强调从开头到结束")
+    dilemmas: list[str] = Field(default_factory=list)
+    keywords: list[str] = Field(default_factory=list)
     event_ids: list[str] = Field(default_factory=list)
+    highlight_event_ids: list[str] = Field(default_factory=list, description="名场面事件ID")
     sources: list[str] = Field(default_factory=list)
     review_status: Status = "needs_review"
 
@@ -72,7 +83,10 @@ class Event(BaseModel):
     event_type: str = Field(description="出生/求学/任职/创作/战役/获奖/逝世等")
     title_zh: str
     description_zh: str | None = None
-    first_person_quote: str | None = Field(default=None, description="第一视角引述或拟述，增强代入感")
+    first_person_quote: str | None = Field(default=None)
+    is_highlight: bool = Field(default=False, description="是否为名场面/代表作/成语诞生点")
+    highlight_type: HighlightType | str | None = None
+    highlight_note: str | None = Field(default=None, description="名场面补充，如 成语释义/作品影响")
     sources: list[str] = Field(default_factory=list)
     status: Status = "needs_review"
     needs_review_reason: str | None = None

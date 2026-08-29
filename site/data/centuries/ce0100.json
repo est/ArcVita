@@ -1,0 +1,79 @@
+{
+  "century": "ce0100",
+  "label": "1世纪 CE",
+  "events": [
+    {
+      "id": "Q193533-event-2",
+      "person_qid": "Q193533",
+      "endeavor_id": "Q193533-endeavor-1",
+      "date": "132",
+      "date_precision": "year",
+      "place_name": "洛阳",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "发明",
+      "title_zh": "地动仪成",
+      "description_zh": "创候风地动仪，验陇西地震",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "发明",
+      "highlight_note": "发明名场面：人类首台验震器",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q193533"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "张衡",
+      "archetype": "格物型"
+    },
+    {
+      "id": "Q193533-event-3",
+      "person_qid": "Q193533",
+      "endeavor_id": null,
+      "date": "139-01-01",
+      "date_precision": "day",
+      "place_name": "洛阳",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "逝世",
+      "description_zh": "卒于洛阳",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q193533"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "张衡",
+      "archetype": "格物型"
+    },
+    {
+      "id": "Q193533-event-1",
+      "person_qid": "Q193533",
+      "endeavor_id": null,
+      "date": "78-01-01",
+      "date_precision": "day",
+      "place_name": "南阳",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于南阳西鄂",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q193533"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "张衡",
+      "archetype": "格物型"
+    }
+  ],
+  "person_count": 1
+}

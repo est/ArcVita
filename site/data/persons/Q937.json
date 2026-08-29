@@ -1,0 +1,221 @@
+{
+  "qid": "Q937",
+  "name_zh": "爱因斯坦",
+  "name_en": "Albert Einstein",
+  "era": "20世纪",
+  "archetype": "思想型",
+  "role": "模范",
+  "dilemmas": [
+    "被误解",
+    "被流放",
+    "技术瓶颈"
+  ],
+  "birth_date": "1879-03-14",
+  "death_date": "1955-04-18",
+  "birth_place": "乌尔姆",
+  "summary_zh": "德裔物理学家，提出相对论，1905奇迹年改写时空观念。",
+  "summary_first_person": "我在专利局的桌前追光——想让时间与空间从背景变成主角。",
+  "lesson": "给自己一段不被打扰的深思期，答案会在尽头等你。",
+  "events": [
+    {
+      "id": "Q937-event-1",
+      "person_qid": "Q937",
+      "endeavor_id": null,
+      "date": "1879-03-14",
+      "date_precision": "day",
+      "place_name": "乌尔姆",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于乌尔姆",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q937-event-2",
+      "person_qid": "Q937",
+      "endeavor_id": "Q937-endeavor-1",
+      "date": "1905-06-30",
+      "date_precision": "day",
+      "place_name": "伯尔尼",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "创作",
+      "title_zh": "狭义相对论",
+      "description_zh": "论动体的电动力学",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "代表作",
+      "highlight_note": "代表作：1905奇迹年",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q937-event-3",
+      "person_qid": "Q937",
+      "endeavor_id": "Q937-endeavor-1",
+      "date": "1915-11-25",
+      "date_precision": "day",
+      "place_name": "柏林",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "创作",
+      "title_zh": "广义相对论",
+      "description_zh": "场方程发表",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "代表作",
+      "highlight_note": "代表作：1915广义相对论",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q937-event-4",
+      "person_qid": "Q937",
+      "endeavor_id": null,
+      "date": "1955-04-18",
+      "date_precision": "day",
+      "place_name": "普林斯顿",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "逝世",
+      "description_zh": "卒于普林斯顿",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    }
+  ],
+  "endeavors": [
+    {
+      "id": "Q937-endeavor-1",
+      "person_qid": "Q937",
+      "title_zh": "相对论的孕育",
+      "domain": "科学",
+      "start_date": "1905",
+      "end_date": "1915",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "伯尔尼",
+        "柏林"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "专利局的桌前，我在思想实验里追光；从狭义到广义，十年间把时空从背景变成了主角，孤独却笃定。",
+      "outcome": "狭义与广义相对论",
+      "lesson": "给自己一段不被打扰的深思期，答案会在尽头等你。",
+      "phases": [],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [
+        "Q937-event-2",
+        "Q937-event-3"
+      ],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ],
+      "review_status": "ai_filled"
+    },
+    {
+      "id": "Q937-endeavor-2",
+      "person_qid": "Q937",
+      "title_zh": "奇迹年与相对论",
+      "domain": "科学",
+      "start_date": "1905",
+      "end_date": "1915",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "伯尔尼",
+        "柏林"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "专利局的桌前，我在思想实验里追光；从狭义到广义，十年间把时空从背景变成了主角。",
+      "outcome": "狭义与广义相对论",
+      "lesson": "给自己一段不被打扰的深思期，答案会在尽头等你。",
+      "phases": [
+        {
+          "name": "奇迹年",
+          "start_date": "1905",
+          "end_date": "1905",
+          "place": "伯尔尼",
+          "description_zh": null,
+          "highlight": "奇迹年四篇论文 1905 — 代表作"
+        },
+        {
+          "name": "广义",
+          "start_date": "1915",
+          "end_date": "1915",
+          "place": "柏林",
+          "description_zh": null,
+          "highlight": "广义相对论 1915 — 代表作"
+        },
+        {
+          "name": "流亡",
+          "start_date": "1933",
+          "end_date": "1933",
+          "place": "普林斯顿",
+          "description_zh": null,
+          "highlight": "流亡美国 — 至暗转折"
+        }
+      ],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ],
+      "review_status": "ai_filled"
+    }
+  ],
+  "highlights": [
+    {
+      "person_qid": "Q937",
+      "date": "1905-06-30",
+      "place_name": "伯尔尼",
+      "highlight_type": "代表作",
+      "title_zh": "狭义相对论",
+      "highlight_note": "代表作：1905奇迹年",
+      "endeavor_id": "Q937-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ]
+    },
+    {
+      "person_qid": "Q937",
+      "date": "1915-11-25",
+      "place_name": "柏林",
+      "highlight_type": "代表作",
+      "title_zh": "广义相对论",
+      "highlight_note": "代表作：1915广义相对论",
+      "endeavor_id": "Q937-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q937"
+      ]
+    }
+  ]
+}

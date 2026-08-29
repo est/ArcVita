@@ -1,0 +1,177 @@
+{
+  "qid": "Q1048",
+  "name_zh": "凯撒",
+  "name_en": "Julius Caesar",
+  "era": "古罗马",
+  "archetype": "决断型",
+  "role": "中性",
+  "dilemmas": [
+    "众叛亲离"
+  ],
+  "birth_date": "-100-07-12",
+  "death_date": "-44-03-15",
+  "birth_place": "罗马",
+  "summary_zh": "罗马统帅与独裁官，征服高卢，跨过卢比孔河，终遇刺于元老院。",
+  "summary_first_person": "我跨过卢比孔河时知道已无退路——骰子已经掷下。",
+  "lesson": "跨过关键的卢比孔河前，必须想清退路已断的代价。",
+  "events": [
+    {
+      "id": "Q1048-event-1",
+      "person_qid": "Q1048",
+      "endeavor_id": null,
+      "date": "-100-07-12",
+      "date_precision": "day",
+      "place_name": "罗马",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于罗马",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1048"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q1048-event-3",
+      "person_qid": "Q1048",
+      "endeavor_id": null,
+      "date": "-44-03-15",
+      "date_precision": "day",
+      "place_name": "罗马",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "遇刺",
+      "title_zh": "遇刺元老院",
+      "description_zh": "在元老院遇刺身亡",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1048"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q1048-event-death",
+      "person_qid": "Q1048",
+      "endeavor_id": null,
+      "date": "-44-03-15",
+      "date_precision": "day",
+      "place_name": null,
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "逝世",
+      "description_zh": "卒于 未知地点",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1048"
+      ],
+      "status": "verified",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q1048-event-2",
+      "person_qid": "Q1048",
+      "endeavor_id": null,
+      "date": "-49-01-10",
+      "date_precision": "day",
+      "place_name": "卢比孔河",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "抉择",
+      "title_zh": "跨过卢比孔河",
+      "description_zh": "率军渡河，内战爆发",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "成语",
+      "highlight_note": "典故：Alea iacta est 骰子已经掷下",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1048"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    }
+  ],
+  "endeavors": [
+    {
+      "id": "Q1048-endeavor-1",
+      "person_qid": "Q1048",
+      "title_zh": "高卢战争与卢比孔河",
+      "domain": "军事/政治",
+      "start_date": "-58",
+      "end_date": "-44",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "高卢",
+        "罗马",
+        "卢比孔河"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "我以八年征服高卢，随后跨过卢比孔河——知道已无退路，骰子已经掷下。",
+      "outcome": "成为罗马独裁官",
+      "lesson": "关键跨越前，必须想清不可逆的代价。",
+      "phases": [
+        {
+          "name": "征服",
+          "start_date": "-58",
+          "end_date": "-50",
+          "place": "高卢",
+          "description_zh": null,
+          "highlight": "八年高卢战争 — 周期攻关"
+        },
+        {
+          "name": "抉择",
+          "start_date": "-49",
+          "end_date": "-49",
+          "place": "卢比孔河",
+          "description_zh": null,
+          "highlight": "跨过卢比孔河 — 决策名场面，成语/典故诞生"
+        },
+        {
+          "name": "收束",
+          "start_date": "-44",
+          "end_date": "-44",
+          "place": "罗马",
+          "description_zh": null,
+          "highlight": "遇刺 — 悲壮终局"
+        }
+      ],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1048"
+      ],
+      "review_status": "ai_filled"
+    }
+  ],
+  "highlights": [
+    {
+      "person_qid": "Q1048",
+      "date": "-49-01-10",
+      "place_name": "卢比孔河",
+      "highlight_type": "成语",
+      "title_zh": "跨过卢比孔河",
+      "highlight_note": "典故：Alea iacta est 骰子已经掷下",
+      "endeavor_id": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1048"
+      ]
+    }
+  ]
+}

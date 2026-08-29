@@ -1,0 +1,179 @@
+{
+  "qid": "Q1001",
+  "name_zh": "甘地",
+  "name_en": "Mahatma Gandhi",
+  "era": "20世纪",
+  "archetype": "感召型",
+  "role": "模范",
+  "dilemmas": [
+    "至暗时刻"
+  ],
+  "birth_date": "1869-10-02",
+  "death_date": "1948-01-30",
+  "birth_place": "波尔班达尔",
+  "summary_zh": "印度民族运动领袖，以非暴力不合作争取独立，苦行而坚定。",
+  "summary_first_person": "我以纺车与绝食对抗帝国——柔软的坚持比坚硬的对抗更难被摧毁。",
+  "lesson": "以非暴力的自律去对抗庞大的不公，需要更大的勇气。",
+  "events": [
+    {
+      "id": "Q1001-event-1",
+      "person_qid": "Q1001",
+      "endeavor_id": null,
+      "date": "1869-10-02",
+      "date_precision": "day",
+      "place_name": "波尔班达尔",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于古吉拉特",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1001"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q1001-event-2",
+      "person_qid": "Q1001",
+      "endeavor_id": "Q1001-endeavor-1",
+      "date": "1930-03-12",
+      "date_precision": "day",
+      "place_name": "萨巴尔马蒂",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "抗争",
+      "title_zh": "食盐进军",
+      "description_zh": "率众徒步240英里制盐抗税",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "战役",
+      "highlight_note": "名场面：食盐进军 Dandi March",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1001"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q1001-event-3",
+      "person_qid": "Q1001",
+      "endeavor_id": null,
+      "date": "1948-01-30",
+      "date_precision": "day",
+      "place_name": "德里",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "遇刺",
+      "title_zh": "遇刺",
+      "description_zh": "被刺身亡",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1001"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q1001-event-death",
+      "person_qid": "Q1001",
+      "endeavor_id": null,
+      "date": "1948-01-30",
+      "date_precision": "day",
+      "place_name": null,
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "逝世",
+      "description_zh": "卒于 未知地点",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1001"
+      ],
+      "status": "verified",
+      "needs_review_reason": null
+    }
+  ],
+  "endeavors": [
+    {
+      "id": "Q1001-endeavor-1",
+      "person_qid": "Q1001",
+      "title_zh": "非暴力不合作",
+      "domain": "政治",
+      "start_date": "1920",
+      "end_date": "1947",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "孟买",
+        "德班",
+        "德里"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "我以纺车、绝食与长途跋涉对抗帝国，用自律的非暴力去对抗庞大的不公。",
+      "outcome": "印度独立运动走向成功",
+      "lesson": "柔软的坚持比坚硬的对抗更难被摧毁。",
+      "phases": [
+        {
+          "name": "南非淬炼",
+          "start_date": "1893",
+          "end_date": "1915",
+          "place": "德班",
+          "description_zh": null,
+          "highlight": "南非抗争 — 方法成型"
+        },
+        {
+          "name": "食盐进军",
+          "start_date": "1930",
+          "end_date": "1930",
+          "place": "古吉拉特",
+          "description_zh": null,
+          "highlight": "食盐进军 1930-03-12 — 名场面"
+        },
+        {
+          "name": "独立",
+          "start_date": "1947",
+          "end_date": "1947",
+          "place": "德里",
+          "description_zh": null,
+          "highlight": "印度独立 1947 — 收束"
+        }
+      ],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [
+        "Q1001-event-2"
+      ],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1001"
+      ],
+      "review_status": "ai_filled"
+    }
+  ],
+  "highlights": [
+    {
+      "person_qid": "Q1001",
+      "date": "1930-03-12",
+      "place_name": "萨巴尔马蒂",
+      "highlight_type": "战役",
+      "title_zh": "食盐进军",
+      "highlight_note": "名场面：食盐进军 Dandi March",
+      "endeavor_id": "Q1001-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q1001"
+      ]
+    }
+  ]
+}

@@ -8,17 +8,22 @@ import httpx
 import yaml
 
 from arcvita.config import load_config, load_seed
-from arcvita.models import Endeavor, Event, Person
 from arcvita.curated import enrich_offline
+from arcvita.models import Endeavor, Event, Person
 from arcvita.wikidata import (
     build_events_for_person,
     curated_endeavors_for,
     fetch_labels_and_summaries,
-    fetch_persons_batch,
     fetch_persons_via_api,
 )
 
 USER_AGENT = "ArcVita/0.1 (biography research; local)"
+
+# sources 可插拔接入（默认离线优先，不改现有 25 人产出）
+try:
+    from arcvita.sources.enrich import enrich_person as _enrich_person
+except Exception:  # pragma: no cover
+    _enrich_person = None  # type: ignore
 
 
 def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qids: list[str] | None = None) -> dict:
@@ -37,6 +42,13 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
 
     seed_meta = {s["qid"]: s for s in seed}
     all_qids = [s["qid"] for s in seed]
+
+    # sources 配置：默认离线优先（enabled 为空则不联网），可插拔
+    sources_cfg = cfg.get("sources", {}) if isinstance(cfg.get("sources"), dict) else {}
+    sources_enabled: list[str] = list(sources_cfg.get("enabled") or [])
+    # 兼容旧习惯：sources.enabled 为空 -> 纯离线；显式 ["wikipedia","wikidata"] 才联网
+    sources_cache = bool(sources_cfg.get("cache", True))
+    sources_qps = float(sources_cfg.get("qps", wikicfg.get("qps", 0.5) or 0.5))
 
     persons: list[Person] = []
     events: list[Event] = []
@@ -135,13 +147,18 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
                         p.summary_zh = off["summary_zh"]
                     if not p.birth_place and off.get("birth_place"):
                         p.birth_place = off["birth_place"]
-                    # fill summary_first_person / lesson from curated
                     if off.get("summary_first_person"):
                         p.summary_first_person = off["summary_first_person"]
                     if off.get("lesson"):
                         p.lesson = off["lesson"]
                     if off.get("era"):
                         p.era = off["era"]
+                    if off.get("archetype"):
+                        p.archetype = off["archetype"]
+                    if off.get("dilemmas"):
+                        p.dilemmas = off["dilemmas"]
+                    if off.get("keywords"):
+                        p.keywords = off["keywords"]
                 meta = seed_meta.get(p.qid, {})
                 if meta.get("role"):
                     p.role = meta["role"]
@@ -178,6 +195,9 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
                             event_type=oe.get("event_type", "经历"),
                             title_zh=oe.get("title_zh", ""),
                             description_zh=oe.get("description_zh"),
+                            is_highlight=oe.get("is_highlight", False),
+                            highlight_type=oe.get("highlight_type"),
+                            highlight_note=oe.get("highlight_note"),
                             sources=[f"https://www.wikidata.org/wiki/{p.qid}"],
                             status="ai_filled",
                         )
@@ -229,6 +249,73 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
                         )
                     )
 
+                # --- sources 可插拔 enrich（仅当 sources.enabled 非空时才联网） ---
+                if sources_enabled and _enrich_person is not None:
+                    try:
+                        title_hint = label_map.get(p.qid, {}).get("zhwiki_title") if isinstance(label_map.get(p.qid), dict) else None
+                        # 优先用 label_map 里的 zhwiki_title 传给 wikipedia，避免重复请求 sitelinks
+                        enrich_res = _enrich_person(p.qid, client, cache_dir=raw_dir, enabled_sources=sources_enabled, title_hint=title_hint)
+                        patch = enrich_res.get("patch", {})
+                        # summary 仅在 curated 无时才补（保离线真源不被覆盖）
+                        if not p.summary_zh and patch.get("summary_zh"):
+                            p.summary_zh = patch["summary_zh"]
+                        # person_patch 中的生卒地/职业等，仅在空字段时补
+                        pp = patch.get("person_patch", {}) or {}
+                        if pp:
+                            if not p.birth_date and pp.get("birth_date"):
+                                p.birth_date = pp["birth_date"]
+                            if not p.death_date and pp.get("death_date"):
+                                p.death_date = pp["death_date"]
+                            if not p.birth_place and pp.get("birth_place"):
+                                p.birth_place = pp["birth_place"]
+                            if not getattr(p, "death_place", None) and pp.get("death_place"):
+                                p.death_place = pp["death_place"]  # type: ignore
+                            if pp.get("occupations"):
+                                # 合并去重
+                                existing = set(p.occupations or [])
+                                for oc in pp["occupations"]:
+                                    if oc not in existing:
+                                        p.occupations.append(oc)
+                        # source_urls 合并去重
+                        for u in patch.get("extra_source_urls", []) or []:
+                            if u and u not in p.source_urls:
+                                p.source_urls.append(u)
+                        # events 增量：wikipedia 名场面候选 + wikidata sig/pos（去重标题）
+                        extra_evs: list[Event] = []
+                        extra_evs.extend(patch.get("events_from_wiki", []) or [])
+                        extra_evs.extend(patch.get("events_from_wikidata", []) or [])
+                        if extra_evs:
+                            seen_titles_local = {e.title_zh for e in evs}
+                            for ae in extra_evs:
+                                if ae.title_zh not in seen_titles_local:
+                                    ae.id = f"{p.qid}-event-{len(evs)+1}"
+                                    evs.append(ae)
+                                    seen_titles_local.add(ae.title_zh)
+                            # 若 wikidata 补上了 birth/death 而之前无，也会在上面 extra_evs 里；无需重复 synthetic
+                        # 写 enrich 降级链路可追溯文件（不影响主落盘）
+                        if sources_cache:
+                            try:
+                                (raw_dir / f"{p.qid}.enrich.json").write_text(
+                                    json.dumps(
+                                        {
+                                            "qid": p.qid,
+                                            "enabled": sources_enabled,
+                                            "wikipedia": {k: v for k, v in (enrich_res.get("wikipedia") or {}).items() if k not in ("extract", "rest_summary")},
+                                            "wikidata": {k: v for k, v in (enrich_res.get("wikidata") or {}).items() if k not in ("person",)},
+                                            "patch_summary": patch.get("summary_zh"),
+                                            "extra_urls": patch.get("extra_source_urls", [])[:3],
+                                            "events_added": len(extra_evs),
+                                        },
+                                        ensure_ascii=False,
+                                        indent=2,
+                                    ),
+                                    encoding="utf-8",
+                                )
+                            except Exception:
+                                pass
+                    except Exception as e:
+                        print(f"  enrich skipped for {p.qid}: {e}")
+
                 # naive link: distribute events into endeavors by date range overlap (if endeavor has dates)
                 for ed in eds:
                     # placeholder: if event date within endeavor range, assign
@@ -254,7 +341,11 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
                     p.needs_review_reason = "缺生卒年/地点，需补"
                 persons.append(p)
 
-            time.sleep(0.5)
+            # 按配置限流（离线时 0.5s；sources 启用时按 sources.qps）
+            if sources_enabled and sources_qps and sources_qps > 0:
+                time.sleep(max(0.2, 1.0 / sources_qps))
+            else:
+                time.sleep(0.5)
 
     # write YAML (primary) + SQLite
     persons_yaml = Path(paths["persons_yaml"])
@@ -281,5 +372,14 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
     from arcvita.report import write_report
 
     write_report(persons, events, endeavors, Path("data/processed/_report.md"))
+
+    # render: 成事儿周期可查阅形态 + 名场面总表
+    try:
+        from arcvita.render import build_highlights, build_timelines
+
+        build_highlights()
+        build_timelines()
+    except Exception as e:
+        print(f"render skipped: {e}")
 
     return {"persons": len(persons), "events": len(events), "endeavors": len(endeavors)}

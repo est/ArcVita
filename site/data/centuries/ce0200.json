@@ -1,0 +1,151 @@
+{
+  "century": "ce0200",
+  "label": "2世纪 CE",
+  "events": [
+    {
+      "id": "Q179544-event-1",
+      "person_qid": "Q179544",
+      "endeavor_id": null,
+      "date": "181-01-01",
+      "date_precision": "day",
+      "place_name": "阳都",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于琅琊阳都",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q179544"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "诸葛亮",
+      "archetype": "统筹型"
+    },
+    {
+      "id": "Q179544-event-2",
+      "person_qid": "Q179544",
+      "endeavor_id": "Q179544-endeavor-1",
+      "date": "207",
+      "date_precision": "year",
+      "place_name": "隆中",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "际遇",
+      "title_zh": "三顾茅庐",
+      "description_zh": "刘备三顾茅庐，隆中对策定三分",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "成语",
+      "highlight_note": "成语 三顾茅庐，出自《三国志》，喻诚意求才",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q179544"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "诸葛亮",
+      "archetype": "统筹型"
+    },
+    {
+      "id": "Q179544-event-3",
+      "person_qid": "Q179544",
+      "endeavor_id": "Q179544-endeavor-1",
+      "date": "208",
+      "date_precision": "year",
+      "place_name": "赤壁",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "战役",
+      "title_zh": "赤壁之战",
+      "description_zh": "联孙抗曹，奠定三分",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "战役",
+      "highlight_note": "名场面：以少胜多大决战",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q179544"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "诸葛亮",
+      "archetype": "统筹型"
+    },
+    {
+      "id": "Q179544-event-4",
+      "person_qid": "Q179544",
+      "endeavor_id": "Q179544-endeavor-1",
+      "date": "214",
+      "date_precision": "year",
+      "place_name": "成都",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "建制",
+      "title_zh": "入蜀定成都",
+      "description_zh": "助刘备取益州",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q179544"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "诸葛亮",
+      "archetype": "统筹型"
+    },
+    {
+      "id": "Q179544-event-5",
+      "person_qid": "Q179544",
+      "endeavor_id": "Q179544-endeavor-2",
+      "date": "227",
+      "date_precision": "year",
+      "place_name": "汉中",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "创作",
+      "title_zh": "《出师表》",
+      "description_zh": "上《出师表》率军北伐",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "代表作",
+      "highlight_note": "代表作：鞠躬尽瘁，死而后已 出自此表",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q179544"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "诸葛亮",
+      "archetype": "统筹型"
+    },
+    {
+      "id": "Q179544-event-6",
+      "person_qid": "Q179544",
+      "endeavor_id": "Q179544-endeavor-2",
+      "date": "234-10-08",
+      "date_precision": "day",
+      "place_name": "五丈原",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "星落五丈原",
+      "description_zh": "六出祁山，卒于五丈原",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "成语",
+      "highlight_note": "鞠躬尽瘁 成语意象定格于此",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q179544"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null,
+      "person_name": "诸葛亮",
+      "archetype": "统筹型"
+    }
+  ],
+  "person_count": 1
+}

@@ -8,12 +8,19 @@ wikidata:
   timeout: 30
   retries: 5
 
+sources:
+  enabled: []  # 可选: [wikipedia, wikidata]，默认离线优先不联网；填入即启用在线增量
+  cache: true
+  qps: 0.5
+
 paths:
   seed: data/seed_persons.yaml
   raw_dir: data/raw
   persons_yaml: data/processed/persons.yaml
   events_yaml: data/processed/events.yaml
   endeavors_yaml: data/processed/endeavors.yaml
+  highlights_yaml: data/processed/highlights.yaml
+  timelines_dir: data/processed/timelines
   db: data/biography.db
 
 languages:

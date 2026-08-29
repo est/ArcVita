@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArcVita · 成事儿时间轴</title>
+<style>
+  :root {
+    --ink: #1a1a1a; --paper: #f5f0e8; --accent: #8b4513;
+    --gold: #b8860b; --jade: #2e8b57; --crimson: #8b0000;
+    --mist: #6b6b6b; --ruler: #d4c5a9; --dim: #e8e0d0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; overflow: hidden; }
+  body {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
+    background: var(--paper); color: var(--ink); display: flex; flex-direction: column;
+  }
+  /* === HEADER === */
+  header {
+    padding: 12px 24px; border-bottom: 2px solid var(--accent);
+    background: linear-gradient(180deg, #f0e8d8 0%, var(--paper) 100%);
+    display: flex; align-items: center; gap: 16px; flex-shrink: 0;
+  }
+  header h1 { font-size: 20px; letter-spacing: 2px; color: var(--accent); }
+  header .subtitle { font-size: 12px; color: var(--mist); }
+  header .stats { margin-left: auto; font-size: 11px; color: var(--mist); text-align: right; line-height: 1.4; }
+
+  /* === MAIN LAYOUT === */
+  .main { display: flex; flex: 1; overflow: hidden; }
+
+  /* === LEFT SIDEBAR === */
+  .sidebar {
+    width: 260px; flex-shrink: 0; overflow-y: auto; border-right: 1px solid var(--ruler);
+    background: #faf6ee; padding: 8px 0;
+  }
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--ruler); border-radius: 2px; }
+  .century-group { margin-bottom: 2px; }
+  .century-label {
+    font-size: 11px; color: var(--accent); padding: 6px 14px 2px;
+    font-weight: bold; letter-spacing: 1px; cursor: pointer;
+  }
+  .person-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 5px 14px; cursor: pointer; font-size: 13px;
+    border-left: 3px solid transparent; transition: all 0.15s;
+  }
+  .person-item:hover { background: var(--dim); }
+  .person-item.active { background: #efe8d8; border-left-color: var(--accent); font-weight: bold; }
+  .person-item .dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  }
+  .person-item .dot.模范 { background: var(--jade); }
+  .person-item .dot.教训 { background: var(--crimson); }
+  .person-item .dot.中性 { background: var(--mist); }
+  .person-item .era { font-size: 10px; color: var(--mist); margin-left: auto; }
+  .person-item .hl-count {
+    font-size: 9px; background: var(--gold); color: #fff; border-radius: 8px;
+    padding: 1px 5px; margin-left: 4px;
+  }
+
+  /* === CENTER TIMELINE === */
+  .center { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+  /* Person header */
+  .person-header {
+    padding: 16px 24px 12px; border-bottom: 1px solid var(--ruler);
+    background: linear-gradient(180deg, #faf6ee 0%, var(--paper) 100%);
+    flex-shrink: 0;
+  }
+  .person-header h2 { font-size: 22px; color: var(--accent); display: inline; }
+  .person-header .archetype { font-size: 12px; color: var(--jade); margin-left: 8px; }
+  .person-header .era-tag { font-size: 11px; color: var(--mist); margin-left: 8px; }
+  .person-header .first-person {
+    font-size: 13px; color: var(--mist); margin-top: 4px; font-style: italic;
+  }
+
+  /* Timeline area */
+  .timeline-scroll {
+    flex: 1; overflow-x: auto; overflow-y: hidden; position: relative;
+    cursor: grab; padding: 20px 0 16px;
+  }
+  .timeline-scroll:active { cursor: grabbing; }
+  .timeline-scroll::-webkit-scrollbar { height: 6px; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: var(--ruler); border-radius: 3px; }
+
+  /* Timeline content */
+  .timeline-inner { position: relative; height: 100%; min-width: 100%; }
+
+  /* Axis */
+  .axis {
+    position: absolute; top: 50%; left: 0; right: 0;
+    height: 2px; background: var(--accent);
+  }
+  .tick {
+    position: absolute; top: 50%; transform: translate(-50%, -50%);
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .tick .line { width: 1px; height: 12px; background: var(--ruler); margin-top: 2px; }
+  .tick .label { font-size: 10px; color: var(--mist); margin-top: 4px; white-space: nowrap; }
+
+  /* Event node */
+  .event-node {
+    position: absolute; top: 50%; transform: translate(-50%, -50%);
+    display: flex; flex-direction: column; align-items: center; cursor: pointer;
+    transition: transform 0.15s; z-index: 1;
+  }
+  .event-node:hover { transform: translate(-50%, -50%) scale(1.1); z-index: 10; }
+  .event-node .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--ink); border: 2px solid var(--paper); box-shadow: 0 0 0 1px var(--ink);
+  }
+  .event-node.highlight .dot {
+    width: 14px; height: 14px; background: var(--gold);
+    box-shadow: 0 0 0 2px var(--gold), 0 0 8px rgba(184,134,11,0.4);
+  }
+  .event-node.birth .dot, .event-node.death .dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--jade); box-shadow: 0 0 0 1px var(--jade);
+  }
+  .event-node.death .dot { background: var(--crimson); box-shadow: 0 0 0 1px var(--crimson); }
+  .event-node .title {
+    font-size: 11px; color: var(--ink); white-space: nowrap;
+    margin-top: 6px; max-width: 120px; overflow: hidden; text-overflow: ellipsis;
+  }
+  .event-node.highlight .title { color: var(--gold); font-weight: bold; }
+  .event-node .date-label { font-size: 9px; color: var(--mist); margin-top: 2px; }
+  /* Stagger above/below axis */
+  .event-node.above .title { margin-bottom: 6px; margin-top: 0; order: -1; }
+
+  /* Endeavor bars */
+  .endeavor-bar {
+    position: absolute; height: 6px; border-radius: 3px; opacity: 0.18;
+    top: 50%; transform: translateY(12px); z-index: 0;
+  }
+  .endeavor-bar.phase { opacity: 0.12; border-radius: 2px; height: 4px; }
+
+  /* Tooltip */
+  .tooltip {
+    position: fixed; z-index: 100; background: #fff; border: 1px solid var(--ruler);
+    padding: 10px 14px; border-radius: 4px; max-width: 360px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12); pointer-events: none;
+    font-size: 12px; line-height: 1.5; display: none;
+  }
+  .tooltip .t-title { font-weight: bold; color: var(--accent); margin-bottom: 4px; }
+  .tooltip .t-date { color: var(--mist); font-size: 11px; }
+  .tooltip .t-place { color: var(--jade); font-size: 11px; }
+  .tooltip .t-desc { margin-top: 6px; color: var(--ink); }
+  .tooltip .t-highlight { color: var(--gold); font-size: 11px; margin-top: 4px; font-style: italic; }
+
+  /* === RIGHT PANEL (detail) === */
+  .detail-panel {
+    width: 300px; flex-shrink: 0; overflow-y: auto; border-left: 1px solid var(--ruler);
+    padding: 16px; background: #faf6ee; font-size: 12px; line-height: 1.6;
+  }
+  .detail-panel h3 { font-size: 13px; color: var(--accent); margin-bottom: 8px; }
+  .detail-panel .section { margin-bottom: 14px; }
+  .detail-panel .phase-item {
+    padding: 4px 0; border-bottom: 1px solid var(--dim);
+  }
+  .phase-item .ph-name { font-weight: bold; }
+  .phase-item .ph-hl { color: var(--gold); font-style: italic; }
+  .highlight-list { list-style: none; }
+  .highlight-list li { padding: 3px 0; border-bottom: 1px dotted var(--ruler); }
+  .hl-type { font-size: 10px; background: var(--gold); color: #fff; border-radius: 8px; padding: 1px 5px; margin-right: 4px; }
+
+  /* keyboard hint */
+  .kb-hint {
+    position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+    font-size: 10px; color: var(--mist); pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>ArcVita</h1>
+  <span class="subtitle">成事儿时间轴 · 人物-时间-地点</span>
+  <span class="stats" id="stats"></span>
+</header>
+
+<div class="main">
+  <nav class="sidebar" id="sidebar"></nav>
+
+  <div class="center">
+    <div class="person-header" id="personHeader"></div>
+    <div class="timeline-scroll" id="timelineScroll">
+      <div class="timeline-inner" id="timelineInner"></div>
+      <div class="kb-hint">← → 选择人物 · 滚轮水平移动 · 点击事件查看详情</div>
+    </div>
+  </div>
+
+  <aside class="detail-panel" id="detailPanel"></aside>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// === Data ===
+let INDEX = null;
+let PERSONS = {};   // qid -> data
+let CURRENT = null; // current person qid
+
+// === Init ===
+async function init() {
+  const r = await fetch('data/index.json');
+  INDEX = await r.json();
+  document.getElementById('stats').innerHTML =
+    `${INDEX.persons.length} 人物 · ${INDEX.events_count} 事件 · ${INDEX.highlights_count} 名场面`;
+  renderSidebar();
+  // load first person
+  const first = INDEX.persons[0];
+  if (first) selectPerson(first.qid);
+}
+
+// === Sidebar ===
+function renderSidebar() {
+  const el = document.getElementById('sidebar');
+  let html = '';
+  for (const [cent, info] of Object.entries(INDEX.centuries)) {
+    html += `<div class="century-group"><div class="century-label">${info.label}</div>`;
+    for (const pid of info.persons) {
+      const p = INDEX.persons.find(x => x.qid === pid);
+      if (!p) continue;
+      html += `<div class="person-item" data-qid="${p.qid}">
+        <span class="dot ${p.role}"></span>
+        <span>${p.name_zh}</span>
+        <span class="era">${p.archetype || ''}</span>
+        ${p.highlights_count > 0 ? `<span class="hl-count">${p.highlights_count}</span>` : ''}
+      </div>`;
+    }
+    html += `</div>`;
+  }
+  el.innerHTML = html;
+  el.querySelectorAll('.person-item').forEach(item => {
+    item.addEventListener('click', () => selectPerson(item.dataset.qid));
+  });
+}
+
+// === Select Person ===
+async function selectPerson(qid) {
+  CURRENT = qid;
+  // highlight sidebar
+  document.querySelectorAll('.person-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.qid === qid);
+  });
+  // load person data if not cached
+  if (!PERSONS[qid]) {
+    const r = await fetch(`data/persons/${qid}.json`);
+    PERSONS[qid] = await r.json();
+  }
+  const p = PERSONS[qid];
+  renderPersonHeader(p);
+  renderTimeline(p);
+  renderDetail(p);
+}
+
+// === Person Header ===
+function renderPersonHeader(p) {
+  document.getElementById('personHeader').innerHTML = `
+    <h2>${p.name_zh}</h2>
+    <span class="archetype">${p.archetype || ''}</span>
+    <span class="era-tag">${p.era || ''} · ${p.birth_date || '?'} → ${p.death_date || '?'}</span>
+    ${p.summary_first_person ? `<div class="first-person">"${p.summary_first_person}"</div>` : ''}
+  `;
+}
+
+// === Timeline (Poincaré compression) ===
+function renderTimeline(p) {
+  const container = document.getElementById('timelineInner');
+  const scroll = document.getElementById('timelineScroll');
+  const W = Math.max(1600, scroll.clientWidth * 1.5); // total width
+
+  // time range
+  const events = p.events || [];
+  const endeavors = p.endeavors || [];
+  const years = events.map(e => parseYear(e.date)).filter(y => y !== null);
+  if (years.length === 0) { container.innerHTML = '<div style="padding:40px;color:#999;text-align:center">暂无时间线数据</div>'; return; }
+  const minY = Math.min(...years);
+  const maxY = Math.max(...years);
+  const span = maxY - minY || 100;
+
+  // Poincaré compression: compress edges, expand center
+  // Use tanh-like mapping: x in [0,1] -> compressed [0,1]
+  function poicareMap(t) {
+    // t in [0,1]; center (0.5) maps to 0.5; edges compressed
+    const k = 2.5; // compression strength
+    const raw = (t - 0.5) * 2; // [-1,1]
+    const mapped = Math.tanh(k * raw) / Math.tanh(k); // [-1,1]
+    return (mapped + 1) / 2; // [0,1]
+  }
+
+  function yearToX(year) {
+    const t = (year - minY) / span;
+    const mapped = poicareMap(t);
+    return 80 + mapped * (W - 160); // margins
+  }
+
+  function parseYear(dateStr) {
+    if (!dateStr) return null;
+    const y = parseInt(dateStr.split('-')[0]);
+    return isNaN(y) ? null : y;
+  }
+
+  let html = '';
+
+  // Axis
+  html += `<div class="axis"></div>`;
+
+  // Ticks: pick reasonable intervals
+  const tickYears = [];
+  const step = span > 2000 ? 500 : span > 500 ? 100 : span > 100 ? 20 : 10;
+  const startTick = Math.ceil(minY / step) * step;
+  for (let y = startTick; y <= maxY; y += step) {
+    tickYears.push(y);
+  }
+  for (const y of tickYears) {
+    const x = yearToX(y);
+    const label = y < 0 ? `${Math.abs(y)} BCE` : `${y} CE`;
+    html += `<div class="tick" style="left:${x}px"><div class="line"></div><div class="label">${label}</div></div>`;
+  }
+
+  // Endeavor bars (color-coded by domain)
+  const domainColors = {
+    '军事/政治': '#8b4513', '政治/军事': '#8b4513', '政治': '#2e8b57',
+    '军事': '#8b0000', '科学': '#4169e1', '文化': '#8b4513', '文化/政治': '#6b4226',
+    '航海/外交': '#2e8b57', '艺术/科学': '#9370db', '商业/技术': '#daa520',
+    '思想': '#8b0000', '军事/文化': '#8b4513',
+  };
+  endeavors.forEach((ed, idx) => {
+    const sy = parseYear(ed.start_date);
+    const ey = parseYear(ed.end_date);
+    if (sy === null || ey === null) return;
+    const x1 = yearToX(sy);
+    const x2 = yearToX(ey);
+    const color = domainColors[ed.domain] || '#8b4513';
+    const offset = 14 + idx * 8;
+    html += `<div class="endeavor-bar" style="left:${x1}px;width:${Math.max(4, x2-x1)}px;top:calc(50% + ${offset}px);background:${color}" title="${ed.title_zh} (${ed.start_date}→${ed.end_date})"></div>`;
+    // Label
+    if (x2 - x1 > 40) {
+      html += `<div style="position:absolute;left:${x1+4}px;top:calc(50% + ${offset - 3}px);font-size:9px;color:${color};white-space:nowrap;pointer-events:none">${ed.title_zh}</div>`;
+    }
+  });
+
+  // Events
+  events.forEach((ev, idx) => {
+    const year = parseYear(ev.date);
+    if (year === null) return;
+    const x = yearToX(year);
+    const above = idx % 2 === 0;
+    const isHL = ev.is_highlight;
+    const isBirth = ev.event_type === '出生';
+    const isDeath = ev.event_type === '逝世';
+    const cls = [
+      'event-node',
+      above ? 'above' : '',
+      isHL ? 'highlight' : '',
+      isBirth ? 'birth' : '',
+      isDeath ? 'death' : '',
+    ].filter(Boolean).join(' ');
+
+    html += `<div class="${cls}" style="left:${x}px" data-idx="${idx}">
+      <div class="dot"></div>
+      <div class="title">${ev.title_zh}</div>
+      <div class="date-label">${ev.date || ''}</div>
+    </div>`;
+  });
+
+  container.style.width = W + 'px';
+  container.innerHTML = html;
+
+  // Tooltip
+  const tooltip = document.getElementById('tooltip');
+  container.querySelectorAll('.event-node').forEach(node => {
+    node.addEventListener('mouseenter', e => {
+      const idx = parseInt(node.dataset.idx);
+      const ev = events[idx];
+      if (!ev) return;
+      let t = `<div class="t-title">${ev.title_zh}</div>`;
+      t += `<div class="t-date">${ev.date || ''}</div>`;
+      if (ev.place_name) t += `<div class="t-place">📍 ${ev.place_name}</div>`;
+      if (ev.description_zh) t += `<div class="t-desc">${ev.description_zh}</div>`;
+      if (ev.is_highlight && ev.highlight_note) t += `<div class="t-highlight">★ ${ev.highlight_note}</div>`;
+      tooltip.innerHTML = t;
+      tooltip.style.display = 'block';
+    });
+    node.addEventListener('mousemove', e => {
+      tooltip.style.left = (e.clientX + 12) + 'px';
+      tooltip.style.top = (e.clientY - 8) + 'px';
+    });
+    node.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+  });
+
+  // Scroll to birth year
+  const birthX = yearToX(parseYear(p.birth_date) || minY);
+  scroll.scrollLeft = Math.max(0, birthX - scroll.clientWidth / 3);
+}
+
+// === Detail Panel ===
+function renderDetail(p) {
+  const el = document.getElementById('detailPanel');
+  let html = '';
+
+  // Summary
+  html += `<div class="section"><h3>人物</h3>`;
+  html += `<div style="margin-bottom:4px">${p.summary_zh || ''}</div>`;
+  html += `<div style="font-size:11px;color:var(--mist)">${p.role} · ${(p.dilemmas||[]).join('/')}</div>`;
+  if (p.lesson) html += `<div style="margin-top:6px;font-style:italic;color:var(--accent)">💡 ${p.lesson}</div>`;
+  html += `</div>`;
+
+  // Endeavors (成事儿周期)
+  if (p.endeavors && p.endeavors.length) {
+    html += `<div class="section"><h3>成事儿周期</h3>`;
+    p.endeavors.forEach(ed => {
+      html += `<div class="phase-item" style="margin-bottom:8px">`;
+      html += `<div class="ph-name">${ed.title_zh} <span style="font-weight:normal;color:var(--mist)">${ed.start_date||'?'}→${ed.end_date||'?'}</span></div>`;
+      if (ed.description_zh) html += `<div style="font-style:italic;margin:4px 0">${ed.description_zh}</div>`;
+      if (ed.phases && ed.phases.length) {
+        ed.phases.forEach(ph => {
+          html += `<div>· ${ph.name} <span style="color:var(--mist)">${ph.start_date||''}~${ph.end_date||''} ${ph.place||''}</span>`;
+          if (ph.highlight) html += `<span class="ph-hl"> ${ph.highlight}</span>`;
+          html += `</div>`;
+        });
+      }
+      if (ed.outcome) html += `<div style="color:var(--jade);margin-top:4px">结果: ${ed.outcome}</div>`;
+      if (ed.lesson) html += `<div style="color:var(--accent);font-size:11px">启发: ${ed.lesson}</div>`;
+      html += `</div>`;
+    });
+    html += `</div>`;
+  }
+
+  // Highlights
+  if (p.highlights && p.highlights.length) {
+    html += `<div class="section"><h3>名场面</h3><ul class="highlight-list">`;
+    p.highlights.forEach(h => {
+      html += `<li><span class="hl-type">${h.highlight_type||''}</span>${h.title_zh} <span style="color:var(--mist)">${h.date||''} ${h.place_name||''}</span>`;
+      if (h.highlight_note) html += `<div style="font-style:italic;color:var(--gold);font-size:11px">${h.highlight_note}</div>`;
+      html += `</li>`;
+    });
+    html += `</ul></div>`;
+  }
+
+  el.innerHTML = html;
+}
+
+// === Keyboard ===
+document.addEventListener('keydown', e => {
+  if (!INDEX) return;
+  const qids = INDEX.persons.map(p => p.qid);
+  const idx = qids.indexOf(CURRENT);
+  if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+    e.preventDefault();
+    selectPerson(qids[Math.min(idx + 1, qids.length - 1)]);
+  } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+    e.preventDefault();
+    selectPerson(qids[Math.max(idx - 1, 0)]);
+  }
+});
+
+// === Drag scroll ===
+(() => {
+  const el = document.getElementById('timelineScroll');
+  let isDown = false, startX, scrollLeft;
+  el.addEventListener('mousedown', e => {
+    isDown = true; startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft;
+  });
+  el.addEventListener('mouseleave', () => isDown = false);
+  el.addEventListener('mouseup', () => isDown = false);
+  el.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - el.offsetLeft;
+    el.scrollLeft = scrollLeft - (x - startX) * 1.5;
+  });
+})();
+
+init();
+</script>
+</body>
+</html>

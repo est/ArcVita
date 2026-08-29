@@ -1,0 +1,282 @@
+{
+  "ce0100": {
+    "label": "1世纪 CE",
+    "persons": [
+      {
+        "qid": "Q193533",
+        "name_zh": "张衡",
+        "archetype": "格物型",
+        "birth_date": "78-01-01",
+        "death_date": "139-01-01",
+        "events_count": 3,
+        "highlights_count": 1
+      }
+    ]
+  },
+  "ce0200": {
+    "label": "2世纪 CE",
+    "persons": [
+      {
+        "qid": "Q179544",
+        "name_zh": "诸葛亮",
+        "archetype": "统筹型",
+        "birth_date": "181-01-01",
+        "death_date": "234-10-08",
+        "events_count": 6,
+        "highlights_count": 4
+      }
+    ]
+  },
+  "ce0800": {
+    "label": "8世纪 CE",
+    "persons": [
+      {
+        "qid": "Q7074",
+        "name_zh": "李白",
+        "archetype": "表现型",
+        "birth_date": "701-01-01",
+        "death_date": "762-01-01",
+        "events_count": 5,
+        "highlights_count": 2
+      }
+    ]
+  },
+  "ce1200": {
+    "label": "12世纪 CE",
+    "persons": [
+      {
+        "qid": "Q720",
+        "name_zh": "成吉思汗",
+        "archetype": "组织型",
+        "birth_date": "1162-01-01",
+        "death_date": "1227-08-18",
+        "events_count": 3,
+        "highlights_count": 0
+      }
+    ]
+  },
+  "ce1400": {
+    "label": "14世纪 CE",
+    "persons": [
+      {
+        "qid": "Q133847",
+        "name_zh": "郑和",
+        "archetype": "开拓型",
+        "birth_date": "1371-01-01",
+        "death_date": "1433-01-01",
+        "events_count": 3,
+        "highlights_count": 1
+      }
+    ]
+  },
+  "ce1500": {
+    "label": "15世纪 CE",
+    "persons": [
+      {
+        "qid": "Q762",
+        "name_zh": "达·芬奇",
+        "archetype": "通才型",
+        "birth_date": "1452-04-15",
+        "death_date": "1519-05-02",
+        "events_count": 4,
+        "highlights_count": 2
+      },
+      {
+        "qid": "Q316452",
+        "name_zh": "王阳明",
+        "archetype": "知行型",
+        "birth_date": "1472-10-31",
+        "death_date": "1529-01-09",
+        "events_count": 5,
+        "highlights_count": 3
+      }
+    ]
+  },
+  "ce1700": {
+    "label": "17世纪 CE",
+    "persons": [
+      {
+        "qid": "Q935",
+        "name_zh": "牛顿",
+        "archetype": "体系型",
+        "birth_date": "1643-01-04",
+        "death_date": "1727-03-31",
+        "events_count": 4,
+        "highlights_count": 2
+      }
+    ]
+  },
+  "ce1800": {
+    "label": "18世纪 CE",
+    "persons": [
+      {
+        "qid": "Q517",
+        "name_zh": "拿破仑",
+        "archetype": "扩张型",
+        "birth_date": "1769-08-15",
+        "death_date": "1821-05-05",
+        "events_count": 4,
+        "highlights_count": 2
+      },
+      {
+        "qid": "Q334053",
+        "name_zh": "林则徐",
+        "archetype": "担当型",
+        "birth_date": "1785-08-30",
+        "death_date": "1850-11-22",
+        "events_count": 4,
+        "highlights_count": 2
+      }
+    ]
+  },
+  "ce1900": {
+    "label": "19世纪 CE",
+    "persons": [
+      {
+        "qid": "Q7186",
+        "name_zh": "居里夫人",
+        "archetype": "专精型",
+        "birth_date": "1867-11-07",
+        "death_date": "1934-07-04",
+        "events_count": 4,
+        "highlights_count": 2
+      },
+      {
+        "qid": "Q1001",
+        "name_zh": "甘地",
+        "archetype": "感召型",
+        "birth_date": "1869-10-02",
+        "death_date": "1948-01-30",
+        "events_count": 4,
+        "highlights_count": 1
+      },
+      {
+        "qid": "Q8016",
+        "name_zh": "丘吉尔",
+        "archetype": "领导型",
+        "birth_date": "1874-11-30",
+        "death_date": "1965-01-24",
+        "events_count": 3,
+        "highlights_count": 1
+      },
+      {
+        "qid": "Q937",
+        "name_zh": "爱因斯坦",
+        "archetype": "思想型",
+        "birth_date": "1879-03-14",
+        "death_date": "1955-04-18",
+        "events_count": 4,
+        "highlights_count": 2
+      },
+      {
+        "qid": "Q23114",
+        "name_zh": "鲁迅",
+        "archetype": "批判型",
+        "birth_date": "1881-09-25",
+        "death_date": "1936-10-19",
+        "events_count": 5,
+        "highlights_count": 2
+      },
+      {
+        "qid": "Q352",
+        "name_zh": "希特勒",
+        "archetype": "动员型",
+        "birth_date": "1889-04-20",
+        "death_date": "1945-04-30",
+        "events_count": 5,
+        "highlights_count": 0
+      }
+    ]
+  },
+  "ce2000": {
+    "label": "20世纪 CE",
+    "persons": [
+      {
+        "qid": "Q37230",
+        "name_zh": "邓小平",
+        "archetype": "转型型",
+        "birth_date": "1904-08-22",
+        "death_date": "1997-02-19",
+        "events_count": 5,
+        "highlights_count": 3
+      },
+      {
+        "qid": "Q184080",
+        "name_zh": "钱学森",
+        "archetype": "攻关型",
+        "birth_date": "1911-12-11",
+        "death_date": "2009-10-31",
+        "events_count": 4,
+        "highlights_count": 2
+      },
+      {
+        "qid": "Q8023",
+        "name_zh": "曼德拉",
+        "archetype": "和解型",
+        "birth_date": "1918-07-18",
+        "death_date": "2013-12-05",
+        "events_count": 4,
+        "highlights_count": 2
+      },
+      {
+        "qid": "Q334642",
+        "name_zh": "袁隆平",
+        "archetype": "深耕型",
+        "birth_date": "1930-09-07",
+        "death_date": "2021-05-22",
+        "events_count": 4,
+        "highlights_count": 1
+      },
+      {
+        "qid": "Q19837",
+        "name_zh": "乔布斯",
+        "archetype": "产品型",
+        "birth_date": "1955-02-24",
+        "death_date": "2011-10-05",
+        "events_count": 5,
+        "highlights_count": 3
+      }
+    ]
+  },
+  "unknown": {
+    "label": "年代不详",
+    "persons": [
+      {
+        "qid": "Q4604",
+        "name_zh": "孔子",
+        "archetype": "奠基型",
+        "birth_date": "-551-09-28",
+        "death_date": "-479-04-11",
+        "events_count": 5,
+        "highlights_count": 0
+      },
+      {
+        "qid": "Q162427",
+        "name_zh": "秦始皇",
+        "archetype": "统合型",
+        "birth_date": "-259-02-18",
+        "death_date": "-210-07-10",
+        "events_count": 5,
+        "highlights_count": 0
+      },
+      {
+        "qid": "Q913",
+        "name_zh": "苏格拉底",
+        "archetype": "诘问型",
+        "birth_date": "-470-01-01",
+        "death_date": "-399-01-01",
+        "events_count": 3,
+        "highlights_count": 1
+      },
+      {
+        "qid": "Q1048",
+        "name_zh": "凯撒",
+        "archetype": "决断型",
+        "birth_date": "-100-07-12",
+        "death_date": "-44-03-15",
+        "events_count": 4,
+        "highlights_count": 1
+      }
+    ]
+  }
+}

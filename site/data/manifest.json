@@ -1,0 +1,10 @@
+{
+  "total_events": 105,
+  "chunk_size": 60,
+  "chunks": [
+    "data/chunks/timeline.000.json",
+    "data/chunks/timeline.001.json"
+  ],
+  "total_persons": 25,
+  "highlights": 40
+}

@@ -92,8 +92,43 @@ def endeavors_for(qid: str) -> list[dict]:
     rows = [dict(r) for r in cur.fetchall()]
     con.close()
     for r in rows:
-        try:
-            r["places"] = json.loads(r["places"]) if r["places"] else []
-        except Exception:
-            pass
+        for k in ("places", "phases", "event_ids", "highlight_event_ids"):
+            try:
+                r[k] = json.loads(r[k]) if r[k] else []
+            except Exception:
+                r[k] = []
+    return rows
+
+
+def highlights_for(qid: str | None = None, highlight_type: str | None = None) -> list[dict]:
+    con = sqlite3.connect(DB)
+    con.row_factory = sqlite3.Row
+    cur = con.cursor()
+    q = "SELECT * FROM events WHERE is_highlight=1"
+    args: list = []
+    if qid:
+        q += " AND person_qid=?"
+        args.append(qid)
+    if highlight_type:
+        q += " AND highlight_type=?"
+        args.append(highlight_type)
+    q += " ORDER BY date"
+    cur.execute(q, args)
+    rows = [dict(r) for r in cur.fetchall()]
+    con.close()
+    return rows
+
+
+def chengshi_persons(public_only: bool = True) -> list[dict]:
+    vis = "WHERE visibility='public'" if public_only else ""
+    con = sqlite3.connect(DB)
+    con.row_factory = sqlite3.Row
+    cur = con.cursor()
+    cur.execute(f"SELECT * FROM persons {vis} ORDER BY qid")
+    rows = [dict(r) for r in cur.fetchall()]
+    # 优先返回有成事儿原型的
+    cur.execute(f"SELECT person_qid, COUNT(*) as c FROM endeavors {('JOIN persons p ON p.qid=person_qid ' + vis) if public_only else ''} GROUP BY person_qid")
+    cnt = {r["person_qid"]: r["c"] for r in cur.fetchall()}
+    con.close()
+    rows.sort(key=lambda r: (-(1 if r.get("archetype") else 0), -cnt.get(r["qid"], 0)))
     return rows
