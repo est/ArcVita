@@ -6,7 +6,8 @@
 <title>ArcVita · 成事儿时间轴</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
 <style>
-:root{--ink:#1a1a1a;--paper:#f5f0e8;--accent:#8b4513;--gold:#b8860b;--jade:#2e8b57;--crimson:#8b0000;--mist:#6b6b6b;--ruler:#d4c5a9;--dim:#e8e0d0;--row-h:52px}
+:root{--ink:#1a1a1a;--paper:#f5f0e8;--accent:#8b4513;--gold:#b8860b;--jade:#2e8b57;--crimson:#8b0000;--mist:#6b6b6b;--ruler:#d4c5a9;--dim:#e8e0d0;--row-h:50px;--hl-row-h:42px;
+--c-成语:#b8860b;--c-代表作:#4169e1;--c-战役:#8b0000;--c-决策:#2e8b57;--c-至暗时刻:#555;--c-名言:#9370db;--c-发明:#daa520;--c-制度:#8b4513;--c-演讲:#cd5c5c;--c-奖项:#4682b4;--c-远航:#2e8b57}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;overflow:hidden}
 body{font-family:'Noto Serif SC','Source Han Serif SC',Georgia,serif;background:var(--paper);color:var(--ink);display:flex;flex-direction:column}
@@ -14,28 +15,27 @@ header{padding:10px 20px;border-bottom:2px solid var(--accent);background:linear
 header h1{font-size:18px;letter-spacing:2px;color:var(--accent)}
 header .sub{font-size:11px;color:var(--mist)}
 header .stats{margin-left:auto;font-size:10px;color:var(--mist);text-align:right;line-height:1.4}
-/* filter bar */
-.filters{padding:6px 20px;border-bottom:1px solid var(--ruler);display:flex;gap:8px;align-items:center;flex-shrink:0;flex-wrap:wrap}
+.filters{padding:6px 20px;border-bottom:1px solid var(--ruler);display:flex;gap:6px;align-items:center;flex-shrink:0;flex-wrap:wrap}
 .filters label{font-size:11px;color:var(--mist)}
-.filter-btn{font-size:11px;padding:3px 10px;border:1px solid var(--ruler);border-radius:12px;background:transparent;cursor:pointer;color:var(--ink);transition:all .15s}
-.filter-btn:hover{background:var(--dim)}
-.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-/* era scrollbar */
-.era-bar{height:28px;border-bottom:1px solid var(--ruler);position:relative;flex-shrink:0;overflow:hidden}
-.era-seg{position:absolute;top:0;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--mist);border-right:1px solid var(--dim);cursor:pointer;transition:background .15s}
-.era-seg:hover{background:var(--dim)}
-.era-seg .cnt{font-size:9px;color:var(--gold);margin-left:3px}
-/* main timeline */
+.fb{font-size:11px;padding:3px 10px;border:1px solid var(--ruler);border-radius:12px;background:transparent;cursor:pointer;color:var(--ink);transition:all .15s}
+.fb:hover{background:var(--dim)}.fb.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .timeline-wrap{flex:1;overflow-x:auto;overflow-y:auto;position:relative;cursor:grab}
 .timeline-wrap:active{cursor:grabbing}
 .timeline-wrap::-webkit-scrollbar{width:8px;height:8px}
 .timeline-wrap::-webkit-scrollbar-thumb{background:var(--ruler);border-radius:4px}
 .tl-inner{position:relative}
 /* axis */
-.axis-row{position:sticky;top:0;z-index:5;height:36px;background:var(--paper);border-bottom:1px solid var(--ruler)}
+.axis-row{position:sticky;top:0;z-index:8;height:32px;background:var(--paper);border-bottom:1px solid var(--ruler)}
 .tick{position:absolute;transform:translateX(-50%);font-size:10px;color:var(--mist);white-space:nowrap}
 .tick .tl{display:block;text-align:center}
 .tick .line{width:1px;height:8px;background:var(--ruler);margin:2px auto 0}
+/*名场面轨道 */
+.hl-row{height:var(--hl-row-h);border-bottom:2px solid var(--gold);position:relative;background:#faf6ee}
+.hl-label{position:sticky;left:0;z-index:4;width:160px;min-width:160px;height:var(--hl-row-h);display:flex;align-items:center;padding:0 10px;background:#faf6ee;border-right:1px solid var(--ruler);font-size:12px;font-weight:bold;color:var(--gold)}
+.hl-track{position:absolute;top:0;left:160px;right:0;height:var(--hl-row-h)}
+.hl-dot{position:absolute;transform:translateX(-50%);cursor:pointer;z-index:3;transition:transform .12s;border-radius:3px}
+.hl-dot:hover{transform:translateX(-50%) scale(1.5);z-index:10}
+.hl-dot .lbl{position:absolute;top:-14px;left:50%;transform:translateX(-50%);font-size:8px;white-space:nowrap;max-width:90px;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
 /* person rows */
 .p-row{position:relative;border-bottom:1px solid #f0e8d8}
 .p-row:hover{background:#faf6ee}
@@ -45,9 +45,7 @@ header .stats{margin-left:auto;font-size:10px;color:var(--mist);text-align:right
 .p-label .dot.模范{background:var(--jade)}.p-label .dot.教训{background:var(--crimson)}.p-label .dot.中性{background:var(--mist)}
 .p-label .arch{font-size:9px;color:var(--mist)}
 .p-track{position:absolute;top:0;left:160px;right:0;height:var(--row-h)}
-/* lifespan bar */
 .lifespan{position:absolute;top:calc(var(--row-h)/2 - 2px);height:4px;border-radius:2px;opacity:.25}
-/* event dots */
 .ev-dot{position:absolute;top:calc(var(--row-h)/2 - 5px);width:10px;height:10px;border-radius:50%;transform:translateX(-50%);cursor:pointer;z-index:2;transition:transform .12s}
 .ev-dot:hover{transform:translateX(-50%) scale(1.4);z-index:10}
 .ev-dot.normal{background:var(--ink);border:2px solid var(--paper)}
@@ -56,293 +54,195 @@ header .stats{margin-left:auto;font-size:10px;color:var(--mist);text-align:right
 .ev-dot.death{background:var(--crimson);box-shadow:0 0 0 1px var(--crimson)}
 .ev-age{position:absolute;top:calc(var(--row-h)/2 + 8px);left:50%;transform:translateX(-50%);font-size:8px;color:var(--mist);white-space:nowrap}
 .ev-title{position:absolute;top:calc(var(--row-h)/2 - 20px);left:50%;transform:translateX(-50%);font-size:10px;color:var(--ink);white-space:nowrap;max-width:100px;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
-.ev-dot.highlight + .ev-title{color:var(--gold);font-weight:bold}
-/* tooltip */
+.ev-dot.highlight+.ev-title{color:var(--gold);font-weight:bold}
 .tip{position:fixed;z-index:100;background:#fff;border:1px solid var(--ruler);padding:10px 14px;border-radius:4px;max-width:380px;box-shadow:0 4px 16px rgba(0,0,0,.12);pointer-events:none;font-size:12px;line-height:1.5;display:none}
-.tip .t-name{font-weight:bold;color:var(--accent)}
-.tip .t-date{color:var(--mist);font-size:11px}
-.tip .t-place{color:var(--jade);font-size:11px}
-.tip .t-desc{margin-top:4px}
-.tip .t-hl{color:var(--gold);font-style:italic;font-size:11px;margin-top:4px}
-.tip .t-age{color:var(--crimson);font-size:11px}
-/* detail panel */
+.tip .t-name{font-weight:bold;color:var(--accent)}.tip .t-date{color:var(--mist);font-size:11px}.tip .t-place{color:var(--jade);font-size:11px}.tip .t-desc{margin-top:4px}.tip .t-hl{color:var(--gold);font-style:italic;font-size:11px;margin-top:4px}.tip .t-age{color:var(--crimson);font-size:11px}
 .detail{position:fixed;right:0;top:0;bottom:0;width:320px;background:#faf6ee;border-left:1px solid var(--ruler);z-index:20;overflow-y:auto;padding:16px;font-size:12px;line-height:1.6;display:none;box-shadow:-4px 0 16px rgba(0,0,0,.08)}
-.detail.open{display:block}
-.detail .close{position:absolute;top:8px;right:12px;font-size:18px;cursor:pointer;color:var(--mist)}
-.detail h3{font-size:14px;color:var(--accent);margin-bottom:8px}
-.detail .fp{font-style:italic;color:var(--mist);margin-bottom:10px}
-.detail .section{margin-bottom:14px}
-.detail .ph{padding:4px 0;border-bottom:1px solid var(--dim)}
-.detail .ph b{color:var(--ink)}
-.detail .ph .hl{color:var(--gold);font-style:italic;font-size:11px}
-.hl-tag{font-size:9px;background:var(--gold);color:#fff;border-radius:8px;padding:1px 5px;margin-right:3px}
+.detail.open{display:block}.detail .close{position:absolute;top:8px;right:12px;font-size:18px;cursor:pointer;color:var(--mist)}.detail h3{font-size:14px;color:var(--accent);margin-bottom:8px}.detail .fp{font-style:italic;color:var(--mist);margin-bottom:10px}.detail .section{margin-bottom:14px}.detail .ph{padding:4px 0;border-bottom:1px solid var(--dim)}.detail .ph b{color:var(--ink)}.detail .ph .hl{color:var(--gold);font-style:italic;font-size:11px}
+.hl-tag{font-size:9px;border-radius:8px;padding:1px 5px;margin-right:3px;color:#fff}
 </style>
 </head>
 <body>
 <header>
   <h1>ArcVita</h1>
-  <span class="sub">成事儿时间轴 · 人物×年龄×公元</span>
+  <span class="sub">成事儿时间轴 · 名场面×人物×公元</span>
   <span class="stats" id="stats"></span>
 </header>
 <div class="filters" id="filters"></div>
-<div class="era-bar" id="eraBar"></div>
-
 <div class="timeline-wrap" id="wrap">
-  <div class="tl-inner" id="inner">
-    <div class="axis-row" id="axisRow"></div>
-  </div>
+  <div class="tl-inner" id="inner"></div>
 </div>
-
 <div class="tip" id="tip"></div>
-<div class="detail" id="detail"><span class="close" onclick="closeDetail()">×</span><div id="detailContent"></div></div>
+<div class="detail" id="detail"><span class="close" onclick="closeDetail()">×</span><div id="dc"></div></div>
 
 <script>
-let DATA={persons:[],events:[],highlights:[],index:null};
-let activeEra=null, activeRole=null, filtered=[];
+let DATA={persons:[],events:[],highlights:[]};
+let activeRole=null,filtered=[];
 
 function py(s){if(!s)return null;const m=s.replace(/约/g,'').match(/^-?\d+/);return m?parseInt(m[0]):null}
-function ageAt(birthYear,evtYear){if(!birthYear||!evtYear)return null;return evtYear-birthYear}
-
-// Poincaré compression: compress edges, expand center
+function ageAt(b,y){return b&&y?y-b:null}
 function poicare(t,k=2.2){return(Math.tanh(k*(t*2-1))/Math.tanh(k)+1)/2}
+const HL_COLORS={'成语':'var(--c-成语)','代表作':'var(--c-代表作)','战役':'var(--c-战役)','决策':'var(--c-决策)','至暗时刻':'var(--c-至暗时刻)','名言':'var(--c-名言)','发明':'var(--c-发明)','制度':'var(--c-制度)','演讲':'var(--c-演讲)','奖项':'var(--c-奖项)','远航':'var(--c-远航)'};
 
 async function init(){
   const r=await fetch('data/index.json');DATA.index=await r.json();
+  for(const p of DATA.index.persons){try{const r=await fetch(`data/${p.year_dir}/${p.name_zh}.yaml`);DATA.persons.push(await r.json())}catch(e){}}
+  const r3=await fetch('data/timeline.jsonl');DATA.events=r3.text().trim().split('\n').map(l=>JSON.parse(l));
   const r2=await fetch('data/highlights.json');DATA.highlights=await r2.json();
-  // load all person files
-  const ps=DATA.index.persons;
-  for(const p of ps){
-    try{const r=await fetch(`data/persons/${p.qid}.json`);DATA.persons.push(await r.json())}catch(e){}
-  }
-  // load all events
-  const r3=await fetch('data/timeline.jsonl');const text=await r3.text();
-  DATA.events=text.trim().split('\n').map(l=>JSON.parse(l));
-  // sort events by date
   DATA.events.sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999'));
-
-  document.getElementById('stats').innerHTML=
-    `${DATA.persons.length}人物 · ${DATA.events.length}事件 · ${DATA.highlights.length}名场面`;
-  renderFilters();renderEraBar();renderTimeline();
+  document.getElementById('stats').innerHTML=`${DATA.persons.length}人物 · ${DATA.events.length}事件 · ${DATA.highlights.length}名场面`;
+  renderFilters();applyFilter();
 }
 
 function renderFilters(){
-  const archs=[...new Set(DATA.persons.map(p=>p.archetype).filter(Boolean))];
   const roles=[...new Set(DATA.persons.map(p=>p.role).filter(Boolean))];
   let h='<label>角色:</label>';
-  roles.forEach(r=>{h+=`<button class="filter-btn" data-role="${r}">${r}</button>`});
-  h+='<label style="margin-left:12px">原型:</label>';
-  archs.forEach(a=>{h+=`<button class="filter-btn" data-arch="${a}">${a}</button>`});
-  h+=`<button class="filter-btn active" data-role="all" style="margin-left:12px">全部</button>`;
+  roles.forEach(r=>{h+=`<button class="fb" data-role="${r}">${r}</button>`});
+  h+=`<button class="fb active" data-role="all" style="margin-left:8px">全部</button>`;
   document.getElementById('filters').innerHTML=h;
-  document.querySelectorAll('.filter-btn').forEach(b=>{
-    b.addEventListener('click',()=>{
-      if(b.dataset.role){
-        activeRole=b.dataset.role==='all'?null:b.dataset.role;
-        document.querySelectorAll('.filter-btn[data-role]').forEach(x=>x.classList.remove('active'));
-        b.classList.add('active');
-      }
-      applyFilter();
-    });
-  });
+  document.querySelectorAll('.fb').forEach(b=>{b.addEventListener('click',()=>{
+    if(b.dataset.role){activeRole=b.dataset.role==='all'?null:b.dataset.role;document.querySelectorAll('.fb[data-role]').forEach(x=>x.classList.remove('active'));b.classList.add('active')}
+    applyFilter();
+  })});
 }
 
 function applyFilter(){
-  filtered=DATA.persons.filter(p=>{
-    if(activeRole && p.role!==activeRole)return false;
-    return true;
-  });
+  filtered=DATA.persons.filter(p=>{if(activeRole&&p.role!==activeRole)return false;return true});
   renderTimeline();
-}
-
-function renderEraBar(){
-  const centuries={};
-  DATA.persons.forEach(p=>{
-    const by=py(p.birth_date);
-    if(!by)return;
-    const c=Math.floor(by/100)*100;
-    const k=c<0?`bce${Math.abs(c)}`:`ce${c}`;
-    if(!centuries[k])centuries[k]={label:c<0?`${Math.abs(c)/100}世纪BCE`:`${c/100+1}世纪`,count:0,year:c};
-    centuries[k].count++;
-  });
-  const sorted=Object.entries(centuries).sort((a,b)=>a[1].year-b[1].year);
-  const total=sorted.reduce((s,[,v])=>s+v.count,0);
-  let h='';let x=0;
-  sorted.forEach(([k,v])=>{
-    const w=v.count/total*100;
-    h+=`<div class="era-seg" style="left:${x}%;width:${w}%" data-era="${k}">${v.label}<span class="cnt">${v.count}</span></div>`;
-    x+=w;
-  });
-  document.getElementById('eraBar').innerHTML=h;
-  document.querySelectorAll('.era-seg').forEach(s=>{
-    s.addEventListener('click',()=>{
-      const era=s.dataset.era;
-      // find first person in this era and scroll to them
-      const ep=filtered.find(p=>{
-        const by=py(p.birth_date);if(!by)return false;
-        const c=Math.floor(by/100)*100;
-        const k=c<0?`bce${Math.abs(c)}`:`ce${c}`;
-        return k===era;
-      });
-      if(ep){
-        const row=document.querySelector(`[data-qid="${ep.qid}"]`);
-        if(row)row.scrollIntoView({behavior:'smooth',block:'center'});
-      }
-    });
-  });
 }
 
 function renderTimeline(){
   const inner=document.getElementById('inner');
-  const years=DATA.events.map(e=>py(e.date)).filter(y=>y!==null);
-  if(!years.length)return;
-  const minY=Math.min(...years), maxY=Math.max(...years);
+  const allYears=[...DATA.events.map(e=>py(e.date)),...DATA.highlights.map(h=>py(h.date))].filter(Boolean);
+  if(!allYears.length)return;
+  const minY=Math.min(...allYears),maxY=Math.max(...allYears);
   const span=maxY-minY||100;
   const W=Math.max(2400,span*2);
-  const ROW_H=52;
-  const LABEL_W=160;
+  const LH=42,RH=50,LABEL_W=160;
 
   // ticks
   const step=span>2000?500:span>500?100:span>100?20:10;
   let ticks='';for(let y=Math.ceil(minY/step)*step;y<=maxY;y+=step){
     const x=80+poicare((y-minY)/span)*(W-160);
-    const label=y<0?`${Math.abs(y)} BCE`:`${y}`;
-    ticks+=`<div class="tick" style="left:${x}px"><span class="tl">${label}</span><div class="line"></div></div>`;
+    ticks+=`<div class="tick" style="left:${x}px"><span class="tl">${y<0?Math.abs(y)+' BCE':y}</span><div class="line"></div></div>`;
   }
-  document.getElementById('axisRow').style.width=W+'px';
-  document.getElementById('axisRow').innerHTML=ticks;
+
+  // 名场面轨道
+  let hlRow=`<div class="hl-row" style="width:${W}px"><div class="hl-label">名场面</div><div class="hl-track">`;
+  DATA.highlights.forEach(h=>{
+    const hy=py(h.date);if(!hy)return;
+    const hx=80+poicare((hy-minY)/span)*(W-160);
+    const col=HL_COLORS[h.highlight_type]||'var(--gold)';
+    // find person name
+    const pname=DATA.index.persons.find(p=>p.qid===h.person_qid)?.name_zh||'';
+    hlRow+=`<div class="hl-dot" style="left:${hx}px;background:${col};width:12px;height:12px;top:15px" data-qid="${h.person_qid}" data-date="${h.date}" data-title="${h.title_zh}" data-type="${h.highlight_type||''}" data-note="${h.highlight_note||''}" data-person="${pname}">
+      <div class="lbl" style="color:${col}">${h.title_zh}</div>
+    </div>`;
+  });
+  hlRow+=`</div></div>`;
 
   // person rows
-  if(!filtered.length)filtered=DATA.persons;
   let rows='';let rowIdx=0;
+  if(!filtered.length)filtered=DATA.persons;
   filtered.forEach(p=>{
-    const by=py(p.birth_date), dy=py(p.death_date);
+    const by=py(p.birth_date),dy=py(p.death_date);
     if(!by)return;
     const endYear=dy||by+80;
     const pEvents=DATA.events.filter(e=>e.person_qid===p.qid);
     const pEds=(p.endeavors||[]);
-
-    // lifespan bar
     const x1=80+poicare((by-minY)/span)*(W-160);
     const x2=80+poicare((endYear-minY)/span)*(W-160);
     const roleClass=p.role||'中性';
-
-    let track='';
-    // lifespan
-    track+=`<div class="lifespan" style="left:${x1}px;width:${Math.max(4,x2-x1)}px;background:var(--accent)"></div>`;
-
-    // endeavor bars
+    let track=`<div class="lifespan" style="left:${x1}px;width:${Math.max(4,x2-x1)}px;background:var(--accent)"></div>`;
     const edColors={'军事/政治':'#8b4513','政治/军事':'#8b4513','政治':'#2e8b57','军事':'#8b0000','科学':'#4169e1','文化':'#8b4513','文化/政治':'#6b4226','航海/外交':'#2e8b57','艺术/科学':'#9370db','商业/技术':'#daa520','思想':'#8b0000'};
     pEds.forEach((ed,ei)=>{
-      const esy=py(ed.start_date),eey=py(ed.end_date);
-      if(!esy||!eey)return;
+      const esy=py(ed.start_date),eey=py(ed.end_date);if(!esy||!eey)return;
       const ex1=80+poicare((esy-minY)/span)*(W-160);
       const ex2=80+poicare((eey-minY)/span)*(W-160);
-      const c=edColors[ed.domain]||'var(--accent)';
-      const off=14+ei*6;
-      track+=`<div style="position:absolute;left:${ex1}px;top:calc(var(--row-h)/2+${off}px);width:${Math.max(2,ex2-ex1)}px;height:4px;border-radius:2px;background:${c};opacity:.18" title="${ed.title_zh} (${ed.start_date}→${ed.end_date})"></div>`;
+      track+=`<div style="position:absolute;left:${ex1}px;top:calc(var(--row-h)/2+${14+ei*6}px);width:${Math.max(2,ex2-ex1)}px;height:4px;border-radius:2px;background:${edColors[ed.domain]||'var(--accent)'};opacity:.18" title="${ed.title_zh}"></div>`;
     });
-
-    // event dots
     pEvents.forEach(ev=>{
       const ey=py(ev.date);if(!ey)return;
       const ex=80+poicare((ey-minY)/span)*(W-160);
       const age=ageAt(by,ey);
       const cls=ev.is_highlight?'highlight':ev.event_type==='出生'?'birth':ev.event_type==='逝世'?'death':'normal';
       track+=`<div class="ev-dot ${cls}" style="left:${ex}px" data-qid="${p.qid}" data-date="${ev.date}" data-title="${ev.title_zh||''}" data-place="${ev.place_name||''}" data-desc="${(ev.description||ev.description_zh||'').replace(/"/g,'&quot;')}" data-hl="${ev.highlight_note||''}" data-age="${age??''}" data-type="${ev.highlight_type||ev.event_type||''}"></div>`;
-      if(age!==null&&age>=0&&ev.title_zh){
-        track+=`<div class="ev-title" style="left:${ex}px">${ev.title_zh}</div>`;
-        track+=`<div class="ev-age" style="left:${ex}px">${age}岁</div>`;
-      }
+      if(age!==null&&age>=0&&ev.title_zh){track+=`<div class="ev-title" style="left:${ex}px">${ev.title_zh}</div>`;track+=`<div class="ev-age" style="left:${ex}px">${age}岁</div>`}
     });
-
-    rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${ROW_H}px">
-      <div class="p-label" onclick="showDetail('${p.qid}')"><span class="dot ${roleClass}"></span>${p.name_zh}<span class="arch">${p.archetype||''}</span></div>
-      <div class="p-track" style="width:${W-LABEL_W}px">${track}</div>
-    </div>`;
+    rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${RH}px"><div class="p-label" onclick="showDetail('${p.qid}')"><span class="dot ${roleClass}"></span>${p.name_zh}<span class="arch">${p.archetype||''}</span></div><div class="p-track" style="width:${W-LABEL_W}px">${track}</div></div>`;
     rowIdx++;
   });
 
-  // rebuild inner
-  inner.innerHTML=`<div class="axis-row" id="axisRow" style="width:${W}px">${ticks}</div>${rows}`;
+  inner.innerHTML=`<div class="axis-row" style="width:${W}px">${ticks}</div>${hlRow}${rows}`;
   inner.style.width=W+'px';
-  inner.style.height=(36+rowIdx*ROW_H)+'px';
+  inner.style.height=(32+LH+rowIdx*RH)+'px';
 
   // tooltips
   const tip=document.getElementById('tip');
-  inner.querySelectorAll('.ev-dot').forEach(d=>{
+  inner.querySelectorAll('.ev-dot,.hl-dot').forEach(d=>{
     d.addEventListener('mouseenter',e=>{
-      const age=d.dataset.age;
-      let t=`<div class="t-name">${d.dataset.title}</div>`;
-      t+=`<div class="t-date">${d.dataset.date}</div>`;
-      if(age&&age!=='')t+=`<div class="t-age">${age}岁</div>`;
-      if(d.dataset.place)t+=`<div class="t-place">📍 ${d.dataset.place}</div>`;
-      if(d.dataset.desc)t+=`<div class="t-desc">${d.dataset.desc}</div>`;
-      if(d.dataset.hl)t+=`<div class="t-hl">★ ${d.dataset.hl}</div>`;
+      let t='';
+      if(d.classList.contains('hl-dot')){
+        t=`<div class="t-name">${d.dataset.title}</div><div class="t-date">${d.dataset.date}</div><div class="t-name" style="color:var(--jade);font-size:11px">${d.dataset.person}</div><div class="t-hl">${d.dataset.type} · ${d.dataset.note}</div>`;
+      }else{
+        const age=d.dataset.age;
+        t=`<div class="t-name">${d.dataset.title}</div><div class="t-date">${d.dataset.date}</div>`;
+        if(age&&age!=='')t+=`<div class="t-age">${age}岁</div>`;
+        if(d.dataset.place)t+=`<div class="t-place">📍 ${d.dataset.place}</div>`;
+        if(d.dataset.desc)t+=`<div class="t-desc">${d.dataset.desc}</div>`;
+        if(d.dataset.hl)t+=`<div class="t-hl">★ ${d.dataset.hl}</div>`;
+      }
       tip.innerHTML=t;tip.style.display='block';
     });
     d.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px'});
     d.addEventListener('mouseleave',()=>{tip.style.display='none'});
+    // click名场面 dot -> scroll to person
+    if(d.classList.contains('hl-dot')){
+      d.addEventListener('click',()=>{const row=document.querySelector(`.p-row[data-qid="${d.dataset.qid}"]`);if(row)row.scrollIntoView({behavior:'smooth',block:'center'})});
+    }
   });
 }
 
 function showDetail(qid){
   const p=DATA.persons.find(x=>x.qid===qid);if(!p)return;
-  const el=document.getElementById('detailContent');
+  const el=document.getElementById('dc');
   let h=`<h3>${p.name_zh} ${p.archetype?'<span style="color:var(--jade);font-size:12px">'+p.archetype+'</span>':''}</h3>`;
   h+=`<div style="font-size:11px;color:var(--mist)">${p.era||''} · ${p.birth_date||'?'} → ${p.death_date||'?'}</div>`;
   if(p.summary_first_person)h+=`<div class="fp">"${p.summary_first_person}"</div>`;
   if(p.summary_zh)h+=`<div style="margin-bottom:10px">${p.summary_zh}</div>`;
   if(p.lesson)h+=`<div style="color:var(--accent);margin-bottom:10px">💡 ${p.lesson}</div>`;
   if(p.dilemmas&&p.dilemmas.length)h+=`<div style="margin-bottom:10px"><b>境遇:</b> ${p.dilemmas.join(' / ')}</div>`;
-
-  // endeavors
   if(p.endeavors&&p.endeavors.length){
     h+=`<div class="section"><h3>成事儿周期</h3>`;
     p.endeavors.forEach(ed=>{
       h+=`<div class="ph"><b>${ed.title_zh}</b> <span style="color:var(--mist)">${ed.start_date||'?'}→${ed.end_date||'?'}</span>`;
       if(ed.description_zh)h+=`<div style="font-style:italic;margin:4px 0">${ed.description_zh}</div>`;
-      if(ed.phases&&ed.phases.length){
-        ed.phases.forEach(ph=>{
-          h+=`<div>· ${ph.name} <span style="color:var(--mist)">${ph.start_date||''}~${ph.end_date||''} ${ph.place||''}</span>`;
-          if(ph.highlight)h+=`<span class="hl"> ${ph.highlight}</span>`;
-          h+=`</div>`;
-        });
-      }
+      if(ed.phases&&ed.phases.length)ed.phases.forEach(ph=>{h+=`<div>· ${ph.name} <span style="color:var(--mist)">${ph.start_date||''}~${ph.end_date||''} ${ph.place||''}</span>`;if(ph.highlight)h+=`<span class="hl"> ${ph.highlight}</span>`;h+=`</div>`});
       if(ed.outcome)h+=`<div style="color:var(--jade)">结果: ${ed.outcome}</div>`;
       if(ed.lesson)h+=`<div style="color:var(--accent);font-size:11px">启发: ${ed.lesson}</div>`;
       h+=`</div>`;
     });
     h+=`</div>`;
   }
-
-  // highlights
   if(p.highlights&&p.highlights.length){
     h+=`<div class="section"><h3>名场面</h3>`;
     p.highlights.forEach(hl=>{
-      h+=`<div><span class="hl-tag">${hl.highlight_type||''}</span>${hl.title_zh} <span style="color:var(--mist)">${hl.date||''} ${hl.place_name||''}</span>`;
+      const col=HL_COLORS[hl.highlight_type]||'var(--gold)';
+      h+=`<div><span class="hl-tag" style="background:${col}">${hl.highlight_type||''}</span>${hl.title_zh} <span style="color:var(--mist)">${hl.date||''} ${hl.place_name||''}</span>`;
       if(hl.highlight_note)h+=`<div style="font-style:italic;color:var(--gold);font-size:11px">${hl.highlight_note}</div>`;
       h+=`</div>`;
     });
     h+=`</div>`;
   }
-
   el.innerHTML=h;
   document.getElementById('detail').classList.add('open');
 }
 function closeDetail(){document.getElementById('detail').classList.remove('open')}
-
-// Keyboard
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeDetail();
-});
-
-// Drag scroll
-(()=>{const el=document.getElementById('wrap');let down=false,sx,sl;
-el.addEventListener('mousedown',e=>{down=true;sx=e.pageX-el.offsetLeft;sl=el.scrollLeft});
-el.addEventListener('mouseleave',()=>down=false);
-el.addEventListener('mouseup',()=>down=false);
-el.addEventListener('mousemove',e=>{if(!down)return;e.preventDefault();el.scrollLeft=sl-(e.pageX-el.offsetLeft-sx)*1.5});
-})();
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail()});
+(()=>{const el=document.getElementById('wrap');let d=false,sx,sl;
+el.addEventListener('mousedown',e=>{d=true;sx=e.pageX-el.offsetLeft;sl=el.scrollLeft});
+el.addEventListener('mouseleave',()=>d=false);el.addEventListener('mouseup',()=>d=false);
+el.addEventListener('mousemove',e=>{if(!d)return;e.preventDefault();el.scrollLeft=sl-(e.pageX-el.offsetLeft-sx)*1.5});})();
 
 init();
 </script>
