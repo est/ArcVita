@@ -8,8 +8,8 @@ function ageAt(b,y){return b&&y?y-b:null}
 const HL_COLORS={'成语':'var(--c-成语)','代表作':'var(--c-代表作)','战役':'var(--c-战役)','决策':'var(--c-决策)','至暗时刻':'var(--c-至暗时刻)','名言':'var(--c-名言)','发明':'var(--c-发明)','制度':'var(--c-制度)','演讲':'var(--c-演讲)','奖项':'var(--c-奖项)','远航':'var(--c-远航)','朝代更替':'var(--c-朝代更替)','社会变革':'var(--c-社会变革)','文化':'var(--c-文化)','王表':'var(--c-王表)'};
 const BASE_PX=10; // 1x = 10px/年
 
-async function fetchJSON(url){const r=await fetch(url+'?'+Date.now());if(!r.ok)throw new Error(`${url} ${r.status}`);return r.json()}
-async function fetchText(url){const r=await fetch(url+'?'+Date.now());if(!r.ok)throw new Error(`${url} ${r.status}`);return r.text()}
+async function fetchJSON(url){const r=await fetch(url);if(!r.ok)throw new Error(`${url} ${r.status}`);return r.json()}
+async function fetchText(url){const r=await fetch(url);if(!r.ok)throw new Error(`${url} ${r.status}`);return r.text()}
 
 async function init(){
   try{
