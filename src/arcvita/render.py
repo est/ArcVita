@@ -2,20 +2,22 @@ from __future__ import annotations
 
 import json
 import sqlite3
-import yaml
 from pathlib import Path
+
+import yaml
 
 DB = Path("data/biography.db")
 
 
-def _db():
-    con = sqlite3.connect(DB)
+def _db(db_path: Path | None = None):
+    p = Path(db_path) if db_path else DB
+    con = sqlite3.connect(p)
     con.row_factory = sqlite3.Row
     return con
 
 
-def build_highlights():
-    con = _db()
+def build_highlights(db_path: Path | None = None, out_path: Path | None = None):
+    con = _db(db_path)
     cur = con.cursor()
     cur.execute("SELECT * FROM events WHERE is_highlight=1 ORDER BY date")
     rows = [dict(r) for r in cur.fetchall()]
@@ -35,9 +37,23 @@ def build_highlights():
             }
         )
     # 合并历史背景事件（王表/朝代更替/社会变革等）
+    # try out_path sibling dir first, fallback to default data/processed
+    search_dirs = []
+    if out_path is not None:
+        search_dirs.append(Path(out_path).parent)
+    search_dirs.append(Path("data/processed"))
     for src in ("historical_contexts.yaml", "king_tables.yaml"):
-        src_path = Path(f"data/processed/{src}")
-        if not src_path.exists():
+        src_path = None
+        for d in search_dirs:
+            cand = d / src
+            if cand.exists():
+                src_path = cand
+                break
+            cand2 = Path(f"data/processed/{src}")
+            if cand2.exists():
+                src_path = cand2
+                break
+        if src_path is None or not src_path.exists():
             continue
         data = yaml.safe_load(src_path.read_text(encoding="utf-8")) or []
         for item in data:
@@ -65,18 +81,18 @@ def build_highlights():
                 if "person_qid" not in item:
                     item["person_qid"] = "_context"
                 out.append(item)
-    p = Path("data/processed/highlights.yaml")
+    p = Path(out_path) if out_path else Path("data/processed/highlights.yaml")
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(yaml.safe_dump(out, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
     return len(out)
 
 
-def build_timelines():
-    con = _db()
+def build_timelines(db_path: Path | None = None, out_dir: Path | None = None):
+    con = _db(db_path)
     cur = con.cursor()
     cur.execute("SELECT qid, name_zh, era, archetype, summary_zh FROM persons ORDER BY qid")
     persons = [dict(r) for r in cur.fetchall()]
-    outdir = Path("data/processed/timelines")
+    outdir = Path(out_dir) if out_dir else Path("data/processed/timelines")
     outdir.mkdir(parents=True, exist_ok=True)
     for p in persons:
         qid = p["qid"]

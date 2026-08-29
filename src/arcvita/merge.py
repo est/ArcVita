@@ -1,7 +1,9 @@
 """合并 extracted YAML → curated → persons.yaml"""
 from __future__ import annotations
-import yaml, pathlib
-from arcvita.models import Endeavor, Event, Person
+
+import pathlib
+
+import yaml
 
 EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han"), pathlib.Path("data/extracted/king_tables")]
 CURATED_DIR = pathlib.Path("data/curated/classical")
@@ -35,7 +37,7 @@ def validate_person(data: dict) -> list[str]:
         issues.append("缺 name_zh")
     if not p.get("birth_date") and not p.get("era"):
         issues.append("缺 birth_date 和 era")
-    eds = data.get("endeavors", [])
+    data.get("endeavors", [])
     evs = data.get("events", [])
     if len(evs) < 2:
         issues.append(f"events 仅 {len(evs)} 条，信息不足")

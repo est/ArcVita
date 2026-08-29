@@ -1,5 +1,6 @@
 """修正史记章节编号：中文数字→阿拉伯数字"""
-import re, pathlib
+import pathlib
+import re
 
 SHIJI_DIR = pathlib.Path("data/raw/shiji")
 

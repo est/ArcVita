@@ -1,5 +1,6 @@
 """准入校验：确保 site 数据完整性"""
-import json, pathlib
+import json
+import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SITE = ROOT / "site" / "data"
@@ -37,7 +38,7 @@ def test_century_files_are_valid_json():
             errors.append(f"{ck}: invalid JSON: {e}")
     # verify all persons are accounted for
     assert len(all_persons) == len(idx["persons"]), f"person count mismatch: {len(all_persons)} vs {len(idx['persons'])}"
-    assert not errors, f"errors:\n" + "\n".join(errors)
+    assert not errors, "errors:\n" + "\n".join(errors)
 
 def test_timeline_jsonl_valid():
     tl = SITE / "timeline.jsonl"
@@ -60,7 +61,6 @@ def test_highlights_json_valid():
 
 def test_no_stale_year_dirs():
     """不应有旧的按年份目录结构"""
-    import os
     for entry in SITE.iterdir():
         if entry.is_dir() and entry.name not in ("chunks",):
             # should not have directories with person YAML/JSON

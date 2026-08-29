@@ -13,24 +13,36 @@ WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 ZH_WIKI_API = "https://zh.wikipedia.org/w/api.php"
 USER_AGENT = "ArcVita/0.1 (biography research; local)"
 
-DATE_RE = re.compile(r"^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?")
+DATE_RE = re.compile(r"^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?")  # kept for compat
 
+# Delegated to core.dates (canonical)
+try:
+    from arcvita.core.dates import parse_iso as _parse_iso
 
-def parse_wikidata_date(s: str) -> tuple[str | None, str | None]:
-    if not s:
-        return None, None
-    s = s.strip().lstrip("+")
-    if "T" in s:
-        s = s.split("T")[0]
-    m = DATE_RE.match(s)
-    if not m:
-        return None, None
-    y, mo, d = m.group(1), m.group(2), m.group(3)
-    if d and mo:
-        return f"{y}-{mo}-{d}", "day"
-    if mo:
-        return f"{y}-{mo}", "month"
-    return y, "year"
+    def parse_wikidata_date(s: str) -> tuple[str | None, str | None]:  # type: ignore[no-redef]
+        return _parse_iso(s)
+
+    # alias required by task spec
+    parse_wikidate = parse_wikidata_date  # type: ignore
+except Exception:  # pragma: no cover
+
+    def parse_wikidata_date(s: str) -> tuple[str | None, str | None]:  # type: ignore[no-redef]
+        if not s:
+            return None, None
+        s = s.strip().lstrip("+")
+        if "T" in s:
+            s = s.split("T")[0]
+        m = DATE_RE.match(s)
+        if not m:
+            return None, None
+        y, mo, d = m.group(1), m.group(2), m.group(3)
+        if d and mo:
+            return f"{y}-{mo}-{d}", "day"
+        if mo:
+            return f"{y}-{mo}", "month"
+        return y, "year"
+
+    parse_wikidate = parse_wikidata_date  # type: ignore
 
 
 def sparql_query(client: httpx.Client, query: str, retries: int = 3) -> dict:

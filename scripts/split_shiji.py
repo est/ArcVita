@@ -1,5 +1,7 @@
 """分割史记.md为独立章节文件，按“卷X”切割"""
-import re, json, pathlib
+import json
+import pathlib
+import re
 
 SRC = pathlib.Path("/home/me/proj/daizhigev20/史藏/正史/史记.md")
 OUT = pathlib.Path("data/raw/shiji")
@@ -124,5 +126,5 @@ pre_qin = [m for m in manifest if m["is_pre_qin"]]
 print(f"总章节: {len(manifest)}, 先秦章节: {len(pre_qin)}")
 for m in pre_qin[:10]:
     print(f"  {m['chapter']} {m['title'][:30]} | {m['persons_hint']}")
-print(f"...")
+print("...")
 print(f"先秦人物候选: {sum(len(m['persons_hint']) for m in pre_qin)} 人")

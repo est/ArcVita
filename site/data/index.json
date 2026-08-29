@@ -2,24 +2,29 @@
   "centuries": {
     "bce0100": {
       "label": "1世纪 BCE",
-      "count": 1,
+      "count": 2,
       "persons": [
-        "凯撒"
+        "凯撒",
+        "光武帝"
       ]
     },
     "bce0200": {
       "label": "2世纪 BCE",
-      "count": 4,
+      "count": 8,
       "persons": [
         "司马迁",
         "汉景帝",
         "汉武帝",
-        "董仲舒"
+        "董仲舒",
+        "周亚夫",
+        "彭越",
+        "李广",
+        "苏武"
       ]
     },
     "bce0300": {
       "label": "3世纪 BCE",
-      "count": 12,
+      "count": 17,
       "persons": [
         "秦始皇",
         "冒顿",
@@ -32,7 +37,12 @@
         "陈平",
         "韩信",
         "项羽",
-        "王翦"
+        "李斯",
+        "王翦",
+        "秦始皇",
+        "英布",
+        "范增",
+        "赵高"
       ]
     },
     "bce0400": {
@@ -216,19 +226,9 @@
     },
     "unknown": {
       "label": "年代不详",
-      "count": 11,
+      "count": 1,
       "persons": [
-        "卫青与霍去病",
-        "光武帝",
-        "周亚夫",
-        "彭越",
-        "李广",
-        "李斯",
-        "秦始皇",
-        "苏武",
-        "英布",
-        "范增",
-        "赵高"
+        "卫青与霍去病"
       ]
     }
   },
@@ -767,6 +767,32 @@
       "highlights_count": 0
     },
     {
+      "qid": "guji-李斯",
+      "name_zh": "李斯",
+      "era": "战国末期—秦朝",
+      "archetype": "法家信徒：制度缔造者与权力殉葬者",
+      "role": "模范",
+      "birth_date": "约前284",
+      "death_date": "前208",
+      "summary_first_person": "吾本上蔡布衣，见仓鼠与厕鼠之别，遂辞楚入秦。始皇帝用吾之策，废封建行郡县，书同文车同轨。然始皇崩后，赵高以利害相胁，吾从之，遂身死族灭。吾之一生，始于仓鼠之志，终于厕鼠之祸。",
+      "century": "bce0300",
+      "events_count": 10,
+      "highlights_count": 7
+    },
+    {
+      "qid": "guji-范增",
+      "name_zh": "范增",
+      "era": "秦末楚汉",
+      "archetype": "悲剧谋士：忠而见疑的楚国亚父",
+      "role": "模范",
+      "birth_date": "前277",
+      "death_date": "前204",
+      "summary_first_person": "吾年七十犹在山中，闻陈胜举义遂出。项王用吾为亚父，吾劝其在鸿门杀刘邦，王不听。后陈平施反间，王疑吾。吾愤而归乡，行至彭城，疽发于背而死。楚失吾，犹人失左右手也。",
+      "century": "bce0300",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
       "qid": "guji-王翦",
       "name_zh": "王翦",
       "era": "战国末期",
@@ -790,6 +816,19 @@
       "summary_first_person": "我以铁与法把六国压成一块版图，却忘了版图需要人心来粘合。",
       "century": "bce0300",
       "events_count": 13,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-秦始皇",
+      "name_zh": "秦始皇",
+      "era": "战国末期—秦朝",
+      "archetype": "千古一帝：以法驭天下的制度缔造者",
+      "role": "模范",
+      "birth_date": "前259",
+      "death_date": "前210",
+      "summary_first_person": "吾十三岁即秦王之位，灭韩赵魏楚燕齐，海内为一。书同文、车同轨、统度量，功盖三皇五帝，号曰始皇帝。然吾求长生而不得，死于沙丘，天下遂乱。",
+      "century": "bce0300",
+      "events_count": 10,
       "highlights_count": 6
     },
     {
@@ -830,6 +869,19 @@
       "century": "bce0300",
       "events_count": 10,
       "highlights_count": 8
+    },
+    {
+      "qid": "guji-赵高",
+      "name_zh": "赵高",
+      "era": "秦朝",
+      "archetype": "窃国弄臣：以阴谋颠覆帝国的宦官权奸",
+      "role": "模范",
+      "birth_date": "约前256",
+      "death_date": "前207",
+      "summary_first_person": "吾本赵国疏宗，入秦宫为宦者。始皇帝以为吾通律法，使教公子胡亥。始皇崩后，吾以利害说李斯，矫诏立胡亥。朝堂之上吾指鹿为马，顺吾者昌逆吾者亡。然秦室既灭，吾亦难逃一死。",
+      "century": "bce0300",
+      "events_count": 10,
+      "highlights_count": 6
     },
     {
       "qid": "guji-周勃",
@@ -923,6 +975,45 @@
       "highlights_count": 6
     },
     {
+      "qid": "guji-英布",
+      "name_zh": "英布",
+      "era": "秦末楚汉",
+      "archetype": "骁勇悍将：从囚徒到诸侯王的传奇",
+      "role": "模范",
+      "birth_date": "约前201(约前240)",
+      "death_date": "前196",
+      "summary_first_person": "吾本骊山刑徒，黥面之后人称黥布。陈胜举义后吾聚众数千，归项王为九江王。鸿门宴后见项王杀义帝，知其不能成大事，遂归汉王。垓下围杀项王，吾有大功。然汉高祖猜忌功臣，韩信彭越先后被诛，吾惧而反，终败死。",
+      "century": "bce0300",
+      "events_count": 9,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-彭越",
+      "name_zh": "彭越",
+      "era": "秦末楚汉",
+      "archetype": "游击鼻祖：以游击战搅动楚汉棋局的枭雄",
+      "role": "模范",
+      "birth_date": "约前200(约前240)",
+      "death_date": "前196",
+      "summary_first_person": "吾本巨野泽中渔盗，聚众千余人于泽中。楚汉相争时吾以游击袭扰楚军后方，断其粮道，使项王首尾不能相顾。垓下之围吾亦有功，封梁王。然功高震主，终被夷灭三族。",
+      "century": "bce0200",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-周亚夫",
+      "name_zh": "周亚夫",
+      "era": "西汉",
+      "archetype": "刚直名将：治军严明却饿死狱中的悲剧将军",
+      "role": "模范",
+      "birth_date": "约前199",
+      "death_date": "前143",
+      "summary_first_person": "吾父周勃佐高祖定天下，诛诸吕安刘氏。吾守细柳营，文帝劳军不得入。七国之乱时吾以三个月平定天下，功居首位。然刚直不阿，谏废太子触怒景帝，终被诬陷绝食而死。",
+      "century": "bce0200",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
       "qid": "guji-汉景帝",
       "name_zh": "汉景帝",
       "era": "西汉",
@@ -947,6 +1038,19 @@
       "century": "bce0200",
       "events_count": 8,
       "highlights_count": 6
+    },
+    {
+      "qid": "guji-李广",
+      "name_zh": "李广",
+      "era": "西汉",
+      "archetype": "飞将军：一生未封侯的悲剧英雄",
+      "role": "模范",
+      "birth_date": "约前166",
+      "death_date": "前119",
+      "summary_first_person": "吾历三朝，与匈奴战七十余阵。文帝时吾射虎没镞，景帝时吾守边郡匈奴不敢犯。然吾数奇不封侯，最后一次出塞，大将军令吾出东道，吾争为前驱不得，遂迷失道。吾不愿面对刀笔吏，遂自刎。",
+      "century": "bce0200",
+      "events_count": 10,
+      "highlights_count": 5
     },
     {
       "qid": "guji-汉武帝",
@@ -975,6 +1079,19 @@
       "highlights_count": 6
     },
     {
+      "qid": "guji-苏武",
+      "name_zh": "苏武",
+      "era": "西汉",
+      "archetype": "持节不屈：十九年牧羊北海的忠义化身",
+      "role": "模范",
+      "birth_date": "约前140",
+      "death_date": "约前60",
+      "summary_first_person": "吾以汉使至匈奴，副使张胜卷入缑王谋反。匈奴以刀剑加颈逼吾降，吾引刀自刺。又以幽禁断食逼之，吾啮雪吞旃。十九年牧羊北海，持节不失。归汉之日须发尽白，节旄尽落。",
+      "century": "bce0200",
+      "events_count": 9,
+      "highlights_count": 6
+    },
+    {
       "qid": "Q1048",
       "name_zh": "凯撒",
       "era": "古罗马",
@@ -986,6 +1103,19 @@
       "century": "bce0100",
       "events_count": 4,
       "highlights_count": 1
+    },
+    {
+      "qid": "guji-光武帝",
+      "name_zh": "光武帝",
+      "era": "东汉",
+      "archetype": "柔道中兴：以温和手段重建汉室的千古明君",
+      "role": "模范",
+      "birth_date": "前5",
+      "death_date": "57",
+      "summary_first_person": "吾本南阳一布衣，昆阳之战以两万破新莽四十二万。诸将拥吾为帝，吾三让而后受。统一天下后吾以柔道治之，不任功臣以吏事，退功臣进文吏，使天下休息。",
+      "century": "bce0100",
+      "events_count": 10,
+      "highlights_count": 6
     },
     {
       "qid": "guji-班超",
@@ -1388,136 +1518,6 @@
       "summary_first_person": "吾卫青，少为平阳侯家骑奴，人皆轻之。姊入宫幸于天子，人以为吾以裙带进。然吾七击匈奴，出塞千余里，未尝一败。去病吾甥也，年十八从征匈奴，以八百骑深入大漠斩获两千。年二十一封狼居胥，匈奴远遁漠北。去病常言'匈奴未灭，何以家为'，此亦吾辈之心也。天妒英才，去病先吾而去，吾亦随即。然汉家北疆自此安宁，吾辈纵死无憾。",
       "century": "unknown",
       "events_count": 8,
-      "highlights_count": 6
-    },
-    {
-      "qid": "guji-光武帝",
-      "name_zh": "光武帝",
-      "era": "东汉",
-      "archetype": "柔道中兴：以温和手段重建汉室的千古明君",
-      "role": "模范",
-      "birth_date": "前5",
-      "death_date": "57",
-      "summary_first_person": "吾本南阳一布衣，昆阳之战以两万破新莽四十二万。诸将拥吾为帝，吾三让而后受。统一天下后吾以柔道治之，不任功臣以吏事，退功臣进文吏，使天下休息。",
-      "century": "unknown",
-      "events_count": 10,
-      "highlights_count": 6
-    },
-    {
-      "qid": "guji-周亚夫",
-      "name_zh": "周亚夫",
-      "era": "西汉",
-      "archetype": "刚直名将：治军严明却饿死狱中的悲剧将军",
-      "role": "模范",
-      "birth_date": "约前199",
-      "death_date": "前143",
-      "summary_first_person": "吾父周勃佐高祖定天下，诛诸吕安刘氏。吾守细柳营，文帝劳军不得入。七国之乱时吾以三个月平定天下，功居首位。然刚直不阿，谏废太子触怒景帝，终被诬陷绝食而死。",
-      "century": "unknown",
-      "events_count": 9,
-      "highlights_count": 5
-    },
-    {
-      "qid": "guji-彭越",
-      "name_zh": "彭越",
-      "era": "秦末楚汉",
-      "archetype": "游击鼻祖：以游击战搅动楚汉棋局的枭雄",
-      "role": "模范",
-      "birth_date": "约前200(约前240)",
-      "death_date": "前196",
-      "summary_first_person": "吾本巨野泽中渔盗，聚众千余人于泽中。楚汉相争时吾以游击袭扰楚军后方，断其粮道，使项王首尾不能相顾。垓下之围吾亦有功，封梁王。然功高震主，终被夷灭三族。",
-      "century": "unknown",
-      "events_count": 9,
-      "highlights_count": 5
-    },
-    {
-      "qid": "guji-李广",
-      "name_zh": "李广",
-      "era": "西汉",
-      "archetype": "飞将军：一生未封侯的悲剧英雄",
-      "role": "模范",
-      "birth_date": "约前166",
-      "death_date": "前119",
-      "summary_first_person": "吾历三朝，与匈奴战七十余阵。文帝时吾射虎没镞，景帝时吾守边郡匈奴不敢犯。然吾数奇不封侯，最后一次出塞，大将军令吾出东道，吾争为前驱不得，遂迷失道。吾不愿面对刀笔吏，遂自刎。",
-      "century": "unknown",
-      "events_count": 10,
-      "highlights_count": 5
-    },
-    {
-      "qid": "guji-李斯",
-      "name_zh": "李斯",
-      "era": "战国末期—秦朝",
-      "archetype": "法家信徒：制度缔造者与权力殉葬者",
-      "role": "模范",
-      "birth_date": "约前284",
-      "death_date": "前208",
-      "summary_first_person": "吾本上蔡布衣，见仓鼠与厕鼠之别，遂辞楚入秦。始皇帝用吾之策，废封建行郡县，书同文车同轨。然始皇崩后，赵高以利害相胁，吾从之，遂身死族灭。吾之一生，始于仓鼠之志，终于厕鼠之祸。",
-      "century": "unknown",
-      "events_count": 10,
-      "highlights_count": 7
-    },
-    {
-      "qid": "guji-秦始皇",
-      "name_zh": "秦始皇",
-      "era": "战国末期—秦朝",
-      "archetype": "千古一帝：以法驭天下的制度缔造者",
-      "role": "模范",
-      "birth_date": "前259",
-      "death_date": "前210",
-      "summary_first_person": "吾十三岁即秦王之位，灭韩赵魏楚燕齐，海内为一。书同文、车同轨、统度量，功盖三皇五帝，号曰始皇帝。然吾求长生而不得，死于沙丘，天下遂乱。",
-      "century": "unknown",
-      "events_count": 10,
-      "highlights_count": 6
-    },
-    {
-      "qid": "guji-苏武",
-      "name_zh": "苏武",
-      "era": "西汉",
-      "archetype": "持节不屈：十九年牧羊北海的忠义化身",
-      "role": "模范",
-      "birth_date": "约前140",
-      "death_date": "约前60",
-      "summary_first_person": "吾以汉使至匈奴，副使张胜卷入缑王谋反。匈奴以刀剑加颈逼吾降，吾引刀自刺。又以幽禁断食逼之，吾啮雪吞旃。十九年牧羊北海，持节不失。归汉之日须发尽白，节旄尽落。",
-      "century": "unknown",
-      "events_count": 9,
-      "highlights_count": 6
-    },
-    {
-      "qid": "guji-英布",
-      "name_zh": "英布",
-      "era": "秦末楚汉",
-      "archetype": "骁勇悍将：从囚徒到诸侯王的传奇",
-      "role": "模范",
-      "birth_date": "约前201(约前240)",
-      "death_date": "前196",
-      "summary_first_person": "吾本骊山刑徒，黥面之后人称黥布。陈胜举义后吾聚众数千，归项王为九江王。鸿门宴后见项王杀义帝，知其不能成大事，遂归汉王。垓下围杀项王，吾有大功。然汉高祖猜忌功臣，韩信彭越先后被诛，吾惧而反，终败死。",
-      "century": "unknown",
-      "events_count": 9,
-      "highlights_count": 6
-    },
-    {
-      "qid": "guji-范增",
-      "name_zh": "范增",
-      "era": "秦末楚汉",
-      "archetype": "悲剧谋士：忠而见疑的楚国亚父",
-      "role": "模范",
-      "birth_date": "前277",
-      "death_date": "前204",
-      "summary_first_person": "吾年七十犹在山中，闻陈胜举义遂出。项王用吾为亚父，吾劝其在鸿门杀刘邦，王不听。后陈平施反间，王疑吾。吾愤而归乡，行至彭城，疽发于背而死。楚失吾，犹人失左右手也。",
-      "century": "unknown",
-      "events_count": 9,
-      "highlights_count": 5
-    },
-    {
-      "qid": "guji-赵高",
-      "name_zh": "赵高",
-      "era": "秦朝",
-      "archetype": "窃国弄臣：以阴谋颠覆帝国的宦官权奸",
-      "role": "模范",
-      "birth_date": "约前256",
-      "death_date": "前207",
-      "summary_first_person": "吾本赵国疏宗，入秦宫为宦者。始皇帝以为吾通律法，使教公子胡亥。始皇崩后，吾以利害说李斯，矫诏立胡亥。朝堂之上吾指鹿为马，顺吾者昌逆吾者亡。然秦室既灭，吾亦难逃一死。",
-      "century": "unknown",
-      "events_count": 10,
       "highlights_count": 6
     }
   ]

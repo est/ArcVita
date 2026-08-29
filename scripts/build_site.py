@@ -1,7 +1,12 @@
 from __future__ import annotations
 
-import json, pathlib, re
+import json
+import pathlib
+from pathlib import Path
+
 import yaml
+
+from arcvita.core.dates import year_of
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PROCESSED = ROOT / "data/processed"
@@ -13,10 +18,8 @@ def load_yaml(p: pathlib.Path):
 
 
 def parse_year(s):
-    if not s:
-        return None
-    m = re.match(r"^(-?\d+)", s.replace("约", "").strip())
-    return int(m.group(1)) if m else None
+    """Delegate to unified core.dates.year_of (BCE negative, handles 约/前)."""
+    return year_of(s)
 
 
 def year_dir(y):
@@ -25,21 +28,52 @@ def year_dir(y):
     return f"-{abs(y):04d}" if y < 0 else f"{y:04d}"
 
 
-def main():
-    persons = load_yaml(PROCESSED / "persons.yaml") or []
-    events = load_yaml(PROCESSED / "events.yaml") or []
-    endeavors = load_yaml(PROCESSED / "endeavors.yaml") or []
-    highlights = load_yaml(PROCESSED / "highlights.yaml") or []
+def _validate_index(index: dict, site_data_dir: Path) -> None:
+    """Validate index.json shape: centuries/persons/count consistency."""
+    assert isinstance(index, dict), "index not dict"
+    assert "centuries" in index and "persons" in index, "index missing centuries/persons"
+    centuries = index["centuries"]
+    persons = index["persons"]
+    assert isinstance(centuries, dict), "centuries not dict"
+    assert isinstance(persons, list), "persons not list"
+    total = 0
+    for ck, info in centuries.items():
+        assert isinstance(info, dict), f"{ck} info not dict"
+        assert "label" in info and "count" in info and "persons" in info, f"{ck} missing keys"
+        assert info["count"] == len(info["persons"]), f"{ck}: count {info['count']} vs persons len {len(info['persons'])}"
+        total += info["count"]
+    assert total == len(persons), f"centuries total {total} != persons len {len(persons)}"
+    # cross-check file existence and count per century file
+    for ck, info in centuries.items():
+        fpath = site_data_dir / f"{ck}.json"
+        assert fpath.exists(), f"{ck}.json not found for validation"
+        data = json.loads(fpath.read_text(encoding="utf-8"))
+        assert isinstance(data, list), f"{ck}.json not list"
+        assert len(data) == info["count"], f"{ck}.json count mismatch {len(data)} vs {info['count']}"
+    # persons entries shape
+    for p in persons:
+        for k in ("qid", "name_zh", "century"):
+            assert k in p, f"person missing {k}: {p}"
 
-    SITE.mkdir(parents=True, exist_ok=True)
-    data = SITE / "data"
-    data.mkdir(parents=True, exist_ok=True)
+
+def build_site(processed_dir: Path, site_data_dir: Path) -> dict:
+    """Parameterized build: read YAML from processed_dir, write site data to site_data_dir."""
+    processed_dir = Path(processed_dir)
+    site_data_dir = Path(site_data_dir)
+
+    persons = load_yaml(processed_dir / "persons.yaml") or []
+    events = load_yaml(processed_dir / "events.yaml") or []
+    endeavors = load_yaml(processed_dir / "endeavors.yaml") or []
+    highlights = load_yaml(processed_dir / "highlights.yaml") or []
+
+    site_data_dir.mkdir(parents=True, exist_ok=True)
+    site_data_dir.parent.mkdir(parents=True, exist_ok=True)
 
     pmap = {p["qid"]: p for p in persons}
 
     # === timeline.jsonl (events sorted by date) ===
     events_sorted = sorted(events, key=lambda e: e.get("date") or "9999")
-    tl = data / "timeline.jsonl"
+    tl = site_data_dir / "timeline.jsonl"
     with tl.open("w", encoding="utf-8") as f:
         for e in events_sorted:
             p = pmap.get(e["person_qid"], {})
@@ -55,7 +89,7 @@ def main():
             }, ensure_ascii=False) + "\n")
 
     # === highlights.json ===
-    (data / "highlights.json").write_text(
+    (site_data_dir / "highlights.json").write_text(
         json.dumps(sorted(highlights, key=lambda h: h.get("date") or "9999"), ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
@@ -89,7 +123,7 @@ def main():
                 "lesson": p.get("lesson"),
                 "events": p_ys, "endeavors": p_ed, "highlights": p_hl,
             })
-        (data / f"{ckey}.json").write_text(
+        (site_data_dir / f"{ckey}.json").write_text(
             json.dumps(cdata, ensure_ascii=False, indent=2), encoding="utf-8"
         )
 
@@ -122,18 +156,25 @@ def main():
             for p in sorted(persons, key=lambda x: parse_year(x.get("birth_date")) or 9999)
         ],
     }
-    (data / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
+    (site_data_dir / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # === YAML copy (archive) ===
     for name in ("persons.yaml", "events.yaml", "endeavors.yaml", "highlights.yaml"):
-        src = PROCESSED / name
+        src = processed_dir / name
         if src.exists():
-            (data / name).write_bytes(src.read_bytes())
+            (site_data_dir / name).write_bytes(src.read_bytes())
+
+    # === post-build validation ===
+    _validate_index(index, site_data_dir)
 
     print(f"built: {len(persons)} persons, {len(events)} events, {len(highlights)} highlights")
     for ck, ps in sorted(century_groups.items()):
         print(f"  {century_labels.get(ck,ck)}: {', '.join(p['name_zh'] for p in ps)}")
     return {"persons": len(persons), "events": len(events), "highlights": len(highlights)}
+
+
+def main():
+    return build_site(PROCESSED, SITE / "data")
 
 
 if __name__ == "__main__":
