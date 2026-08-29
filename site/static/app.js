@@ -84,6 +84,7 @@ function renderFilters(){
 
 function applyFilter(){
   filtered=DATA.persons.filter(p=>{if(activeRole&&p.role!==activeRole)return false;return true});
+  filtered.sort((a,b)=>{const ya=py(a.birth_date)||9999,yb=py(b.birth_date)||9999;return ya-yb});
   DATA._filteredHL=activeHLType?DATA.highlights.filter(h=>h.highlight_type===activeHLType):DATA.highlights;
   renderTimeline();
 }
