@@ -1,5 +1,173 @@
 [
   {
+    "person_qid": "guji-汉武帝",
+    "date": "-104",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "制度",
+    "title_zh": "太初改历",
+    "highlight_note": "太初历——中国历法史上的重大变革",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-司马迁",
+    "date": "-110",
+    "place_name": "泰山(今山东泰安)",
+    "highlight_type": "名场面",
+    "title_zh": "泰山受命——继父志修史",
+    "highlight_note": "太史公受命——临终托付，史家血脉的传承，千古史学的起点",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉武帝",
+    "date": "-110",
+    "place_name": "泰山(今山东泰安)",
+    "highlight_type": "仪式",
+    "title_zh": "封禅泰山",
+    "highlight_note": "封禅——中国帝王最高祭祀典礼的巅峰",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-卫青与霍去病",
+    "date": "-117",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名言",
+    "title_zh": "匈奴未灭何以家为——天妒英才",
+    "highlight_note": "匈奴未灭何以家为——千古军人的最高理想，穿越两千年的家国情怀",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-卫青与霍去病",
+    "date": "-119",
+    "place_name": "漠北(今蒙古国境内)",
+    "highlight_type": "名场面",
+    "title_zh": "封狼居胥——武将最高荣耀",
+    "highlight_note": "封狼居胥——中国武将最高荣耀的代名词，后世以'封狼居胥'喻赫赫战功",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉武帝",
+    "date": "-119",
+    "place_name": "漠北(今蒙古)",
+    "highlight_type": "战役",
+    "title_zh": "漠北之战封狼居胥",
+    "highlight_note": "封狼居胥——中国军事史上武功的最高象征",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-董仲舒",
+    "date": "-120",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "人生转折",
+    "title_zh": "辽东高庙灾——以天制君反噬自身",
+    "highlight_note": "以天制君反获罪——思想家的理论与现实政治之间的致命鸿沟",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-卫青与霍去病",
+    "date": "-121",
+    "place_name": "河西走廊(今甘肃)",
+    "highlight_type": "名场面",
+    "title_zh": "两击河西——匈奴悲歌失我祁连山",
+    "highlight_note": "匈奴失河西之歌——征服者的胜利与被征服者的悲歌",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-卫青与霍去病",
+    "date": "-123",
+    "place_name": "漠南(今内蒙古)",
+    "highlight_type": "战役",
+    "title_zh": "霍去病初征——年十八冠军侯",
+    "highlight_note": "年十八封冠军侯——'冠军'之名由此而来，史上最年轻的战功封侯者",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-卫青与霍去病",
+    "date": "-124",
+    "place_name": "右贤王庭(今蒙古国境内)",
+    "highlight_type": "战役",
+    "title_zh": "夜袭右贤王——大将军之威",
+    "highlight_note": "夜袭右贤王——出其不意的经典战例，卫青由此拜大将军",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-卫青与霍去病",
+    "date": "-129",
+    "place_name": "龙城(今蒙古国境内)",
+    "highlight_type": "战役",
+    "title_zh": "龙城首捷——打破匈奴不可战胜的神话",
+    "highlight_note": "龙城首捷——汉匈战争的转折点，打破了匈奴不可战胜的百年神话",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉武帝",
+    "date": "-134",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "制度",
+    "title_zh": "罢黜百家独尊儒术",
+    "highlight_note": "独尊儒术——中国思想史的分水岭",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-董仲舒",
+    "date": "-134",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "天人三策——罢黜百家独尊儒术",
+    "highlight_note": "天人三策——改变了中国思想史走向的三篇对策，两千年的思想底色由此奠定",
+    "endeavor_id": "guji-董仲舒-endeavor-1",
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-董仲舒",
+    "date": "-134",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "思想论述",
+    "title_zh": "天人感应——以天制君",
+    "highlight_note": "天人感应——用天的名义约束皇权，是中国政治哲学中最具创意也最脆弱的制衡",
+    "endeavor_id": "guji-董仲舒-endeavor-1",
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
     "date": "-134",
     "place_name": "长安",
     "event_type": "制度",
@@ -8,6 +176,462 @@
     "highlight_note": "儒学成为国家意识形态，影响两千年",
     "person_qid": "_context",
     "is_highlight": true
+  },
+  {
+    "person_qid": "guji-汉景帝",
+    "date": "-141",
+    "place_name": "未央宫(今陕西西安)",
+    "highlight_type": "结局",
+    "title_zh": "景帝崩，太子彻即位",
+    "highlight_note": "文景之治的收官——为武帝开疆拓土积蓄了雄厚国力",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉景帝",
+    "date": "-143",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "悲剧",
+    "title_zh": "周亚夫冤死狱中",
+    "highlight_note": "功高震主——亚夫之死揭示帝王薄恩本性",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉景帝",
+    "date": "-154",
+    "place_name": "吴楚(今江苏一带)",
+    "highlight_type": "战役",
+    "title_zh": "七国之乱",
+    "highlight_note": "晁错死而七国不止——'清君侧'的政治骗局",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉景帝",
+    "date": "-154",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "诛晁错东市",
+    "highlight_note": "晁错忠而被诛——'清君侧'的历史悲剧",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉景帝",
+    "date": "-154",
+    "place_name": "荥阳(今河南荥阳)",
+    "highlight_type": "战役",
+    "title_zh": "周亚夫平七国之乱",
+    "highlight_note": "三月平七国——周亚夫的军事天才",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉文帝",
+    "date": "-157",
+    "place_name": "未央宫(今陕西西安)",
+    "highlight_type": "结局",
+    "title_zh": "遗诏薄葬",
+    "highlight_note": "一代仁君以薄葬终——千古帝王之典范",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉文帝",
+    "date": "-158",
+    "place_name": "细柳(今陕西咸阳西北)",
+    "highlight_type": "名场面",
+    "title_zh": "细柳营劳军",
+    "highlight_note": "细柳营——军纪严明的千古佳话",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉文帝",
+    "date": "-163",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "决策",
+    "title_zh": "与匈奴和亲",
+    "highlight_note": "以和亲代征伐——百姓免于战争之苦",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉文帝",
+    "date": "-167",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "缇萦上书废肉刑",
+    "highlight_note": "缇萦救父——一个少女改变中国刑罚制度",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-周勃",
+    "date": "-176",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "绛侯入狱——功臣之悲",
+    "highlight_note": "狱吏教绛侯——千古名句，满朝功臣不如一狱吏深知法度之险",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉文帝",
+    "date": "-178",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "制度",
+    "title_zh": "除诽谤罪纳谏",
+    "highlight_note": "开言路除诽谤——民主政治的古代萌芽",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-周勃",
+    "date": "-179",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "政治",
+    "title_zh": "归绛就国——功臣退场",
+    "highlight_note": "归绛就国——功臣在和平年代的必然归宿",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-陈平",
+    "date": "-179",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "政治理念",
+    "title_zh": "宰相之论——不治而治",
+    "highlight_note": "宰相之论——权力的精髓不在于亲力亲为，而在于识人用人",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-吕后",
+    "date": "-180",
+    "place_name": "长乐宫(今陕西西安)",
+    "highlight_type": "结局",
+    "title_zh": "病危遗命与身死族灭",
+    "highlight_note": "生前权倾天下，死后族灭——权力无常的最好注脚",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-周勃",
+    "date": "-180",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "北军左袒——一呼定社稷",
+    "highlight_note": "左袒之令——一声号令定天下归属，汉室延续的关键瞬间",
+    "endeavor_id": "guji-周勃-endeavor-2",
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉文帝",
+    "date": "-180",
+    "place_name": "代邸(今山西平遥)",
+    "highlight_type": "决策",
+    "title_zh": "大臣迎立代王入长安即位",
+    "highlight_note": "三让而后受——仁君即位的谦逊与审慎",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-陈平",
+    "date": "-180",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "政治行动",
+    "title_zh": "诛诸吕安刘——合谋平乱",
+    "highlight_note": "诛吕安刘——功臣集团联手终结外戚专权的关键时刻",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-吕后",
+    "date": "-188",
+    "place_name": "长乐宫(今陕西西安)",
+    "highlight_type": "制度",
+    "title_zh": "惠帝崩后临朝称制",
+    "highlight_note": "中国历史上第一位临朝称制的太后",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-冒顿",
+    "date": "-192",
+    "place_name": "匈奴单于庭(今蒙古国鄂尔浑河畔)",
+    "highlight_type": "外交奇观",
+    "title_zh": "嫚书戏吕后",
+    "highlight_note": "匈奴冒顿致吕后'求偶'嫚书——中国历史上最奇特的外交文书之一",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-吕后",
+    "date": "-194",
+    "place_name": "长乐宫(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "人彘之祸",
+    "highlight_note": "人彘——中国历史上最骇人听闻的宫廷惨案",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-吕后",
+    "date": "-194",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "决策",
+    "title_zh": "鸩杀赵王如意",
+    "highlight_note": "吕后除政敌不择手段，连幼子亦不放过",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-195",
+    "place_name": "沛(今江苏沛县)",
+    "highlight_type": "名场面",
+    "title_zh": "大风歌",
+    "highlight_note": "大风歌——帝王暮年的苍凉与豪迈",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-195",
+    "place_name": "长乐宫(今陕西西安)",
+    "highlight_type": "决策",
+    "title_zh": "临终论将",
+    "highlight_note": "临终人事安排精准无比——预言周勃安刘",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-萧何",
+    "date": "-195",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "君臣博弈",
+    "title_zh": "为民请苑——险遭不测",
+    "highlight_note": "为民请命反遭系——相国之尊在皇权面前的脆弱",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-萧何",
+    "date": "-195",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "历史传承",
+    "title_zh": "萧何举曹参——萧规曹随",
+    "highlight_note": "萧规曹随——汉初无为而治的制度传承",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-萧何",
+    "date": "-196",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "决策智慧",
+    "title_zh": "自污名节以释君疑",
+    "highlight_note": "自污求存——功臣在皇权下最卑微的生存术",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-陈平",
+    "date": "-196",
+    "place_name": "云梦泽(今湖北孝感)",
+    "highlight_type": "谋略",
+    "title_zh": "伪游云梦擒韩信——借势擒虎",
+    "highlight_note": "伪游云梦——以最小成本擒获天下第一猛将，四两拨千斤",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-韩信",
+    "date": "-196",
+    "place_name": "长乐宫钟室(今陕西西安)",
+    "highlight_type": "悲剧",
+    "title_zh": "钟室之死——飞鸟尽良弓藏",
+    "highlight_note": "钟室之死——'狡兔死，走狗烹；飞鸟尽，良弓藏'，千古名将最悲结局",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-冒顿",
+    "date": "-200",
+    "place_name": "白登山(今山西大同东北马铺山)",
+    "highlight_type": "战役",
+    "title_zh": "白登之围",
+    "highlight_note": "白登之围——汉匈关系的转折点，开启和亲时代",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-陈平",
+    "date": "-200",
+    "place_name": "平城白登山(今山西大同)",
+    "highlight_type": "名场面",
+    "title_zh": "白登之围——以美人计解围",
+    "highlight_note": "白登之围——以妇人之心解十万汉军之困，奇谋诡道的极致",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-张良",
+    "date": "-201",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "决策智慧",
+    "title_zh": "请封留地——功成身退",
+    "highlight_note": "让封三万户——功臣自谦避祸的最高境界",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-202",
+    "place_name": "垓下(今安徽灵璧)",
+    "highlight_type": "战役",
+    "title_zh": "垓下之战灭楚",
+    "highlight_note": "垓下之战终结楚汉争霸，奠定大汉天下",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-202",
+    "place_name": "氾水之阳(今山东曹县)",
+    "highlight_type": "制度",
+    "title_zh": "即皇帝位",
+    "highlight_note": "中国历史上第一个布衣天子的诞生",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-张良",
+    "date": "-202",
+    "place_name": "垓下(今安徽灵璧)",
+    "highlight_type": "名场面",
+    "title_zh": "垓下之围——四面楚歌",
+    "highlight_note": "四面楚歌——英雄末路的千古悲歌，也是张良战略谋划的最终成果",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-萧何",
+    "date": "-202",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名言典故",
+    "title_zh": "功人与功狗——论功居首",
+    "highlight_note": "功人功狗之论——中国史上对文臣武功最精妙的评价",
+    "endeavor_id": "guji-萧何-endeavor-2",
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-韩信",
+    "date": "-202",
+    "place_name": "垓下(今安徽灵璧)",
+    "highlight_type": "名场面",
+    "title_zh": "垓下之围——四面楚歌灭项王",
+    "highlight_note": "垓下之围与霸王别姬——英雄末路的千古悲歌",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-202",
+    "place_name": "垓下(今安徽灵璧)",
+    "highlight_type": "名场面",
+    "title_zh": "四面楚歌霸王别姬",
+    "highlight_note": "中国文学史上最悲壮的离别场景，千古绝唱",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-202",
+    "place_name": "东城(今安徽定远)",
+    "highlight_type": "名场面",
+    "title_zh": "乌江自刎",
+    "highlight_note": "自刎乌江——中国历史上最悲壮的英雄末路",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
   },
   {
     "date": "-202",
@@ -20,6 +644,318 @@
     "is_highlight": true
   },
   {
+    "person_qid": "guji-张良",
+    "date": "-203",
+    "place_name": "荥阳(今河南荥阳)",
+    "highlight_type": "名场面",
+    "title_zh": "借箸谏阻分封——以箸代筹",
+    "highlight_note": "借箸谏阻——以八条理由力挽狂澜，阻止了刘邦最大的战略失误",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-韩信",
+    "date": "-203",
+    "place_name": "潍水(今山东潍坊)",
+    "highlight_type": "战役",
+    "title_zh": "水淹龙且——半渡而击",
+    "highlight_note": "潍水之战——以水为兵的经典战例，半渡而击之",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-203",
+    "place_name": "广武(今河南荥阳北)",
+    "highlight_type": "名场面",
+    "title_zh": "广武对峙与分羹之问",
+    "highlight_note": "笑分一杯羹——刘邦的无赖与项羽的无奈",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-203",
+    "place_name": "鸿沟(今河南荥阳一带)",
+    "highlight_type": "决策",
+    "title_zh": "鸿沟中分天下",
+    "highlight_note": "中分天下的短暂和平——'楚河汉界'由此而来",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-204",
+    "place_name": "荥阳(今河南荥阳)",
+    "highlight_type": "谋略",
+    "title_zh": "离间计除范增",
+    "highlight_note": "陈平反间计——四万斤金换范增一条命",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-张良",
+    "date": "-204",
+    "place_name": "下邑(今安徽砀山)",
+    "highlight_type": "战略",
+    "title_zh": "下邑之谋——定天下大计",
+    "highlight_note": "下邑之谋——以三路合围破楚的战略蓝图，中国军事史上以少胜多的谋略典范",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-萧何",
+    "date": "-204",
+    "place_name": "关中",
+    "highlight_type": "决策智慧",
+    "title_zh": "遣子昆弟佐军——以身家性命为质",
+    "highlight_note": "以自损求自保——功臣消解君疑的经典范式",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-陈平",
+    "date": "-204",
+    "place_name": "荥阳(今河南荥阳)",
+    "highlight_type": "谋略",
+    "title_zh": "反间计去范增——瓦解项羽智囊",
+    "highlight_note": "反间计——四万金瓦解项羽与范增的君臣信任，改变了楚汉格局",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-韩信",
+    "date": "-204",
+    "place_name": "井陉口(今河北井陉)",
+    "highlight_type": "战役",
+    "title_zh": "背水一战——置之死地而后生",
+    "highlight_note": "背水一战——'置之死地而后生'的军事经典，后人以'背水一战'喻决死一搏",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-204",
+    "place_name": "彭城(今江苏徐州)",
+    "highlight_type": "战役",
+    "title_zh": "彭城之战大破汉军",
+    "highlight_note": "三万破五十六万——楚汉战争中最戏剧性的逆转",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-吕后",
+    "date": "-205",
+    "place_name": "彭城之战",
+    "highlight_type": "磨难",
+    "title_zh": "彭城之败被俘",
+    "highlight_note": "两年楚营为质的经历塑造了吕后日后的刚毅与残忍",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-陈平",
+    "date": "-205",
+    "place_name": "荥阳(今河南荥阳)",
+    "highlight_type": "人生转折",
+    "title_zh": "归汉——择明主而事",
+    "highlight_note": "盗嫂受金的辩白——小节有亏但大才无双，高祖的识人之明",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-冒顿",
+    "date": "-206",
+    "place_name": "东胡故地",
+    "highlight_type": "谋略",
+    "title_zh": "韬光灭东胡",
+    "highlight_note": "欲擒故纵——两度忍辱予物以骄敌，一击灭国",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-206",
+    "place_name": "咸阳(今陕西咸阳)",
+    "highlight_type": "制度",
+    "title_zh": "约法三章",
+    "highlight_note": "约法三章——中国法治史上从苛政到宽政的标志性转折",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-206",
+    "place_name": "鸿门(今陕西临潼)",
+    "highlight_type": "名场面",
+    "title_zh": "鸿门宴全身而退",
+    "highlight_note": "鸿门宴——绝境求生的政治教科书",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-张良",
+    "date": "-206",
+    "place_name": "鸿门(今陕西临潼)",
+    "highlight_type": "名场面",
+    "title_zh": "鸿门宴——智保沛公",
+    "highlight_note": "鸿门宴——中国史上最惊心动魄的饭局，张良的智谋在生死一线间展现",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-萧何",
+    "date": "-206",
+    "place_name": "咸阳(今陕西咸阳)",
+    "highlight_type": "成语典故",
+    "title_zh": "独取图籍——乱世中的远见",
+    "highlight_note": "萧何追韩信的前置——先取图籍的战略眼光，与诸将争金帛形成鲜明对比",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-韩信",
+    "date": "-206",
+    "place_name": "汉中(今陕西汉中)",
+    "highlight_type": "名场面",
+    "title_zh": "萧何月下追韩信——登坛拜将",
+    "highlight_note": "萧何月下追韩信——千古伯乐之典，韩信人生的决定性转折",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-206",
+    "place_name": "鸿门(今陕西临潼)",
+    "highlight_type": "名场面",
+    "title_zh": "鸿门宴",
+    "highlight_note": "中国历史上最著名的一场饭局，决定天下归属",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-206",
+    "place_name": "咸阳(今陕西咸阳)",
+    "highlight_type": "决策",
+    "title_zh": "屠咸阳烧秦宫",
+    "highlight_note": "一念之差失天下——衣锦还乡的虚荣毁掉霸王基业",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-206",
+    "place_name": "新安(今河南新安)",
+    "highlight_type": "决策",
+    "title_zh": "坑杀秦降卒二十万",
+    "highlight_note": "残忍暴行失尽关中民心，反为刘邦铺路",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-207",
+    "place_name": "钜鹿(今河北平乡)",
+    "highlight_type": "战役",
+    "title_zh": "破釜沉舟大破秦军",
+    "highlight_note": "以少胜多的经典战例，奠定霸王威名",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-冒顿",
+    "date": "-209",
+    "place_name": "头曼城(今蒙古国鄂尔浑河东畔)",
+    "highlight_type": "成语典故",
+    "title_zh": "鸣镝弑父自立",
+    "highlight_note": "鸣镝射马/鸣镝弑父——'其左右皆随鸣镝而射'，成为铁血纪律的极致象征",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-刘邦",
+    "date": "-209",
+    "place_name": "沛县(今江苏丰县)",
+    "highlight_type": "神话",
+    "title_zh": "斩蛇起义",
+    "highlight_note": "赤帝子斩白帝子——刘邦神话叙事的起点",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-张良",
+    "date": "-209",
+    "place_name": "下邳(今江苏邳州)",
+    "highlight_type": "成语典故",
+    "title_zh": "圯上受书——黄石公三试张良",
+    "highlight_note": "圯上受书——忍辱负重方得真传，成为张良人生的转折点",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-项羽",
+    "date": "-209",
+    "place_name": "会稽(今江苏苏州)",
+    "highlight_type": "名场面",
+    "title_zh": "会稽斩守起兵",
+    "highlight_note": "项羽年仅二十四，力能扛鼎，一剑定江东",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
     "date": "-209",
     "place_name": "大泽乡",
     "event_type": "起义",
@@ -28,6 +964,42 @@
     "highlight_note": "王侯将相宁有种乎——第一次农民大起义",
     "person_qid": "_context",
     "is_highlight": true
+  },
+  {
+    "person_qid": "guji-韩信",
+    "date": "-210",
+    "place_name": "淮阴(今江苏淮安)",
+    "highlight_type": "名场面",
+    "title_zh": "胯下之辱——忍者无敌",
+    "highlight_note": "胯下之辱——中国文化中隐忍负重的经典符号，后世以'忍胯下之辱'喻大丈夫能屈能伸",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-张良",
+    "date": "-218",
+    "place_name": "博浪沙(今河南原阳)",
+    "highlight_type": "名场面",
+    "title_zh": "博浪沙刺秦——义士一击",
+    "highlight_note": "博浪沙刺秦——以一介布衣撼动天下之志，虽败犹荣",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-韩信",
+    "date": "-220",
+    "place_name": "淮阴(今江苏淮安)",
+    "highlight_type": "典故",
+    "title_zh": "漂母饭信——一饭千金",
+    "highlight_note": "一饭千金——知恩图报与落魄时的人情冷暖",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
   },
   {
     "date": "-221",
@@ -491,6 +1463,54 @@
     "title_zh": "柯之盟——匕首劫齐桓公",
     "highlight_note": "以一己之勇改变国运——春秋义士的极致",
     "endeavor_id": "guji-曹沫-endeavor-1",
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉武帝",
+    "date": "-87",
+    "place_name": "未央宫(今陕西西安)",
+    "highlight_type": "结局",
+    "title_zh": "驾崩与身后",
+    "highlight_note": "功过参半——后世对其评价始终褒贬不一",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉武帝",
+    "date": "-89",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "决策",
+    "title_zh": "轮台罪己诏",
+    "highlight_note": "轮台罪己诏——千古一帝的最后反省",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-汉武帝",
+    "date": "-91",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "巫蛊之祸",
+    "highlight_note": "巫蛊之祸——父子相疑骨肉相残的人间惨剧",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-司马迁",
+    "date": "-99",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名场面",
+    "title_zh": "李陵之祸——受腐刑忍辱著书",
+    "highlight_note": "李陵之祸——秉笔直书者的宿命，为一句公道话付出最惨烈的代价",
+    "endeavor_id": null,
     "sources": [
       "https://daizhige.org/史藏/正史/史记.html"
     ]
@@ -1292,6 +2312,54 @@
     "is_highlight": true
   },
   {
+    "person_qid": "guji-董仲舒",
+    "date": "约-110",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "学术成就",
+    "title_zh": "《春秋繁露》——儒学体系化的巅峰",
+    "highlight_note": "《春秋繁露》——儒学从百家之一变为官方意识形态的理论奠基",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-董仲舒",
+    "date": "约-125",
+    "place_name": "江都(今江苏扬州)",
+    "highlight_type": "思想实践",
+    "title_zh": "春秋决狱——以经义断案",
+    "highlight_note": "春秋决狱——以道德判断取代法律条文，开启了经学司法化的传统",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-司马迁",
+    "date": "约-126",
+    "place_name": "全国各地",
+    "highlight_type": "人生转折",
+    "title_zh": "二十壮游——以双脚丈量天下",
+    "highlight_note": "壮游天下——从书斋到田野，为《史记》注入了鲜活的生命力",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-董仲舒",
+    "date": "约-150",
+    "place_name": "广川(今河北枣强)",
+    "highlight_type": "典故",
+    "title_zh": "三年不窥园——苦读成大儒",
+    "highlight_note": "三年不窥园——中国文化中专心治学的经典符号",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
     "person_qid": "guji-吴起",
     "date": "约-400",
     "place_name": "魏国河西",
@@ -1310,6 +2378,42 @@
     "highlight_type": "至暗时刻",
     "title_zh": "赐文种死",
     "highlight_note": "功臣的结局——帝王心术的冷酷注脚",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-司马迁",
+    "date": "约-91",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "成就",
+    "title_zh": "《史记》成书——史家之绝唱",
+    "highlight_note": "《史记》——中国纪传体史书之祖，二十四史之首，影响中国两千年",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-司马迁",
+    "date": "约-91",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "人生终章",
+    "title_zh": "藏之名山传之其人——史家的最后嘱托",
+    "highlight_note": "藏之名山传之其人——千古史家的最后寄望，最终实现了不朽",
+    "endeavor_id": null,
+    "sources": [
+      "https://daizhige.org/史藏/正史/史记.html"
+    ]
+  },
+  {
+    "person_qid": "guji-司马迁",
+    "date": "约-99",
+    "place_name": "长安(今陕西西安)",
+    "highlight_type": "名言",
+    "title_zh": "生死抉择——或重于泰山或轻于鸿毛",
+    "highlight_note": "或重于泰山或轻于鸿毛——中国文化中对生命价值最深刻的追问",
     "endeavor_id": null,
     "sources": [
       "https://daizhige.org/史藏/正史/史记.html"

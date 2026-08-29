@@ -3,7 +3,7 @@ from __future__ import annotations
 import yaml, pathlib
 from typing import Any
 
-EXTRACTED_DIR = pathlib.Path("data/extracted/pre_qin")
+EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han")]
 _curated_cache: dict[str, dict] = {}
 
 
@@ -11,17 +11,18 @@ def _load_all():
     global _curated_cache
     if _curated_cache:
         return
-    if not EXTRACTED_DIR.exists():
-        return
-    for f in EXTRACTED_DIR.glob("*.yaml"):
-        try:
-            data = yaml.safe_load(f.read_text(encoding="utf-8"))
-            if data and isinstance(data, dict) and "person" in data:
-                name = data["person"].get("name_zh", "")
-                if name:
-                    _curated_cache[name] = data
-        except Exception:
+    for d in EXTRACTED_DIRS:
+        if not d.exists():
             continue
+        for f in d.glob("*.yaml"):
+            try:
+                data = yaml.safe_load(f.read_text(encoding="utf-8"))
+                if data and isinstance(data, dict) and "person" in data:
+                    name = data["person"].get("name_zh", "")
+                    if name:
+                        _curated_cache[name] = data
+            except Exception:
+                continue
 
 
 def fetch_classical_for_name(name_zh: str) -> dict[str, Any] | None:

@@ -3,26 +3,27 @@ from __future__ import annotations
 import yaml, pathlib
 from arcvita.models import Endeavor, Event, Person
 
-EXTRACTED_DIR = pathlib.Path("data/extracted/pre_qin")
-CURATED_DIR = pathlib.Path("data/curated/classical/pre_qin")
+EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han")]
+CURATED_DIR = pathlib.Path("data/curated/classical")
 
 
 def load_extracted() -> list[dict]:
     """加载所有 extracted YAML"""
     results = []
-    if not EXTRACTED_DIR.exists():
-        return results
-    for f in sorted(EXTRACTED_DIR.glob("*.yaml")):
-        try:
-            data = yaml.safe_load(f.read_text(encoding="utf-8"))
-            if isinstance(data, dict) and "person" in data:
-                results.append(data)
-            elif isinstance(data, list):
-                for item in data:
-                    if isinstance(item, dict) and "person" in item:
-                        results.append(item)
-        except Exception as e:
-            print(f"  skip {f.name}: {e}")
+    for d in EXTRACTED_DIRS:
+        if not d.exists():
+            continue
+        for f in sorted(d.glob("*.yaml")):
+            try:
+                data = yaml.safe_load(f.read_text(encoding="utf-8"))
+                if isinstance(data, dict) and "person" in data:
+                    results.append(data)
+                elif isinstance(data, list):
+                    for item in data:
+                        if isinstance(item, dict) and "person" in item:
+                            results.append(item)
+            except Exception as e:
+                print(f"  skip {f.name}: {e}")
     return results
 
 

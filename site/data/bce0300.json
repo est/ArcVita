@@ -189,5 +189,3726 @@
       }
     ],
     "highlights": []
+  },
+  {
+    "qid": "guji-冒顿",
+    "name_zh": "冒顿",
+    "name_en": null,
+    "era": "秦末汉初",
+    "archetype": "以铁血重塑草原秩序的草原雄主",
+    "role": "模范",
+    "dilemmas": [
+      "弑父夺位的伦理困境",
+      "匈奴统一后的治理难题",
+      "白登之围中与汉朝的博弈"
+    ],
+    "birth_date": "约-234",
+    "death_date": "约-174",
+    "birth_place": "匈奴头曼城(今蒙古国鄂尔浑河东畔)",
+    "summary_zh": null,
+    "summary_first_person": "吾少时质于月氏，受尽屈辱。父欲废吾而立幼子，吾乃作鸣镝，令骑射皆随鸣镝所向。先射吾爱马，左右不敢从者斩之；再射吾爱妾，左右复不敢者又斩之。至猎时，吾鸣镝射父之良马，左右皆随射之——于是吾知，鸣镝所向，众必随之。遂弑父自立，东灭东胡，西逐月氏，控弦之士三十万，草原尽归一统。",
+    "lesson": "铁血纪律是草原统一的根本，而懂得在强敌面前隐忍则是存亡的关键。",
+    "events": [
+      {
+        "id": "guji-冒顿-event-5",
+        "person_qid": "guji-冒顿",
+        "endeavor_id": null,
+        "date": "-174",
+        "date_precision": "year",
+        "place_name": "匈奴单于庭(今蒙古国鄂尔浑河畔)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "身后",
+        "title_zh": "一代雄主谢幕",
+        "description_zh": "冒顿在位约三十余年，使匈奴从草原上一个部落联盟发展为纵横万里的帝国。控弦之士三十余万，东灭东胡、西逐月氏、北服丁零、南与汉朝对峙。其死后，匈奴内部因继承问题陷入动荡，老上单于、军臣单于相继继位，匈奴帝国虽衰而余威犹在。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-冒顿-event-4",
+        "person_qid": "guji-冒顿",
+        "endeavor_id": null,
+        "date": "-192",
+        "date_precision": "year",
+        "place_name": "匈奴单于庭(今蒙古国鄂尔浑河畔)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "外交",
+        "title_zh": "嫚书戏吕后",
+        "description_zh": "冒顿修书吕后，辞曰：'孤偾之君，生于沮泽之中，长于平野牛马之域，数至边境，愿游中国。陛下独立，孤偾独居。两主不乐，无以自虞，愿以所有，易其所无。'吕后览书大怒，欲击匈奴。群臣以高祖白登之围为戒，劝吕后忍辱和亲。吕后乃遣宗室女厚遗冒顿，复约为婚姻。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "外交奇观",
+        "highlight_note": "匈奴冒顿致吕后'求偶'嫚书——中国历史上最奇特的外交文书之一",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-冒顿-event-3",
+        "person_qid": "guji-冒顿",
+        "endeavor_id": null,
+        "date": "-200",
+        "date_precision": "year",
+        "place_name": "白登山(今山西大同东北马铺山)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事对峙",
+        "title_zh": "白登之围",
+        "description_zh": "韩王信叛汉降匈奴，引匈奴南下。汉高祖刘邦亲率三十二万大军北征，先头部队被匈奴四十万骑兵围困于白登山七日。城中汉军缺粮，内外不能相救。后陈平以秘计使冒顿阏氏言于冒顿，谓'两主不相困，今得汉地，单于终不能居之'。冒顿与韩王信将王黄、赵利期约不至，疑其与汉有谋，遂解围一角。高祖引兵南还，自此汉朝行和亲之策。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "白登之围——汉匈关系的转折点，开启和亲时代",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-冒顿-event-2",
+        "person_qid": "guji-冒顿",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "东胡故地",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事征伐",
+        "title_zh": "韬光灭东胡",
+        "description_zh": "冒顿弑父自立后，东胡王遣使索头曼千里马，群臣谏勿予，冒顿曰'奈何与人邻国而爱一宝马乎'，予之。东胡王益骄，复索单于阏氏，群臣皆怒欲战，冒顿曰'奈何与人邻国爱一女子乎'，予之。东胡王以冒顿畏之，遂不设备。冒顿乃引兵东袭，东胡猝不及备，大破之，东胡王虏其民畜而归。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "谋略",
+        "highlight_note": "欲擒故纵——两度忍辱予物以骄敌，一击灭国",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-冒顿-event-1",
+        "person_qid": "guji-冒顿",
+        "endeavor_id": null,
+        "date": "-209",
+        "date_precision": "year",
+        "place_name": "头曼城(今蒙古国鄂尔浑河东畔)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政变",
+        "title_zh": "鸣镝弑父自立",
+        "description_zh": "冒顿单于初为太子，其父头曼欲废之而立幼子，乃遣冒顿质于月氏。月氏欲杀之，冒顿盗其善马亡归。头曼以为勇，令将万骑。冒顿乃作鸣镝，令骑射曰：'鸣镝所射而不悉射者，斩之。'猎鸟兽，有不射鸣镝所射者，斩之。已而以鸣镝射其良马，左右或不敢射者，皆斩之。顷之，复以鸣镝射其爱妻，左右或甚恐不敢射，又斩之。居顷之，冒顿出猎，以鸣镝射头曼之良马，左右皆随射之。于是冒顿知其左右皆可用，随其父猎，以鸣镝射头曼，左右亦皆随射之，遂弑头曼。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "成语典故",
+        "highlight_note": "鸣镝射马/鸣镝弑父——'其左右皆随鸣镝而射'，成为铁血纪律的极致象征",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-冒顿-event-death",
+        "person_qid": "guji-冒顿",
+        "endeavor_id": null,
+        "date": "约-174",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-冒顿"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-冒顿-event-birth",
+        "person_qid": "guji-冒顿",
+        "endeavor_id": null,
+        "date": "约-234",
+        "date_precision": "year",
+        "place_name": "匈奴头曼城(今蒙古国鄂尔浑河东畔)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 匈奴头曼城(今蒙古国鄂尔浑河东畔)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-冒顿"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-冒顿-endeavor-2",
+        "person_qid": "guji-冒顿",
+        "title_zh": "和亲之约与对汉博弈",
+        "domain": "外交",
+        "start_date": "-198",
+        "end_date": "-174",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)",
+          "匈奴单于庭(今蒙古国鄂尔浑河畔)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "白登解围后，刘敬献和亲之策，以宗室女嫁匈奴单于，岁遗缯帛酒食。吾许和亲，然匈奴骑兵仍不时南下寇边。汉惠帝、吕后时期，吾致书吕后，辞甚嫚，欲以吕后和亲。吕后忍怒，复遣宗室女往嫁。吾在位期间，匈奴控弦之士日盛，汉朝以和亲求安，实为以女换时。",
+        "outcome": "确立和亲制度，匈奴在和亲与寇掠间反复获利",
+        "lesson": "强者可谈条件，但和约永远只是缓冲而非终局",
+        "phases": [
+          {
+            "name": "白登解围后议和",
+            "start_date": "-198",
+            "end_date": "-198",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "和亲之约始"
+          },
+          {
+            "name": "屡侵汉边",
+            "start_date": "-192",
+            "end_date": "-174",
+            "place": "汉匈边境",
+            "description_zh": null,
+            "highlight": "边患不止"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-冒顿-endeavor-1",
+        "person_qid": "guji-冒顿",
+        "title_zh": "鸣镝夺位，统一草原",
+        "domain": "军事/政治",
+        "start_date": "-209",
+        "end_date": "-200",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "头曼城(今蒙古国鄂尔浑河东畔)",
+          "东胡(今内蒙古东部至西辽河一带)",
+          "月氏故地(今甘肃河西走廊)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "吾先以鸣镝之法训练亲骑，凡鸣镝所向不从者皆斩。弑父即位后，东面之东胡轻吾新立，索地求物，吾皆予之以骄其志。东胡不备，吾乘夜击之，东胡大破。随即西逐月氏、北服丁零、南并楼烦，控弦之士三十余万，草原尽统于匈奴。又南下与汉争锋，高祖亲率三十二万大军北伐，吾以四十万骑围高祖于白登七日，终以陈平秘计解围，由此确立匈奴与汉分庭抗礼之势。",
+        "outcome": "统一草原，建立匈奴帝国，开创草原民族第一个大一统政权",
+        "lesson": "韬光养晦，蓄势而后发",
+        "phases": [
+          {
+            "name": "鸣镝训骑",
+            "start_date": "-209",
+            "end_date": "-209",
+            "place": "头曼城(今蒙古国鄂尔浑河东畔)",
+            "description_zh": null,
+            "highlight": "鸣镝弑父"
+          },
+          {
+            "name": "东灭东胡",
+            "start_date": "-206",
+            "end_date": "-206",
+            "place": "东胡故地",
+            "description_zh": null,
+            "highlight": "忍辱灭国"
+          },
+          {
+            "name": "南逼白登",
+            "start_date": "-200",
+            "end_date": "-200",
+            "place": "白登山(今山西大同东北马铺山)",
+            "description_zh": null,
+            "highlight": "白登之围"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-冒顿",
+        "date": "-192",
+        "place_name": "匈奴单于庭(今蒙古国鄂尔浑河畔)",
+        "highlight_type": "外交奇观",
+        "title_zh": "嫚书戏吕后",
+        "highlight_note": "匈奴冒顿致吕后'求偶'嫚书——中国历史上最奇特的外交文书之一",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-冒顿",
+        "date": "-200",
+        "place_name": "白登山(今山西大同东北马铺山)",
+        "highlight_type": "战役",
+        "title_zh": "白登之围",
+        "highlight_note": "白登之围——汉匈关系的转折点，开启和亲时代",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-冒顿",
+        "date": "-206",
+        "place_name": "东胡故地",
+        "highlight_type": "谋略",
+        "title_zh": "韬光灭东胡",
+        "highlight_note": "欲擒故纵——两度忍辱予物以骄敌，一击灭国",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-冒顿",
+        "date": "-209",
+        "place_name": "头曼城(今蒙古国鄂尔浑河东畔)",
+        "highlight_type": "成语典故",
+        "title_zh": "鸣镝弑父自立",
+        "highlight_note": "鸣镝射马/鸣镝弑父——'其左右皆随鸣镝而射'，成为铁血纪律的极致象征",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-刘邦",
+    "name_zh": "刘邦",
+    "name_en": null,
+    "era": "秦末汉初",
+    "archetype": "无赖天子，布衣帝王",
+    "role": "模范",
+    "dilemmas": [
+      "出身卑微与帝王尊严的张力",
+      "用人不疑与兔死狗烹的悖论",
+      "天命自许与现实困境的拉锯"
+    ],
+    "birth_date": "-256",
+    "death_date": "-195",
+    "birth_place": "沛丰邑中阳里(今江苏丰县)",
+    "summary_zh": null,
+    "summary_first_person": "吾本泗水亭长，好酒好色，人皆以为无赖。然观秦皇帝出行，叹曰'大丈夫当如此也'。斩白蛇起事，约法三章入关中，鸿门宴全身而退，五年楚汉终有天下。论运筹帷幄吾不如子房，论治国抚民吾不如萧何，论战必胜攻必取吾不如韩信——然此三者皆人杰，吾能用之，此吾所以取天下也。",
+    "lesson": "天下非一人之智可定，善用人者得天下。",
+    "events": [
+      {
+        "id": "guji-刘邦-event-7",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-195",
+        "date_precision": "year",
+        "place_name": "沛(今江苏沛县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "抒怀",
+        "title_zh": "大风歌",
+        "description_zh": "刘邦击黥布还，过沛留饮。悉召故人父老子弟纵酒，发沛中儿百二十人教之歌。酒酣击筑自为歌诗：'大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方！'令儿和习之，高祖乃起舞，慷慨伤怀泣数行下。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "大风歌——帝王暮年的苍凉与豪迈",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-8",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-195",
+        "date_precision": "year",
+        "place_name": "长乐宫(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "遗命",
+        "title_zh": "临终论将",
+        "description_zh": "刘邦病甚，吕后问萧相国死后谁代。上曰曹参可。又问其次，曰王陵可然少戆，陈平智有馀然难独任。周勃重厚少文，'然安刘氏者必勃也，可令为太尉'。此后亦非而所知也。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "临终人事安排精准无比——预言周勃安刘",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-death",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-195",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-刘邦"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-5",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": "垓下(今安徽灵璧)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "垓下之战灭楚",
+        "description_zh": "韩信率三十万自当项羽，孔将军居左费将军居右，刘邦在后。淮阴侯先合不利却，孔费纵之，淮阴侯复乘之，大败垓下。项羽闻四面楚歌，夜溃围南出。灌婴五千骑追至东城，项羽自刎而死。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "垓下之战终结楚汉争霸，奠定大汉天下",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-6",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": "氾水之阳(今山东曹县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "登基",
+        "title_zh": "即皇帝位",
+        "description_zh": "群臣共请刘邦即皇帝位，刘邦三让。群臣曰'大王起微细诛暴逆平定四海，不尊号皆疑不信'。刘邦曰'诸君必以为便，便国家'。甲午即皇帝位，大赦天下。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "制度",
+        "highlight_note": "中国历史上第一个布衣天子的诞生",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-4",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-204",
+        "date_precision": "year",
+        "place_name": "荥阳(今河南荥阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治博弈",
+        "title_zh": "离间计除范增",
+        "description_zh": "项羽围荥阳急，刘邦用陈平计，予四万斤金以间楚君臣。项羽使者来，先以太牢具待之，佯惊曰'以为亚父使者'，更以恶食食之。使者归报项羽，遂疑范增。增大怒辞归，疽发背而死。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "谋略",
+        "highlight_note": "陈平反间计——四万斤金换范增一条命",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-2",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "咸阳(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治",
+        "title_zh": "约法三章",
+        "description_zh": "刘邦先入咸阳后，不居宫室，还军霸上。召诸县父老曰'父老苦秦苛法久矣，吾与诸侯约先入关者王之。与父老约法三章耳：杀人者死，伤人及盗抵罪，余悉除去秦法'。秦人大喜，争持牛羊酒食献飨军士。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "制度",
+        "highlight_note": "约法三章——中国法治史上从苛政到宽政的标志性转折",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-3",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "鸿门(今陕西临潼)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治博弈",
+        "title_zh": "鸿门宴全身而退",
+        "description_zh": "项羽四十万军欲击刘邦。项伯夜报张良，刘邦亲赴鸿门谢罪。项王赐酒食，范增举玦示意不杀，项庄舞剑意在沛公。樊哙闯帐怒斥。刘邦借如厕遁走，留张良献璧。项王受璧坐上，亚父拔剑撞破玉斗叹'竖子不足与谋'。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "鸿门宴——绝境求生的政治教科书",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-1",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-209",
+        "date_precision": "year",
+        "place_name": "沛县(今江苏丰县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "起义",
+        "title_zh": "斩蛇起义",
+        "description_zh": "刘邦为县送徒郦山，徒多道亡。至丰西泽中，夜解纵所送徒。被酒前行，遇大蛇当径，拔剑斩之。后人至蛇所，有老妪夜哭曰'吾子白帝子也化为蛇当道今为赤帝子斩之'。从者日益畏之。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "神话",
+        "highlight_note": "赤帝子斩白帝子——刘邦神话叙事的起点",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-刘邦-event-birth",
+        "person_qid": "guji-刘邦",
+        "endeavor_id": null,
+        "date": "-256",
+        "date_precision": "year",
+        "place_name": "沛丰邑中阳里(今江苏丰县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 沛丰邑中阳里(今江苏丰县)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-刘邦"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [],
+    "highlights": [
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-195",
+        "place_name": "沛(今江苏沛县)",
+        "highlight_type": "名场面",
+        "title_zh": "大风歌",
+        "highlight_note": "大风歌——帝王暮年的苍凉与豪迈",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-195",
+        "place_name": "长乐宫(今陕西西安)",
+        "highlight_type": "决策",
+        "title_zh": "临终论将",
+        "highlight_note": "临终人事安排精准无比——预言周勃安刘",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-202",
+        "place_name": "垓下(今安徽灵璧)",
+        "highlight_type": "战役",
+        "title_zh": "垓下之战灭楚",
+        "highlight_note": "垓下之战终结楚汉争霸，奠定大汉天下",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-202",
+        "place_name": "氾水之阳(今山东曹县)",
+        "highlight_type": "制度",
+        "title_zh": "即皇帝位",
+        "highlight_note": "中国历史上第一个布衣天子的诞生",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-204",
+        "place_name": "荥阳(今河南荥阳)",
+        "highlight_type": "谋略",
+        "title_zh": "离间计除范增",
+        "highlight_note": "陈平反间计——四万斤金换范增一条命",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-206",
+        "place_name": "咸阳(今陕西咸阳)",
+        "highlight_type": "制度",
+        "title_zh": "约法三章",
+        "highlight_note": "约法三章——中国法治史上从苛政到宽政的标志性转折",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-206",
+        "place_name": "鸿门(今陕西临潼)",
+        "highlight_type": "名场面",
+        "title_zh": "鸿门宴全身而退",
+        "highlight_note": "鸿门宴——绝境求生的政治教科书",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-刘邦",
+        "date": "-209",
+        "place_name": "沛县(今江苏丰县)",
+        "highlight_type": "神话",
+        "title_zh": "斩蛇起义",
+        "highlight_note": "赤帝子斩白帝子——刘邦神话叙事的起点",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-吕后",
+    "name_zh": "吕后",
+    "name_en": null,
+    "era": "汉初",
+    "archetype": "刚毅决断的铁腕女主",
+    "role": "模范",
+    "dilemmas": [
+      "女性执政与男权体制的冲突",
+      "保全吕氏与刘氏天下的撕裂",
+      "残暴本性与政治理性的角力"
+    ],
+    "birth_date": "约-241",
+    "death_date": "-180",
+    "birth_place": "单父(今山东单县)",
+    "summary_zh": null,
+    "summary_first_person": "吾随高祖于微时，备尝艰辛。天下既定，戚夫人日夜啼泣欲夺吾儿太子之位，几废几立。高祖崩后，吾称制天下。人皆谓吾残忍，然吾若不刚毅，刘氏天下何以安？吕氏何以存？吾身后诸吕皆诛，然惠文之世天下太平，岂非吾之功耶？",
+    "lesson": "权力面前无人性可言，铁腕手段或能守业，终难善终。",
+    "events": [
+      {
+        "id": "guji-吕后-event-5",
+        "person_qid": "guji-吕后",
+        "endeavor_id": null,
+        "date": "-180",
+        "date_precision": "year",
+        "place_name": "长乐宫(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "终局",
+        "title_zh": "病危遗命与身死族灭",
+        "description_zh": "吕后病甚，诫吕禄吕产必据兵卫宫慎毋送丧毋为人所制。崩后，陈平周勃与朱虚侯刘章谋诛诸吕。周勃入北军，令为刘氏左袒，军中皆左袒。刘章杀吕产，诸吕男女无少长皆斩之。吕氏遂灭。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "结局",
+        "highlight_note": "生前权倾天下，死后族灭——权力无常的最好注脚",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吕后-event-death",
+        "person_qid": "guji-吕后",
+        "endeavor_id": null,
+        "date": "-180",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-吕后"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吕后-event-4",
+        "person_qid": "guji-吕后",
+        "endeavor_id": null,
+        "date": "-188",
+        "date_precision": "year",
+        "place_name": "长乐宫(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "权力更迭",
+        "title_zh": "惠帝崩后临朝称制",
+        "description_zh": "惠帝崩，太后哭泣不下。张辟彊十五岁侍中，请丞相拜诸吕为将掌南北军，太后心安其哭乃哀。吕氏权由此起。乃废少帝，立常山王弘，号令一出太后，天下事皆决于吕后。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "制度",
+        "highlight_note": "中国历史上第一位临朝称制的太后",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吕后-event-2",
+        "person_qid": "guji-吕后",
+        "endeavor_id": null,
+        "date": "-194",
+        "date_precision": "year",
+        "place_name": "长乐宫(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "暴行",
+        "title_zh": "人彘之祸",
+        "description_zh": "吕后囚戚夫人于永巷，断其手足、去眼、煇耳、饮瘖药，置厕中号曰'人彘'。又召惠帝观之，帝问知为戚夫人，大哭因病岁余不起，请太后曰'此非人所为，臣为太后子终不能治天下'。自此帝日饮为淫乐不听政。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "人彘——中国历史上最骇人听闻的宫廷惨案",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吕后-event-3",
+        "person_qid": "guji-吕后",
+        "endeavor_id": null,
+        "date": "-194",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治博弈",
+        "title_zh": "鸩杀赵王如意",
+        "description_zh": "吕后三召赵王如意，赵相周昌拒曰'高帝属臣赵王，王且病不能奉诏'。吕后怒召赵相，复召赵王。惠帝慈仁，自迎赵王入宫挟与起居饮食。太后欲杀不得间，乘惠帝晨出射，使人持酖饮之。帝还，赵王已死。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "吕后除政敌不择手段，连幼子亦不放过",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吕后-event-1",
+        "person_qid": "guji-吕后",
+        "endeavor_id": null,
+        "date": "-205",
+        "date_precision": "year",
+        "place_name": "彭城之战",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战乱",
+        "title_zh": "彭城之败被俘",
+        "description_zh": "项羽大破汉军于彭城，刘邦逃遁。吕后与太公走间道，反遇楚军被俘。置于军中为质约两年。其间备尝艰辛，人性尽失，性情大变。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "磨难",
+        "highlight_note": "两年楚营为质的经历塑造了吕后日后的刚毅与残忍",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吕后-event-birth",
+        "person_qid": "guji-吕后",
+        "endeavor_id": null,
+        "date": "约-241",
+        "date_precision": "year",
+        "place_name": "单父(今山东单县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 单父(今山东单县)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-吕后"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [],
+    "highlights": [
+      {
+        "person_qid": "guji-吕后",
+        "date": "-180",
+        "place_name": "长乐宫(今陕西西安)",
+        "highlight_type": "结局",
+        "title_zh": "病危遗命与身死族灭",
+        "highlight_note": "生前权倾天下，死后族灭——权力无常的最好注脚",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吕后",
+        "date": "-188",
+        "place_name": "长乐宫(今陕西西安)",
+        "highlight_type": "制度",
+        "title_zh": "惠帝崩后临朝称制",
+        "highlight_note": "中国历史上第一位临朝称制的太后",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吕后",
+        "date": "-194",
+        "place_name": "长乐宫(今陕西西安)",
+        "highlight_type": "名场面",
+        "title_zh": "人彘之祸",
+        "highlight_note": "人彘——中国历史上最骇人听闻的宫廷惨案",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吕后",
+        "date": "-194",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "决策",
+        "title_zh": "鸩杀赵王如意",
+        "highlight_note": "吕后除政敌不择手段，连幼子亦不放过",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吕后",
+        "date": "-205",
+        "place_name": "彭城之战",
+        "highlight_type": "磨难",
+        "title_zh": "彭城之败被俘",
+        "highlight_note": "两年楚营为质的经历塑造了吕后日后的刚毅与残忍",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-周勃",
+    "name_zh": "周勃",
+    "name_en": null,
+    "era": "秦末汉初",
+    "archetype": "以忠勇定社稷的绛侯",
+    "role": "模范",
+    "dilemmas": [
+      "武将不善言的庙堂困境",
+      "忠臣与猜忌的生死博弈",
+      "诛吕安刘的功臣宿命"
+    ],
+    "birth_date": "约-250",
+    "death_date": "-169",
+    "birth_place": "沛(今江苏沛县)",
+    "summary_zh": null,
+    "summary_first_person": "吾本沛县贫民，以织蚕箔为生，又兼为人吹箫给丧事。高祖起沛，吾以中涓从之，每战先登，攻城拔旗，身被七十余创。天下既定封绛侯。吕后时，诸吕擅权，吾握兵权而隐忍不发。吕后崩，吾一呼而北军左袒，诛灭诸吕，安刘氏社稷。然功高见疑，文帝几杀吾于狱中。人谓吾勇，吾知忠比勇更难。",
+    "lesson": "忠勇定社稷，韬晦保余生，功臣之难在于知进退。",
+    "events": [
+      {
+        "id": "guji-周勃-event-7",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "-169",
+        "date_precision": "year",
+        "place_name": "绛(今山西侯马)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生终章",
+        "title_zh": "善终于绛——晚年的清醒",
+        "description_zh": "绛侯复就国。孝文帝十一年薨，谥曰武侯。勃不好文学，每召诸生说士，东乡坐而责之：'趣为我语。'其椎少文如此。然定天下安刘氏，勃之功不在诸人下。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "人生终章",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-death",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "-169",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-周勃"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-6",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "-176",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生危机",
+        "title_zh": "绛侯入狱——功臣之悲",
+        "description_zh": "周勃既就国，每河东守尉行县至绛，绛侯自畏恐诛，常被甲，令家人持兵以见之。其后人有上书告勃欲反，下廷尉治。廷尉下其事长安，逮捕勃治之。勃恐，不知置辞。吏稍侵辱之。勃以千金予狱吏，狱吏乃书牍背示之曰'以公主为证'。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "狱吏教绛侯——千古名句，满朝功臣不如一狱吏深知法度之险",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-5",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "-179",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治",
+        "title_zh": "归绛就国——功臣退场",
+        "description_zh": "文帝既立，以周勃为右丞相，赐金五千斤，邑万户。居月余，人或说勃曰：'君既诛诸吕，立代王，威震天下。君处尊位，赏厚，久之即祸及身矣。'勃惧，乃谢病请归相印。上许之。岁余，陈丞相平卒，上复以勃为丞相。十余月，上曰：'前日吾诏列侯就国，或未能行，丞相吾所重，其率先之。'乃免丞相就国。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "政治",
+        "highlight_note": "归绛就国——功臣在和平年代的必然归宿",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-4",
+        "person_qid": "guji-周勃",
+        "endeavor_id": "guji-周勃-endeavor-2",
+        "date": "-180",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治军事",
+        "title_zh": "北军左袒——一呼定社稷",
+        "description_zh": "吕后崩，太尉周勃入北军门，行令军中曰：'为吕氏右袒，为刘氏左袒！'军中皆左袒。太尉遂将北军。然尚有南军。平乃遣朱虚侯刘章以兵入宫诛诸吕，太尉与丞相遂尽诛吕氏宗族。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "左袒之令——一声号令定天下归属，汉室延续的关键瞬间",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-3",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "-204",
+        "date_precision": "year",
+        "place_name": "荥阳(今河南荥阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事行动",
+        "title_zh": "守荥阳——断项羽粮道",
+        "description_zh": "周勃别击项羽军，攻曲遇，破之。迁为将军。从高祖击项羽，守敖仓，绝项羽粮道。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "军事",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-1",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "-209",
+        "date_precision": "year",
+        "place_name": "沛(今江苏沛县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生起步",
+        "title_zh": "沛县贫民——从蚕箔匠到开国功臣",
+        "description_zh": "周勃为人，木强敦厚。高祖之为沛公初起，勃以中涓从。勃为人织蚕箔，又兼为人吹箫给丧事，常为人吹箫给丧事。材官引强。以材官引强从沛公攻胡陵。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "出身",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-2",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "-209",
+        "date_precision": "year",
+        "place_name": "沛(今江苏沛县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事行动",
+        "title_zh": "攻下邑先登——初露锋芒",
+        "description_zh": "周勃从沛公攻下邑先登。攻蒙、虞皆下之。攻秦军于雍丘，破之。所将卒斩秦守、尉各一人，破秦军于东阿下，追至濮阳，下甄城。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "军事",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-周勃-event-birth",
+        "person_qid": "guji-周勃",
+        "endeavor_id": null,
+        "date": "约-250",
+        "date_precision": "year",
+        "place_name": "沛(今江苏沛县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 沛(今江苏沛县)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-周勃"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-周勃-endeavor-3",
+        "person_qid": "guji-周勃",
+        "title_zh": "绛侯狱中——功臣的至暗时刻",
+        "domain": "政治",
+        "start_date": "-176",
+        "end_date": "-174",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "周勃免相就国，每河东守尉行县至绛，绛侯恐诛，常被甲，令家人持兵以见之。其后人有上书告勃欲反，下廷尉治之。吏稍侵辱之，勃以千金予狱吏，书牍背示之'以公主为证'。公主者，文帝女也，勃子胜之尚之。薄太后亦言无反意。文帝乃赦出之，复爵邑。",
+        "outcome": null,
+        "lesson": null,
+        "phases": [
+          {
+            "name": "见疑入狱",
+            "start_date": "-176",
+            "end_date": "-174",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "几死狱中"
+          },
+          {
+            "name": "薄昭救之",
+            "start_date": "-174",
+            "end_date": "-174",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "以公主为质获释"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-周勃-endeavor-2",
+        "person_qid": "guji-周勃",
+        "title_zh": "诛诸吕安刘——一呼而天下定",
+        "domain": "政治军事",
+        "start_date": "-180",
+        "end_date": "-180",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)",
+          "北军(长安城北)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "吕后时，周勃为太尉，然不得兵权。吕后崩，周勃与陈平合谋。郦寄说吕禄交兵权，周勃驰入北军，令曰：'为刘氏者左袒！'军中皆左袒。遂将北军诛诸吕，男女无少长皆斩之。迎立代王刘恒为文帝。",
+        "outcome": "诛灭吕氏，迎立文帝，汉室社稷得以延续",
+        "lesson": "关键时刻一呼百应，在于人心向背",
+        "phases": [
+          {
+            "name": "隐忍待时",
+            "start_date": "-180",
+            "end_date": "-180",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "握兵权而不动"
+          },
+          {
+            "name": "北军左袒",
+            "start_date": "-180",
+            "end_date": "-180",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "一呼军中皆左袒"
+          },
+          {
+            "name": "诛灭诸吕",
+            "start_date": "-180",
+            "end_date": "-180",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "尽诛吕氏宗族"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-周勃-event-4"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-周勃-endeavor-1",
+        "person_qid": "guji-周勃",
+        "title_zh": "从沛公起兵，攻城略地",
+        "domain": "军事",
+        "start_date": "-209",
+        "end_date": "-202",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "沛(今江苏沛县)",
+          "咸阳(今陕西咸阳)",
+          "垓下(今安徽灵璧)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "周勃以中涓从沛公攻胡陵、方与，破秦军于丰邑。攻下邑先登。攻蒙、虞皆下之。破李斯子由军于雍丘。每战先登，攻城拔旗，身被七十余创。垓下之战，随韩信大破项羽。天下既定，赐绛侯印，食邑八千一百八十户。",
+        "outcome": "以战功封绛侯，位列功臣",
+        "lesson": "出身寒微不碍建功立业",
+        "phases": [
+          {
+            "name": "从沛公起兵",
+            "start_date": "-209",
+            "end_date": "-206",
+            "place": "沛(今江苏沛县)",
+            "description_zh": null,
+            "highlight": "中涓从高祖"
+          },
+          {
+            "name": "攻秦灭楚",
+            "start_date": "-206",
+            "end_date": "-202",
+            "place": "关中、中原",
+            "description_zh": null,
+            "highlight": "每战先登，身被七十余创"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-周勃",
+        "date": "-176",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "名场面",
+        "title_zh": "绛侯入狱——功臣之悲",
+        "highlight_note": "狱吏教绛侯——千古名句，满朝功臣不如一狱吏深知法度之险",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-周勃",
+        "date": "-179",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "政治",
+        "title_zh": "归绛就国——功臣退场",
+        "highlight_note": "归绛就国——功臣在和平年代的必然归宿",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-周勃",
+        "date": "-180",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "名场面",
+        "title_zh": "北军左袒——一呼定社稷",
+        "highlight_note": "左袒之令——一声号令定天下归属，汉室延续的关键瞬间",
+        "endeavor_id": "guji-周勃-endeavor-2",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-张良",
+    "name_zh": "张良",
+    "name_en": null,
+    "era": "秦末汉初",
+    "archetype": "以智谋定天下的谋圣",
+    "role": "模范",
+    "dilemmas": [
+      "为韩复仇与天下的格局冲突",
+      "功成身退与济世责任的抉择",
+      "帝王心术下的明哲保身"
+    ],
+    "birth_date": "约-250",
+    "death_date": "-186",
+    "birth_place": "韩国城父(今河南宝丰)",
+    "summary_zh": null,
+    "summary_first_person": "吾本韩相之后，韩亡于秦，吾恨之入骨。博浪沙一击，虽不中秦皇帝，然天下知有张良一人。后于下邳圯上得黄石公兵书，读之十年，胸中自有天下经纬。沛公用吾之策，入咸阳、还定三秦、鸿门宴脱险、下邑之谋定天下大计，垓下一战灭项王。功成之后，吾辞封万户侯而请封留，从赤松子游，辟谷学道。人皆以为奇，吾知帝王之侧非久居之地也。",
+    "lesson": "大智若愚，功成身退，方为全身之策。",
+    "events": [
+      {
+        "id": "guji-张良-event-death",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-186",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-张良"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-7",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-201",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治决策",
+        "title_zh": "请封留地——功成身退",
+        "description_zh": "高祖封功臣，张良无战功，高祖曰：'运筹帷帐中，决胜千里外，子房功也。自择齐三万户。'良曰：'始臣起下邳，与上会留，此天以臣授陛下。陛下用臣计，幸而时中，臣愿封留足矣，不敢当三万户。'乃封张良为留侯。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策智慧",
+        "highlight_note": "让封三万户——功臣自谦避祸的最高境界",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-6",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": "垓下(今安徽灵璧)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "垓下之围——四面楚歌",
+        "description_zh": "张良献策，约韩信、彭越如期并进。韩信从齐地南下，彭越从梁地西进，英布从九江北上，三路合围。汉军四面皆楚歌，项羽闻之曰：'汉皆已得楚乎？是何楚人之多也！'遂夜起饮帐中，悲歌慷慨，虞姬和之。项王泣数行下，左右皆泣，莫能仰视。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "四面楚歌——英雄末路的千古悲歌，也是张良战略谋划的最终成果",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-5",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-203",
+        "date_precision": "year",
+        "place_name": "荥阳(今河南荥阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治决策",
+        "title_zh": "借箸谏阻分封——以箸代筹",
+        "description_zh": "郦食其劝刘邦分封六国后裔以制楚，刘邦已令刻印将行。张良从外来谒，汉王方食，曰：'客有为我计桡楚权者。'具以郦生言告良，曰：'何如？'良曰：'谁为陛下画此计者？陛下事去矣。'借箸前筹，历数八不可，刘邦辍食吐哺，骂曰：'竖儒，几败而公事！'令趣销印。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "借箸谏阻——以八条理由力挽狂澜，阻止了刘邦最大的战略失误",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-4",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-204",
+        "date_precision": "year",
+        "place_name": "下邑(今安徽砀山)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战略决策",
+        "title_zh": "下邑之谋——定天下大计",
+        "description_zh": "彭城之败后，刘邦问：'吾欲捐关以东等弃之，谁可与共功者？'张良对曰：'九江王布，楚枭将，与项王有隙；彭越与齐王田荣反梁地。此两人可急使。而汉王之将独韩信可属大事，当一面。即欲捐之，捐之此三人，则楚可破也。'此即'下邑之谋'，为灭楚定下了总方略。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战略",
+        "highlight_note": "下邑之谋——以三路合围破楚的战略蓝图，中国军事史上以少胜多的谋略典范",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-3",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "鸿门(今陕西临潼)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治博弈",
+        "title_zh": "鸿门宴——智保沛公",
+        "description_zh": "沛公入咸阳还军霸上，项羽大怒欲击之。张良夜驰往见项伯，使项伯为沛公说项羽。鸿门宴上，项庄舞剑意在沛公，张良急召樊哙入帐护卫。又令沛公如厕遁走，从小道归灞上。项羽虽怒，终不能害沛公。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "鸿门宴——中国史上最惊心动魄的饭局，张良的智谋在生死一线间展现",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-2",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-209",
+        "date_precision": "year",
+        "place_name": "下邳(今江苏邳州)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生转折",
+        "title_zh": "圯上受书——黄石公三试张良",
+        "description_zh": "良尝从容步游下邳圯上，有一老父衣褐，至良所，直堕其履圯下，顾谓良曰：'孺子，下取履！'良愕然，欲殴之。为其老，强忍，下取履。父曰：'履我！'良业为取履，因长跪履之。父以足受，笑而去。复还曰：'孺子可教矣。后五日平明，与我会此。'如是者三，乃授以《太公兵法》，曰：'读此则为王者师矣。'",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "成语典故",
+        "highlight_note": "圯上受书——忍辱负重方得真传，成为张良人生的转折点",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-1",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "-218",
+        "date_precision": "year",
+        "place_name": "博浪沙(今河南原阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "刺杀行动",
+        "title_zh": "博浪沙刺秦——义士一击",
+        "description_zh": "良年少时，韩破，良家僮三百人，弟死不葬，悉以家财求客刺秦王，为韩报仇。得力士，为铁椎重百二十斤。秦皇帝东游至博浪沙中，良与力士狙击秦皇帝，误中副车。秦皇帝大怒，大索天下。良乃更名姓，亡匿下邳。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "博浪沙刺秦——以一介布衣撼动天下之志，虽败犹荣",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-张良-event-birth",
+        "person_qid": "guji-张良",
+        "endeavor_id": null,
+        "date": "约-250",
+        "date_precision": "year",
+        "place_name": "韩国城父(今河南宝丰)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 韩国城父(今河南宝丰)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-张良"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-张良-endeavor-2",
+        "person_qid": "guji-张良",
+        "title_zh": "辟谷从游，功成身退",
+        "domain": "处世哲学",
+        "start_date": "-201",
+        "end_date": "-186",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)",
+          "留(今江苏沛县东南)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "天下既定，张良辞曰：'家世相韩，及韩灭，不爱万金之资，为韩报仇强秦，天下震动。今以三寸舌为帝者师，封万户，位列侯，此布衣之极，于良足矣。愿弃人间事，欲从赤松子游耳。'遂辟谷导引，杜门不出。",
+        "outcome": "张良成为功臣善终的典范，封留侯而终",
+        "lesson": "知进退、明得失，是比谋略更高的智慧",
+        "phases": [
+          {
+            "name": "辞封留地",
+            "start_date": "-201",
+            "end_date": "-201",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "封留侯——以地名为号"
+          },
+          {
+            "name": "辟谷从游",
+            "start_date": "-198",
+            "end_date": "-186",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "从赤松子游，不问政事"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-张良-endeavor-1",
+        "person_qid": "guji-张良",
+        "title_zh": "辅佐刘邦运筹帷幄",
+        "domain": "军事谋略",
+        "start_date": "-209",
+        "end_date": "-202",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "下邳(今江苏邳州)",
+          "咸阳(今陕西咸阳)",
+          "鸿门(今陕西临潼)",
+          "下邑(今安徽砀山)",
+          "垓下(今安徽灵璧)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "张良少时为韩报仇，遣力士刺秦始皇于博浪沙，误中副车。逃亡下邳，于圯上遇黄石公，三试之而后授以《太公兵法》。后投沛公刘邦，以运筹帷幄之策辅佐之。入咸阳时劝沛公秋毫无犯，鸿门宴上以智脱沛公于死地。楚汉相争，张良献下邑之谋，约韩信、彭越、英布三路并进，垓下之战一举灭项羽。",
+        "outcome": "刘邦从一介亭长而有天下，张良谋功居首",
+        "lesson": "善战者无赫赫之功，善谋者运天下于掌上",
+        "phases": [
+          {
+            "name": "圯上受书",
+            "start_date": "-209",
+            "end_date": "-209",
+            "place": "下邳(今江苏邳州)",
+            "description_zh": null,
+            "highlight": "黄石公三试张良授兵书"
+          },
+          {
+            "name": "归附沛公",
+            "start_date": "-209",
+            "end_date": "-208",
+            "place": "留(今江苏沛县东南)",
+            "description_zh": null,
+            "highlight": "以《太公兵法》说沛公"
+          },
+          {
+            "name": "鸿门脱险",
+            "start_date": "-206",
+            "end_date": "-206",
+            "place": "鸿门(今陕西临潼)",
+            "description_zh": null,
+            "highlight": "鸿门宴智保沛公"
+          },
+          {
+            "name": "下邑之谋",
+            "start_date": "-204",
+            "end_date": "-204",
+            "place": "下邑(今安徽砀山)",
+            "description_zh": null,
+            "highlight": "联韩信彭越英布定天下"
+          },
+          {
+            "name": "决胜垓下",
+            "start_date": "-202",
+            "end_date": "-202",
+            "place": "垓下(今安徽灵璧)",
+            "description_zh": null,
+            "highlight": "十面埋伏灭项王"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-张良",
+        "date": "-201",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "决策智慧",
+        "title_zh": "请封留地——功成身退",
+        "highlight_note": "让封三万户——功臣自谦避祸的最高境界",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-张良",
+        "date": "-202",
+        "place_name": "垓下(今安徽灵璧)",
+        "highlight_type": "名场面",
+        "title_zh": "垓下之围——四面楚歌",
+        "highlight_note": "四面楚歌——英雄末路的千古悲歌，也是张良战略谋划的最终成果",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-张良",
+        "date": "-203",
+        "place_name": "荥阳(今河南荥阳)",
+        "highlight_type": "名场面",
+        "title_zh": "借箸谏阻分封——以箸代筹",
+        "highlight_note": "借箸谏阻——以八条理由力挽狂澜，阻止了刘邦最大的战略失误",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-张良",
+        "date": "-204",
+        "place_name": "下邑(今安徽砀山)",
+        "highlight_type": "战略",
+        "title_zh": "下邑之谋——定天下大计",
+        "highlight_note": "下邑之谋——以三路合围破楚的战略蓝图，中国军事史上以少胜多的谋略典范",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-张良",
+        "date": "-206",
+        "place_name": "鸿门(今陕西临潼)",
+        "highlight_type": "名场面",
+        "title_zh": "鸿门宴——智保沛公",
+        "highlight_note": "鸿门宴——中国史上最惊心动魄的饭局，张良的智谋在生死一线间展现",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-张良",
+        "date": "-209",
+        "place_name": "下邳(今江苏邳州)",
+        "highlight_type": "成语典故",
+        "title_zh": "圯上受书——黄石公三试张良",
+        "highlight_note": "圯上受书——忍辱负重方得真传，成为张良人生的转折点",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-张良",
+        "date": "-218",
+        "place_name": "博浪沙(今河南原阳)",
+        "highlight_type": "名场面",
+        "title_zh": "博浪沙刺秦——义士一击",
+        "highlight_note": "博浪沙刺秦——以一介布衣撼动天下之志，虽败犹荣",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-汉文帝",
+    "name_zh": "汉文帝",
+    "name_en": null,
+    "era": "西汉",
+    "archetype": "以德化民的仁圣之君",
+    "role": "模范",
+    "dilemmas": [
+      "诸侯王尾大不掉与中央集权的矛盾",
+      "匈奴侵边与和亲求安的两难",
+      "个人节俭与国家强盛的平衡"
+    ],
+    "birth_date": "-203",
+    "death_date": "-157",
+    "birth_place": "代地中都(今山西平遥)",
+    "summary_zh": null,
+    "summary_first_person": "朕本代王，居边鄙之地，不意大臣迎立。即位之初，诸吕新灭，人心未安。朕约法省禁，废肉刑，除诽谤，劝农桑，轻徭役。欲作露台，计直百金，中民十家之产也，遂不作。衣绨衣，帏帐不文绣，以示敦朴为天下先。匈奴入寇，朕不欲烦苦百姓深入追击，但令边备守而已。二十三年崩，遗令薄葬，天下闻之皆哀。",
+    "lesson": "治天下不在于有为，而在于与民休息；仁德胜于武力，节俭胜于奢华。",
+    "events": [
+      {
+        "id": "guji-汉文帝-event-6",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-157",
+        "date_precision": "year",
+        "place_name": "未央宫(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "终局",
+        "title_zh": "遗诏薄葬",
+        "description_zh": "文帝崩于未央宫，遗诏令薄葬。曰'死者天地之理，奚可甚哀。厚葬破业重服伤生，吾甚不取'。天下吏民出临三日释服，霸陵皆瓦器不起坟。群臣上尊号曰孝文皇帝，太史公曰'德至盛也'。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "结局",
+        "highlight_note": "一代仁君以薄葬终——千古帝王之典范",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-汉文帝-event-death",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-157",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-汉文帝"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-汉文帝-event-5",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-158",
+        "date_precision": "year",
+        "place_name": "细柳(今陕西咸阳西北)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事",
+        "title_zh": "细柳营劳军",
+        "description_zh": "匈奴入上郡云中，文帝遣三将军分驻细柳霸上棘门。帝亲劳军至细柳营，军士被甲持锐刀彀弓满。先驱至不得入，曰'天子且至'。军门都尉曰'将军令曰军中闻将军令不闻天子诏'。文帝至亦不得入，使使持节诏将军乃入。文帝叹曰'真将军矣'，以周亚夫为太尉。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "细柳营——军纪严明的千古佳话",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-汉文帝-event-4",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-163",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "外交",
+        "title_zh": "与匈奴和亲",
+        "description_zh": "匈奴屡侵边境，文帝遣使致书单于，愿'弃细过偕之大道结兄弟之义以全天下元元之民'。和亲之约自此始。匈奴背约入盗，文帝令边备守不发兵深入，恶烦苦百姓。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "以和亲代征伐——百姓免于战争之苦",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-汉文帝-event-3",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-167",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "司法",
+        "title_zh": "缇萦上书废肉刑",
+        "description_zh": "太仓令淳于公有罪当刑。其少女缇萦上书曰'死者不可复生刑者不可复属，虽欲改过自新无由也，愿没入为官婢赎父刑'。文帝怜悲其意，下诏废肉刑，改以笞刑代之。天下称颂。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "缇萦救父——一个少女改变中国刑罚制度",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-汉文帝-event-2",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-178",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治",
+        "title_zh": "除诽谤罪纳谏",
+        "description_zh": "文帝诏曰'古者有进善之旌诽谤之木，所以通治道来谏者。今法有诽谤妖言之罪，使众臣不敢尽情，将何以来远方贤良'。遂除诽谤妖言罪，使臣下得尽情进谏，开言路以通民情。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "制度",
+        "highlight_note": "开言路除诽谤——民主政治的古代萌芽",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-汉文帝-event-1",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-180",
+        "date_precision": "year",
+        "place_name": "代邸(今山西平遥)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "登基",
+        "title_zh": "大臣迎立代王入长安即位",
+        "description_zh": "诸吕既诛，大臣谋立新帝。张武等疑大臣有诈，宋昌力排众议力陈三因。代王遣薄昭见绛侯，知其诚意。至渭桥群臣拜谒，太尉跪上天子玺符。代王三让而后受，入未央宫即天子位。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "三让而后受——仁君即位的谦逊与审慎",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-汉文帝-event-birth",
+        "person_qid": "guji-汉文帝",
+        "endeavor_id": null,
+        "date": "-203",
+        "date_precision": "year",
+        "place_name": "代地中都(今山西平遥)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 代地中都(今山西平遥)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-汉文帝"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [],
+    "highlights": [
+      {
+        "person_qid": "guji-汉文帝",
+        "date": "-157",
+        "place_name": "未央宫(今陕西西安)",
+        "highlight_type": "结局",
+        "title_zh": "遗诏薄葬",
+        "highlight_note": "一代仁君以薄葬终——千古帝王之典范",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-汉文帝",
+        "date": "-158",
+        "place_name": "细柳(今陕西咸阳西北)",
+        "highlight_type": "名场面",
+        "title_zh": "细柳营劳军",
+        "highlight_note": "细柳营——军纪严明的千古佳话",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-汉文帝",
+        "date": "-163",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "决策",
+        "title_zh": "与匈奴和亲",
+        "highlight_note": "以和亲代征伐——百姓免于战争之苦",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-汉文帝",
+        "date": "-167",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "名场面",
+        "title_zh": "缇萦上书废肉刑",
+        "highlight_note": "缇萦救父——一个少女改变中国刑罚制度",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-汉文帝",
+        "date": "-178",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "制度",
+        "title_zh": "除诽谤罪纳谏",
+        "highlight_note": "开言路除诽谤——民主政治的古代萌芽",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-汉文帝",
+        "date": "-180",
+        "place_name": "代邸(今山西平遥)",
+        "highlight_type": "决策",
+        "title_zh": "大臣迎立代王入长安即位",
+        "highlight_note": "三让而后受——仁君即位的谦逊与审慎",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-萧何",
+    "name_zh": "萧何",
+    "name_en": null,
+    "era": "秦末汉初",
+    "archetype": "以文治定天下的汉家第一相",
+    "role": "模范",
+    "dilemmas": [
+      "乱世中择主的审慎",
+      "功高震主的生存智慧",
+      "制度创设与皇权的微妙平衡"
+    ],
+    "birth_date": "约-257",
+    "death_date": "-193",
+    "birth_place": "沛丰邑(今江苏丰县)",
+    "summary_zh": null,
+    "summary_first_person": "吾本沛县一吏，日日案牍劳形，人皆以为庸碌。然吾观天下大势，知秦必亡、民思乱久矣。刘季过沛，吾知其非常人，遂以身相许。入咸阳时，诸将争金帛，吾独取秦丞相府图籍文书，天下户口强弱尽在胸中。此后镇守关中，转漕关东，粮饷不绝于道，终助高祖定鼎天下。论功行赏，吾居第一，然吾深知，刀笔吏之功不在沙场，在于让天下有序。",
+    "lesson": "真正的功勋不在于驰骋沙场，而在于让秩序从废墟中重生。",
+    "events": [
+      {
+        "id": "guji-萧何-event-death",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "-193",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-萧何"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-6",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "-195",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治博弈",
+        "title_zh": "为民请苑——险遭不测",
+        "description_zh": "何以长安地狭，上林中多空地，弃，愿令民得入田。上大怒曰：'相国多受贾人财物，乃为请吾苑！'下廷尉，械系之。数日，王卫尉前言：'苟便于民，丞相请之，陛下何疑也？'上乃赦出之。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "君臣博弈",
+        "highlight_note": "为民请命反遭系——相国之尊在皇权面前的脆弱",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-7",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "-195",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "临终遗言",
+        "title_zh": "萧何举曹参——萧规曹随",
+        "description_zh": "何病，上亲自临视。问曰：'君即百岁后，谁可代君？'对曰：'知臣莫如主。'上曰：'曹参何如？'何顿首曰：'帝得之矣！臣死不恨矣！'何置田宅必居穷处，为家不治垣屋。曰：'后世贤，师吾俭；不贤，毋为势家所夺。'",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "历史传承",
+        "highlight_note": "萧规曹随——汉初无为而治的制度传承",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-5",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "-196",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治危机",
+        "title_zh": "自污名节以释君疑",
+        "description_zh": "何有客说之曰：'君灭族不久矣。位相国，功第一，不可复加。然君初入关中，得百姓心，十余年矣。上数使使问君畏君者，恐君关中摇动。今君何不多买田地，贱贳贷以自污？上心乃安。'何从其计，上大说。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策智慧",
+        "highlight_note": "自污求存——功臣在皇权下最卑微的生存术",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-4",
+        "person_qid": "guji-萧何",
+        "endeavor_id": "guji-萧何-endeavor-2",
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治定论",
+        "title_zh": "功人与功狗——论功居首",
+        "description_zh": "高祖论功，群臣以萧何无战功争之。高祖以猎喻：'夫猎，追杀兽兔者狗也，而发踪指示者人也。今诸公徒能得走兽耳，功狗也。至如萧何，发踪指示，功人也。'遂以萧何为第一功。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名言典故",
+        "highlight_note": "功人功狗之论——中国史上对文臣武功最精妙的评价",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-3",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "-204",
+        "date_precision": "year",
+        "place_name": "关中",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人事决策",
+        "title_zh": "遣子昆弟佐军——以身家性命为质",
+        "description_zh": "汉王与项羽相距京索间，上数使使劳苦丞相。鲍生谓丞相曰：'王暴衣露盖，数使使劳苦君者，有疑君心也。为君计，莫若遣君子孙昆弟能胜兵者悉诣军所，上必益信君。'何从其计，汉王大说。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策智慧",
+        "highlight_note": "以自损求自保——功臣消解君疑的经典范式",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-2",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "-205",
+        "date_precision": "year",
+        "place_name": "关中",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "后勤保障",
+        "title_zh": "转漕关中——汉军的生命线",
+        "description_zh": "楚汉相争，高祖数失军遁去，萧何常居关中，遣军补其非。关中事，计户口转漕给军，汉王数失军遁去，何常兴关中卒，辄补缺。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "行政",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-1",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "咸阳(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "关键抉择",
+        "title_zh": "独取图籍——乱世中的远见",
+        "description_zh": "沛公入咸阳，秦宫室帷帐狗马重宝妇女以千数，诸将皆争趋金帛财物之府分之。萧何独先入收秦丞相府律令图书藏之。沛公为汉王，以何为丞相。项王与诸侯屠烧咸阳而去。汉王具知天下厄塞，户口多少，强弱之处，民所疾苦者，以何得秦图书也。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "成语典故",
+        "highlight_note": "萧何追韩信的前置——先取图籍的战略眼光，与诸将争金帛形成鲜明对比",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-萧何-event-birth",
+        "person_qid": "guji-萧何",
+        "endeavor_id": null,
+        "date": "约-257",
+        "date_precision": "year",
+        "place_name": "沛丰邑(今江苏丰县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 沛丰邑(今江苏丰县)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-萧何"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-萧何-endeavor-3",
+        "person_qid": "guji-萧何",
+        "title_zh": "制律定策，立汉家制度",
+        "domain": "制度建设",
+        "start_date": "-201",
+        "end_date": "-193",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "萧何为相，制定律令，捃摭秦法，取其宜于时者，作律九章。又作《九章律》，定度量衡，立制度。晚年力荐曹参为相，参用黄老之术，萧规曹随，汉初天下得以休养生息。",
+        "outcome": "汉家法律制度由此奠基，萧规曹随成千古佳话",
+        "lesson": "制度的生命力在于传承，而非个人之功",
+        "phases": [
+          {
+            "name": "作律九章",
+            "start_date": "-201",
+            "end_date": "-193",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "萧何律——汉家法度之基"
+          },
+          {
+            "name": "举贤自代",
+            "start_date": "-196",
+            "end_date": "-193",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "荐曹参继任丞相"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-萧何-endeavor-2",
+        "person_qid": "guji-萧何",
+        "title_zh": "论功居首，封酂侯",
+        "domain": "政治",
+        "start_date": "-202",
+        "end_date": "-202",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "天下既定，高祖论功行赏。群臣争曰：'吾等身被坚执锐，攻城略地，萧何未尝有汗马之劳，徒以文墨议论居臣等之上，何也？'高祖曰：'夫猎，追杀兽兔者狗也，而发踪指示者人也。诸公猎狗之功，萧何人之功也。'遂定萧何为首功，封酂侯，赐剑履上殿、入朝不趋。",
+        "outcome": "萧何居功臣第一，封酂侯，位列功臣之首",
+        "lesson": "运筹帷幄胜于冲锋陷阵",
+        "phases": [
+          {
+            "name": "群臣争功",
+            "start_date": "-202",
+            "end_date": "-202",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "高祖定萧何为首功"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-萧何-event-4"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-萧何-endeavor-1",
+        "person_qid": "guji-萧何",
+        "title_zh": "镇守关中，输粮不绝",
+        "domain": "行政后勤",
+        "start_date": "-206",
+        "end_date": "-202",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "关中栎阳(今陕西富平)",
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "刘邦入咸阳，诸将争趋金帛财物，萧何独入秦丞相府，收律令图籍藏之。自此汉王具知天下户口多少、强弱之处。楚汉相争之际，萧何镇守关中，立法度、设郡县、转漕关东，源源不绝输粮于前线。高祖数败于项羽，萧何辄发关中卒补其军，汉军得以不衰。",
+        "outcome": "关中成为刘邦争天下的坚实后方，汉军粮饷兵员始终充足",
+        "lesson": "治国如理家，根基在于户籍、制度与后勤",
+        "phases": [
+          {
+            "name": "取图籍知天下",
+            "start_date": "-206",
+            "end_date": "-206",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "独取秦丞相府图籍"
+          },
+          {
+            "name": "镇守关中",
+            "start_date": "-206",
+            "end_date": "-202",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "转漕关东粮饷不绝"
+          },
+          {
+            "name": "抚循百姓",
+            "start_date": "-205",
+            "end_date": "-202",
+            "place": "关中",
+            "description_zh": null,
+            "highlight": "约法收民心"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-萧何",
+        "date": "-195",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "君臣博弈",
+        "title_zh": "为民请苑——险遭不测",
+        "highlight_note": "为民请命反遭系——相国之尊在皇权面前的脆弱",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-萧何",
+        "date": "-195",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "历史传承",
+        "title_zh": "萧何举曹参——萧规曹随",
+        "highlight_note": "萧规曹随——汉初无为而治的制度传承",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-萧何",
+        "date": "-196",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "决策智慧",
+        "title_zh": "自污名节以释君疑",
+        "highlight_note": "自污求存——功臣在皇权下最卑微的生存术",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-萧何",
+        "date": "-202",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "名言典故",
+        "title_zh": "功人与功狗——论功居首",
+        "highlight_note": "功人功狗之论——中国史上对文臣武功最精妙的评价",
+        "endeavor_id": "guji-萧何-endeavor-2",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-萧何",
+        "date": "-204",
+        "place_name": "关中",
+        "highlight_type": "决策智慧",
+        "title_zh": "遣子昆弟佐军——以身家性命为质",
+        "highlight_note": "以自损求自保——功臣消解君疑的经典范式",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-萧何",
+        "date": "-206",
+        "place_name": "咸阳(今陕西咸阳)",
+        "highlight_type": "成语典故",
+        "title_zh": "独取图籍——乱世中的远见",
+        "highlight_note": "萧何追韩信的前置——先取图籍的战略眼光，与诸将争金帛形成鲜明对比",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-陈平",
+    "name_zh": "陈平",
+    "name_en": null,
+    "era": "秦末汉初",
+    "archetype": "以奇谋诡道纵横乱世的智囊",
+    "role": "模范",
+    "dilemmas": [
+      "盗嫂受金的道德困境",
+      "事主不终的忠诚考验",
+      "天下与个人的功利权衡"
+    ],
+    "birth_date": "约-257",
+    "death_date": "-178",
+    "birth_place": "阳武户牖(今河南兰考)",
+    "summary_zh": null,
+    "summary_first_person": "吾少时贫，人皆笑之。乡里富人张负以女妻之，曰：'人固有好美如陈平而长贫贱者乎？'吾游学四方，事魏王咎不用，事项王又不见用。至汉，高祖用吾为护军中尉。吾一生所学，不在仁义，在于权变。离间项范、擒缚韩信、解围白登，六出奇计，世人或以诡道目之，然乱世之中，正道不能存身，唯奇谋可活万民。",
+    "lesson": "乱世无常法，通权达变方为大智。",
+    "events": [
+      {
+        "id": "guji-陈平-event-death",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-178",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-陈平"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-7",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-179",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治理念",
+        "title_zh": "宰相之论——不治而治",
+        "description_zh": "文帝问陈平天下钱谷出入几何，平谢不知。曰：'陛下即问决狱，责廷尉；问钱谷，责治粟内史。宰相者，上佐天子理阴阳，顺四时，下育万物之宜，外镇抚四夷诸侯，内亲附百姓，使卿大夫各得任其职焉。'文帝善之。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "政治理念",
+        "highlight_note": "宰相之论——权力的精髓不在于亲力亲为，而在于识人用人",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-6",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-180",
+        "date_precision": "year",
+        "place_name": "长安(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治行动",
+        "title_zh": "诛诸吕安刘——合谋平乱",
+        "description_zh": "吕后崩，诸吕欲为乱。陈平与周勃合谋，令郦寄说吕禄交北军兵权。周勃入北军，大呼'为刘氏者左袒'，军皆左袒。遂诛诸吕，迎立代王刘恒为文帝。陈平以功拜右丞相。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "政治行动",
+        "highlight_note": "诛吕安刘——功臣集团联手终结外戚专权的关键时刻",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-4",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-196",
+        "date_precision": "year",
+        "place_name": "云梦泽(今湖北孝感)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治行动",
+        "title_zh": "伪游云梦擒韩信——借势擒虎",
+        "description_zh": "有人告韩信谋反，高祖欲击之。陈平曰：'陛下兵精孰与楚？将用兵孰与韩信？陛下举兵而攻之，是趣之战也。古者天子巡狩会见诸侯，南方有云梦，陛下出伪游云梦，会诸侯于陈，韩信必郊迎谒，陛下因禽之，此特一力士之事耳。'高祖从之，果擒韩信。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "谋略",
+        "highlight_note": "伪游云梦——以最小成本擒获天下第一猛将，四两拨千斤",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-2",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-200",
+        "date_precision": "year",
+        "place_name": "平城白登山(今山西大同)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事解围",
+        "title_zh": "白登之围——以美人计解围",
+        "description_zh": "高祖北征匈奴，被冒顿单于四十万骑围于白登山七日。陈平秘使厚遗阏氏，说曰：'汉有美女如此，今皇帝困急，欲献之单于。'阏氏恐夺其宠，乃谓冒顿曰：'两主不相困。今得汉地，单于亦非能居之。且汉主亦有神灵，单于察之。'冒顿遂解围一角，汉军得出。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "白登之围——以妇人之心解十万汉军之困，奇谋诡道的极致",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-3",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-203",
+        "date_precision": "year",
+        "place_name": "荥阳(今河南荥阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事谋略",
+        "title_zh": "金行离间——以利诱瓦解楚臣",
+        "description_zh": "陈平为高祖画策，以四万斤黄金行反间于楚。平乃夜出美女二千人予项羽军中，楚将喧传。项羽见汉王美女，以为汉尽得楚地美女，军心动摇。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "谋略",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-1",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-204",
+        "date_precision": "year",
+        "place_name": "荥阳(今河南荥阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事谋略",
+        "title_zh": "反间计去范增——瓦解项羽智囊",
+        "description_zh": "汉被围荥阳，楚围数重。陈平用金四万斤行反间于楚军，言范增与汉有私，欲灭项氏分地而王。项王果疑范增，增怒曰：'天下事大定矣，君王自为之！愿赐骸骨归。'归未至彭城，疽发背而死。项羽自此失一谋主。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "谋略",
+        "highlight_note": "反间计——四万金瓦解项羽与范增的君臣信任，改变了楚汉格局",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-5",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "-205",
+        "date_precision": "year",
+        "place_name": "荥阳(今河南荥阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生转折",
+        "title_zh": "归汉——择明主而事",
+        "description_zh": "陈平先事魏王咎，不用。事项王，赐金二十斤，然项王刚愎自用。至汉，周勃、灌婴等谗之曰：'平居家时盗其嫂；事魏王不容，亡而归楚；归楚不中，又亡归汉。又受诸将金，金多者得善处，金少者得恶处。'高祖诘之，平对曰：'臣裸身来，不受金无以为资。大王所赐金不敢私，尽以飨士。'高祖乃厚赐之，拜为护军中尉。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "人生转折",
+        "highlight_note": "盗嫂受金的辩白——小节有亏但大才无双，高祖的识人之明",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-陈平-event-birth",
+        "person_qid": "guji-陈平",
+        "endeavor_id": null,
+        "date": "约-257",
+        "date_precision": "year",
+        "place_name": "阳武户牖(今河南兰考)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 阳武户牖(今河南兰考)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-陈平"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-陈平-endeavor-2",
+        "person_qid": "guji-陈平",
+        "title_zh": "两朝丞相，善终于家",
+        "domain": "政治",
+        "start_date": "-195",
+        "end_date": "-178",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "吕后时，陈平以中郎将事孝惠帝，后为左丞相。吕后崩，陈平与周勃合谋诛灭诸吕，迎立文帝。文帝以陈平为右丞相，位极人臣。陈平为相不治事，曰：'宰相者，上佐天子理阴阳，顺四时，下育万物之宜，外镇抚四夷诸侯，内亲附百姓，使卿大夫各得任其职焉。'在位一年余而薨。",
+        "outcome": "历经高祖、惠帝、吕后、文帝四朝，位至丞相，善终于家",
+        "lesson": "为政以不扰民为上，宰相之要在于识人用人",
+        "phases": [
+          {
+            "name": "诛诸吕",
+            "start_date": "-180",
+            "end_date": "-180",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "与周勃合谋诛灭吕氏"
+          },
+          {
+            "name": "拜右丞相",
+            "start_date": "-179",
+            "end_date": "-178",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "位至丞相，善终于家"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-陈平-endeavor-1",
+        "person_qid": "guji-陈平",
+        "title_zh": "六出奇计定汉室",
+        "domain": "军事谋略",
+        "start_date": "-204",
+        "end_date": "-195",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "荥阳(今河南荥阳)",
+          "云梦(今湖北孝感)",
+          "平城(今山西大同)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "陈平归汉后，以六出奇计佐刘邦：一、反间计离间项王与范增；二、以金行间瓦解楚军；三、解荥阳之围；四、请封韩信以固其心；五、伪游云梦擒缚韩信；六、解白登之围。每计皆中要害，然秘不外传，世人莫知其详。",
+        "outcome": "六出奇计，每计皆成，奠定汉室基业",
+        "lesson": "用间之妙在于无形，谋深则事成",
+        "phases": [
+          {
+            "name": "反间计去范增",
+            "start_date": "-204",
+            "end_date": "-204",
+            "place": "荥阳(今河南荥阳)",
+            "description_zh": null,
+            "highlight": "以离间计瓦解项羽与范增"
+          },
+          {
+            "name": "擒韩信",
+            "start_date": "-196",
+            "end_date": "-196",
+            "place": "云梦(今湖北孝感)",
+            "description_zh": null,
+            "highlight": "伪游云梦擒韩信"
+          },
+          {
+            "name": "解白登之围",
+            "start_date": "-200",
+            "end_date": "-200",
+            "place": "平城(今山西大同)",
+            "description_zh": null,
+            "highlight": "以阏氏之计解围"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-陈平",
+        "date": "-179",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "政治理念",
+        "title_zh": "宰相之论——不治而治",
+        "highlight_note": "宰相之论——权力的精髓不在于亲力亲为，而在于识人用人",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-陈平",
+        "date": "-180",
+        "place_name": "长安(今陕西西安)",
+        "highlight_type": "政治行动",
+        "title_zh": "诛诸吕安刘——合谋平乱",
+        "highlight_note": "诛吕安刘——功臣集团联手终结外戚专权的关键时刻",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-陈平",
+        "date": "-196",
+        "place_name": "云梦泽(今湖北孝感)",
+        "highlight_type": "谋略",
+        "title_zh": "伪游云梦擒韩信——借势擒虎",
+        "highlight_note": "伪游云梦——以最小成本擒获天下第一猛将，四两拨千斤",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-陈平",
+        "date": "-200",
+        "place_name": "平城白登山(今山西大同)",
+        "highlight_type": "名场面",
+        "title_zh": "白登之围——以美人计解围",
+        "highlight_note": "白登之围——以妇人之心解十万汉军之困，奇谋诡道的极致",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-陈平",
+        "date": "-204",
+        "place_name": "荥阳(今河南荥阳)",
+        "highlight_type": "谋略",
+        "title_zh": "反间计去范增——瓦解项羽智囊",
+        "highlight_note": "反间计——四万金瓦解项羽与范增的君臣信任，改变了楚汉格局",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-陈平",
+        "date": "-205",
+        "place_name": "荥阳(今河南荥阳)",
+        "highlight_type": "人生转折",
+        "title_zh": "归汉——择明主而事",
+        "highlight_note": "盗嫂受金的辩白——小节有亏但大才无双，高祖的识人之明",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-韩信",
+    "name_zh": "韩信",
+    "name_en": null,
+    "era": "秦末汉初",
+    "archetype": "以兵法定天下却不知自保的兵仙",
+    "role": "模范",
+    "dilemmas": [
+      "胯下之辱的忍耐与尊严",
+      "功高震主的权力困局",
+      "自立为王与忠臣之心的挣扎"
+    ],
+    "birth_date": "约-231",
+    "death_date": "-196",
+    "birth_place": "淮阴(今江苏淮安)",
+    "summary_zh": null,
+    "summary_first_person": "吾少时贫，寄食于漂母，母亦不厌。南昌亭长之妻不为吾具食，吾从之食数十日。淮阴屠中少年辱吾，令吾出胯下，吾孰视之，俯出胯下。天下皆以为怯，独吾知忍。后投汉王，登坛拜将，定三秦、灭赵、降燕、下齐，垓下围项王，天下无敌。然吾终不能自保，长乐宫中钟室之死，不知吾所学兵法，何以不能救吾一命。",
+    "lesson": "兵法可以定天下，却不能定人心；善战者未必善终。",
+    "events": [
+      {
+        "id": "guji-韩信-event-7",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-196",
+        "date_precision": "year",
+        "place_name": "长乐宫钟室(今陕西西安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生终章",
+        "title_zh": "钟室之死——飞鸟尽良弓藏",
+        "description_zh": "陈豨反，高祖自将往诛之。信欲从中起。舍人弟告信欲反，吕后与萧何谋，乃诈令人从上所来，言豨已得死，列侯群臣皆贺。相国绐信曰：'虽疾，强入贺。'信入，吕后使武士缚信，斩之长乐宫钟室。信方斩，曰：'悔不用蒯通之计，乃为儿女子所诈，岂非天哉！'遂夷信三族。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "悲剧",
+        "highlight_note": "钟室之死——'狡兔死，走狗烹；飞鸟尽，良弓藏'，千古名将最悲结局",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-death",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-196",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-韩信"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-6",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": "垓下(今安徽灵璧)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "垓下之围——四面楚歌灭项王",
+        "description_zh": "汉王引兵渡淮南，追项羽至阳夏南。韩信、彭越皆会。韩信将三十万自当之，孔将军居左，费将军居右，绛侯柴将军在汉王后。韩信与项羽战，不利。却。孔将军、费将军纵，楚兵不利。韩信复乘之，大败垓下。项羽夜闻四面皆楚歌，乃大惊曰：'汉皆已得楚乎？是何楚人之多也！'项王则夜起饮帐中，悲歌慷慨，自为诗曰：'力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何！'歌数阕，美人和之。项王泣数行下，左右皆泣，莫能仰视。遂自刎而死。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "垓下之围与霸王别姬——英雄末路的千古悲歌",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-5",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-203",
+        "date_precision": "year",
+        "place_name": "潍水(今山东潍坊)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "水淹龙且——半渡而击",
+        "description_zh": "韩信伐齐，楚使龙且将兵二十万救齐。或曰：'汉兵远斗穷战，其锋不可当。齐楚自居其地战，兵易败散。不如深壁，令齐王使其信臣招所亡城。'龙且曰：'吾平生知韩信为人，易与耳。'信乃夜令人为万余囊，盛沙，壅水上流。引军半渡击龙且，详不胜，还走。龙且果喜曰：'固知信怯也。'遂追信渡水。信使人决壅囊，水大至。龙且军大半不得渡，即急击杀龙且，楚军败走。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "潍水之战——以水为兵的经典战例，半渡而击之",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-4",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-204",
+        "date_precision": "year",
+        "place_name": "井陉口(今河北井陉)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "背水一战——置之死地而后生",
+        "description_zh": "韩信与张耳以兵数万，欲东下井陉击赵。信使万人先行，出，背水陈。赵军望见而大笑。平旦，信建大将之旗鼓，鼓行出井陉口。赵开壁击之，大战良久。于是信、耳详弃鼓旗，走水上军。水上军开入之，复疾战。赵果空壁争汉鼓旗，逐韩信、张耳。韩信、张耳已入水上军，军皆殊死战，不可败。信所出奇兵二千骑驰入赵壁，皆拔赵旗，立汉赤帜二千。赵军已不胜，欲还归壁，壁皆汉赤帜，大惊，以为汉皆已得赵王将矣，遂乱，赵将虽斩之不能禁也。于是汉兵夹击，大破虏赵军。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "背水一战——'置之死地而后生'的军事经典，后人以'背水一战'喻决死一搏",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-3",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "汉中(今陕西汉中)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生转折",
+        "title_zh": "萧何月下追韩信——登坛拜将",
+        "description_zh": "韩信数与萧何语，何奇之。至南郑，诸将亡者数十人。信度何等已数言上，上不我用，即亡去。何闻信亡，不及以闻，自追之。有人言之于上曰：'丞相何亡。'上大怒。一二日何来谒上，上骂曰：'若亡，何也？'何曰：'臣不敢亡也，臣追亡者耳。'上复骂曰：'诸将亡者以十数，公无所追，追信，诈也。'何曰：'至如信者，国士无双。王必欲长王汉中，无所事信；必欲争天下，非信无所与计事者。'于是王许之，斋戒设坛场，拜信为大将军，一军皆惊。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "萧何月下追韩信——千古伯乐之典，韩信人生的决定性转折",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-2",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-210",
+        "date_precision": "year",
+        "place_name": "淮阴(今江苏淮安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生经历",
+        "title_zh": "胯下之辱——忍者无敌",
+        "description_zh": "淮阴屠中少年有侮信者，曰：'若虽长大，好带刀剑，中情怯耳。'众辱之曰：'信能死，刺我；不能死，出我胯下。'于是信孰视之，俯出胯下，匍匐。一市人皆笑信以为怯。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "胯下之辱——中国文化中隐忍负重的经典符号，后世以'忍胯下之辱'喻大丈夫能屈能伸",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-1",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "-220",
+        "date_precision": "year",
+        "place_name": "淮阴(今江苏淮安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人生经历",
+        "title_zh": "漂母饭信——一饭千金",
+        "description_zh": "韩信为布衣时，贫无行，不得推择为吏，又不能治生商贾，常从人寄食饮，人多厌之。信钓于城下，诸母漂。有一母见信饥，饭信，竟漂数十日。信喜，谓漂母曰：'吾必有以重报母。'母怒曰：'大丈夫不能自食，吾哀王孙而进食，岂望报乎！'后信为楚王，召所从食漂母，赐千金。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "典故",
+        "highlight_note": "一饭千金——知恩图报与落魄时的人情冷暖",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-韩信-event-birth",
+        "person_qid": "guji-韩信",
+        "endeavor_id": null,
+        "date": "约-231",
+        "date_precision": "year",
+        "place_name": "淮阴(今江苏淮安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 淮阴(今江苏淮安)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-韩信"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-韩信-endeavor-3",
+        "person_qid": "guji-韩信",
+        "title_zh": "功高不赏——兵仙的末路",
+        "domain": "政治",
+        "start_date": "-203",
+        "end_date": "-196",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "临淄(今山东淄博)",
+          "长安(今陕西西安)",
+          "钟室(今陕西西安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "韩信破齐后请为假齐王，刘邦正被围荥阳，大怒欲攻之。张良、陈平蹑其足，附耳曰：'汉方不利，宁能禁信之王乎？不如因而立，善遇使自守。'乃遣张良往立韩信为齐王。天下既定，刘邦夺韩信兵权，徙为楚王。有人告反，以云梦之游缚韩信于陈，贬为淮阴侯。韩信怨望，羞与绛、灌等列。后与陈豨谋反事泄，吕后与萧何设计，诱韩信入长乐宫钟室斩之。",
+        "outcome": null,
+        "lesson": null,
+        "phases": [
+          {
+            "name": "请封齐王",
+            "start_date": "-203",
+            "end_date": "-203",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "请为假齐王——刘邦大怒"
+          },
+          {
+            "name": "被夺兵权",
+            "start_date": "-202",
+            "end_date": "-202",
+            "place": "定陶(今山东定陶)",
+            "description_zh": null,
+            "highlight": "垓下战后即被夺兵权"
+          },
+          {
+            "name": "贬为淮阴侯",
+            "start_date": "-201",
+            "end_date": "-201",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "云梦之游被缚"
+          },
+          {
+            "name": "钟室之死",
+            "start_date": "-196",
+            "end_date": "-196",
+            "place": "长乐宫钟室(今陕西西安)",
+            "description_zh": null,
+            "highlight": "为吕后所诛——千古名将之悲"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-韩信-endeavor-1",
+        "person_qid": "guji-韩信",
+        "title_zh": "定三秦灭诸侯——兵仙之战",
+        "domain": "军事",
+        "start_date": "-206",
+        "end_date": "-202",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "汉中(今陕西汉中)",
+          "关中(今陕西)",
+          "井陉(今河北井陉)",
+          "临淄(今山东淄博)",
+          "垓下(今安徽灵璧)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "韩信拜大将军后，明修栈道暗度陈仓，还定三秦。后率军北伐，以背水阵大破赵军二十万于井陉，斩成安君陈余。又以檄文降燕。后以半渡而击之计水淹楚将龙且二十万军。垓下之战，率三十万军围项羽，十面埋伏，四面楚歌，终灭项王。",
+        "outcome": "横扫天下，灭魏、代、赵、燕、齐，垓下灭楚，天下归汉",
+        "lesson": "善战者无赫赫之功，善用兵者如水之就势",
+        "phases": [
+          {
+            "name": "明修栈道暗度陈仓",
+            "start_date": "-206",
+            "end_date": "-206",
+            "place": "汉中(今陕西汉中)",
+            "description_zh": null,
+            "highlight": "暗度陈仓定三秦"
+          },
+          {
+            "name": "背水一战灭赵",
+            "start_date": "-204",
+            "end_date": "-204",
+            "place": "井陉口(今河北井陉)",
+            "description_zh": null,
+            "highlight": "背水阵大破赵军二十万"
+          },
+          {
+            "name": "半渡而击灭龙且",
+            "start_date": "-203",
+            "end_date": "-203",
+            "place": "潍水(今山东潍坊)",
+            "description_zh": null,
+            "highlight": "水淹龙且二十万楚军"
+          },
+          {
+            "name": "十面埋伏灭项王",
+            "start_date": "-202",
+            "end_date": "-202",
+            "place": "垓下(今安徽灵璧)",
+            "description_zh": null,
+            "highlight": "四面楚歌围灭项羽"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-韩信-endeavor-2",
+        "person_qid": "guji-韩信",
+        "title_zh": "从胯下之辱到登坛拜将",
+        "domain": "人生成长",
+        "start_date": "-220",
+        "end_date": "-206",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "淮阴(今江苏淮安)",
+          "汉中(今陕西汉中)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "韩信少时贫不能自食，常从人寄食。淮阴屠中少年辱之曰：'若虽长大，好带刀剑，中情怯耳。'众辱之曰：'信能死，刺我；不能死，出我胯下。'于是信孰视之，俯出胯下，匍匐。一市人皆笑信以为怯。后萧何月下追韩信，刘邦筑坛拜信为大将军，一军皆惊。",
+        "outcome": null,
+        "lesson": null,
+        "phases": [
+          {
+            "name": "寄食漂母",
+            "start_date": "-220",
+            "end_date": "-215",
+            "place": "淮阴(今江苏淮安)",
+            "description_zh": null,
+            "highlight": "漂母饭信——一饭千金之典"
+          },
+          {
+            "name": "胯下之辱",
+            "start_date": "-215",
+            "end_date": "-210",
+            "place": "淮阴(今江苏淮安)",
+            "description_zh": null,
+            "highlight": "忍辱出胯下——天下以为怯"
+          },
+          {
+            "name": "登坛拜将",
+            "start_date": "-206",
+            "end_date": "-206",
+            "place": "汉中(今陕西汉中)",
+            "description_zh": null,
+            "highlight": "汉王筑坛拜韩信为大将军"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-韩信",
+        "date": "-196",
+        "place_name": "长乐宫钟室(今陕西西安)",
+        "highlight_type": "悲剧",
+        "title_zh": "钟室之死——飞鸟尽良弓藏",
+        "highlight_note": "钟室之死——'狡兔死，走狗烹；飞鸟尽，良弓藏'，千古名将最悲结局",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-韩信",
+        "date": "-202",
+        "place_name": "垓下(今安徽灵璧)",
+        "highlight_type": "名场面",
+        "title_zh": "垓下之围——四面楚歌灭项王",
+        "highlight_note": "垓下之围与霸王别姬——英雄末路的千古悲歌",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-韩信",
+        "date": "-203",
+        "place_name": "潍水(今山东潍坊)",
+        "highlight_type": "战役",
+        "title_zh": "水淹龙且——半渡而击",
+        "highlight_note": "潍水之战——以水为兵的经典战例，半渡而击之",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-韩信",
+        "date": "-204",
+        "place_name": "井陉口(今河北井陉)",
+        "highlight_type": "战役",
+        "title_zh": "背水一战——置之死地而后生",
+        "highlight_note": "背水一战——'置之死地而后生'的军事经典，后人以'背水一战'喻决死一搏",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-韩信",
+        "date": "-206",
+        "place_name": "汉中(今陕西汉中)",
+        "highlight_type": "名场面",
+        "title_zh": "萧何月下追韩信——登坛拜将",
+        "highlight_note": "萧何月下追韩信——千古伯乐之典，韩信人生的决定性转折",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-韩信",
+        "date": "-210",
+        "place_name": "淮阴(今江苏淮安)",
+        "highlight_type": "名场面",
+        "title_zh": "胯下之辱——忍者无敌",
+        "highlight_note": "胯下之辱——中国文化中隐忍负重的经典符号，后世以'忍胯下之辱'喻大丈夫能屈能伸",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-韩信",
+        "date": "-220",
+        "place_name": "淮阴(今江苏淮安)",
+        "highlight_type": "典故",
+        "title_zh": "漂母饭信——一饭千金",
+        "highlight_note": "一饭千金——知恩图报与落魄时的人情冷暖",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-项羽",
+    "name_zh": "项羽",
+    "name_en": null,
+    "era": "秦末楚汉",
+    "archetype": "力拔山兮的末路霸王",
+    "role": "模范",
+    "dilemmas": [
+      "贵族血统与草莽天下的矛盾",
+      "刚愎自用与唯才是举的撕裂",
+      "天亡我非战之罪的自我欺骗"
+    ],
+    "birth_date": "-232",
+    "death_date": "-202",
+    "birth_place": "下相(今江苏宿迁)",
+    "summary_zh": null,
+    "summary_first_person": "吾起兵时二十四，八千子弟渡江而西，所当者破，所击者服，未尝一败。钜鹿破釜沉舟，诸侯壁上而观；鸿门纵虎归山，至今悔之。天亡我也，非战之罪——吾至死不悟，亦至死不悔。力拔山兮气盖世，时不利兮骓不逝。虞兮虞兮柰若何！",
+    "lesson": "个人武勇终不敌制度之力，刚愎自用者必失天下人心。",
+    "events": [
+      {
+        "id": "guji-项羽-event-9",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": "垓下(今安徽灵璧)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "四面楚歌霸王别姬",
+        "description_zh": "韩信三十万大军围项羽于垓下，夜闻四面皆楚歌。项羽大惊曰'汉皆已得楚乎'，起饮帐中，悲歌慷慨：'力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可柰何，虞兮虞兮柰若何！'美人虞姬和之，项王泣数行下，左右皆泣莫能仰视。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "中国文学史上最悲壮的离别场景，千古绝唱",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-10",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": "东城(今安徽定远)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "终局",
+        "title_zh": "乌江自刎",
+        "description_zh": "项羽溃围至东城仅余二十八骑，谓其骑曰'吾身七十馀战未尝败北，然今卒困于此，天之亡我也非战之罪'。遂分骑四队，三胜汉军。至乌江，亭长备船待渡，项羽笑曰'天之亡我我何渡为！江东子弟八千人渡江而西今无一人还，纵父兄怜而王我何面目见之'。赐骓马于亭长，独身接战数百人，身被十余创，自刎而死。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "自刎乌江——中国历史上最悲壮的英雄末路",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-death",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-202",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-项羽"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-7",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-203",
+        "date_precision": "year",
+        "place_name": "广武(今河南荥阳北)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "对峙",
+        "title_zh": "广武对峙与分羹之问",
+        "description_zh": "楚汉相持于广武，项羽将刘邦之父太公置于高俎上，告汉王曰'今不急下吾烹太公'。刘邦笑曰'吾与项羽约为兄弟，吾翁即若翁，必欲烹而翁幸分我一杯羹'。项羽怒欲杀之，项伯劝止。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "笑分一杯羹——刘邦的无赖与项羽的无奈",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-8",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-203",
+        "date_precision": "year",
+        "place_name": "鸿沟(今河南荥阳一带)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "和约",
+        "title_zh": "鸿沟中分天下",
+        "description_zh": "楚汉久相持未决，丁壮苦军旅，老弱罢转漕。项羽谓刘邦愿挑战决雌雄，刘邦笑谢曰'吾宁斗智不能斗力'。伏弩射中汉王。后彭越绝楚粮道，项羽被迫与刘邦约中分天下，鸿沟以西为汉，以东为楚。归太公吕后，军中皆呼万岁。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "中分天下的短暂和平——'楚河汉界'由此而来",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-6",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-204",
+        "date_precision": "year",
+        "place_name": "彭城(今江苏徐州)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "彭城之战大破汉军",
+        "description_zh": "刘邦趁项羽北击齐之际，以五十六万大军攻占彭城。项羽闻讯，自以精兵三万从鲁出胡陵，晨击汉军。日中大破之，汉军走穀泗水死者十余万人。追至灵壁睢水，汉卒十余万人皆入睢水，睢水为之不流。围刘邦三匝，大风起，刘邦乃得遁去。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "三万破五十六万——楚汉战争中最戏剧性的逆转",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-3",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "鸿门(今陕西临潼)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治博弈",
+        "title_zh": "鸿门宴",
+        "description_zh": "项羽四十万大军驻新丰鸿门，刘邦十万军霸上。项伯夜告张良，刘邦赴鸿门谢罪。范增三次举玦示意杀刘，项王默然不应。项庄舞剑意在沛公，樊哙闯帐怒斥。项王赐酒赐彘肩而不能杀。刘邦借如厕遁走，范增拔剑撞碎玉斗叹曰'夺项王天下者必沛公'。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "中国历史上最著名的一场饭局，决定天下归属",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-4",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "咸阳(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "暴行",
+        "title_zh": "屠咸阳烧秦宫",
+        "description_zh": "项羽引兵入咸阳，杀秦降王子婴，烧秦宫室火三月不灭，收其货宝妇女而东。有人劝都关中以霸天下，项羽曰'富贵不归故乡如衣绣夜行'，烹说者。秦人大失望，遂失关中民心。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "一念之差失天下——衣锦还乡的虚荣毁掉霸王基业",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-5",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-206",
+        "date_precision": "year",
+        "place_name": "新安(今河南新安)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "暴行",
+        "title_zh": "坑杀秦降卒二十万",
+        "description_zh": "章邯率秦军二十万降楚，至新安。诸侯吏卒此前在秦中受秦吏凌辱，今乘胜奴役秦降卒。秦卒多怨言，诸将告项羽。项羽恐至关中不听，遂夜击坑杀秦卒二十余万人新安城南。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "残忍暴行失尽关中民心，反为刘邦铺路",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-2",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-207",
+        "date_precision": "year",
+        "place_name": "钜鹿(今河北平乡)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "破釜沉舟大破秦军",
+        "description_zh": "项羽杀宋义夺军权后，悉引兵渡河，皆沈船、破釜甑、烧庐舍，持三日粮以示必死。九战绝秦甬道，大破王离军。诸侯军从壁上观战，见楚兵呼声动天、一以当十，皆惴恐。秦破后诸侯入辕门膝行莫敢仰视，项羽由是始为诸侯上将军。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "以少胜多的经典战例，奠定霸王威名",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-1",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-209",
+        "date_precision": "year",
+        "place_name": "会稽(今江苏苏州)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "起义",
+        "title_zh": "会稽斩守起兵",
+        "description_zh": "秦二世元年，项梁与项羽于会稽郡府起事。项羽拔剑斩会稽守头，击杀府中数十百人，一府慴伏莫敢起。遂举吴中兵，得精兵八千人，开始了灭秦大业。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名场面",
+        "highlight_note": "项羽年仅二十四，力能扛鼎，一剑定江东",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-项羽-event-birth",
+        "person_qid": "guji-项羽",
+        "endeavor_id": null,
+        "date": "-232",
+        "date_precision": "year",
+        "place_name": "下相(今江苏宿迁)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 下相(今江苏宿迁)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-项羽"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [],
+    "highlights": [
+      {
+        "person_qid": "guji-项羽",
+        "date": "-202",
+        "place_name": "垓下(今安徽灵璧)",
+        "highlight_type": "名场面",
+        "title_zh": "四面楚歌霸王别姬",
+        "highlight_note": "中国文学史上最悲壮的离别场景，千古绝唱",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-202",
+        "place_name": "东城(今安徽定远)",
+        "highlight_type": "名场面",
+        "title_zh": "乌江自刎",
+        "highlight_note": "自刎乌江——中国历史上最悲壮的英雄末路",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-203",
+        "place_name": "广武(今河南荥阳北)",
+        "highlight_type": "名场面",
+        "title_zh": "广武对峙与分羹之问",
+        "highlight_note": "笑分一杯羹——刘邦的无赖与项羽的无奈",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-203",
+        "place_name": "鸿沟(今河南荥阳一带)",
+        "highlight_type": "决策",
+        "title_zh": "鸿沟中分天下",
+        "highlight_note": "中分天下的短暂和平——'楚河汉界'由此而来",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-204",
+        "place_name": "彭城(今江苏徐州)",
+        "highlight_type": "战役",
+        "title_zh": "彭城之战大破汉军",
+        "highlight_note": "三万破五十六万——楚汉战争中最戏剧性的逆转",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-206",
+        "place_name": "鸿门(今陕西临潼)",
+        "highlight_type": "名场面",
+        "title_zh": "鸿门宴",
+        "highlight_note": "中国历史上最著名的一场饭局，决定天下归属",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-206",
+        "place_name": "咸阳(今陕西咸阳)",
+        "highlight_type": "决策",
+        "title_zh": "屠咸阳烧秦宫",
+        "highlight_note": "一念之差失天下——衣锦还乡的虚荣毁掉霸王基业",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-206",
+        "place_name": "新安(今河南新安)",
+        "highlight_type": "决策",
+        "title_zh": "坑杀秦降卒二十万",
+        "highlight_note": "残忍暴行失尽关中民心，反为刘邦铺路",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-207",
+        "place_name": "钜鹿(今河北平乡)",
+        "highlight_type": "战役",
+        "title_zh": "破釜沉舟大破秦军",
+        "highlight_note": "以少胜多的经典战例，奠定霸王威名",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-项羽",
+        "date": "-209",
+        "place_name": "会稽(今江苏苏州)",
+        "highlight_type": "名场面",
+        "title_zh": "会稽斩守起兵",
+        "highlight_note": "项羽年仅二十四，力能扛鼎，一剑定江东",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
   }
 ]

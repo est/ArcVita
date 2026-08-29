@@ -20,7 +20,6 @@ def build_highlights():
     cur.execute("SELECT * FROM events WHERE is_highlight=1 ORDER BY date")
     rows = [dict(r) for r in cur.fetchall()]
     con.close()
-    # enrich person name
     out = []
     for r in rows:
         out.append(
@@ -35,6 +34,15 @@ def build_highlights():
                 "sources": json.loads(r["sources"]) if r["sources"] else [],
             }
         )
+    # 合并历史背景事件（王表/朝代更替/社会变革等）
+    ctx_path = Path("data/processed/historical_contexts.yaml")
+    if ctx_path.exists():
+        ctx = yaml.safe_load(ctx_path.read_text(encoding="utf-8")) or []
+        for c in ctx:
+            c["is_highlight"] = True
+            if "person_qid" not in c:
+                c["person_qid"] = "_context"
+            out.append(c)
     p = Path("data/processed/highlights.yaml")
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(yaml.safe_dump(out, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
