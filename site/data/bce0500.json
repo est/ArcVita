@@ -1182,5 +1182,250 @@
         ]
       }
     ]
+  },
+  {
+    "qid": "guji-魏文侯",
+    "name_zh": "魏文侯",
+    "name_en": null,
+    "era": "战国初期",
+    "archetype": "开时代先河的霸主之君",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-472",
+    "death_date": "-396",
+    "birth_place": "安邑(今山西夏县)",
+    "summary_zh": null,
+    "summary_first_person": "吾即位之初，晋室已衰，三家分晋已成定局。吾知欲霸天下，须先变法图强。用李悝尽地力之教，国以富强。拜吴起为将，西取河西。吾亦知用人之道——吾过段干木之闾而式之，非敬其人，敬其德也。吾朝多贤臣，田子方、西门豹各司其职，此魏所以为战国首霸。",
+    "lesson": "率先变法者率先强盛，但先发优势需要用制度和人才持续维护。",
+    "events": [
+      {
+        "id": "guji-魏文侯-event-death",
+        "person_qid": "guji-魏文侯",
+        "endeavor_id": null,
+        "date": "-396",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-魏文侯"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-魏文侯-event-birth",
+        "person_qid": "guji-魏文侯",
+        "endeavor_id": null,
+        "date": "约-472",
+        "date_precision": "year",
+        "place_name": "安邑(今山西夏县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 安邑(今山西夏县)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-魏文侯"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-魏文侯-endeavor-2",
+        "person_qid": "guji-魏文侯",
+        "title_zh": "吴起为将，西取河西",
+        "domain": "军事",
+        "start_date": "-409",
+        "end_date": "-389",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "河西(今陕西韩城一带)",
+          "阴晋(今陕西华阴)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "魏文侯任用吴起为将，训练出闻名天下的精锐部队'魏武卒'——士兵需全副甲胄操十二石之弩、负矢五十，日行百里方可入选。吴起率魏武卒连年进攻秦国，最终在阴晋之战中以五万人大破五十万秦军。秦国被迫退守洛水以西，失去了经营数百年的河西之地。",
+        "outcome": "魏国夺取河西之地，秦国被封锁在关中，魏国成为战国初期最强国",
+        "lesson": "精锐的军事制度比兵员数量更能决定战争胜负",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-409",
+            "end_date": "-400",
+            "place": "河西(今陕西韩城一带)",
+            "description_zh": null,
+            "highlight": "吴起在魏训练魏武卒"
+          },
+          {
+            "name": "破局",
+            "start_date": "-400",
+            "end_date": "-395",
+            "place": "河西(今陕西韩城一带)",
+            "description_zh": null,
+            "highlight": "连年进攻秦国"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-389",
+            "end_date": "-389",
+            "place": "阴晋(今陕西华阴)",
+            "description_zh": null,
+            "highlight": "阴晋之战，五万魏武卒大破五十万秦军"
+          },
+          {
+            "name": "收束",
+            "start_date": "-389",
+            "end_date": "-387",
+            "place": "河西(今陕西韩城一带)",
+            "description_zh": null,
+            "highlight": "秦国被逼退至洛水以西"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-魏文侯-endeavor-1",
+        "person_qid": "guji-魏文侯",
+        "title_zh": "李悝变法，战国变法之先",
+        "domain": "政治",
+        "start_date": "-422",
+        "end_date": "-396",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "安邑(今山西夏县)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "魏文侯任用李悝为相，推行战国时代第一次系统性变法。李悝提出'尽地力之教'，鼓励农民精耕细作以提高粮食产量；推行'平籴法'稳定粮价；制定《法经》六篇，以法治国。这些改革比商鞅变法早了近百年，为魏国在战国初期的霸业奠定了制度基础。",
+        "outcome": "魏国成为战国初期第一个通过变法富强的国家",
+        "lesson": "制度创新是国家竞争力的根本来源",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-422",
+            "end_date": "-400",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "任用李悝为相"
+          },
+          {
+            "name": "破局",
+            "start_date": "-400",
+            "end_date": "-390",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "推行'尽地力之教'"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-390",
+            "end_date": "-396",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "魏国率先富强，冠绝诸侯"
+          },
+          {
+            "name": "收束",
+            "start_date": "-396",
+            "end_date": "-396",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "魏国霸业确立"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-魏文侯-endeavor-3",
+        "person_qid": "guji-魏文侯",
+        "title_zh": "礼贤下士，开养士之风",
+        "domain": "政治文化",
+        "start_date": "-422",
+        "end_date": "-396",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "安邑(今山西夏县)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "魏文侯礼贤下士，对贤者以师礼相待。他过段干木之闾必下车凭轼致敬，田子方与之对坐论道，子夏在魏传授儒学。西门豹治邺破除'河伯娶妇'的迷信，发展农业水利。魏国一时人才济济，成为天下士人向往之地，开创了战国养士之风。",
+        "outcome": "魏国成为战国初期的文化和人才中心",
+        "lesson": "一个国家最宝贵的资源不是土地和军队，而是人才",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-422",
+            "end_date": "-410",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "招揽段干木、田子方、子夏等"
+          },
+          {
+            "name": "破局",
+            "start_date": "-410",
+            "end_date": "-400",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "西门豹治邺，各尽其才"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-400",
+            "end_date": "-396",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "朝堂人才济济，天下归心"
+          },
+          {
+            "name": "收束",
+            "start_date": "-396",
+            "end_date": "-396",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "开创战国养士之风"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
   }
 ]

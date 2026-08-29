@@ -145,5 +145,581 @@
         ]
       }
     ]
+  },
+  {
+    "qid": "guji-班超",
+    "name_zh": "班超",
+    "name_en": null,
+    "era": "东汉",
+    "archetype": "投笔从戎：以三十六人定五十国的西域传奇",
+    "role": "模范",
+    "dilemmas": [
+      "文吏生涯的不甘与从军壮志",
+      "孤军深入异域的生死抉择",
+      "经营西域三十年的归乡之念"
+    ],
+    "birth_date": "32",
+    "death_date": "102",
+    "birth_place": "扶风平陵(今陕西咸阳)",
+    "summary_zh": null,
+    "summary_first_person": "吾本为人抄书以养母，一日投笔叹曰'大丈夫无它志略，犹当效傅介子、张骞立功异域'。遂从军出使西域。三十六人定五十国，纵横三十年。年老上书乞归，愿生入玉门关。",
+    "lesson": "人生的关键转折往往在于一个决断——投笔从戎改变命运。",
+    "events": [
+      {
+        "id": "guji-班超-event-3",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "102",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人物情感",
+        "title_zh": "上书乞归",
+        "description_zh": "班超年老多病，上书汉和帝曰'臣不敢望到酒泉郡，但愿生入玉门关。谨遣子勇随安息献物入塞，及臣生在，令勇目见中土。'言辞恳切，和帝感其言，准其归国。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名言",
+        "highlight_note": "'但愿生入玉门关'——英雄迟暮的深切乡愁",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-death",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "102",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-班超"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-birth",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "32",
+        "date_precision": "year",
+        "place_name": "扶风平陵(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 扶风平陵(今陕西咸阳)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-班超"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-1",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "73",
+        "date_precision": "year",
+        "place_name": "鄯善(今新疆若羌)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "外交军事",
+        "title_zh": "夜袭匈奴使团",
+        "description_zh": "班超出使鄯善，匈奴亦遣使到鄯善。鄯善王犹豫不决。班超率三十六人夜袭匈奴使营，纵火烧之，斩杀匈奴使团百余人。鄯善王遂决意归汉。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "军事",
+        "highlight_note": "三十六人夜袭——以少胜多的经典外交军事行动",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-4",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "73",
+        "date_precision": "year",
+        "place_name": "于阗(今新疆和田)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "外交军事",
+        "title_zh": "降服于阗",
+        "description_zh": "班超至于阗，于阗王信巫信匈奴使者之言，欲杀汉使。班超先下手斩杀巫师，以利害说于阗王。于阗王遂杀匈奴使者归汉。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "外交",
+        "highlight_note": "以智谋降服一国——外交家的胆略",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-8",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "73",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人物转折",
+        "title_zh": "投笔从戎",
+        "description_zh": "班超为佣书吏，以抄写文书为生。一日掷笔叹曰'大丈夫无它志略，犹当效傅介子、张骞立功异域，以取封侯，安能久事笔研间乎？'遂从军出使西域。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "典故",
+        "highlight_note": "投笔从戎——改变人生的关键决断",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-5",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "74",
+        "date_precision": "year",
+        "place_name": "疏勒(今新疆喀什)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "外交军事",
+        "title_zh": "智取疏勒",
+        "description_zh": "班超得知疏勒王为匈奴所立，不得人心。遂率少数随从直入疏勒王宫，废黜傀儡王，另立疏勒王室后裔。疏勒人大悦，归附汉朝。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "外交",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-6",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "75",
+        "date_precision": "year",
+        "place_name": "西域(今新疆库车)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事行动",
+        "title_zh": "疏勒城保卫战",
+        "description_zh": "匈奴攻西域都护府，耿恭守疏勒城。班超闻讯率军援救。匈奴围城数月，城中煮铠弩食筋革。耿恭坚守不降，援军至时仅余二十六人。班超与耿恭内外配合击退匈奴。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "军事",
+        "highlight_note": "孤军守城的悲壮——东汉西域经营的血泪",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-2",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "94",
+        "date_precision": "year",
+        "place_name": "西域(今新疆及中亚)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "外交军事",
+        "title_zh": "降服焉耆等国",
+        "description_zh": "班超调发西域诸国兵七万人攻焉耆、危须、尉犁三国。先以外交手段诱其国王出迎，伏兵尽杀之。西域其余诸国震恐，纷纷投降。至此西域五十余国全部归附。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "军事",
+        "highlight_note": "西域一统——三十年经营的巅峰",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-班超-event-7",
+        "person_qid": "guji-班超",
+        "endeavor_id": null,
+        "date": "97",
+        "date_precision": "year",
+        "place_name": "大秦(今罗马帝国)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "外交探险",
+        "title_zh": "甘英出使大秦",
+        "description_zh": "班超派遣副使甘英出使大秦（罗马帝国）。甘英西行至条支(今伊拉克)，临海欲渡，安息人以'海水广大'相阻。甘英遂还，虽未到达大秦，但拓展了中国对西方的认知。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "外交",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [],
+    "highlights": [
+      {
+        "person_qid": "guji-班超",
+        "date": "102",
+        "place_name": "洛阳(今河南洛阳)",
+        "highlight_type": "名言",
+        "title_zh": "上书乞归",
+        "highlight_note": "'但愿生入玉门关'——英雄迟暮的深切乡愁",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-班超",
+        "date": "73",
+        "place_name": "鄯善(今新疆若羌)",
+        "highlight_type": "军事",
+        "title_zh": "夜袭匈奴使团",
+        "highlight_note": "三十六人夜袭——以少胜多的经典外交军事行动",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-班超",
+        "date": "73",
+        "place_name": "于阗(今新疆和田)",
+        "highlight_type": "外交",
+        "title_zh": "降服于阗",
+        "highlight_note": "以智谋降服一国——外交家的胆略",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-班超",
+        "date": "73",
+        "place_name": "洛阳(今河南洛阳)",
+        "highlight_type": "典故",
+        "title_zh": "投笔从戎",
+        "highlight_note": "投笔从戎——改变人生的关键决断",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-班超",
+        "date": "75",
+        "place_name": "西域(今新疆库车)",
+        "highlight_type": "军事",
+        "title_zh": "疏勒城保卫战",
+        "highlight_note": "孤军守城的悲壮——东汉西域经营的血泪",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-班超",
+        "date": "94",
+        "place_name": "西域(今新疆及中亚)",
+        "highlight_type": "军事",
+        "title_zh": "降服焉耆等国",
+        "highlight_note": "西域一统——三十年经营的巅峰",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-蔡伦",
+    "name_zh": "蔡伦",
+    "name_en": null,
+    "era": "东汉",
+    "archetype": "造纸改良者：推动人类文明进程的技术革命家",
+    "role": "模范",
+    "dilemmas": [
+      "宦官身份的政治困境",
+      "技术革新与宫廷权力斗争",
+      "造纸术改良者的历史地位"
+    ],
+    "birth_date": "约50",
+    "death_date": "121",
+    "birth_place": "桂阳郡(今湖南郴州)",
+    "summary_zh": null,
+    "summary_first_person": "吾入宫为宦官，后任尚方令，主宫廷制造。吾总结前人经验，以树皮麻头破布旧渔网造纸，天下称之蔡侯纸。造纸之术流传四海，然吾晚年卷入宫廷之争，饮鸩而死。",
+    "lesson": "技术的力量可以超越权力更替而永存。",
+    "events": [
+      {
+        "id": "guji-蔡伦-event-1",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "105",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "科技发明",
+        "title_zh": "蔡侯纸献世",
+        "description_zh": "蔡伦将改良后的纸献于汉和帝。此纸以树皮、麻头、破布、旧渔网为原料，经挫、捣、抄、烘干等工艺制成。质地轻薄、造价低廉、便于书写，迅速取代竹简帛书。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "发明",
+        "highlight_note": "造纸术——中国四大发明之一，推动人类文明进程",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔡伦-event-4",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "105",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "文化推广",
+        "title_zh": "诏令天下用纸",
+        "description_zh": "汉和帝见蔡伦所造纸大为赞赏，下令全国推广使用。蔡侯纸迅速取代竹简帛书，成为主要书写材料。知识的记录与传播成本大幅降低，文化教育得以普及。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "影响",
+        "highlight_note": "知识传播的革命——纸张普及改变了文明进程",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔡伦-event-2",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "121",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "宫廷政变",
+        "title_zh": "蔡伦饮鸩而死",
+        "description_zh": "蔡伦早年参与窦太后迫害宋贵人之事。汉安帝亲政后追查此事，蔡伦自知难逃一死，沐浴整衣后饮鸩而死。一代发明家就这样在宫廷斗争中落幕。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "悲剧",
+        "highlight_note": "造纸术改良者终被宫廷政治吞噬",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔡伦-event-6",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "121",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "历史评价",
+        "title_zh": "造纸术的世界影响",
+        "description_zh": "造纸术经丝绸之路传至阿拉伯，再传至欧洲。欧洲人用纸取代羊皮纸后，知识记录成本大幅降低，为文艺复兴和宗教改革奠定了物质基础。蔡伦的发明改变了整个人类文明的进程。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "影响",
+        "highlight_note": "中国四大发明之一——造纸术的世界性影响",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔡伦-event-death",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "121",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-蔡伦"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔡伦-event-3",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "89",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "人物转折",
+        "title_zh": "蔡伦入宫为宦官",
+        "description_zh": "蔡伦因家贫入宫为宦官，后因办事得力升为小黄门。窦太后临朝时蔡伦受重用，任中常侍、尚方令。蔡伦由此接触到宫廷制造工艺，为后来改良造纸术奠定了基础。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "人物",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔡伦-event-5",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "约100",
+        "date_precision": "year",
+        "place_name": "洛阳(今河南洛阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "科技实验",
+        "title_zh": "蔡伦的造纸实验",
+        "description_zh": "蔡伦在尚方工坊中反复试验，以各种廉价原料造纸。从树皮到麻头，从破布到渔网，经过挫、捣、抄、烘等数十道工序，终于造出质地优良的纸张。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "发明",
+        "highlight_note": "技术创新需要无数次试验与坚持",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔡伦-event-birth",
+        "person_qid": "guji-蔡伦",
+        "endeavor_id": null,
+        "date": "约50",
+        "date_precision": "year",
+        "place_name": "桂阳郡(今湖南郴州)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 桂阳郡(今湖南郴州)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-蔡伦"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [],
+    "highlights": [
+      {
+        "person_qid": "guji-蔡伦",
+        "date": "105",
+        "place_name": "洛阳(今河南洛阳)",
+        "highlight_type": "发明",
+        "title_zh": "蔡侯纸献世",
+        "highlight_note": "造纸术——中国四大发明之一，推动人类文明进程",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-蔡伦",
+        "date": "105",
+        "place_name": "洛阳(今河南洛阳)",
+        "highlight_type": "影响",
+        "title_zh": "诏令天下用纸",
+        "highlight_note": "知识传播的革命——纸张普及改变了文明进程",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-蔡伦",
+        "date": "121",
+        "place_name": "洛阳(今河南洛阳)",
+        "highlight_type": "悲剧",
+        "title_zh": "蔡伦饮鸩而死",
+        "highlight_note": "造纸术改良者终被宫廷政治吞噬",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-蔡伦",
+        "date": "121",
+        "place_name": "洛阳(今河南洛阳)",
+        "highlight_type": "影响",
+        "title_zh": "造纸术的世界影响",
+        "highlight_note": "中国四大发明之一——造纸术的世界性影响",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-蔡伦",
+        "date": "约100",
+        "place_name": "洛阳(今河南洛阳)",
+        "highlight_type": "发明",
+        "title_zh": "蔡伦的造纸实验",
+        "highlight_note": "技术创新需要无数次试验与坚持",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
   }
 ]

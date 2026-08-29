@@ -4,42 +4,16 @@
     "name_zh": "商鞅",
     "name_en": null,
     "era": "战国中期",
-    "archetype": "以法治国的铁血改革者",
+    "archetype": "以身殉法的变法先驱",
     "role": "模范",
-    "dilemmas": [
-      "客卿身份的信用困境",
-      "太子犯法的法与情",
-      "功高震主与自掘坟墓"
-    ],
+    "dilemmas": [],
     "birth_date": "约-390",
     "death_date": "-338",
-    "birth_place": "卫国",
+    "birth_place": "卫国(今河南淇县)",
     "summary_zh": null,
-    "summary_first_person": "吾三说秦孝公，以帝道、王道、霸道试之，孝公终用霸道。吾废井田、开阡陌、立军功，使秦人勇于公战。然吾终死于自己所立之法——太子犯法，吾刑其师傅；孝公死后，太子即位，吾遂车裂而亡。法在而人亡，此吾之宿命也。",
-    "lesson": "改革者最大的悲剧不是失败，而是成功到足以让自己成为新秩序的牺牲品。",
+    "summary_first_person": "吾本卫国公孙，游历诸侯而无所遇。入秦以霸道说孝公，一语中的。变法十年，秦道不拾遗、山无盗贼。然吾深知法之所在即怨之所聚。太子犯法，刑其师傅以立威，吾与公子虔结仇已深。孝公薨，吾走不能，终被车裂。然吾法不废，秦终一天下，吾虽死犹生。",
+    "lesson": "变法者终成变法的祭品，但法的精神可以超越个人存亡。",
     "events": [
-      {
-        "id": "guji-商鞅-event-3",
-        "person_qid": "guji-商鞅",
-        "endeavor_id": "guji-商鞅-endeavor-4",
-        "date": "-338",
-        "date_precision": "year",
-        "place_name": "秦国函谷关",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "至暗时刻",
-        "title_zh": "作法自毙",
-        "description_zh": "商鞅逃亡至关下，想住旅店。店主依据商鞅所立之法——'舍人无验者坐之'——拒绝收留。商鞅叹曰'为法之弊，一至此哉'。最终被秦军擒获，车裂于咸阳。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "成语",
-        "highlight_note": "作法自毙——最讽刺的历史因果",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
       {
         "id": "guji-商鞅-event-death",
         "person_qid": "guji-商鞅",
@@ -63,105 +37,17 @@
         "needs_review_reason": null
       },
       {
-        "id": "guji-商鞅-event-4",
-        "person_qid": "guji-商鞅",
-        "endeavor_id": null,
-        "date": "-340",
-        "date_precision": "year",
-        "place_name": "魏国",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "军事",
-        "title_zh": "大破魏军，俘公子卬",
-        "description_zh": "商鞅率秦军伐魏，与魏将公子卬对阵。商鞅以旧交之名约公子卬会盟，趁机伏兵擒之。魏军失去主帅大败。魏惠王被迫割河西之地求和。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "决策",
-        "highlight_note": "以诈术取胜——功业与道德的永恒冲突",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
-      {
-        "id": "guji-商鞅-event-5",
-        "person_qid": "guji-商鞅",
-        "endeavor_id": null,
-        "date": "-350",
-        "date_precision": "year",
-        "place_name": "秦国咸阳",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "变法",
-        "title_zh": "废井田开阡陌",
-        "description_zh": "第二次变法核心：废除井田制，开阡陌封疆，允许土地自由买卖。同时推行县制，全国设三十一县。统一度量衡。这些措施从根本上改变了秦国的经济基础和政治结构。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "决策",
-        "highlight_note": "中国历史上最深刻的土地制度改革之一",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
-      {
-        "id": "guji-商鞅-event-1",
-        "person_qid": "guji-商鞅",
-        "endeavor_id": null,
-        "date": "-356",
-        "date_precision": "year",
-        "place_name": "秦国南门",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "决策",
-        "title_zh": "徙木立信",
-        "description_zh": "商鞅变法之初，在国都南门立一根三丈长的木头，悬赏五十金令民移至北门。百姓疑之不敢动。有一人试之，商鞅立即兑现赏金。由此取信于民，新法得以推行。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "成语",
-        "highlight_note": "徙木立信——变法从建立公信力开始",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
-      {
-        "id": "guji-商鞅-event-2",
-        "person_qid": "guji-商鞅",
-        "endeavor_id": null,
-        "date": "-356",
-        "date_precision": "year",
-        "place_name": "秦国",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "司法",
-        "title_zh": "太子犯法，刑其师傅",
-        "description_zh": "太子驷犯法，商鞅以'法之不行，自上犯之'为由，刑其师傅公子虔（劓刑）、黥公孙贾。此举震动朝野，但也为商鞅埋下杀身之祸。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "决策",
-        "highlight_note": "执法的勇气与代价并存",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
-      {
         "id": "guji-商鞅-event-birth",
         "person_qid": "guji-商鞅",
         "endeavor_id": null,
         "date": "约-390",
         "date_precision": "year",
-        "place_name": "卫国",
+        "place_name": "卫国(今河南淇县)",
         "place_qid": null,
         "place_coord": null,
         "event_type": "出生",
         "title_zh": "出生",
-        "description_zh": "生于 卫国",
+        "description_zh": "生于 卫国(今河南淇县)",
         "first_person_quote": null,
         "is_highlight": false,
         "highlight_type": null,
@@ -177,42 +63,57 @@
       {
         "id": "guji-商鞅-endeavor-4",
         "person_qid": "guji-商鞅",
-        "title_zh": "功高震主，车裂而亡",
-        "domain": "命运",
+        "title_zh": "车裂殉法",
+        "domain": "政治",
         "start_date": "-338",
         "end_date": "-338",
         "start_precision": null,
         "end_precision": null,
         "places": [
-          "秦国咸阳"
+          "咸阳(今陕西咸阳)"
         ],
         "place_qids": [],
         "status": "完成",
-        "description_zh": "秦孝公薨，太子即位（秦惠文王）。公子虔等人诬告商鞅谋反，惠文王下令追捕。商鞅逃至函谷关，因自己制定的法律规定无凭证不得入住旅店而被拒。最终被擒，处以车裂之刑，灭族。",
-        "outcome": "商鞅身死族灭，但秦法未废",
-        "lesson": "法自作而自受——商鞅之死是最深刻的制度悖论",
+        "description_zh": "孝公薨，秦惠文王即位。旧贵族群起攻讦，公子虔诬商鞅谋反。商鞅欲逃，至关下欲宿旅店，旅店主人曰'商君之法，舍人无验者坐之'——商鞅自己制定的法律反困住了自己。最终商鞅被擒，车裂而死，灭其族。然秦惠文王虽杀商鞅，却终未废其法。",
+        "outcome": "商鞅身死，但其法被秦国完整沿用，影响中国两千年",
+        "lesson": "法不阿贵，绳不挠曲——但制定法律的人也终将被法律所约束",
         "phases": [
           {
-            "name": "孝公之死",
+            "name": "酝酿",
             "start_date": "-338",
             "end_date": "-338",
-            "place": "秦国",
+            "place": "咸阳(今陕西咸阳)",
             "description_zh": null,
-            "highlight": "秦孝公薨"
+            "highlight": "秦孝公薨，旧贵族伺机反扑"
           },
           {
-            "name": "五牛分尸",
+            "name": "破局",
             "start_date": "-338",
             "end_date": "-338",
-            "place": "秦国咸阳",
+            "place": "咸阳(今陕西咸阳)",
             "description_zh": null,
-            "highlight": "车裂而死"
+            "highlight": "公子虔等人诬告商鞅谋反"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-338",
+            "end_date": "-338",
+            "place": "郑(今陕西华县)",
+            "description_zh": null,
+            "highlight": "商鞅逃亡，宿客不纳"
+          },
+          {
+            "name": "收束",
+            "start_date": "-338",
+            "end_date": "-338",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "车裂灭族，法存身灭"
           }
         ],
         "dilemmas": [],
         "keywords": [],
         "event_ids": [
-          "guji-商鞅-event-3",
           "guji-商鞅-event-death"
         ],
         "highlight_event_ids": [],
@@ -222,39 +123,55 @@
         "review_status": "ai_filled"
       },
       {
-        "id": "guji-商鞅-endeavor-2",
+        "id": "guji-商鞅-endeavor-3",
         "person_qid": "guji-商鞅",
-        "title_zh": "两次变法，强秦之基",
-        "domain": "政治改革",
-        "start_date": "-356",
-        "end_date": "-338",
+        "title_zh": "河西之战，以战立功",
+        "domain": "军事",
+        "start_date": "-340",
+        "end_date": "-340",
         "start_precision": null,
         "end_precision": null,
         "places": [
-          "秦国咸阳",
-          "秦国各地"
+          "河西(今陕西韩城一带)",
+          "安邑(今山西夏县)"
         ],
         "place_qids": [],
         "status": "完成",
-        "description_zh": "第一次变法：令民为什伍，编户齐民；奖励军功，斩一首者爵一级；重农抑商，耕织多者免徭役。为取信于民，立三丈之木于南门，募民徙之北门予五十金。第二次变法：废井田开阡陌，允许土地买卖；推行县制；统一度量衡。",
-        "outcome": "秦国由弱变强，奠定了统一六国的根基",
-        "lesson": "变法之要在于取信于民，徙木立信是万法之基",
+        "description_zh": "魏国马陵之战惨败后，商鞅建议趁势伐魏。他利用与魏公子卬的旧交，以宴请为名诱其至军中，趁机俘虏。魏军群龙无首，大败而归。魏惠王被迫割让河西之地。商鞅因功封于商地，号商君。",
+        "outcome": "秦国收复河西，商鞅获封商地",
+        "lesson": "军事胜利有时需要超越常规的手段，但代价是信誉的透支",
         "phases": [
           {
-            "name": "第一次变法",
-            "start_date": "-356",
-            "end_date": "-352",
-            "place": "秦国",
+            "name": "酝酿",
+            "start_date": "-341",
+            "end_date": "-340",
+            "place": "咸阳(今陕西咸阳)",
             "description_zh": null,
-            "highlight": "徙木立信"
+            "highlight": "魏国马陵大败"
           },
           {
-            "name": "第二次变法",
-            "start_date": "-350",
-            "end_date": "-338",
-            "place": "秦国咸阳",
+            "name": "破局",
+            "start_date": "-340",
+            "end_date": "-340",
+            "place": "河西(今陕西韩城一带)",
             "description_zh": null,
-            "highlight": "废井田开阡陌"
+            "highlight": "设计俘获公子卬"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-340",
+            "end_date": "-340",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "大破魏军"
+          },
+          {
+            "name": "收束",
+            "start_date": "-340",
+            "end_date": "-340",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "封商地十五邑"
           }
         ],
         "dilemmas": [],
@@ -267,38 +184,54 @@
         "review_status": "ai_filled"
       },
       {
-        "id": "guji-商鞅-endeavor-3",
+        "id": "guji-商鞅-endeavor-2",
         "person_qid": "guji-商鞅",
-        "title_zh": "太子犯法，刑其师傅",
-        "domain": "司法",
-        "start_date": "-356",
-        "end_date": "-355",
+        "title_zh": "第二次变法：制度变革",
+        "domain": "政治",
+        "start_date": "-350",
+        "end_date": "-340",
         "start_precision": null,
         "end_precision": null,
         "places": [
-          "秦国"
+          "咸阳(今陕西咸阳)"
         ],
         "place_qids": [],
         "status": "完成",
-        "description_zh": "变法初行，太子犯法。商鞅曰'法之不行，自上犯之'，然太子为嗣君不可刑，遂刑其师傅公子虔和公孙贾。公子虔后来又犯法，再被劓刑。此二人后来成为商鞅最深的仇敌。",
-        "outcome": "法度严明，但也树立了致命的敌人",
-        "lesson": "执法必严，但也要考虑执法的代价",
+        "description_zh": "第二次变法更为深刻：迁都咸阳以远离旧贵族势力中心，推行郡县制取代分封，编户齐民使国家直接控制每一个百姓。统一度量衡为经济一体化奠基。商鞅被封于商地十五邑，号商君，权势煊赫一时。",
+        "outcome": "建立了一整套中央集权的制度框架，奠定了秦朝统一后的政治体制",
+        "lesson": "制度变革比政策变更更深远，真正的改革家改变的是规则本身",
         "phases": [
           {
-            "name": "执法困境",
-            "start_date": "-356",
-            "end_date": "-356",
-            "place": "秦国",
+            "name": "酝酿",
+            "start_date": "-350",
+            "end_date": "-350",
+            "place": "咸阳(今陕西咸阳)",
             "description_zh": null,
-            "highlight": "太子犯法"
+            "highlight": "迁都咸阳"
           },
           {
-            "name": "刑及师傅",
-            "start_date": "-355",
-            "end_date": "-355",
-            "place": "秦国",
+            "name": "破局",
+            "start_date": "-350",
+            "end_date": "-345",
+            "place": "咸阳(今陕西咸阳)",
             "description_zh": null,
-            "highlight": "刑公子虔、黥公孙贾"
+            "highlight": "推行县制，编户齐民"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-345",
+            "end_date": "-340",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "统一度量衡，秦制大成"
+          },
+          {
+            "name": "收束",
+            "start_date": "-340",
+            "end_date": "-338",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦法完备，影响深远"
           }
         ],
         "dilemmas": [],
@@ -313,44 +246,52 @@
       {
         "id": "guji-商鞅-endeavor-1",
         "person_qid": "guji-商鞅",
-        "title_zh": "三说秦孝公，确立变法路线",
+        "title_zh": "第一次变法：富国强兵",
         "domain": "政治",
-        "start_date": "约-359",
-        "end_date": "-356",
+        "start_date": "-356",
+        "end_date": "-350",
         "start_precision": null,
         "end_precision": null,
         "places": [
-          "秦国咸阳"
+          "栎阳(今陕西富平)"
         ],
         "place_qids": [],
         "status": "完成",
-        "description_zh": "公孙鞅入秦，经景监引见三次面见秦孝公。初说以帝道（尧舜之治），孝公昏昏欲睡；再说以王道（三代之治），孝公不悦；三说以霸道（春秋五霸之术），孝公大悦，与之语三日不厌，遂决意变法。",
-        "outcome": "秦孝公全力支持变法，拜商鞅为左庶长",
-        "lesson": "知音不在多，一主足矣",
+        "description_zh": "商鞅入秦后，先以徙木立信——在都城南门立三丈之木，悬赏五十金迁木至北门，百姓观望后终有勇者尝试，商鞅如约赏金。此举令百姓知法令必行。随后颁布废井田、开阡陌、奖励耕织和军功、编户连坐等法令。旧贵族群起反对，商鞅刑太子师傅公子虔、公孙贾以儆效尤。",
+        "outcome": "秦国农业产量和军事战力大幅提升，初步建立法治秩序",
+        "lesson": "法律的权威在于必行，取信于民是变法的第一步",
         "phases": [
           {
-            "name": "以帝道试探",
-            "start_date": "约-359",
-            "end_date": "约-359",
-            "place": "秦国",
-            "description_zh": null,
-            "highlight": "孝公昏昏欲睡"
-          },
-          {
-            "name": "以王道游说",
-            "start_date": "约-359",
-            "end_date": "约-359",
-            "place": "秦国",
-            "description_zh": null,
-            "highlight": "孝公不悦"
-          },
-          {
-            "name": "以霸道定策",
-            "start_date": "约-359",
+            "name": "酝酿",
+            "start_date": "-356",
             "end_date": "-356",
-            "place": "秦国",
+            "place": "栎阳(今陕西富平)",
             "description_zh": null,
-            "highlight": "孝公与语三日不厌"
+            "highlight": "徙木立信，取信于民"
+          },
+          {
+            "name": "破局",
+            "start_date": "-356",
+            "end_date": "-355",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "颁布废井田、奖耕战法令"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-355",
+            "end_date": "-350",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "秦国初见富强之效"
+          },
+          {
+            "name": "收束",
+            "start_date": "-350",
+            "end_date": "-350",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "升为大良造，主持第二次变法"
           }
         ],
         "dilemmas": [],
@@ -363,176 +304,23 @@
         "review_status": "ai_filled"
       }
     ],
-    "highlights": [
-      {
-        "person_qid": "guji-商鞅",
-        "date": "-338",
-        "place_name": "秦国函谷关",
-        "highlight_type": "成语",
-        "title_zh": "作法自毙",
-        "highlight_note": "作法自毙——最讽刺的历史因果",
-        "endeavor_id": "guji-商鞅-endeavor-4",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      },
-      {
-        "person_qid": "guji-商鞅",
-        "date": "-340",
-        "place_name": "魏国",
-        "highlight_type": "决策",
-        "title_zh": "大破魏军，俘公子卬",
-        "highlight_note": "以诈术取胜——功业与道德的永恒冲突",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      },
-      {
-        "person_qid": "guji-商鞅",
-        "date": "-350",
-        "place_name": "秦国咸阳",
-        "highlight_type": "决策",
-        "title_zh": "废井田开阡陌",
-        "highlight_note": "中国历史上最深刻的土地制度改革之一",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      },
-      {
-        "person_qid": "guji-商鞅",
-        "date": "-356",
-        "place_name": "秦国南门",
-        "highlight_type": "成语",
-        "title_zh": "徙木立信",
-        "highlight_note": "徙木立信——变法从建立公信力开始",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      },
-      {
-        "person_qid": "guji-商鞅",
-        "date": "-356",
-        "place_name": "秦国",
-        "highlight_type": "决策",
-        "title_zh": "太子犯法，刑其师傅",
-        "highlight_note": "执法的勇气与代价并存",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      }
-    ]
+    "highlights": []
   },
   {
     "qid": "guji-孙膑",
     "name_zh": "孙膑",
     "name_en": null,
     "era": "战国中期",
-    "archetype": "以弱胜强的军师智者",
+    "archetype": "以智驭勇的兵家传人",
     "role": "模范",
-    "dilemmas": [
-      "师出同门的兄弟阋墙",
-      "膑刑之辱与复仇之志",
-      "功高震主的生存之道"
-    ],
+    "dilemmas": [],
     "birth_date": "约-380",
     "death_date": "约-316",
-    "birth_place": "齐国阿、鄄之间",
+    "birth_place": "齐国阿城(今山东阳谷)",
     "summary_zh": null,
-    "summary_first_person": "吾与庞涓同师鬼谷子，本以为手足之情可期终身。不料其嫉吾之才，诱我至魏而施以膑刑。吾装疯避祸，终得归齐。马陵道上万弩齐发之时，庞涓方知'孙膑在此'四字的分量。",
-    "lesson": "真正的强者不是没有至暗时刻，而是能在至暗时刻中找到翻盘之路。",
+    "summary_first_person": "吾与庞涓同窗鬼谷子，涓先去仕魏。吾至魏，涓恐吾见用，遂诬吾通齐，施以膑刑。吾忍辱装疯，齐使者窃载以归。田忌荐吾于齐王，桂陵一战围魏救赵，马陵一战减灶灭涓。此仇此恨，吾以天下之智报之。后著兵法八十九篇，传之后世。",
+    "lesson": "最深的仇恨可以用最冷静的智慧来偿还，身体的残缺不能限制精神的高度。",
     "events": [
-      {
-        "id": "guji-孙膑-event-2",
-        "person_qid": "guji-孙膑",
-        "endeavor_id": null,
-        "date": "-341",
-        "date_precision": "year",
-        "place_name": "马陵道",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "战役",
-        "title_zh": "马陵之战——减灶诱敌",
-        "description_zh": "孙膑以逐日减少军灶数量制造齐军溃逃假象，诱庞涓轻骑追击。庞涓果然中计，率轻兵急追至马陵道。道路狭窄，两旁万弩齐发，魏军大溃。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "战役",
-        "highlight_note": "减灶之计——兵者诡道的极致演绎",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
-      {
-        "id": "guji-孙膑-event-3",
-        "person_qid": "guji-孙膑",
-        "endeavor_id": null,
-        "date": "-353",
-        "date_precision": "year",
-        "place_name": "齐国临淄",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "谋略",
-        "title_zh": "田忌赛马",
-        "description_zh": "齐国赛马，田忌屡败于齐威王。孙膑献策：以己之下驷对王之上驷，以上驷对中驷，以中驷对下驷，三局两胜。田忌用此策果然赢了齐威王。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "决策",
-        "highlight_note": "以劣胜优的经典博弈思维",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
-      {
-        "id": "guji-孙膑-event-1",
-        "person_qid": "guji-孙膑",
-        "endeavor_id": null,
-        "date": "-354",
-        "date_precision": "year",
-        "place_name": "魏国桂陵",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "战役",
-        "title_zh": "桂陵之战——围魏救赵",
-        "description_zh": "魏将庞涓围赵，孙膑不救赵而直攻魏都大梁，迫使庞涓回师。齐军在桂陵设伏，大破疲惫之师。此战开创了'围魏救赵'的经典战术。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "成语",
-        "highlight_note": "围魏救赵成为后世兵法经典战术代名词",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
-      {
-        "id": "guji-孙膑-event-4",
-        "person_qid": "guji-孙膑",
-        "endeavor_id": null,
-        "date": "-355",
-        "date_precision": "year",
-        "place_name": "魏国",
-        "place_qid": null,
-        "place_coord": null,
-        "event_type": "至暗时刻",
-        "title_zh": "庞涓膑刑",
-        "description_zh": "庞涓嫉妒孙膑才华，将其骗至魏国，诬以罪名施以膑刑（挖去膝盖骨）和黥刑（脸上刺字）。孙膑装疯卖傻才免于一死，后在齐国使者帮助下逃回齐国。",
-        "first_person_quote": null,
-        "is_highlight": true,
-        "highlight_type": "至暗时刻",
-        "highlight_note": "膑刑——孙膑之名由此而来，从至暗到巅峰",
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ],
-        "status": "ai_filled",
-        "needs_review_reason": null
-      },
       {
         "id": "guji-孙膑-event-death",
         "person_qid": "guji-孙膑",
@@ -561,12 +349,12 @@
         "endeavor_id": null,
         "date": "约-380",
         "date_precision": "year",
-        "place_name": "齐国阿、鄄之间",
+        "place_name": "齐国阿城(今山东阳谷)",
         "place_qid": null,
         "place_coord": null,
         "event_type": "出生",
         "title_zh": "出生",
-        "description_zh": "生于 齐国阿、鄄之间",
+        "description_zh": "生于 齐国阿城(今山东阳谷)",
         "first_person_quote": null,
         "is_highlight": false,
         "highlight_type": null,
@@ -582,38 +370,52 @@
       {
         "id": "guji-孙膑-endeavor-2",
         "person_qid": "guji-孙膑",
-        "title_zh": "马陵之战，计杀庞涓",
+        "title_zh": "减灶诱敌——马陵之战",
         "domain": "军事",
         "start_date": "-342",
         "end_date": "-341",
         "start_precision": null,
         "end_precision": null,
         "places": [
-          "魏国",
-          "齐国",
-          "马陵道"
+          "马陵(今河南范县)"
         ],
         "place_qids": [],
         "status": "完成",
-        "description_zh": "魏攻韩，韩求救于齐。孙膑再用此计，以减灶诱庞涓轻骑追击。魏军至马陵道，万弩齐发，庞涓自知中计，叹曰'遂成竖子之名'，自刎而死。",
-        "outcome": "魏军覆灭，庞涓身死，齐国称霸",
-        "lesson": "知彼知己，百战不殆",
+        "description_zh": "前341年，魏伐韩，韩求救于齐。孙膑再任军师，用减灶之计：齐军撤退时第一天挖十万个灶，第二天五万，第三天三万——制造齐军士兵大量逃亡的假象。庞涓中计，以为齐军胆怯，率轻骑日夜追击。孙膑在马陵道狭窄处设伏，万弩齐发。庞涓在乱军中自刎，魏太子申被俘。",
+        "outcome": "魏国精锐尽失，齐国成为东方最强国",
+        "lesson": "最致命的武器不是刀剑，而是对手的骄傲和轻敌",
         "phases": [
           {
-            "name": "减灶诱敌",
+            "name": "酝酿",
             "start_date": "-342",
             "end_date": "-341",
-            "place": "齐魏边境",
+            "place": "马陵(今河南范县)",
             "description_zh": null,
-            "highlight": "增兵减灶之计"
+            "highlight": "魏国伐韩，齐国再度介入"
           },
           {
-            "name": "马陵伏击",
+            "name": "破局",
             "start_date": "-341",
             "end_date": "-341",
-            "place": "马陵道",
+            "place": "马陵(今河南范县)",
+            "description_zh": null,
+            "highlight": "逐日减灶，制造溃逃假象"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-341",
+            "end_date": "-341",
+            "place": "马陵(今河南范县)",
             "description_zh": null,
             "highlight": "万弩齐发，庞涓自刎"
+          },
+          {
+            "name": "收束",
+            "start_date": "-341",
+            "end_date": "-340",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "魏国霸业终结"
           }
         ],
         "dilemmas": [],
@@ -628,37 +430,53 @@
       {
         "id": "guji-孙膑-endeavor-1",
         "person_qid": "guji-孙膑",
-        "title_zh": "围魏救赵，桂陵之战",
+        "title_zh": "围魏救赵——桂陵之战",
         "domain": "军事",
         "start_date": "-354",
         "end_date": "-353",
         "start_precision": null,
         "end_precision": null,
         "places": [
-          "魏国大梁",
-          "齐国"
+          "大梁(今河南开封)",
+          "桂陵(今河南长垣)"
         ],
         "place_qids": [],
         "status": "完成",
-        "description_zh": "魏国庞涓率大军围赵都邯郸，赵求救于齐。孙膑献策田忌，不救赵而直趋魏都大梁。庞涓回师途中，在桂陵遭齐军伏击，大败被擒。此即'围魏救赵'之典。",
-        "outcome": "大败魏军，解赵国之围",
-        "lesson": "攻其必救，避实击虚",
+        "description_zh": "魏将庞涓率八万大军围攻赵国邯郸，赵国向齐求救。齐威王以田忌为将、孙膑为军师。孙膑献策'批亢捣虚'——不直接去邯郸与魏军硬拼，而是趁魏国国内空虚直攻大梁。庞涓被迫回师，在桂陵遭齐军伏击，大败而归。此即'围魏救赵'的千古经典。",
+        "outcome": "齐国以较小代价解赵之围，确立了'以智取胜'的军事思想",
+        "lesson": "解决问题的最好方法往往不是正面硬刚，而是直击要害",
         "phases": [
           {
-            "name": "谋划",
+            "name": "酝酿",
             "start_date": "-354",
             "end_date": "-354",
-            "place": "齐国临淄",
+            "place": "大梁(今河南开封)",
             "description_zh": null,
-            "highlight": "田忌赛马献计"
+            "highlight": "魏国围赵邯郸，齐国出兵"
           },
           {
-            "name": "实施",
+            "name": "破局",
+            "start_date": "-354",
+            "end_date": "-354",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "直攻大梁，逼庞涓回师"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-354",
+            "end_date": "-353",
+            "place": "桂陵(今河南长垣)",
+            "description_zh": null,
+            "highlight": "设伏大败魏军"
+          },
+          {
+            "name": "收束",
             "start_date": "-353",
             "end_date": "-353",
-            "place": "魏国桂陵",
+            "place": "邯郸(今河北邯郸)",
             "description_zh": null,
-            "highlight": "桂陵伏击大破魏军"
+            "highlight": "赵国邯郸之围解除"
           }
         ],
         "dilemmas": [],
@@ -673,28 +491,52 @@
       {
         "id": "guji-孙膑-endeavor-3",
         "person_qid": "guji-孙膑",
-        "title_zh": "桂陵之战后著《孙膑兵法》",
+        "title_zh": "著《孙膑兵法》",
         "domain": "军事理论",
         "start_date": "约-340",
-        "end_date": "约-330",
+        "end_date": "约-320",
         "start_precision": null,
         "end_precision": null,
         "places": [
-          "齐国"
+          "临淄(今山东淄博)"
         ],
         "place_qids": [],
         "status": "完成",
-        "description_zh": "孙膑在军事实践之余，著有《孙膑兵法》八十九篇，发展了孙武的军事思想。此书久佚，1972年在银雀山汉墓中重新出土。",
-        "outcome": "兵法传世，补全了先秦兵学谱系",
-        "lesson": "实战出真知，理论源于实践",
+        "description_zh": "马陵之战后，孙膑总结自己一生的军事实践和理论思考，著成兵法八十九篇。1972年在山东临沂银雀山汉墓中出土了《孙膑兵法》残简，证实了这部兵书的真实存在。其内容继承和发展了孙子的军事思想，强调'战胜而强立'——通过战争胜利来确立国家地位。",
+        "outcome": "《孙膑兵法》传世，丰富了中国古代兵学思想体系",
+        "lesson": "实践出真知，最好的理论来自最深刻的实战",
         "phases": [
           {
-            "name": "著书立说",
-            "start_date": "约-340",
-            "end_date": "约-330",
-            "place": "齐国",
+            "name": "酝酿",
+            "start_date": "-341",
+            "end_date": "-340",
+            "place": "临淄(今山东淄博)",
             "description_zh": null,
-            "highlight": "《孙膑兵法》传世"
+            "highlight": "马陵之战后总结战争经验"
+          },
+          {
+            "name": "破局",
+            "start_date": "-340",
+            "end_date": "-330",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "开始著述兵法"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-330",
+            "end_date": "-320",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "完成兵法八十九篇"
+          },
+          {
+            "name": "收束",
+            "start_date": "-320",
+            "end_date": "-316",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "兵法传世"
           }
         ],
         "dilemmas": [],
@@ -707,56 +549,7 @@
         "review_status": "ai_filled"
       }
     ],
-    "highlights": [
-      {
-        "person_qid": "guji-孙膑",
-        "date": "-341",
-        "place_name": "马陵道",
-        "highlight_type": "战役",
-        "title_zh": "马陵之战——减灶诱敌",
-        "highlight_note": "减灶之计——兵者诡道的极致演绎",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      },
-      {
-        "person_qid": "guji-孙膑",
-        "date": "-353",
-        "place_name": "齐国临淄",
-        "highlight_type": "决策",
-        "title_zh": "田忌赛马",
-        "highlight_note": "以劣胜优的经典博弈思维",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      },
-      {
-        "person_qid": "guji-孙膑",
-        "date": "-354",
-        "place_name": "魏国桂陵",
-        "highlight_type": "成语",
-        "title_zh": "桂陵之战——围魏救赵",
-        "highlight_note": "围魏救赵成为后世兵法经典战术代名词",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      },
-      {
-        "person_qid": "guji-孙膑",
-        "date": "-355",
-        "place_name": "魏国",
-        "highlight_type": "至暗时刻",
-        "title_zh": "庞涓膑刑",
-        "highlight_note": "膑刑——孙膑之名由此而来，从至暗到巅峰",
-        "endeavor_id": null,
-        "sources": [
-          "https://daizhige.org/史藏/正史/史记.html"
-        ]
-      }
-    ]
+    "highlights": []
   },
   {
     "qid": "guji-屈原",
@@ -1093,5 +886,3187 @@
         ]
       }
     ]
+  },
+  {
+    "qid": "guji-乐毅",
+    "name_zh": "乐毅",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "以弱破强的传奇统帅",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-310",
+    "death_date": "约-250",
+    "birth_place": "中山国(今河北平山)",
+    "summary_zh": null,
+    "summary_first_person": "吾中山之后，先仕赵魏，终至燕。燕昭王筑黄金台待吾，吾感其知遇，率五国之兵伐齐。济西一战大破齐军，吾独将燕师长驱七十余城，齐国几亡。围即墨五年，吾欲以仁义化齐人。然昭王薨，惠王中反间，吾遂去燕适赵。诸葛亮每自比管乐，吾之平生亦足慰矣。",
+    "lesson": "被信任时倾力以报，被猜疑时全身而退——是名将的最高智慧。",
+    "events": [
+      {
+        "id": "guji-乐毅-event-death",
+        "person_qid": "guji-乐毅",
+        "endeavor_id": null,
+        "date": "约-250",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-乐毅"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-乐毅-event-birth",
+        "person_qid": "guji-乐毅",
+        "endeavor_id": null,
+        "date": "约-310",
+        "date_precision": "year",
+        "place_name": "中山国(今河北平山)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 中山国(今河北平山)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-乐毅"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-乐毅-endeavor-2",
+        "person_qid": "guji-乐毅",
+        "title_zh": "出奔赵国",
+        "domain": "政治",
+        "start_date": "-279",
+        "end_date": "-279",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "即墨(今山东平度)",
+          "赵国邯郸(今河北邯郸)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "燕昭王薨后，继位的燕惠王为太子时就与乐毅有嫌隙。齐国即墨守将田单趁机施反间计，散布'乐毅欲自立为齐王'的谣言。燕惠王中计，派骑劫替代乐毅。乐毅知归燕必死，遂出奔赵国。赵惠文王以客卿之礼待之。此后田单以火牛阵大破燕军，齐国复国七十余城。",
+        "outcome": "乐毅全身而退，但燕国二十八年伐齐之功尽丧",
+        "lesson": "功高不赏则危，知进退者方能全身",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "燕昭王薨，燕惠王即位"
+          },
+          {
+            "name": "破局",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "田单施反间计，燕惠王中计"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "即墨(今山东平度)",
+            "description_zh": null,
+            "highlight": "燕惠王以骑劫代乐毅"
+          },
+          {
+            "name": "收束",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "赵国邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "乐毅奔赵，田单火牛阵复齐"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-乐毅-endeavor-1",
+        "person_qid": "guji-乐毅",
+        "title_zh": "伐齐之战，连下七十余城",
+        "domain": "军事",
+        "start_date": "-284",
+        "end_date": "-280",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "临淄(今山东淄博)",
+          "即墨(今山东平度)",
+          "莒(今山东莒县)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前284年，乐毅受燕昭王重拜为上将军，统率燕、秦、韩、赵、魏五国联军伐齐。在济西(今山东聊城一带)大破齐军后，乐毅遣返其他四国军队，独率燕军长驱直入。七十余城望风而降，齐国仅余即墨和莒两城。乐毅在已克之地施仁政、废苛令、礼待齐国旧臣，试图从根本上征服齐国人心。",
+        "outcome": "创造了战国时代最辉煌的军事胜利，燕国从小国跃为大国",
+        "lesson": "最伟大的军事胜利不是杀戮，而是征服人心",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-284",
+            "end_date": "-284",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "拜为上将军，统率五国联军"
+          },
+          {
+            "name": "破局",
+            "start_date": "-284",
+            "end_date": "-284",
+            "place": "济西(今山东聊城一带)",
+            "description_zh": null,
+            "highlight": "济西之战大破齐军"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-284",
+            "end_date": "-280",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "连下七十余城，齐国几亡"
+          },
+          {
+            "name": "收束",
+            "start_date": "-280",
+            "end_date": "-279",
+            "place": "即墨(今山东平度)",
+            "description_zh": null,
+            "highlight": "围攻即墨，以仁义化齐"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-庞涓",
+    "name_zh": "庞涓",
+    "name_en": null,
+    "era": "战国中期",
+    "archetype": "才华横溢却因妒丧身的悲剧名将",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-370",
+    "death_date": "-341",
+    "birth_place": "魏国(今河南开封一带)",
+    "summary_zh": null,
+    "summary_first_person": "吾与孙膑同窗学兵法于鬼谷子，自知才不及之。吾先入魏，拜将军，伐卫破赵，魏王甚重吾。然吾恐膑至魏后魏王弃吾用之，遂设计膑之。孙膑废而为齐所用，吾于桂陵败之。马陵之役，吾追齐军至谷中，万弩俱发，吾知败矣，叹曰'遂成竖子之名'，自刎而死。",
+    "lesson": "嫉妒是一把双刃剑，害人者终将被自己的恶果反噬。",
+    "events": [
+      {
+        "id": "guji-庞涓-event-death",
+        "person_qid": "guji-庞涓",
+        "endeavor_id": null,
+        "date": "-341",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-庞涓"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-庞涓-event-birth",
+        "person_qid": "guji-庞涓",
+        "endeavor_id": null,
+        "date": "约-370",
+        "date_precision": "year",
+        "place_name": "魏国(今河南开封一带)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 魏国(今河南开封一带)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-庞涓"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-庞涓-endeavor-1",
+        "person_qid": "guji-庞涓",
+        "title_zh": "率魏武卒征伐四方",
+        "domain": "军事",
+        "start_date": "-354",
+        "end_date": "-354",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "邯郸(今河北邯郸)",
+          "大梁(今河南开封)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "庞涓率魏武卒围攻赵国邯郸，赵国危在旦夕。然齐国孙膑以'围魏救赵'之策直取大梁，庞涓被迫回师，在桂陵遭伏击大败。这是庞涓军事生涯中的第一次重大挫折，也让他首次直面昔日同窗的智谋。",
+        "outcome": "桂陵之战失利，但魏国尚存实力",
+        "lesson": "战场上最可怕的对手是了解你的人",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-355",
+            "end_date": "-354",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "受魏惠王重用，拜为将军"
+          },
+          {
+            "name": "破局",
+            "start_date": "-354",
+            "end_date": "-354",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "率八万大军围攻赵国邯郸"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-354",
+            "end_date": "-354",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "邯郸即将攻破"
+          },
+          {
+            "name": "收束",
+            "start_date": "-354",
+            "end_date": "-353",
+            "place": "桂陵(今河南长垣)",
+            "description_zh": null,
+            "highlight": "桂陵之战大败"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-庞涓-endeavor-2",
+        "person_qid": "guji-庞涓",
+        "title_zh": "设计害孙膑",
+        "domain": "政治阴谋",
+        "start_date": "-355",
+        "end_date": "-355",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "大梁(今河南开封)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "庞涓与孙膑同师鬼谷子，知孙膑才高于己。庞涓先入魏为将后，假意邀孙膑至魏。到魏后诬其私通齐国，魏惠王下令施以膑刑(挖去膝盖骨)和黥刑(脸上刺字)。孙膑忍辱装疯，后被齐国使者暗中救出，逃至齐国。",
+        "outcome": "庞涓除去了一个竞争对手，却也为自己埋下了灭顶之灾",
+        "lesson": "以不义手段排挤他人，终会招来更强的对手",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-355",
+            "end_date": "-355",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "孙膑至魏，庞涓心生忌惮"
+          },
+          {
+            "name": "破局",
+            "start_date": "-355",
+            "end_date": "-355",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "诬告孙膑私通齐国"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-355",
+            "end_date": "-355",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "孙膑被施以膑刑"
+          },
+          {
+            "name": "收束",
+            "start_date": "-355",
+            "end_date": "-355",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "孙膑装疯逃往齐国"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-廉颇",
+    "name_zh": "廉颇",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "忠勇无双却晚景凄凉的悲剧名将",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-320",
+    "death_date": "约-245",
+    "birth_place": "赵国(今河北邯郸一带)",
+    "summary_zh": null,
+    "summary_first_person": "吾为赵将数十年，破齐取阳晋，大败燕军于鄗。长平之役吾坚壁不战三年，秦人不能克。然赵王听信谗言，以赵括替吾。吾欲谏而不能，四十万将士尽丧。后赵王复用吾围燕，然终不复信任。吾老矣，被逐至魏，楚王迎吾，然吾终思赵人而不能用也。",
+    "lesson": "将军最大的悲剧不是战死沙场，而是不被信任、老死异乡。",
+    "events": [
+      {
+        "id": "guji-廉颇-event-death",
+        "person_qid": "guji-廉颇",
+        "endeavor_id": null,
+        "date": "约-245",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-廉颇"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-廉颇-event-birth",
+        "person_qid": "guji-廉颇",
+        "endeavor_id": null,
+        "date": "约-320",
+        "date_precision": "year",
+        "place_name": "赵国(今河北邯郸一带)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 赵国(今河北邯郸一带)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-廉颇"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-廉颇-endeavor-2",
+        "person_qid": "guji-廉颇",
+        "title_zh": "负荆请罪",
+        "domain": "政治外交",
+        "start_date": "-279",
+        "end_date": "-279",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "邯郸(今河北邯郸)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "蔺相如因完璧归赵和渑池之会之功，位居廉颇之上。廉颇不服，公然宣言'我见相如必辱之'。蔺相如为避免将相内斗影响国事，主动称病不上朝、出门引车避让。门客以为怯，相如曰'吾所以先国家之急而后私仇也'。廉颇闻之深感惭愧，袒露上身背负荆条登门请罪，二人结为刎颈之交。",
+        "outcome": "将相和睦，赵国朝堂团结一致对外",
+        "lesson": "知错能改是真勇，先国家后私仇是大义",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-283",
+            "end_date": "-279",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "廉颇不满蔺相如位居其上"
+          },
+          {
+            "name": "破局",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "相如以国家利益为重主动回避"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "廉颇负荆请罪"
+          },
+          {
+            "name": "收束",
+            "start_date": "-279",
+            "end_date": "-270",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "将相和，赵国大治"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-廉颇-endeavor-1",
+        "person_qid": "guji-廉颇",
+        "title_zh": "破齐破燕，赵国名将",
+        "domain": "军事",
+        "start_date": "-283",
+        "end_date": "-250",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "阳晋(今山东郓城)",
+          "鄗(今河北高阳)",
+          "长平(今山西高平)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "廉颇是战国四大名将之一，以勇猛善战闻名。前283年大破齐军，取阳晋，拜为上卿。后又大败燕军于鄗，围困燕都迫使燕国割地求和。长平之战中坚守不出三年，秦国无法正面取胜。然赵王中反间计以赵括替之，四十万赵军尽丧。此后廉颇虽再被起用，终因郭开谗言被逐。",
+        "outcome": "赵国名将，但晚景凄凉",
+        "lesson": "名将需要名主，否则再强的将军也无法施展",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-283",
+            "end_date": "-283",
+            "place": "阳晋(今山东郓城)",
+            "description_zh": null,
+            "highlight": "大破齐军，拜为上卿"
+          },
+          {
+            "name": "破局",
+            "start_date": "-280",
+            "end_date": "-280",
+            "place": "鄗(今河北高阳)",
+            "description_zh": null,
+            "highlight": "大败燕军，围燕都"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-262",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "坚守长平三年不败"
+          },
+          {
+            "name": "收束",
+            "start_date": "-250",
+            "end_date": "-245",
+            "place": "魏国大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "客死异乡"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-燕昭王",
+    "name_zh": "燕昭王",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "卧薪尝胆式的复仇复兴之君",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "-335",
+    "death_date": "-279",
+    "birth_place": "蓟(今北京)",
+    "summary_zh": null,
+    "summary_first_person": "吾即位时，燕国刚被齐国趁内乱攻破，国破家亡。吾深以为耻，立志复仇。筑黄金台、置千金以招贤士。乐毅自魏来，邹衍自齐来，剧辛自赵来。吾以乐毅为上将军，联合五国伐齐。乐毅连下七十余城，齐国几亡。吾二十八年之卧薪尝胆，燕国终于扬眉吐气。",
+    "lesson": "最弱的国家也能成就最伟大的事业，关键是有耐心和人才。",
+    "events": [
+      {
+        "id": "guji-燕昭王-event-death",
+        "person_qid": "guji-燕昭王",
+        "endeavor_id": null,
+        "date": "-279",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-燕昭王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-燕昭王-event-birth",
+        "person_qid": "guji-燕昭王",
+        "endeavor_id": null,
+        "date": "-335",
+        "date_precision": "year",
+        "place_name": "蓟(今北京)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 蓟(今北京)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-燕昭王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-燕昭王-endeavor-2",
+        "person_qid": "guji-燕昭王",
+        "title_zh": "五国伐齐，乐毅连下七十余城",
+        "domain": "军事外交",
+        "start_date": "-284",
+        "end_date": "-279",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "蓟(今北京)",
+          "临淄(今山东淄博)",
+          "即墨(今山东平度)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前284年，燕昭王以乐毅为上将军，联合秦、韩、赵、魏五国联军大举伐齐。齐国在齐湣王的暴政下已是强弩之末，联军一战大破齐军于济西。乐毅独率燕军长驱直入，连下齐国七十余城，仅剩即墨和莒两城未下。齐湣王逃亡被杀。齐国几乎灭亡，燕国报了当年被破国之仇。",
+        "outcome": "燕国洗雪前耻，成为战国中后期的重要强国",
+        "lesson": "长期隐忍加上精准出击，弱国也能覆灭强国",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-284",
+            "end_date": "-284",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "联合秦、韩、赵、魏组成五国联军"
+          },
+          {
+            "name": "破局",
+            "start_date": "-284",
+            "end_date": "-283",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "乐毅率联军大破齐军"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-283",
+            "end_date": "-279",
+            "place": "即墨(今山东平度)",
+            "description_zh": null,
+            "highlight": "连下齐国七十余城，仅余即墨和莒"
+          },
+          {
+            "name": "收束",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "昭王薨，田单复齐"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-燕昭王-endeavor-1",
+        "person_qid": "guji-燕昭王",
+        "title_zh": "筑黄金台，招贤纳士",
+        "domain": "政治",
+        "start_date": "-311",
+        "end_date": "-284",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "蓟(今北京)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "燕昭王即位后，以谦恭的态度和优厚的待遇招揽人才。他先拜郭隗为师，郭隗以'千金买骨'的故事建议昭王先重用自己这样的中等人才，以吸引更优秀的贤者。昭王从之，筑黄金台于蓟城之上，置千金于台上以待贤者。消息传开，天下贤士纷纷入燕。",
+        "outcome": "燕国从人才荒漠变为人才汇聚之地",
+        "lesson": "招揽人才不是等人才上门，而是主动释放诚意",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-311",
+            "end_date": "-311",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "即位时燕国破败不堪"
+          },
+          {
+            "name": "破局",
+            "start_date": "-311",
+            "end_date": "-300",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "筑黄金台，置千金招贤"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-300",
+            "end_date": "-284",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "乐毅、邹衍、剧辛等人才齐聚"
+          },
+          {
+            "name": "收束",
+            "start_date": "-284",
+            "end_date": "-284",
+            "place": "蓟(今北京)",
+            "description_zh": null,
+            "highlight": "人才济济，燕国复兴"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-白起",
+    "name_zh": "白起",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "战无不胜的杀神名将",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-320",
+    "death_date": "-257",
+    "birth_place": "郿(今陕西眉县)",
+    "summary_zh": null,
+    "summary_first_person": "吾自郿地布衣从军，以首级计功，积功至大良造。伊阙一战斩韩魏二十四万，鄢郢之战水灌楚都，长平之战坑赵卒四十万。吾一生七十余战，未尝一败。然邯郸之役吾力谏不可，秦王不听而败。秦王怒，赐吾死。吾叹曰'长平之战赵卒降者数十万，吾诈而尽坑之，是足以死'。",
+    "lesson": "战场上的绝对胜利无法保护你在政治上的生存。",
+    "events": [
+      {
+        "id": "guji-白起-event-death",
+        "person_qid": "guji-白起",
+        "endeavor_id": "guji-白起-endeavor-4",
+        "date": "-257",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-白起"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-白起-event-birth",
+        "person_qid": "guji-白起",
+        "endeavor_id": null,
+        "date": "约-320",
+        "date_precision": "year",
+        "place_name": "郿(今陕西眉县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 郿(今陕西眉县)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-白起"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-白起-endeavor-4",
+        "person_qid": "guji-白起",
+        "title_zh": "赐死杜邮",
+        "domain": "政治",
+        "start_date": "-257",
+        "end_date": "-257",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)",
+          "杜邮(今陕西咸阳东)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "长平之战后，白起欲乘胜灭赵，但秦昭襄王受范雎谗言和韩赵游说而退兵。次年再攻邯郸时，白起多次称病推辞，认为战机已失。邯郸之战果然失利，秦王迁怒于白起，免其爵位降为士卒。白起出咸阳至杜邮，秦王使使者赐剑令其自裁。白起叹曰'我固当死，长平之战赵卒降者数十万人，我诈而尽坑之，是足以死'，遂自刎。",
+        "outcome": "秦国失去最优秀的军事统帅",
+        "lesson": "功高震主是千古不变的危机",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-260",
+            "end_date": "-259",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "白起反对进攻邯郸"
+          },
+          {
+            "name": "破局",
+            "start_date": "-259",
+            "end_date": "-258",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "秦军围攻邯郸失利"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-257",
+            "end_date": "-257",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦王赐剑，令白起自裁"
+          },
+          {
+            "name": "收束",
+            "start_date": "-257",
+            "end_date": "-257",
+            "place": "杜邮(今陕西咸阳东)",
+            "description_zh": null,
+            "highlight": "白起自刎"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-白起-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-白起-endeavor-3",
+        "person_qid": "guji-白起",
+        "title_zh": "长平之战，坑杀赵卒四十万",
+        "domain": "军事",
+        "start_date": "-260",
+        "end_date": "-260",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长平(今山西高平)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "秦国秘密换白起为主将。白起佯败诱赵括出击，然后以两支奇兵迂回包围——一支断赵军粮道，一支阻断赵军与邯郸的联系。赵军被围四十六日，粮尽援绝，赵括突围被射杀，四十万赵军投降。白起恐降卒叛乱，将其全部坑杀，仅放归二百四十名年幼者回赵国散布恐惧。",
+        "outcome": "赵国四十万精锐尽丧，再无力单独抗秦",
+        "lesson": "战争的残酷在于，有时胜利者的负担比失败者更重",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-262",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "王龁与廉颇对峙三年"
+          },
+          {
+            "name": "破局",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "白起秘密替代王龁为将"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "包围赵军四十六日，坑杀四十万"
+          },
+          {
+            "name": "收束",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "赵国精锐尽丧"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-白起-endeavor-2",
+        "person_qid": "guji-白起",
+        "title_zh": "鄢郢之战，破楚国都",
+        "domain": "军事",
+        "start_date": "-279",
+        "end_date": "-278",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "鄢(今湖北宜城)",
+          "郢(今湖北荆州)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "白起率军深入楚国腹地，采取长驱直入、速战速决之策。先在鄢城(今湖北宜城)筑堤蓄水、水灌城中，淹死楚军十余万。次年直捣楚国都城郢(今湖北荆州)，烧毁楚先王陵墓夷陵。楚顷襄王仓皇东迁至陈(今河南淮阳)。屈原闻郢都陷落，投汨罗江而死。",
+        "outcome": "楚国丧失半壁江山，从战国最强之一沦为二流国家",
+        "lesson": "战争中最致命的打击不是击败军队，而是摧毁国家的意志",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-280",
+            "end_date": "-279",
+            "place": "鄢(今湖北宜城)",
+            "description_zh": null,
+            "highlight": "率军深入楚境"
+          },
+          {
+            "name": "破局",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "鄢(今湖北宜城)",
+            "description_zh": null,
+            "highlight": "水灌鄢城，歼楚军主力"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-278",
+            "end_date": "-278",
+            "place": "郢(今湖北荆州)",
+            "description_zh": null,
+            "highlight": "攻破郢都，烧夷陵"
+          },
+          {
+            "name": "收束",
+            "start_date": "-278",
+            "end_date": "-278",
+            "place": "郢(今湖北荆州)",
+            "description_zh": null,
+            "highlight": "楚国东迁，一蹶不振"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-白起-endeavor-1",
+        "person_qid": "guji-白起",
+        "title_zh": "伊阙之战，横扫韩魏",
+        "domain": "军事",
+        "start_date": "-293",
+        "end_date": "-293",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "伊阙(今河南洛阳龙门)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前293年，韩魏联军二十四万据守伊阙(今河南洛阳龙门)阻秦东进。白起采用避实击虚之策，先以少量兵力牵制韩国军队，集中主力猛攻实力较弱的魏军。魏军溃败后韩国军队失去依托，全线崩溃。此战斩首二十四万，是战国时期规模最大的歼灭战之一。",
+        "outcome": "韩魏联军精锐尽丧，秦国东出大门洞开",
+        "lesson": "集中优势兵力各个击破是永远的制胜法则",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-293",
+            "end_date": "-293",
+            "place": "伊阙(今河南洛阳龙门)",
+            "description_zh": null,
+            "highlight": "韩魏联军二十四万据守伊阙"
+          },
+          {
+            "name": "破局",
+            "start_date": "-293",
+            "end_date": "-293",
+            "place": "伊阙(今河南洛阳龙门)",
+            "description_zh": null,
+            "highlight": "先弱后强，各个击破"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-293",
+            "end_date": "-293",
+            "place": "伊阙(今河南洛阳龙门)",
+            "description_zh": null,
+            "highlight": "斩韩魏联军二十四万"
+          },
+          {
+            "name": "收束",
+            "start_date": "-293",
+            "end_date": "-293",
+            "place": "伊阙(今河南洛阳龙门)",
+            "description_zh": null,
+            "highlight": "韩魏东出之路被封死"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-秦孝公",
+    "name_zh": "秦孝公",
+    "name_en": null,
+    "era": "战国中期",
+    "archetype": "矢志图强的中兴之主",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-381",
+    "death_date": "-338",
+    "birth_place": "雍城(今陕西凤翔)",
+    "summary_zh": null,
+    "summary_first_person": "吾即位时，秦国地僻西陲，六国不与会盟，诸侯卑秦。吾深以为耻，下求贤令曰'宾客群臣有能出奇计强秦者，吾且尊官与之分土'。卫鞅至，以霸道说吾，吾知此人可托国。变法二十年，秦人富强，河西复归。吾虽不得已而杀鞅，然其法吾一字不废。",
+    "lesson": "知耻近乎勇，用人须放手，变法贵在持久。",
+    "events": [
+      {
+        "id": "guji-秦孝公-event-5",
+        "person_qid": "guji-秦孝公",
+        "endeavor_id": null,
+        "date": "-338",
+        "date_precision": "year",
+        "place_name": "咸阳(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治事件",
+        "title_zh": "孝公薨，商鞅被车裂",
+        "description_zh": "秦孝公薨，秦惠文王即位。旧贵族群起攻讦商鞅，诬其谋反。商鞅逃亡至关下欲宿旅店，旅店主人曰'商君之法，舍人无验者坐之'——商鞅自己制定的法律反困住了自己。最终商鞅被车裂灭族。然秦惠文王虽杀商鞅，却终未废其法。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "事件",
+        "highlight_note": "法死而法存——商鞅变法最深刻的遗产",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦孝公-event-death",
+        "person_qid": "guji-秦孝公",
+        "endeavor_id": null,
+        "date": "-338",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-秦孝公"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦孝公-event-4",
+        "person_qid": "guji-秦孝公",
+        "endeavor_id": null,
+        "date": "-341",
+        "date_precision": "year",
+        "place_name": "河西(今陕西韩城一带)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "河西之战，收复失地",
+        "description_zh": "魏国马陵之战惨败后国力骤衰，秦孝公趁势派商鞅率军伐魏。商鞅设计俘虏魏公子卬，大破魏军。魏惠王被迫将河西之地归还秦国，秦国收复了被魏国占领八十年的河西失地。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "秦国收复河西，东出大门洞开",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦孝公-event-3",
+        "person_qid": "guji-秦孝公",
+        "endeavor_id": null,
+        "date": "-350",
+        "date_precision": "year",
+        "place_name": "咸阳(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治改革",
+        "title_zh": "迁都咸阳，推行第二次变法",
+        "description_zh": "在商鞅主持下，秦国迁都至咸阳(今陕西咸阳)，推行郡县制、统一度量衡。咸阳的地理位置更有利于秦国向东扩张，也远离了旧贵族势力盘踞的旧都。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "决策",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦孝公-event-2",
+        "person_qid": "guji-秦孝公",
+        "endeavor_id": null,
+        "date": "-359",
+        "date_precision": "year",
+        "place_name": "栎阳(今陕西富平)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治改革",
+        "title_zh": "任用商鞅主持变法",
+        "description_zh": "秦孝公力排众议，拜卫鞅为左庶长，主持第一次变法。废井田开阡陌、奖励耕织和军功、编户连坐。太子驷犯法，商鞅刑其师傅公子虔、公孙贾以立威。旧贵族群起反对，但孝公始终站在变法一方。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "孝公对商鞅的信任是变法成功的关键",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦孝公-event-1",
+        "person_qid": "guji-秦孝公",
+        "endeavor_id": null,
+        "date": "-361",
+        "date_precision": "year",
+        "place_name": "栎阳(今陕西富平)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "政治决策",
+        "title_zh": "颁布求贤令",
+        "description_zh": "秦孝公即位后深感秦国被六国鄙视之耻，颁布求贤令曰：'宾客群臣有能出奇计强秦者，吾且尊官与之分土。'此令传遍天下，卫鞅(商鞅)携李悝《法经》从魏国入秦，开启了秦国变法图强之路。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "求贤令是秦国崛起的起点",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦孝公-event-birth",
+        "person_qid": "guji-秦孝公",
+        "endeavor_id": null,
+        "date": "约-381",
+        "date_precision": "year",
+        "place_name": "雍城(今陕西凤翔)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 雍城(今陕西凤翔)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-秦孝公"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-秦孝公-endeavor-3",
+        "person_qid": "guji-秦孝公",
+        "title_zh": "收复河西失地",
+        "domain": "军事",
+        "start_date": "-341",
+        "end_date": "-338",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "河西(今陕西韩城一带)",
+          "安邑(今山西夏县)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "魏国马陵之战惨败后，国力骤衰。秦孝公趁势派商鞅率军伐魏，大败魏军，俘虏魏公子卬。魏惠王被迫将河西之地归还秦国。至此秦国收复了被魏国占领八十年的河西失地，东出通道彻底打通。",
+        "outcome": "收复河西失地，秦国获得关中至黄河的完整战略纵深",
+        "lesson": "国运的逆转往往只需要一个正确的战略窗口期",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-341",
+            "end_date": "-340",
+            "place": "河西(今陕西韩城一带)",
+            "description_zh": null,
+            "highlight": "魏国马陵之战大败，国力衰减"
+          },
+          {
+            "name": "破局",
+            "start_date": "-340",
+            "end_date": "-340",
+            "place": "河西(今陕西韩城一带)",
+            "description_zh": null,
+            "highlight": "商鞅率军大破魏军"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-340",
+            "end_date": "-338",
+            "place": "安邑(今山西夏县)",
+            "description_zh": null,
+            "highlight": "收复河西之地"
+          },
+          {
+            "name": "收束",
+            "start_date": "-338",
+            "end_date": "-338",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦国东出大门洞开"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦孝公-endeavor-2",
+        "person_qid": "guji-秦孝公",
+        "title_zh": "支持商鞅变法，秦国由弱变强",
+        "domain": "政治军事",
+        "start_date": "-356",
+        "end_date": "-338",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "栎阳(今陕西富平)",
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "孝公全力支持商鞅推行两次变法。第一次变法于栎阳颁行，废井田开阡陌、奖励耕织军功、编户连坐。秦国旧贵族群起反对，太子驷犯法，商鞅刑其师傅公子虔、公孙贾。孝公力排众议，始终站在变法一方。",
+        "outcome": "秦国社会焕然一新，国力大增，从弱国一跃为战国强国",
+        "lesson": "变法者需要君主绝对的信任，而信任的前提是君主自身的远见",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-356",
+            "end_date": "-356",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "第一次变法：废井田、奖耕战"
+          },
+          {
+            "name": "破局",
+            "start_date": "-350",
+            "end_date": "-350",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "迁都咸阳，推行县制"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-350",
+            "end_date": "-340",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦国大治，道不拾遗"
+          },
+          {
+            "name": "收束",
+            "start_date": "-340",
+            "end_date": "-338",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "河西之战收复失地"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦孝公-endeavor-1",
+        "person_qid": "guji-秦孝公",
+        "title_zh": "颁布求贤令，招揽天下英才",
+        "domain": "政治",
+        "start_date": "-361",
+        "end_date": "-356",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "雍城(今陕西凤翔)",
+          "栎阳(今陕西富平)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "秦孝公即位之初，秦处关中西陲，河山以东强国六，微力不得与中原会盟。孝公愤然下求贤令，开厚禄高爵之门招揽天下士人。卫鞅携李悝《法经》入秦，以帝道、王道、霸道三说试探孝公，孝公唯取霸道——富国强兵之术。",
+        "outcome": "招揽到商鞅等大批人才，为秦国变法图强奠定人才基础",
+        "lesson": "求贤若渴不是姿态，而是真正的战略投资",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-361",
+            "end_date": "-361",
+            "place": "雍城(今陕西凤翔)",
+            "description_zh": null,
+            "highlight": "六国卑秦，孝公深以为耻"
+          },
+          {
+            "name": "破局",
+            "start_date": "-361",
+            "end_date": "-361",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "颁布求贤令"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-361",
+            "end_date": "-356",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "卫鞅入秦，以霸道说君"
+          },
+          {
+            "name": "收束",
+            "start_date": "-356",
+            "end_date": "-356",
+            "place": "栎阳(今陕西富平)",
+            "description_zh": null,
+            "highlight": "拜卫鞅为左庶长，主持变法"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-秦孝公",
+        "date": "-338",
+        "place_name": "咸阳(今陕西咸阳)",
+        "highlight_type": "事件",
+        "title_zh": "孝公薨，商鞅被车裂",
+        "highlight_note": "法死而法存——商鞅变法最深刻的遗产",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-秦孝公",
+        "date": "-341",
+        "place_name": "河西(今陕西韩城一带)",
+        "highlight_type": "战役",
+        "title_zh": "河西之战，收复失地",
+        "highlight_note": "秦国收复河西，东出大门洞开",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-秦孝公",
+        "date": "-359",
+        "place_name": "栎阳(今陕西富平)",
+        "highlight_type": "决策",
+        "title_zh": "任用商鞅主持变法",
+        "highlight_note": "孝公对商鞅的信任是变法成功的关键",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-秦孝公",
+        "date": "-361",
+        "place_name": "栎阳(今陕西富平)",
+        "highlight_type": "决策",
+        "title_zh": "颁布求贤令",
+        "highlight_note": "求贤令是秦国崛起的起点",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-秦惠文王",
+    "name_zh": "秦惠文王",
+    "name_en": null,
+    "era": "战国中期",
+    "archetype": "承前启后的扩张之君",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "-356",
+    "death_date": "-311",
+    "birth_place": "咸阳(今陕西咸阳)",
+    "summary_zh": null,
+    "summary_first_person": "吾少时犯法，太傅被刑，此吾一生之耻。然吾深知商鞅之法利于秦国，故即位虽诛鞅而不废其法。张仪以连横说吾，吾用之，使六国各自为谋而不能合。又南取巴蜀，得天府之国。吾称惠文王，自此秦不复为诸侯之秦。",
+    "lesson": "真正的政治家能超越个人恩怨，为国家利益做出最务实的选择。",
+    "events": [
+      {
+        "id": "guji-秦惠文王-event-death",
+        "person_qid": "guji-秦惠文王",
+        "endeavor_id": null,
+        "date": "-311",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-秦惠文王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦惠文王-event-birth",
+        "person_qid": "guji-秦惠文王",
+        "endeavor_id": null,
+        "date": "-356",
+        "date_precision": "year",
+        "place_name": "咸阳(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 咸阳(今陕西咸阳)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-秦惠文王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-秦惠文王-endeavor-3",
+        "person_qid": "guji-秦惠文王",
+        "title_zh": "南取巴蜀，得天府之国",
+        "domain": "军事",
+        "start_date": "-316",
+        "end_date": "-314",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "巴蜀(今四川盆地)",
+          "苴(今四川广元)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "巴蜀内乱，苴侯求援于秦。朝堂上有两派意见：张仪主张先伐韩取周以震慑天下，司马错则主张先取巴蜀以广地富民。惠文王采纳司马错之策，一举灭蜀、继而灭巴。巴蜀归秦后，成都平原成为秦国最重要的粮食基地和战略后方，为日后统一六国提供了坚实的物质保障。",
+        "outcome": "秦国获得巴蜀千里沃野，粮食产量倍增，战略纵深大为扩展",
+        "lesson": "有时候迂回的棋比正面的棋更有价值——取巴蜀比争中原更明智",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-316",
+            "end_date": "-316",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "巴蜀内乱，苴侯求援"
+          },
+          {
+            "name": "破局",
+            "start_date": "-316",
+            "end_date": "-316",
+            "place": "巴蜀(今四川盆地)",
+            "description_zh": null,
+            "highlight": "司马错率军入蜀"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-316",
+            "end_date": "-314",
+            "place": "巴蜀(今四川盆地)",
+            "description_zh": null,
+            "highlight": "灭蜀灭巴，设郡管辖"
+          },
+          {
+            "name": "收束",
+            "start_date": "-314",
+            "end_date": "-314",
+            "place": "巴蜀(今四川盆地)",
+            "description_zh": null,
+            "highlight": "成都平原成为秦国战略后方"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦惠文王-endeavor-4",
+        "person_qid": "guji-秦惠文王",
+        "title_zh": "称王，与齐并立",
+        "domain": "政治",
+        "start_date": "-325",
+        "end_date": "-323",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前325年，秦惠文王正式称王，这是秦国历史上第一个称王的君主。此后韩、赵、魏、燕相继称王，到前323年徐州相王，战国七雄正式确立'王'的称号体系。惠文王称王标志着秦国不再以周室诸侯自居，而是以平等甚至更强势的姿态与天下争霸。",
+        "outcome": "秦国正式跻身王者之列，为后续统一天下的政治叙事奠基",
+        "lesson": "名分的改变往往是实力改变的信号",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-325",
+            "end_date": "-325",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦国国力已可与齐楚并肩"
+          },
+          {
+            "name": "破局",
+            "start_date": "-325",
+            "end_date": "-325",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "自立为王"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-323",
+            "end_date": "-323",
+            "place": "徐州(今山东枣庄)",
+            "description_zh": null,
+            "highlight": "徐州相王，天下格局重塑"
+          },
+          {
+            "name": "收束",
+            "start_date": "-323",
+            "end_date": "-311",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦称王成定制"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦惠文王-endeavor-2",
+        "person_qid": "guji-秦惠文王",
+        "title_zh": "张仪连横，破六国合纵",
+        "domain": "外交",
+        "start_date": "-328",
+        "end_date": "-311",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)",
+          "大梁(今河南开封)",
+          "新郑(今河南新郑)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "面对苏秦组织的六国合纵伐秦，惠文王起用张仪推行连横策略。张仪凭三寸不烂之舌游说各国，以利诱、恐吓、欺诈等手段逐一瓦解合纵联盟。最精彩的是欺楚绝齐——张仪以商於六百里地诱楚怀王与齐绝交，待楚齐绝交后又称只许六里，楚怀王大怒伐秦，反被大败于丹阳、蓝田。",
+        "outcome": "六国合纵瓦解，秦国各个击破的外交优势确立",
+        "lesson": "在大国博弈中，外交策略的价值不亚于军事力量",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-328",
+            "end_date": "-318",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "苏秦合纵，六国联军伐秦"
+          },
+          {
+            "name": "破局",
+            "start_date": "-318",
+            "end_date": "-315",
+            "place": "各国都城",
+            "description_zh": null,
+            "highlight": "张仪以连横逐一瓦解"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-313",
+            "end_date": "-311",
+            "place": "各国都城",
+            "description_zh": null,
+            "highlight": "欺楚绝齐，六国再无合力"
+          },
+          {
+            "name": "收束",
+            "start_date": "-311",
+            "end_date": "-311",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦国成为天下最强"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦惠文王-endeavor-1",
+        "person_qid": "guji-秦惠文王",
+        "title_zh": "诛商鞅而用其法",
+        "domain": "政治",
+        "start_date": "-338",
+        "end_date": "-338",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "惠文王即位后，公子虔等人诬告商鞅谋反，请求诛杀。惠文王顺势车裂商鞅、灭其族，既满足了旧贵族的怨恨，又稳固了自身王位。但高明之处在于，他从未打算废除商鞅之法——因为正是这套制度让秦国强大起来。这种'杀其人而用其法'的做法，展现了超越个人恩怨的政治智慧。",
+        "outcome": "平息旧贵族怨恨的同时，完整保留了变法成果",
+        "lesson": "政治的最高境界是让所有人都觉得赢了，但规则不变",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-338",
+            "end_date": "-338",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "旧贵族要求诛杀商鞅"
+          },
+          {
+            "name": "破局",
+            "start_date": "-338",
+            "end_date": "-338",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "车裂商鞅"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-338",
+            "end_date": "-338",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "明确宣布沿用秦法不变"
+          },
+          {
+            "name": "收束",
+            "start_date": "-338",
+            "end_date": "-337",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "旧贵族失望——法并未废除"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-秦昭襄王",
+    "name_zh": "秦昭襄王",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "雄吞天下的铁腕之君",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "-325",
+    "death_date": "-251",
+    "birth_place": "咸阳(今陕西咸阳)",
+    "summary_zh": null,
+    "summary_first_person": "吾即位时年少，母宣太后临朝，舅魏冉用事。吾隐忍多年，待范雎入秦说'远交近攻'，吾始知天下可图。白起为将，长平一战坑赵卒四十余万，东方六国胆寒。然邯郸之围不克，白起谏而不听，终赐死之。吾晚年深悔，然大势已定，秦并天下不过旦夕之间。",
+    "lesson": "能用人者得天下，能忍者成大事，但多疑和好大喜功是帝王的致命伤。",
+    "events": [
+      {
+        "id": "guji-秦昭襄王-event-death",
+        "person_qid": "guji-秦昭襄王",
+        "endeavor_id": null,
+        "date": "-251",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-秦昭襄王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-秦昭襄王-event-birth",
+        "person_qid": "guji-秦昭襄王",
+        "endeavor_id": null,
+        "date": "-325",
+        "date_precision": "year",
+        "place_name": "咸阳(今陕西咸阳)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 咸阳(今陕西咸阳)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-秦昭襄王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-秦昭襄王-endeavor-4",
+        "person_qid": "guji-秦昭襄王",
+        "title_zh": "赐死白起",
+        "domain": "政治",
+        "start_date": "-257",
+        "end_date": "-257",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)",
+          "杜邮(今陕西咸阳东)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "长平之战后，白起主张乘胜灭赵，昭襄王初许后又听范雎之言受韩赵游说而退兵。次年再攻赵国邯郸时，白起多次称病推辞。邯郸之战失利后，昭襄王迁怒于白起，先是免其爵位，后赐剑令其自裁。白起叹曰'我固当死，长平之战赵卒降者数十万人，我诈而尽坑之，是足以死'，遂自刎。",
+        "outcome": "秦国失去最优秀的军事统帅",
+        "lesson": "功高震主是千古不变的危机，但杀将自毁更是帝王的大忌",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-260",
+            "end_date": "-259",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "白起反对邯郸之战"
+          },
+          {
+            "name": "破局",
+            "start_date": "-259",
+            "end_date": "-258",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "邯郸之战失利"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-257",
+            "end_date": "-257",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "赐死白起"
+          },
+          {
+            "name": "收束",
+            "start_date": "-257",
+            "end_date": "-257",
+            "place": "杜邮(今陕西咸阳东)",
+            "description_zh": null,
+            "highlight": "白起自刎，秦失一帅"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦昭襄王-endeavor-1",
+        "person_qid": "guji-秦昭襄王",
+        "title_zh": "长平之战，重创赵国",
+        "domain": "军事",
+        "start_date": "-262",
+        "end_date": "-260",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长平(今山西高平)",
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前262年，秦国攻韩上党，韩国欲献上党于秦以求和，上党郡守冯亭不愿降秦，转而将上党献于赵国。赵国接纳，秦赵大战由此爆发。秦将王龁与赵将廉颇在长平对峙三年。赵国换将赵括，秦国秘密换上白起。白起佯败诱敌，包围赵军四十余日，最终四十万赵卒被坑杀。此战是战国规模最大的战役，赵国从此一蹶不振。",
+        "outcome": "赵国四十万精锐尽丧，东方六国再无力单独抗秦",
+        "lesson": "一场决定性的战役可以改变整个时代的格局",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-262",
+            "end_date": "-260",
+            "place": "上党(今山西长治)",
+            "description_zh": null,
+            "highlight": "韩国上党郡降赵，秦赵争夺"
+          },
+          {
+            "name": "破局",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "王龁vs廉颇对峙"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "白起换将，赵括中伏，坑卒四十余万"
+          },
+          {
+            "name": "收束",
+            "start_date": "-260",
+            "end_date": "-259",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "赵国元气大伤，东方六国震恐"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦昭襄王-endeavor-2",
+        "person_qid": "guji-秦昭襄王",
+        "title_zh": "远交近攻，统一天下的大战略",
+        "domain": "外交军事",
+        "start_date": "-266",
+        "end_date": "-251",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)",
+          "各国"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "范雎入秦，以'远交近攻'四字概括了秦国统一天下的总战略：与远方的齐国、燕国交好，集中力量蚕食邻近的韩、魏、赵。昭襄王采纳此策，驱逐了把持朝政多年的魏冉和宣太后势力，夺回实权。此后秦国的扩张变得有章有法：先灭义渠稳固后方，再逐步蚕食三晋，长平之战后赵国再难翻身。",
+        "outcome": "秦国确立了统一天下的总路线图，此后历代秦王皆沿此推进",
+        "lesson": "伟大的战略不在于一城一池的得失，而在于方向的正确",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-271",
+            "end_date": "-266",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "范雎入秦，献远交近攻之策"
+          },
+          {
+            "name": "破局",
+            "start_date": "-266",
+            "end_date": "-260",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "驱逐魏冉，拜范雎为相"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-260",
+            "end_date": "-253",
+            "place": "各国",
+            "description_zh": null,
+            "highlight": "交好齐燕，蚕食韩魏赵楚"
+          },
+          {
+            "name": "收束",
+            "start_date": "-253",
+            "end_date": "-251",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "秦国版图已占天下之半"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦昭襄王-endeavor-3",
+        "person_qid": "guji-秦昭襄王",
+        "title_zh": "白起攻楚，破郢都",
+        "domain": "军事",
+        "start_date": "-279",
+        "end_date": "-278",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "鄢(今湖北宜城)",
+          "郢(今湖北荆州)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "昭襄王派白起大举伐楚。白起采取避实击虚之策，先以水攻破鄢城，斩楚军数万。次年长驱直入，攻破楚国都城郢，烧毁楚先王陵墓夷陵。楚顷襄王仓皇东迁至陈(今河南淮阳)。楚国从此一蹶不振。屈原闻郢都失陷，投汨罗江而死。",
+        "outcome": "楚国丧失半壁江山，从战国最强之一沦为二流国家",
+        "lesson": "骄兵必败，楚国的覆灭源于内部腐朽而非外部力量",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-280",
+            "end_date": "-279",
+            "place": "鄢(今湖北宜城)",
+            "description_zh": null,
+            "highlight": "白起伐楚，先取鄢城"
+          },
+          {
+            "name": "破局",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "鄢(今湖北宜城)",
+            "description_zh": null,
+            "highlight": "水淹鄢城，楚军大败"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-278",
+            "end_date": "-278",
+            "place": "郢(今湖北荆州)",
+            "description_zh": null,
+            "highlight": "攻破郢都，烧夷陵"
+          },
+          {
+            "name": "收束",
+            "start_date": "-278",
+            "end_date": "-278",
+            "place": "郢(今湖北荆州)",
+            "description_zh": null,
+            "highlight": "楚国被迫东迁，屈原投江"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-蔺相如",
+    "name_zh": "蔺相如",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "以智勇双全维护国家尊严的外交家",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-330",
+    "death_date": "约-270",
+    "birth_place": "赵国(今河北邯郸)",
+    "summary_zh": null,
+    "summary_first_person": "吾本赵国宦者令缪贤之门人，因完璧归赵事见知于赵王。渑池之会吾以颈血溅秦王，赵王得以不辱。廉颇恶吾位居其上，吾避之再三。人问吾何以怯，吾曰'以先国家之急而后私仇也'。廉颇闻之，肉袒负荆请罪。吾与廉颇遂为刎颈之交。",
+    "lesson": "在强权面前不卑不亢，在恩怨面前以大局为重，是真正的勇气。",
+    "events": [
+      {
+        "id": "guji-蔺相如-event-death",
+        "person_qid": "guji-蔺相如",
+        "endeavor_id": null,
+        "date": "约-270",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-蔺相如"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-蔺相如-event-birth",
+        "person_qid": "guji-蔺相如",
+        "endeavor_id": null,
+        "date": "约-330",
+        "date_precision": "year",
+        "place_name": "赵国(今河北邯郸)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 赵国(今河北邯郸)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-蔺相如"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-蔺相如-endeavor-2",
+        "person_qid": "guji-蔺相如",
+        "title_zh": "渑池之会",
+        "domain": "外交",
+        "start_date": "-279",
+        "end_date": "-279",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "渑池(今河南渑池)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "秦赵渑池之会，秦王酒酣令赵王鼓瑟以示臣服之意。蔺相如上前请秦王击缶，秦王不肯。相如曰'五步之内，臣请以颈血溅大王矣'，以死相逼。秦王左右欲杀相如，相如怒目叱之。秦王无奈击缶。相如召赵国御史记下'秦王为赵王击缶'。秦终不能加害于赵。",
+        "outcome": "赵国在外交上不落下风，维护了国家尊严",
+        "lesson": "外交上的对等是国家主权的底线，需要以命相守",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "渑池(今河南渑池)",
+            "description_zh": null,
+            "highlight": "秦王邀赵王渑池相会"
+          },
+          {
+            "name": "破局",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "渑池(今河南渑池)",
+            "description_zh": null,
+            "highlight": "秦王令赵王鼓瑟"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "渑池(今河南渑池)",
+            "description_zh": null,
+            "highlight": "蔺相如以死相逼请秦王击缶"
+          },
+          {
+            "name": "收束",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "渑池(今河南渑池)",
+            "description_zh": null,
+            "highlight": "赵王全身而退"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-蔺相如-endeavor-1",
+        "person_qid": "guji-蔺相如",
+        "title_zh": "完璧归赵",
+        "domain": "外交",
+        "start_date": "-283",
+        "end_date": "-283",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "邯郸(今河北邯郸)",
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "秦王欲以十五城换赵国和氏璧。蔺相如奉命携璧入秦，见秦王无意割城，遂以'璧有瑕请指示王'取回和氏璧，怒发冲冠倚柱而立曰'大王欲得璧，臣头今与璧俱碎于柱矣'。秦王恐璧碎，蔺相如趁机令从者怀璧归赵。秦王虽怒，但以礼相待，放其归国。",
+        "outcome": "赵国既保全了和氏璧，又没有给秦国开战的借口",
+        "lesson": "在不对等的博弈中，胆识和智谋是最好的武器",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-283",
+            "end_date": "-283",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "秦王以十五城换和氏璧"
+          },
+          {
+            "name": "破局",
+            "start_date": "-283",
+            "end_date": "-283",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "蔺相如持璧入秦"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-283",
+            "end_date": "-283",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "怒发冲冠，持璧倚柱，以碎璧相胁"
+          },
+          {
+            "name": "收束",
+            "start_date": "-283",
+            "end_date": "-283",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "完璧归赵，名震天下"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-赵惠文王",
+    "name_zh": "赵惠文王",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "守成有余的中庸之君",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "-308",
+    "death_date": "-266",
+    "birth_place": "邯郸(今河北邯郸)",
+    "summary_zh": null,
+    "summary_first_person": "吾即位时，赵国尚承父王胡服骑射之盛。蔺相如完璧归赵，渑池之会不辱使命，廉颇负荆请罪，吾之朝廷将相和睦。然长平之役，吾惑于秦人间谍之言，以赵括替廉颇，四十万将士尽丧。此吾一生之大过也。",
+    "lesson": "用人不疑是治国根本，临阵换将是最大的失策。",
+    "events": [
+      {
+        "id": "guji-赵惠文王-event-death",
+        "person_qid": "guji-赵惠文王",
+        "endeavor_id": null,
+        "date": "-266",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-赵惠文王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-赵惠文王-event-birth",
+        "person_qid": "guji-赵惠文王",
+        "endeavor_id": null,
+        "date": "-308",
+        "date_precision": "year",
+        "place_name": "邯郸(今河北邯郸)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 邯郸(今河北邯郸)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-赵惠文王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-赵惠文王-endeavor-3",
+        "person_qid": "guji-赵惠文王",
+        "title_zh": "邯郸之战，艰难守国",
+        "domain": "军事",
+        "start_date": "-259",
+        "end_date": "-257",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "邯郸(今河北邯郸)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "长平之战后，秦国趁势围攻赵国都城邯郸。赵国命悬一线，平原君赵胜赴楚求救，毛遂自荐说服楚王出兵。同时魏国信陵君魏无忌窃取兵符，率军救赵。在赵、楚、魏三国联军夹击下，秦国大将王陵战败，被迫撤围。赵国虽保住邯郸，但国力已大不如前。",
+        "outcome": "赵国暂时保住国都，但已无力恢复长平之前的实力",
+        "lesson": "危难时刻需要冒险的勇气和广泛的外交支持",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-259",
+            "end_date": "-259",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "秦国乘胜围攻邯郸"
+          },
+          {
+            "name": "破局",
+            "start_date": "-258",
+            "end_date": "-258",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "平原君求救于楚魏"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-257",
+            "end_date": "-257",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "信陵君窃符救赵，楚国春申君援军至"
+          },
+          {
+            "name": "收束",
+            "start_date": "-257",
+            "end_date": "-257",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "秦军撤围，赵国幸免于亡"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-赵惠文王-endeavor-2",
+        "person_qid": "guji-赵惠文王",
+        "title_zh": "长平之战换将之失",
+        "domain": "军事决策",
+        "start_date": "-260",
+        "end_date": "-260",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长平(今山西高平)",
+          "邯郸(今河北邯郸)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "长平之战初期，老将廉颇采取坚壁清野策略，与秦军对峙三年不败。秦国见正面无法取胜，遂施反间计，散布'秦之所畏，独赵奢之子赵括耳'的谣言。赵惠文王中计，不顾蔺相如病重劝阻，以赵括替换廉颇。赵括出击中白起之计，四十万赵军被围断粮四十六日后投降，全部被坑杀。",
+        "outcome": "赵国四十万精锐尽丧，从此再无力与秦国争锋",
+        "lesson": "临阵换将，自古为兵家大忌",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-262",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "廉颇坚守不出，与秦军对峙三年"
+          },
+          {
+            "name": "破局",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "秦国间谍散布谣言，赵王中计"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "赵括替廉颇，中白起之计"
+          },
+          {
+            "name": "收束",
+            "start_date": "-260",
+            "end_date": "-260",
+            "place": "长平(今山西高平)",
+            "description_zh": null,
+            "highlight": "四十万赵军被坑杀"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-赵惠文王-endeavor-1",
+        "person_qid": "guji-赵惠文王",
+        "title_zh": "将相和——廉颇蔺相如共保赵国",
+        "domain": "政治外交",
+        "start_date": "-283",
+        "end_date": "-270",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "邯郸(今河北邯郸)",
+          "渑池(今河南渑池)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前283年，蔺相如持和氏璧出使秦国，以'璧有瑕请指示王'之计完璧归赵。前279年渑池之会，秦王令赵王鼓瑟，蔺相如以死相逼请秦王击缶，维护了赵国尊严。廉颇不服蔺相如位居其上，相如以'先国家之急而后私仇'回避。廉颇深感惭愧，负荆请罪，二人结为生死之交。",
+        "outcome": "赵国将相和睦，外交上不输秦国，维持了大国地位",
+        "lesson": "国家利益高于个人恩怨，将相和睦是国家安定的基石",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-283",
+            "end_date": "-283",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "蔺相如完璧归赵"
+          },
+          {
+            "name": "破局",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "渑池(今河南渑池)",
+            "description_zh": null,
+            "highlight": "渑池之会，相如维护赵王尊严"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-279",
+            "end_date": "-279",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "廉颇负荆请罪，将相和"
+          },
+          {
+            "name": "收束",
+            "start_date": "-279",
+            "end_date": "-270",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "赵国将相和睦，国力维持"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-赵武灵王",
+    "name_zh": "赵武灵王",
+    "name_en": null,
+    "era": "战国中晚期",
+    "archetype": "以胡服骑射重塑军制的改革之君",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "-340",
+    "death_date": "-295",
+    "birth_place": "邯郸(今河北邯郸)",
+    "summary_zh": null,
+    "summary_first_person": "吾初即位，赵国四面受敌，常为中山所苦。吾观胡人骑射之利，决意胡服骑射。群臣反对，公子成称病不朝，吾亲往其家说服之。变服骑射三年，赵国骑兵大盛，灭中山、收楼烦，辟地千里。然吾晚年传位于幼子，废长立幼，终困于沙丘，饿死沙丘宫中。",
+    "lesson": "改革需要勇气，但权力交接的失败可以毁掉一切。",
+    "events": [
+      {
+        "id": "guji-赵武灵王-event-death",
+        "person_qid": "guji-赵武灵王",
+        "endeavor_id": null,
+        "date": "-295",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-赵武灵王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-赵武灵王-event-birth",
+        "person_qid": "guji-赵武灵王",
+        "endeavor_id": null,
+        "date": "-340",
+        "date_precision": "year",
+        "place_name": "邯郸(今河北邯郸)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 邯郸(今河北邯郸)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-赵武灵王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-赵武灵王-endeavor-3",
+        "person_qid": "guji-赵武灵王",
+        "title_zh": "沙丘之变，困死沙丘宫",
+        "domain": "政治",
+        "start_date": "-299",
+        "end_date": "-295",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "沙丘(今河北广宗)",
+          "邯郸(今河北邯郸)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "赵武灵王壮年时主动退位传位于幼子赵何(赵惠文王)，自号'主父'。然长子赵章不服，在权臣支持下趁赵王与主父在沙丘宫时发动政变。公子成、李兑率军平叛，赵章被杀。但为防主父报复，他们围困沙丘宫不放食物。赵武灵王在宫中困守三月，最终掏雀巢充饥仍不得活，被活活饿死。",
+        "outcome": "一代英主死于非命，赵国政治元气大伤",
+        "lesson": "再英明的改革者也无法弥补继承人选择的重大失误",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-299",
+            "end_date": "-299",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "传位于幼子赵何"
+          },
+          {
+            "name": "破局",
+            "start_date": "-298",
+            "end_date": "-296",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "长子赵章不服，暗中积蓄势力"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-295",
+            "end_date": "-295",
+            "place": "沙丘(今河北广宗)",
+            "description_zh": null,
+            "highlight": "赵章发动政变，被公子成平定"
+          },
+          {
+            "name": "收束",
+            "start_date": "-295",
+            "end_date": "-295",
+            "place": "沙丘(今河北广宗)",
+            "description_zh": null,
+            "highlight": "赵武灵王被围困饿死"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-赵武灵王-endeavor-2",
+        "person_qid": "guji-赵武灵王",
+        "title_zh": "灭中山国",
+        "domain": "军事",
+        "start_date": "-306",
+        "end_date": "-296",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "中山国都灵寿(今河北平山)",
+          "邯郸(今河北邯郸)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "中山国地处赵国腹地，是赵国的心腹大患。赵武灵王利用胡服骑射后的骑兵优势，从多个方向持续进攻中山。经过十年蚕食，终于在前296年灭亡中山国，迁其君主于肤施(今陕西榆林)。赵国至此统一了河北地区，国力大增。",
+        "outcome": "赵国腹地贯通，不再有后顾之忧，国力跃升为战国第二",
+        "lesson": "消除后顾之忧是争霸天下的前提",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-307",
+            "end_date": "-306",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "胡服骑射后赵军战斗力大增"
+          },
+          {
+            "name": "破局",
+            "start_date": "-306",
+            "end_date": "-300",
+            "place": "中山国(今河北平山一带)",
+            "description_zh": null,
+            "highlight": "连年进攻中山"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-296",
+            "end_date": "-296",
+            "place": "中山国都灵寿(今河北平山)",
+            "description_zh": null,
+            "highlight": "灭亡中山国"
+          },
+          {
+            "name": "收束",
+            "start_date": "-296",
+            "end_date": "-296",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "赵国统一河北"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-赵武灵王-endeavor-1",
+        "person_qid": "guji-赵武灵王",
+        "title_zh": "胡服骑射，军事改革",
+        "domain": "军事",
+        "start_date": "-307",
+        "end_date": "-300",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "邯郸(今河北邯郸)",
+          "代地(今河北蔚县)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "赵武灵王深感中原式车战在山地和草原上的局限，决心效法北方胡人推行军事改革。他要求赵国贵族脱去宽袍大袖、穿上短衣窄袖的胡服，将传统车战改为骑兵作战。反对声浪巨大，叔父公子成称病不朝。赵武灵王亲自登门说服，公子成终于接受。改革后赵国骑兵大盛，北灭中山、收楼烦、林胡，辟地千里。",
+        "outcome": "赵国建立了战国时代最强大的骑兵力量，成为唯一能与秦国正面抗衡的国家",
+        "lesson": "打破常规需要非凡的勇气，但最关键的不是提出改革，而是说服既得利益者",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-307",
+            "end_date": "-307",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "与肥义商议胡服骑射"
+          },
+          {
+            "name": "破局",
+            "start_date": "-307",
+            "end_date": "-307",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "说服公子成，推行胡服"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-306",
+            "end_date": "-300",
+            "place": "代地(今河北蔚县)",
+            "description_zh": null,
+            "highlight": "建立骑兵军团，灭中山"
+          },
+          {
+            "name": "收束",
+            "start_date": "-300",
+            "end_date": "-299",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "赵国成为北方强国"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-魏惠王",
+    "name_zh": "魏惠王",
+    "name_en": null,
+    "era": "战国中期",
+    "archetype": "由盛转衰的骄矜之君",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "-400",
+    "death_date": "-319",
+    "birth_place": "安邑(今山西夏县)",
+    "summary_zh": null,
+    "summary_first_person": "吾承祖父文侯之业，魏国正值鼎盛。然吾用人不察，放卫鞅入秦而为秦患，用庞涓而失孙膑。桂陵、马陵两败，魏武卒精锐尽失。吾迁都大梁，四面受敌，悔之晚矣。孟子见吾，吾问何以利国，孟子曰'何必曰利'，吾不能用其言。",
+    "lesson": "守业比创业更难，不能识人用人是最大的败笔。",
+    "events": [
+      {
+        "id": "guji-魏惠王-event-death",
+        "person_qid": "guji-魏惠王",
+        "endeavor_id": null,
+        "date": "-319",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-魏惠王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-魏惠王-event-birth",
+        "person_qid": "guji-魏惠王",
+        "endeavor_id": null,
+        "date": "-400",
+        "date_precision": "year",
+        "place_name": "安邑(今山西夏县)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 安邑(今山西夏县)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-魏惠王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-魏惠王-endeavor-2",
+        "person_qid": "guji-魏惠王",
+        "title_zh": "桂陵之战大败",
+        "domain": "军事",
+        "start_date": "-354",
+        "end_date": "-353",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "桂陵(今河南长垣)",
+          "大梁(今河南开封)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前354年，庞涓率魏军八万围攻赵国邯郸。赵国向齐国求救，齐威王派田忌为将、孙膑为军师。孙膑不直接救赵，而是趁魏国空虚直攻大梁。庞涓被迫回师，在桂陵(今河南长垣)遭齐军伏击，大败而归。此即'围魏救赵'的经典战例。",
+        "outcome": "魏国首次在大战中失利，齐国的军事声望大增",
+        "lesson": "战争中直击要害比正面对抗更有效",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-354",
+            "end_date": "-354",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "庞涓率魏军围攻赵国邯郸"
+          },
+          {
+            "name": "破局",
+            "start_date": "-354",
+            "end_date": "-354",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "齐国孙膑'围魏救赵'"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-354",
+            "end_date": "-353",
+            "place": "桂陵(今河南长垣)",
+            "description_zh": null,
+            "highlight": "魏军中伏大败"
+          },
+          {
+            "name": "收束",
+            "start_date": "-353",
+            "end_date": "-353",
+            "place": "邯郸(今河北邯郸)",
+            "description_zh": null,
+            "highlight": "赵国邯郸之围解除"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-魏惠王-endeavor-1",
+        "person_qid": "guji-魏惠王",
+        "title_zh": "称霸初期与徐州相王",
+        "domain": "政治外交",
+        "start_date": "-369",
+        "end_date": "-334",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "大梁(今河南开封)",
+          "徐州(今山东枣庄)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "魏惠王即位时魏国国力强盛，他迁都大梁(今河南开封)以图进取中原，开凿鸿沟水利。前334年与齐威王在徐州相王，互尊为王。但相王之后，魏国的外交优势逐渐丧失——与齐国表面友好实则暗争，与秦国的河西之争日趋激烈。",
+        "outcome": "魏国在名义上达到巅峰，但实际上已开始走下坡路",
+        "lesson": "外强中干的盛世最危险，因为危机往往在繁华中滋生",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-369",
+            "end_date": "-361",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "魏国仍为战国首霸"
+          },
+          {
+            "name": "破局",
+            "start_date": "-361",
+            "end_date": "-354",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "迁都大梁，开鸿沟"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-334",
+            "end_date": "-334",
+            "place": "徐州(今山东枣庄)",
+            "description_zh": null,
+            "highlight": "徐州相王，与齐并尊"
+          },
+          {
+            "name": "收束",
+            "start_date": "-334",
+            "end_date": "-319",
+            "place": "大梁(今河南开封)",
+            "description_zh": null,
+            "highlight": "魏国盛极而衰"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  },
+  {
+    "qid": "guji-齐威王",
+    "name_zh": "齐威王",
+    "name_en": null,
+    "era": "战国中期",
+    "archetype": "纳谏如流的中兴明主",
+    "role": "模范",
+    "dilemmas": [],
+    "birth_date": "约-378",
+    "death_date": "-320",
+    "birth_place": "临淄(今山东淄博)",
+    "summary_zh": null,
+    "summary_first_person": "吾初即位，好为长夜之饮，委政卿大夫。邹忌以鼓琴说治国之道，又以比美之事讽谏。吾闻之，下令群臣面刺吾过者受上赏。自此朝堂清明，人才济济。吾用田忌、孙膑大败魏国于马陵，齐国强盛，与秦并立于天下。",
+    "lesson": "敢于面对批评的君主才能成就真正的霸业。",
+    "events": [
+      {
+        "id": "guji-齐威王-event-death",
+        "person_qid": "guji-齐威王",
+        "endeavor_id": null,
+        "date": "-320",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-齐威王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-齐威王-event-birth",
+        "person_qid": "guji-齐威王",
+        "endeavor_id": null,
+        "date": "约-378",
+        "date_precision": "year",
+        "place_name": "临淄(今山东淄博)",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 临淄(今山东淄博)",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-齐威王"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-齐威王-endeavor-2",
+        "person_qid": "guji-齐威王",
+        "title_zh": "马陵之战，大破魏国",
+        "domain": "军事",
+        "start_date": "-342",
+        "end_date": "-341",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "临淄(今山东淄博)",
+          "马陵(今河南范县)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "前342年，魏国伐韩，韩国求救于齐。齐威王以田忌为将、孙膑为军师。孙膑用减灶之计诱庞涓轻骑追击，于马陵道万弩齐发。庞涓自刎，魏太子申被俘。此战彻底打垮了魏国的军事力量，齐国一跃成为东方最强国家。",
+        "outcome": "魏国霸业终结，齐国成为东方霸主",
+        "lesson": "选择正确的时机和对手，一战定乾坤",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-342",
+            "end_date": "-341",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "韩国求救，齐国出兵"
+          },
+          {
+            "name": "破局",
+            "start_date": "-341",
+            "end_date": "-341",
+            "place": "马陵(今河南范县)",
+            "description_zh": null,
+            "highlight": "孙膑减灶诱敌"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-341",
+            "end_date": "-341",
+            "place": "马陵(今河南范县)",
+            "description_zh": null,
+            "highlight": "万弩齐发，魏军覆灭"
+          },
+          {
+            "name": "收束",
+            "start_date": "-341",
+            "end_date": "-341",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "齐国成为东方最强国"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-齐威王-endeavor-1",
+        "person_qid": "guji-齐威王",
+        "title_zh": "纳谏改革，重振朝纲",
+        "domain": "政治",
+        "start_date": "-356",
+        "end_date": "-350",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "临淄(今山东淄博)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "齐威王即位之初好酒色，荒废朝政。邹忌以鼓琴求见，借琴理喻治国之道。又以自己比美之事讽谏——妻、妾、客都说他比徐公美，实际上他不如徐公。由此推及国政：'宫妇左右莫不私王，朝廷之臣莫不畏王，四境之内莫不有求于王，由此观之，王之蔽甚矣。'齐威王大悟，下令重赏进谏者。",
+        "outcome": "齐国政治清明，人才涌入，国力大增",
+        "lesson": "能听逆耳忠言的领导，才是真正的强者",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-356",
+            "end_date": "-356",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "即位初期沉迷酒色"
+          },
+          {
+            "name": "破局",
+            "start_date": "-356",
+            "end_date": "-356",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "邹忌讽谏，齐王纳谏"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-355",
+            "end_date": "-350",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "朝堂政治焕然一新"
+          },
+          {
+            "name": "收束",
+            "start_date": "-350",
+            "end_date": "-350",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "群臣争相进谏"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-齐威王-endeavor-3",
+        "person_qid": "guji-齐威王",
+        "title_zh": "邹忌改革，整顿吏治",
+        "domain": "政治",
+        "start_date": "-356",
+        "end_date": "-340",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "临淄(今山东淄博)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "齐威王对地方官员进行严格考核。即墨大夫辖区百姓富足，虽无人为其说好话反而得到封赏。阿大夫辖区百姓穷困，花钱行贿朝中为其美言，结果被烹杀。此举震动朝野，齐国吏治为之一新。",
+        "outcome": "齐国吏治清明，国力持续增长",
+        "lesson": "考核官员看实绩而非口碑，是最有效的吏治手段",
+        "phases": [
+          {
+            "name": "酝酿",
+            "start_date": "-356",
+            "end_date": "-350",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "赏罚分明，考核官员"
+          },
+          {
+            "name": "破局",
+            "start_date": "-350",
+            "end_date": "-345",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "即墨大夫封赏，阿大夫烹杀"
+          },
+          {
+            "name": "高潮",
+            "start_date": "-345",
+            "end_date": "-340",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "齐国吏治清明"
+          },
+          {
+            "name": "收束",
+            "start_date": "-340",
+            "end_date": "-320",
+            "place": "临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "齐国强盛持久"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
   }
 ]

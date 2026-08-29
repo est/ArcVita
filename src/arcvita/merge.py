@@ -3,7 +3,7 @@ from __future__ import annotations
 import yaml, pathlib
 from arcvita.models import Endeavor, Event, Person
 
-EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han")]
+EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han"), pathlib.Path("data/extracted/king_tables")]
 CURATED_DIR = pathlib.Path("data/curated/classical")
 
 

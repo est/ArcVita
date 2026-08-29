@@ -3,7 +3,7 @@ from __future__ import annotations
 import yaml, pathlib
 from typing import Any
 
-EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han")]
+EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han"), pathlib.Path("data/extracted/king_tables")]
 _curated_cache: dict[str, dict] = {}
 
 

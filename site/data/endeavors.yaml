@@ -1544,38 +1544,44 @@
   review_status: ai_filled
 - id: guji-商鞅-endeavor-1
   person_qid: guji-商鞅
-  title_zh: 三说秦孝公，确立变法路线
+  title_zh: 第一次变法：富国强兵
   domain: 政治
-  start_date: 约-359
-  end_date: '-356'
+  start_date: '-356'
+  end_date: '-350'
   start_precision: null
   end_precision: null
   places:
-  - 秦国咸阳
+  - 栎阳(今陕西富平)
   place_qids: []
   status: 完成
-  description_zh: 公孙鞅入秦，经景监引见三次面见秦孝公。初说以帝道（尧舜之治），孝公昏昏欲睡；再说以王道（三代之治），孝公不悦；三说以霸道（春秋五霸之术），孝公大悦，与之语三日不厌，遂决意变法。
-  outcome: 秦孝公全力支持变法，拜商鞅为左庶长
-  lesson: 知音不在多，一主足矣
+  description_zh: 商鞅入秦后，先以徙木立信——在都城南门立三丈之木，悬赏五十金迁木至北门，百姓观望后终有勇者尝试，商鞅如约赏金。此举令百姓知法令必行。随后颁布废井田、开阡陌、奖励耕织和军功、编户连坐等法令。旧贵族群起反对，商鞅刑太子师傅公子虔、公孙贾以儆效尤。
+  outcome: 秦国农业产量和军事战力大幅提升，初步建立法治秩序
+  lesson: 法律的权威在于必行，取信于民是变法的第一步
   phases:
-  - name: 以帝道试探
-    start_date: 约-359
-    end_date: 约-359
-    place: 秦国
-    description_zh: null
-    highlight: 孝公昏昏欲睡
-  - name: 以王道游说
-    start_date: 约-359
-    end_date: 约-359
-    place: 秦国
-    description_zh: null
-    highlight: 孝公不悦
-  - name: 以霸道定策
-    start_date: 约-359
+  - name: 酝酿
+    start_date: '-356'
     end_date: '-356'
-    place: 秦国
+    place: 栎阳(今陕西富平)
     description_zh: null
-    highlight: 孝公与语三日不厌
+    highlight: 徙木立信，取信于民
+  - name: 破局
+    start_date: '-356'
+    end_date: '-355'
+    place: 栎阳(今陕西富平)
+    description_zh: null
+    highlight: 颁布废井田、奖耕战法令
+  - name: 高潮
+    start_date: '-355'
+    end_date: '-350'
+    place: 栎阳(今陕西富平)
+    description_zh: null
+    highlight: 秦国初见富强之效
+  - name: 收束
+    start_date: '-350'
+    end_date: '-350'
+    place: 栎阳(今陕西富平)
+    description_zh: null
+    highlight: 升为大良造，主持第二次变法
   dilemmas: []
   keywords: []
   event_ids: []
@@ -1585,33 +1591,44 @@
   review_status: ai_filled
 - id: guji-商鞅-endeavor-2
   person_qid: guji-商鞅
-  title_zh: 两次变法，强秦之基
-  domain: 政治改革
-  start_date: '-356'
-  end_date: '-338'
+  title_zh: 第二次变法：制度变革
+  domain: 政治
+  start_date: '-350'
+  end_date: '-340'
   start_precision: null
   end_precision: null
   places:
-  - 秦国咸阳
-  - 秦国各地
+  - 咸阳(今陕西咸阳)
   place_qids: []
   status: 完成
-  description_zh: 第一次变法：令民为什伍，编户齐民；奖励军功，斩一首者爵一级；重农抑商，耕织多者免徭役。为取信于民，立三丈之木于南门，募民徙之北门予五十金。第二次变法：废井田开阡陌，允许土地买卖；推行县制；统一度量衡。
-  outcome: 秦国由弱变强，奠定了统一六国的根基
-  lesson: 变法之要在于取信于民，徙木立信是万法之基
+  description_zh: 第二次变法更为深刻：迁都咸阳以远离旧贵族势力中心，推行郡县制取代分封，编户齐民使国家直接控制每一个百姓。统一度量衡为经济一体化奠基。商鞅被封于商地十五邑，号商君，权势煊赫一时。
+  outcome: 建立了一整套中央集权的制度框架，奠定了秦朝统一后的政治体制
+  lesson: 制度变革比政策变更更深远，真正的改革家改变的是规则本身
   phases:
-  - name: 第一次变法
-    start_date: '-356'
-    end_date: '-352'
-    place: 秦国
-    description_zh: null
-    highlight: 徙木立信
-  - name: 第二次变法
+  - name: 酝酿
     start_date: '-350'
-    end_date: '-338'
-    place: 秦国咸阳
+    end_date: '-350'
+    place: 咸阳(今陕西咸阳)
     description_zh: null
-    highlight: 废井田开阡陌
+    highlight: 迁都咸阳
+  - name: 破局
+    start_date: '-350'
+    end_date: '-345'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 推行县制，编户齐民
+  - name: 高潮
+    start_date: '-345'
+    end_date: '-340'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 统一度量衡，秦制大成
+  - name: 收束
+    start_date: '-340'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦法完备，影响深远
   dilemmas: []
   keywords: []
   event_ids: []
@@ -1621,32 +1638,45 @@
   review_status: ai_filled
 - id: guji-商鞅-endeavor-3
   person_qid: guji-商鞅
-  title_zh: 太子犯法，刑其师傅
-  domain: 司法
-  start_date: '-356'
-  end_date: '-355'
+  title_zh: 河西之战，以战立功
+  domain: 军事
+  start_date: '-340'
+  end_date: '-340'
   start_precision: null
   end_precision: null
   places:
-  - 秦国
+  - 河西(今陕西韩城一带)
+  - 安邑(今山西夏县)
   place_qids: []
   status: 完成
-  description_zh: 变法初行，太子犯法。商鞅曰'法之不行，自上犯之'，然太子为嗣君不可刑，遂刑其师傅公子虔和公孙贾。公子虔后来又犯法，再被劓刑。此二人后来成为商鞅最深的仇敌。
-  outcome: 法度严明，但也树立了致命的敌人
-  lesson: 执法必严，但也要考虑执法的代价
+  description_zh: 魏国马陵之战惨败后，商鞅建议趁势伐魏。他利用与魏公子卬的旧交，以宴请为名诱其至军中，趁机俘虏。魏军群龙无首，大败而归。魏惠王被迫割让河西之地。商鞅因功封于商地，号商君。
+  outcome: 秦国收复河西，商鞅获封商地
+  lesson: 军事胜利有时需要超越常规的手段，但代价是信誉的透支
   phases:
-  - name: 执法困境
-    start_date: '-356'
-    end_date: '-356'
-    place: 秦国
+  - name: 酝酿
+    start_date: '-341'
+    end_date: '-340'
+    place: 咸阳(今陕西咸阳)
     description_zh: null
-    highlight: 太子犯法
-  - name: 刑及师傅
-    start_date: '-355'
-    end_date: '-355'
-    place: 秦国
+    highlight: 魏国马陵大败
+  - name: 破局
+    start_date: '-340'
+    end_date: '-340'
+    place: 河西(今陕西韩城一带)
     description_zh: null
-    highlight: 刑公子虔、黥公孙贾
+    highlight: 设计俘获公子卬
+  - name: 高潮
+    start_date: '-340'
+    end_date: '-340'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 大破魏军
+  - name: 收束
+    start_date: '-340'
+    end_date: '-340'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 封商地十五邑
   dilemmas: []
   keywords: []
   event_ids: []
@@ -1656,36 +1686,47 @@
   review_status: ai_filled
 - id: guji-商鞅-endeavor-4
   person_qid: guji-商鞅
-  title_zh: 功高震主，车裂而亡
-  domain: 命运
+  title_zh: 车裂殉法
+  domain: 政治
   start_date: '-338'
   end_date: '-338'
   start_precision: null
   end_precision: null
   places:
-  - 秦国咸阳
+  - 咸阳(今陕西咸阳)
   place_qids: []
   status: 完成
-  description_zh: 秦孝公薨，太子即位（秦惠文王）。公子虔等人诬告商鞅谋反，惠文王下令追捕。商鞅逃至函谷关，因自己制定的法律规定无凭证不得入住旅店而被拒。最终被擒，处以车裂之刑，灭族。
-  outcome: 商鞅身死族灭，但秦法未废
-  lesson: 法自作而自受——商鞅之死是最深刻的制度悖论
+  description_zh: 孝公薨，秦惠文王即位。旧贵族群起攻讦，公子虔诬商鞅谋反。商鞅欲逃，至关下欲宿旅店，旅店主人曰'商君之法，舍人无验者坐之'——商鞅自己制定的法律反困住了自己。最终商鞅被擒，车裂而死，灭其族。然秦惠文王虽杀商鞅，却终未废其法。
+  outcome: 商鞅身死，但其法被秦国完整沿用，影响中国两千年
+  lesson: 法不阿贵，绳不挠曲——但制定法律的人也终将被法律所约束
   phases:
-  - name: 孝公之死
+  - name: 酝酿
     start_date: '-338'
     end_date: '-338'
-    place: 秦国
+    place: 咸阳(今陕西咸阳)
     description_zh: null
-    highlight: 秦孝公薨
-  - name: 五牛分尸
+    highlight: 秦孝公薨，旧贵族伺机反扑
+  - name: 破局
     start_date: '-338'
     end_date: '-338'
-    place: 秦国咸阳
+    place: 咸阳(今陕西咸阳)
     description_zh: null
-    highlight: 车裂而死
+    highlight: 公子虔等人诬告商鞅谋反
+  - name: 高潮
+    start_date: '-338'
+    end_date: '-338'
+    place: 郑(今陕西华县)
+    description_zh: null
+    highlight: 商鞅逃亡，宿客不纳
+  - name: 收束
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 车裂灭族，法存身灭
   dilemmas: []
   keywords: []
   event_ids:
-  - guji-商鞅-event-3
   - guji-商鞅-event-death
   highlight_event_ids: []
   sources:
@@ -1764,33 +1805,45 @@
   review_status: ai_filled
 - id: guji-孙膑-endeavor-1
   person_qid: guji-孙膑
-  title_zh: 围魏救赵，桂陵之战
+  title_zh: 围魏救赵——桂陵之战
   domain: 军事
   start_date: '-354'
   end_date: '-353'
   start_precision: null
   end_precision: null
   places:
-  - 魏国大梁
-  - 齐国
+  - 大梁(今河南开封)
+  - 桂陵(今河南长垣)
   place_qids: []
   status: 完成
-  description_zh: 魏国庞涓率大军围赵都邯郸，赵求救于齐。孙膑献策田忌，不救赵而直趋魏都大梁。庞涓回师途中，在桂陵遭齐军伏击，大败被擒。此即'围魏救赵'之典。
-  outcome: 大败魏军，解赵国之围
-  lesson: 攻其必救，避实击虚
+  description_zh: 魏将庞涓率八万大军围攻赵国邯郸，赵国向齐求救。齐威王以田忌为将、孙膑为军师。孙膑献策'批亢捣虚'——不直接去邯郸与魏军硬拼，而是趁魏国国内空虚直攻大梁。庞涓被迫回师，在桂陵遭齐军伏击，大败而归。此即'围魏救赵'的千古经典。
+  outcome: 齐国以较小代价解赵之围，确立了'以智取胜'的军事思想
+  lesson: 解决问题的最好方法往往不是正面硬刚，而是直击要害
   phases:
-  - name: 谋划
+  - name: 酝酿
     start_date: '-354'
     end_date: '-354'
-    place: 齐国临淄
+    place: 大梁(今河南开封)
     description_zh: null
-    highlight: 田忌赛马献计
-  - name: 实施
+    highlight: 魏国围赵邯郸，齐国出兵
+  - name: 破局
+    start_date: '-354'
+    end_date: '-354'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 直攻大梁，逼庞涓回师
+  - name: 高潮
+    start_date: '-354'
+    end_date: '-353'
+    place: 桂陵(今河南长垣)
+    description_zh: null
+    highlight: 设伏大败魏军
+  - name: 收束
     start_date: '-353'
     end_date: '-353'
-    place: 魏国桂陵
+    place: 邯郸(今河北邯郸)
     description_zh: null
-    highlight: 桂陵伏击大破魏军
+    highlight: 赵国邯郸之围解除
   dilemmas: []
   keywords: []
   event_ids: []
@@ -1800,34 +1853,44 @@
   review_status: ai_filled
 - id: guji-孙膑-endeavor-2
   person_qid: guji-孙膑
-  title_zh: 马陵之战，计杀庞涓
+  title_zh: 减灶诱敌——马陵之战
   domain: 军事
   start_date: '-342'
   end_date: '-341'
   start_precision: null
   end_precision: null
   places:
-  - 魏国
-  - 齐国
-  - 马陵道
+  - 马陵(今河南范县)
   place_qids: []
   status: 完成
-  description_zh: 魏攻韩，韩求救于齐。孙膑再用此计，以减灶诱庞涓轻骑追击。魏军至马陵道，万弩齐发，庞涓自知中计，叹曰'遂成竖子之名'，自刎而死。
-  outcome: 魏军覆灭，庞涓身死，齐国称霸
-  lesson: 知彼知己，百战不殆
+  description_zh: 前341年，魏伐韩，韩求救于齐。孙膑再任军师，用减灶之计：齐军撤退时第一天挖十万个灶，第二天五万，第三天三万——制造齐军士兵大量逃亡的假象。庞涓中计，以为齐军胆怯，率轻骑日夜追击。孙膑在马陵道狭窄处设伏，万弩齐发。庞涓在乱军中自刎，魏太子申被俘。
+  outcome: 魏国精锐尽失，齐国成为东方最强国
+  lesson: 最致命的武器不是刀剑，而是对手的骄傲和轻敌
   phases:
-  - name: 减灶诱敌
+  - name: 酝酿
     start_date: '-342'
     end_date: '-341'
-    place: 齐魏边境
+    place: 马陵(今河南范县)
     description_zh: null
-    highlight: 增兵减灶之计
-  - name: 马陵伏击
+    highlight: 魏国伐韩，齐国再度介入
+  - name: 破局
     start_date: '-341'
     end_date: '-341'
-    place: 马陵道
+    place: 马陵(今河南范县)
+    description_zh: null
+    highlight: 逐日减灶，制造溃逃假象
+  - name: 高潮
+    start_date: '-341'
+    end_date: '-341'
+    place: 马陵(今河南范县)
     description_zh: null
     highlight: 万弩齐发，庞涓自刎
+  - name: 收束
+    start_date: '-341'
+    end_date: '-340'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 魏国霸业终结
   dilemmas: []
   keywords: []
   event_ids: []
@@ -1837,26 +1900,44 @@
   review_status: ai_filled
 - id: guji-孙膑-endeavor-3
   person_qid: guji-孙膑
-  title_zh: 桂陵之战后著《孙膑兵法》
+  title_zh: 著《孙膑兵法》
   domain: 军事理论
   start_date: 约-340
-  end_date: 约-330
+  end_date: 约-320
   start_precision: null
   end_precision: null
   places:
-  - 齐国
+  - 临淄(今山东淄博)
   place_qids: []
   status: 完成
-  description_zh: 孙膑在军事实践之余，著有《孙膑兵法》八十九篇，发展了孙武的军事思想。此书久佚，1972年在银雀山汉墓中重新出土。
-  outcome: 兵法传世，补全了先秦兵学谱系
-  lesson: 实战出真知，理论源于实践
+  description_zh: 马陵之战后，孙膑总结自己一生的军事实践和理论思考，著成兵法八十九篇。1972年在山东临沂银雀山汉墓中出土了《孙膑兵法》残简，证实了这部兵书的真实存在。其内容继承和发展了孙子的军事思想，强调'战胜而强立'——通过战争胜利来确立国家地位。
+  outcome: 《孙膑兵法》传世，丰富了中国古代兵学思想体系
+  lesson: 实践出真知，最好的理论来自最深刻的实战
   phases:
-  - name: 著书立说
-    start_date: 约-340
-    end_date: 约-330
-    place: 齐国
+  - name: 酝酿
+    start_date: '-341'
+    end_date: '-340'
+    place: 临淄(今山东淄博)
     description_zh: null
-    highlight: 《孙膑兵法》传世
+    highlight: 马陵之战后总结战争经验
+  - name: 破局
+    start_date: '-340'
+    end_date: '-330'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 开始著述兵法
+  - name: 高潮
+    start_date: '-330'
+    end_date: '-320'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 完成兵法八十九篇
+  - name: 收束
+    start_date: '-320'
+    end_date: '-316'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 兵法传世
   dilemmas: []
   keywords: []
   event_ids: []
@@ -3065,6 +3146,3206 @@
     place: 长乐宫钟室(今陕西西安)
     description_zh: null
     highlight: 为吕后所诛——千古名将之悲
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-乐毅-endeavor-1
+  person_qid: guji-乐毅
+  title_zh: 伐齐之战，连下七十余城
+  domain: 军事
+  start_date: '-284'
+  end_date: '-280'
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  - 即墨(今山东平度)
+  - 莒(今山东莒县)
+  place_qids: []
+  status: 完成
+  description_zh: 前284年，乐毅受燕昭王重拜为上将军，统率燕、秦、韩、赵、魏五国联军伐齐。在济西(今山东聊城一带)大破齐军后，乐毅遣返其他四国军队，独率燕军长驱直入。七十余城望风而降，齐国仅余即墨和莒两城。乐毅在已克之地施仁政、废苛令、礼待齐国旧臣，试图从根本上征服齐国人心。
+  outcome: 创造了战国时代最辉煌的军事胜利，燕国从小国跃为大国
+  lesson: 最伟大的军事胜利不是杀戮，而是征服人心
+  phases:
+  - name: 酝酿
+    start_date: '-284'
+    end_date: '-284'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 拜为上将军，统率五国联军
+  - name: 破局
+    start_date: '-284'
+    end_date: '-284'
+    place: 济西(今山东聊城一带)
+    description_zh: null
+    highlight: 济西之战大破齐军
+  - name: 高潮
+    start_date: '-284'
+    end_date: '-280'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 连下七十余城，齐国几亡
+  - name: 收束
+    start_date: '-280'
+    end_date: '-279'
+    place: 即墨(今山东平度)
+    description_zh: null
+    highlight: 围攻即墨，以仁义化齐
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-乐毅-endeavor-2
+  person_qid: guji-乐毅
+  title_zh: 出奔赵国
+  domain: 政治
+  start_date: '-279'
+  end_date: '-279'
+  start_precision: null
+  end_precision: null
+  places:
+  - 即墨(今山东平度)
+  - 赵国邯郸(今河北邯郸)
+  place_qids: []
+  status: 完成
+  description_zh: 燕昭王薨后，继位的燕惠王为太子时就与乐毅有嫌隙。齐国即墨守将田单趁机施反间计，散布'乐毅欲自立为齐王'的谣言。燕惠王中计，派骑劫替代乐毅。乐毅知归燕必死，遂出奔赵国。赵惠文王以客卿之礼待之。此后田单以火牛阵大破燕军，齐国复国七十余城。
+  outcome: 乐毅全身而退，但燕国二十八年伐齐之功尽丧
+  lesson: 功高不赏则危，知进退者方能全身
+  phases:
+  - name: 酝酿
+    start_date: '-279'
+    end_date: '-279'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 燕昭王薨，燕惠王即位
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 田单施反间计，燕惠王中计
+  - name: 高潮
+    start_date: '-279'
+    end_date: '-279'
+    place: 即墨(今山东平度)
+    description_zh: null
+    highlight: 燕惠王以骑劫代乐毅
+  - name: 收束
+    start_date: '-279'
+    end_date: '-279'
+    place: 赵国邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 乐毅奔赵，田单火牛阵复齐
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-吴王夫差-endeavor-1
+  person_qid: guji-吴王夫差
+  title_zh: 夫椒败越，放虎归山
+  domain: 军事/政治
+  start_date: 前494
+  end_date: 前494
+  start_precision: null
+  end_precision: null
+  places:
+  - 夫椒(今江苏太湖)
+  - 姑苏(今江苏苏州)
+  place_qids: []
+  status: 完成
+  description_zh: 夫差为报父仇，三年教训士卒。前494年，在夫椒大败越军，越王勾践率五千残兵困于会稽山。勾践遣文种请降，愿为吴臣。伍子胥谏曰'勾践为人能辛苦，今不灭，后必悔之'。夫差不听，许越请降，放勾践归国。此为吴国灭亡的起点。
+  outcome: 夫椒大败越国，却放虎归山，埋下亡国之祸
+  lesson: 对敌人的仁慈就是对自己的残忍
+  phases:
+  - name: 复仇练兵
+    start_date: 前496
+    end_date: 前494
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 为父报仇，三年教训
+  - name: 夫椒之战
+    start_date: 前494
+    end_date: 前494
+    place: 夫椒(今江苏太湖)
+    description_zh: null
+    highlight: 大败越军，勾践请降
+  - name: 放勾践归越
+    start_date: 前494
+    end_date: 前494
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 不听伍子胥谏，放勾践归国
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-吴王夫差-endeavor-2
+  person_qid: guji-吴王夫差
+  title_zh: 北上争霸，黄池会盟
+  domain: 军事/外交
+  start_date: 前489
+  end_date: 前482
+  start_precision: null
+  end_precision: null
+  places:
+  - 姑苏(今江苏苏州)
+  - 黄池(今河南封丘)
+  place_qids: []
+  status: 完成
+  description_zh: 夫差北上争霸，伐齐获胜后又率精锐北上至黄池与晋国会盟。正当夫差在黄池与晋争做霸主时，勾践趁吴国空虚偷袭姑苏，俘获太子友。夫差在黄池闻讯，为防消息泄露，帐中杀七人灭口。虽勉强夺得霸主之位，但吴国已是强弩之末。
+  outcome: 黄池夺霸，但后方被越偷袭，吴国由盛转衰
+  lesson: 贪图虚名而忽视根本，是最大的战略失误
+  phases:
+  - name: 北上伐齐
+    start_date: 前489
+    end_date: 前484
+    place: 齐(今山东淄博)
+    description_zh: null
+    highlight: 艾陵之战大败齐国
+  - name: 黄池会盟
+    start_date: 前482
+    end_date: 前482
+    place: 黄池(今河南封丘)
+    description_zh: null
+    highlight: 与晋争霸，夺得霸主之位
+  - name: 后方空虚
+    start_date: 前482
+    end_date: 前482
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 勾践趁虚偷袭吴国
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-吴王阖闾-endeavor-1
+  person_qid: guji-吴王阖闾
+  title_zh: 专诸刺僚，夺取王位
+  domain: 政治/军事
+  start_date: 约-515
+  end_date: 约-515
+  start_precision: null
+  end_precision: null
+  places:
+  - 姑苏(今江苏苏州)
+  place_qids: []
+  status: 完成
+  description_zh: 吴王僚据位不正，公子光(阖闾)在伍子胥策划下，以专诸刺杀王僚于宴席之上。专诸以鱼肠剑藏于鱼腹，一举刺杀王僚，自己也被卫士所杀。公子光即位为吴王阖闾。
+  outcome: 阖闾夺取王位，开启吴国崛起之路
+  lesson: 非常之时需非常之策，但代价往往高昂
+  phases:
+  - name: 密谋夺位
+    start_date: 约-516
+    end_date: 约-515
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 伍子胥荐专诸
+  - name: 专诸刺僚
+    start_date: 约-515
+    end_date: 约-515
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 鱼肠剑刺杀王僚
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-吴王阖闾-endeavor-2
+  person_qid: guji-吴王阖闾
+  title_zh: 柏举之战，西破强楚
+  domain: 军事
+  start_date: 约-512
+  end_date: 前506
+  start_precision: null
+  end_precision: null
+  places:
+  - 姑苏(今江苏苏州)
+  - 柏举(今湖北麻城)
+  - 郢(今湖北荆州)
+  place_qids: []
+  status: 完成
+  description_zh: 阖闾用孙武为将军、伍子胥为谋臣，制定伐楚战略。前506年，吴军三万千里奔袭，在柏举大破楚军二十万，五战五胜，一路追击至郢都。楚昭王仓皇出奔，吴军入郢。这是春秋时期规模最大的远征，也是吴国霸业的巅峰。
+  outcome: 西破强楚，五战入郢，吴国成为春秋末期霸主
+  lesson: 以少胜多的关键在于战略与人才
+  phases:
+  - name: 用孙武、伍子胥
+    start_date: 约-512
+    end_date: 约-510
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 用孙武为将、伍子胥为谋
+  - name: 柏举之战
+    start_date: 前506
+    end_date: 前506
+    place: 柏举(今湖北麻城)
+    description_zh: null
+    highlight: 五战五胜，入楚郢都
+  - name: 入郢都
+    start_date: 前506
+    end_date: 前506
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 楚昭王出奔，吴国霸业鼎盛
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-吴王阖闾-endeavor-3
+  person_qid: guji-吴王阖闾
+  title_zh: 重用人才，吴国崛起
+  domain: 政治/人才
+  start_date: 约-515
+  end_date: 前496
+  start_precision: null
+  end_precision: null
+  places:
+  - 姑苏(今江苏苏州)
+  place_qids: []
+  status: 完成
+  description_zh: 阖闾即位后，广纳贤才。用伍子胥为行人，谋划霸业；用孙武为将军，训练军队；又用伯嚭为大夫。在这些人才辅佐下，吴国从一个偏居东南的小国迅速崛起为能与楚国抗衡的强国。
+  outcome: 吴国崛起为春秋末期最强大的国家之一
+  lesson: 人才是国家崛起的第一资源
+  phases:
+  - name: 任用伍子胥
+    start_date: 约-515
+    end_date: 前496
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 用伍子胥为行人(外交官)
+  - name: 任用孙武
+    start_date: 约-512
+    end_date: 约-504
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 用孙武为将军
+  - name: 国力大增
+    start_date: 约-510
+    end_date: 前496
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 吴国从偏居东南的小国崛起为霸主
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周公旦-endeavor-1
+  person_qid: guji-周公旦
+  title_zh: 东征平叛，安定天下
+  domain: 军事/政治
+  start_date: 约-1043
+  end_date: 约-1040
+  start_precision: null
+  end_precision: null
+  places:
+  - 镐京(今陕西西安)
+  - 洛邑(今河南洛阳)
+  - 商奄(今山东曲阜)
+  place_qids: []
+  status: 完成
+  description_zh: 武王崩后，周公摄政。管叔、蔡叔散布流言，联合纣王之子武庚及东方诸国叛周。周公奉成王之命东征，历时三年，先后诛管叔、杀武庚、降蔡叔，并灭商奄等国，彻底平定东方叛乱，巩固了新生的周朝政权。
+  outcome: 平定三监之乱，巩固周朝统治，东方纳入周之版图
+  lesson: 内部叛乱比外部敌人更危险，果断平叛才能安定大局
+  phases:
+  - name: 管蔡之乱
+    start_date: 约-1043
+    end_date: 约-1043
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 管叔、蔡叔联合武庚叛周
+  - name: 三年东征
+    start_date: 约-1043
+    end_date: 约-1040
+    place: 东方诸国
+    description_zh: null
+    highlight: 诛管叔、杀武庚、降蔡叔、灭商奄
+  - name: 安定东方
+    start_date: 约-1040
+    end_date: 约-1040
+    place: 洛邑(今河南洛阳)
+    description_zh: null
+    highlight: 营建洛邑，封建诸侯镇东方
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周公旦-endeavor-2
+  person_qid: guji-周公旦
+  title_zh: 制礼作乐，奠定华夏文明
+  domain: 文化/制度
+  start_date: 约-1040
+  end_date: 约-1036
+  start_precision: null
+  end_precision: null
+  places:
+  - 洛邑(今河南洛阳)
+  - 镐京(今陕西西安)
+  place_qids: []
+  status: 完成
+  description_zh: 周公在平定叛乱后，深感武力只能定一时，制度方能安万世。遂制定礼乐制度，确立宗法制、嫡长子继承制、封建制等根本制度。又作《周礼》六典，分天、地、春、夏、秋、冬六官，奠定了中国三千年官制与文化传统的基石。摄政七年后，成王成人，周公主动还政，不恋权位，被后世誉为圣人。
+  outcome: 制礼作乐奠定华夏文明基石，还政成王树立忠臣典范
+  lesson: 权力的最高境界是懂得放手
+  phases:
+  - name: 制礼
+    start_date: 约-1040
+    end_date: 约-1038
+    place: 洛邑(今河南洛阳)
+    description_zh: null
+    highlight: 制定冠婚丧祭朝聘之礼
+  - name: 作乐
+    start_date: 约-1038
+    end_date: 约-1036
+    place: 洛邑(今河南洛阳)
+    description_zh: null
+    highlight: 创作《大武》等雅乐
+  - name: 还政成王
+    start_date: 约-1036
+    end_date: 约-1036
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 摄政七年后主动还政
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周幽王-endeavor-1
+  person_qid: guji-周幽王
+  title_zh: 宠信褒姒，废嫡立庶
+  domain: 政治
+  start_date: 约-780
+  end_date: 前771
+  start_precision: null
+  end_precision: null
+  places:
+  - 镐京(今陕西西安)
+  - 骊山(今陕西临潼)
+  place_qids: []
+  status: 完成
+  description_zh: 周幽王宠信褒姒，废申后及太子宜臼，立褒姒为后、伯服为太子。此举引发申侯不满。幽王为逗褒姒一笑，多次燃烽火戏弄诸侯，导致诸侯失信。前771年，申侯联合犬戎攻破镐京，幽王被杀于骊山之下，西周灭亡。
+  outcome: 西周灭亡，周平王东迁洛邑，开启东周时代
+  lesson: 失信于天下，天下必弃之
+  phases:
+  - name: 宠褒姒废申后
+    start_date: 约-780
+    end_date: 约-775
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 废申后及太子宜臼
+  - name: 烽火戏诸侯
+    start_date: 约-775
+    end_date: 前771
+    place: 骊山(今陕西临潼)
+    description_zh: null
+    highlight: 为逗褒姒一笑而失信于诸侯
+  - name: 犬戎破镐京
+    start_date: 前771
+    end_date: 前771
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 申侯引犬戎攻周，幽王被杀
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周幽王-endeavor-2
+  person_qid: guji-周幽王
+  title_zh: 西周灭亡
+  domain: 政治/军事
+  start_date: 前771
+  end_date: 前771
+  start_precision: null
+  end_precision: null
+  places:
+  - 镐京(今陕西西安)
+  - 骊山(今陕西临潼)
+  - 洛邑(今河南洛阳)
+  place_qids: []
+  status: 完成
+  description_zh: 前771年，申侯因女儿被废，联合犬戎攻周。幽王燃烽火求援，诸侯不至。犬戎破镐京，杀幽王于骊山之下，掳褒姒而去。西周灭亡。次年，太子宜臼即位为周平王，东迁洛邑，开启东周时代。
+  outcome: 西周灭亡，周朝东迁，王室权威彻底衰落
+  lesson: 内乱招外祸，因果循环，报应不爽
+  phases:
+  - name: 犬戎入侵
+    start_date: 前771
+    end_date: 前771
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 申侯引犬戎攻破镐京
+  - name: 幽王被杀
+    start_date: 前771
+    end_date: 前771
+    place: 骊山(今陕西临潼)
+    description_zh: null
+    highlight: 幽王死于骊山之下
+  - name: 平王东迁
+    start_date: 前770
+    end_date: 前770
+    place: 洛邑(今河南洛阳)
+    description_zh: null
+    highlight: 周平王东迁洛邑
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周武王-endeavor-1
+  person_qid: guji-周武王
+  title_zh: 灭商建周
+  domain: 军事/政治
+  start_date: 约-1050
+  end_date: 约-1046
+  start_precision: null
+  end_precision: null
+  places:
+  - 镐京(今陕西西安)
+  - 盟津(今河南孟津)
+  - 牧野(今河南新乡)
+  place_qids: []
+  status: 完成
+  description_zh: 周武王承文王遗志，用姜子牙为军师，于盟津观兵试探诸侯之心。两年后，纣王暴虐日甚，武王率联军东征。牧野之战，殷师前徒倒戈，纣王自焚于鹿台，商朝六百年基业一朝倾覆。武王建立周朝，定都镐京，分封功臣宗室于天下。
+  outcome: 灭商建周，分封天下，开创西周封建制度
+  lesson: 蓄势以待天时，一击而定乾坤
+  phases:
+  - name: 蓄势待发
+    start_date: 约-1050
+    end_date: 约-1046
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 文王奠基，武王继志
+  - name: 盟津观兵
+    start_date: 约-1048
+    end_date: 约-1048
+    place: 盟津(今河南孟津)
+    description_zh: null
+    highlight: 八百诸侯不期而会
+  - name: 牧野决战
+    start_date: 约-1046
+    end_date: 约-1046
+    place: 牧野(今河南新乡)
+    description_zh: null
+    highlight: 一战灭商，纣王自焚
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周武王-endeavor-2
+  person_qid: guji-周武王
+  title_zh: 封建天下，制礼作乐
+  domain: 政治制度
+  start_date: 约-1046
+  end_date: 约-1043
+  start_precision: null
+  end_precision: null
+  places:
+  - 镐京(今陕西西安)
+  - 洛邑(今河南洛阳)
+  place_qids: []
+  status: 完成
+  description_zh: 武王灭商后，大封功臣宗室于天下，封姜子牙于齐、周公于鲁、召公于燕，以藩屏周。又营建洛邑为东都，以控制东方广大领土。虽武王在位仅三年即崩，但其分封制度奠定了西周三百年的政治格局。
+  outcome: 封建制度确立，周朝统治网络覆盖天下
+  lesson: 制度设计比个人英明更持久
+  phases:
+  - name: 分封诸侯
+    start_date: 约-1046
+    end_date: 约-1046
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 封齐、鲁、燕、卫、宋等七十一国
+  - name: 营建洛邑
+    start_date: 约-1046
+    end_date: 约-1043
+    place: 洛邑(今河南洛阳)
+    description_zh: null
+    highlight: 建东都洛邑，控制东方
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周穆王-endeavor-1
+  person_qid: guji-周穆王
+  title_zh: 西征犬戎，远行万里
+  domain: 军事/探索
+  start_date: 约-970
+  end_date: 约-960
+  start_precision: null
+  end_precision: null
+  places:
+  - 镐京(今陕西西安)
+  - 犬戎(今甘肃平凉)
+  - 瑶池(今新疆天山)
+  place_qids: []
+  status: 完成
+  description_zh: 周穆王不满足于成康之治的守成格局，决心开疆拓土。亲率六师西征犬戎，获其五王，迁部分犬戎至太原。又驾八骏西行至瑶池，与西王母相会，留下了千古传奇。东巡时平定徐国僭号称王之乱。穆王远征万里，拓土四方，但也耗尽了成康之治积累的国力。
+  outcome: 拓土万里，威震四方，但国力耗损严重
+  lesson: 远征开拓需以国力为限，过度扩张反致衰落
+  phases:
+  - name: 西征犬戎
+    start_date: 约-970
+    end_date: 约-965
+    place: 犬戎(今甘肃平凉)
+    description_zh: null
+    highlight: 获犬戎五王，迁戎于太原
+  - name: 瑶池会西王母
+    start_date: 约-965
+    end_date: 约-960
+    place: 瑶池(今新疆天山)
+    description_zh: null
+    highlight: 会西王母于瑶池之畔
+  - name: 东巡徐国
+    start_date: 约-960
+    end_date: 约-955
+    place: 徐(今江苏徐州)
+    description_zh: null
+    highlight: 平定徐国之乱
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周穆王-endeavor-2
+  person_qid: guji-周穆王
+  title_zh: 穆王立法，吕刑传世
+  domain: 法律/文化
+  start_date: 约-960
+  end_date: 约-950
+  start_precision: null
+  end_precision: null
+  places:
+  - 镐京(今陕西西安)
+  place_qids: []
+  status: 完成
+  description_zh: 穆王晚年，命吕侯制定《吕刑》，确立墨、劓、剕、宫、大辟五刑制度，共三千条。这是中国最早的成文法典之一，体现了西周从人治向法治的初步转变。
+  outcome: 《吕刑》传世，成为中国法律史的重要里程碑
+  lesson: 以法度规范权力，是治理国家的根本
+  phases:
+  - name: 制定吕刑
+    start_date: 约-960
+    end_date: 约-950
+    place: 镐京(今陕西西安)
+    description_zh: null
+    highlight: 制定《吕刑》，确立五刑制度
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-庞涓-endeavor-1
+  person_qid: guji-庞涓
+  title_zh: 率魏武卒征伐四方
+  domain: 军事
+  start_date: '-354'
+  end_date: '-354'
+  start_precision: null
+  end_precision: null
+  places:
+  - 邯郸(今河北邯郸)
+  - 大梁(今河南开封)
+  place_qids: []
+  status: 完成
+  description_zh: 庞涓率魏武卒围攻赵国邯郸，赵国危在旦夕。然齐国孙膑以'围魏救赵'之策直取大梁，庞涓被迫回师，在桂陵遭伏击大败。这是庞涓军事生涯中的第一次重大挫折，也让他首次直面昔日同窗的智谋。
+  outcome: 桂陵之战失利，但魏国尚存实力
+  lesson: 战场上最可怕的对手是了解你的人
+  phases:
+  - name: 酝酿
+    start_date: '-355'
+    end_date: '-354'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 受魏惠王重用，拜为将军
+  - name: 破局
+    start_date: '-354'
+    end_date: '-354'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 率八万大军围攻赵国邯郸
+  - name: 高潮
+    start_date: '-354'
+    end_date: '-354'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 邯郸即将攻破
+  - name: 收束
+    start_date: '-354'
+    end_date: '-353'
+    place: 桂陵(今河南长垣)
+    description_zh: null
+    highlight: 桂陵之战大败
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-庞涓-endeavor-2
+  person_qid: guji-庞涓
+  title_zh: 设计害孙膑
+  domain: 政治阴谋
+  start_date: '-355'
+  end_date: '-355'
+  start_precision: null
+  end_precision: null
+  places:
+  - 大梁(今河南开封)
+  place_qids: []
+  status: 完成
+  description_zh: 庞涓与孙膑同师鬼谷子，知孙膑才高于己。庞涓先入魏为将后，假意邀孙膑至魏。到魏后诬其私通齐国，魏惠王下令施以膑刑(挖去膝盖骨)和黥刑(脸上刺字)。孙膑忍辱装疯，后被齐国使者暗中救出，逃至齐国。
+  outcome: 庞涓除去了一个竞争对手，却也为自己埋下了灭顶之灾
+  lesson: 以不义手段排挤他人，终会招来更强的对手
+  phases:
+  - name: 酝酿
+    start_date: '-355'
+    end_date: '-355'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 孙膑至魏，庞涓心生忌惮
+  - name: 破局
+    start_date: '-355'
+    end_date: '-355'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 诬告孙膑私通齐国
+  - name: 高潮
+    start_date: '-355'
+    end_date: '-355'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 孙膑被施以膑刑
+  - name: 收束
+    start_date: '-355'
+    end_date: '-355'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 孙膑装疯逃往齐国
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-廉颇-endeavor-1
+  person_qid: guji-廉颇
+  title_zh: 破齐破燕，赵国名将
+  domain: 军事
+  start_date: '-283'
+  end_date: '-250'
+  start_precision: null
+  end_precision: null
+  places:
+  - 阳晋(今山东郓城)
+  - 鄗(今河北高阳)
+  - 长平(今山西高平)
+  place_qids: []
+  status: 完成
+  description_zh: 廉颇是战国四大名将之一，以勇猛善战闻名。前283年大破齐军，取阳晋，拜为上卿。后又大败燕军于鄗，围困燕都迫使燕国割地求和。长平之战中坚守不出三年，秦国无法正面取胜。然赵王中反间计以赵括替之，四十万赵军尽丧。此后廉颇虽再被起用，终因郭开谗言被逐。
+  outcome: 赵国名将，但晚景凄凉
+  lesson: 名将需要名主，否则再强的将军也无法施展
+  phases:
+  - name: 酝酿
+    start_date: '-283'
+    end_date: '-283'
+    place: 阳晋(今山东郓城)
+    description_zh: null
+    highlight: 大破齐军，拜为上卿
+  - name: 破局
+    start_date: '-280'
+    end_date: '-280'
+    place: 鄗(今河北高阳)
+    description_zh: null
+    highlight: 大败燕军，围燕都
+  - name: 高潮
+    start_date: '-262'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 坚守长平三年不败
+  - name: 收束
+    start_date: '-250'
+    end_date: '-245'
+    place: 魏国大梁(今河南开封)
+    description_zh: null
+    highlight: 客死异乡
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-廉颇-endeavor-2
+  person_qid: guji-廉颇
+  title_zh: 负荆请罪
+  domain: 政治外交
+  start_date: '-279'
+  end_date: '-279'
+  start_precision: null
+  end_precision: null
+  places:
+  - 邯郸(今河北邯郸)
+  place_qids: []
+  status: 完成
+  description_zh: 蔺相如因完璧归赵和渑池之会之功，位居廉颇之上。廉颇不服，公然宣言'我见相如必辱之'。蔺相如为避免将相内斗影响国事，主动称病不上朝、出门引车避让。门客以为怯，相如曰'吾所以先国家之急而后私仇也'。廉颇闻之深感惭愧，袒露上身背负荆条登门请罪，二人结为刎颈之交。
+  outcome: 将相和睦，赵国朝堂团结一致对外
+  lesson: 知错能改是真勇，先国家后私仇是大义
+  phases:
+  - name: 酝酿
+    start_date: '-283'
+    end_date: '-279'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 廉颇不满蔺相如位居其上
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 相如以国家利益为重主动回避
+  - name: 高潮
+    start_date: '-279'
+    end_date: '-279'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 廉颇负荆请罪
+  - name: 收束
+    start_date: '-279'
+    end_date: '-270'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 将相和，赵国大治
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-晋文公-endeavor-1
+  person_qid: guji-晋文公
+  title_zh: 流亡十九年，终归晋国
+  domain: 政治
+  start_date: 约-656
+  end_date: 前636
+  start_precision: null
+  end_precision: null
+  places:
+  - 狄(今山西北部)
+  - 卫(今河南滑县)
+  - 齐(今山东淄博)
+  - 楚(今湖北荆州)
+  - 秦(今陕西凤翔)
+  place_qids: []
+  status: 完成
+  description_zh: 晋文公重耳因骊姬之乱流亡在外十九年。历经狄、卫、齐、曹、郑、楚、秦等国，受尽冷眼与磨难。在齐国娶妻安居，几乎放弃归国之志，被齐姜灌醉强行送走。最终在秦穆公帮助下归国即位，时年已六十二岁。
+  outcome: 六十二岁即位，十九年流亡铸就坚韧品格
+  lesson: 苦难是人生最深刻的教育
+  phases:
+  - name: 出奔狄国
+    start_date: 约-656
+    end_date: 约-644
+    place: 狄(今山西北部)
+    description_zh: null
+    highlight: 骊姬之乱，重耳出奔
+  - name: 遍历诸侯
+    start_date: 约-644
+    end_date: 约-637
+    place: 中原各国
+    description_zh: null
+    highlight: 过卫绝粮、过曹受辱、齐国娶妻
+  - name: 秦穆公送归
+    start_date: 约-637
+    end_date: 前636
+    place: 秦(今陕西凤翔)
+    description_zh: null
+    highlight: 秦穆公以兵纳重耳入晋
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-晋文公-endeavor-2
+  person_qid: guji-晋文公
+  title_zh: 城濮之战，践土称霸
+  domain: 军事/外交
+  start_date: 前636
+  end_date: 前628
+  start_precision: null
+  end_precision: null
+  places:
+  - 绛(今山西翼城)
+  - 城濮(今山东鄄城)
+  - 践土(今河南原阳)
+  place_qids: []
+  status: 完成
+  description_zh: 晋文公即位后，先勤王平定王子带之乱，得到周襄王赐予的阳樊、温、原等地。前632年，楚国北伐中原，晋文公率军迎战。践前言退避三舍(九十里)，以逸待劳在城濮大败楚军。随后在践土会盟诸侯，周襄王亲临，晋文公成为继齐桓公之后的第二位霸主。
+  outcome: 城濮之战大败楚军，践土会盟称霸中原
+  lesson: 退让不是软弱，而是以退为进的大智慧
+  phases:
+  - name: 勤王平叛
+    start_date: 前636
+    end_date: 前635
+    place: 洛邑(今河南洛阳)
+    description_zh: null
+    highlight: 勤王平王子带之乱，得周襄王赐地
+  - name: 城濮之战
+    start_date: 前632
+    end_date: 前632
+    place: 城濮(今山东鄄城)
+    description_zh: null
+    highlight: 退避三舍，大败楚军
+  - name: 践土会盟
+    start_date: 前632
+    end_date: 前632
+    place: 践土(今河南原阳)
+    description_zh: null
+    highlight: 称霸中原，天子临盟
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-楚庄王-endeavor-1
+  person_qid: guji-楚庄王
+  title_zh: 三年不鸣，一鸣惊人
+  domain: 政治
+  start_date: 前613
+  end_date: 前610
+  start_precision: null
+  end_precision: null
+  places:
+  - 郢(今湖北荆州)
+  place_qids: []
+  status: 完成
+  description_zh: 楚庄王即位后三年不理朝政，日夜为乐。有谏者杀之。伍举以隐语进谏，庄王答以'一飞冲天、一鸣惊人'。随后亲政，诛杀奸佞，任用孙叔敖为令尹(相)，楚国大治。
+  outcome: 三年蛰伏后一朝亲政，楚国由乱而治
+  lesson: 韬光养晦与雷霆出击，需要同样的勇气
+  phases:
+  - name: 三年蛰伏
+    start_date: 前613
+    end_date: 前611
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 不鸣不飞，日夜为乐
+  - name: 一鸣惊人
+    start_date: 前611
+    end_date: 前611
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 亲政诛奸，用孙叔敖为相
+  - name: 国大治
+    start_date: 前611
+    end_date: 前610
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 楚国大治，准备北进
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-楚庄王-endeavor-2
+  person_qid: guji-楚庄王
+  title_zh: 问鼎中原，邲之战称霸
+  domain: 军事/外交
+  start_date: 前610
+  end_date: 前591
+  start_precision: null
+  end_precision: null
+  places:
+  - 郢(今湖北荆州)
+  - 洛邑(今河南洛阳)
+  - 邲(今河南郑州)
+  place_qids: []
+  status: 完成
+  description_zh: 楚庄王率军北上，在洛郊观兵，问周天子九鼎之轻重。周使王孙满对曰'在德不在鼎'，庄王乃退。前597年，晋楚战于邲，楚军大胜，晋军溃逃。楚庄王由此称霸中原，成为春秋五霸之一。
+  outcome: 邲之战大败晋国，楚国从南方蛮夷跻身中原霸主
+  lesson: 问鼎中原——实力是说话的底气
+  phases:
+  - name: 问鼎中原
+    start_date: 前607
+    end_date: 前607
+    place: 洛邑(今河南洛阳)
+    description_zh: null
+    highlight: 楚王问鼎之轻重
+  - name: 邲之战
+    start_date: 前597
+    end_date: 前597
+    place: 邲(今河南郑州)
+    description_zh: null
+    highlight: 大败晋军，称霸中原
+  - name: 霸业鼎盛
+    start_date: 前597
+    end_date: 前591
+    place: 中原各地
+    description_zh: null
+    highlight: 楚国成为中原霸主
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-汤-endeavor-1
+  person_qid: guji-汤
+  title_zh: 灭夏建商
+  domain: 军事/政治
+  start_date: 约-1610
+  end_date: 约-1600
+  start_precision: null
+  end_precision: null
+  places:
+  - 亳(今河南商丘)
+  - 鸣条(今山西运城)
+  - 南巢(今安徽巢湖)
+  place_qids: []
+  status: 完成
+  description_zh: 汤用伊尹为相，修德行义，诸侯归心。汤先灭葛、韦、顾、昆吾等夏之与国，剪除夏朝羽翼。最后于鸣条与夏桀决战，夏师倒戈，桀奔南巢而死。汤建立商朝，都于亳，开创了六百年商祚。
+  outcome: 灭夏建商，开创六百年商朝基业
+  lesson: 先剪羽翼后取核心，是战略的经典路径
+  phases:
+  - name: 积蓄力量
+    start_date: 约-1610
+    end_date: 约-1605
+    place: 亳(今河南商丘)
+    description_zh: null
+    highlight: 用伊尹为相，网开一面感召诸侯
+  - name: 鸣条决战
+    start_date: 约-1600
+    end_date: 约-1600
+    place: 鸣条(今山西运城)
+    description_zh: null
+    highlight: 一战灭夏，桀走南巢
+  - name: 建商定都
+    start_date: 约-1600
+    end_date: 约-1588
+    place: 亳(今河南商丘)
+    description_zh: null
+    highlight: 建立商朝，定都于亳
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-汤-endeavor-2
+  person_qid: guji-汤
+  title_zh: 伊尹辅政，制度初创
+  domain: 政治
+  start_date: 约-1600
+  end_date: 约-1588
+  start_precision: null
+  end_precision: null
+  places:
+  - 亳(今河南商丘)
+  place_qids: []
+  status: 完成
+  description_zh: 汤三次遣使往有莘之野聘请伊尹，终得这位旷世名相。伊尹以烹饪喻治国，提出'调和五味'的治国理念。汤用伊尹辅政，建立商朝官制与礼法，奠定了早期国家的治理框架。伊尹辅佐商朝五代君主，被后世尊为'元圣'。
+  outcome: 伊尹辅政五代，商朝制度初创，国家治理走上正轨
+  lesson: 治大国如烹小鲜，用人是最高的治国艺术
+  phases:
+  - name: 三聘伊尹
+    start_date: 约-1610
+    end_date: 约-1610
+    place: 亳(今河南商丘)
+    description_zh: null
+    highlight: 三顾有莘得伊尹
+  - name: 伊尹摄政
+    start_date: 约-1600
+    end_date: 约-1588
+    place: 亳(今河南商丘)
+    description_zh: null
+    highlight: 伊尹辅佐五代商王
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-燕昭王-endeavor-1
+  person_qid: guji-燕昭王
+  title_zh: 筑黄金台，招贤纳士
+  domain: 政治
+  start_date: '-311'
+  end_date: '-284'
+  start_precision: null
+  end_precision: null
+  places:
+  - 蓟(今北京)
+  place_qids: []
+  status: 完成
+  description_zh: 燕昭王即位后，以谦恭的态度和优厚的待遇招揽人才。他先拜郭隗为师，郭隗以'千金买骨'的故事建议昭王先重用自己这样的中等人才，以吸引更优秀的贤者。昭王从之，筑黄金台于蓟城之上，置千金于台上以待贤者。消息传开，天下贤士纷纷入燕。
+  outcome: 燕国从人才荒漠变为人才汇聚之地
+  lesson: 招揽人才不是等人才上门，而是主动释放诚意
+  phases:
+  - name: 酝酿
+    start_date: '-311'
+    end_date: '-311'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 即位时燕国破败不堪
+  - name: 破局
+    start_date: '-311'
+    end_date: '-300'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 筑黄金台，置千金招贤
+  - name: 高潮
+    start_date: '-300'
+    end_date: '-284'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 乐毅、邹衍、剧辛等人才齐聚
+  - name: 收束
+    start_date: '-284'
+    end_date: '-284'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 人才济济，燕国复兴
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-燕昭王-endeavor-2
+  person_qid: guji-燕昭王
+  title_zh: 五国伐齐，乐毅连下七十余城
+  domain: 军事外交
+  start_date: '-284'
+  end_date: '-279'
+  start_precision: null
+  end_precision: null
+  places:
+  - 蓟(今北京)
+  - 临淄(今山东淄博)
+  - 即墨(今山东平度)
+  place_qids: []
+  status: 完成
+  description_zh: 前284年，燕昭王以乐毅为上将军，联合秦、韩、赵、魏五国联军大举伐齐。齐国在齐湣王的暴政下已是强弩之末，联军一战大破齐军于济西。乐毅独率燕军长驱直入，连下齐国七十余城，仅剩即墨和莒两城未下。齐湣王逃亡被杀。齐国几乎灭亡，燕国报了当年被破国之仇。
+  outcome: 燕国洗雪前耻，成为战国中后期的重要强国
+  lesson: 长期隐忍加上精准出击，弱国也能覆灭强国
+  phases:
+  - name: 酝酿
+    start_date: '-284'
+    end_date: '-284'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 联合秦、韩、赵、魏组成五国联军
+  - name: 破局
+    start_date: '-284'
+    end_date: '-283'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 乐毅率联军大破齐军
+  - name: 高潮
+    start_date: '-283'
+    end_date: '-279'
+    place: 即墨(今山东平度)
+    description_zh: null
+    highlight: 连下齐国七十余城，仅余即墨和莒
+  - name: 收束
+    start_date: '-279'
+    end_date: '-279'
+    place: 蓟(今北京)
+    description_zh: null
+    highlight: 昭王薨，田单复齐
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-王翦-endeavor-1
+  person_qid: guji-王翦
+  title_zh: 灭赵之战
+  domain: 军事
+  start_date: '-236'
+  end_date: '-228'
+  start_precision: null
+  end_precision: null
+  places:
+  - 邯郸(今河北邯郸)
+  - 井陉(今河北井陉)
+  place_qids: []
+  status: 完成
+  description_zh: 王翦率军攻赵，面对赵国名将李牧的顽强抵抗，采取稳扎稳打之策。先以反间计除掉李牧(赵王中秦国间谍谗言杀李牧)，再大举进攻。前228年攻破赵国都城邯郸，俘虏赵王迁。赵国公子嘉逃往代地自立为代王，但赵国主体已亡。
+  outcome: 赵国灭亡，秦国在北方再无强敌
+  lesson: 战争中最大的变数不是军事，而是对方的内部决策
+  phases:
+  - name: 酝酿
+    start_date: '-236'
+    end_date: '-234'
+    place: 井陉(今河北井陉)
+    description_zh: null
+    highlight: 秦赵连年交战
+  - name: 破局
+    start_date: '-234'
+    end_date: '-230'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 王翦率军攻赵
+  - name: 高潮
+    start_date: '-228'
+    end_date: '-228'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 攻破邯郸，赵王迁被俘
+  - name: 收束
+    start_date: '-228'
+    end_date: '-228'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 赵国灭亡
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-王翦-endeavor-2
+  person_qid: guji-王翦
+  title_zh: 灭楚之战
+  domain: 军事
+  start_date: '-224'
+  end_date: '-223'
+  start_precision: null
+  end_precision: null
+  places:
+  - 寿春(今安徽寿县)
+  - 郢(今湖北荆州)
+  place_qids: []
+  status: 完成
+  description_zh: 秦始皇问灭楚需要多少兵力，青年将领李信说二十万足矣，王翦则答'非六十万不可'。始皇笑王翦怯，用李信率二十万伐楚，结果大败而归。始皇只得亲赴频阳请王翦出山。王翦率六十万大军，不急于决战，而是步步为营。楚军求战不得、粮草耗尽，最终大败。王翦灭楚国，俘楚王负刍。
+  outcome: 楚国灭亡，南方最大诸侯国被纳入秦国版图
+  lesson: 审时度势、实事求是比盲目自信更重要
+  phases:
+  - name: 酝酿
+    start_date: '-224'
+    end_date: '-224'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦王问灭楚需多少兵力
+  - name: 破局
+    start_date: '-224'
+    end_date: '-224'
+    place: 寿春(今安徽寿县)
+    description_zh: null
+    highlight: 六十万大军陈兵楚境
+  - name: 高潮
+    start_date: '-224'
+    end_date: '-223'
+    place: 寿春(今安徽寿县)
+    description_zh: null
+    highlight: 大破楚军，俘虏楚王负刍
+  - name: 收束
+    start_date: '-223'
+    end_date: '-223'
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 楚国灭亡
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-王翦-endeavor-3
+  person_qid: guji-王翦
+  title_zh: 以自污保身
+  domain: 政治智慧
+  start_date: '-224'
+  end_date: '-221'
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 王翦深知秦始皇多疑的性格。率六十万大军出征前，他多次向始皇请求赏赐咸阳附近的美田宅园池。出征途中又连续五次派使者回咸阳请求田宅。部下不解，王翦解释说'秦王多疑，如今倾国之兵在我手中，我不多请田宅以自污，秦王怎能放心？'此举动果然让秦始皇大笑，消除了疑心。
+  outcome: 王翦善终于家，其子王贲也封列侯，家族平安
+  lesson: 在权力的棋局中，自污是最聪明的自保术
+  phases:
+  - name: 酝酿
+    start_date: '-224'
+    end_date: '-224'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 率六十万大军出征
+  - name: 破局
+    start_date: '-224'
+    end_date: '-224'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 行前多次请求赏赐田宅
+  - name: 高潮
+    start_date: '-224'
+    end_date: '-223'
+    place: 寿春(今安徽寿县)
+    description_zh: null
+    highlight: 灭楚过程中不断派使者回咸阳求田问舍
+  - name: 收束
+    start_date: '-223'
+    end_date: '-221'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 全身而退，善终于家
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-白起-endeavor-1
+  person_qid: guji-白起
+  title_zh: 伊阙之战，横扫韩魏
+  domain: 军事
+  start_date: '-293'
+  end_date: '-293'
+  start_precision: null
+  end_precision: null
+  places:
+  - 伊阙(今河南洛阳龙门)
+  place_qids: []
+  status: 完成
+  description_zh: 前293年，韩魏联军二十四万据守伊阙(今河南洛阳龙门)阻秦东进。白起采用避实击虚之策，先以少量兵力牵制韩国军队，集中主力猛攻实力较弱的魏军。魏军溃败后韩国军队失去依托，全线崩溃。此战斩首二十四万，是战国时期规模最大的歼灭战之一。
+  outcome: 韩魏联军精锐尽丧，秦国东出大门洞开
+  lesson: 集中优势兵力各个击破是永远的制胜法则
+  phases:
+  - name: 酝酿
+    start_date: '-293'
+    end_date: '-293'
+    place: 伊阙(今河南洛阳龙门)
+    description_zh: null
+    highlight: 韩魏联军二十四万据守伊阙
+  - name: 破局
+    start_date: '-293'
+    end_date: '-293'
+    place: 伊阙(今河南洛阳龙门)
+    description_zh: null
+    highlight: 先弱后强，各个击破
+  - name: 高潮
+    start_date: '-293'
+    end_date: '-293'
+    place: 伊阙(今河南洛阳龙门)
+    description_zh: null
+    highlight: 斩韩魏联军二十四万
+  - name: 收束
+    start_date: '-293'
+    end_date: '-293'
+    place: 伊阙(今河南洛阳龙门)
+    description_zh: null
+    highlight: 韩魏东出之路被封死
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-白起-endeavor-2
+  person_qid: guji-白起
+  title_zh: 鄢郢之战，破楚国都
+  domain: 军事
+  start_date: '-279'
+  end_date: '-278'
+  start_precision: null
+  end_precision: null
+  places:
+  - 鄢(今湖北宜城)
+  - 郢(今湖北荆州)
+  place_qids: []
+  status: 完成
+  description_zh: 白起率军深入楚国腹地，采取长驱直入、速战速决之策。先在鄢城(今湖北宜城)筑堤蓄水、水灌城中，淹死楚军十余万。次年直捣楚国都城郢(今湖北荆州)，烧毁楚先王陵墓夷陵。楚顷襄王仓皇东迁至陈(今河南淮阳)。屈原闻郢都陷落，投汨罗江而死。
+  outcome: 楚国丧失半壁江山，从战国最强之一沦为二流国家
+  lesson: 战争中最致命的打击不是击败军队，而是摧毁国家的意志
+  phases:
+  - name: 酝酿
+    start_date: '-280'
+    end_date: '-279'
+    place: 鄢(今湖北宜城)
+    description_zh: null
+    highlight: 率军深入楚境
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 鄢(今湖北宜城)
+    description_zh: null
+    highlight: 水灌鄢城，歼楚军主力
+  - name: 高潮
+    start_date: '-278'
+    end_date: '-278'
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 攻破郢都，烧夷陵
+  - name: 收束
+    start_date: '-278'
+    end_date: '-278'
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 楚国东迁，一蹶不振
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-白起-endeavor-3
+  person_qid: guji-白起
+  title_zh: 长平之战，坑杀赵卒四十万
+  domain: 军事
+  start_date: '-260'
+  end_date: '-260'
+  start_precision: null
+  end_precision: null
+  places:
+  - 长平(今山西高平)
+  place_qids: []
+  status: 完成
+  description_zh: 秦国秘密换白起为主将。白起佯败诱赵括出击，然后以两支奇兵迂回包围——一支断赵军粮道，一支阻断赵军与邯郸的联系。赵军被围四十六日，粮尽援绝，赵括突围被射杀，四十万赵军投降。白起恐降卒叛乱，将其全部坑杀，仅放归二百四十名年幼者回赵国散布恐惧。
+  outcome: 赵国四十万精锐尽丧，再无力单独抗秦
+  lesson: 战争的残酷在于，有时胜利者的负担比失败者更重
+  phases:
+  - name: 酝酿
+    start_date: '-262'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 王龁与廉颇对峙三年
+  - name: 破局
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 白起秘密替代王龁为将
+  - name: 高潮
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 包围赵军四十六日，坑杀四十万
+  - name: 收束
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 赵国精锐尽丧
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-白起-endeavor-4
+  person_qid: guji-白起
+  title_zh: 赐死杜邮
+  domain: 政治
+  start_date: '-257'
+  end_date: '-257'
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  - 杜邮(今陕西咸阳东)
+  place_qids: []
+  status: 完成
+  description_zh: 长平之战后，白起欲乘胜灭赵，但秦昭襄王受范雎谗言和韩赵游说而退兵。次年再攻邯郸时，白起多次称病推辞，认为战机已失。邯郸之战果然失利，秦王迁怒于白起，免其爵位降为士卒。白起出咸阳至杜邮，秦王使使者赐剑令其自裁。白起叹曰'我固当死，长平之战赵卒降者数十万人，我诈而尽坑之，是足以死'，遂自刎。
+  outcome: 秦国失去最优秀的军事统帅
+  lesson: 功高震主是千古不变的危机
+  phases:
+  - name: 酝酿
+    start_date: '-260'
+    end_date: '-259'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 白起反对进攻邯郸
+  - name: 破局
+    start_date: '-259'
+    end_date: '-258'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 秦军围攻邯郸失利
+  - name: 高潮
+    start_date: '-257'
+    end_date: '-257'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦王赐剑，令白起自裁
+  - name: 收束
+    start_date: '-257'
+    end_date: '-257'
+    place: 杜邮(今陕西咸阳东)
+    description_zh: null
+    highlight: 白起自刎
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-白起-event-death
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-禹-endeavor-1
+  person_qid: guji-禹
+  title_zh: 疏导治水，平定九州
+  domain: 水利/政治
+  start_date: 约-2070
+  end_date: 约-2040
+  start_precision: null
+  end_precision: null
+  places:
+  - 崇(今河南登封)
+  - 龙门(今山西河津)
+  - 九河(今华北平原)
+  - 会稽(今浙江绍兴)
+  place_qids: []
+  status: 完成
+  description_zh: 禹继承父亲鲧未竟之业，改堵为疏，率万民劈山通渠十三载。三过家门而不敢入，终使洪水东流入海。禹划定九州，辨土定贡，铸九鼎以象征天下权力，奠定了华夏最初的行政版图。
+  outcome: 洪水既平，九州安定，华夏文明从部落联盟走向早期国家形态
+  lesson: 疏导而非堵截，是治水之道，亦是治国之道
+  phases:
+  - name: 受命治水
+    start_date: 约-2070
+    end_date: 约-2070
+    place: 崇(今河南登封)
+    description_zh: null
+    highlight: 受舜命继承父业治水
+  - name: 疏导九河
+    start_date: 约-2070
+    end_date: 约-2040
+    place: 九河(今华北平原)
+    description_zh: null
+    highlight: 三过家门而不入
+  - name: 定九州铸九鼎
+    start_date: 约-2040
+    end_date: 约-2040
+    place: 九州
+    description_zh: null
+    highlight: 划定九州贡赋，铸九鼎镇天下
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-禹-endeavor-2
+  person_qid: guji-禹
+  title_zh: 禅让终结，世袭肇始
+  domain: 政治制度
+  start_date: 约-2029
+  end_date: 约-2029
+  start_precision: null
+  end_precision: null
+  places:
+  - 阳城(今河南登封)
+  place_qids: []
+  status: 完成
+  description_zh: 禹受舜禅让即天子位，建夏后氏。禹晚年举皋陶为继承人，皋陶早卒；又举益，然禹子启贤，诸侯归心于启。禹崩后，启即位，禅让制由此终结，世袭制正式确立，开启了中国四千年的王朝更替。
+  outcome: 禅让制终结，世袭制确立，'家天下'自此绵延四千年
+  lesson: 制度变迁往往非一人之志，而是时势与人心的合力
+  phases:
+  - name: 受禅即位
+    start_date: 约-2029
+    end_date: 约-2029
+    place: 阳城(今河南登封)
+    description_zh: null
+    highlight: 舜禅位于禹
+  - name: 传位于启
+    start_date: 约-2029
+    end_date: 约-2029
+    place: 阳城(今河南登封)
+    description_zh: null
+    highlight: 禅让制终结，家天下始
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦孝公-endeavor-1
+  person_qid: guji-秦孝公
+  title_zh: 颁布求贤令，招揽天下英才
+  domain: 政治
+  start_date: '-361'
+  end_date: '-356'
+  start_precision: null
+  end_precision: null
+  places:
+  - 雍城(今陕西凤翔)
+  - 栎阳(今陕西富平)
+  place_qids: []
+  status: 完成
+  description_zh: 秦孝公即位之初，秦处关中西陲，河山以东强国六，微力不得与中原会盟。孝公愤然下求贤令，开厚禄高爵之门招揽天下士人。卫鞅携李悝《法经》入秦，以帝道、王道、霸道三说试探孝公，孝公唯取霸道——富国强兵之术。
+  outcome: 招揽到商鞅等大批人才，为秦国变法图强奠定人才基础
+  lesson: 求贤若渴不是姿态，而是真正的战略投资
+  phases:
+  - name: 酝酿
+    start_date: '-361'
+    end_date: '-361'
+    place: 雍城(今陕西凤翔)
+    description_zh: null
+    highlight: 六国卑秦，孝公深以为耻
+  - name: 破局
+    start_date: '-361'
+    end_date: '-361'
+    place: 栎阳(今陕西富平)
+    description_zh: null
+    highlight: 颁布求贤令
+  - name: 高潮
+    start_date: '-361'
+    end_date: '-356'
+    place: 栎阳(今陕西富平)
+    description_zh: null
+    highlight: 卫鞅入秦，以霸道说君
+  - name: 收束
+    start_date: '-356'
+    end_date: '-356'
+    place: 栎阳(今陕西富平)
+    description_zh: null
+    highlight: 拜卫鞅为左庶长，主持变法
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦孝公-endeavor-2
+  person_qid: guji-秦孝公
+  title_zh: 支持商鞅变法，秦国由弱变强
+  domain: 政治军事
+  start_date: '-356'
+  end_date: '-338'
+  start_precision: null
+  end_precision: null
+  places:
+  - 栎阳(今陕西富平)
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 孝公全力支持商鞅推行两次变法。第一次变法于栎阳颁行，废井田开阡陌、奖励耕织军功、编户连坐。秦国旧贵族群起反对，太子驷犯法，商鞅刑其师傅公子虔、公孙贾。孝公力排众议，始终站在变法一方。
+  outcome: 秦国社会焕然一新，国力大增，从弱国一跃为战国强国
+  lesson: 变法者需要君主绝对的信任，而信任的前提是君主自身的远见
+  phases:
+  - name: 酝酿
+    start_date: '-356'
+    end_date: '-356'
+    place: 栎阳(今陕西富平)
+    description_zh: null
+    highlight: 第一次变法：废井田、奖耕战
+  - name: 破局
+    start_date: '-350'
+    end_date: '-350'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 迁都咸阳，推行县制
+  - name: 高潮
+    start_date: '-350'
+    end_date: '-340'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦国大治，道不拾遗
+  - name: 收束
+    start_date: '-340'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 河西之战收复失地
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦孝公-endeavor-3
+  person_qid: guji-秦孝公
+  title_zh: 收复河西失地
+  domain: 军事
+  start_date: '-341'
+  end_date: '-338'
+  start_precision: null
+  end_precision: null
+  places:
+  - 河西(今陕西韩城一带)
+  - 安邑(今山西夏县)
+  place_qids: []
+  status: 完成
+  description_zh: 魏国马陵之战惨败后，国力骤衰。秦孝公趁势派商鞅率军伐魏，大败魏军，俘虏魏公子卬。魏惠王被迫将河西之地归还秦国。至此秦国收复了被魏国占领八十年的河西失地，东出通道彻底打通。
+  outcome: 收复河西失地，秦国获得关中至黄河的完整战略纵深
+  lesson: 国运的逆转往往只需要一个正确的战略窗口期
+  phases:
+  - name: 酝酿
+    start_date: '-341'
+    end_date: '-340'
+    place: 河西(今陕西韩城一带)
+    description_zh: null
+    highlight: 魏国马陵之战大败，国力衰减
+  - name: 破局
+    start_date: '-340'
+    end_date: '-340'
+    place: 河西(今陕西韩城一带)
+    description_zh: null
+    highlight: 商鞅率军大破魏军
+  - name: 高潮
+    start_date: '-340'
+    end_date: '-338'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 收复河西之地
+  - name: 收束
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦国东出大门洞开
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦惠文王-endeavor-1
+  person_qid: guji-秦惠文王
+  title_zh: 诛商鞅而用其法
+  domain: 政治
+  start_date: '-338'
+  end_date: '-338'
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 惠文王即位后，公子虔等人诬告商鞅谋反，请求诛杀。惠文王顺势车裂商鞅、灭其族，既满足了旧贵族的怨恨，又稳固了自身王位。但高明之处在于，他从未打算废除商鞅之法——因为正是这套制度让秦国强大起来。这种'杀其人而用其法'的做法，展现了超越个人恩怨的政治智慧。
+  outcome: 平息旧贵族怨恨的同时，完整保留了变法成果
+  lesson: 政治的最高境界是让所有人都觉得赢了，但规则不变
+  phases:
+  - name: 酝酿
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 旧贵族要求诛杀商鞅
+  - name: 破局
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 车裂商鞅
+  - name: 高潮
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 明确宣布沿用秦法不变
+  - name: 收束
+    start_date: '-338'
+    end_date: '-337'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 旧贵族失望——法并未废除
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦惠文王-endeavor-2
+  person_qid: guji-秦惠文王
+  title_zh: 张仪连横，破六国合纵
+  domain: 外交
+  start_date: '-328'
+  end_date: '-311'
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  - 大梁(今河南开封)
+  - 新郑(今河南新郑)
+  place_qids: []
+  status: 完成
+  description_zh: 面对苏秦组织的六国合纵伐秦，惠文王起用张仪推行连横策略。张仪凭三寸不烂之舌游说各国，以利诱、恐吓、欺诈等手段逐一瓦解合纵联盟。最精彩的是欺楚绝齐——张仪以商於六百里地诱楚怀王与齐绝交，待楚齐绝交后又称只许六里，楚怀王大怒伐秦，反被大败于丹阳、蓝田。
+  outcome: 六国合纵瓦解，秦国各个击破的外交优势确立
+  lesson: 在大国博弈中，外交策略的价值不亚于军事力量
+  phases:
+  - name: 酝酿
+    start_date: '-328'
+    end_date: '-318'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 苏秦合纵，六国联军伐秦
+  - name: 破局
+    start_date: '-318'
+    end_date: '-315'
+    place: 各国都城
+    description_zh: null
+    highlight: 张仪以连横逐一瓦解
+  - name: 高潮
+    start_date: '-313'
+    end_date: '-311'
+    place: 各国都城
+    description_zh: null
+    highlight: 欺楚绝齐，六国再无合力
+  - name: 收束
+    start_date: '-311'
+    end_date: '-311'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦国成为天下最强
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦惠文王-endeavor-3
+  person_qid: guji-秦惠文王
+  title_zh: 南取巴蜀，得天府之国
+  domain: 军事
+  start_date: '-316'
+  end_date: '-314'
+  start_precision: null
+  end_precision: null
+  places:
+  - 巴蜀(今四川盆地)
+  - 苴(今四川广元)
+  place_qids: []
+  status: 完成
+  description_zh: 巴蜀内乱，苴侯求援于秦。朝堂上有两派意见：张仪主张先伐韩取周以震慑天下，司马错则主张先取巴蜀以广地富民。惠文王采纳司马错之策，一举灭蜀、继而灭巴。巴蜀归秦后，成都平原成为秦国最重要的粮食基地和战略后方，为日后统一六国提供了坚实的物质保障。
+  outcome: 秦国获得巴蜀千里沃野，粮食产量倍增，战略纵深大为扩展
+  lesson: 有时候迂回的棋比正面的棋更有价值——取巴蜀比争中原更明智
+  phases:
+  - name: 酝酿
+    start_date: '-316'
+    end_date: '-316'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 巴蜀内乱，苴侯求援
+  - name: 破局
+    start_date: '-316'
+    end_date: '-316'
+    place: 巴蜀(今四川盆地)
+    description_zh: null
+    highlight: 司马错率军入蜀
+  - name: 高潮
+    start_date: '-316'
+    end_date: '-314'
+    place: 巴蜀(今四川盆地)
+    description_zh: null
+    highlight: 灭蜀灭巴，设郡管辖
+  - name: 收束
+    start_date: '-314'
+    end_date: '-314'
+    place: 巴蜀(今四川盆地)
+    description_zh: null
+    highlight: 成都平原成为秦国战略后方
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦惠文王-endeavor-4
+  person_qid: guji-秦惠文王
+  title_zh: 称王，与齐并立
+  domain: 政治
+  start_date: '-325'
+  end_date: '-323'
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 前325年，秦惠文王正式称王，这是秦国历史上第一个称王的君主。此后韩、赵、魏、燕相继称王，到前323年徐州相王，战国七雄正式确立'王'的称号体系。惠文王称王标志着秦国不再以周室诸侯自居，而是以平等甚至更强势的姿态与天下争霸。
+  outcome: 秦国正式跻身王者之列，为后续统一天下的政治叙事奠基
+  lesson: 名分的改变往往是实力改变的信号
+  phases:
+  - name: 酝酿
+    start_date: '-325'
+    end_date: '-325'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦国国力已可与齐楚并肩
+  - name: 破局
+    start_date: '-325'
+    end_date: '-325'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 自立为王
+  - name: 高潮
+    start_date: '-323'
+    end_date: '-323'
+    place: 徐州(今山东枣庄)
+    description_zh: null
+    highlight: 徐州相王，天下格局重塑
+  - name: 收束
+    start_date: '-323'
+    end_date: '-311'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦称王成定制
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦昭襄王-endeavor-1
+  person_qid: guji-秦昭襄王
+  title_zh: 长平之战，重创赵国
+  domain: 军事
+  start_date: '-262'
+  end_date: '-260'
+  start_precision: null
+  end_precision: null
+  places:
+  - 长平(今山西高平)
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 前262年，秦国攻韩上党，韩国欲献上党于秦以求和，上党郡守冯亭不愿降秦，转而将上党献于赵国。赵国接纳，秦赵大战由此爆发。秦将王龁与赵将廉颇在长平对峙三年。赵国换将赵括，秦国秘密换上白起。白起佯败诱敌，包围赵军四十余日，最终四十万赵卒被坑杀。此战是战国规模最大的战役，赵国从此一蹶不振。
+  outcome: 赵国四十万精锐尽丧，东方六国再无力单独抗秦
+  lesson: 一场决定性的战役可以改变整个时代的格局
+  phases:
+  - name: 酝酿
+    start_date: '-262'
+    end_date: '-260'
+    place: 上党(今山西长治)
+    description_zh: null
+    highlight: 韩国上党郡降赵，秦赵争夺
+  - name: 破局
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 王龁vs廉颇对峙
+  - name: 高潮
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 白起换将，赵括中伏，坑卒四十余万
+  - name: 收束
+    start_date: '-260'
+    end_date: '-259'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 赵国元气大伤，东方六国震恐
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦昭襄王-endeavor-2
+  person_qid: guji-秦昭襄王
+  title_zh: 远交近攻，统一天下的大战略
+  domain: 外交军事
+  start_date: '-266'
+  end_date: '-251'
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  - 各国
+  place_qids: []
+  status: 完成
+  description_zh: 范雎入秦，以'远交近攻'四字概括了秦国统一天下的总战略：与远方的齐国、燕国交好，集中力量蚕食邻近的韩、魏、赵。昭襄王采纳此策，驱逐了把持朝政多年的魏冉和宣太后势力，夺回实权。此后秦国的扩张变得有章有法：先灭义渠稳固后方，再逐步蚕食三晋，长平之战后赵国再难翻身。
+  outcome: 秦国确立了统一天下的总路线图，此后历代秦王皆沿此推进
+  lesson: 伟大的战略不在于一城一池的得失，而在于方向的正确
+  phases:
+  - name: 酝酿
+    start_date: '-271'
+    end_date: '-266'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 范雎入秦，献远交近攻之策
+  - name: 破局
+    start_date: '-266'
+    end_date: '-260'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 驱逐魏冉，拜范雎为相
+  - name: 高潮
+    start_date: '-260'
+    end_date: '-253'
+    place: 各国
+    description_zh: null
+    highlight: 交好齐燕，蚕食韩魏赵楚
+  - name: 收束
+    start_date: '-253'
+    end_date: '-251'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 秦国版图已占天下之半
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦昭襄王-endeavor-3
+  person_qid: guji-秦昭襄王
+  title_zh: 白起攻楚，破郢都
+  domain: 军事
+  start_date: '-279'
+  end_date: '-278'
+  start_precision: null
+  end_precision: null
+  places:
+  - 鄢(今湖北宜城)
+  - 郢(今湖北荆州)
+  place_qids: []
+  status: 完成
+  description_zh: 昭襄王派白起大举伐楚。白起采取避实击虚之策，先以水攻破鄢城，斩楚军数万。次年长驱直入，攻破楚国都城郢，烧毁楚先王陵墓夷陵。楚顷襄王仓皇东迁至陈(今河南淮阳)。楚国从此一蹶不振。屈原闻郢都失陷，投汨罗江而死。
+  outcome: 楚国丧失半壁江山，从战国最强之一沦为二流国家
+  lesson: 骄兵必败，楚国的覆灭源于内部腐朽而非外部力量
+  phases:
+  - name: 酝酿
+    start_date: '-280'
+    end_date: '-279'
+    place: 鄢(今湖北宜城)
+    description_zh: null
+    highlight: 白起伐楚，先取鄢城
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 鄢(今湖北宜城)
+    description_zh: null
+    highlight: 水淹鄢城，楚军大败
+  - name: 高潮
+    start_date: '-278'
+    end_date: '-278'
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 攻破郢都，烧夷陵
+  - name: 收束
+    start_date: '-278'
+    end_date: '-278'
+    place: 郢(今湖北荆州)
+    description_zh: null
+    highlight: 楚国被迫东迁，屈原投江
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦昭襄王-endeavor-4
+  person_qid: guji-秦昭襄王
+  title_zh: 赐死白起
+  domain: 政治
+  start_date: '-257'
+  end_date: '-257'
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  - 杜邮(今陕西咸阳东)
+  place_qids: []
+  status: 完成
+  description_zh: 长平之战后，白起主张乘胜灭赵，昭襄王初许后又听范雎之言受韩赵游说而退兵。次年再攻赵国邯郸时，白起多次称病推辞。邯郸之战失利后，昭襄王迁怒于白起，先是免其爵位，后赐剑令其自裁。白起叹曰'我固当死，长平之战赵卒降者数十万人，我诈而尽坑之，是足以死'，遂自刎。
+  outcome: 秦国失去最优秀的军事统帅
+  lesson: 功高震主是千古不变的危机，但杀将自毁更是帝王的大忌
+  phases:
+  - name: 酝酿
+    start_date: '-260'
+    end_date: '-259'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 白起反对邯郸之战
+  - name: 破局
+    start_date: '-259'
+    end_date: '-258'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 邯郸之战失利
+  - name: 高潮
+    start_date: '-257'
+    end_date: '-257'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 赐死白起
+  - name: 收束
+    start_date: '-257'
+    end_date: '-257'
+    place: 杜邮(今陕西咸阳东)
+    description_zh: null
+    highlight: 白起自刎，秦失一帅
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦穆公-endeavor-1
+  person_qid: guji-秦穆公
+  title_zh: 崤之战与东进受挫
+  domain: 军事/外交
+  start_date: 前659
+  end_date: 前627
+  start_precision: null
+  end_precision: null
+  places:
+  - 雍(今陕西凤翔)
+  - 崤山(今河南洛宁)
+  - 郑(今河南新郑)
+  place_qids: []
+  status: 完成
+  description_zh: 秦穆公先与晋国结盟，助晋文公归国即位。晋文公称霸后，秦晋联盟渐生嫌隙。文公死后，穆公派兵袭郑，被郑国商人弦高识破。秦军回师途中在崤山被晋军伏击，三帅被俘。此战彻底打破了秦穆公东进争霸的计划。
+  outcome: 崤之战惨败，秦东进受阻，但未放弃争霸之心
+  lesson: 战略受挫时，懂得转向比死磕更明智
+  phases:
+  - name: 秦晋联盟
+    start_date: 前659
+    end_date: 前636
+    place: 雍(今陕西凤翔)
+    description_zh: null
+    highlight: 助晋文公归国，秦晋之好
+  - name: 联盟破裂
+    start_date: 前630
+    end_date: 前628
+    place: 中原
+    description_zh: null
+    highlight: 秦晋围郑后关系恶化
+  - name: 崤之战惨败
+    start_date: 前627
+    end_date: 前627
+    place: 崤山(今河南洛宁)
+    description_zh: null
+    highlight: 三帅被俘，东进之路断绝
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦穆公-endeavor-2
+  person_qid: guji-秦穆公
+  title_zh: 西征灭戎，称霸西戎
+  domain: 军事
+  start_date: 前627
+  end_date: 前621
+  start_precision: null
+  end_precision: null
+  places:
+  - 雍(今陕西凤翔)
+  - 西戎(今甘肃天水)
+  place_qids: []
+  status: 完成
+  description_zh: 崤之战后，秦穆公转向西方。用戎人由余为谋，了解戎国虚实。先后灭掉西戎十二国，开地千里，周襄王赐金鼓以贺。秦穆公遂霸西戎，为秦国日后东出统一天下奠定了西部疆域的基础。
+  outcome: 称霸西戎，开地千里，奠定秦国统一的根基
+  lesson: 东方不亮西方亮，战略调整是困境中的生存之道
+  phases:
+  - name: 转向西征
+    start_date: 前627
+    end_date: 前625
+    place: 雍(今陕西凤翔)
+    description_zh: null
+    highlight: 崤之战后转向西扩
+  - name: 由余献策
+    start_date: 约-625
+    end_date: 约-623
+    place: 雍(今陕西凤翔)
+    description_zh: null
+    highlight: 用戎人由余为谋，知戎虚实
+  - name: 灭十二戎国
+    start_date: 约-623
+    end_date: 前621
+    place: 西戎(今甘肃天水)
+    description_zh: null
+    highlight: 开地千里，遂霸西戎
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-管仲-endeavor-1
+  person_qid: guji-管仲
+  title_zh: 相地而衰征——齐国经济改革
+  domain: 经济/政治
+  start_date: 前685
+  end_date: 前645
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  place_qids: []
+  status: 完成
+  description_zh: 管仲推行经济改革，利用齐国靠海优势发展渔盐贸易，设立轻重九府调控物价。又推行'相地而衰征'，按土地肥瘠分等征税。还将士、农、工、商四民分业定居，实行专业化分工。这些改革使齐国成为春秋最富庶的国家，为桓公称霸奠定了经济基础。
+  outcome: 齐国成为春秋首富，经济实力远超列国
+  lesson: 经济基础决定上层建筑，富民是强国的前提
+  phases:
+  - name: 通货积财
+    start_date: 前685
+    end_date: 前680
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 发展渔盐之利，设轻重九府
+  - name: 相地而衰征
+    start_date: 前680
+    end_date: 前670
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 按土地肥瘠征税，公平赋役
+  - name: 士农工商四民分业
+    start_date: 前670
+    end_date: 前645
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 职业世袭，专业化分工
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-管仲-endeavor-2
+  person_qid: guji-管仲
+  title_zh: 辅桓公称霸——尊王攘夷
+  domain: 外交/军事
+  start_date: 前685
+  end_date: 前645
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  - 北杏(今山东东阿)
+  - 葵丘(今河南民权)
+  - 召陵(今河南郾城)
+  place_qids: []
+  status: 完成
+  description_zh: 管仲为齐桓公制定了'尊王攘夷'的战略方针，以维护周天子权威为旗号，北伐山戎、南征楚国，九次会盟诸侯。管仲在外交上善于以小博大，以义服人。临终时告诫桓公远离竖刁、易牙、开方，桓公不听，后果如管仲所料。
+  outcome: 辅佐桓公成就春秋首霸，管仲被尊为'华夏第一相'
+  lesson: 最高的智慧是预知未来，最大的遗憾是忠言不被采纳
+  phases:
+  - name: 制定霸业方略
+    start_date: 前685
+    end_date: 前681
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 提出'尊王攘夷'战略
+  - name: 九合诸侯
+    start_date: 前681
+    end_date: 前651
+    place: 中原各地
+    description_zh: null
+    highlight: 辅佐桓公九次会盟诸侯
+  - name: 临终遗言
+    start_date: 前645
+    end_date: 前645
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 告诫桓公远离三佞臣
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-蔺相如-endeavor-1
+  person_qid: guji-蔺相如
+  title_zh: 完璧归赵
+  domain: 外交
+  start_date: '-283'
+  end_date: '-283'
+  start_precision: null
+  end_precision: null
+  places:
+  - 邯郸(今河北邯郸)
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 秦王欲以十五城换赵国和氏璧。蔺相如奉命携璧入秦，见秦王无意割城，遂以'璧有瑕请指示王'取回和氏璧，怒发冲冠倚柱而立曰'大王欲得璧，臣头今与璧俱碎于柱矣'。秦王恐璧碎，蔺相如趁机令从者怀璧归赵。秦王虽怒，但以礼相待，放其归国。
+  outcome: 赵国既保全了和氏璧，又没有给秦国开战的借口
+  lesson: 在不对等的博弈中，胆识和智谋是最好的武器
+  phases:
+  - name: 酝酿
+    start_date: '-283'
+    end_date: '-283'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 秦王以十五城换和氏璧
+  - name: 破局
+    start_date: '-283'
+    end_date: '-283'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 蔺相如持璧入秦
+  - name: 高潮
+    start_date: '-283'
+    end_date: '-283'
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 怒发冲冠，持璧倚柱，以碎璧相胁
+  - name: 收束
+    start_date: '-283'
+    end_date: '-283'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 完璧归赵，名震天下
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-蔺相如-endeavor-2
+  person_qid: guji-蔺相如
+  title_zh: 渑池之会
+  domain: 外交
+  start_date: '-279'
+  end_date: '-279'
+  start_precision: null
+  end_precision: null
+  places:
+  - 渑池(今河南渑池)
+  place_qids: []
+  status: 完成
+  description_zh: 秦赵渑池之会，秦王酒酣令赵王鼓瑟以示臣服之意。蔺相如上前请秦王击缶，秦王不肯。相如曰'五步之内，臣请以颈血溅大王矣'，以死相逼。秦王左右欲杀相如，相如怒目叱之。秦王无奈击缶。相如召赵国御史记下'秦王为赵王击缶'。秦终不能加害于赵。
+  outcome: 赵国在外交上不落下风，维护了国家尊严
+  lesson: 外交上的对等是国家主权的底线，需要以命相守
+  phases:
+  - name: 酝酿
+    start_date: '-279'
+    end_date: '-279'
+    place: 渑池(今河南渑池)
+    description_zh: null
+    highlight: 秦王邀赵王渑池相会
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 渑池(今河南渑池)
+    description_zh: null
+    highlight: 秦王令赵王鼓瑟
+  - name: 高潮
+    start_date: '-279'
+    end_date: '-279'
+    place: 渑池(今河南渑池)
+    description_zh: null
+    highlight: 蔺相如以死相逼请秦王击缶
+  - name: 收束
+    start_date: '-279'
+    end_date: '-279'
+    place: 渑池(今河南渑池)
+    description_zh: null
+    highlight: 赵王全身而退
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-赵惠文王-endeavor-1
+  person_qid: guji-赵惠文王
+  title_zh: 将相和——廉颇蔺相如共保赵国
+  domain: 政治外交
+  start_date: '-283'
+  end_date: '-270'
+  start_precision: null
+  end_precision: null
+  places:
+  - 邯郸(今河北邯郸)
+  - 渑池(今河南渑池)
+  place_qids: []
+  status: 完成
+  description_zh: 前283年，蔺相如持和氏璧出使秦国，以'璧有瑕请指示王'之计完璧归赵。前279年渑池之会，秦王令赵王鼓瑟，蔺相如以死相逼请秦王击缶，维护了赵国尊严。廉颇不服蔺相如位居其上，相如以'先国家之急而后私仇'回避。廉颇深感惭愧，负荆请罪，二人结为生死之交。
+  outcome: 赵国将相和睦，外交上不输秦国，维持了大国地位
+  lesson: 国家利益高于个人恩怨，将相和睦是国家安定的基石
+  phases:
+  - name: 酝酿
+    start_date: '-283'
+    end_date: '-283'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 蔺相如完璧归赵
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 渑池(今河南渑池)
+    description_zh: null
+    highlight: 渑池之会，相如维护赵王尊严
+  - name: 高潮
+    start_date: '-279'
+    end_date: '-279'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 廉颇负荆请罪，将相和
+  - name: 收束
+    start_date: '-279'
+    end_date: '-270'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 赵国将相和睦，国力维持
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-赵惠文王-endeavor-2
+  person_qid: guji-赵惠文王
+  title_zh: 长平之战换将之失
+  domain: 军事决策
+  start_date: '-260'
+  end_date: '-260'
+  start_precision: null
+  end_precision: null
+  places:
+  - 长平(今山西高平)
+  - 邯郸(今河北邯郸)
+  place_qids: []
+  status: 完成
+  description_zh: 长平之战初期，老将廉颇采取坚壁清野策略，与秦军对峙三年不败。秦国见正面无法取胜，遂施反间计，散布'秦之所畏，独赵奢之子赵括耳'的谣言。赵惠文王中计，不顾蔺相如病重劝阻，以赵括替换廉颇。赵括出击中白起之计，四十万赵军被围断粮四十六日后投降，全部被坑杀。
+  outcome: 赵国四十万精锐尽丧，从此再无力与秦国争锋
+  lesson: 临阵换将，自古为兵家大忌
+  phases:
+  - name: 酝酿
+    start_date: '-262'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 廉颇坚守不出，与秦军对峙三年
+  - name: 破局
+    start_date: '-260'
+    end_date: '-260'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 秦国间谍散布谣言，赵王中计
+  - name: 高潮
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 赵括替廉颇，中白起之计
+  - name: 收束
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    description_zh: null
+    highlight: 四十万赵军被坑杀
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-赵惠文王-endeavor-3
+  person_qid: guji-赵惠文王
+  title_zh: 邯郸之战，艰难守国
+  domain: 军事
+  start_date: '-259'
+  end_date: '-257'
+  start_precision: null
+  end_precision: null
+  places:
+  - 邯郸(今河北邯郸)
+  place_qids: []
+  status: 完成
+  description_zh: 长平之战后，秦国趁势围攻赵国都城邯郸。赵国命悬一线，平原君赵胜赴楚求救，毛遂自荐说服楚王出兵。同时魏国信陵君魏无忌窃取兵符，率军救赵。在赵、楚、魏三国联军夹击下，秦国大将王陵战败，被迫撤围。赵国虽保住邯郸，但国力已大不如前。
+  outcome: 赵国暂时保住国都，但已无力恢复长平之前的实力
+  lesson: 危难时刻需要冒险的勇气和广泛的外交支持
+  phases:
+  - name: 酝酿
+    start_date: '-259'
+    end_date: '-259'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 秦国乘胜围攻邯郸
+  - name: 破局
+    start_date: '-258'
+    end_date: '-258'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 平原君求救于楚魏
+  - name: 高潮
+    start_date: '-257'
+    end_date: '-257'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 信陵君窃符救赵，楚国春申君援军至
+  - name: 收束
+    start_date: '-257'
+    end_date: '-257'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 秦军撤围，赵国幸免于亡
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-赵武灵王-endeavor-1
+  person_qid: guji-赵武灵王
+  title_zh: 胡服骑射，军事改革
+  domain: 军事
+  start_date: '-307'
+  end_date: '-300'
+  start_precision: null
+  end_precision: null
+  places:
+  - 邯郸(今河北邯郸)
+  - 代地(今河北蔚县)
+  place_qids: []
+  status: 完成
+  description_zh: 赵武灵王深感中原式车战在山地和草原上的局限，决心效法北方胡人推行军事改革。他要求赵国贵族脱去宽袍大袖、穿上短衣窄袖的胡服，将传统车战改为骑兵作战。反对声浪巨大，叔父公子成称病不朝。赵武灵王亲自登门说服，公子成终于接受。改革后赵国骑兵大盛，北灭中山、收楼烦、林胡，辟地千里。
+  outcome: 赵国建立了战国时代最强大的骑兵力量，成为唯一能与秦国正面抗衡的国家
+  lesson: 打破常规需要非凡的勇气，但最关键的不是提出改革，而是说服既得利益者
+  phases:
+  - name: 酝酿
+    start_date: '-307'
+    end_date: '-307'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 与肥义商议胡服骑射
+  - name: 破局
+    start_date: '-307'
+    end_date: '-307'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 说服公子成，推行胡服
+  - name: 高潮
+    start_date: '-306'
+    end_date: '-300'
+    place: 代地(今河北蔚县)
+    description_zh: null
+    highlight: 建立骑兵军团，灭中山
+  - name: 收束
+    start_date: '-300'
+    end_date: '-299'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 赵国成为北方强国
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-赵武灵王-endeavor-2
+  person_qid: guji-赵武灵王
+  title_zh: 灭中山国
+  domain: 军事
+  start_date: '-306'
+  end_date: '-296'
+  start_precision: null
+  end_precision: null
+  places:
+  - 中山国都灵寿(今河北平山)
+  - 邯郸(今河北邯郸)
+  place_qids: []
+  status: 完成
+  description_zh: 中山国地处赵国腹地，是赵国的心腹大患。赵武灵王利用胡服骑射后的骑兵优势，从多个方向持续进攻中山。经过十年蚕食，终于在前296年灭亡中山国，迁其君主于肤施(今陕西榆林)。赵国至此统一了河北地区，国力大增。
+  outcome: 赵国腹地贯通，不再有后顾之忧，国力跃升为战国第二
+  lesson: 消除后顾之忧是争霸天下的前提
+  phases:
+  - name: 酝酿
+    start_date: '-307'
+    end_date: '-306'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 胡服骑射后赵军战斗力大增
+  - name: 破局
+    start_date: '-306'
+    end_date: '-300'
+    place: 中山国(今河北平山一带)
+    description_zh: null
+    highlight: 连年进攻中山
+  - name: 高潮
+    start_date: '-296'
+    end_date: '-296'
+    place: 中山国都灵寿(今河北平山)
+    description_zh: null
+    highlight: 灭亡中山国
+  - name: 收束
+    start_date: '-296'
+    end_date: '-296'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 赵国统一河北
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-赵武灵王-endeavor-3
+  person_qid: guji-赵武灵王
+  title_zh: 沙丘之变，困死沙丘宫
+  domain: 政治
+  start_date: '-299'
+  end_date: '-295'
+  start_precision: null
+  end_precision: null
+  places:
+  - 沙丘(今河北广宗)
+  - 邯郸(今河北邯郸)
+  place_qids: []
+  status: 完成
+  description_zh: 赵武灵王壮年时主动退位传位于幼子赵何(赵惠文王)，自号'主父'。然长子赵章不服，在权臣支持下趁赵王与主父在沙丘宫时发动政变。公子成、李兑率军平叛，赵章被杀。但为防主父报复，他们围困沙丘宫不放食物。赵武灵王在宫中困守三月，最终掏雀巢充饥仍不得活，被活活饿死。
+  outcome: 一代英主死于非命，赵国政治元气大伤
+  lesson: 再英明的改革者也无法弥补继承人选择的重大失误
+  phases:
+  - name: 酝酿
+    start_date: '-299'
+    end_date: '-299'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 传位于幼子赵何
+  - name: 破局
+    start_date: '-298'
+    end_date: '-296'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 长子赵章不服，暗中积蓄势力
+  - name: 高潮
+    start_date: '-295'
+    end_date: '-295'
+    place: 沙丘(今河北广宗)
+    description_zh: null
+    highlight: 赵章发动政变，被公子成平定
+  - name: 收束
+    start_date: '-295'
+    end_date: '-295'
+    place: 沙丘(今河北广宗)
+    description_zh: null
+    highlight: 赵武灵王被围困饿死
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-越王勾践-endeavor-1
+  person_qid: guji-越王勾践
+  title_zh: 卧薪尝胆，十年复仇
+  domain: 政治/军事
+  start_date: 前494
+  end_date: 前473
+  start_precision: null
+  end_precision: null
+  places:
+  - 会稽(今浙江绍兴)
+  - 姑苏(今江苏苏州)
+  - 吴(今江苏苏州)
+  place_qids: []
+  status: 完成
+  description_zh: 勾践在会稽山被困时，听从文种建议忍辱求和。为夫差驾车三年，尝粪问疾，极尽卑躬屈膝之能事，终获夫差信任放归。归国后卧薪尝胆，与范蠡、文种共谋十年。十年生聚(发展人口经济)、十年教训(训练军队)。先趁夫差北上偷袭姑苏，后经三年围城终灭吴国。
+  outcome: 灭吴称霸中原，实现从亡国之君到霸主的逆袭
+  lesson: 忍辱负重需要超乎常人的意志力
+  phases:
+  - name: 会稽之耻
+    start_date: 前494
+    end_date: 前494
+    place: 会稽(今浙江绍兴)
+    description_zh: null
+    highlight: 夫椒战败，困于会稽山
+  - name: 为奴三年
+    start_date: 前494
+    end_date: 前491
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 为夫差驾车、尝粪取信
+  - name: 十年生聚
+    start_date: 前491
+    end_date: 前482
+    place: 会稽(今浙江绍兴)
+    description_zh: null
+    highlight: 卧薪尝胆，十年生聚十年教训
+  - name: 灭吴称霸
+    start_date: 前482
+    end_date: 前473
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 趁虚偷袭、最终灭吴
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-越王勾践-endeavor-2
+  person_qid: guji-越王勾践
+  title_zh: 飞鸟尽良弓藏——诛杀功臣
+  domain: 政治
+  start_date: 前473
+  end_date: 前465
+  start_precision: null
+  end_precision: null
+  places:
+  - 会稽(今浙江绍兴)
+  - 姑苏(今江苏苏州)
+  place_qids: []
+  status: 完成
+  description_zh: 灭吴后，范蠡深知勾践'可与共患难，不可与共安乐'，辞官泛舟五湖，经商致富号陶朱公。临行遗书文种曰'飞鸟尽，良弓藏；狡兔死，走狗烹'。文种不听，终被勾践赐死。勾践的冷酷无情，暴露了其性格的另一面。
+  outcome: 范蠡功成身退，文种被杀——患难与安乐的试金石
+  lesson: 功成身退是最大的智慧
+  phases:
+  - name: 范蠡辞去
+    start_date: 前473
+    end_date: 前473
+    place: 姑苏(今江苏苏州)
+    description_zh: null
+    highlight: 范蠡泛舟五湖，辞官而去
+  - name: 文种被杀
+    start_date: 约-472
+    end_date: 约-472
+    place: 会稽(今浙江绍兴)
+    description_zh: null
+    highlight: 勾践赐文种自刎
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-魏惠王-endeavor-1
+  person_qid: guji-魏惠王
+  title_zh: 称霸初期与徐州相王
+  domain: 政治外交
+  start_date: '-369'
+  end_date: '-334'
+  start_precision: null
+  end_precision: null
+  places:
+  - 大梁(今河南开封)
+  - 徐州(今山东枣庄)
+  place_qids: []
+  status: 完成
+  description_zh: 魏惠王即位时魏国国力强盛，他迁都大梁(今河南开封)以图进取中原，开凿鸿沟水利。前334年与齐威王在徐州相王，互尊为王。但相王之后，魏国的外交优势逐渐丧失——与齐国表面友好实则暗争，与秦国的河西之争日趋激烈。
+  outcome: 魏国在名义上达到巅峰，但实际上已开始走下坡路
+  lesson: 外强中干的盛世最危险，因为危机往往在繁华中滋生
+  phases:
+  - name: 酝酿
+    start_date: '-369'
+    end_date: '-361'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 魏国仍为战国首霸
+  - name: 破局
+    start_date: '-361'
+    end_date: '-354'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 迁都大梁，开鸿沟
+  - name: 高潮
+    start_date: '-334'
+    end_date: '-334'
+    place: 徐州(今山东枣庄)
+    description_zh: null
+    highlight: 徐州相王，与齐并尊
+  - name: 收束
+    start_date: '-334'
+    end_date: '-319'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 魏国盛极而衰
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-魏惠王-endeavor-2
+  person_qid: guji-魏惠王
+  title_zh: 桂陵之战大败
+  domain: 军事
+  start_date: '-354'
+  end_date: '-353'
+  start_precision: null
+  end_precision: null
+  places:
+  - 桂陵(今河南长垣)
+  - 大梁(今河南开封)
+  place_qids: []
+  status: 完成
+  description_zh: 前354年，庞涓率魏军八万围攻赵国邯郸。赵国向齐国求救，齐威王派田忌为将、孙膑为军师。孙膑不直接救赵，而是趁魏国空虚直攻大梁。庞涓被迫回师，在桂陵(今河南长垣)遭齐军伏击，大败而归。此即'围魏救赵'的经典战例。
+  outcome: 魏国首次在大战中失利，齐国的军事声望大增
+  lesson: 战争中直击要害比正面对抗更有效
+  phases:
+  - name: 酝酿
+    start_date: '-354'
+    end_date: '-354'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 庞涓率魏军围攻赵国邯郸
+  - name: 破局
+    start_date: '-354'
+    end_date: '-354'
+    place: 大梁(今河南开封)
+    description_zh: null
+    highlight: 齐国孙膑'围魏救赵'
+  - name: 高潮
+    start_date: '-354'
+    end_date: '-353'
+    place: 桂陵(今河南长垣)
+    description_zh: null
+    highlight: 魏军中伏大败
+  - name: 收束
+    start_date: '-353'
+    end_date: '-353'
+    place: 邯郸(今河北邯郸)
+    description_zh: null
+    highlight: 赵国邯郸之围解除
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-魏文侯-endeavor-1
+  person_qid: guji-魏文侯
+  title_zh: 李悝变法，战国变法之先
+  domain: 政治
+  start_date: '-422'
+  end_date: '-396'
+  start_precision: null
+  end_precision: null
+  places:
+  - 安邑(今山西夏县)
+  place_qids: []
+  status: 完成
+  description_zh: 魏文侯任用李悝为相，推行战国时代第一次系统性变法。李悝提出'尽地力之教'，鼓励农民精耕细作以提高粮食产量；推行'平籴法'稳定粮价；制定《法经》六篇，以法治国。这些改革比商鞅变法早了近百年，为魏国在战国初期的霸业奠定了制度基础。
+  outcome: 魏国成为战国初期第一个通过变法富强的国家
+  lesson: 制度创新是国家竞争力的根本来源
+  phases:
+  - name: 酝酿
+    start_date: '-422'
+    end_date: '-400'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 任用李悝为相
+  - name: 破局
+    start_date: '-400'
+    end_date: '-390'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 推行'尽地力之教'
+  - name: 高潮
+    start_date: '-390'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 魏国率先富强，冠绝诸侯
+  - name: 收束
+    start_date: '-396'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 魏国霸业确立
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-魏文侯-endeavor-2
+  person_qid: guji-魏文侯
+  title_zh: 吴起为将，西取河西
+  domain: 军事
+  start_date: '-409'
+  end_date: '-389'
+  start_precision: null
+  end_precision: null
+  places:
+  - 河西(今陕西韩城一带)
+  - 阴晋(今陕西华阴)
+  place_qids: []
+  status: 完成
+  description_zh: 魏文侯任用吴起为将，训练出闻名天下的精锐部队'魏武卒'——士兵需全副甲胄操十二石之弩、负矢五十，日行百里方可入选。吴起率魏武卒连年进攻秦国，最终在阴晋之战中以五万人大破五十万秦军。秦国被迫退守洛水以西，失去了经营数百年的河西之地。
+  outcome: 魏国夺取河西之地，秦国被封锁在关中，魏国成为战国初期最强国
+  lesson: 精锐的军事制度比兵员数量更能决定战争胜负
+  phases:
+  - name: 酝酿
+    start_date: '-409'
+    end_date: '-400'
+    place: 河西(今陕西韩城一带)
+    description_zh: null
+    highlight: 吴起在魏训练魏武卒
+  - name: 破局
+    start_date: '-400'
+    end_date: '-395'
+    place: 河西(今陕西韩城一带)
+    description_zh: null
+    highlight: 连年进攻秦国
+  - name: 高潮
+    start_date: '-389'
+    end_date: '-389'
+    place: 阴晋(今陕西华阴)
+    description_zh: null
+    highlight: 阴晋之战，五万魏武卒大破五十万秦军
+  - name: 收束
+    start_date: '-389'
+    end_date: '-387'
+    place: 河西(今陕西韩城一带)
+    description_zh: null
+    highlight: 秦国被逼退至洛水以西
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-魏文侯-endeavor-3
+  person_qid: guji-魏文侯
+  title_zh: 礼贤下士，开养士之风
+  domain: 政治文化
+  start_date: '-422'
+  end_date: '-396'
+  start_precision: null
+  end_precision: null
+  places:
+  - 安邑(今山西夏县)
+  place_qids: []
+  status: 完成
+  description_zh: 魏文侯礼贤下士，对贤者以师礼相待。他过段干木之闾必下车凭轼致敬，田子方与之对坐论道，子夏在魏传授儒学。西门豹治邺破除'河伯娶妇'的迷信，发展农业水利。魏国一时人才济济，成为天下士人向往之地，开创了战国养士之风。
+  outcome: 魏国成为战国初期的文化和人才中心
+  lesson: 一个国家最宝贵的资源不是土地和军队，而是人才
+  phases:
+  - name: 酝酿
+    start_date: '-422'
+    end_date: '-410'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 招揽段干木、田子方、子夏等
+  - name: 破局
+    start_date: '-410'
+    end_date: '-400'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 西门豹治邺，各尽其才
+  - name: 高潮
+    start_date: '-400'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 朝堂人才济济，天下归心
+  - name: 收束
+    start_date: '-396'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    description_zh: null
+    highlight: 开创战国养士之风
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-齐威王-endeavor-1
+  person_qid: guji-齐威王
+  title_zh: 纳谏改革，重振朝纲
+  domain: 政治
+  start_date: '-356'
+  end_date: '-350'
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  place_qids: []
+  status: 完成
+  description_zh: 齐威王即位之初好酒色，荒废朝政。邹忌以鼓琴求见，借琴理喻治国之道。又以自己比美之事讽谏——妻、妾、客都说他比徐公美，实际上他不如徐公。由此推及国政：'宫妇左右莫不私王，朝廷之臣莫不畏王，四境之内莫不有求于王，由此观之，王之蔽甚矣。'齐威王大悟，下令重赏进谏者。
+  outcome: 齐国政治清明，人才涌入，国力大增
+  lesson: 能听逆耳忠言的领导，才是真正的强者
+  phases:
+  - name: 酝酿
+    start_date: '-356'
+    end_date: '-356'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 即位初期沉迷酒色
+  - name: 破局
+    start_date: '-356'
+    end_date: '-356'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 邹忌讽谏，齐王纳谏
+  - name: 高潮
+    start_date: '-355'
+    end_date: '-350'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 朝堂政治焕然一新
+  - name: 收束
+    start_date: '-350'
+    end_date: '-350'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 群臣争相进谏
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-齐威王-endeavor-2
+  person_qid: guji-齐威王
+  title_zh: 马陵之战，大破魏国
+  domain: 军事
+  start_date: '-342'
+  end_date: '-341'
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  - 马陵(今河南范县)
+  place_qids: []
+  status: 完成
+  description_zh: 前342年，魏国伐韩，韩国求救于齐。齐威王以田忌为将、孙膑为军师。孙膑用减灶之计诱庞涓轻骑追击，于马陵道万弩齐发。庞涓自刎，魏太子申被俘。此战彻底打垮了魏国的军事力量，齐国一跃成为东方最强国家。
+  outcome: 魏国霸业终结，齐国成为东方霸主
+  lesson: 选择正确的时机和对手，一战定乾坤
+  phases:
+  - name: 酝酿
+    start_date: '-342'
+    end_date: '-341'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 韩国求救，齐国出兵
+  - name: 破局
+    start_date: '-341'
+    end_date: '-341'
+    place: 马陵(今河南范县)
+    description_zh: null
+    highlight: 孙膑减灶诱敌
+  - name: 高潮
+    start_date: '-341'
+    end_date: '-341'
+    place: 马陵(今河南范县)
+    description_zh: null
+    highlight: 万弩齐发，魏军覆灭
+  - name: 收束
+    start_date: '-341'
+    end_date: '-341'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 齐国成为东方最强国
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-齐威王-endeavor-3
+  person_qid: guji-齐威王
+  title_zh: 邹忌改革，整顿吏治
+  domain: 政治
+  start_date: '-356'
+  end_date: '-340'
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  place_qids: []
+  status: 完成
+  description_zh: 齐威王对地方官员进行严格考核。即墨大夫辖区百姓富足，虽无人为其说好话反而得到封赏。阿大夫辖区百姓穷困，花钱行贿朝中为其美言，结果被烹杀。此举震动朝野，齐国吏治为之一新。
+  outcome: 齐国吏治清明，国力持续增长
+  lesson: 考核官员看实绩而非口碑，是最有效的吏治手段
+  phases:
+  - name: 酝酿
+    start_date: '-356'
+    end_date: '-350'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 赏罚分明，考核官员
+  - name: 破局
+    start_date: '-350'
+    end_date: '-345'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 即墨大夫封赏，阿大夫烹杀
+  - name: 高潮
+    start_date: '-345'
+    end_date: '-340'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 齐国吏治清明
+  - name: 收束
+    start_date: '-340'
+    end_date: '-320'
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 齐国强盛持久
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-齐桓公-endeavor-1
+  person_qid: guji-齐桓公
+  title_zh: 九合诸侯，尊王攘夷
+  domain: 军事/外交
+  start_date: 前685
+  end_date: 前651
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  - 北杏(今山东东阿)
+  - 葵丘(今河南民权)
+  - 召陵(今河南郾城)
+  place_qids: []
+  status: 完成
+  description_zh: 齐桓公用管仲为相，内修国政、外结诸侯。以'尊王攘夷'为旗号，北伐山戎救燕，南征楚国问罪，九次会盟诸侯。葵丘会盟时，周襄王派人赐胙，承认齐桓公的霸主地位。这是春秋时代第一次以会盟而非征伐确立霸权的尝试。
+  outcome: 春秋第一位霸主，九合诸侯、一匡天下
+  lesson: 以德服人胜于以力服人，以制度约束胜于以暴力压制
+  phases:
+  - name: 即位用管仲
+    start_date: 前685
+    end_date: 前685
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 不记一箭之仇，拜管仲为相
+  - name: 北杏会盟
+    start_date: 前681
+    end_date: 前681
+    place: 北杏(今山东东阿)
+    description_zh: null
+    highlight: 首次会盟，春秋霸业起点
+  - name: 葵丘会盟
+    start_date: 前651
+    end_date: 前651
+    place: 葵丘(今河南民权)
+    description_zh: null
+    highlight: 霸业巅峰，天子赐胙
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-齐桓公-endeavor-2
+  person_qid: guji-齐桓公
+  title_zh: 管仲辅政，齐国大治
+  domain: 政治/经济
+  start_date: 前685
+  end_date: 前643
+  start_precision: null
+  end_precision: null
+  places:
+  - 临淄(今山东淄博)
+  place_qids: []
+  status: 完成
+  description_zh: 管仲相齐四十年，推行'相地而衰征'的税收改革，发展渔盐之利，设立轻重九府调控经济。齐国因此成为春秋最富庶的国家。管仲临终告诫桓公远离竖刁、易牙、开方三人，桓公不听。管仲死后，三人得宠，齐国陷入内乱。
+  outcome: 齐国成为春秋首霸，管仲被尊为'华夏第一相'
+  lesson: 知人善任是最大的智慧，亲小人是最大的隐患
+  phases:
+  - name: 不记前嫌
+    start_date: 前685
+    end_date: 前685
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 管仲射带钩之仇，桓公不记
+  - name: 管仲治齐
+    start_date: 前685
+    end_date: 前643
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 通货积财，轻重九府，齐国大富
+  - name: 管仲辞世
+    start_date: 前643
+    end_date: 前643
+    place: 临淄(今山东淄博)
+    description_zh: null
+    highlight: 管仲薨后，桓公用佞臣，齐国衰落
   dilemmas: []
   keywords: []
   event_ids: []

@@ -19,7 +19,7 @@
     },
     "bce0300": {
       "label": "3世纪 BCE",
-      "count": 11,
+      "count": 12,
       "persons": [
         "秦始皇",
         "冒顿",
@@ -31,58 +31,120 @@
         "萧何",
         "陈平",
         "韩信",
-        "项羽"
+        "项羽",
+        "王翦"
       ]
     },
     "bce0400": {
       "label": "4世纪 BCE",
-      "count": 3,
+      "count": 16,
       "persons": [
         "商鞅",
         "孙膑",
-        "屈原"
+        "屈原",
+        "乐毅",
+        "庞涓",
+        "廉颇",
+        "燕昭王",
+        "白起",
+        "秦孝公",
+        "秦惠文王",
+        "秦昭襄王",
+        "蔺相如",
+        "赵惠文王",
+        "赵武灵王",
+        "魏惠王",
+        "齐威王"
       ]
     },
     "bce0500": {
       "label": "5世纪 BCE",
-      "count": 5,
+      "count": 6,
       "persons": [
         "苏格拉底",
         "吴起",
         "聂政",
         "荆轲",
-        "豫让"
+        "豫让",
+        "魏文侯"
       ]
     },
     "bce0600": {
       "label": "6世纪 BCE",
-      "count": 4,
+      "count": 7,
       "persons": [
         "孔子",
         "专诸",
         "句践",
-        "孙武"
+        "孙武",
+        "吴王夫差",
+        "吴王阖闾",
+        "越王勾践"
+      ]
+    },
+    "bce0700": {
+      "label": "7世纪 BCE",
+      "count": 3,
+      "persons": [
+        "晋文公",
+        "楚庄王",
+        "秦穆公"
       ]
     },
     "bce0800": {
       "label": "8世纪 BCE",
+      "count": 4,
+      "persons": [
+        "曹沫",
+        "周幽王",
+        "管仲",
+        "齐桓公"
+      ]
+    },
+    "bce1100": {
+      "label": "11世纪 BCE",
+      "count": 3,
+      "persons": [
+        "周公旦",
+        "周武王",
+        "周穆王"
+      ]
+    },
+    "bce1700": {
+      "label": "17世纪 BCE",
       "count": 1,
       "persons": [
-        "曹沫"
+        "汤"
+      ]
+    },
+    "bce2100": {
+      "label": "21世纪 BCE",
+      "count": 1,
+      "persons": [
+        "禹"
       ]
     },
     "ce0100": {
       "label": "1世纪 CE",
-      "count": 1,
+      "count": 3,
       "persons": [
-        "张衡"
+        "张衡",
+        "班超",
+        "蔡伦"
       ]
     },
     "ce0200": {
       "label": "2世纪 CE",
-      "count": 1,
+      "count": 8,
       "persons": [
-        "诸葛亮"
+        "诸葛亮",
+        "关羽",
+        "刘备",
+        "司马懿",
+        "孙权",
+        "孙策",
+        "张飞",
+        "曹操"
       ]
     },
     "ce0800": {
@@ -154,13 +216,114 @@
     },
     "unknown": {
       "label": "年代不详",
-      "count": 1,
+      "count": 11,
       "persons": [
-        "卫青与霍去病"
+        "卫青与霍去病",
+        "光武帝",
+        "周亚夫",
+        "彭越",
+        "李广",
+        "李斯",
+        "秦始皇",
+        "苏武",
+        "英布",
+        "范增",
+        "赵高"
       ]
     }
   },
   "persons": [
+    {
+      "qid": "guji-禹",
+      "name_zh": "禹",
+      "era": "夏初",
+      "archetype": "以水利定天下的上古圣王",
+      "role": "模范",
+      "birth_date": "约-2100",
+      "death_date": "约-2029",
+      "summary_first_person": "吾父鲧以堵治水，九年而败，殛于羽山。吾受命于危难，凿龙门、辟伊阙、通九河于海，十三年间三过家门而不敢入。洪水既平，吾定九州贡赋，铸九鼎以镇天下。舜禅位于吾，吾不敢忘，然吾子启贤，遂传位于启，自此天下为家，非吾所愿，乃时势使然。",
+      "century": "bce2100",
+      "events_count": 8,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-汤",
+      "name_zh": "汤",
+      "era": "商初",
+      "archetype": "顺天应人的开国明君",
+      "role": "模范",
+      "birth_date": "约-1650",
+      "death_date": "约-1588",
+      "summary_first_person": "吾起于西伯，知夏桀无道久矣。伊尹耕于有莘之野，吾三聘而得之。伊尹入夏观政，知桀必亡，乃归报吾。吾率诸侯自亳起兵，鸣条之战，夏师大败，桀走南巢。吾不欲杀桀，放之而已。天下诸侯推吾为天子，吾知此非力取，乃仁德所感也。",
+      "century": "bce1700",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-周武王",
+      "name_zh": "周武王",
+      "era": "西周初",
+      "archetype": "吊民伐罪的革命之君",
+      "role": "模范",
+      "birth_date": "约-1080",
+      "death_date": "约-1043",
+      "summary_first_person": "吾父文王囚于羑里，吾知殷商气数已尽。文王既崩，吾继其遗志，东观兵于盟津，八百诸侯不期而会。后二年，纣杀比干、囚箕子，吾以为时不可失，遂率戎车三百乘、虎贲三千、甲士四万五千东征。牧野之战，殷师倒戈，纣自焚于鹿台。吾即天子位，封功臣于天下，建周家八百年基业。",
+      "century": "bce1100",
+      "events_count": 9,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-周公旦",
+      "name_zh": "周公旦",
+      "era": "西周初",
+      "archetype": "制礼作乐的圣人之师",
+      "role": "模范",
+      "birth_date": "约-1060",
+      "death_date": "约-1036",
+      "summary_first_person": "吾兄武王克殷而崩，成王年幼，天下未定。吾恐失天下之望，乃摄行政当国。管叔、蔡叔疑吾篡位，挟武庚叛。吾东征三年，诛管叔、杀武庚、降蔡叔，始定东方。又营洛邑为东都，制礼作乐，定宗法封建之制。七年而还政成王，吾未尝有不臣之心。后世或疑吾，然天知吾心。",
+      "century": "bce1100",
+      "events_count": 8,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-周穆王",
+      "name_zh": "周穆王",
+      "era": "西周中期",
+      "archetype": "远征四海的浪漫之君",
+      "role": "模范",
+      "birth_date": "约-1010",
+      "death_date": "约-922",
+      "summary_first_person": "吾承成康之治余荫，天下太平，遂欲穷天下之极。吾驾八骏之乘，率六师西征犬戎，获其五王，迁戎于太原。又西行至瑶池，会西王母于弇山之上，觞于瑶池之畔。吾游遍天下，东至东海，西极昆仑，南抵巴楚，北达朔漠。然远征耗国力，晚年王室渐衰，吾之壮游，究竟是开拓还是挥霍，后人自有评说。",
+      "century": "bce1100",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-周幽王",
+      "name_zh": "周幽王",
+      "era": "西周末",
+      "archetype": "亡国之君的典型",
+      "role": "模范",
+      "birth_date": "约-800",
+      "death_date": "前771",
+      "summary_first_person": "吾得褒姒而大悦，废申后及太子宜臼，立褒姒为后、其子伯服为太子。褒姒不笑，吾燃烽火以逗之，诸侯至而无寇，褒姒乃大笑。申侯怒，引犬戎攻镐京。吾再燃烽火，诸侯不至。犬戎杀吾于骊山之下，掳褒姒而去。西周三百基业，毁于吾手。吾之罪，在于以私情废公义，以儿戏废信义。",
+      "century": "bce0800",
+      "events_count": 8,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-管仲",
+      "name_zh": "管仲",
+      "era": "春秋",
+      "archetype": "华夏第一相的治国宗师",
+      "role": "模范",
+      "birth_date": "约-723",
+      "death_date": "前645",
+      "summary_first_person": "吾少时贫困，鲍叔牙知吾才。公子纠争位败死，吾为阶下囚。鲍叔牙力荐吾为齐相，桓公不记一箭之仇用吾。吾相齐四十年，通货积财、轻重九府、相地而衰征，齐国大富。九合诸侯，一匡天下，非吾之力，乃用众人之力也。吾临终告桓公远竖刁、易牙、开方，桓公不听，果乱。吾生平最知者，知己如鲍叔牙也。",
+      "century": "bce0800",
+      "events_count": 8,
+      "highlights_count": 6
+    },
     {
       "qid": "guji-曹沫",
       "name_zh": "曹沫",
@@ -173,6 +336,58 @@
       "century": "bce0800",
       "events_count": 3,
       "highlights_count": 1
+    },
+    {
+      "qid": "guji-齐桓公",
+      "name_zh": "齐桓公",
+      "era": "春秋",
+      "archetype": "尊王攘夷的霸业开创者",
+      "role": "模范",
+      "birth_date": "约-716",
+      "death_date": "前643",
+      "summary_first_person": "吾兄襄公无道，吾出奔莒。管仲曾射吾带钩，吾几死之。然吾即位后，鲍叔牙荐管仲为相，吾不记前嫌，用之不疑。管仲相齐，通货积财、轻重九府，齐国大富。吾率诸侯北伐山戎、南征楚国，九合诸侯，一匡天下，葵丘会盟，天子赐胙，吾之霸业至于极矣。然管仲既薨，吾用竖刁、易牙、开方三佞，身后五子争立，吾尸六十七日不殡，虫出于户。一世英名，毁于身后。",
+      "century": "bce0800",
+      "events_count": 8,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-晋文公",
+      "name_zh": "晋文公",
+      "era": "春秋",
+      "archetype": "流亡十九年终成霸业的坚韧之君",
+      "role": "模范",
+      "birth_date": "约-697",
+      "death_date": "前628",
+      "summary_first_person": "吾父献公宠骊姬，吾几死于谗。流亡十九年，过卫绝粮、过曹受辱、过郑被慢。齐桓公妻吾以女，楚成王遇吾以礼。吾许楚王'退避三舍'。及归晋即位，勤王平叛得周襄王赐地。城濮之战，吾践前言退三舍，楚军追击，吾以逸待劳大败之。践土会盟，吾为诸侯之长。然吾一生最痛者，子犯(狐偃)劝吾杀怀公以绝后患，吾终未能与秦穆公善始善终。",
+      "century": "bce0700",
+      "events_count": 10,
+      "highlights_count": 7
+    },
+    {
+      "qid": "guji-秦穆公",
+      "name_zh": "秦穆公",
+      "era": "春秋",
+      "archetype": "称霸西戎的雄略之君",
+      "role": "模范",
+      "birth_date": "约-682",
+      "death_date": "前621",
+      "summary_first_person": "吾用百里奚为相，蹇叔为谋，欲东出争霸中原。然崤之战大败于晋，三帅被俘，吾之东进之路断矣。吾不馁，转而西征，灭十二戎国，开地千里，遂霸西戎。吾生平最痛者，不听蹇叔之谏而有崤之败；最憾者，与晋文公联盟终反目。然吾知秦之东出，不在吾世，而在后人。",
+      "century": "bce0700",
+      "events_count": 8,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-楚庄王",
+      "name_zh": "楚庄王",
+      "era": "春秋",
+      "archetype": "一鸣惊人的霸业之君",
+      "role": "模范",
+      "birth_date": "约-613",
+      "death_date": "前591",
+      "summary_first_person": "吾即位三年，不发号施令，日夜为乐。有谏者杀之。伍举进隐语曰'有鸟止南方之阜，三年不翅不鸣，是何鸟也？'吾曰'此鸟不飞则已，一飞冲天；不鸣则已，一鸣惊人'。遂亲政，诛奸佞，用孙叔敖为相，国大治。问鼎中原，观兵洛郊，晋人畏之。邲之战，大败晋军。吾之霸业，在于忍耐与果决。",
+      "century": "bce0700",
+      "events_count": 9,
+      "highlights_count": 6
     },
     {
       "qid": "Q4604",
@@ -214,6 +429,19 @@
       "highlights_count": 2
     },
     {
+      "qid": "guji-吴王阖闾",
+      "name_zh": "吴王阖闾",
+      "era": "春秋末期",
+      "archetype": "用贤图强的崛起之君",
+      "role": "模范",
+      "birth_date": "约-537",
+      "death_date": "前496",
+      "summary_first_person": "吾弟僚据王位，吾遣专诸刺之于宴席之上，始得即位。伍子胥自楚来奔，为吾策划霸业。孙武以兵法见用，吾拜为将军。吾用此二人，西破强楚，五战入郢，楚昭王仓皇出奔。然越王允常薨，吾伐越时竟被勾践击败，伤指而亡。一生图强，终为他人作嫁。",
+      "century": "bce0600",
+      "events_count": 7,
+      "highlights_count": 4
+    },
+    {
       "qid": "guji-句践",
       "name_zh": "句践",
       "era": "春秋末期",
@@ -225,6 +453,45 @@
       "century": "bce0600",
       "events_count": 7,
       "highlights_count": 5
+    },
+    {
+      "qid": "guji-越王勾践",
+      "name_zh": "越王勾践",
+      "era": "春秋末期",
+      "archetype": "卧薪尝胆的复仇之君",
+      "role": "模范",
+      "birth_date": "约-520",
+      "death_date": "前465",
+      "summary_first_person": "吾败于夫椒，困于会稽山，几欲自杀。文种劝吾忍辱求和，吾乃为夫差驾车三年，尝粪问疾以取其信。归国后卧薪尝胆，十年生聚、十年教训。范蠡、文种辅吾灭吴，吾遂称霸中原。然范蠡知吾'可与共患难，不可与共安乐'，辞去泛舟五湖。文种不听，终被吾赐死。吾之一生，从亡国之君到霸主，从忍辱负重到恩将仇报，功过参半。",
+      "century": "bce0600",
+      "events_count": 9,
+      "highlights_count": 7
+    },
+    {
+      "qid": "guji-吴王夫差",
+      "name_zh": "吴王夫差",
+      "era": "春秋末期",
+      "archetype": "胜而骄、骄而亡的悲剧之君",
+      "role": "模范",
+      "birth_date": "约-510",
+      "death_date": "前473",
+      "summary_first_person": "吾父阖闾死于越人之手，吾日夜不忘复仇。三年教训，终败越于夫椒。勾践请为臣，吾许之。伍子胥谏曰'越王勾践为人能辛苦，今不灭，后必悔之'。吾不听。又北上与晋争霸于黄池，后方空虚。勾践趁虚入吴，焚吾姑苏台。吾归国求和不得，又三年，越围姑苏。吾走阳山，无面目见子胥，蒙面而死。吾之败，非败于勾践，乃败于自己的骄傲。",
+      "century": "bce0600",
+      "events_count": 9,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-魏文侯",
+      "name_zh": "魏文侯",
+      "era": "战国初期",
+      "archetype": "开时代先河的霸主之君",
+      "role": "模范",
+      "birth_date": "约-472",
+      "death_date": "-396",
+      "summary_first_person": "吾即位之初，晋室已衰，三家分晋已成定局。吾知欲霸天下，须先变法图强。用李悝尽地力之教，国以富强。拜吴起为将，西取河西。吾亦知用人之道——吾过段干木之闾而式之，非敬其人，敬其德也。吾朝多贤臣，田子方、西门豹各司其职，此魏所以为战国首霸。",
+      "century": "bce0500",
+      "events_count": 2,
+      "highlights_count": 0
     },
     {
       "qid": "Q913",
@@ -292,30 +559,95 @@
       "highlights_count": 2
     },
     {
+      "qid": "guji-魏惠王",
+      "name_zh": "魏惠王",
+      "era": "战国中期",
+      "archetype": "由盛转衰的骄矜之君",
+      "role": "模范",
+      "birth_date": "-400",
+      "death_date": "-319",
+      "summary_first_person": "吾承祖父文侯之业，魏国正值鼎盛。然吾用人不察，放卫鞅入秦而为秦患，用庞涓而失孙膑。桂陵、马陵两败，魏武卒精锐尽失。吾迁都大梁，四面受敌，悔之晚矣。孟子见吾，吾问何以利国，孟子曰'何必曰利'，吾不能用其言。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
       "qid": "guji-商鞅",
       "name_zh": "商鞅",
       "era": "战国中期",
-      "archetype": "以法治国的铁血改革者",
+      "archetype": "以身殉法的变法先驱",
       "role": "模范",
       "birth_date": "约-390",
       "death_date": "-338",
-      "summary_first_person": "吾三说秦孝公，以帝道、王道、霸道试之，孝公终用霸道。吾废井田、开阡陌、立军功，使秦人勇于公战。然吾终死于自己所立之法——太子犯法，吾刑其师傅；孝公死后，太子即位，吾遂车裂而亡。法在而人亡，此吾之宿命也。",
+      "summary_first_person": "吾本卫国公孙，游历诸侯而无所遇。入秦以霸道说孝公，一语中的。变法十年，秦道不拾遗、山无盗贼。然吾深知法之所在即怨之所聚。太子犯法，刑其师傅以立威，吾与公子虔结仇已深。孝公薨，吾走不能，终被车裂。然吾法不废，秦终一天下，吾虽死犹生。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-秦孝公",
+      "name_zh": "秦孝公",
+      "era": "战国中期",
+      "archetype": "矢志图强的中兴之主",
+      "role": "模范",
+      "birth_date": "约-381",
+      "death_date": "-338",
+      "summary_first_person": "吾即位时，秦国地僻西陲，六国不与会盟，诸侯卑秦。吾深以为耻，下求贤令曰'宾客群臣有能出奇计强秦者，吾且尊官与之分土'。卫鞅至，以霸道说吾，吾知此人可托国。变法二十年，秦人富强，河西复归。吾虽不得已而杀鞅，然其法吾一字不废。",
       "century": "bce0400",
       "events_count": 7,
-      "highlights_count": 5
+      "highlights_count": 4
     },
     {
       "qid": "guji-孙膑",
       "name_zh": "孙膑",
       "era": "战国中期",
-      "archetype": "以弱胜强的军师智者",
+      "archetype": "以智驭勇的兵家传人",
       "role": "模范",
       "birth_date": "约-380",
       "death_date": "约-316",
-      "summary_first_person": "吾与庞涓同师鬼谷子，本以为手足之情可期终身。不料其嫉吾之才，诱我至魏而施以膑刑。吾装疯避祸，终得归齐。马陵道上万弩齐发之时，庞涓方知'孙膑在此'四字的分量。",
+      "summary_first_person": "吾与庞涓同窗鬼谷子，涓先去仕魏。吾至魏，涓恐吾见用，遂诬吾通齐，施以膑刑。吾忍辱装疯，齐使者窃载以归。田忌荐吾于齐王，桂陵一战围魏救赵，马陵一战减灶灭涓。此仇此恨，吾以天下之智报之。后著兵法八十九篇，传之后世。",
       "century": "bce0400",
-      "events_count": 6,
-      "highlights_count": 4
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-齐威王",
+      "name_zh": "齐威王",
+      "era": "战国中期",
+      "archetype": "纳谏如流的中兴明主",
+      "role": "模范",
+      "birth_date": "约-378",
+      "death_date": "-320",
+      "summary_first_person": "吾初即位，好为长夜之饮，委政卿大夫。邹忌以鼓琴说治国之道，又以比美之事讽谏。吾闻之，下令群臣面刺吾过者受上赏。自此朝堂清明，人才济济。吾用田忌、孙膑大败魏国于马陵，齐国强盛，与秦并立于天下。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-庞涓",
+      "name_zh": "庞涓",
+      "era": "战国中期",
+      "archetype": "才华横溢却因妒丧身的悲剧名将",
+      "role": "模范",
+      "birth_date": "约-370",
+      "death_date": "-341",
+      "summary_first_person": "吾与孙膑同窗学兵法于鬼谷子，自知才不及之。吾先入魏，拜将军，伐卫破赵，魏王甚重吾。然吾恐膑至魏后魏王弃吾用之，遂设计膑之。孙膑废而为齐所用，吾于桂陵败之。马陵之役，吾追齐军至谷中，万弩俱发，吾知败矣，叹曰'遂成竖子之名'，自刎而死。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-秦惠文王",
+      "name_zh": "秦惠文王",
+      "era": "战国中期",
+      "archetype": "承前启后的扩张之君",
+      "role": "模范",
+      "birth_date": "-356",
+      "death_date": "-311",
+      "summary_first_person": "吾少时犯法，太傅被刑，此吾一生之耻。然吾深知商鞅之法利于秦国，故即位虽诛鞅而不废其法。张仪以连横说吾，吾用之，使六国各自为谋而不能合。又南取巴蜀，得天府之国。吾称惠文王，自此秦不复为诸侯之秦。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
     },
     {
       "qid": "guji-屈原",
@@ -331,6 +663,123 @@
       "highlights_count": 5
     },
     {
+      "qid": "guji-赵武灵王",
+      "name_zh": "赵武灵王",
+      "era": "战国中晚期",
+      "archetype": "以胡服骑射重塑军制的改革之君",
+      "role": "模范",
+      "birth_date": "-340",
+      "death_date": "-295",
+      "summary_first_person": "吾初即位，赵国四面受敌，常为中山所苦。吾观胡人骑射之利，决意胡服骑射。群臣反对，公子成称病不朝，吾亲往其家说服之。变服骑射三年，赵国骑兵大盛，灭中山、收楼烦，辟地千里。然吾晚年传位于幼子，废长立幼，终困于沙丘，饿死沙丘宫中。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-燕昭王",
+      "name_zh": "燕昭王",
+      "era": "战国中晚期",
+      "archetype": "卧薪尝胆式的复仇复兴之君",
+      "role": "模范",
+      "birth_date": "-335",
+      "death_date": "-279",
+      "summary_first_person": "吾即位时，燕国刚被齐国趁内乱攻破，国破家亡。吾深以为耻，立志复仇。筑黄金台、置千金以招贤士。乐毅自魏来，邹衍自齐来，剧辛自赵来。吾以乐毅为上将军，联合五国伐齐。乐毅连下七十余城，齐国几亡。吾二十八年之卧薪尝胆，燕国终于扬眉吐气。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-蔺相如",
+      "name_zh": "蔺相如",
+      "era": "战国中晚期",
+      "archetype": "以智勇双全维护国家尊严的外交家",
+      "role": "模范",
+      "birth_date": "约-330",
+      "death_date": "约-270",
+      "summary_first_person": "吾本赵国宦者令缪贤之门人，因完璧归赵事见知于赵王。渑池之会吾以颈血溅秦王，赵王得以不辱。廉颇恶吾位居其上，吾避之再三。人问吾何以怯，吾曰'以先国家之急而后私仇也'。廉颇闻之，肉袒负荆请罪。吾与廉颇遂为刎颈之交。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-秦昭襄王",
+      "name_zh": "秦昭襄王",
+      "era": "战国中晚期",
+      "archetype": "雄吞天下的铁腕之君",
+      "role": "模范",
+      "birth_date": "-325",
+      "death_date": "-251",
+      "summary_first_person": "吾即位时年少，母宣太后临朝，舅魏冉用事。吾隐忍多年，待范雎入秦说'远交近攻'，吾始知天下可图。白起为将，长平一战坑赵卒四十余万，东方六国胆寒。然邯郸之围不克，白起谏而不听，终赐死之。吾晚年深悔，然大势已定，秦并天下不过旦夕之间。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-廉颇",
+      "name_zh": "廉颇",
+      "era": "战国中晚期",
+      "archetype": "忠勇无双却晚景凄凉的悲剧名将",
+      "role": "模范",
+      "birth_date": "约-320",
+      "death_date": "约-245",
+      "summary_first_person": "吾为赵将数十年，破齐取阳晋，大败燕军于鄗。长平之役吾坚壁不战三年，秦人不能克。然赵王听信谗言，以赵括替吾。吾欲谏而不能，四十万将士尽丧。后赵王复用吾围燕，然终不复信任。吾老矣，被逐至魏，楚王迎吾，然吾终思赵人而不能用也。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-白起",
+      "name_zh": "白起",
+      "era": "战国中晚期",
+      "archetype": "战无不胜的杀神名将",
+      "role": "模范",
+      "birth_date": "约-320",
+      "death_date": "-257",
+      "summary_first_person": "吾自郿地布衣从军，以首级计功，积功至大良造。伊阙一战斩韩魏二十四万，鄢郢之战水灌楚都，长平之战坑赵卒四十万。吾一生七十余战，未尝一败。然邯郸之役吾力谏不可，秦王不听而败。秦王怒，赐吾死。吾叹曰'长平之战赵卒降者数十万，吾诈而尽坑之，是足以死'。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-乐毅",
+      "name_zh": "乐毅",
+      "era": "战国中晚期",
+      "archetype": "以弱破强的传奇统帅",
+      "role": "模范",
+      "birth_date": "约-310",
+      "death_date": "约-250",
+      "summary_first_person": "吾中山之后，先仕赵魏，终至燕。燕昭王筑黄金台待吾，吾感其知遇，率五国之兵伐齐。济西一战大破齐军，吾独将燕师长驱七十余城，齐国几亡。围即墨五年，吾欲以仁义化齐人。然昭王薨，惠王中反间，吾遂去燕适赵。诸葛亮每自比管乐，吾之平生亦足慰矣。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-赵惠文王",
+      "name_zh": "赵惠文王",
+      "era": "战国中晚期",
+      "archetype": "守成有余的中庸之君",
+      "role": "模范",
+      "birth_date": "-308",
+      "death_date": "-266",
+      "summary_first_person": "吾即位时，赵国尚承父王胡服骑射之盛。蔺相如完璧归赵，渑池之会不辱使命，廉颇负荆请罪，吾之朝廷将相和睦。然长平之役，吾惑于秦人间谍之言，以赵括替廉颇，四十万将士尽丧。此吾一生之大过也。",
+      "century": "bce0400",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-王翦",
+      "name_zh": "王翦",
+      "era": "战国末期",
+      "archetype": "知进退、善自保的不世名将",
+      "role": "模范",
+      "birth_date": "约-269",
+      "death_date": "约-209",
+      "summary_first_person": "吾与子王贲事秦王，灭赵、破燕、平楚，天下十之七八定于吾手。然吾深知功高震主之理，每出征必请田宅园池于咸阳，使秦王知吾无大志。灭楚时秦王欲用二十万，吾曰'非六十万不可'。秦王笑吾怯。吾不辩，唯请美田宅以自污。终灭楚国，全身而退，善终于家。",
+      "century": "bce0300",
+      "events_count": 2,
+      "highlights_count": 0
+    },
+    {
       "qid": "Q162427",
       "name_zh": "秦始皇",
       "era": "战国末/秦",
@@ -340,8 +789,8 @@
       "death_date": "-210-07-10",
       "summary_first_person": "我以铁与法把六国压成一块版图，却忘了版图需要人心来粘合。",
       "century": "bce0300",
-      "events_count": 5,
-      "highlights_count": 0
+      "events_count": 13,
+      "highlights_count": 6
     },
     {
       "qid": "guji-萧何",
@@ -539,6 +988,32 @@
       "highlights_count": 1
     },
     {
+      "qid": "guji-班超",
+      "name_zh": "班超",
+      "era": "东汉",
+      "archetype": "投笔从戎：以三十六人定五十国的西域传奇",
+      "role": "模范",
+      "birth_date": "32",
+      "death_date": "102",
+      "summary_first_person": "吾本为人抄书以养母，一日投笔叹曰'大丈夫无它志略，犹当效傅介子、张骞立功异域'。遂从军出使西域。三十六人定五十国，纵横三十年。年老上书乞归，愿生入玉门关。",
+      "century": "ce0100",
+      "events_count": 10,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-蔡伦",
+      "name_zh": "蔡伦",
+      "era": "东汉",
+      "archetype": "造纸改良者：推动人类文明进程的技术革命家",
+      "role": "模范",
+      "birth_date": "约50",
+      "death_date": "121",
+      "summary_first_person": "吾入宫为宦官，后任尚方令，主宫廷制造。吾总结前人经验，以树皮麻头破布旧渔网造纸，天下称之蔡侯纸。造纸之术流传四海，然吾晚年卷入宫廷之争，饮鸩而死。",
+      "century": "ce0100",
+      "events_count": 8,
+      "highlights_count": 5
+    },
+    {
       "qid": "Q193533",
       "name_zh": "张衡",
       "era": "东汉",
@@ -552,6 +1027,84 @@
       "highlights_count": 1
     },
     {
+      "qid": "guji-曹操",
+      "name_zh": "曹操",
+      "era": "东汉末年—三国",
+      "archetype": "乱世枭雄：以权谋与才华终结乱世的霸主",
+      "role": "模范",
+      "birth_date": "155",
+      "death_date": "220",
+      "summary_first_person": "吾本宦官之后，世人轻之。然吾在乱世中起兵，官渡破袁绍百万之众，统一北方。'挟天子以令诸侯'，天下三分吾有其二。赤壁一败，天命未在吾。吾生为天下计，死亦为天下计。",
+      "century": "ce0200",
+      "events_count": 10,
+      "highlights_count": 7
+    },
+    {
+      "qid": "guji-刘备",
+      "name_zh": "刘备",
+      "era": "东汉末年—三国",
+      "archetype": "仁德之主：以仁义号召天下的汉室宗亲",
+      "role": "模范",
+      "birth_date": "161",
+      "death_date": "223",
+      "summary_first_person": "吾虽汉室宗亲，然少孤贫，织席贩履为业。半生漂泊无立锥之地，三顾茅庐得孔明，如鱼得水。赤壁之后始有荆州，取益州建蜀汉。然关羽被杀，吾愤而伐吴，夷陵兵败。白帝城中托孤孔明，吾心始安。",
+      "century": "ce0200",
+      "events_count": 9,
+      "highlights_count": 7
+    },
+    {
+      "qid": "guji-关羽",
+      "name_zh": "关羽",
+      "era": "东汉末年—三国",
+      "archetype": "武圣：忠义千秋的千古名将",
+      "role": "模范",
+      "birth_date": "约162",
+      "death_date": "220",
+      "summary_first_person": "吾与大哥桃园结义，誓同生死。千里走单骑寻兄，过五关斩六将。刮骨疗毒吾不惧，水淹七军威震华夏。然吾刚而自矜，败走麦城。身后千年，世人以'关帝'称之，吾心甚慰。",
+      "century": "ce0200",
+      "events_count": 9,
+      "highlights_count": 7
+    },
+    {
+      "qid": "guji-张飞",
+      "name_zh": "张飞",
+      "era": "东汉末年—三国",
+      "archetype": "猛张飞：勇冠三军却死于部下之手的悲剧猛将",
+      "role": "模范",
+      "birth_date": "约166",
+      "death_date": "221",
+      "summary_first_person": "吾与大哥二哥桃园结义，誓同生死。当阳桥上吾一声吼退曹操百万兵，长坂坡前无人敢近。然吾性急嗜酒，鞭打士卒。大哥伐吴前令吾率军会合，吾竟被小人所杀。",
+      "century": "ce0200",
+      "events_count": 9,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-孙策",
+      "name_zh": "孙策",
+      "era": "东汉末年",
+      "archetype": "小霸王：以锐气开辟东吴基业的少年英雄",
+      "role": "模范",
+      "birth_date": "175",
+      "death_date": "200",
+      "summary_first_person": "吾父孙坚战死，吾年十七承其旧部。六年间横扫江东，人称小霸王。正欲北上与曹操争中原，不幸遇刺。吾将基业托付弟弟孙权，未能亲自争天下，此吾一生之憾。",
+      "century": "ce0200",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-司马懿",
+      "name_zh": "司马懿",
+      "era": "东汉末年—三国",
+      "archetype": "隐忍枭雄：以耐心与谋略窃取天下的终极赢家",
+      "role": "模范",
+      "birth_date": "179",
+      "death_date": "251",
+      "summary_first_person": "吾本河内名门，被曹操强征。吾装病七年避其锋芒，后辅佐文帝、明帝。诸葛亮六出祁山，吾以守为攻耗其锐气。明帝临终托孤，吾忍辱负重十年，终在高平陵一举夺权。天下最终归于司马氏。",
+      "century": "ce0200",
+      "events_count": 10,
+      "highlights_count": 7
+    },
+    {
       "qid": "Q179544",
       "name_zh": "诸葛亮",
       "era": "三国",
@@ -563,6 +1116,19 @@
       "century": "ce0200",
       "events_count": 6,
       "highlights_count": 4
+    },
+    {
+      "qid": "guji-孙权",
+      "name_zh": "孙权",
+      "era": "三国",
+      "archetype": "守成之主：以制衡之术稳固江东的开国皇帝",
+      "role": "模范",
+      "birth_date": "182",
+      "death_date": "252",
+      "summary_first_person": "吾兄伯符临终以江东托付，吾年十八受之。赤壁之战联刘抗曹，天下三分吾有其一。吾善用人而不善用人之始，善守业而不善传业之终。东吴基业传至于此，后人当自勉。",
+      "century": "ce0200",
+      "events_count": 9,
+      "highlights_count": 7
     },
     {
       "qid": "Q7074",
@@ -822,6 +1388,136 @@
       "summary_first_person": "吾卫青，少为平阳侯家骑奴，人皆轻之。姊入宫幸于天子，人以为吾以裙带进。然吾七击匈奴，出塞千余里，未尝一败。去病吾甥也，年十八从征匈奴，以八百骑深入大漠斩获两千。年二十一封狼居胥，匈奴远遁漠北。去病常言'匈奴未灭，何以家为'，此亦吾辈之心也。天妒英才，去病先吾而去，吾亦随即。然汉家北疆自此安宁，吾辈纵死无憾。",
       "century": "unknown",
       "events_count": 8,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-光武帝",
+      "name_zh": "光武帝",
+      "era": "东汉",
+      "archetype": "柔道中兴：以温和手段重建汉室的千古明君",
+      "role": "模范",
+      "birth_date": "前5",
+      "death_date": "57",
+      "summary_first_person": "吾本南阳一布衣，昆阳之战以两万破新莽四十二万。诸将拥吾为帝，吾三让而后受。统一天下后吾以柔道治之，不任功臣以吏事，退功臣进文吏，使天下休息。",
+      "century": "unknown",
+      "events_count": 10,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-周亚夫",
+      "name_zh": "周亚夫",
+      "era": "西汉",
+      "archetype": "刚直名将：治军严明却饿死狱中的悲剧将军",
+      "role": "模范",
+      "birth_date": "约前199",
+      "death_date": "前143",
+      "summary_first_person": "吾父周勃佐高祖定天下，诛诸吕安刘氏。吾守细柳营，文帝劳军不得入。七国之乱时吾以三个月平定天下，功居首位。然刚直不阿，谏废太子触怒景帝，终被诬陷绝食而死。",
+      "century": "unknown",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-彭越",
+      "name_zh": "彭越",
+      "era": "秦末楚汉",
+      "archetype": "游击鼻祖：以游击战搅动楚汉棋局的枭雄",
+      "role": "模范",
+      "birth_date": "约前200(约前240)",
+      "death_date": "前196",
+      "summary_first_person": "吾本巨野泽中渔盗，聚众千余人于泽中。楚汉相争时吾以游击袭扰楚军后方，断其粮道，使项王首尾不能相顾。垓下之围吾亦有功，封梁王。然功高震主，终被夷灭三族。",
+      "century": "unknown",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-李广",
+      "name_zh": "李广",
+      "era": "西汉",
+      "archetype": "飞将军：一生未封侯的悲剧英雄",
+      "role": "模范",
+      "birth_date": "约前166",
+      "death_date": "前119",
+      "summary_first_person": "吾历三朝，与匈奴战七十余阵。文帝时吾射虎没镞，景帝时吾守边郡匈奴不敢犯。然吾数奇不封侯，最后一次出塞，大将军令吾出东道，吾争为前驱不得，遂迷失道。吾不愿面对刀笔吏，遂自刎。",
+      "century": "unknown",
+      "events_count": 10,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-李斯",
+      "name_zh": "李斯",
+      "era": "战国末期—秦朝",
+      "archetype": "法家信徒：制度缔造者与权力殉葬者",
+      "role": "模范",
+      "birth_date": "约前284",
+      "death_date": "前208",
+      "summary_first_person": "吾本上蔡布衣，见仓鼠与厕鼠之别，遂辞楚入秦。始皇帝用吾之策，废封建行郡县，书同文车同轨。然始皇崩后，赵高以利害相胁，吾从之，遂身死族灭。吾之一生，始于仓鼠之志，终于厕鼠之祸。",
+      "century": "unknown",
+      "events_count": 10,
+      "highlights_count": 7
+    },
+    {
+      "qid": "guji-秦始皇",
+      "name_zh": "秦始皇",
+      "era": "战国末期—秦朝",
+      "archetype": "千古一帝：以法驭天下的制度缔造者",
+      "role": "模范",
+      "birth_date": "前259",
+      "death_date": "前210",
+      "summary_first_person": "吾十三岁即秦王之位，灭韩赵魏楚燕齐，海内为一。书同文、车同轨、统度量，功盖三皇五帝，号曰始皇帝。然吾求长生而不得，死于沙丘，天下遂乱。",
+      "century": "unknown",
+      "events_count": 10,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-苏武",
+      "name_zh": "苏武",
+      "era": "西汉",
+      "archetype": "持节不屈：十九年牧羊北海的忠义化身",
+      "role": "模范",
+      "birth_date": "约前140",
+      "death_date": "约前60",
+      "summary_first_person": "吾以汉使至匈奴，副使张胜卷入缑王谋反。匈奴以刀剑加颈逼吾降，吾引刀自刺。又以幽禁断食逼之，吾啮雪吞旃。十九年牧羊北海，持节不失。归汉之日须发尽白，节旄尽落。",
+      "century": "unknown",
+      "events_count": 9,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-英布",
+      "name_zh": "英布",
+      "era": "秦末楚汉",
+      "archetype": "骁勇悍将：从囚徒到诸侯王的传奇",
+      "role": "模范",
+      "birth_date": "约前201(约前240)",
+      "death_date": "前196",
+      "summary_first_person": "吾本骊山刑徒，黥面之后人称黥布。陈胜举义后吾聚众数千，归项王为九江王。鸿门宴后见项王杀义帝，知其不能成大事，遂归汉王。垓下围杀项王，吾有大功。然汉高祖猜忌功臣，韩信彭越先后被诛，吾惧而反，终败死。",
+      "century": "unknown",
+      "events_count": 9,
+      "highlights_count": 6
+    },
+    {
+      "qid": "guji-范增",
+      "name_zh": "范增",
+      "era": "秦末楚汉",
+      "archetype": "悲剧谋士：忠而见疑的楚国亚父",
+      "role": "模范",
+      "birth_date": "前277",
+      "death_date": "前204",
+      "summary_first_person": "吾年七十犹在山中，闻陈胜举义遂出。项王用吾为亚父，吾劝其在鸿门杀刘邦，王不听。后陈平施反间，王疑吾。吾愤而归乡，行至彭城，疽发于背而死。楚失吾，犹人失左右手也。",
+      "century": "unknown",
+      "events_count": 9,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-赵高",
+      "name_zh": "赵高",
+      "era": "秦朝",
+      "archetype": "窃国弄臣：以阴谋颠覆帝国的宦官权奸",
+      "role": "模范",
+      "birth_date": "约前256",
+      "death_date": "前207",
+      "summary_first_person": "吾本赵国疏宗，入秦宫为宦者。始皇帝以为吾通律法，使教公子胡亥。始皇崩后，吾以利害说李斯，矫诏立胡亥。朝堂之上吾指鹿为马，顺吾者昌逆吾者亡。然秦室既灭，吾亦难逃一死。",
+      "century": "unknown",
+      "events_count": 10,
       "highlights_count": 6
     }
   ]
