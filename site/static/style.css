@@ -59,3 +59,5 @@ header .stats{margin-left:auto;font-size:10px;color:var(--mist);text-align:right
 .同期 .yr.alive{color:var(--ink)}
 .同期 .yr.dead{color:#ccc}
 .同期 .yr.me{color:var(--accent);font-weight:bold}
+.p-name{font-size:12px}
+.p-age{display:none;font-size:11px;color:var(--mist);margin-left:6px;white-space:nowrap}

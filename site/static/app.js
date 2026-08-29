@@ -28,9 +28,7 @@ async function init(){
 
 function setupZoom(){
   const wrap=document.getElementById('wrap');
-  wrap.addEventListener('wheel',e=>{
-    if(e.ctrlKey||e.metaKey){e.preventDefault();zoomLevel=Math.max(0.1,Math.min(50,zoomLevel*(e.deltaY<0?1.2:0.83)));renderTimeline()}
-  },{passive:false});
+  wrap.addEventListener('wheel',e=>{if(e.ctrlKey||e.metaKey){e.preventDefault();zoomLevel=Math.max(0.1,Math.min(50,zoomLevel*(e.deltaY<0?1.2:0.83)));renderTimeline()}},{passive:false});
   document.getElementById('zoomIn').onclick=()=>{zoomLevel=Math.min(50,zoomLevel*1.5);renderTimeline()};
   document.getElementById('zoomOut').onclick=()=>{zoomLevel=Math.max(0.1,zoomLevel*0.67);renderTimeline()};
   document.getElementById('zoomReset').onclick=()=>{zoomLevel=0;focusedQid=null;renderTimeline()};
@@ -57,27 +55,16 @@ function renderTimeline(){
   const inner=document.getElementById('inner');
   const allYears=[...DATA.events.map(e=>py(e.date)),...DATA.highlights.map(h=>py(h.date))].filter(Boolean);
   if(!allYears.length)return;
-
-  if(focusedQid){
-    const fp=DATA.persons.find(p=>p.qid===focusedQid);
-    if(fp){const by=py(fp.birth_date),dy=py(fp.death_date)||by+60;const pad=Math.max(10,(dy-by)*0.2);minY=by-pad;maxY=dy+pad}
-  }else{
-    minY=Math.min(...allYears);maxY=Math.max(...allYears);
-  }
-
+  if(focusedQid){const fp=DATA.persons.find(p=>p.qid===focusedQid);if(fp){const by=py(fp.birth_date),dy=py(fp.death_date)||by+60;const pad=Math.max(10,(dy-by)*0.2);minY=by-pad;maxY=dy+pad}}
+  else{minY=Math.min(...allYears);maxY=Math.max(...allYears)}
   const span=maxY-minY||100;
   const ppx=zoomLevel*BASE_PX;
   const W=Math.max(800,span*ppx+160);
-  const ROW_N=50,ROW_E=160;
-  const LABEL_W=160;
-
+  const ROW_N=50,ROW_E=160,LABEL_W=160;
   const yearsVisible=span/ppx;
   const step=yearsVisible<30?5:yearsVisible<80?10:yearsVisible<200?20:yearsVisible<500?50:100;
   let ticks='';
-  for(let y=Math.ceil(minY/step)*step;y<=maxY;y+=step){
-    const x=80+(y-minY)/span*(W-160);
-    ticks+=`<div class="tick" style="left:${x}px"><span class="tl">${y<0?Math.abs(y)+' BCE':y}</span><div class="line"></div></div>`;
-  }
+  for(let y=Math.ceil(minY/step)*step;y<=maxY;y+=step){const x=80+(y-minY)/span*(W-160);ticks+=`<div class="tick" style="left:${x}px"><span class="tl">${y<0?Math.abs(y)+' BCE':y}</span><div class="line"></div></div>`}
 
   let rows='';if(!filtered.length)filtered=DATA.persons;
   filtered.forEach(p=>{
@@ -98,64 +85,51 @@ function renderTimeline(){
       const edColors={'军事/政治':'#8b4513','政治/军事':'#8b4513','政治':'#2e8b57','军事':'#8b0000','科学':'#4169e1','文化':'#8b4513','文化/政治':'#6b4226','航海/外交':'#2e8b57','艺术/科学':'#9370db','商业/技术':'#daa520','思想':'#8b0000'};
       pEds.forEach((ed,ei)=>{
         const esy=py(ed.start_date),eey=py(ed.end_date);if(!esy||!eey)return;
-        const ex1=80+(esy-minY)/span*(W-160);
-        const ex2=80+(eey-minY)/span*(W-160);
-        const color=edColors[ed.domain]||'var(--accent)';
-        const barTop=12+ei*40;
+        const ex1=80+(esy-minY)/span*(W-160),ex2=80+(eey-minY)/span*(W-160);
+        const color=edColors[ed.domain]||'var(--accent)',barTop=12+ei*40;
         track+=`<div style="position:absolute;left:${ex1}px;top:${barTop}px;width:${Math.max(12,ex2-ex1)}px;height:24px;border-radius:5px;background:${color};opacity:.18"></div>`;
-        track+=`<div style="position:absolute;left:${ex1+4}px;top:${barTop+2}px;font-size:11px;font-weight:bold;color:${color};white-space:nowrap;max-width:${Math.max(80,ex2-ex1-8)}px;overflow:hidden;text-overflow:ellipsis" title="${ed.title_zh}">${ed.title_zh}</div>`;
+        track+=`<div style="position:absolute;left:${ex1+4}px;top:${barTop+2}px;font-size:11px;font-weight:bold;color:${color};white-space:nowrap;max-width:${Math.max(80,ex2-ex1-8)}px;overflow:hidden;text-overflow:ellipsis">${ed.title_zh}</div>`;
         track+=`<div style="position:absolute;left:${ex2+4}px;top:${barTop+5}px;font-size:9px;color:var(--mist)">${ed.start_date||'?'}→${ed.end_date||'?'}</div>`;
-        if(ed.phases&&ed.phases.length){
-          ed.phases.forEach((ph,pi)=>{
-            const psy=py(ph.start_date)||esy,pey=py(ph.end_date)||eey;
-            const phx1=80+(psy-minY)/span*(W-160);
-            const phx2=80+(pey-minY)/span*(W-160);
-            const phTop=barTop+18+pi*5;
-            track+=`<div style="position:absolute;left:${phx1}px;top:${phTop}px;width:${Math.max(4,phx2-phx1)}px;height:4px;border-radius:2px;background:${color};opacity:.5" title="${ph.name}: ${ph.highlight||''}"></div>`;
-            if(phx2-phx1>40)track+=`<div style="position:absolute;left:${phx1+2}px;top:${phTop-10}px;font-size:9px;color:${color};white-space:nowrap">${ph.name}</div>`;
-            if(ph.highlight&&phx2-phx1>80)track+=`<div style="position:absolute;left:${(phx1+phx2)/2}px;top:${phTop-20}px;font-size:8px;color:var(--gold);white-space:nowrap;transform:translateX(-50%);font-style:italic">${ph.highlight}</div>`;
-          });
-        }
+        if(ed.phases)ed.phases.forEach((ph,pi)=>{
+          const psy=py(ph.start_date)||esy,pey=py(ph.end_date)||eey;
+          const phx1=80+(psy-minY)/span*(W-160),phx2=80+(pey-minY)/span*(W-160);
+          const phTop=barTop+18+pi*5;
+          track+=`<div style="position:absolute;left:${phx1}px;top:${phTop}px;width:${Math.max(4,phx2-phx1)}px;height:4px;border-radius:2px;background:${color};opacity:.5" title="${ph.name}: ${ph.highlight||''}"></div>`;
+          if(phx2-phx1>40)track+=`<div style="position:absolute;left:${phx1+2}px;top:${phTop-10}px;font-size:9px;color:${color};white-space:nowrap">${ph.name}</div>`;
+          if(ph.highlight&&phx2-phx1>80)track+=`<div style="position:absolute;left:${(phx1+phx2)/2}px;top:${phTop-20}px;font-size:8px;color:var(--gold);white-space:nowrap;transform:translateX(-50%);font-style:italic">${ph.highlight}</div>`;
+        });
         pEvents.filter(ev=>{const ey=py(ev.date);if(!ey)return false;return esy<=ey&&ey<=eey}).forEach(ev=>{
           const ey=py(ev.date);if(!ey)return;
-          const ex=80+(ey-minY)/span*(W-160);
-          const age=ageAt(by,ey);
+          const ex=80+(ey-minY)/span*(W-160),age=ageAt(by,ey);
           const cls=ev.is_highlight?'highlight':ev.event_type==='出生'?'birth':ev.event_type==='逝世'?'death':'normal';
           const evTop=barTop+16;
           track+=`<div class="ev-dot ${cls}" style="left:${ex}px;top:${evTop}px;width:${ev.is_highlight?12:8}px;height:${ev.is_highlight?12:8}px;transform:translateX(-50%)" data-qid="${p.qid}" data-date="${ev.date}" data-title="${ev.title_zh||''}" data-place="${ev.place_name||''}" data-desc="${(ev.description||ev.description_zh||'').replace(/"/g,'&quot;')}" data-hl="${ev.highlight_note||''}" data-age="${age??''}" data-type="${ev.highlight_type||ev.event_type||''}"></div>`;
-          if(ev.title_zh){track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop-2}px;font-size:9px;color:var(--ink);white-space:nowrap;max-width:160px;overflow:hidden;text-overflow:ellipsis" title="${ev.title_zh}">${ev.title_zh}</div>`;track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop+10}px;font-size:8px;color:var(--mist)">${ev.date||''} ${age?age+'岁':''} ${ev.place_name||''}</div>`}
+          if(ev.title_zh){track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop-2}px;font-size:9px;color:var(--ink);white-space:nowrap;max-width:160px;overflow:hidden;text-overflow:ellipsis">${ev.title_zh}</div>`;track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop+10}px;font-size:8px;color:var(--mist)">${ev.date||''} ${age?age+'岁':''} ${ev.place_name||''}</div>`}
         });
       });
     }else{
       pEvents.forEach(ev=>{
         const ey=py(ev.date);if(!ey)return;
-        const ex=80+(ey-minY)/span*(W-160);
-        const age=ageAt(by,ey);
+        const ex=80+(ey-minY)/span*(W-160),age=ageAt(by,ey);
         const cls=ev.is_highlight?'highlight':ev.event_type==='出生'?'birth':ev.event_type==='逝世'?'death':'normal';
         track+=`<div class="ev-dot ${cls}" style="left:${ex}px" data-qid="${p.qid}" data-date="${ev.date}" data-title="${ev.title_zh||''}" data-place="${ev.place_name||''}" data-desc="${(ev.description||ev.description_zh||'').replace(/"/g,'&quot;')}" data-hl="${ev.highlight_note||''}" data-age="${age??''}" data-type="${ev.highlight_type||ev.event_type||''}"></div>`;
         if((ev.is_highlight||ev.event_type==='出生'||ev.event_type==='逝世')&&ev.title_zh){track+=`<div class="ev-title" style="left:${ex}px">${ev.title_zh}</div>`;track+=`<div class="ev-age" style="left:${ex}px">${age!==null?age+'岁':''}</div>`}
       });
     }
-    rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${RH}px"><div class="p-label" onclick="focusPerson('${p.qid}')"><span class="dot ${roleClass}"></span>${p.name_zh}<span class="arch">${p.archetype||''}</span>${pEds.length?`<span style="font-size:8px;color:var(--gold);margin-left:auto">${isFocused?'▾':'▸'}${pEds.length}事</span>`:''}</div><div class="p-track" style="width:${W-LABEL_W}px">${track}</div></div>`;
+    // age-label: 占位，hover时填充
+    rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${RH}px"><div class="p-label" onclick="focusPerson('${p.qid}')"><span class="dot ${roleClass}"></span><span class="p-name">${p.name_zh}</span><span class="p-age" id="age-${p.qid}"></span><span class="arch">${p.archetype||''}</span>${pEds.length?`<span style="font-size:8px;color:var(--gold);margin-left:auto">${isFocused?'▾':'▸'}${pEds.length}事</span>`:''}</div><div class="p-track" style="width:${W-LABEL_W}px">${track}</div></div>`;
   });
 
-  // cursor overlay (hidden by default, positioned on hover)
-  const cursorHtml=`<div id="cursor" style="display:none;position:absolute;top:0;width:1px;height:${32+filtered.reduce((s,p)=>{const by=py(p.birth_date);if(!by)return s;if(focusedQid&&p.qid!==focusedQid)return s;return s+(focusedQid===p.qid?ROW_E:ROW_N)},0)}px;background:var(--gold);opacity:.35;pointer-events:none;z-index:6"></div>`;
-
-  inner.innerHTML=`<div class="axis-row" style="width:${W}px">${ticks}</div>${rows}${cursorHtml}`;
+  inner.innerHTML=`` + `<div class="axis-row" style="width:${W}px">${ticks}</div>` + rows;
   inner.style.width=W+'px';
-  const totalH=32+filtered.reduce((s,p)=>{const by=py(p.birth_date);if(!by)return s;if(focusedQid&&p.qid!==focusedQid)return s;return s+(focusedQid===p.qid?ROW_E:ROW_N)},0);
-  inner.style.height=totalH+'px';
+  inner.style.height=(32+filtered.reduce((s,p)=>{const by=py(p.birth_date);if(!by)return s;if(focusedQid&&p.qid!==focusedQid)return s;return s+(focusedQid===p.qid?ROW_E:ROW_N)},0))+'px';
 
   const zEl=document.getElementById('zoomLevel');
   if(focusedQid){const fp=DATA.persons.find(p=>p.qid===focusedQid);zEl.textContent=`聚焦 ${fp?.name_zh||''}`;zEl.style.color='var(--accent)'}
   else{zEl.textContent=`${zoomLevel.toFixed(1)}x (${Math.round(span)}年)`;zEl.style.color='var(--mist)'}
 
-  // tooltip + cursor
+  // hover: 在名字旁显示年龄
   const tip=document.getElementById('tip');
-  const同期=document.getElementById('同期');
-  const cursor=document.getElementById('cursor');
-
   inner.querySelectorAll('.ev-dot').forEach(d=>{
     d.addEventListener('mouseenter',()=>{
       let t=`<div class="t-name">${d.dataset.title}</div><div class="t-date">${d.dataset.date}</div>`;
@@ -164,37 +138,31 @@ function renderTimeline(){
       if(d.dataset.desc)t+=`<div class="t-desc">${d.dataset.desc}</div>`;
       if(d.dataset.hl)t+=`<div class="t-hl">★ ${d.dataset.hl}</div>`;
       tip.innerHTML=t;tip.style.display='block';
-
-      // show cursor line
-      if(cursor){
-        const dotLeft=parseFloat(d.style.left)||0;
-        cursor.style.display='block';
-        cursor.style.left=dotLeft+'px';
-      }
-
-      // 同期年龄: 仅视图>1人时显示
-      if(filtered.length<=1){同期.style.display='none';return}
+      // 在每个人名字旁显示年龄（仅活着的）
       const evtDate=py(d.dataset.date);
-      if(evtDate===null){同期.style.display='none';return}
-
-      let ch=`<h4>${d.dataset.date} · 同期人物</h4>`;
-      let aliveCount=0;
+      if(evtDate===null)return;
       filtered.forEach(p=>{
         const by=py(p.birth_date),dy=py(p.death_date);
         if(!by)return;
         const age=ageAt(by,evtDate);
-        if(age===null||age<-50)return;
         const alive=!dy||evtDate<=dy;
-        if(!alive)return; // 只显示活着的
-        aliveCount++;
+        const el=document.getElementById(`age-${p.qid}`);
+        if(!el)return;
+        if(age===null||age<-50||!alive){el.textContent='';el.style.display='none';return}
         const isMe=p.qid===d.dataset.qid;
-        ch+=`<div class="yr ${isMe?'me':''}"><span class="nm">${p.name_zh}</span><span class="age">${age}岁</span><span class="era">${p.era||''}</span></div>`;
+        el.textContent=`${age<0?Math.abs(age)+'前生':age+'岁'}`;
+        el.style.display='inline';
+        el.style.color=isMe?'var(--accent)':'var(--mist)';
+        el.style.fontWeight=isMe?'bold':'normal';
+        el.style.fontSize='11px';
+        el.style.marginLeft='6px';
       });
-      if(aliveCount<=1){同期.style.display='none'}
-      else{同期.innerHTML=ch;同期.style.display='block'}
     });
     d.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px'});
-    d.addEventListener('mouseleave',()=>{tip.style.display='none';同期.style.display='none';if(cursor)cursor.style.display='none'});
+    d.addEventListener('mouseleave',()=>{
+      tip.style.display='none';
+      filtered.forEach(p=>{const el=document.getElementById(`age-${p.qid}`);if(el){el.textContent='';el.style.display='none'}});
+    });
   });
 }
 
@@ -212,7 +180,7 @@ function showDetail(qid){
     p.endeavors.forEach(ed=>{
       h+=`<div class="ph"><b>${ed.title_zh}</b> <span style="color:var(--mist)">${ed.start_date||'?'}→${ed.end_date||'?'}</span>`;
       if(ed.description_zh)h+=`<div style="font-style:italic;margin:4px 0">${ed.description_zh}</div>`;
-      if(ed.phases&&ed.phases.length)ed.phases.forEach(ph=>{h+=`<div>· ${ph.name} <span style="color:var(--mist)">${ph.start_date||''}~${ph.end_date||''} ${ph.place||''}</span>`;if(ph.highlight)h+=`<span class="hl"> ${ph.highlight}</span>`;h+=`</div>`});
+      if(ed.phases)ed.phases.forEach(ph=>{h+=`<div>· ${ph.name} <span style="color:var(--mist)">${ph.start_date||''}~${ph.end_date||''} ${ph.place||''}</span>`;if(ph.highlight)h+=`<span class="hl"> ${ph.highlight}</span>`;h+=`</div>`});
       if(ed.outcome)h+=`<div style="color:var(--jade)">结果: ${ed.outcome}</div>`;
       if(ed.lesson)h+=`<div style="color:var(--accent);font-size:11px">启发: ${ed.lesson}</div>`;
       h+=`</div>`;
@@ -223,11 +191,9 @@ function showDetail(qid){
   if(pEvents.length){
     h+=`<div class="section"><h3>事件时间线</h3>`;
     pEvents.forEach(ev=>{
-      h+=`<div style="padding:4px 0;border-bottom:1px solid #f5f0e8">`;
-      h+=`<span style="color:${ev.is_highlight?'var(--gold)':'var(--ink)'};font-weight:${ev.is_highlight?'bold':'normal'}">`;
+      h+=`<div style="padding:4px 0;border-bottom:1px solid #f5f0e8"><span style="color:${ev.is_highlight?'var(--gold)':'var(--ink)'};font-weight:${ev.is_highlight?'bold':'normal'}">`;
       if(ev.is_highlight&&ev.highlight_type)h+=`<span class="hl-tag" style="background:${HL_COLORS[ev.highlight_type]||'var(--gold)'};font-size:8px">${ev.highlight_type}</span> `;
-      h+=`${ev.title_zh}</span>`;
-      h+=` <span style="color:var(--mist);font-size:10px">${ev.date||''} ${ev.place_name||''}</span>`;
+      h+=`${ev.title_zh}</span> <span style="color:var(--mist);font-size:10px">${ev.date||''} ${ev.place_name||''}</span>`;
       if(ev.highlight_note)h+=`<div style="font-style:italic;color:var(--gold);font-size:10px;margin-top:2px">${ev.highlight_note}</div>`;
       else if(ev.description_zh)h+=`<div style="font-size:10px;color:var(--mist);margin-top:2px">${ev.description_zh}</div>`;
       h+=`</div>`;
