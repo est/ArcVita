@@ -72,23 +72,7 @@ def main():
     # highlights.json: 名场面聚合
     (data_dir / "highlights.json").write_text(json.dumps(highlights, ensure_ascii=False, indent=2), encoding="utf-8")
     # persons.json: 轻量人物索引
-    persons_lite = [
-        {
-            "qid": p["qid"],
-            "name_zh": p["name_zh"],
-            "era": p.get("era"),
-            "archetype": p.get("archetype"),
-            "role": p.get("role"),
-            "dilemmas": p.get("dilemmas", []),
-            "summary_zh": p.get("summary_zh"),
-            "summary_first_person": p.get("summary_first_person"),
-            "birth_date": p.get("birth_date"),
-            "death_date": p.get("death_date"),
-            "lesson": p.get("lesson"),
-        }
-        for p in persons
-    ]
-    (data_dir / "persons.json").write_text(json.dumps(persons_lite, ensure_ascii=False, indent=2), encoding="utf-8")
+    # persons.json 不再需要（数据已迁移到 data/<year_dir>/<name>.yaml）
 
     # manifest for infinite loader: chunks of timeline.jsonl
     CHUNK = 60

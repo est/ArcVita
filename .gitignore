@@ -12,3 +12,5 @@ _tmp/
 .mimocode/.cron-lock
 .mimocode/scheduled_tasks.json
 daizhigev20
+.mimocode/plans/
+site/data/persons.json
