@@ -56,7 +56,21 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
 
     offline_map = enrich_offline(seed_meta)
 
+    # 古籍提取数据：按姓名索引
+    classical_map: dict[str, dict] = {}
+    try:
+        from arcvita.sources.classical import fetch_classical_for_name
+        for qid, meta in seed_meta.items():
+            name = meta.get("name_zh", "")
+            if name:
+                cpatch = fetch_classical_for_name(name)
+                if cpatch:
+                    classical_map[qid] = cpatch
+    except Exception:
+        pass
+
     def _person_from_offline(qid: str, off: dict) -> Person:
+        source_url = f"https://www.wikidata.org/wiki/{qid}" if not qid.startswith("guji-") else f"https://daizhige.org/史藏/正史/史记.html"
         return Person(
             qid=qid,
             name_zh=off.get("name_zh") or seed_meta.get(qid, {}).get("name_zh", qid),
@@ -67,10 +81,12 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
             death_place=off.get("death_place"),
             occupations=off.get("occupations", []),
             era=off.get("era"),
+            archetype=off.get("archetype"),
             summary_zh=off.get("summary_zh"),
             summary_first_person=off.get("summary_first_person"),
             lesson=off.get("lesson"),
-            source_urls=[f"https://www.wikidata.org/wiki/{qid}"],
+            dilemmas=off.get("dilemmas", []),
+            source_urls=[source_url],
         )
 
     with httpx.Client(headers={"User-Agent": USER_AGENT}, timeout=30) as client:
@@ -159,6 +175,24 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
                         p.dilemmas = off["dilemmas"]
                     if off.get("keywords"):
                         p.keywords = off["keywords"]
+                # 古籍提取数据补充（仅补空字段）
+                cp = classical_map.get(p.qid)
+                if cp:
+                    pp = cp.get("person_patch", {})
+                    for k in ("archetype", "dilemmas", "summary_first_person", "lesson"):
+                        if not getattr(p, k, None) and pp.get(k):
+                            setattr(p, k, pp[k])
+                    if not p.birth_date and pp.get("birth_date"):
+                        p.birth_date = pp["birth_date"]
+                    if not p.death_date and pp.get("death_date"):
+                        p.death_date = pp["death_date"]
+                    if not p.birth_place and pp.get("birth_place"):
+                        p.birth_place = pp["birth_place"]
+                    if not p.era and pp.get("era"):
+                        p.era = pp["era"]
+                    for u in cp.get("source_urls", []):
+                        if u and u not in p.source_urls:
+                            p.source_urls.append(u)
                 meta = seed_meta.get(p.qid, {})
                 if meta.get("role"):
                     p.role = meta["role"]
@@ -176,6 +210,31 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
                 for oe in off_eds:
                     if oe.title_zh not in seen_titles:
                         merged_eds.append(oe)
+                # 古籍提取的事业补充
+                if cp and cp.get("endeavors_from_classical"):
+                    for ce_raw in cp["endeavors_from_classical"]:
+                        if ce_raw.get("title_zh") not in seen_titles:
+                            try:
+                                ce = Endeavor(
+                                    id=f"{p.qid}-endeavor-{len(merged_eds)+1}",
+                                    person_qid=p.qid,
+                                    title_zh=ce_raw["title_zh"],
+                                    domain=ce_raw.get("domain"),
+                                    start_date=ce_raw.get("start_date"),
+                                    end_date=ce_raw.get("end_date"),
+                                    places=ce_raw.get("places", []),
+                                    phases=ce_raw.get("phases", []),  # type: ignore
+                                    description_zh=ce_raw.get("description_zh"),
+                                    outcome=ce_raw.get("outcome"),
+                                    lesson=ce_raw.get("lesson"),
+                                    event_ids=[],
+                                    sources=[f"https://daizhige.org/史藏/正史/史记.html"],
+                                    review_status="ai_filled",
+                                )
+                                merged_eds.append(ce)
+                                seen_titles.add(ce.title_zh)
+                            except Exception:
+                                pass
                 for idx, e in enumerate(merged_eds, 1):
                     e.id = f"{p.qid}-endeavor-{idx}"
                 eds = merged_eds
@@ -205,9 +264,33 @@ def run_pipeline(config_path: str = "config.yaml", limit: int | None = None, qid
                 sig = sig_map.get(p.qid, [])
                 pos = pos_map.get(p.qid, [])
                 api_evs = build_events_for_person(p.qid, sig, pos)
-                # merge: offline first, then api dedup by title
+                # merge: offline first, then classical, then api dedup by title
                 seen_titles = {e.title_zh for e in off_evs}
                 evs = list(off_evs)
+                # 古籍提取事件补充
+                if cp and cp.get("events_from_classical"):
+                    for ce_raw in cp["events_from_classical"]:
+                        if ce_raw.get("title_zh") and ce_raw["title_zh"] not in seen_titles:
+                            try:
+                                ce = Event(
+                                    id=f"{p.qid}-event-{len(evs)+1}",
+                                    person_qid=p.qid,
+                                    date=ce_raw.get("date"),
+                                    date_precision="day" if ce_raw.get("date") and len(ce_raw["date"]) > 7 else "year",  # type: ignore
+                                    place_name=ce_raw.get("place_name"),
+                                    event_type=ce_raw.get("event_type", "经历"),
+                                    title_zh=ce_raw["title_zh"],
+                                    description_zh=ce_raw.get("description_zh"),
+                                    is_highlight=ce_raw.get("is_highlight", False),
+                                    highlight_type=ce_raw.get("highlight_type"),
+                                    highlight_note=ce_raw.get("highlight_note"),
+                                    sources=[f"https://daizhige.org/史藏/正史/史记.html"],
+                                    status="ai_filled",
+                                )
+                                evs.append(ce)
+                                seen_titles.add(ce.title_zh)
+                            except Exception:
+                                pass
                 for ae in api_evs:
                     if ae.title_zh not in seen_titles:
                         # re-id sequentially

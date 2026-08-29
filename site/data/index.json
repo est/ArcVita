@@ -1,100 +1,423 @@
 {
-  "centuries": {
-    "ce0100": {
-      "label": "1世纪 CE",
+  "years": {
+    "-0100": {
+      "count": 1,
       "persons": [
-        "Q193533"
+        "凯撒"
       ]
     },
-    "ce0200": {
-      "label": "2世纪 CE",
+    "-0259": {
+      "count": 1,
       "persons": [
-        "Q179544"
+        "秦始皇"
       ]
     },
-    "ce0800": {
-      "label": "8世纪 CE",
+    "-0340": {
+      "count": 1,
       "persons": [
-        "Q7074"
+        "屈原"
       ]
     },
-    "ce1200": {
-      "label": "12世纪 CE",
+    "-0380": {
+      "count": 1,
       "persons": [
-        "Q720"
+        "孙膑"
       ]
     },
-    "ce1400": {
-      "label": "14世纪 CE",
+    "-0390": {
+      "count": 1,
       "persons": [
-        "Q133847"
+        "商鞅"
       ]
     },
-    "ce1500": {
-      "label": "15世纪 CE",
+    "-0410": {
+      "count": 1,
       "persons": [
-        "Q762",
-        "Q316452"
+        "聂政"
       ]
     },
-    "ce1700": {
-      "label": "17世纪 CE",
+    "-0424": {
+      "count": 1,
       "persons": [
-        "Q935"
+        "荆轲"
       ]
     },
-    "ce1800": {
-      "label": "18世纪 CE",
+    "-0440": {
+      "count": 1,
       "persons": [
-        "Q517",
-        "Q334053"
+        "吴起"
       ]
     },
-    "ce1900": {
-      "label": "19世纪 CE",
+    "-0470": {
+      "count": 2,
       "persons": [
-        "Q7186",
-        "Q1001",
-        "Q8016",
-        "Q937",
-        "Q23114",
-        "Q352"
+        "苏格拉底",
+        "豫让"
       ]
     },
-    "ce2000": {
-      "label": "20世纪 CE",
+    "-0520": {
+      "count": 1,
       "persons": [
-        "Q37230",
-        "Q184080",
-        "Q8023",
-        "Q334642",
-        "Q19837"
+        "句践"
       ]
     },
-    "unknown": {
-      "label": "年代不详",
+    "-0537": {
+      "count": 1,
       "persons": [
-        "Q4604",
-        "Q162427",
-        "Q913",
-        "Q1048"
+        "专诸"
+      ]
+    },
+    "-0545": {
+      "count": 1,
+      "persons": [
+        "孙武"
+      ]
+    },
+    "-0551": {
+      "count": 1,
+      "persons": [
+        "孔子"
+      ]
+    },
+    "-0720": {
+      "count": 1,
+      "persons": [
+        "曹沫"
+      ]
+    },
+    "0078": {
+      "count": 1,
+      "persons": [
+        "张衡"
+      ]
+    },
+    "0181": {
+      "count": 1,
+      "persons": [
+        "诸葛亮"
+      ]
+    },
+    "0701": {
+      "count": 1,
+      "persons": [
+        "李白"
+      ]
+    },
+    "1162": {
+      "count": 1,
+      "persons": [
+        "成吉思汗"
+      ]
+    },
+    "1371": {
+      "count": 1,
+      "persons": [
+        "郑和"
+      ]
+    },
+    "1452": {
+      "count": 1,
+      "persons": [
+        "达·芬奇"
+      ]
+    },
+    "1472": {
+      "count": 1,
+      "persons": [
+        "王阳明"
+      ]
+    },
+    "1643": {
+      "count": 1,
+      "persons": [
+        "牛顿"
+      ]
+    },
+    "1769": {
+      "count": 1,
+      "persons": [
+        "拿破仑"
+      ]
+    },
+    "1785": {
+      "count": 1,
+      "persons": [
+        "林则徐"
+      ]
+    },
+    "1867": {
+      "count": 1,
+      "persons": [
+        "居里夫人"
+      ]
+    },
+    "1869": {
+      "count": 1,
+      "persons": [
+        "甘地"
+      ]
+    },
+    "1874": {
+      "count": 1,
+      "persons": [
+        "丘吉尔"
+      ]
+    },
+    "1879": {
+      "count": 1,
+      "persons": [
+        "爱因斯坦"
+      ]
+    },
+    "1881": {
+      "count": 1,
+      "persons": [
+        "鲁迅"
+      ]
+    },
+    "1889": {
+      "count": 1,
+      "persons": [
+        "希特勒"
+      ]
+    },
+    "1904": {
+      "count": 1,
+      "persons": [
+        "邓小平"
+      ]
+    },
+    "1911": {
+      "count": 1,
+      "persons": [
+        "钱学森"
+      ]
+    },
+    "1918": {
+      "count": 1,
+      "persons": [
+        "曼德拉"
+      ]
+    },
+    "1930": {
+      "count": 1,
+      "persons": [
+        "袁隆平"
+      ]
+    },
+    "1955": {
+      "count": 1,
+      "persons": [
+        "乔布斯"
       ]
     }
   },
   "persons": [
+    {
+      "qid": "guji-曹沫",
+      "name_zh": "曹沫",
+      "era": "春秋初期",
+      "archetype": "以勇夺城的义士",
+      "role": "模范",
+      "birth_date": "约-720",
+      "death_date": "不详",
+      "summary_first_person": "吾三战三败，失地千里，天下笑吾为败军之将。然吾知勇者不以一败而丧志。柯之盟上，吾以一匕首劫齐桓公于坛上，使归我汶阳之田。管仲纵有万般计谋，亦不敢赌桓公之命。",
+      "year_dir": "-0720",
+      "events_count": 3,
+      "highlights_count": 1
+    },
+    {
+      "qid": "Q4604",
+      "name_zh": "孔子",
+      "era": "春秋",
+      "archetype": "奠基型",
+      "role": "模范",
+      "birth_date": "-551-09-28",
+      "death_date": "-479-04-11",
+      "summary_first_person": "我周游列国而不得用，归而修诗书——若道不行，便让它在后世行。",
+      "year_dir": "-0551",
+      "events_count": 5,
+      "highlights_count": 0
+    },
+    {
+      "qid": "guji-孙武",
+      "name_zh": "孙武",
+      "era": "春秋末期",
+      "archetype": "以道驭术的兵家宗师",
+      "role": "模范",
+      "birth_date": "约-545",
+      "death_date": "约-470",
+      "summary_first_person": "吾本齐国之后，见齐政日乱，携一卷兵书南奔吴国。阖闾用吾之策，五战五胜，直入郢都。然吴宫之后，世间再无孙武用兵之迹，唯余十三篇兵法，任后人评说。",
+      "year_dir": "-0545",
+      "events_count": 6,
+      "highlights_count": 3
+    },
+    {
+      "qid": "guji-专诸",
+      "name_zh": "专诸",
+      "era": "春秋末期",
+      "archetype": "一击必杀的义士",
+      "role": "模范",
+      "birth_date": "约-537",
+      "death_date": "-515",
+      "summary_first_person": "吾有老母在堂，未敢以身许人。母既终，吾乃无后顾之忧。公子光待吾以国士，吾当以国士报之。鱼藏剑中，一击而中王僚之心，吾虽死无憾。",
+      "year_dir": "-0537",
+      "events_count": 4,
+      "highlights_count": 2
+    },
+    {
+      "qid": "guji-句践",
+      "name_zh": "句践",
+      "era": "春秋末期",
+      "archetype": "卧薪尝胆的复仇之王",
+      "role": "模范",
+      "birth_date": "约-520",
+      "death_date": "-465",
+      "summary_first_person": "吾会稽兵败，为吴王夫差驾车三年，尝粪问疾始得归越。卧薪尝胆二十年，十年生聚十年教训，终灭吴国。吾能忍天下人所不能忍，故能成天下人所不能成。然范蠡知吾，文种不知，终成悲剧。",
+      "year_dir": "-0520",
+      "events_count": 7,
+      "highlights_count": 5
+    },
+    {
+      "qid": "Q913",
+      "name_zh": "苏格拉底",
+      "era": "古希腊",
+      "archetype": "诘问型",
+      "role": "模范",
+      "birth_date": "-470-01-01",
+      "death_date": "-399-01-01",
+      "summary_first_person": "我自知无知——在不断的追问里，人才能靠近真实的自己。",
+      "year_dir": "-0470",
+      "events_count": 3,
+      "highlights_count": 1
+    },
+    {
+      "qid": "guji-豫让",
+      "name_zh": "豫让",
+      "era": "战国初期",
+      "archetype": "士为知己者死的终极诠释",
+      "role": "模范",
+      "birth_date": "约-470",
+      "death_date": "-453",
+      "summary_first_person": "吾事范氏、中行氏，彼以众人遇吾，吾以众人报之。智伯以国士遇吾，吾以国士报之。智伯已死，吾漆身吞炭，虽肝脑涂地亦不悔。'士为知己者死，女为悦己者容'——此吾之志也。",
+      "year_dir": "-0470",
+      "events_count": 5,
+      "highlights_count": 3
+    },
+    {
+      "qid": "guji-吴起",
+      "name_zh": "吴起",
+      "era": "战国初期",
+      "archetype": "以血铸剑的变法名将",
+      "role": "模范",
+      "birth_date": "约-440",
+      "death_date": "-381",
+      "summary_first_person": "吾少时散尽千金以求仕途，母丧不归，曾子绝之。吾杀妻以取信鲁君，世人皆谓吾不仁。然吾在魏守河西二十年，秦人不敢东向；在楚变法诸侯皆惧。死于乱箭之下，方知变法者终难逃一劫。",
+      "year_dir": "-0440",
+      "events_count": 7,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-荆轲",
+      "name_zh": "荆轲",
+      "era": "战国末期",
+      "archetype": "易水悲歌的千古刺客",
+      "role": "模范",
+      "birth_date": "约-424",
+      "death_date": "-227",
+      "summary_first_person": "风萧萧兮易水寒，壮士一去兮不复还。吾知此去必死，然天下苦秦久矣。太子丹以国士待吾，吾当以国士报之。图穷匕见之际，吾距秦王不过数步，然天命不在吾。倚柱而笑，箕踞而骂，吾虽身死，刺秦之志千秋不灭。",
+      "year_dir": "-0424",
+      "events_count": 6,
+      "highlights_count": 3
+    },
+    {
+      "qid": "guji-聂政",
+      "name_zh": "聂政",
+      "era": "战国初期",
+      "archetype": "以身报恩的死士",
+      "role": "模范",
+      "birth_date": "约-410",
+      "death_date": "-397",
+      "summary_first_person": "严仲子不远千里结交于吾，吾母在堂未敢以身相许。母既终，吾遂许之。一人仗剑入韩，上阶刺杀侠累，左右大乱。吾恐连累家人，自毁面目，剖腹而死。吾姊来认吾尸，使吾之名不至湮灭。",
+      "year_dir": "-0410",
+      "events_count": 4,
+      "highlights_count": 2
+    },
+    {
+      "qid": "guji-商鞅",
+      "name_zh": "商鞅",
+      "era": "战国中期",
+      "archetype": "以法治国的铁血改革者",
+      "role": "模范",
+      "birth_date": "约-390",
+      "death_date": "-338",
+      "summary_first_person": "吾三说秦孝公，以帝道、王道、霸道试之，孝公终用霸道。吾废井田、开阡陌、立军功，使秦人勇于公战。然吾终死于自己所立之法——太子犯法，吾刑其师傅；孝公死后，太子即位，吾遂车裂而亡。法在而人亡，此吾之宿命也。",
+      "year_dir": "-0390",
+      "events_count": 7,
+      "highlights_count": 5
+    },
+    {
+      "qid": "guji-孙膑",
+      "name_zh": "孙膑",
+      "era": "战国中期",
+      "archetype": "以弱胜强的军师智者",
+      "role": "模范",
+      "birth_date": "约-380",
+      "death_date": "约-316",
+      "summary_first_person": "吾与庞涓同师鬼谷子，本以为手足之情可期终身。不料其嫉吾之才，诱我至魏而施以膑刑。吾装疯避祸，终得归齐。马陵道上万弩齐发之时，庞涓方知'孙膑在此'四字的分量。",
+      "year_dir": "-0380",
+      "events_count": 6,
+      "highlights_count": 4
+    },
+    {
+      "qid": "guji-屈原",
+      "name_zh": "屈原",
+      "era": "战国中后期",
+      "archetype": "以身殉道的诗人政客",
+      "role": "模范",
+      "birth_date": "约-340",
+      "death_date": "-278",
+      "summary_first_person": "吾以王族之血，怀美政之志，入则与王议国事，出则号令遇宾客。奈何上官大夫妒之，令尹子兰毁之，王终疏吾。吾行吟泽畔，颜色憔悴，渔父问曰'何故至于斯'，吾曰'举世皆浊我独清'。郢都既破，吾遂自沉汨罗。",
+      "year_dir": "-0340",
+      "events_count": 7,
+      "highlights_count": 5
+    },
+    {
+      "qid": "Q162427",
+      "name_zh": "秦始皇",
+      "era": "战国末/秦",
+      "archetype": "统合型",
+      "role": "教训",
+      "birth_date": "-259-02-18",
+      "death_date": "-210-07-10",
+      "summary_first_person": "我以铁与法把六国压成一块版图，却忘了版图需要人心来粘合。",
+      "year_dir": "-0259",
+      "events_count": 5,
+      "highlights_count": 0
+    },
+    {
+      "qid": "Q1048",
+      "name_zh": "凯撒",
+      "era": "古罗马",
+      "archetype": "决断型",
+      "role": "中性",
+      "birth_date": "-100-07-12",
+      "death_date": "-44-03-15",
+      "summary_first_person": "我跨过卢比孔河时知道已无退路——骰子已经掷下。",
+      "year_dir": "-0100",
+      "events_count": 4,
+      "highlights_count": 1
+    },
     {
       "qid": "Q193533",
       "name_zh": "张衡",
       "era": "东汉",
       "archetype": "格物型",
       "role": "模范",
-      "dilemmas": [
-        "技术瓶颈"
-      ],
       "birth_date": "78-01-01",
       "death_date": "139-01-01",
       "summary_first_person": "我在简陋的铜壶里听见大地的颤动，想用器物让天人可测。",
-      "century": "ce0100",
+      "year_dir": "0078",
       "events_count": 3,
       "highlights_count": 1
     },
@@ -104,15 +427,10 @@
       "era": "三国",
       "archetype": "统筹型",
       "role": "模范",
-      "dilemmas": [
-        "从零开始",
-        "被误解",
-        "至暗时刻"
-      ],
       "birth_date": "181-01-01",
       "death_date": "234-10-08",
       "summary_first_person": "我知天时不在蜀，却仍以人事尽天命——鞠躬尽瘁，死而后已。",
-      "century": "ce0200",
+      "year_dir": "0181",
       "events_count": 6,
       "highlights_count": 4
     },
@@ -122,14 +440,10 @@
       "era": "唐",
       "archetype": "表现型",
       "role": "模范",
-      "dilemmas": [
-        "怀才不遇",
-        "被流放"
-      ],
       "birth_date": "701-01-01",
       "death_date": "762-01-01",
       "summary_first_person": "我欲乘风归去，又在人间把酒——诗是我对无常的回击。",
-      "century": "ce0800",
+      "year_dir": "0701",
       "events_count": 5,
       "highlights_count": 2
     },
@@ -139,14 +453,10 @@
       "era": "蒙古帝国",
       "archetype": "组织型",
       "role": "中性",
-      "dilemmas": [
-        "从零开始",
-        "过度扩张"
-      ],
       "birth_date": "1162-01-01",
       "death_date": "1227-08-18",
       "summary_first_person": "我从被逐的少年到万户之主，靠的是让分散的力量拧成一股。",
-      "century": "ce1200",
+      "year_dir": "1162",
       "events_count": 3,
       "highlights_count": 0
     },
@@ -156,13 +466,10 @@
       "era": "明",
       "archetype": "开拓型",
       "role": "模范",
-      "dilemmas": [
-        "从零开始"
-      ],
       "birth_date": "1371-01-01",
       "death_date": "1433-01-01",
       "summary_first_person": "我以船为笔，在无边的海上写下朝贡与贸易的两行字。",
-      "century": "ce1400",
+      "year_dir": "1371",
       "events_count": 3,
       "highlights_count": 1
     },
@@ -172,13 +479,10 @@
       "era": "文艺复兴",
       "archetype": "通才型",
       "role": "模范",
-      "dilemmas": [
-        "怀才不遇"
-      ],
       "birth_date": "1452-04-15",
       "death_date": "1519-05-02",
       "summary_first_person": "我在画布与解剖台之间往返——想画得像，先要看得真。",
-      "century": "ce1500",
+      "year_dir": "1452",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -188,15 +492,10 @@
       "era": "明",
       "archetype": "知行型",
       "role": "模范",
-      "dilemmas": [
-        "被贬",
-        "被流放",
-        "转型阵痛"
-      ],
       "birth_date": "1472-10-31",
       "death_date": "1529-01-09",
       "summary_first_person": "我在龙场的瘴气里悟到：心外无物，破山中贼易，破心中贼难。",
-      "century": "ce1500",
+      "year_dir": "1472",
       "events_count": 5,
       "highlights_count": 3
     },
@@ -206,14 +505,10 @@
       "era": "17世纪",
       "archetype": "体系型",
       "role": "模范",
-      "dilemmas": [
-        "技术瓶颈",
-        "被误解"
-      ],
       "birth_date": "1643-01-04",
       "death_date": "1727-03-31",
       "summary_first_person": "我站在巨人的肩上——把零散的直觉压成可计算的定律。",
-      "century": "ce1700",
+      "year_dir": "1643",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -223,14 +518,10 @@
       "era": "19世纪初",
       "archetype": "扩张型",
       "role": "教训",
-      "dilemmas": [
-        "过度扩张",
-        "众叛亲离"
-      ],
       "birth_date": "1769-08-15",
       "death_date": "1821-05-05",
       "summary_first_person": "我在意大利的急行军里学会用意志改写地图，却在俄国的寒冬里学会敬畏边界。",
-      "century": "ce1800",
+      "year_dir": "1769",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -240,14 +531,10 @@
       "era": "清",
       "archetype": "担当型",
       "role": "模范",
-      "dilemmas": [
-        "被贬",
-        "被误解"
-      ],
       "birth_date": "1785-08-30",
       "death_date": "1850-11-22",
       "summary_first_person": "我在虎门点起的那把火，烧的是鸦片，也是国人的沉睡。",
-      "century": "ce1800",
+      "year_dir": "1785",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -257,14 +544,10 @@
       "era": "19-20世纪",
       "archetype": "专精型",
       "role": "模范",
-      "dilemmas": [
-        "技术瓶颈",
-        "被误解"
-      ],
       "birth_date": "1867-11-07",
       "death_date": "1934-07-04",
       "summary_first_person": "我在漏风的棚屋里提炼镭——微光虽弱，却足以照见一个新世界。",
-      "century": "ce1900",
+      "year_dir": "1867",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -274,13 +557,10 @@
       "era": "20世纪",
       "archetype": "感召型",
       "role": "模范",
-      "dilemmas": [
-        "至暗时刻"
-      ],
       "birth_date": "1869-10-02",
       "death_date": "1948-01-30",
       "summary_first_person": "我以纺车与绝食对抗帝国——柔软的坚持比坚硬的对抗更难被摧毁。",
-      "century": "ce1900",
+      "year_dir": "1869",
       "events_count": 4,
       "highlights_count": 1
     },
@@ -290,14 +570,10 @@
       "era": "20世纪",
       "archetype": "领导型",
       "role": "模范",
-      "dilemmas": [
-        "至暗时刻",
-        "被误解"
-      ],
       "birth_date": "1874-11-30",
       "death_date": "1965-01-24",
       "summary_first_person": "我在伦敦的废墟里对议会说：我们将在海滩上战斗——语言成了武器。",
-      "century": "ce1900",
+      "year_dir": "1874",
       "events_count": 3,
       "highlights_count": 1
     },
@@ -307,15 +583,10 @@
       "era": "20世纪",
       "archetype": "思想型",
       "role": "模范",
-      "dilemmas": [
-        "被误解",
-        "被流放",
-        "技术瓶颈"
-      ],
       "birth_date": "1879-03-14",
       "death_date": "1955-04-18",
       "summary_first_person": "我在专利局的桌前追光——想让时间与空间从背景变成主角。",
-      "century": "ce1900",
+      "year_dir": "1879",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -325,14 +596,10 @@
       "era": "民国",
       "archetype": "批判型",
       "role": "模范",
-      "dilemmas": [
-        "被误解",
-        "转型阵痛"
-      ],
       "birth_date": "1881-09-25",
       "death_date": "1936-10-19",
       "summary_first_person": "我在铁屋子里呐喊，明知未必能醒，也不能沉默。",
-      "century": "ce1900",
+      "year_dir": "1881",
       "events_count": 5,
       "highlights_count": 2
     },
@@ -342,14 +609,10 @@
       "era": "20世纪",
       "archetype": "动员型",
       "role": "教训",
-      "dilemmas": [
-        "众叛亲离",
-        "过度扩张"
-      ],
       "birth_date": "1889-04-20",
       "death_date": "1945-04-30",
       "summary_first_person": "（教训人物，不作第一视角美化）以仇恨与谎言动员的权力，终将以毁灭自证其错。",
-      "century": "ce1900",
+      "year_dir": "1889",
       "events_count": 5,
       "highlights_count": 0
     },
@@ -359,15 +622,10 @@
       "era": "现代",
       "archetype": "转型型",
       "role": "模范",
-      "dilemmas": [
-        "被贬",
-        "转型阵痛",
-        "至暗时刻"
-      ],
       "birth_date": "1904-08-22",
       "death_date": "1997-02-19",
       "summary_first_person": "我三次跌倒，三次爬起——不争论，先让一部分人试试看。",
-      "century": "ce2000",
+      "year_dir": "1904",
       "events_count": 5,
       "highlights_count": 3
     },
@@ -377,15 +635,10 @@
       "era": "现代",
       "archetype": "攻关型",
       "role": "模范",
-      "dilemmas": [
-        "被流放",
-        "从零开始",
-        "技术瓶颈"
-      ],
       "birth_date": "1911-12-11",
       "death_date": "2009-10-31",
       "summary_first_person": "我在异国的实验室里计算归期——科学无国界，但科学家有祖国。",
-      "century": "ce2000",
+      "year_dir": "1911",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -395,14 +648,10 @@
       "era": "20世纪",
       "archetype": "和解型",
       "role": "模范",
-      "dilemmas": [
-        "被流放",
-        "至暗时刻"
-      ],
       "birth_date": "1918-07-18",
       "death_date": "2013-12-05",
       "summary_first_person": "我在罗本岛的石场里学会：仇恨是自己的囚笼，和解才是自由。",
-      "century": "ce2000",
+      "year_dir": "1918",
       "events_count": 4,
       "highlights_count": 2
     },
@@ -412,14 +661,10 @@
       "era": "现代",
       "archetype": "深耕型",
       "role": "模范",
-      "dilemmas": [
-        "技术瓶颈",
-        "从零开始"
-      ],
       "birth_date": "1930-09-07",
       "death_date": "2021-05-22",
       "summary_first_person": "我愿做一粒种子，在田垄间寻找让更多人吃饱的答案。",
-      "century": "ce2000",
+      "year_dir": "1930",
       "events_count": 4,
       "highlights_count": 1
     },
@@ -429,84 +674,12 @@
       "era": "当代",
       "archetype": "产品型",
       "role": "模范",
-      "dilemmas": [
-        "被流放",
-        "从零开始",
-        "转型阵痛"
-      ],
       "birth_date": "1955-02-24",
       "death_date": "2011-10-05",
       "summary_first_person": "我被自己创立的公司赶走，却在荒野里找回了对产品的直觉。",
-      "century": "ce2000",
+      "year_dir": "1955",
       "events_count": 5,
       "highlights_count": 3
-    },
-    {
-      "qid": "Q4604",
-      "name_zh": "孔子",
-      "era": "春秋",
-      "archetype": "奠基型",
-      "role": "模范",
-      "dilemmas": [
-        "怀才不遇",
-        "被误解"
-      ],
-      "birth_date": "-551-09-28",
-      "death_date": "-479-04-11",
-      "summary_first_person": "我周游列国而不得用，归而修诗书——若道不行，便让它在后世行。",
-      "century": "unknown",
-      "events_count": 5,
-      "highlights_count": 0
-    },
-    {
-      "qid": "Q162427",
-      "name_zh": "秦始皇",
-      "era": "战国末/秦",
-      "archetype": "统合型",
-      "role": "教训",
-      "dilemmas": [
-        "过度扩张"
-      ],
-      "birth_date": "-259-02-18",
-      "death_date": "-210-07-10",
-      "summary_first_person": "我以铁与法把六国压成一块版图，却忘了版图需要人心来粘合。",
-      "century": "unknown",
-      "events_count": 5,
-      "highlights_count": 0
-    },
-    {
-      "qid": "Q913",
-      "name_zh": "苏格拉底",
-      "era": "古希腊",
-      "archetype": "诘问型",
-      "role": "模范",
-      "dilemmas": [
-        "被误解"
-      ],
-      "birth_date": "-470-01-01",
-      "death_date": "-399-01-01",
-      "summary_first_person": "我自知无知——在不断的追问里，人才能靠近真实的自己。",
-      "century": "unknown",
-      "events_count": 3,
-      "highlights_count": 1
-    },
-    {
-      "qid": "Q1048",
-      "name_zh": "凯撒",
-      "era": "古罗马",
-      "archetype": "决断型",
-      "role": "中性",
-      "dilemmas": [
-        "众叛亲离"
-      ],
-      "birth_date": "-100-07-12",
-      "death_date": "-44-03-15",
-      "summary_first_person": "我跨过卢比孔河时知道已无退路——骰子已经掷下。",
-      "century": "unknown",
-      "events_count": 4,
-      "highlights_count": 1
     }
-  ],
-  "highlights_count": 40,
-  "events_count": 105
+  ]
 }

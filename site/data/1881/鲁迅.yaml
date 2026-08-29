@@ -1,0 +1,194 @@
+qid: Q23114
+name_zh: 鲁迅
+name_en: Lu Xun
+era: 民国
+archetype: 批判型
+role: 模范
+dilemmas:
+- 被误解
+- 转型阵痛
+birth_date: '1881-09-25'
+death_date: '1936-10-19'
+birth_place: 绍兴
+summary_zh: 现代文学奠基人，以笔为刀，解剖国民性；弃医从文，欲医人心。
+summary_first_person: 我在铁屋子里呐喊，明知未必能醒，也不能沉默。
+lesson: 在沉默的时代，说真话本身就是行动。
+events:
+- id: Q23114-event-1
+  person_qid: Q23114
+  endeavor_id: null
+  date: '1881-09-25'
+  date_precision: day
+  place_name: 绍兴
+  place_qid: null
+  place_coord: null
+  event_type: 出生
+  title_zh: 出生
+  description_zh: 生于绍兴
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+  status: ai_filled
+  needs_review_reason: null
+- id: Q23114-event-2
+  person_qid: Q23114
+  endeavor_id: Q23114-endeavor-1
+  date: '1906'
+  date_precision: year
+  place_name: 东京
+  place_qid: null
+  place_coord: null
+  event_type: 抉择
+  title_zh: 弃医从文
+  description_zh: 在仙台弃医从文
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+  status: ai_filled
+  needs_review_reason: null
+- id: Q23114-event-3
+  person_qid: Q23114
+  endeavor_id: Q23114-endeavor-1
+  date: '1918-04-15'
+  date_precision: day
+  place_name: 北京
+  place_qid: null
+  place_coord: null
+  event_type: 创作
+  title_zh: 《狂人日记》发表
+  description_zh: 首篇白话小说
+  first_person_quote: null
+  is_highlight: true
+  highlight_type: 代表作
+  highlight_note: 代表作公布：1918-05-15《新青年》
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+  status: ai_filled
+  needs_review_reason: null
+- id: Q23114-event-4
+  person_qid: Q23114
+  endeavor_id: null
+  date: '1926'
+  date_precision: year
+  place_name: 北京
+  place_qid: null
+  place_coord: null
+  event_type: 创作
+  title_zh: 《朝花夕拾》
+  description_zh: 散文集
+  first_person_quote: null
+  is_highlight: true
+  highlight_type: 代表作
+  highlight_note: 代表作
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+  status: ai_filled
+  needs_review_reason: null
+- id: Q23114-event-5
+  person_qid: Q23114
+  endeavor_id: Q23114-endeavor-2
+  date: '1936-10-19'
+  date_precision: day
+  place_name: 上海
+  place_qid: null
+  place_coord: null
+  event_type: 逝世
+  title_zh: 逝世
+  description_zh: 卒于上海
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+  status: ai_filled
+  needs_review_reason: null
+endeavors:
+- id: Q23114-endeavor-1
+  person_qid: Q23114
+  title_zh: 弃医从文与呐喊
+  domain: 文化
+  start_date: '1906'
+  end_date: '1925'
+  start_precision: null
+  end_precision: null
+  places:
+  - 东京
+  - 绍兴
+  - 北京
+  place_qids: []
+  status: 完成
+  description_zh: 我在仙台学医时看见国人的麻木，转而以笔为刀；在北京的铁屋子里，我选择呐喊。
+  outcome: 《狂人日记》《呐喊》奠定现代文学
+  lesson: 说真话需要勇气，不说则无人会说。
+  phases:
+  - name: 抉择
+    start_date: '1906'
+    end_date: '1906'
+    place: 东京
+    description_zh: null
+    highlight: 弃医从文 — 人生转折名场面
+  - name: 呐喊
+    start_date: '1918'
+    end_date: '1923'
+    place: 北京
+    description_zh: null
+    highlight: 《狂人日记》1918 — 代表作
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - Q23114-event-2
+  - Q23114-event-3
+  highlight_event_ids: []
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+  review_status: ai_filled
+- id: Q23114-endeavor-2
+  person_qid: Q23114
+  title_zh: 左联与晚年论战
+  domain: 文化
+  start_date: '1930'
+  end_date: '1936'
+  start_precision: null
+  end_precision: null
+  places:
+  - 上海
+  place_qids: []
+  status: 完成
+  description_zh: 在上海的论战与苦闷中，我以杂文回应时代的每一次颤动，直至燃尽。
+  outcome: 杂文成为时代镜子
+  lesson: 在高压下保持独立的表达，是知识分子的本分。
+  phases: []
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - Q23114-event-5
+  highlight_event_ids: []
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+  review_status: ai_filled
+highlights:
+- person_qid: Q23114
+  date: '1918-04-15'
+  place_name: 北京
+  highlight_type: 代表作
+  title_zh: 《狂人日记》发表
+  highlight_note: 代表作公布：1918-05-15《新青年》
+  endeavor_id: Q23114-endeavor-1
+  sources:
+  - https://www.wikidata.org/wiki/Q23114
+- person_qid: Q23114
+  date: '1926'
+  place_name: 北京
+  highlight_type: 代表作
+  title_zh: 《朝花夕拾》
+  highlight_note: 代表作
+  endeavor_id: null
+  sources:
+  - https://www.wikidata.org/wiki/Q23114

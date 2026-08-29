@@ -81,6 +81,10 @@ def main():
             "role": p.get("role"),
             "dilemmas": p.get("dilemmas", []),
             "summary_zh": p.get("summary_zh"),
+            "summary_first_person": p.get("summary_first_person"),
+            "birth_date": p.get("birth_date"),
+            "death_date": p.get("death_date"),
+            "lesson": p.get("lesson"),
         }
         for p in persons
     ]

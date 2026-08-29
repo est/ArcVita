@@ -1,0 +1,43 @@
+person:
+  name_zh: "曹沫"
+  name_en: "Cao Mo"
+  birth_date: "约-720"
+  death_date: "不详"
+  birth_place: "鲁国"
+  era: "春秋初期"
+  archetype: "以勇夺城的义士"
+  dilemmas: ["败军之将的雪耻之志", "劫持盟主的生死豪赌"]
+  summary_zh: "鲁国将军，三战三败于齐。齐鲁会盟之际，以匕首劫持齐桓公，逼其归还所侵鲁地。桓公虽怒但不能不从。曹沫用三败之耻换回了鲁国失地。"
+  summary_first_person: "吾三战三败，失地千里，天下笑吾为败军之将。然吾知勇者不以一败而丧志。柯之盟上，吾以一匕首劫齐桓公于坛上，使归我汶阳之田。管仲纵有万般计谋，亦不敢赌桓公之命。"
+  lesson: "有时候最简单的手段能解决最复杂的问题——一把匕首胜过百万兵。"
+
+endeavors:
+  - title_zh: "柯之盟劫持齐桓公，夺回失地"
+    domain: "军事外交"
+    start_date: "-681"
+    end_date: "-681"
+    places: ["鲁国柯邑"]
+    phases:
+      - name: "策划劫持"
+        start_date: "-681"
+        end_date: "-681"
+        place: "鲁国柯邑"
+        highlight: "暗藏匕首赴会"
+      - name: "坛上劫盟"
+        start_date: "-681"
+        end_date: "-681"
+        place: "鲁国柯邑"
+        highlight: "匕首抵喉，逼还失地"
+    description_zh: "曹沫为鲁将，三战三败，失地于齐。鲁庄公与齐桓公会盟于柯邑，曹沫趁执匕首上前劫持桓公，逼其归还所侵鲁地。桓公被迫应允。盟毕，桓公欲反悔，管仲劝曰'弃信于小国不如守信以彰大国之德'，桓公遂归还汶阳之田。"
+    outcome: "齐国归还汶阳之田，鲁国雪耻"
+    lesson: "以命相搏的勇气可以改变实力的天平"
+
+events:
+  - date: "-681"
+    place_name: "鲁国柯邑"
+    event_type: "决策"
+    title_zh: "柯之盟——匕首劫齐桓公"
+    description_zh: "曹沫趁齐鲁会盟之际，以匕首劫持齐桓公于坛上，逼其归还鲁国失地。桓公惊惧之下被迫应允。事后管仲劝桓公守信，齐国遂归还汶阳之田。"
+    is_highlight: true
+    highlight_type: "决策"
+    highlight_note: "以一己之勇改变国运——春秋义士的极致"

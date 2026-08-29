@@ -1,0 +1,102 @@
+qid: Q720
+name_zh: 成吉思汗
+name_en: Genghis Khan
+era: 蒙古帝国
+archetype: 组织型
+role: 中性
+dilemmas:
+- 从零开始
+- 过度扩张
+birth_date: '1162-01-01'
+death_date: '1227-08-18'
+birth_place: 斡难河
+summary_zh: 蒙古帝国奠基者，以骑射与组织力统一草原，西征欧亚。
+summary_first_person: 我从被逐的少年到万户之主，靠的是让分散的力量拧成一股。
+lesson: 把乌合之众组织起来，比单打独斗走得更远。
+events:
+- id: Q720-event-1
+  person_qid: Q720
+  endeavor_id: null
+  date: '1162-01-01'
+  date_precision: day
+  place_name: 斡难河
+  place_qid: null
+  place_coord: null
+  event_type: 出生
+  title_zh: 出生
+  description_zh: 生于斡难河畔
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q720
+  status: ai_filled
+  needs_review_reason: null
+- id: Q720-event-2
+  person_qid: Q720
+  endeavor_id: Q720-endeavor-1
+  date: '1206'
+  date_precision: year
+  place_name: 斡难河
+  place_qid: null
+  place_coord: null
+  event_type: 建制
+  title_zh: 被推为成吉思汗
+  description_zh: 统一蒙古诸部
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q720
+  status: ai_filled
+  needs_review_reason: null
+- id: Q720-event-3
+  person_qid: Q720
+  endeavor_id: Q720-endeavor-1
+  date: '1227-08-18'
+  date_precision: day
+  place_name: 六盘山
+  place_qid: null
+  place_coord: null
+  event_type: 逝世
+  title_zh: 逝世
+  description_zh: 西征途中卒于六盘山
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q720
+  status: ai_filled
+  needs_review_reason: null
+endeavors:
+- id: Q720-endeavor-1
+  person_qid: Q720
+  title_zh: 统一蒙古与西征
+  domain: 军事/政治
+  start_date: '1206'
+  end_date: '1227'
+  start_precision: null
+  end_precision: null
+  places:
+  - 斡难河
+  - 撒马尔罕
+  - 欧亚草原
+  place_qids: []
+  status: 完成
+  description_zh: 我把分散的部落拧成一股，以十进位与驿站把草原组织成可远征的机器，西征的马蹄踏至欧亚腹地。
+  outcome: 蒙古帝国建立，欧亚交通打通
+  lesson: 组织力比个人勇武更能改变版图。
+  phases: []
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - Q720-event-2
+  - Q720-event-3
+  highlight_event_ids: []
+  sources:
+  - https://www.wikidata.org/wiki/Q720
+  review_status: ai_filled
+highlights: []

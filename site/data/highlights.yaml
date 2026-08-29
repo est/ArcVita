@@ -1,3 +1,201 @@
+- person_qid: guji-荆轲
+  date: '-227'
+  place_name: 燕国易水
+  highlight_type: 名言
+  title_zh: 易水送别——风萧萧兮易水寒
+  highlight_note: 千古第一送别——悲壮之极致
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-荆轲
+  date: '-227'
+  place_name: 秦国咸阳殿
+  highlight_type: 战役
+  title_zh: 图穷匕见——刺秦失败
+  highlight_note: 图穷匕见——中国历史上最著名的一击
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-荆轲
+  date: '-228'
+  place_name: 燕国
+  highlight_type: 决策
+  title_zh: 樊於期献首级
+  highlight_note: 两颗头颅的重量——刺秦计划的血腥筹码
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-屈原
+  date: '-278'
+  place_name: 楚国汨罗江
+  highlight_type: 至暗时刻
+  title_zh: 闻郢都陷落，自沉汨罗
+  highlight_note: 以身殉国——中国文人精神的最高坐标
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-屈原
+  date: '-296'
+  place_name: 楚国江南
+  highlight_type: 名言
+  title_zh: 渔父问答——举世皆浊我独清
+  highlight_note: 举世皆浊我独清——千古文人的精神宣言
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-屈原
+  date: '-299'
+  place_name: 楚国郢都
+  highlight_type: 决策
+  title_zh: 苦谏怀王勿赴武关之会
+  highlight_note: 先知者的悲哀——忠言永远逆耳
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-屈原
+  date: '-313'
+  place_name: 楚国郢都
+  highlight_type: 至暗时刻
+  title_zh: 上官大夫进谗，屈原见疏
+  highlight_note: 忠而被谤——千古忠臣的共同命运
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-屈原
+  date: '-313'
+  place_name: 楚国汉北
+  highlight_type: 代表作
+  title_zh: 作《离骚》
+  highlight_note: 《离骚》——中国浪漫主义文学的源头
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-商鞅
+  date: '-338'
+  place_name: 秦国函谷关
+  highlight_type: 成语
+  title_zh: 作法自毙
+  highlight_note: 作法自毙——最讽刺的历史因果
+  endeavor_id: guji-商鞅-endeavor-4
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-商鞅
+  date: '-340'
+  place_name: 魏国
+  highlight_type: 决策
+  title_zh: 大破魏军，俘公子卬
+  highlight_note: 以诈术取胜——功业与道德的永恒冲突
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-孙膑
+  date: '-341'
+  place_name: 马陵道
+  highlight_type: 战役
+  title_zh: 马陵之战——减灶诱敌
+  highlight_note: 减灶之计——兵者诡道的极致演绎
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-商鞅
+  date: '-350'
+  place_name: 秦国咸阳
+  highlight_type: 决策
+  title_zh: 废井田开阡陌
+  highlight_note: 中国历史上最深刻的土地制度改革之一
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-孙膑
+  date: '-353'
+  place_name: 齐国临淄
+  highlight_type: 决策
+  title_zh: 田忌赛马
+  highlight_note: 以劣胜优的经典博弈思维
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-孙膑
+  date: '-354'
+  place_name: 魏国桂陵
+  highlight_type: 成语
+  title_zh: 桂陵之战——围魏救赵
+  highlight_note: 围魏救赵成为后世兵法经典战术代名词
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-孙膑
+  date: '-355'
+  place_name: 魏国
+  highlight_type: 至暗时刻
+  title_zh: 庞涓膑刑
+  highlight_note: 膑刑——孙膑之名由此而来，从至暗到巅峰
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-商鞅
+  date: '-356'
+  place_name: 秦国南门
+  highlight_type: 成语
+  title_zh: 徙木立信
+  highlight_note: 徙木立信——变法从建立公信力开始
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-商鞅
+  date: '-356'
+  place_name: 秦国
+  highlight_type: 决策
+  title_zh: 太子犯法，刑其师傅
+  highlight_note: 执法的勇气与代价并存
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-吴起
+  date: '-381'
+  place_name: 楚国郢都
+  highlight_type: 至暗时刻
+  title_zh: 死于悼王尸旁
+  highlight_note: 吴起临死之际仍以智谋让仇敌付出代价——死而不已
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-吴起
+  date: '-383'
+  place_name: 楚国
+  highlight_type: 决策
+  title_zh: 废除封君世禄
+  highlight_note: 战国变法者的宿命——变法愈彻底，反噬愈猛烈
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-吴起
+  date: '-387'
+  place_name: 楚国
+  highlight_type: 战役
+  title_zh: 南平百越，北并陈蔡
+  highlight_note: 楚国最强盛时期的军事版图
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-聂政
+  date: '-397'
+  place_name: 韩国相府
+  highlight_type: 战役
+  title_zh: 独身仗剑刺韩相
+  highlight_note: 独身入相府——勇气与武艺的极致展示
+  endeavor_id: guji-聂政-endeavor-1
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-聂政
+  date: '-397'
+  place_name: 韩国
+  highlight_type: 至暗时刻
+  title_zh: 自毁面目，以护家人
+  highlight_note: 自毁面容——刺客的最后温柔
+  endeavor_id: guji-聂政-endeavor-1
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
 - person_qid: Q913
   date: -399-05-07
   place_name: 雅典
@@ -7,6 +205,60 @@
   endeavor_id: null
   sources:
   - https://www.wikidata.org/wiki/Q913
+- person_qid: guji-吴起
+  date: '-412'
+  place_name: 鲁国曲阜
+  highlight_type: 决策
+  title_zh: 杀妻求将
+  highlight_note: 以至亲之血换取功名之路——冷血与壮志的交锋
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-豫让
+  date: '-453'
+  place_name: 赵襄子宫中
+  highlight_type: 决策
+  title_zh: 伏厕行刺，赵襄子义释
+  highlight_note: 义士与义主——乱世中的双向成全
+  endeavor_id: guji-豫让-endeavor-1
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-豫让
+  date: '-453'
+  place_name: 晋国桥上
+  highlight_type: 战役
+  title_zh: 击衣殉义
+  highlight_note: 击衣三跃——刺客精神的最高境界
+  endeavor_id: guji-豫让-endeavor-1
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-豫让
+  date: '-453'
+  place_name: 晋国
+  highlight_type: 至暗时刻
+  title_zh: 漆身吞炭
+  highlight_note: 以自残之躯行义士之志——对'忠'的极端诠释
+  endeavor_id: guji-豫让-endeavor-1
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-句践
+  date: '-473'
+  place_name: 吴国姑苏
+  highlight_type: 战役
+  title_zh: 越灭吴——夫差自刎
+  highlight_note: 二十年卧薪尝胆的终极兑现
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-句践
+  date: '-482'
+  place_name: 吴国姑苏
+  highlight_type: 战役
+  title_zh: 姑苏之袭——趁虚灭吴
+  highlight_note: 十年磨一剑的第一次亮剑
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
 - person_qid: Q1048
   date: -49-01-10
   place_name: 卢比孔河
@@ -16,6 +268,78 @@
   endeavor_id: null
   sources:
   - https://www.wikidata.org/wiki/Q1048
+- person_qid: guji-句践
+  date: '-493'
+  place_name: 吴国姑苏
+  highlight_type: 决策
+  title_zh: 尝粪问疾
+  highlight_note: 忍辱的极限——帝王尊严的彻底碾碎
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-句践
+  date: '-494'
+  place_name: 越国会稽
+  highlight_type: 至暗时刻
+  title_zh: 会稽之耻
+  highlight_note: 会稽之耻——卧薪尝胆的起点
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-孙武
+  date: '-504'
+  place_name: 中原
+  highlight_type: 决策
+  title_zh: 吴国北威齐晋
+  highlight_note: 功成身退——孙武最深的智慧
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-孙武
+  date: '-506'
+  place_name: 楚国柏举
+  highlight_type: 战役
+  title_zh: 柏举之战五战入郢
+  highlight_note: 春秋时期规模最大的远征战，三万破二十万
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-孙武
+  date: '-512'
+  place_name: 姑苏吴宫
+  highlight_type: 成语
+  title_zh: 吴宫教战斩二姬
+  highlight_note: 三令五申之典由此而来，奠定了孙武治军严明的形象
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-专诸
+  date: '-515'
+  place_name: 吴国公子光府
+  highlight_type: 战役
+  title_zh: 鱼肠剑刺杀吴王僚
+  highlight_note: 鱼肠剑——四大刺客之一的成名一击
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-专诸
+  date: '-515'
+  place_name: 吴国
+  highlight_type: 名言
+  title_zh: 母终而后许身
+  highlight_note: 母终许身——义士的柔软与刚烈
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-曹沫
+  date: '-681'
+  place_name: 鲁国柯邑
+  highlight_type: 决策
+  title_zh: 柯之盟——匕首劫齐桓公
+  highlight_note: 以一己之勇改变国运——春秋义士的极致
+  endeavor_id: guji-曹沫-endeavor-1
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
 - person_qid: Q193533
   date: '132'
   place_name: 洛阳
@@ -358,3 +682,21 @@
   endeavor_id: Q7074-endeavor-2
   sources:
   - https://www.wikidata.org/wiki/Q7074
+- person_qid: guji-吴起
+  date: 约-400
+  place_name: 魏国河西
+  highlight_type: 名言
+  title_zh: 与士卒同甘共苦
+  highlight_note: 吮疽之典——爱兵如子的极致，也是对战争残酷的深刻注解
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+- person_qid: guji-句践
+  date: 约-473
+  place_name: 越国
+  highlight_type: 至暗时刻
+  title_zh: 赐文种死
+  highlight_note: 功臣的结局——帝王心术的冷酷注脚
+  endeavor_id: null
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html

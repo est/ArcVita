@@ -1,82 +1,111 @@
-# 首批 24 人（国内外各半），做事流导向
-# qid 为 Wikidata QID；若缺则按 name_zh 用 wbsearchentities 解析
-# role: 模范/教训/中性；sensitivity: none/sensitive；visibility: public/restricted
 persons:
-  - name_zh: 孔子
-    qid: Q4604
-    role: 模范
-  - name_zh: 秦始皇
-    qid: Q162427
-    role: 教训
-  - name_zh: 诸葛亮
-    qid: Q179544
-    role: 模范
-  - name_zh: 李白
-    qid: Q7074
-    role: 模范
-  - name_zh: 王阳明
-    qid: Q316452
-    role: 模范
-  - name_zh: 张衡
-    qid: Q193533
-    role: 模范
-  - name_zh: 郑和
-    qid: Q133847
-    role: 模范
-  - name_zh: 林则徐
-    qid: Q334053
-    role: 模范
-  - name_zh: 鲁迅
-    qid: Q23114
-    role: 模范
-  - name_zh: 钱学森
-    qid: Q184080
-    role: 模范
-  - name_zh: 邓小平
-    qid: Q37230
-    role: 模范
-  - name_zh: 袁隆平
-    qid: Q334642
-    role: 模范
-  - name_zh: 苏格拉底
-    qid: Q913
-    role: 模范
-  - name_zh: 凯撒
-    qid: Q1048
-    role: 中性
-  - name_zh: 成吉思汗
-    qid: Q720
-    role: 中性
-  - name_zh: 达·芬奇
-    qid: Q762
-    role: 模范
-  - name_zh: 牛顿
-    qid: Q935
-    role: 模范
-  - name_zh: 拿破仑
-    qid: Q517
-    role: 教训
-  - name_zh: 居里夫人
-    qid: Q7186
-    role: 模范
-  - name_zh: 爱因斯坦
-    qid: Q937
-    role: 模范
-  - name_zh: 甘地
-    qid: Q1001
-    role: 模范
-  - name_zh: 丘吉尔
-    qid: Q8016
-    role: 模范
-  - name_zh: 曼德拉
-    qid: Q8023
-    role: 模范
-  - name_zh: 乔布斯
-    qid: Q19837
-    role: 模范
-  # 敏感示例：落盘保留，visibility=restricted 特定访客不展示
-  - name_zh: 希特勒
-    qid: Q352
-    role: 教训
-    sensitivity: sensitive
-    visibility: restricted
+- name_zh: 孔子
+  qid: Q4604
+  role: 模范
+- name_zh: 秦始皇
+  qid: Q162427
+  role: 教训
+- name_zh: 诸葛亮
+  qid: Q179544
+  role: 模范
+- name_zh: 李白
+  qid: Q7074
+  role: 模范
+- name_zh: 王阳明
+  qid: Q316452
+  role: 模范
+- name_zh: 张衡
+  qid: Q193533
+  role: 模范
+- name_zh: 郑和
+  qid: Q133847
+  role: 模范
+- name_zh: 林则徐
+  qid: Q334053
+  role: 模范
+- name_zh: 鲁迅
+  qid: Q23114
+  role: 模范
+- name_zh: 钱学森
+  qid: Q184080
+  role: 模范
+- name_zh: 邓小平
+  qid: Q37230
+  role: 模范
+- name_zh: 袁隆平
+  qid: Q334642
+  role: 模范
+- name_zh: 苏格拉底
+  qid: Q913
+  role: 模范
+- name_zh: 凯撒
+  qid: Q1048
+  role: 中性
+- name_zh: 成吉思汗
+  qid: Q720
+  role: 中性
+- name_zh: 达·芬奇
+  qid: Q762
+  role: 模范
+- name_zh: 牛顿
+  qid: Q935
+  role: 模范
+- name_zh: 拿破仑
+  qid: Q517
+  role: 教训
+- name_zh: 居里夫人
+  qid: Q7186
+  role: 模范
+- name_zh: 爱因斯坦
+  qid: Q937
+  role: 模范
+- name_zh: 甘地
+  qid: Q1001
+  role: 模范
+- name_zh: 丘吉尔
+  qid: Q8016
+  role: 模范
+- name_zh: 曼德拉
+  qid: Q8023
+  role: 模范
+- name_zh: 乔布斯
+  qid: Q19837
+  role: 模范
+- name_zh: 希特勒
+  qid: Q352
+  role: 教训
+  sensitivity: sensitive
+  visibility: restricted
+- name_zh: 专诸
+  qid: guji-专诸
+  role: 模范
+- name_zh: 句践
+  qid: guji-句践
+  role: 模范
+- name_zh: 吴起
+  qid: guji-吴起
+  role: 模范
+- name_zh: 商鞅
+  qid: guji-商鞅
+  role: 模范
+- name_zh: 孙武
+  qid: guji-孙武
+  role: 模范
+- name_zh: 孙膑
+  qid: guji-孙膑
+  role: 模范
+- name_zh: 屈原
+  qid: guji-屈原
+  role: 模范
+- name_zh: 曹沫
+  qid: guji-曹沫
+  role: 模范
+- name_zh: 聂政
+  qid: guji-聂政
+  role: 模范
+- name_zh: 荆轲
+  qid: guji-荆轲
+  role: 模范
+- name_zh: 豫让
+  qid: guji-豫让
+  role: 模范

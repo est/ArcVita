@@ -1,0 +1,154 @@
+qid: Q334642
+name_zh: 袁隆平
+name_en: Yuan Longping
+era: 现代
+archetype: 深耕型
+role: 模范
+dilemmas:
+- 技术瓶颈
+- 从零开始
+birth_date: '1930-09-07'
+death_date: '2021-05-22'
+birth_place: 北京
+summary_zh: 杂交水稻之父，毕生在稻田里解决吃饭问题，让中国人把饭碗端在自己手里。
+summary_first_person: 我愿做一粒种子，在田垄间寻找让更多人吃饱的答案。
+lesson: 在一个问题上做到极致，就是对世界最大的善意。
+events:
+- id: Q334642-event-1
+  person_qid: Q334642
+  endeavor_id: null
+  date: '1930-09-07'
+  date_precision: day
+  place_name: 北京
+  place_qid: null
+  place_coord: null
+  event_type: 出生
+  title_zh: 出生
+  description_zh: 生于北京
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q334642
+  status: ai_filled
+  needs_review_reason: null
+- id: Q334642-event-2
+  person_qid: Q334642
+  endeavor_id: Q334642-endeavor-1
+  date: '1964-06-01'
+  date_precision: day
+  place_name: 长沙
+  place_qid: null
+  place_coord: null
+  event_type: 发现
+  title_zh: 发现天然雄性不育株
+  description_zh: 在稻田发现关键材料
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q334642
+  status: ai_filled
+  needs_review_reason: null
+- id: Q334642-event-3
+  person_qid: Q334642
+  endeavor_id: Q334642-endeavor-1
+  date: '1973-10-10'
+  date_precision: day
+  place_name: 长沙
+  place_qid: null
+  place_coord: null
+  event_type: 育成
+  title_zh: 籼型杂交水稻三系配套
+  description_zh: 籼型三系配套成功
+  first_person_quote: null
+  is_highlight: true
+  highlight_type: 发明
+  highlight_note: 发明名场面：1973 三系配套成功
+  sources:
+  - https://www.wikidata.org/wiki/Q334642
+  status: ai_filled
+  needs_review_reason: null
+- id: Q334642-event-4
+  person_qid: Q334642
+  endeavor_id: null
+  date: '2021-05-22'
+  date_precision: day
+  place_name: 长沙
+  place_qid: null
+  place_coord: null
+  event_type: 逝世
+  title_zh: 逝世
+  description_zh: 卒于长沙
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q334642
+  status: ai_filled
+  needs_review_reason: null
+endeavors:
+- id: Q334642-endeavor-1
+  person_qid: Q334642
+  title_zh: 杂交水稻攻关
+  domain: 科学
+  start_date: '1964'
+  end_date: '2000'
+  start_precision: null
+  end_precision: null
+  places:
+  - 长沙
+  - 三亚
+  - 海南
+  place_qids: []
+  status: 完成
+  description_zh: 我在稻田里寻找让水稻也拥有杂交优势的可能，海南的烈日与长沙的试验田是我的实验室。
+  outcome: 杂交水稻大面积推广
+  lesson: 在一个问题上做到极致，就是对世界最大的善意。
+  phases:
+  - name: 发现
+    start_date: '1964'
+    end_date: '1964'
+    place: 长沙
+    description_zh: null
+    highlight: 发现不育株 1964 — 起点名场面
+  - name: 失败与坚持
+    start_date: '1968'
+    end_date: '1970'
+    place: 三亚
+    description_zh: null
+    highlight: 材料被毁仍坚持 — 至暗时刻
+  - name: 突破
+    start_date: '1973'
+    end_date: '1973'
+    place: 长沙
+    description_zh: null
+    highlight: 三系配套 1973 — 发明名场面
+  - name: 推广
+    start_date: '1976'
+    end_date: '2000'
+    place: 海南
+    description_zh: null
+    highlight: 大面积推广 — 成事儿收束
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - Q334642-event-2
+  - Q334642-event-3
+  highlight_event_ids: []
+  sources:
+  - https://www.wikidata.org/wiki/Q334642
+  review_status: ai_filled
+highlights:
+- person_qid: Q334642
+  date: '1973-10-10'
+  place_name: 长沙
+  highlight_type: 发明
+  title_zh: 籼型杂交水稻三系配套
+  highlight_note: 发明名场面：1973 三系配套成功
+  endeavor_id: Q334642-endeavor-1
+  sources:
+  - https://www.wikidata.org/wiki/Q334642

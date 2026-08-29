@@ -1,0 +1,197 @@
+qid: Q7074
+name_zh: 李白
+name_en: Li Bai
+era: 唐
+archetype: 表现型
+role: 模范
+dilemmas:
+- 怀才不遇
+- 被流放
+birth_date: 701-01-01
+death_date: 762-01-01
+birth_place: 碎叶
+summary_zh: 唐代浪漫主义诗人，诗风豪放飘逸，与杜甫并称李杜，一生漂泊而诗不辍。
+summary_first_person: 我欲乘风归去，又在人间把酒——诗是我对无常的回击。
+lesson: 把漂泊活成风格，也是一种做事。
+events:
+- id: Q7074-event-1
+  person_qid: Q7074
+  endeavor_id: null
+  date: 701-01-01
+  date_precision: day
+  place_name: 碎叶
+  place_qid: null
+  place_coord: null
+  event_type: 出生
+  title_zh: 出生
+  description_zh: 生于碎叶
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+  status: ai_filled
+  needs_review_reason: null
+- id: Q7074-event-2
+  person_qid: Q7074
+  endeavor_id: Q7074-endeavor-1
+  date: '742'
+  date_precision: year
+  place_name: 长安
+  place_qid: null
+  place_coord: null
+  event_type: 创作
+  title_zh: 《蜀道难》成
+  description_zh: 蜀道之难难于上青天
+  first_person_quote: null
+  is_highlight: true
+  highlight_type: 代表作
+  highlight_note: 代表作公布，奠定诗仙地位
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+  status: ai_filled
+  needs_review_reason: null
+- id: Q7074-event-3
+  person_qid: Q7074
+  endeavor_id: Q7074-endeavor-1
+  date: '744'
+  date_precision: year
+  place_name: 长安
+  place_qid: null
+  place_coord: null
+  event_type: 放逐
+  title_zh: 赐金放还
+  description_zh: 被赐金放还，漫游梁宋
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+  status: ai_filled
+  needs_review_reason: null
+- id: Q7074-event-4
+  person_qid: Q7074
+  endeavor_id: Q7074-endeavor-2
+  date: '752'
+  date_precision: year
+  place_name: 梁园
+  place_qid: null
+  place_coord: null
+  event_type: 创作
+  title_zh: 《将进酒》
+  description_zh: 君不见黄河之水天上来
+  first_person_quote: null
+  is_highlight: true
+  highlight_type: 代表作
+  highlight_note: 名篇诞生，豪放巅峰
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+  status: ai_filled
+  needs_review_reason: null
+- id: Q7074-event-5
+  person_qid: Q7074
+  endeavor_id: Q7074-endeavor-2
+  date: 762-01-01
+  date_precision: day
+  place_name: 当涂
+  place_qid: null
+  place_coord: null
+  event_type: 逝世
+  title_zh: 逝世
+  description_zh: 卒于当涂
+  first_person_quote: null
+  is_highlight: false
+  highlight_type: null
+  highlight_note: null
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+  status: ai_filled
+  needs_review_reason: null
+endeavors:
+- id: Q7074-endeavor-1
+  person_qid: Q7074
+  title_zh: 漫游与求仕
+  domain: 文化
+  start_date: '725'
+  end_date: '744'
+  start_precision: null
+  end_precision: null
+  places:
+  - 长安
+  - 洛阳
+  - 黄河
+  place_qids: []
+  status: 完成
+  description_zh: 我仗剑游历，欲以诗与才华求仕，却在长安的酒肆里看清权门的冷暖。
+  outcome: 诗名大盛，供奉翰林
+  lesson: 才华需要舞台，但不必依附单一舞台。
+  phases: []
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - Q7074-event-2
+  - Q7074-event-3
+  highlight_event_ids: []
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+  review_status: ai_filled
+- id: Q7074-endeavor-2
+  person_qid: Q7074
+  title_zh: 翰林与放逐
+  domain: 文化
+  start_date: '744'
+  end_date: '762'
+  start_precision: null
+  end_precision: null
+  places:
+  - 长安
+  - 梁园
+  - 夜郎
+  place_qids: []
+  status: 完成
+  description_zh: 翰林岁月短暂，赐金放还后我更自由也更漂泊，诗在流放路上反而更辽阔。
+  outcome: 《蜀道难》《将进酒》等名篇
+  lesson: 失去体制庇护后，创作反而回归本体。
+  phases:
+  - name: 翰林
+    start_date: '744'
+    end_date: '744'
+    place: 长安
+    description_zh: null
+    highlight: 《蜀道难》— 代表作
+  - name: 放逐
+    start_date: '744'
+    end_date: '762'
+    place: 夜郎
+    description_zh: null
+    highlight: 《将进酒》— 名篇诞生
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - Q7074-event-4
+  - Q7074-event-5
+  highlight_event_ids: []
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+  review_status: ai_filled
+highlights:
+- person_qid: Q7074
+  date: '742'
+  place_name: 长安
+  highlight_type: 代表作
+  title_zh: 《蜀道难》成
+  highlight_note: 代表作公布，奠定诗仙地位
+  endeavor_id: Q7074-endeavor-1
+  sources:
+  - https://www.wikidata.org/wiki/Q7074
+- person_qid: Q7074
+  date: '752'
+  place_name: 梁园
+  highlight_type: 代表作
+  title_zh: 《将进酒》
+  highlight_note: 名篇诞生，豪放巅峰
+  endeavor_id: Q7074-endeavor-2
+  sources:
+  - https://www.wikidata.org/wiki/Q7074

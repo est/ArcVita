@@ -1,10 +1,11 @@
 {
-  "total_events": 105,
+  "total_events": 167,
   "chunk_size": 60,
   "chunks": [
     "data/chunks/timeline.000.json",
-    "data/chunks/timeline.001.json"
+    "data/chunks/timeline.001.json",
+    "data/chunks/timeline.002.json"
   ],
-  "total_persons": 25,
-  "highlights": 40
+  "total_persons": 36,
+  "highlights": 78
 }

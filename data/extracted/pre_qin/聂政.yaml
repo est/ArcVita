@@ -1,0 +1,56 @@
+person:
+  name_zh: "聂政"
+  name_en: "Nie Zheng"
+  birth_date: "约-410"
+  death_date: "-397"
+  birth_place: "韩国轵深井里"
+  era: "战国初期"
+  archetype: "以身报恩的死士"
+  dilemmas: ["母在不许身的孝义", "严仲子知遇之恩", "刺韩相后的自毁容貌"]
+  summary_zh: "韩国勇士，因母在不许身。母死后，受严仲子知遇之恩，独身仗剑入韩刺杀相侠累。事成后自毁面目，以免连累家人。韩人悬赏购其尸，其姊聂荣前往认尸。"
+  summary_first_person: "严仲子不远千里结交于吾，吾母在堂未敢以身相许。母既终，吾遂许之。一人仗剑入韩，上阶刺杀侠累，左右大乱。吾恐连累家人，自毁面目，剖腹而死。吾姊来认吾尸，使吾之名不至湮灭。"
+  lesson: "刺客的义不仅在杀，更在自我毁灭以护亲人。"
+
+endeavors:
+  - title_zh: "独身刺韩相侠累"
+    domain: "刺杀"
+    start_date: "-397"
+    end_date: "-397"
+    places: ["韩国新郑"]
+    phases:
+      - name: "受恩许身"
+        start_date: "约-400"
+        end_date: "-397"
+        place: "魏国濮阳"
+        highlight: "严仲子远交聂政"
+      - name: "独身刺杀"
+        start_date: "-397"
+        end_date: "-397"
+        place: "韩国相府"
+        highlight: "上阶刺杀侠累"
+      - name: "自毁殉身"
+        start_date: "-397"
+        end_date: "-397"
+        place: "韩国"
+        highlight: "自毁面目，剖腹而死"
+    description_zh: "严仲子与韩相侠累有仇，闻聂政勇而有义，以黄金百镒为其母寿，欲求其行刺。聂政以母在辞之。母死后，聂政乃独身仗剑至韩，闯入相府，上阶刺杀侠累。左右大乱，聂政自毁面目，剖腹而死。韩人悬赏千金购其尸，其姊聂荣闻而往认之，亦死于尸旁。"
+    outcome: "侠累被刺身亡，聂政以死报恩"
+    lesson: "为知己者死，为亲者自毁——义与孝的双重成全"
+
+events:
+  - date: "-397"
+    place_name: "韩国相府"
+    event_type: "刺杀"
+    title_zh: "独身仗剑刺韩相"
+    description_zh: "聂政独身仗剑闯入韩国相府，持戟护卫者数十人。聂政直上台阶，以匕首刺杀相侠累于座上。左右大乱，聂政自毁面目，剖腹而死。此为战国四大刺客之一的经典一击。"
+    is_highlight: true
+    highlight_type: "战役"
+    highlight_note: "独身入相府——勇气与武艺的极致展示"
+  - date: "-397"
+    place_name: "韩国"
+    event_type: "至暗时刻"
+    title_zh: "自毁面目，以护家人"
+    description_zh: "聂政刺杀侠累后，恐连累家人，以刀自毁面目至不可辨认，又剖腹而死。韩人悬赏千金购其尸，无人能认。其姊聂荣闻讯前往，伏尸痛哭曰'是轵深井里聂政也'，亦自杀于尸旁。"
+    is_highlight: true
+    highlight_type: "至暗时刻"
+    highlight_note: "自毁面容——刺客的最后温柔"
