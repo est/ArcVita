@@ -1,38 +1,97 @@
-# ArcVita — 人物传记结构化采集
+# ArcVita — 成事儿时间轴
 
-厚重感 + 第一视角 + 做事流。用户迷茫时，按境遇匹配历史人物，得到启发。
+> 人生迷茫时，查一个类似境遇的历史人物，从他的做事周期里得到启发。
 
-> **License**: Code MIT (`LICENSE`), Data CC BY-SA 4.0 (`LICENSE-DATA.md`). 上游 Wikidata CC0 / Wikipedia CC BY-SA 4.0；精编叙述亦按 CC BY-SA 4.0 发布。
+## 出发点
 
-## 落盘
-- `data/processed/persons.yaml` — 人物（YAML 真源，无引号转义，AI 可逐字段查证）
-- `data/processed/endeavors.yaml` — 事业（每件事有始有终 + 地点轨迹 + 厚重第一视角叙述）
-- `data/processed/events.yaml` — 事件（人物-时间-地点，最小三元组）
-- `data/biography.db` — SQLite（可由 YAML 重建，含 `timeline` / `public_persons` 视图）
-- `data/processed/_report.md` — 覆盖率与示例
+这个项目的初衷很简单：**人遇到困难时，历史上一定有人经历过类似的事**。
 
-敏感人物（如 Q352）打 `sensitivity=sensitive` + `visibility=restricted`，落盘保留、查询层过滤。
+我们想做的是：
+1. 把历史上值得记住的人（模范或教训），按照"做事"的完整周期记录下来——一件事从开头到结束，经历了什么阶段，在什么地方，做了什么决定
+2. 穿插名场面——成语诞生的那一刻、代表作公布的那一天、关键决策的转折点——让历史有"画面感"
+3. 按时间轴横向对比：不同朝代的人在同一"年龄"在做什么？同一时代发生了什么大事？
 
-## 跑
+最终形态：用户觉得人生迷茫 → 找到类似境遇的历史人物 → 看他的做事周期 → 得到启发。
+
+## 设计理念
+
+### 做事流，不是流水账
+传统传记按时间罗列事件，但做事不是线性的。我们把每件事拆成**酝酿→破局→高潮→收束**的阶段，让用户看到"怎么做"而不是"做了什么"。
+
+### 第一视角
+不是旁观者视角的白话翻译，而是拟述主角口吻的厚重叙述。读孙武的"我携一卷兵书南奔吴国"，比读"孙武到吴国"更有代入感。
+
+### 名场面轨道
+时间轴顶部有一条共享的名场面轨道——成语出处、代表作公布、关键决策、至暗时刻——按类型分色。点击名场面可以直接跳转到对应人物。同时穿插时代大事件（朝代更替/社会变革/重大发明），让人看到每个人"活在什么样的时代"。
+
+### 境遇匹配
+用户按"被流放"/"技术瓶颈"/"至暗时刻"/"从零开始"等境遇标签，找到历史上有类似经历的人物。王阳明被贬龙场悟道，乔布斯被逐出苹果后回归——类似的境遇，不同的应对，但都走出来了。
+
+## 当前状态
+
+- **36 人**：先秦 11 人（AI 从史记提取）+ 25 人精编（国内外各半）
+- **167 事件** + **116 名场面**（78 个人物事件 + 38 个历史背景）
+- **37 个事业周期**：每件事有始有终，含阶段分解、地点轨迹、第一视角叙述
+- **庞加莱式时间轴**：水平无限滚动，Poincaré 压缩两端，自适应刻度
+- **按世纪分组输出**：17 个 JSON 文件，加载高效
+
+## 数据来源
+
+| 来源 | 用途 | 规模 |
+|---|---|---|
+| 离线精编 | 25 个核心人物的完整做事周期 | curated.py |
+| 史记 AI 提取 | 先秦人物传记 | 11 人 / 5 章节 |
+| Wikidata / Wikipedia | 日期精确化、地点 QID 对齐 | 可选在线增量 |
+| 古籍库 daizhigev20 | 23,178 个古籍文件，2,157 个传记 | 按朝代批量扩展 |
+
+## 项目结构
+
+```
+ArcVita/
+├── src/arcvita/           # Python 采集流水线
+│   ├── models.py          # Person/Endeavor/Event/Phase 数据模型
+│   ├── curated.py         # 离线精编数据（25人完整做事周期）
+│   ├── pipeline.py        # 采集主流程（离线→古籍→Wikidata）
+│   ├── sources/           # 多源适配器（wikipedia/wikidata/classical）
+│   ├── extractors/        # AI 提取器（文言文→结构化 YAML）
+│   ├── merge.py           # 合并 extracted → curated
+│   ├── query.py           # 境遇检索/地点检索/时间线查询
+│   └── render.py          # 成事儿周期 Markdown 渲染
+├── site/                  # 前端时间轴
+│   ├── index.html         # 庞加莱式水平时间轴
+│   ├── static/app.js      # 自适应刻度 + 缩放 + 拖拽
+│   ├── static/style.css   # 卷轴古籍视觉
+│   └── data/              # 按世纪分组的 JSON 数据
+├── scripts/               # 构建脚本
+│   ├── build_site.py      # data/processed/ → site/data/
+│   └── split_shiji.py     # 史记.md → 章节文件
+├── data/                  # 数据真源（YAML + SQLite）
+├── tests/                 # 准入校验测试
+└── .github/workflows/     # GitHub Actions 自动部署
+```
+
+## 快速开始
+
 ```bash
 uv sync
-uv run python -m arcvita.cli          # 全量 25 人，离线优先（不依赖 Wikidata 限流）
-uv run python -m arcvita.cli --limit 5
-uv run python -c "from arcvita.query import find_by_dilemma; print(find_by_dilemma('被流放'))"
+uv run python -m arcvita.cli          # 全量采集
+uv run python scripts/build_site.py   # 构建前端数据
+uv run python -m http.server -d site 8080  # 本地预览
+uv run pytest tests/ -v              # 准入校验
 ```
 
-## 境遇检索
-```python
-from arcvita.query import find_by_dilemma, find_by_place, timeline
-find_by_dilemma("被流放")   # 王阳明/林则徐/曼德拉/拿破仑/乔布斯
-find_by_dilemma("技术瓶颈") # 张衡/牛顿/居里夫人/袁隆平/爱因斯坦
-find_by_place("伦敦")
-timeline("Q935")  # 牛顿时间线（出生-求学-研究-创作-逝世，含地点）
-```
+## 技术栈
 
-## 模型
-- Person: qid/name_zh/lesson/summary_first_person/era/visibility
-- Endeavor: title_zh/start_date-end_date/places/description_zh/outcome/lesson
-- Event: date/place_name/event_type/title_zh
+- **采集**：Python + httpx + pydantic + PyYAML + SQLite
+- **AI 提取**：MiMoCode subagent 批量处理古籍文言文
+- **前端**：纯 HTML/CSS/JS，无框架，Poincaré 时间压缩，自适应刻度
+- **部署**：GitHub Actions → GitHub Pages
+- **许可证**：代码 MIT，数据 CC BY-SA 4.0
 
-线上可复用：Wikidata Action API / SPARQL 链路已接（当前离线优先以绕开限流，后续可切回在线增量）。
+## 下一步
+
+- [ ] 史记剩余先秦章节全量提取（目标 50-80 人）
+- [ ] 扩展到秦汉（汉书/后汉书/三国志）
+- [ ] Wikidata 在线增量补充（日期精确化）
+- [ ] 做事周期的 phase 分解更细（背景/动机/阻力/抉择）
+- [ ] "学习卡片"功能：从做事周期中提取可复用的方法论

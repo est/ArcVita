@@ -1,0 +1,193 @@
+[
+  {
+    "qid": "Q162427",
+    "name_zh": "秦始皇",
+    "name_en": "Qin Shi Huang",
+    "era": "战国末/秦",
+    "archetype": "统合型",
+    "role": "教训",
+    "dilemmas": [
+      "过度扩张"
+    ],
+    "birth_date": "-259-02-18",
+    "death_date": "-210-07-10",
+    "birth_place": "邯郸",
+    "summary_zh": "首位完成华夏大一统的君主，统一度量衡与文字，北击匈奴、南征百越，亦以严刑峻法埋下速亡之因。",
+    "summary_first_person": "我以铁与法把六国压成一块版图，却忘了版图需要人心来粘合。",
+    "lesson": "以速度完成的统一，若无制度与人心的消化，终会反噬。",
+    "events": [
+      {
+        "id": "Q162427-event-5",
+        "person_qid": "Q162427",
+        "endeavor_id": null,
+        "date": "-210-07-10",
+        "date_precision": "day",
+        "place_name": "沙丘",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝于沙丘",
+        "description_zh": "第五次巡行途中崩于沙丘",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q162427"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "Q162427-event-4",
+        "person_qid": "Q162427",
+        "endeavor_id": null,
+        "date": "-219",
+        "date_precision": "year",
+        "place_name": "泰山",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "巡行",
+        "title_zh": "泰山封禅",
+        "description_zh": "第一次东巡封禅",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q162427"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "Q162427-event-3",
+        "person_qid": "Q162427",
+        "endeavor_id": null,
+        "date": "-221",
+        "date_precision": "year",
+        "place_name": "咸阳",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "建制",
+        "title_zh": "称皇帝、置郡县",
+        "description_zh": "自称始皇帝",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q162427"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "Q162427-event-2",
+        "person_qid": "Q162427",
+        "endeavor_id": null,
+        "date": "-230",
+        "date_precision": "year",
+        "place_name": "咸阳",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "始灭韩",
+        "description_zh": "十年灭六国之始",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q162427"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "Q162427-event-1",
+        "person_qid": "Q162427",
+        "endeavor_id": null,
+        "date": "-259-02-18",
+        "date_precision": "day",
+        "place_name": "邯郸",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于赵国邯郸",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q162427"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "Q162427-endeavor-2",
+        "person_qid": "Q162427",
+        "title_zh": "制度统一与巡行",
+        "domain": "政治",
+        "start_date": "-221",
+        "end_date": "-210",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳",
+          "泰山",
+          "会稽",
+          "沙丘"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "书同文、车同轨，我在五次巡行中把标准压进每一寸土地。",
+        "outcome": "度量衡文字货币统一",
+        "lesson": "标准化是杠杆，过度则是负担。",
+        "phases": [],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://www.wikidata.org/wiki/Q162427"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "Q162427-endeavor-1",
+        "person_qid": "Q162427",
+        "title_zh": "统一六国",
+        "domain": "军事/政治",
+        "start_date": "-230",
+        "end_date": "-221",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳",
+          "邯郸",
+          "临淄"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "我以远交近攻与郡县制把六国一一点名，地图第一次被压成一块。",
+        "outcome": "建立秦朝，大一统",
+        "lesson": "统一需要制度消化，否则速度即隐患。",
+        "phases": [],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://www.wikidata.org/wiki/Q162427"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": []
+  }
+]

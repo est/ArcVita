@@ -60,40 +60,62 @@ def main():
         encoding="utf-8",
     )
 
-    # === per-person JSON in year_dir ===
-    index_years = {}
-    for p in sorted(persons, key=lambda x: parse_year(x.get("birth_date")) or 9999):
+    # === 按世纪合并输出（减少 HTTP 请求数）===
+    century_groups = {}
+    for p in persons:
         by = parse_year(p.get("birth_date"))
-        d = year_dir(by)
-        p_ys = sorted([e for e in events if e.get("person_qid") == p["qid"]], key=lambda e: e.get("date") or "9999")
-        p_ed = sorted([e for e in endeavors if e.get("person_qid") == p["qid"]], key=lambda e: e.get("start_date") or "9999")
-        p_hl = sorted([h for h in highlights if h.get("person_qid") == p["qid"]], key=lambda h: h.get("date") or "9999")
-        person_data = {
-            "qid": p["qid"], "name_zh": p["name_zh"], "name_en": p.get("name_en"),
-            "era": p.get("era"), "archetype": p.get("archetype"), "role": p.get("role"),
-            "dilemmas": p.get("dilemmas", []), "birth_date": p.get("birth_date"),
-            "death_date": p.get("death_date"), "birth_place": p.get("birth_place"),
-            "summary_zh": p.get("summary_zh"), "summary_first_person": p.get("summary_first_person"),
-            "lesson": p.get("lesson"),
-            "events": p_ys, "endeavors": p_ed, "highlights": p_hl,
-        }
-        out_dir = data / d
-        out_dir.mkdir(parents=True, exist_ok=True)
-        (out_dir / f"{p['name_zh']}.json").write_text(
-            json.dumps(person_data, ensure_ascii=False, indent=2), encoding="utf-8"
+        if by is None:
+            ckey = "unknown"
+        elif by < 0:
+            c = ((-by - 1) // 100 + 1) * 100
+            ckey = f"bce{c:04d}"
+        else:
+            c = ((by - 1) // 100 + 1) * 100
+            ckey = f"ce{c:04d}"
+        century_groups.setdefault(ckey, []).append(p)
+
+    for ckey, cpersons in century_groups.items():
+        cdata = []
+        for p in cpersons:
+            p_ys = sorted([e for e in events if e.get("person_qid") == p["qid"]], key=lambda e: e.get("date") or "9999")
+            p_ed = sorted([e for e in endeavors if e.get("person_qid") == p["qid"]], key=lambda e: e.get("start_date") or "9999")
+            p_hl = sorted([h for h in highlights if h.get("person_qid") == p["qid"]], key=lambda h: h.get("date") or "9999")
+            cdata.append({
+                "qid": p["qid"], "name_zh": p["name_zh"], "name_en": p.get("name_en"),
+                "era": p.get("era"), "archetype": p.get("archetype"), "role": p.get("role"),
+                "dilemmas": p.get("dilemmas", []), "birth_date": p.get("birth_date"),
+                "death_date": p.get("death_date"), "birth_place": p.get("birth_place"),
+                "summary_zh": p.get("summary_zh"), "summary_first_person": p.get("summary_first_person"),
+                "lesson": p.get("lesson"),
+                "events": p_ys, "endeavors": p_ed, "highlights": p_hl,
+            })
+        (data / f"{ckey}.json").write_text(
+            json.dumps(cdata, ensure_ascii=False, indent=2), encoding="utf-8"
         )
-        index_years.setdefault(d, []).append(p["name_zh"])
 
     # === index.json ===
+    century_labels = {}
+    for ck in century_groups:
+        if ck.startswith("bce"):
+            n = int(ck[3:]) // 100
+            century_labels[ck] = f"{n}世纪 BCE"
+        elif ck.startswith("ce"):
+            n = int(ck[2:]) // 100
+            century_labels[ck] = f"{n}世纪 CE"
+        else:
+            century_labels[ck] = "年代不详"
+
     index = {
-        "years": {d: {"count": len(ps), "persons": ps} for d, ps in sorted(index_years.items())},
+        "centuries": {ck: {"label": century_labels[ck], "count": len(ps),
+                           "persons": [p["name_zh"] for p in ps]}
+                      for ck, ps in sorted(century_groups.items())},
         "persons": [
             {
                 "qid": p["qid"], "name_zh": p["name_zh"], "era": p.get("era"),
                 "archetype": p.get("archetype"), "role": p.get("role"),
                 "birth_date": p.get("birth_date"), "death_date": p.get("death_date"),
                 "summary_first_person": p.get("summary_first_person"),
-                "year_dir": year_dir(parse_year(p.get("birth_date"))),
+                "century": next((ck for ck, ps in century_groups.items() if p in ps), "unknown"),
                 "events_count": len([e for e in events if e.get("person_qid") == p["qid"]]),
                 "highlights_count": len([h for h in highlights if h.get("person_qid") == p["qid"]]),
             }
@@ -109,8 +131,8 @@ def main():
             (data / name).write_bytes(src.read_bytes())
 
     print(f"built: {len(persons)} persons, {len(events)} events, {len(highlights)} highlights")
-    for d in sorted(index_years.keys()):
-        print(f"  {d}/: {', '.join(index_years[d])}")
+    for ck, ps in sorted(century_groups.items()):
+        print(f"  {century_labels.get(ck,ck)}: {', '.join(p['name_zh'] for p in ps)}")
     return {"persons": len(persons), "events": len(events), "highlights": len(highlights)}
 
 

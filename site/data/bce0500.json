@@ -1,0 +1,1186 @@
+[
+  {
+    "qid": "Q913",
+    "name_zh": "苏格拉底",
+    "name_en": "Socrates",
+    "era": "古希腊",
+    "archetype": "诘问型",
+    "role": "模范",
+    "dilemmas": [
+      "被误解"
+    ],
+    "birth_date": "-470-01-01",
+    "death_date": "-399-01-01",
+    "birth_place": "雅典",
+    "summary_zh": "古希腊哲学奠基人，以诘问法探求真知，因坚持信念而饮鸩就义。",
+    "summary_first_person": "我自知无知——在不断的追问里，人才能靠近真实的自己。",
+    "lesson": "敢于质疑常识，是走出迷茫的第一步。",
+    "events": [
+      {
+        "id": "Q913-event-death",
+        "person_qid": "Q913",
+        "endeavor_id": null,
+        "date": "-399-01-01",
+        "date_precision": "day",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q913"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "Q913-event-2",
+        "person_qid": "Q913",
+        "endeavor_id": null,
+        "date": "-399-05-07",
+        "date_precision": "day",
+        "place_name": "雅典",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "审判",
+        "title_zh": "饮鸩就义",
+        "description_zh": "被判死刑，饮鸩而死",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名言",
+        "highlight_note": "名言：我知我无知",
+        "sources": [
+          "https://www.wikidata.org/wiki/Q913"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "Q913-event-1",
+        "person_qid": "Q913",
+        "endeavor_id": null,
+        "date": "-470-01-01",
+        "date_precision": "day",
+        "place_name": "雅典",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于雅典",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q913"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "Q913-endeavor-1",
+        "person_qid": "Q913",
+        "title_zh": "街头诘问与审判",
+        "domain": "思想",
+        "start_date": "-430",
+        "end_date": "-399",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "雅典"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "我在集市与青年对话，以不断的诘问剥开自以为是的确定性；审判席上我选择饮鸩而非逃离。",
+        "outcome": "奠定西方哲学方法",
+        "lesson": "敢于承认无知，是走出迷茫的第一步。",
+        "phases": [],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://www.wikidata.org/wiki/Q913"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "Q913",
+        "date": "-399-05-07",
+        "place_name": "雅典",
+        "highlight_type": "名言",
+        "title_zh": "饮鸩就义",
+        "highlight_note": "名言：我知我无知",
+        "endeavor_id": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/Q913"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-吴起",
+    "name_zh": "吴起",
+    "name_en": null,
+    "era": "战国初期",
+    "archetype": "以血铸剑的变法名将",
+    "role": "模范",
+    "dilemmas": [
+      "杀妻求将的道德困境",
+      "变法者不得善终的宿命",
+      "母丧不归与儒者之辩"
+    ],
+    "birth_date": "约-440",
+    "death_date": "-381",
+    "birth_place": "卫国左氏",
+    "summary_zh": null,
+    "summary_first_person": "吾少时散尽千金以求仕途，母丧不归，曾子绝之。吾杀妻以取信鲁君，世人皆谓吾不仁。然吾在魏守河西二十年，秦人不敢东向；在楚变法诸侯皆惧。死于乱箭之下，方知变法者终难逃一劫。",
+    "lesson": "变法者的宿命是用生命铺路——自己未必能看到路的尽头。",
+    "events": [
+      {
+        "id": "guji-吴起-event-3",
+        "person_qid": "guji-吴起",
+        "endeavor_id": null,
+        "date": "-381",
+        "date_precision": "year",
+        "place_name": "楚国郢都",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "至暗时刻",
+        "title_zh": "死于悼王尸旁",
+        "description_zh": "楚悼王薨，贵族趁乱作乱，围攻吴起。吴起走避悼王尸体旁，伏于王尸之上。叛乱者射杀吴起，亦射中王尸。楚肃王即位后，尽诛射杀吴起并射中王尸者七十余家。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "至暗时刻",
+        "highlight_note": "吴起临死之际仍以智谋让仇敌付出代价——死而不已",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吴起-event-death",
+        "person_qid": "guji-吴起",
+        "endeavor_id": null,
+        "date": "-381",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-吴起"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吴起-event-4",
+        "person_qid": "guji-吴起",
+        "endeavor_id": null,
+        "date": "-383",
+        "date_precision": "year",
+        "place_name": "楚国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "变法",
+        "title_zh": "废除封君世禄",
+        "description_zh": "吴起在楚国变法，核心措施是废除封君三世以上者的世袭特权，将节省的俸禄用于养兵。此举直接触动了楚国旧贵族的根本利益，为后来的杀身之祸埋下伏笔。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "战国变法者的宿命——变法愈彻底，反噬愈猛烈",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吴起-event-5",
+        "person_qid": "guji-吴起",
+        "endeavor_id": null,
+        "date": "-387",
+        "date_precision": "year",
+        "place_name": "楚国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事",
+        "title_zh": "南平百越，北并陈蔡",
+        "description_zh": "吴起变法后楚国军力大增。南面平定百越各部族，北面吞并陈、蔡两国旧地，西面伐秦至秦国腹地。楚国疆域达到前所未有的广度，诸侯莫敢樱其锋。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "楚国最强盛时期的军事版图",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吴起-event-1",
+        "person_qid": "guji-吴起",
+        "endeavor_id": null,
+        "date": "-412",
+        "date_precision": "year",
+        "place_name": "鲁国曲阜",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "决策",
+        "title_zh": "杀妻求将",
+        "description_zh": "齐国伐鲁，鲁君欲用吴起为将但疑其妻齐人。吴起杀妻以取信，鲁君遂拜将。吴起大破齐军。此事成为吴起一生最受争议的抉择。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "以至亲之血换取功名之路——冷血与壮志的交锋",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吴起-event-2",
+        "person_qid": "guji-吴起",
+        "endeavor_id": null,
+        "date": "约-400",
+        "date_precision": "year",
+        "place_name": "魏国河西",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "军事",
+        "title_zh": "与士卒同甘共苦",
+        "description_zh": "吴起为将，与最下等士兵同衣食，卧不设席，行不骑乘。有士兵生疽，吴起亲为其吮脓。士兵之母闻而哭曰：'往年吴公吮其父，其父战不旋踵而死；今又吮吾子，吾不知其死所矣。'",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名言",
+        "highlight_note": "吮疽之典——爱兵如子的极致，也是对战争残酷的深刻注解",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-吴起-event-birth",
+        "person_qid": "guji-吴起",
+        "endeavor_id": null,
+        "date": "约-440",
+        "date_precision": "year",
+        "place_name": "卫国左氏",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 卫国左氏",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-吴起"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-吴起-endeavor-2",
+        "person_qid": "guji-吴起",
+        "title_zh": "相楚变法，强兵富国",
+        "domain": "政治改革",
+        "start_date": "-386",
+        "end_date": "-381",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "楚国郢都"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "楚悼王素闻吴起贤，任为令尹行变法。吴起裁撤冗官，废除封君世禄，将节余之资用于养兵。楚国南平百越，北并陈蔡，西伐秦，诸侯皆惧楚之强。然变法触动贵族利益，悼王一死，贵族作乱。",
+        "outcome": "楚国一度强盛，但吴起死于贵族报复",
+        "lesson": "变法必触动旧利益，变法者须有赴死之决",
+        "phases": [
+          {
+            "name": "受命变法",
+            "start_date": "-386",
+            "end_date": "-386",
+            "place": "楚国郢都",
+            "description_zh": null,
+            "highlight": "楚悼王拜吴起为令尹"
+          },
+          {
+            "name": "推行新法",
+            "start_date": "-386",
+            "end_date": "-381",
+            "place": "楚国",
+            "description_zh": null,
+            "highlight": "废除世卿世禄"
+          },
+          {
+            "name": "变法失败",
+            "start_date": "-381",
+            "end_date": "-381",
+            "place": "楚国郢都",
+            "description_zh": null,
+            "highlight": "死于悼王尸旁"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-吴起-endeavor-1",
+        "person_qid": "guji-吴起",
+        "title_zh": "守魏河西，大战七十六全胜",
+        "domain": "军事",
+        "start_date": "约-409",
+        "end_date": "-387",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "魏国河西",
+          "秦国"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "吴起事魏文侯，为西河守。与秦战七十六阵，全胜六十四，辟土四面，拓地千里。吴起治军，与士卒同衣食，卧不设席，行不骑乘，亲自裹赢粮。士卒有病疽者，吴起亲为吮之。",
+        "outcome": "魏国河西稳固，秦国不敢东进",
+        "lesson": "用兵之法，教戒为先；爱兵如子，则兵为所用",
+        "phases": [
+          {
+            "name": "初伐秦国",
+            "start_date": "-409",
+            "end_date": "-408",
+            "place": "河西之地",
+            "description_zh": null,
+            "highlight": "连下秦五城"
+          },
+          {
+            "name": "治军守边",
+            "start_date": "-408",
+            "end_date": "-387",
+            "place": "魏河西郡",
+            "description_zh": null,
+            "highlight": "与士卒同甘共苦"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-吴起-endeavor-3",
+        "person_qid": "guji-吴起",
+        "title_zh": "鲁国杀妻求将",
+        "domain": "军事",
+        "start_date": "约-412",
+        "end_date": "-410",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "鲁国曲阜",
+          "齐国"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "齐伐鲁，鲁人欲以吴起为将，然吴起妻为齐女，鲁君疑之。吴起遂杀妻以明志，鲁君乃以为将。吴起率鲁军大破齐师。然鲁人以吴起残忍，终不能用。",
+        "outcome": "大破齐军，但被鲁国放逐",
+        "lesson": "道德代价换来的功业，往往也以道德为代价失去",
+        "phases": [
+          {
+            "name": "求将",
+            "start_date": "-412",
+            "end_date": "-412",
+            "place": "鲁国曲阜",
+            "description_zh": null,
+            "highlight": "杀妻求将"
+          },
+          {
+            "name": "破齐",
+            "start_date": "-411",
+            "end_date": "-410",
+            "place": "齐鲁边境",
+            "description_zh": null,
+            "highlight": "以弱鲁破强齐"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-吴起",
+        "date": "-381",
+        "place_name": "楚国郢都",
+        "highlight_type": "至暗时刻",
+        "title_zh": "死于悼王尸旁",
+        "highlight_note": "吴起临死之际仍以智谋让仇敌付出代价——死而不已",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吴起",
+        "date": "-383",
+        "place_name": "楚国",
+        "highlight_type": "决策",
+        "title_zh": "废除封君世禄",
+        "highlight_note": "战国变法者的宿命——变法愈彻底，反噬愈猛烈",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吴起",
+        "date": "-387",
+        "place_name": "楚国",
+        "highlight_type": "战役",
+        "title_zh": "南平百越，北并陈蔡",
+        "highlight_note": "楚国最强盛时期的军事版图",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吴起",
+        "date": "-412",
+        "place_name": "鲁国曲阜",
+        "highlight_type": "决策",
+        "title_zh": "杀妻求将",
+        "highlight_note": "以至亲之血换取功名之路——冷血与壮志的交锋",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-吴起",
+        "date": "约-400",
+        "place_name": "魏国河西",
+        "highlight_type": "名言",
+        "title_zh": "与士卒同甘共苦",
+        "highlight_note": "吮疽之典——爱兵如子的极致，也是对战争残酷的深刻注解",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-聂政",
+    "name_zh": "聂政",
+    "name_en": null,
+    "era": "战国初期",
+    "archetype": "以身报恩的死士",
+    "role": "模范",
+    "dilemmas": [
+      "母在不许身的孝义",
+      "严仲子知遇之恩",
+      "刺韩相后的自毁容貌"
+    ],
+    "birth_date": "约-410",
+    "death_date": "-397",
+    "birth_place": "韩国轵深井里",
+    "summary_zh": null,
+    "summary_first_person": "严仲子不远千里结交于吾，吾母在堂未敢以身相许。母既终，吾遂许之。一人仗剑入韩，上阶刺杀侠累，左右大乱。吾恐连累家人，自毁面目，剖腹而死。吾姊来认吾尸，使吾之名不至湮灭。",
+    "lesson": "刺客的义不仅在杀，更在自我毁灭以护亲人。",
+    "events": [
+      {
+        "id": "guji-聂政-event-1",
+        "person_qid": "guji-聂政",
+        "endeavor_id": "guji-聂政-endeavor-1",
+        "date": "-397",
+        "date_precision": "year",
+        "place_name": "韩国相府",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "刺杀",
+        "title_zh": "独身仗剑刺韩相",
+        "description_zh": "聂政独身仗剑闯入韩国相府，持戟护卫者数十人。聂政直上台阶，以匕首刺杀相侠累于座上。左右大乱，聂政自毁面目，剖腹而死。此为战国四大刺客之一的经典一击。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "独身入相府——勇气与武艺的极致展示",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-聂政-event-2",
+        "person_qid": "guji-聂政",
+        "endeavor_id": "guji-聂政-endeavor-1",
+        "date": "-397",
+        "date_precision": "year",
+        "place_name": "韩国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "至暗时刻",
+        "title_zh": "自毁面目，以护家人",
+        "description_zh": "聂政刺杀侠累后，恐连累家人，以刀自毁面目至不可辨认，又剖腹而死。韩人悬赏千金购其尸，无人能认。其姊聂荣闻讯前往，伏尸痛哭曰'是轵深井里聂政也'，亦自杀于尸旁。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "至暗时刻",
+        "highlight_note": "自毁面容——刺客的最后温柔",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-聂政-event-death",
+        "person_qid": "guji-聂政",
+        "endeavor_id": "guji-聂政-endeavor-1",
+        "date": "-397",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-聂政"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-聂政-event-birth",
+        "person_qid": "guji-聂政",
+        "endeavor_id": null,
+        "date": "约-410",
+        "date_precision": "year",
+        "place_name": "韩国轵深井里",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 韩国轵深井里",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-聂政"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-聂政-endeavor-1",
+        "person_qid": "guji-聂政",
+        "title_zh": "独身刺韩相侠累",
+        "domain": "刺杀",
+        "start_date": "-397",
+        "end_date": "-397",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "韩国新郑"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "严仲子与韩相侠累有仇，闻聂政勇而有义，以黄金百镒为其母寿，欲求其行刺。聂政以母在辞之。母死后，聂政乃独身仗剑至韩，闯入相府，上阶刺杀侠累。左右大乱，聂政自毁面目，剖腹而死。韩人悬赏千金购其尸，其姊聂荣闻而往认之，亦死于尸旁。",
+        "outcome": "侠累被刺身亡，聂政以死报恩",
+        "lesson": "为知己者死，为亲者自毁——义与孝的双重成全",
+        "phases": [
+          {
+            "name": "受恩许身",
+            "start_date": "约-400",
+            "end_date": "-397",
+            "place": "魏国濮阳",
+            "description_zh": null,
+            "highlight": "严仲子远交聂政"
+          },
+          {
+            "name": "独身刺杀",
+            "start_date": "-397",
+            "end_date": "-397",
+            "place": "韩国相府",
+            "description_zh": null,
+            "highlight": "上阶刺杀侠累"
+          },
+          {
+            "name": "自毁殉身",
+            "start_date": "-397",
+            "end_date": "-397",
+            "place": "韩国",
+            "description_zh": null,
+            "highlight": "自毁面目，剖腹而死"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-聂政-event-1",
+          "guji-聂政-event-2",
+          "guji-聂政-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-聂政",
+        "date": "-397",
+        "place_name": "韩国相府",
+        "highlight_type": "战役",
+        "title_zh": "独身仗剑刺韩相",
+        "highlight_note": "独身入相府——勇气与武艺的极致展示",
+        "endeavor_id": "guji-聂政-endeavor-1",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-聂政",
+        "date": "-397",
+        "place_name": "韩国",
+        "highlight_type": "至暗时刻",
+        "title_zh": "自毁面目，以护家人",
+        "highlight_note": "自毁面容——刺客的最后温柔",
+        "endeavor_id": "guji-聂政-endeavor-1",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-荆轲",
+    "name_zh": "荆轲",
+    "name_en": null,
+    "era": "战国末期",
+    "archetype": "易水悲歌的千古刺客",
+    "role": "模范",
+    "dilemmas": [
+      "太子丹之托与刺秦之艰",
+      "图穷匕见的绝境",
+      "壮士一去不复还的宿命"
+    ],
+    "birth_date": "约-424",
+    "death_date": "-227",
+    "birth_place": "卫国",
+    "summary_zh": null,
+    "summary_first_person": "风萧萧兮易水寒，壮士一去兮不复还。吾知此去必死，然天下苦秦久矣。太子丹以国士待吾，吾当以国士报之。图穷匕见之际，吾距秦王不过数步，然天命不在吾。倚柱而笑，箕踞而骂，吾虽身死，刺秦之志千秋不灭。",
+    "lesson": "有些战斗注定失败，但失败本身便是不朽。",
+    "events": [
+      {
+        "id": "guji-荆轲-event-1",
+        "person_qid": "guji-荆轲",
+        "endeavor_id": null,
+        "date": "-227",
+        "date_precision": "year",
+        "place_name": "燕国易水",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "决策",
+        "title_zh": "易水送别——风萧萧兮易水寒",
+        "description_zh": "荆轲西入强秦，太子丹及宾客送至易水之上。高渐离击筑，荆轲和而歌'风萧萧兮易水寒，壮士一去兮不复还'。歌声悲壮，士皆垂泪。复为慷慨羽声，士皆瞋目。荆轲登车而去，终已不顾。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "名言",
+        "highlight_note": "千古第一送别——悲壮之极致",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-荆轲-event-2",
+        "person_qid": "guji-荆轲",
+        "endeavor_id": null,
+        "date": "-227",
+        "date_precision": "year",
+        "place_name": "秦国咸阳殿",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "刺杀",
+        "title_zh": "图穷匕见——刺秦失败",
+        "description_zh": "荆轲在秦王殿上展开督亢地图，至最后一段图穷匕首现。荆轲左手抓住秦王衣袖，右手持匕首刺向秦王。秦王惊起挣断衣袖，绕铜柱而走。荆轲追之不及，秦王拔剑击断荆轲左腿。荆轲以匕首投向秦王，不中，击于柱上。荆轲知事不成，倚柱而笑，箕踞以骂，终被左右所杀。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "图穷匕见——中国历史上最著名的一击",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-荆轲-event-death",
+        "person_qid": "guji-荆轲",
+        "endeavor_id": null,
+        "date": "-227",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-荆轲"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-荆轲-event-3",
+        "person_qid": "guji-荆轲",
+        "endeavor_id": null,
+        "date": "-228",
+        "date_precision": "year",
+        "place_name": "燕国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "决策",
+        "title_zh": "樊於期献首级",
+        "description_zh": "荆轲认为刺秦需要信物，提出以秦国叛将樊於期的首级和燕国督亢地图为见面礼。樊於期闻讯曰'此臣之日夜切齿腐心也'，自刎献首级。荆轲收其首级，以匣封之。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "两颗头颅的重量——刺秦计划的血腥筹码",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-荆轲-event-4",
+        "person_qid": "guji-荆轲",
+        "endeavor_id": null,
+        "date": "-228",
+        "date_precision": "year",
+        "place_name": "燕国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "战役",
+        "title_zh": "高渐离击筑——知音绝唱",
+        "description_zh": "荆轲好读书击剑，与高渐离游于燕市。高渐离击筑，荆轲和而歌，相乐也。后荆轲刺秦失败，秦灭燕。高渐离以筑击秦始皇不中，被杀。知音之交终以生死相许。",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": "名言",
+        "highlight_note": "",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-荆轲-event-birth",
+        "person_qid": "guji-荆轲",
+        "endeavor_id": null,
+        "date": "约-424",
+        "date_precision": "year",
+        "place_name": "卫国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 卫国",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-荆轲"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-荆轲-endeavor-1",
+        "person_qid": "guji-荆轲",
+        "title_zh": "入秦刺杀秦王政",
+        "domain": "刺杀",
+        "start_date": "-228",
+        "end_date": "-227",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "燕国蓟城",
+          "秦国咸阳"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "秦将王翦破赵，兵临燕境。太子丹恐惧，欲遣荆轲入秦刺秦王。荆轲携樊於期之首级与督亢地图，以献地为名入秦。秦王召见，荆轲展地图，图穷而匕首现。荆轲左手持秦王袖，右手持匕首刺之。秦王惊起，衣袖挣断。秦王绕柱而走，群臣惊愕。荆轲追秦王，秦王拔剑击断荆轲左腿。荆轲以匕首掷之，不中。荆轲倚柱而笑，箕踞以骂。左右上前杀之。",
+        "outcome": "刺秦失败，荆轲身死",
+        "lesson": "虽千万人吾往矣——明知必败仍义无反顾",
+        "phases": [
+          {
+            "name": "受命图秦",
+            "start_date": "-228",
+            "end_date": "-228",
+            "place": "燕国蓟城",
+            "description_zh": null,
+            "highlight": "太子丹恳请荆轲"
+          },
+          {
+            "name": "准备刺杀",
+            "start_date": "-228",
+            "end_date": "-227",
+            "place": "燕国",
+            "description_zh": null,
+            "highlight": "樊於期献首级，徐夫人匕首淬毒"
+          },
+          {
+            "name": "易水送别",
+            "start_date": "-227",
+            "end_date": "-227",
+            "place": "燕国易水",
+            "description_zh": null,
+            "highlight": "风萧萧兮易水寒"
+          },
+          {
+            "name": "图穷匕见",
+            "start_date": "-227",
+            "end_date": "-227",
+            "place": "秦国咸阳殿",
+            "description_zh": null,
+            "highlight": "图穷匕见，功亏一篑"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-荆轲",
+        "date": "-227",
+        "place_name": "燕国易水",
+        "highlight_type": "名言",
+        "title_zh": "易水送别——风萧萧兮易水寒",
+        "highlight_note": "千古第一送别——悲壮之极致",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-荆轲",
+        "date": "-227",
+        "place_name": "秦国咸阳殿",
+        "highlight_type": "战役",
+        "title_zh": "图穷匕见——刺秦失败",
+        "highlight_note": "图穷匕见——中国历史上最著名的一击",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-荆轲",
+        "date": "-228",
+        "place_name": "燕国",
+        "highlight_type": "决策",
+        "title_zh": "樊於期献首级",
+        "highlight_note": "两颗头颅的重量——刺秦计划的血腥筹码",
+        "endeavor_id": null,
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  },
+  {
+    "qid": "guji-豫让",
+    "name_zh": "豫让",
+    "name_en": null,
+    "era": "战国初期",
+    "archetype": "士为知己者死的终极诠释",
+    "role": "模范",
+    "dilemmas": [
+      "国士之遇与国仇家恨",
+      "漆身吞炭的自残式复仇",
+      "赵襄子义释与求死不得"
+    ],
+    "birth_date": "约-470",
+    "death_date": "-453",
+    "birth_place": "晋国",
+    "summary_zh": null,
+    "summary_first_person": "吾事范氏、中行氏，彼以众人遇吾，吾以众人报之。智伯以国士遇吾，吾以国士报之。智伯已死，吾漆身吞炭，虽肝脑涂地亦不悔。'士为知己者死，女为悦己者容'——此吾之志也。",
+    "lesson": "知遇之恩重于生死——豫让用生命定义了'士'的精神。",
+    "events": [
+      {
+        "id": "guji-豫让-event-1",
+        "person_qid": "guji-豫让",
+        "endeavor_id": "guji-豫让-endeavor-1",
+        "date": "-453",
+        "date_precision": "year",
+        "place_name": "赵襄子宫中",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "刺杀",
+        "title_zh": "伏厕行刺，赵襄子义释",
+        "description_zh": "豫让漆身吞炭后伏于赵襄子宫中厕所。赵襄子如厕时心动，令搜索刺客，遂执豫让。左右欲杀之，赵襄子曰'义士也，吾谨避之耳'，释放豫让。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "决策",
+        "highlight_note": "义士与义主——乱世中的双向成全",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-豫让-event-2",
+        "person_qid": "guji-豫让",
+        "endeavor_id": "guji-豫让-endeavor-1",
+        "date": "-453",
+        "date_precision": "year",
+        "place_name": "晋国桥上",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "刺杀",
+        "title_zh": "击衣殉义",
+        "description_zh": "豫让伏于赵襄子必经之桥下，马惊。赵襄子识之，豫让求曰'愿请君之衣而击之，虽死不恨'。襄子义之，使使者持衣与豫让。豫让三跃击衣曰'吾可以下报智伯矣'，遂伏剑自尽。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "战役",
+        "highlight_note": "击衣三跃——刺客精神的最高境界",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-豫让-event-3",
+        "person_qid": "guji-豫让",
+        "endeavor_id": "guji-豫让-endeavor-1",
+        "date": "-453",
+        "date_precision": "year",
+        "place_name": "晋国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "至暗时刻",
+        "title_zh": "漆身吞炭",
+        "description_zh": "豫让为改变容貌行刺赵襄子，以漆涂身使皮肤溃烂如癞，吞炭使声音嘶哑变调。其友见而泣曰'以子之才，委质而臣事襄子，襄子必近幸子。近幸子，乃为所欲，顾不易邪？何乃残身苦形，欲以求报襄子，不亦难乎！'豫让答曰'既已委质臣事人而求杀之，是怀二心以事其君也'。",
+        "first_person_quote": null,
+        "is_highlight": true,
+        "highlight_type": "至暗时刻",
+        "highlight_note": "以自残之躯行义士之志——对'忠'的极端诠释",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "status": "ai_filled",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-豫让-event-death",
+        "person_qid": "guji-豫让",
+        "endeavor_id": "guji-豫让-endeavor-1",
+        "date": "-453",
+        "date_precision": "year",
+        "place_name": null,
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "逝世",
+        "title_zh": "逝世",
+        "description_zh": "卒于 未知地点",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-豫让"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      },
+      {
+        "id": "guji-豫让-event-birth",
+        "person_qid": "guji-豫让",
+        "endeavor_id": null,
+        "date": "约-470",
+        "date_precision": "year",
+        "place_name": "晋国",
+        "place_qid": null,
+        "place_coord": null,
+        "event_type": "出生",
+        "title_zh": "出生",
+        "description_zh": "生于 晋国",
+        "first_person_quote": null,
+        "is_highlight": false,
+        "highlight_type": null,
+        "highlight_note": null,
+        "sources": [
+          "https://www.wikidata.org/wiki/guji-豫让"
+        ],
+        "status": "verified",
+        "needs_review_reason": null
+      }
+    ],
+    "endeavors": [
+      {
+        "id": "guji-豫让-endeavor-1",
+        "person_qid": "guji-豫让",
+        "title_zh": "漆身吞炭，三刺赵襄子",
+        "domain": "刺杀",
+        "start_date": "-453",
+        "end_date": "-453",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "晋国"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "智伯被赵襄子联合韩魏三家所灭，赵襄子漆智伯之头为饮器。豫让欲为智伯报仇，先漆身为厉（使皮肤溃烂如癞），吞炭为哑（使声音嘶哑），改变容貌声音以行刺。第一次伏于赵襄子宫中厕所，被赵襄子识破释之。第二次伏于襄子过桥之下马惊处，豫让击襄子之衣，襄子叹曰'义士也'，令其击衣如击人，豫让三跃击衣而后伏剑自尽。",
+        "outcome": "豫让完成心愿后自杀殉义",
+        "lesson": "国士之遇，国士报之——义的最高形态",
+        "phases": [
+          {
+            "name": "毁容变声",
+            "start_date": "-453",
+            "end_date": "-453",
+            "place": "晋国",
+            "description_zh": null,
+            "highlight": "漆身为厉，吞炭为哑"
+          },
+          {
+            "name": "第一次行刺",
+            "start_date": "-453",
+            "end_date": "-453",
+            "place": "赵襄子宫中厕所",
+            "description_zh": null,
+            "highlight": "伏于厕中被识破"
+          },
+          {
+            "name": "第二次行刺",
+            "start_date": "-453",
+            "end_date": "-453",
+            "place": "襄子必经之桥",
+            "description_zh": null,
+            "highlight": "击衣而死"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-豫让-event-1",
+          "guji-豫让-event-2",
+          "guji-豫让-event-3",
+          "guji-豫让-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
+    "highlights": [
+      {
+        "person_qid": "guji-豫让",
+        "date": "-453",
+        "place_name": "赵襄子宫中",
+        "highlight_type": "决策",
+        "title_zh": "伏厕行刺，赵襄子义释",
+        "highlight_note": "义士与义主——乱世中的双向成全",
+        "endeavor_id": "guji-豫让-endeavor-1",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-豫让",
+        "date": "-453",
+        "place_name": "晋国桥上",
+        "highlight_type": "战役",
+        "title_zh": "击衣殉义",
+        "highlight_note": "击衣三跃——刺客精神的最高境界",
+        "endeavor_id": "guji-豫让-endeavor-1",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      },
+      {
+        "person_qid": "guji-豫让",
+        "date": "-453",
+        "place_name": "晋国",
+        "highlight_type": "至暗时刻",
+        "title_zh": "漆身吞炭",
+        "highlight_note": "以自残之躯行义士之志——对'忠'的极端诠释",
+        "endeavor_id": "guji-豫让-endeavor-1",
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ]
+      }
+    ]
+  }
+]

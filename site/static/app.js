@@ -34,8 +34,13 @@ async function fetchText(url){const r=await fetch(url+'?'+Date.now());if(!r.ok)t
 async function init(){
   try{
     DATA.index=await fetchJSON('data/index.json');
-    for(const p of DATA.index.persons){
-      try{DATA.persons.push(await fetchJSON(`data/${p.year_dir}/${p.name_zh}.json`))}catch(e){console.warn('skip',p.name_zh)}
+    // load century files (each contains all persons in that century)
+    const ckeys=Object.keys(DATA.index.centuries||{});
+    for(const ck of ckeys){
+      try{
+        const persons=await fetchJSON(`data/${ck}.json`);
+        if(Array.isArray(persons))DATA.persons.push(...persons);
+      }catch(e){console.warn('skip century',ck,e.message)}
     }
     const text=await fetchText('data/timeline.jsonl');
     DATA.events=text.trim().split('\n').filter(Boolean).map(l=>JSON.parse(l));
