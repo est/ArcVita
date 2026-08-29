@@ -1,5 +1,5 @@
 :root{--ink:#1a1a1a;--paper:#f5f0e8;--accent:#8b4513;--gold:#b8860b;--jade:#2e8b57;--crimson:#8b0000;--mist:#6b6b6b;--ruler:#d4c5a9;--dim:#e8e0d0;--row-h:50px;--hl-row-h:42px;
---c-成语:#b8860b;--c-代表作:#4169e1;--c-战役:#8b0000;--c-决策:#2e8b57;--c-至暗时刻:#555;--c-名言:#9370db;--c-发明:#daa520;--c-制度:#8b4513;--c-演讲:#cd5c5c;--c-奖项:#4682b4;--c-远航:#2e8b57}
+--c-成语:#b8860b;--c-代表作:#4169e1;--c-战役:#8b0000;--c-决策:#2e8b57;--c-至暗时刻:#555;--c-名言:#9370db;--c-发明:#daa520;--c-制度:#8b4513;--c-演讲:#cd5c5c;--c-奖项:#4682b4;--c-远航:#2e8b57;--c-朝代更替:#dc143c;--c-社会变革:#4682b4;--c-文化:#9370db}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;overflow:hidden}
 body{font-family:'Noto Serif SC','Source Han Serif SC',Georgia,serif;background:var(--paper);color:var(--ink);display:flex;flex-direction:column}
