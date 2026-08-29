@@ -1,7 +1,7 @@
 let DATA={persons:[],events:[],highlights:[]};
 let activeRole=null,activeHLType=null,filtered=[];
 let zoomLevel=0;
-let expanded=null; // currently expanded person qid
+let focusedQid=null; // 聚焦的人物
 
 function py(s){if(!s)return null;const m=s.replace(/约/g,'').match(/^-?\d+/);return m?parseInt(m[0]):null}
 function ageAt(b,y){return b&&y?y-b:null}
@@ -14,10 +14,10 @@ async function fetchText(url){const r=await fetch(url+'?'+Date.now());if(!r.ok)t
 async function init(){
   try{
     DATA.index=await fetchJSON('data/index.json');
-    const ckeys=Object.keys(DATA.index.centuries||{});
-    for(const ck of ckeys){try{const p=await fetchJSON(`data/${ck}.json`);if(Array.isArray(p))DATA.persons.push(...p)}catch(e){}}
-    const text=await fetchText('data/timeline.jsonl');
-    DATA.events=text.trim().split('\n').filter(Boolean).map(l=>JSON.parse(l));
+    for(const ck of Object.keys(DATA.index.centuries||{})){
+      try{const p=await fetchJSON(`data/${ck}.json`);if(Array.isArray(p))DATA.persons.push(...p)}catch(e){}
+    }
+    DATA.events=(await fetchText('data/timeline.jsonl')).trim().split('\n').filter(Boolean).map(l=>JSON.parse(l));
     DATA.highlights=await fetchJSON('data/highlights.json');
     DATA.events.sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999'));
     DATA._filteredHL=DATA.highlights;
@@ -29,19 +29,19 @@ async function init(){
 function setupZoom(){
   const wrap=document.getElementById('wrap');
   wrap.addEventListener('wheel',e=>{
-    if(e.ctrlKey||e.metaKey){e.preventDefault();zoomLevel=Math.max(0.5,Math.min(30,zoomLevel+(e.deltaY<0?1:-1)));renderTimeline()}
+    if(e.ctrlKey||e.metaKey){e.preventDefault();zoomLevel=Math.max(0.5,Math.min(40,zoomLevel+(e.deltaY<0?2:-2)));focusedQid=null;renderTimeline()}
   },{passive:false});
-  document.getElementById('zoomIn').onclick=()=>{zoomLevel=Math.min(30,zoomLevel+1);renderTimeline()};
-  document.getElementById('zoomOut').onclick=()=>{zoomLevel=Math.max(0.5,zoomLevel-1);renderTimeline()};
-  document.getElementById('zoomReset').onclick=()=>{zoomLevel=0;expanded=null;renderTimeline()};
+  document.getElementById('zoomIn').onclick=()=>{zoomLevel=Math.min(40,zoomLevel+2);focusedQid=null;renderTimeline()};
+  document.getElementById('zoomOut').onclick=()=>{zoomLevel=Math.max(0.5,zoomLevel-2);focusedQid=null;renderTimeline()};
+  document.getElementById('zoomReset').onclick=()=>{zoomLevel=0;focusedQid=null;renderTimeline()};
 }
 
 function adaptiveStep(minY,maxY){
   const span=maxY-minY||1;
-  if(span<100)return 5;
-  if(span<300)return 10;
-  if(span<800)return 20;
-  if(span<2000)return 50;
+  if(span<50)return 5;
+  if(span<150)return 10;
+  if(span<400)return 20;
+  if(span<1000)return 50;
   return 100;
 }
 
@@ -70,11 +70,26 @@ function renderTimeline(){
   const inner=document.getElementById('inner');
   const allYears=[...DATA.events.map(e=>py(e.date)),...DATA.highlights.map(h=>py(h.date))].filter(Boolean);
   if(!allYears.length)return;
-  const minY=Math.min(...allYears),maxY=Math.max(...allYears);
+
+  let minY,maxY,ppx;
+  if(focusedQid){
+    // 聚焦模式：缩放到该人物的人生范围
+    const fp=DATA.persons.find(p=>p.qid===focusedQid);
+    if(fp){
+      const by=py(fp.birth_date),dy=py(fp.death_date)||by+60;
+      const pad=Math.max(20,(dy-by)*0.15); // 上下各留15%缓冲
+      minY=by-pad; maxY=dy+pad;
+      ppx=Math.max(8,(maxY-minY)>0?1800/(maxY-minY):10); // 至少1800px宽
+    }else{
+      focusedQid=null;minY=Math.min(...allYears);maxY=Math.max(...allYears);ppx=1.5;
+    }
+  }else{
+    minY=Math.min(...allYears);maxY=Math.max(...allYears);
+    ppx=zoomLevel>0?zoomLevel:1.5;
+  }
   const span=maxY-minY||100;
-  const ppx=zoomLevel>0?zoomLevel:1.5;
-  const W=Math.max(1600,span*ppx);
-  const ROW_N=50, ROW_E=140; // normal / expanded height
+  const W=Math.max(1800,span*ppx);
+  const ROW_N=50, ROW_E=160;
   const LH=42,LABEL_W=160;
 
   const step=adaptiveStep(minY,maxY);
@@ -84,11 +99,10 @@ function renderTimeline(){
     ticks+=`<div class="tick" style="left:${x}px"><span class="tl">${y<0?Math.abs(y)+' BCE':y}</span><div class="line"></div></div>`;
   }
 
-  //名场面轨道
   const hlData=DATA._filteredHL||DATA.highlights;
   let hlRow=`<div class="hl-row" style="width:${W}px"><div class="hl-label">名场面</div><div class="hl-track">`;
   hlData.forEach(h=>{
-    const hy=py(h.date);if(!hy)return;
+    const hy=py(h.date);if(!hy||hy<minY||hy>maxY)return;
     const hx=80+poicare((hy-minY)/span)*(W-160);
     const col=HL_COLORS[h.highlight_type]||'var(--gold)';
     const pname=DATA.index.persons.find(p=>p.qid===h.person_qid)?.name_zh||'';
@@ -96,68 +110,70 @@ function renderTimeline(){
   });
   hlRow+=`</div></div>`;
 
-  // person rows
   let rows='';if(!filtered.length)filtered=DATA.persons;
-  const ppx2=ppx; // save for inner calculations
   filtered.forEach(p=>{
     const by=py(p.birth_date),dy=py(p.death_date);
     if(!by)return;
-    const endYear=dy||by+80;
+    const endYear=dy||by+60;
+    // 如果聚焦模式，只显示该人物；否则显示所有人
+    if(focusedQid&&p.qid!==focusedQid)return;
     const pEvents=DATA.events.filter(e=>e.person_qid===p.qid);
     const pEds=(p.endeavors||[]);
-    const isExpanded=expanded===p.qid;
-    const RH=isExpanded?ROW_E:ROW_N;
+    const isFocused=focusedQid===p.qid;
+    const RH=isFocused?ROW_E:ROW_N;
     const x1=80+poicare((by-minY)/span)*(W-160);
     const x2=80+poicare((endYear-minY)/span)*(W-160);
     const roleClass=p.role||'中性';
     let track=`<div class="lifespan" style="left:${x1}px;width:${Math.max(4,x2-x1)}px;background:var(--accent)"></div>`;
 
-    if(isExpanded && pEds.length){
-      // 展开模式：事业周期条 + 阶段标注
+    if(isFocused&&pEds.length){
+      // 聚焦模式：事业周期条+阶段+事件详细
       const edColors={'军事/政治':'#8b4513','政治/军事':'#8b4513','政治':'#2e8b57','军事':'#8b0000','科学':'#4169e1','文化':'#8b4513','文化/政治':'#6b4226','航海/外交':'#2e8b57','艺术/科学':'#9370db','商业/技术':'#daa520','思想':'#8b0000'};
       pEds.forEach((ed,ei)=>{
         const esy=py(ed.start_date),eey=py(ed.end_date);if(!esy||!eey)return;
         const ex1=80+poicare((esy-minY)/span)*(W-160);
         const ex2=80+poicare((eey-minY)/span)*(W-160);
         const color=edColors[ed.domain]||'var(--accent)';
-        const barTop=12+ei*32;
-        // endeavor bar
-        track+=`<div style="position:absolute;left:${ex1}px;top:${barTop}px;width:${Math.max(8,ex2-ex1)}px;height:20px;border-radius:4px;background:${color};opacity:.22"></div>`;
-        // endeavor title
-        track+=`<div style="position:absolute;left:${ex1+4}px;top:${barTop+2}px;font-size:10px;font-weight:bold;color:${color};white-space:nowrap;max-width:${Math.max(60,ex2-ex1-8)}px;overflow:hidden;text-overflow:ellipsis">${ed.title_zh}</div>`;
-        // endeavor phases
+        const barTop=12+ei*40;
+        track+=`<div style="position:absolute;left:${ex1}px;top:${barTop}px;width:${Math.max(12,ex2-ex1)}px;height:24px;border-radius:5px;background:${color};opacity:.18"></div>`;
+        track+=`<div style="position:absolute;left:${ex1+4}px;top:${barTop+2}px;font-size:11px;font-weight:bold;color:${color};white-space:nowrap;max-width:${Math.max(80,ex2-ex1-8)}px;overflow:hidden;text-overflow:ellipsis" title="${ed.title_zh}">${ed.title_zh}</div>`;
+        track+=`<div style="position:absolute;left:${ex2+4}px;top:${barTop+5}px;font-size:9px;color:var(--mist)">${ed.start_date||'?'}→${ed.end_date||'?'}</div>`;
         if(ed.phases&&ed.phases.length){
           ed.phases.forEach((ph,pi)=>{
             const psy=py(ph.start_date)||esy,pey=py(ph.end_date)||eey;
             const phx1=80+poicare((psy-minY)/span)*(W-160);
             const phx2=80+poicare((pey-minY)/span)*(W-160);
-            const phTop=barTop+16+pi*4;
-            track+=`<div style="position:absolute;left:${phx1}px;top:${phTop}px;width:${Math.max(3,phx2-phx1)}px;height:3px;border-radius:2px;background:${color};opacity:.5" title="${ph.name}: ${ph.highlight||''}"></div>`;
-            // phase label
-            if(phx2-phx1>30){
-              track+=`<div style="position:absolute;left:${phx1+2}px;top:${phTop-9}px;font-size:8px;color:${color};white-space:nowrap">${ph.name}</div>`;
+            const phTop=barTop+18+pi*5;
+            track+=`<div style="position:absolute;left:${phx1}px;top:${phTop}px;width:${Math.max(4,phx2-phx1)}px;height:4px;border-radius:2px;background:${color};opacity:.5" title="${ph.name}: ${ph.highlight||''}"></div>`;
+            if(phx2-phx1>40){
+              track+=`<div style="position:absolute;left:${phx1+2}px;top:${phTop-10}px;font-size:9px;color:${color};white-space:nowrap">${ph.name} ${ph.start_date||''}~${ph.end_date||''}</div>`;
+            }
+            // phase highlight text
+            if(ph.highlight&&phx2-phx1>80){
+              track+=`<div style="position:absolute;left:${(phx1+phx2)/2}px;top:${phTop-20}px;font-size:8px;color:var(--gold);white-space:nowrap;transform:translateX(-50%);font-style:italic">${ph.highlight}</div>`;
             }
           });
         }
-        // endeavor events on this bar
+        // events within this endeavor
         pEvents.filter(ev=>{
           const ey=py(ev.date);if(!ey)return false;
-          const sy=py(ed.start_date),ey2=py(ed.end_date);
-          return sy&&ey2&&sy<=ey&&ey<=ey2;
+          return esy<=ey&&ey<=eey;
         }).forEach(ev=>{
           const ey=py(ev.date);if(!ey)return;
           const ex=80+poicare((ey-minY)/span)*(W-160);
-          const evTop=barTop+14;
+          const age=ageAt(by,ey);
           const cls=ev.is_highlight?'highlight':ev.event_type==='出生'?'birth':ev.event_type==='逝世'?'death':'normal';
-          track+=`<div class="ev-dot ${cls}" style="left:${ex}px;top:${evTop}px;width:${ev.is_highlight?10:6}px;height:${ev.is_highlight?10:6}px;transform:translateX(-50%)" data-qid="${p.qid}" data-date="${ev.date}" data-title="${ev.title_zh||''}" data-place="${ev.place_name||''}" data-desc="${(ev.description||ev.description_zh||'').replace(/"/g,'&quot;')}" data-hl="${ev.highlight_note||''}" data-age="${ageAt(by,ey)??''}" data-type="${ev.highlight_type||ev.event_type||''}"></div>`;
-          // event label
-          if(ev.is_highlight&&ev.title_zh){
-            track+=`<div style="position:absolute;left:${ex+6}px;top:${evTop-2}px;font-size:8px;color:var(--gold);white-space:nowrap">${ev.title_zh}</div>`;
+          const evTop=barTop+16;
+          track+=`<div class="ev-dot ${cls}" style="left:${ex}px;top:${evTop}px;width:${ev.is_highlight?12:8}px;height:${ev.is_highlight?12:8}px;transform:translateX(-50%)" data-qid="${p.qid}" data-date="${ev.date}" data-title="${ev.title_zh||''}" data-place="${ev.place_name||''}" data-desc="${(ev.description||ev.description_zh||'').replace(/"/g,'&quot;')}" data-hl="${ev.highlight_note||''}" data-age="${age??''}" data-type="${ev.highlight_type||ev.event_type||''}"></div>`;
+          // event label with age
+          if(ev.title_zh){
+            track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop-2}px;font-size:9px;color:var(--ink);white-space:nowrap;max-width:140px;overflow:hidden;text-overflow:ellipsis" title="${ev.title_zh} ${ev.date||''} ${age?age+'岁':''}">${ev.title_zh}</div>`;
+            track+=`<div style="position:absolute;left:${ex+8}px;top:${evTop+10}px;font-size:8px;color:var(--mist)">${ev.date||''} ${age?age+'岁':''} ${ev.place_name||''}</div>`;
           }
         });
       });
-    } else {
-      // 紧凑模式：圆点+年龄
+    }else{
+      // 概览模式：简单圆点
       const edColors={'军事/政治':'#8b4513','政治/军事':'#8b4513','政治':'#2e8b57','军事':'#8b0000','科学':'#4169e1','文化':'#8b4513','文化/政治':'#6b4226','航海/外交':'#2e8b57','艺术/科学':'#9370db','商业/技术':'#daa520','思想':'#8b0000'};
       pEds.forEach((ed,ei)=>{
         const esy=py(ed.start_date),eey=py(ed.end_date);if(!esy||!eey)return;
@@ -174,14 +190,24 @@ function renderTimeline(){
         if(age!==null&&age>=0&&ev.title_zh){track+=`<div class="ev-title" style="left:${ex}px">${ev.title_zh}</div>`;track+=`<div class="ev-age" style="left:${ex}px">${age}岁</div>`}
       });
     }
-    rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${RH}px"><div class="p-label" onclick="toggleExpand('${p.qid}')"><span class="dot ${roleClass}"></span>${p.name_zh}<span class="arch">${p.archetype||''}</span>${pEds.length?`<span style="font-size:8px;color:var(--gold);margin-left:auto">${isExpanded?'▾':'▸'}${pEds.length}</span>`:''}</div><div class="p-track" style="width:${W-LABEL_W}px">${track}</div></div>`;
+    rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${RH}px"><div class="p-label" onclick="focusPerson('${p.qid}')"><span class="dot ${roleClass}"></span>${p.name_zh}<span class="arch">${p.archetype||''}</span>${pEds.length?`<span style="font-size:8px;color:var(--gold);margin-left:auto">${isFocused?'▾':'▸'}${pEds.length}事</span>`:''}</div><div class="p-track" style="width:${W-LABEL_W}px">${track}</div></div>`;
   });
 
   inner.innerHTML=`<div class="axis-row" style="width:${W}px">${ticks}</div>${hlRow}${rows}`;
   inner.style.width=W+'px';
-  const totalH=32+LH+filtered.reduce((s,p)=>{const by=py(p.birth_date);return by?s+(expanded===p.qid?ROW_E:ROW_N):s},0);
+  const totalH=32+LH+filtered.reduce((s,p)=>{const by=py(p.birth_date);if(!by)return s;if(focusedQid&&p.qid!==focusedQid)return s;return s+(focusedQid===p.qid?ROW_E:ROW_N)},0);
   inner.style.height=totalH+'px';
-  document.getElementById('zoomLevel').textContent=zoomLevel>0?`${zoomLevel.toFixed(0)}x`:'自适应';
+
+  // update zoom display
+  const zEl=document.getElementById('zoomLevel');
+  if(focusedQid){
+    const fp=DATA.persons.find(p=>p.qid===focusedQid);
+    zEl.textContent=`聚焦 ${fp?.name_zh||''}`;
+    zEl.style.color='var(--accent)';
+  }else{
+    zEl.textContent=zoomLevel>0?`${zoomLevel.toFixed(0)}x`:'自适应';
+    zEl.style.color='var(--mist)';
+  }
 
   // tooltips + click
   const tip=document.getElementById('tip');
@@ -202,13 +228,13 @@ function renderTimeline(){
     d.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px'});
     d.addEventListener('mouseleave',()=>{tip.style.display='none'});
     if(d.classList.contains('hl-dot')){
-      d.addEventListener('click',()=>{const row=document.querySelector(`.p-row[data-qid="${d.dataset.qid}"]`);if(row)row.scrollIntoView({behavior:'smooth',block:'center'})});
+      d.addEventListener('click',()=>{focusPerson(d.dataset.qid)});
     }
   });
 }
 
-function toggleExpand(qid){
-  expanded=expanded===qid?null:qid;
+function focusPerson(qid){
+  if(focusedQid===qid){focusedQid=null;zoomLevel=0}else{focusedQid=qid;zoomLevel=0}
   renderTimeline();
 }
 
@@ -247,7 +273,9 @@ function showDetail(qid){
   document.getElementById('detail').classList.add('open');
 }
 function closeDetail(){document.getElementById('detail').classList.remove('open')}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail()});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){if(focusedQid){focusedQid=null;zoomLevel=0;renderTimeline()}else{closeDetail()}}
+});
 (function(){const el=document.getElementById('wrap');let d=false,sx,sl;
 el.addEventListener('mousedown',e=>{d=true;sx=e.pageX-el.offsetLeft;sl=el.scrollLeft});
 el.addEventListener('mouseleave',()=>d=false);el.addEventListener('mouseup',()=>d=false);
