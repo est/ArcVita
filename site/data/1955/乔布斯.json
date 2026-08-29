@@ -1,0 +1,235 @@
+{
+  "qid": "Q19837",
+  "name_zh": "乔布斯",
+  "name_en": "Steve Jobs",
+  "era": "当代",
+  "archetype": "产品型",
+  "role": "模范",
+  "dilemmas": [
+    "被流放",
+    "从零开始",
+    "转型阵痛"
+  ],
+  "birth_date": "1955-02-24",
+  "death_date": "2011-10-05",
+  "birth_place": "旧金山",
+  "summary_zh": "苹果公司创始人，以产品与设计重塑个人计算与移动时代，历经被逐而回归。",
+  "summary_first_person": "我被自己创立的公司赶走，却在荒野里找回了对产品的直觉。",
+  "lesson": "被逐是重生的机会，专注比聪明更稀缺。",
+  "events": [
+    {
+      "id": "Q19837-event-1",
+      "person_qid": "Q19837",
+      "endeavor_id": null,
+      "date": "1955-02-24",
+      "date_precision": "day",
+      "place_name": "旧金山",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于旧金山",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q19837-event-2",
+      "person_qid": "Q19837",
+      "endeavor_id": "Q19837-endeavor-1",
+      "date": "1985-09-17",
+      "date_precision": "day",
+      "place_name": "硅谷",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "放逐",
+      "title_zh": "被逐出苹果",
+      "description_zh": "被董事会逐出",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "决策",
+      "highlight_note": "转折名场面：被逐",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q19837-event-3",
+      "person_qid": "Q19837",
+      "endeavor_id": "Q19837-endeavor-1",
+      "date": "1997-07-09",
+      "date_precision": "day",
+      "place_name": "旧金山",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "回归",
+      "title_zh": "回归苹果",
+      "description_zh": "回归并重塑苹果",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "决策",
+      "highlight_note": "转折名场面：回归",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q19837-event-4",
+      "person_qid": "Q19837",
+      "endeavor_id": null,
+      "date": "2007-01-09",
+      "date_precision": "day",
+      "place_name": "旧金山",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "发布",
+      "title_zh": "iPhone 发布",
+      "description_zh": "发布 iPhone，定义智能手机",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "代表作",
+      "highlight_note": "代表作：2007-01-09 iPhone 发布",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q19837-event-5",
+      "person_qid": "Q19837",
+      "endeavor_id": null,
+      "date": "2011-10-05",
+      "date_precision": "day",
+      "place_name": "帕洛阿尔托",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "逝世",
+      "description_zh": "卒于帕洛阿尔托",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    }
+  ],
+  "endeavors": [
+    {
+      "id": "Q19837-endeavor-1",
+      "person_qid": "Q19837",
+      "title_zh": "被逐与回归",
+      "domain": "商业/技术",
+      "start_date": "1985",
+      "end_date": "1997",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "硅谷",
+        "旧金山"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "我被自己创立的公司赶走，在NeXT与皮克斯的荒野里找回对产品的直觉；回归时把专注刻进苹果的每一道倒角。",
+      "outcome": "iMac、iPod、iPhone 时代开启",
+      "lesson": "被逐是重生的机会，专注比聪明更稀缺。",
+      "phases": [
+        {
+          "name": "被逐",
+          "start_date": "1985",
+          "end_date": "1985",
+          "place": "硅谷",
+          "description_zh": null,
+          "highlight": "被逐 1985 — 至暗起点"
+        },
+        {
+          "name": "荒野",
+          "start_date": "1986",
+          "end_date": "1996",
+          "place": "旧金山",
+          "description_zh": null,
+          "highlight": "NeXT/皮克斯 — 沉淀期"
+        },
+        {
+          "name": "回归",
+          "start_date": "1997",
+          "end_date": "1997",
+          "place": "旧金山",
+          "description_zh": null,
+          "highlight": "回归苹果 1997 — 转折名场面"
+        },
+        {
+          "name": "代表作",
+          "start_date": "2007",
+          "end_date": "2007",
+          "place": "旧金山",
+          "description_zh": null,
+          "highlight": "iPhone 发布 2007-01-09 — 代表作名场面"
+        }
+      ],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [
+        "Q19837-event-2",
+        "Q19837-event-3"
+      ],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ],
+      "review_status": "ai_filled"
+    }
+  ],
+  "highlights": [
+    {
+      "person_qid": "Q19837",
+      "date": "1985-09-17",
+      "place_name": "硅谷",
+      "highlight_type": "决策",
+      "title_zh": "被逐出苹果",
+      "highlight_note": "转折名场面：被逐",
+      "endeavor_id": "Q19837-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ]
+    },
+    {
+      "person_qid": "Q19837",
+      "date": "1997-07-09",
+      "place_name": "旧金山",
+      "highlight_type": "决策",
+      "title_zh": "回归苹果",
+      "highlight_note": "转折名场面：回归",
+      "endeavor_id": "Q19837-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ]
+    },
+    {
+      "person_qid": "Q19837",
+      "date": "2007-01-09",
+      "place_name": "旧金山",
+      "highlight_type": "代表作",
+      "title_zh": "iPhone 发布",
+      "highlight_note": "代表作：2007-01-09 iPhone 发布",
+      "endeavor_id": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q19837"
+      ]
+    }
+  ]
+}

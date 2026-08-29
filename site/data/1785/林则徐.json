@@ -1,0 +1,192 @@
+{
+  "qid": "Q334053",
+  "name_zh": "林则徐",
+  "name_en": "Lin Zexu",
+  "era": "清",
+  "archetype": "担当型",
+  "role": "模范",
+  "dilemmas": [
+    "被贬",
+    "被误解"
+  ],
+  "birth_date": "1785-08-30",
+  "death_date": "1850-11-22",
+  "birth_place": "福州",
+  "summary_zh": "清末政治家，虎门销烟，睁眼看世界第一人，力主禁烟抗英。",
+  "summary_first_person": "我在虎门点起的那把火，烧的是鸦片，也是国人的沉睡。",
+  "lesson": "在众醉时保持清醒，需要付出代价也必须去做。",
+  "events": [
+    {
+      "id": "Q334053-event-1",
+      "person_qid": "Q334053",
+      "endeavor_id": null,
+      "date": "1785-08-30",
+      "date_precision": "day",
+      "place_name": "福州",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于福州",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q334053"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q334053-event-2",
+      "person_qid": "Q334053",
+      "endeavor_id": "Q334053-endeavor-1",
+      "date": "1839-06-03",
+      "date_precision": "day",
+      "place_name": "虎门",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "禁烟",
+      "title_zh": "虎门销烟",
+      "description_zh": "主持虎门销烟二十余日",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "名言",
+      "highlight_note": "名场面：虎门销烟，睁眼看世界起点",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q334053"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q334053-event-3",
+      "person_qid": "Q334053",
+      "endeavor_id": "Q334053-endeavor-1",
+      "date": "1839-08-01",
+      "date_precision": "day",
+      "place_name": "广州",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "创作",
+      "title_zh": "《四洲志》辑成",
+      "description_zh": "主持编译《四洲志》",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "代表作",
+      "highlight_note": "代表作：睁眼看世界第一步",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q334053"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q334053-event-4",
+      "person_qid": "Q334053",
+      "endeavor_id": null,
+      "date": "1850-11-22",
+      "date_precision": "day",
+      "place_name": "潮州",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "逝世",
+      "description_zh": "病逝于潮州普宁",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q334053"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    }
+  ],
+  "endeavors": [
+    {
+      "id": "Q334053-endeavor-1",
+      "person_qid": "Q334053",
+      "title_zh": "虎门销烟与抗英",
+      "domain": "政治",
+      "start_date": "1839",
+      "end_date": "1842",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "广州",
+        "虎门"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "我在虎门点火销烟，以强硬对抗鸦片贸易；战争失利后被贬新疆，仍修水利、思变法。",
+      "outcome": "虎门销烟，睁眼看世界",
+      "lesson": "在众醉时清醒，需要承担被误解的代价。",
+      "phases": [
+        {
+          "name": "销烟",
+          "start_date": "1839",
+          "end_date": "1839",
+          "place": "虎门",
+          "description_zh": null,
+          "highlight": "虎门销烟 1839-06-03 — 名场面"
+        },
+        {
+          "name": "抗英",
+          "start_date": "1840",
+          "end_date": "1842",
+          "place": "广州",
+          "description_zh": null,
+          "highlight": "被贬伊犁 — 至暗起点"
+        },
+        {
+          "name": "再起",
+          "start_date": "1842",
+          "end_date": "1850",
+          "place": "新疆",
+          "description_zh": null,
+          "highlight": "修坎儿井 — 实干收束"
+        }
+      ],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [
+        "Q334053-event-2",
+        "Q334053-event-3"
+      ],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q334053"
+      ],
+      "review_status": "ai_filled"
+    }
+  ],
+  "highlights": [
+    {
+      "person_qid": "Q334053",
+      "date": "1839-06-03",
+      "place_name": "虎门",
+      "highlight_type": "名言",
+      "title_zh": "虎门销烟",
+      "highlight_note": "名场面：虎门销烟，睁眼看世界起点",
+      "endeavor_id": "Q334053-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q334053"
+      ]
+    },
+    {
+      "person_qid": "Q334053",
+      "date": "1839-08-01",
+      "place_name": "广州",
+      "highlight_type": "代表作",
+      "title_zh": "《四洲志》辑成",
+      "highlight_note": "代表作：睁眼看世界第一步",
+      "endeavor_id": "Q334053-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q334053"
+      ]
+    }
+  ]
+}

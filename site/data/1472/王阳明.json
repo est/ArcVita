@@ -1,0 +1,266 @@
+{
+  "qid": "Q316452",
+  "name_zh": "王阳明",
+  "name_en": "Wang Yangming",
+  "era": "明",
+  "archetype": "知行型",
+  "role": "模范",
+  "dilemmas": [
+    "被贬",
+    "被流放",
+    "转型阵痛"
+  ],
+  "birth_date": "1472-10-31",
+  "death_date": "1529-01-09",
+  "birth_place": "余姚",
+  "summary_zh": "心学集大成者，龙场悟道，知行合一；平宁王之乱，立德立功立言。",
+  "summary_first_person": "我在龙场的瘴气里悟到：心外无物，破山中贼易，破心中贼难。",
+  "lesson": "把内修与实干合一，学问才不悬空。",
+  "events": [
+    {
+      "id": "Q316452-event-1",
+      "person_qid": "Q316452",
+      "endeavor_id": null,
+      "date": "1472-10-31",
+      "date_precision": "day",
+      "place_name": "余姚",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "出生",
+      "title_zh": "出生",
+      "description_zh": "生于余姚",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q316452-event-2",
+      "person_qid": "Q316452",
+      "endeavor_id": "Q316452-endeavor-1",
+      "date": "1508",
+      "date_precision": "year",
+      "place_name": "龙场",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "贬谪",
+      "title_zh": "谪居龙场",
+      "description_zh": "因言获罪，谪贵阳龙场",
+      "first_person_quote": null,
+      "is_highlight": false,
+      "highlight_type": null,
+      "highlight_note": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q316452-event-3",
+      "person_qid": "Q316452",
+      "endeavor_id": "Q316452-endeavor-1",
+      "date": "1508",
+      "date_precision": "year",
+      "place_name": "龙场",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "顿悟",
+      "title_zh": "龙场悟道",
+      "description_zh": "悟心即理，提出知行合一",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "名言",
+      "highlight_note": "名言 知行合一名场面诞生",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q316452-event-4",
+      "person_qid": "Q316452",
+      "endeavor_id": "Q316452-endeavor-2",
+      "date": "1519",
+      "date_precision": "year",
+      "place_name": "南昌",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "平叛",
+      "title_zh": "平宸濠之乱",
+      "description_zh": "三十五日平宁王之乱",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "战役",
+      "highlight_note": "战争名场面：以少胜多，周期极短的成事",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    },
+    {
+      "id": "Q316452-event-5",
+      "person_qid": "Q316452",
+      "endeavor_id": null,
+      "date": "1529-01-09",
+      "date_precision": "day",
+      "place_name": "南安",
+      "place_qid": null,
+      "place_coord": null,
+      "event_type": "逝世",
+      "title_zh": "逝世",
+      "description_zh": "卒于江西南安途中",
+      "first_person_quote": null,
+      "is_highlight": true,
+      "highlight_type": "名言",
+      "highlight_note": "遗言 此心光明，亦复何言",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ],
+      "status": "ai_filled",
+      "needs_review_reason": null
+    }
+  ],
+  "endeavors": [
+    {
+      "id": "Q316452-endeavor-1",
+      "person_qid": "Q316452",
+      "title_zh": "龙场悟道",
+      "domain": "思想",
+      "start_date": "1508",
+      "end_date": "1510",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "贵阳",
+        "龙场"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "被贬龙场，瘴气与孤独中我悟到心即理，知行合一的种子在此萌发。",
+      "outcome": "心学雏形形成",
+      "lesson": "低谷是思想成型的最好土壤。",
+      "phases": [
+        {
+          "name": "贬谪",
+          "start_date": "1508",
+          "end_date": "1508",
+          "place": "龙场",
+          "description_zh": null,
+          "highlight": "谪居龙场 — 至暗起点"
+        },
+        {
+          "name": "悟道",
+          "start_date": "1508",
+          "end_date": "1510",
+          "place": "龙场",
+          "description_zh": null,
+          "highlight": "龙场悟道 — 知行合一提出"
+        }
+      ],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [
+        "Q316452-event-2",
+        "Q316452-event-3"
+      ],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ],
+      "review_status": "ai_filled"
+    },
+    {
+      "id": "Q316452-endeavor-2",
+      "person_qid": "Q316452",
+      "title_zh": "平宸濠与讲学",
+      "domain": "军事/文化",
+      "start_date": "1519",
+      "end_date": "1528",
+      "start_precision": null,
+      "end_precision": null,
+      "places": [
+        "南昌",
+        "绍兴"
+      ],
+      "place_qids": [],
+      "status": "完成",
+      "description_zh": "以极快速度平定宁王之乱，随后在绍兴、赣州讲学，让心学从战场的决断流向日常的修为。",
+      "outcome": "立德立功立言",
+      "lesson": "把战场的决断力迁移到学问，知行才合一。",
+      "phases": [
+        {
+          "name": "平叛",
+          "start_date": "1519",
+          "end_date": "1519",
+          "place": "南昌",
+          "description_zh": null,
+          "highlight": "三十五日平宸濠 — 战争名场面"
+        },
+        {
+          "name": "讲学",
+          "start_date": "1521",
+          "end_date": "1528",
+          "place": "绍兴",
+          "description_zh": null,
+          "highlight": "《传习录》 — 代表作"
+        }
+      ],
+      "dilemmas": [],
+      "keywords": [],
+      "event_ids": [
+        "Q316452-event-4"
+      ],
+      "highlight_event_ids": [],
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ],
+      "review_status": "ai_filled"
+    }
+  ],
+  "highlights": [
+    {
+      "person_qid": "Q316452",
+      "date": "1508",
+      "place_name": "龙场",
+      "highlight_type": "名言",
+      "title_zh": "龙场悟道",
+      "highlight_note": "名言 知行合一名场面诞生",
+      "endeavor_id": "Q316452-endeavor-1",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ]
+    },
+    {
+      "person_qid": "Q316452",
+      "date": "1519",
+      "place_name": "南昌",
+      "highlight_type": "战役",
+      "title_zh": "平宸濠之乱",
+      "highlight_note": "战争名场面：以少胜多，周期极短的成事",
+      "endeavor_id": "Q316452-endeavor-2",
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ]
+    },
+    {
+      "person_qid": "Q316452",
+      "date": "1529-01-09",
+      "place_name": "南安",
+      "highlight_type": "名言",
+      "title_zh": "逝世",
+      "highlight_note": "遗言 此心光明，亦复何言",
+      "endeavor_id": null,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q316452"
+      ]
+    }
+  ]
+}
