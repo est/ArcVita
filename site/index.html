@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ArcVita · 成事儿时间轴</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>">
 <style>
 :root{--ink:#1a1a1a;--paper:#f5f0e8;--accent:#8b4513;--gold:#b8860b;--jade:#2e8b57;--crimson:#8b0000;--mist:#6b6b6b;--ruler:#d4c5a9;--dim:#e8e0d0;--row-h:52px}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -184,7 +185,7 @@ function renderEraBar(){
       });
       if(ep){
         const row=document.querySelector(`[data-qid="${ep.qid}"]`);
-        if)row.scrollIntoView({behavior:'smooth',block:'center'});
+        if(row)row.scrollIntoView({behavior:'smooth',block:'center'});
       }
     });
   });
