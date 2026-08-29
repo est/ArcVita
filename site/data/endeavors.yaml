@@ -98,6 +98,89 @@
   sources:
   - https://www.wikidata.org/wiki/Q162427
   review_status: ai_filled
+- id: Q162427-endeavor-3
+  person_qid: Q162427
+  title_zh: 灭六国统一天下
+  domain: 军事/政治
+  start_date: 前230
+  end_date: 前221
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  - 六国故地
+  place_qids: []
+  status: 完成
+  description_zh: 嬴政用李斯之谋、王翦之兵，十年间依次灭韩赵魏楚燕齐六国。前221年，天下一统，嬴政自号始皇帝，开创中国历史上第一个大一统王朝。
+  outcome: 结束战国五百年纷争，建立中国第一个中央集权帝国
+  lesson: 天下大势分久必合，但统一只是开始而非终点
+  phases:
+  - name: 远交近攻
+    start_date: 前230
+    end_date: 前225
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 先后灭韩、赵、魏
+  - name: 席卷南方
+    start_date: 前224
+    end_date: 前222
+    place: 楚国故地
+    description_zh: null
+    highlight: 王翦灭楚六十万大军
+  - name: 一统海内
+    start_date: 前222
+    end_date: 前221
+    place: 齐国临淄(今山东淄博)
+    description_zh: null
+    highlight: 齐王建不战而降，天下一统
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: Q162427-endeavor-4
+  person_qid: Q162427
+  title_zh: 创建帝国制度
+  domain: 政治制度
+  start_date: 前221
+  end_date: 前210
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 始皇帝废封建、设三十六郡，书同文、车同轨、统一度量衡货币，修驰道、筑长城、建阿房宫，以法家治天下，建立了一套影响两千年的帝国制度。
+  outcome: 中央集权制度延续两千余年，郡县制成为治国根基
+  lesson: 好的制度可以跨越时代，但制度需要人心来维护
+  phases:
+  - name: 废封建设郡县
+    start_date: 前221
+    end_date: 前221
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 废分封行郡县
+  - name: 书同文车同轨
+    start_date: 前221
+    end_date: 前215
+    place: 全帝国
+    description_zh: null
+    highlight: 统一度量衡、文字、货币
+  - name: 筑长城驰道
+    start_date: 前215
+    end_date: 前210
+    place: 北疆/全帝国
+    description_zh: null
+    highlight: 蒙恬北击匈奴筑长城
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
 - id: Q179544-endeavor-1
   person_qid: Q179544
   title_zh: 隆中对策与入蜀
@@ -3250,6 +3333,349 @@
   sources:
   - https://daizhige.org/史藏/正史/史记.html
   review_status: ai_filled
+- id: guji-光武帝-endeavor-1
+  person_qid: guji-光武帝
+  title_zh: 昆阳之战推翻新莽
+  domain: 军事
+  start_date: '23'
+  end_date: '23'
+  start_precision: null
+  end_precision: null
+  places:
+  - 昆阳(今河南叶县)
+  - 长安(今陕西西安)
+  place_qids: []
+  status: 完成
+  description_zh: 昆阳之战中，王莽四十二万大军围困昆阳。刘秀率十三骑突围求援，引万余援军回击。以精锐三千冲击敌阵，城内守军夹击，大破新莽军。此战为历史上以少胜多的经典战例。
+  outcome: 昆阳之战直接导致新莽政权崩溃
+  lesson: 以少胜多需要勇气与智慧的完美结合
+  phases:
+  - name: 昆阳突围
+    start_date: '23'
+    end_date: '23'
+    place: 昆阳(今河南叶县)
+    description_zh: null
+    highlight: 以两万破四十二万
+  - name: 推翻新莽
+    start_date: '23'
+    end_date: '23'
+    place: 长安(今陕西西安)
+    description_zh: null
+    highlight: 王莽被杀新莽灭亡
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-光武帝-event-1
+  - guji-光武帝-event-8
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-光武帝-endeavor-2
+  person_qid: guji-光武帝
+  title_zh: 光武中兴
+  domain: 政治
+  start_date: '25'
+  end_date: '57'
+  start_precision: null
+  end_precision: null
+  places:
+  - 洛阳(今河南洛阳)
+  place_qids: []
+  status: 完成
+  description_zh: 刘秀称帝后用十二年统一天下。此后以柔道治天下，退功臣不任以吏事，减轻赋税刑罚，释放奴婢，裁并郡县。东汉初年社会经济恢复，史称光武中兴。
+  outcome: 重建汉室，开创光武中兴的太平盛世
+  lesson: 打天下靠武力，治天下靠仁政
+  phases:
+  - name: 称帝建制
+    start_date: '25'
+    end_date: '25'
+    place: 鄗(今河北柏乡)
+    description_zh: null
+    highlight: 鄗城称帝建东汉
+  - name: 统一天下
+    start_date: '25'
+    end_date: '36'
+    place: 全国
+    description_zh: null
+    highlight: 十二年削平群雄
+  - name: 柔道治国
+    start_date: '36'
+    end_date: '57'
+    place: 洛阳(今河南洛阳)
+    description_zh: null
+    highlight: 退功臣进文吏
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-光武帝-event-2
+  - guji-光武帝-event-3
+  - guji-光武帝-event-4
+  - guji-光武帝-event-5
+  - guji-光武帝-event-6
+  - guji-光武帝-event-7
+  - guji-光武帝-event-death
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-关羽-endeavor-1
+  person_qid: guji-关羽
+  title_zh: 桃园结义与追随刘备
+  domain: 人物关系
+  start_date: '184'
+  end_date: '220'
+  start_precision: null
+  end_precision: null
+  places:
+  - 涿郡(今河北涿州)
+  - 各地
+  place_qids: []
+  status: 完成
+  description_zh: 关羽与刘备、张飞桃园结义，誓同生死。一生追随刘备颠沛流离。曹操俘获关羽后厚待之，关羽仍不忘刘备，千里走单骑寻兄。后镇守荆州，独当一面。
+  outcome: 忠义成为关羽的永恒标签
+  lesson: 忠诚是最强大的精神力量
+  phases:
+  - name: 桃园结义
+    start_date: '184'
+    end_date: '184'
+    place: 涿郡(今河北涿州)
+    description_zh: null
+    highlight: 与刘备张飞结义
+  - name: 千里走单骑
+    start_date: '200'
+    end_date: '200'
+    place: 从许昌到荆州
+    description_zh: null
+    highlight: 过五关斩六将寻兄
+  - name: 镇守荆州
+    start_date: '214'
+    end_date: '220'
+    place: 荆州(今湖北荆州)
+    description_zh: null
+    highlight: 独当一面镇守荆州
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-关羽-event-1
+  - guji-关羽-event-2
+  - guji-关羽-event-3
+  - guji-关羽-event-4
+  - guji-关羽-event-5
+  - guji-关羽-event-6
+  - guji-关羽-event-7
+  - guji-关羽-event-death
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-关羽-endeavor-2
+  person_qid: guji-关羽
+  title_zh: 水淹七军威震华夏
+  domain: 军事
+  start_date: '219'
+  end_date: '219'
+  start_precision: null
+  end_precision: null
+  places:
+  - 樊城(今湖北襄阳)
+  - 荆州(今湖北荆州)
+  place_qids: []
+  status: 完成
+  description_zh: 关羽北伐襄樊，利用汉水暴涨水淹于禁七军，擒于禁斩庞德。一时间威震华夏，曹操甚至考虑迁都以避其锋芒。然关羽骄傲轻敌，后方荆州被吕蒙白衣渡江偷袭。
+  outcome: 水淹七军成为关羽军事生涯的巅峰
+  lesson: 功高震主往往是最危险的时刻
+  phases:
+  - name: 北伐襄樊
+    start_date: '219'
+    end_date: '219'
+    place: 樊城(今湖北襄阳)
+    description_zh: null
+    highlight: 水淹七军擒于禁
+  - name: 威震华夏
+    start_date: '219'
+    end_date: '219'
+    place: 中原各地
+    description_zh: null
+    highlight: 曹操欲迁都
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-关羽-endeavor-3
+  person_qid: guji-关羽
+  title_zh: 败走麦城
+  domain: 军事
+  start_date: '219'
+  end_date: '220'
+  start_precision: null
+  end_precision: null
+  places:
+  - 麦城(今湖北当阳)
+  - 临沮(今湖北远安)
+  place_qids: []
+  status: 完成
+  description_zh: 吕蒙白衣渡江袭取荆州，关羽腹背受敌。败走麦城，仅余数百骑。突围至临沮被伏兵所擒。孙权劝降不从，遂杀之。关羽首级被送至曹操，操以侯礼葬之。
+  outcome: 一代名将殒命麦城
+  lesson: 骄傲轻敌是英雄最大的敌人
+  phases:
+  - name: 荆州失守
+    start_date: '219'
+    end_date: '219'
+    place: 荆州(今湖北荆州)
+    description_zh: null
+    highlight: 吕蒙白衣渡江
+  - name: 败走麦城
+    start_date: '219'
+    end_date: '219'
+    place: 麦城(今湖北当阳)
+    description_zh: null
+    highlight: 孤城困守
+  - name: 被擒遇害
+    start_date: '220'
+    end_date: '220'
+    place: 临沮(今湖北远安)
+    description_zh: null
+    highlight: 被孙权所杀
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-刘备-endeavor-1
+  person_qid: guji-刘备
+  title_zh: 从织席贩履到建立蜀汉
+  domain: 政治军事
+  start_date: '184'
+  end_date: '221'
+  start_precision: null
+  end_precision: null
+  places:
+  - 涿郡(今河北涿州)
+  - 荆州(今湖北荆州)
+  - 成都(今四川成都)
+  place_qids: []
+  status: 完成
+  description_zh: 刘备以汉室宗亲身份号召天下，但半生漂泊寄人篱下。207年三顾茅庐得诸葛亮，如鱼得水。赤壁之战后取荆州、占益州，221年称帝建蜀汉。关羽被杀后伐吴兵败，白帝城托孤而死。
+  outcome: 从织席贩履到一方之主，建立蜀汉政权
+  lesson: 坚持与仁义最终会赢得回报
+  phases:
+  - name: 半生漂泊
+    start_date: '184'
+    end_date: '207'
+    place: 各地
+    description_zh: null
+    highlight: 寄人篱下无立锥之地
+  - name: 三顾茅庐
+    start_date: '207'
+    end_date: '207'
+    place: 隆中(今湖北襄阳)
+    description_zh: null
+    highlight: 三顾茅庐得诸葛亮
+  - name: 赤壁之后
+    start_date: '208'
+    end_date: '214'
+    place: 荆州→益州
+    description_zh: null
+    highlight: 取益州建蜀汉
+  - name: 称帝伐吴
+    start_date: '221'
+    end_date: '223'
+    place: 成都(今四川成都)
+    description_zh: null
+    highlight: 夷陵兵败白帝托孤
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-刘备-event-1
+  - guji-刘备-event-3
+  - guji-刘备-event-4
+  - guji-刘备-event-6
+  - guji-刘备-event-7
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-刘备-endeavor-2
+  person_qid: guji-刘备
+  title_zh: 联孙抗曹赤壁大胜
+  domain: 军事外交
+  start_date: '208'
+  end_date: '208'
+  start_precision: null
+  end_precision: null
+  places:
+  - 荆州(今湖北荆州)
+  - 赤壁(今湖北赤壁)
+  place_qids: []
+  status: 完成
+  description_zh: 曹操南下，刘备与孙权联盟抗曹。赤壁之战以火攻大破曹军，刘备趁势取荆州四郡，终于有了自己的根据地。
+  outcome: 赤壁之战使刘备从寄人篱下变为一方诸侯
+  lesson: 联盟是弱者生存的智慧
+  phases:
+  - name: 联吴
+    start_date: '208'
+    end_date: '208'
+    place: 荆州(今湖北荆州)
+    description_zh: null
+    highlight: 孙刘联盟
+  - name: 赤壁之战
+    start_date: '208'
+    end_date: '208'
+    place: 赤壁(今湖北赤壁)
+    description_zh: null
+    highlight: 火烧赤壁大破曹军
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-司马懿-endeavor-1
+  person_qid: guji-司马懿
+  title_zh: 抵御诸葛亮北伐
+  domain: 军事
+  start_date: '231'
+  end_date: '234'
+  start_precision: null
+  end_precision: null
+  places:
+  - 长安(今陕西西安)
+  - 五丈原(今陕西岐山)
+  place_qids: []
+  status: 完成
+  description_zh: 司马懿以持久战抵御诸葛亮北伐。诸葛亮多次挑战，司马懿坚守不出。诸葛亮送女装羞辱之，司马懿不为所动。五丈原对峙百余日后，诸葛亮病逝，蜀军退去。
+  outcome: 成功抵御诸葛亮六次北伐
+  lesson: 有时候最聪明的策略就是等待
+  phases:
+  - name: 对峙消耗
+    start_date: '231'
+    end_date: '234'
+    place: 关中(今陕西)
+    description_zh: null
+    highlight: 以守为攻消耗蜀军
+  - name: 五丈原对峙
+    start_date: '234'
+    end_date: '234'
+    place: 五丈原(今陕西岐山)
+    description_zh: null
+    highlight: 诸葛亮病逝五丈原
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-司马懿-event-2
+  - guji-司马懿-event-4
+  - guji-司马懿-event-8
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
 - id: guji-吴王夫差-endeavor-1
   person_qid: guji-吴王夫差
   title_zh: 夫椒败越，放虎归山
@@ -3446,6 +3872,48 @@
     place: 姑苏(今江苏苏州)
     description_zh: null
     highlight: 吴国从偏居东南的小国崛起为霸主
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-周亚夫-endeavor-1
+  person_qid: guji-周亚夫
+  title_zh: 平定七国之乱
+  domain: 军事
+  start_date: 前154
+  end_date: 前154
+  start_precision: null
+  end_precision: null
+  places:
+  - 长安(今陕西西安)
+  - 荥阳(今河南荥阳)
+  place_qids: []
+  status: 完成
+  description_zh: 七国之乱时，周亚夫被拜为太尉。他坚守荥阳不救梁国，断吴楚联军粮道。三个月内吴楚军粮尽自溃，七国之乱平定。周亚夫功居首位，被拜为丞相。
+  outcome: 三个月平定七国之乱，巩固了中央集权
+  lesson: 军事上的最优解未必是政治上的最优解
+  phases:
+  - name: 受命出征
+    start_date: 前154
+    end_date: 前154
+    place: 长安(今陕西西安)
+    description_zh: null
+    highlight: 汉景帝拜为太尉
+  - name: 坚守荥阳
+    start_date: 前154
+    end_date: 前154
+    place: 荥阳(今河南荥阳)
+    description_zh: null
+    highlight: 断吴楚粮道
+  - name: 三个月平叛
+    start_date: 前154
+    end_date: 前154
+    place: 梁国→吴国
+    description_zh: null
+    highlight: 荡平七国叛军
   dilemmas: []
   keywords: []
   event_ids: []
@@ -3774,6 +4242,147 @@
   sources:
   - https://daizhige.org/史藏/正史/史记.html
   review_status: ai_filled
+- id: guji-孙权-endeavor-1
+  person_qid: guji-孙权
+  title_zh: 赤壁之战联刘抗曹
+  domain: 军事外交
+  start_date: '208'
+  end_date: '229'
+  start_precision: null
+  end_precision: null
+  places:
+  - 建业(今江苏南京)
+  - 赤壁(今湖北赤壁)
+  place_qids: []
+  status: 完成
+  description_zh: 曹操率大军南下，东吴群臣多主降。鲁肃引诸葛亮见孙权，周瑜力主抗曹。孙权决意联刘抗曹，以周瑜为大都督，火烧赤壁大破曹军。此后孙权稳固江东，229年称帝建吴。
+  outcome: 赤壁之战大胜，奠定三国鼎立格局
+  lesson: 关键时刻的决断可以改变历史走向
+  phases:
+  - name: 战和之争
+    start_date: '208'
+    end_date: '208'
+    place: 建业(今江苏南京)
+    description_zh: null
+    highlight: 主战派鲁肃周瑜力排众议
+  - name: 联刘抗曹
+    start_date: '208'
+    end_date: '208'
+    place: 赤壁(今湖北赤壁)
+    description_zh: null
+    highlight: 孙刘联军火烧赤壁
+  - name: 奠定三分
+    start_date: '208'
+    end_date: null
+    place: null
+    description_zh: null
+    highlight: null
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-孙权-event-1
+  - guji-孙权-event-2
+  - guji-孙权-event-3
+  - guji-孙权-event-4
+  - guji-孙权-event-5
+  - guji-孙权-event-7
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-孙权-endeavor-2
+  person_qid: guji-孙权
+  title_zh: 经营东吴五十二年
+  domain: 政治
+  start_date: '200'
+  end_date: '252'
+  start_precision: null
+  end_precision: null
+  places:
+  - 建业(今江苏南京)
+  place_qids: []
+  status: 完成
+  description_zh: 孙权在位五十二年，是三国时期在位最久的君主。他善于用人制衡，使东吴在三国中存续最久。但晚年因继承人问题引发宫廷乱政，二宫之争使东吴元气大伤。
+  outcome: 东吴存续最久，但晚年乱政埋下灭亡隐患
+  lesson: 守成之功不可没，但继承人问题是帝王最大的考验
+  phases:
+  - name: 继承基业
+    start_date: '200'
+    end_date: '208'
+    place: 建业(今江苏南京)
+    description_zh: null
+    highlight: 十八岁承兄业
+  - name: 称帝建吴
+    start_date: '229'
+    end_date: '229'
+    place: 建业(今江苏南京)
+    description_zh: null
+    highlight: 建立吴国
+  - name: 晚年守成
+    start_date: '229'
+    end_date: null
+    place: null
+    description_zh: null
+    highlight: null
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-孙权-event-6
+  - guji-孙权-event-death
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-孙策-endeavor-1
+  person_qid: guji-孙策
+  title_zh: 平定江东
+  domain: 军事
+  start_date: '194'
+  end_date: '200'
+  start_precision: null
+  end_precision: null
+  places:
+  - 江东(今江苏浙江)
+  - 建业(今江苏南京)
+  place_qids: []
+  status: 完成
+  description_zh: 孙坚死后，孙策以十七岁之龄继承父亲旧部。以周瑜为辅，六年时间平定吴郡、会稽、丹阳、豫章、庐陵、庐江六郡。人称'小霸王'。正当北上争霸之际，被刺客所伤，不久身亡，年仅二十六岁。
+  outcome: 奠定东吴基业，为三国鼎立奠基
+  lesson: 少年英雄的锐气可以改变天下格局
+  phases:
+  - name: 承父旧部
+    start_date: '194'
+    end_date: '195'
+    place: 江东(今江苏浙江)
+    description_zh: null
+    highlight: 十七岁继承孙坚旧部
+  - name: 横扫六郡
+    start_date: '195'
+    end_date: '200'
+    place: 江东(今江苏浙江)
+    description_zh: null
+    highlight: 六年平定江东
+  - name: 北上图霸
+    start_date: '200'
+    end_date: '200'
+    place: 建业(今江苏南京)
+    description_zh: null
+    highlight: 遇刺身亡
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-孙策-event-1
+  - guji-孙策-event-2
+  - guji-孙策-event-3
+  - guji-孙策-event-4
+  - guji-孙策-event-5
+  - guji-孙策-event-6
+  - guji-孙策-event-7
+  - guji-孙策-event-death
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
 - id: guji-庞涓-endeavor-1
   person_qid: guji-庞涓
   title_zh: 率魏武卒征伐四方
@@ -3965,6 +4574,99 @@
   sources:
   - https://daizhige.org/史藏/正史/史记.html
   review_status: ai_filled
+- id: guji-张飞-endeavor-1
+  person_qid: guji-张飞
+  title_zh: 从涿郡到蜀汉的征战生涯
+  domain: 军事
+  start_date: '184'
+  end_date: '221'
+  start_precision: null
+  end_precision: null
+  places:
+  - 涿郡(今河北涿州)
+  - 当阳(今湖北当阳)
+  - 成都(今四川成都)
+  place_qids: []
+  status: 完成
+  description_zh: 张飞一生追随刘备征战四方。当阳桥断后一声吼退曹军，是三国中最经典的个人武勇场面之一。入川作战势如破竹，为蜀汉建立立下大功。然性格暴躁，最终被部下所杀。
+  outcome: 蜀汉猛将，勇冠三军但结局悲惨
+  lesson: 性格决定命运，暴躁是最危险的致命弱点
+  phases:
+  - name: 桃园起兵
+    start_date: '184'
+    end_date: '184'
+    place: 涿郡(今河北涿州)
+    description_zh: null
+    highlight: 与刘备关羽结义起兵
+  - name: 当阳断后
+    start_date: '208'
+    end_date: '208'
+    place: 当阳(今湖北当阳)
+    description_zh: null
+    highlight: 当阳桥一声吼退曹军
+  - name: 入川建功
+    start_date: '214'
+    end_date: '221'
+    place: 成都(今四川成都)
+    description_zh: null
+    highlight: 攻取益州
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-张飞-event-1
+  - guji-张飞-event-2
+  - guji-张飞-event-3
+  - guji-张飞-event-4
+  - guji-张飞-event-5
+  - guji-张飞-event-6
+  - guji-张飞-event-7
+  - guji-张飞-event-death
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-彭越-endeavor-1
+  person_qid: guji-彭越
+  title_zh: 以游击战搅动楚汉格局
+  domain: 军事
+  start_date: 前207
+  end_date: 前202
+  start_precision: null
+  end_precision: null
+  places:
+  - 巨野泽(今山东巨野)
+  - 梁地(今河南商丘)
+  place_qids: []
+  status: 完成
+  description_zh: 彭越在巨野泽聚众起兵，楚汉争霸中以游击战术长期袭扰楚军后方粮道。项羽多次东征西讨，彭越在其后方反复出现，使楚军疲于奔命。垓下之围中率军参战，因功封梁王。
+  outcome: 游击战改变了楚汉战争的走向，但功臣终被诛灭
+  lesson: 非对称作战可以以弱胜强，但战后的政治博弈更为残酷
+  phases:
+  - name: 泽中聚众
+    start_date: 前207
+    end_date: 前206
+    place: 巨野泽(今山东巨野)
+    description_zh: null
+    highlight: 渔盗聚众千余人
+  - name: 游击楚军
+    start_date: 前205
+    end_date: 前204
+    place: 梁地(今河南商丘)
+    description_zh: null
+    highlight: 断项羽粮道
+  - name: 垓下会战
+    start_date: 前202
+    end_date: 前202
+    place: 垓下(今安徽灵璧)
+    description_zh: null
+    highlight: 围杀项羽有功
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
 - id: guji-晋文公-endeavor-1
   person_qid: guji-晋文公
   title_zh: 流亡十九年，终归晋国
@@ -4046,6 +4748,177 @@
     place: 践土(今河南原阳)
     description_zh: null
     highlight: 称霸中原，天子临盟
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-曹操-endeavor-1
+  person_qid: guji-曹操
+  title_zh: 官渡之战统一北方
+  domain: 军事政治
+  start_date: '196'
+  end_date: '207'
+  start_precision: null
+  end_precision: null
+  places:
+  - 许昌(今河南许昌)
+  - 官渡(今河南中牟)
+  - 邺(今河北临漳)
+  place_qids: []
+  status: 完成
+  description_zh: 曹操196年迎汉献帝都许，挟天子以令诸侯。200年官渡之战以少胜多大破袁绍，此后陆续消灭袁氏势力，北征乌桓，统一了中国北方。赤壁之战败后转向经营北方，奠定魏国基业。
+  outcome: 统一中国北方，奠定魏国根基
+  lesson: 以弱胜强需要非凡的勇气与谋略
+  phases:
+  - name: 挟天子以令诸侯
+    start_date: '196'
+    end_date: '196'
+    place: 许昌(今河南许昌)
+    description_zh: null
+    highlight: 迎汉献帝都许
+  - name: 官渡决战
+    start_date: '200'
+    end_date: '200'
+    place: 官渡(今河南中牟)
+    description_zh: null
+    highlight: 以少胜多破袁绍
+  - name: 统一北方
+    start_date: '200'
+    end_date: '207'
+    place: 邺(今河北临漳)
+    description_zh: null
+    highlight: 北征乌桓平定北方
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-曹操-event-1
+  - guji-曹操-event-3
+  - guji-曹操-event-4
+  - guji-曹操-event-8
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-李广-endeavor-1
+  person_qid: guji-李广
+  title_zh: 戍边抗匈三十余年
+  domain: 军事
+  start_date: 前166
+  end_date: 前119
+  start_precision: null
+  end_precision: null
+  places:
+  - 边塞(今甘肃宁夏)
+  - 漠北草原
+  place_qids: []
+  status: 完成
+  description_zh: 李广自文帝时从军击匈奴，历经三朝七十余战。匈奴畏之号'飞将军'，闻其名不敢犯边。然数次大战皆因各种原因未能封侯。前119年漠北之战中因迷路失期，不堪受辱自刎。
+  outcome: 飞将军名震天下，但终生未封侯
+  lesson: 英雄的悲剧往往不在于战场，而在于命运
+  phases:
+  - name: 初战成名
+    start_date: 前166
+    end_date: 前150
+    place: 边塞(今甘肃宁夏)
+    description_zh: null
+    highlight: 文帝时射虎没镞
+  - name: 郡守守边
+    start_date: 前150
+    end_date: 前129
+    place: 上郡/陇西/北地
+    description_zh: null
+    highlight: 匈奴号'飞将军'
+  - name: 漠北之战
+    start_date: 前119
+    end_date: 前119
+    place: 漠北草原
+    description_zh: null
+    highlight: 迷路自刎
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-李斯-endeavor-1
+  person_qid: guji-李斯
+  title_zh: 辅佐秦始皇统一天下
+  domain: 政治
+  start_date: 前247
+  end_date: 前221
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 李斯入秦后为吕不韦舍人，渐得秦王嬴政信任。前237年秦下逐客令，李斯上《谏逐客书》力陈不可，秦王遂废逐客令。此后辅佐嬴政灭六国，功居首列。
+  outcome: 秦统一天下，李斯成为帝国首席文官
+  lesson: 抓住时代机遇，以才华换取舞台
+  phases:
+  - name: 入秦从学
+    start_date: 前247
+    end_date: 前237
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 师从荀子学帝王之术
+  - name: 谏逐客书
+    start_date: 前237
+    end_date: 前237
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 上《谏逐客书》留秦
+  - name: 佐帝成业
+    start_date: 前237
+    end_date: 前221
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 献灭六国之策
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-李斯-endeavor-2
+  person_qid: guji-李斯
+  title_zh: 设计帝国制度
+  domain: 政治制度
+  start_date: 前221
+  end_date: 前208
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 统一后李斯力主废分封行郡县，统一文字为小篆，统一度量衡。然亦建议焚书，钳制思想。始皇崩后，李斯在赵高威逼下参与矫诏，最终身陷囹圄。
+  outcome: 帝国制度延续两千年，但个人身死族灭
+  lesson: 制度设计者未必能善终，权力场中品格最为重要
+  phases:
+  - name: 废封建行郡县
+    start_date: 前221
+    end_date: 前221
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 力主废分封设郡县
+  - name: 书同文
+    start_date: 前221
+    end_date: 前215
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 统一文字为小篆
+  - name: 焚书
+    start_date: 前213
+    end_date: 前213
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 建议焚书钳制思想
   dilemmas: []
   keywords: []
   event_ids: []
@@ -4454,6 +5327,63 @@
   sources:
   - https://daizhige.org/史藏/正史/史记.html
   review_status: ai_filled
+- id: guji-班超-endeavor-1
+  person_qid: guji-班超
+  title_zh: 投笔从戎经营西域
+  domain: 外交军事
+  start_date: '73'
+  end_date: '102'
+  start_precision: null
+  end_precision: null
+  places:
+  - 洛阳(今河南洛阳)
+  - 西域(今新疆及中亚)
+  place_qids: []
+  status: 完成
+  description_zh: 班超以三十六人出使西域，运用外交手腕与军事奇袭，先后降服鄯善、于阗、疏勒等国。后任西域都护，经营西域三十余年，使五十余国归附汉朝。年老上书'臣不敢望到酒泉郡，但愿生入玉门关'，终得以归国。
+  outcome: 西域五十余国归附汉朝，丝绸之路畅通无阻
+  lesson: 个人的决断可以改变历史的走向
+  phases:
+  - name: 投笔从戎
+    start_date: '73'
+    end_date: '73'
+    place: 洛阳(今河南洛阳)
+    description_zh: null
+    highlight: 弃笔从军出使西域
+  - name: 三十六人定西域
+    start_date: '73'
+    end_date: '87'
+    place: 西域(今新疆及中亚)
+    description_zh: null
+    highlight: 攻降鄯善、于阗、疏勒
+  - name: 经营三十年
+    start_date: '87'
+    end_date: '102'
+    place: 西域都护府(今新疆库车)
+    description_zh: null
+    highlight: 五十余国归附
+  - name: 生入玉门关
+    start_date: '102'
+    end_date: '102'
+    place: 洛阳(今河南洛阳)
+    description_zh: null
+    highlight: 年老归乡
+  dilemmas: []
+  keywords: []
+  event_ids:
+  - guji-班超-event-1
+  - guji-班超-event-2
+  - guji-班超-event-3
+  - guji-班超-event-4
+  - guji-班超-event-5
+  - guji-班超-event-6
+  - guji-班超-event-7
+  - guji-班超-event-8
+  - guji-班超-event-death
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
 - id: guji-白起-endeavor-1
   person_qid: guji-白起
   title_zh: 伊阙之战，横扫韩魏
@@ -4717,6 +5647,89 @@
     place: 阳城(今河南登封)
     description_zh: null
     highlight: 禅让制终结，家天下始
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦始皇-endeavor-1
+  person_qid: guji-秦始皇
+  title_zh: 灭六国统一天下
+  domain: 军事/政治
+  start_date: 前230
+  end_date: 前221
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  - 六国故地
+  place_qids: []
+  status: 完成
+  description_zh: 嬴政用李斯之谋、王翦之兵，十年间依次灭韩赵魏楚燕齐六国。前221年，天下一统，嬴政自号始皇帝，开创中国历史上第一个大一统王朝。
+  outcome: 结束战国五百年纷争，建立中国第一个中央集权帝国
+  lesson: 天下大势分久必合，但统一只是开始而非终点
+  phases:
+  - name: 远交近攻
+    start_date: 前230
+    end_date: 前225
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 先后灭韩、赵、魏
+  - name: 席卷南方
+    start_date: 前224
+    end_date: 前222
+    place: 楚国故地
+    description_zh: null
+    highlight: 王翦灭楚六十万大军
+  - name: 一统海内
+    start_date: 前222
+    end_date: 前221
+    place: 齐国临淄(今山东淄博)
+    description_zh: null
+    highlight: 齐王建不战而降，天下一统
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-秦始皇-endeavor-2
+  person_qid: guji-秦始皇
+  title_zh: 创建帝国制度
+  domain: 政治制度
+  start_date: 前221
+  end_date: 前210
+  start_precision: null
+  end_precision: null
+  places:
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 始皇帝废封建、设三十六郡，书同文、车同轨、统一度量衡货币，修驰道、筑长城、建阿房宫，以法家治天下，建立了一套影响两千年的帝国制度。
+  outcome: 中央集权制度延续两千余年，郡县制成为治国根基
+  lesson: 好的制度可以跨越时代，但制度需要人心来维护
+  phases:
+  - name: 废封建设郡县
+    start_date: 前221
+    end_date: 前221
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 废分封行郡县
+  - name: 书同文车同轨
+    start_date: 前221
+    end_date: 前215
+    place: 全帝国
+    description_zh: null
+    highlight: 统一度量衡、文字、货币
+  - name: 筑长城驰道
+    start_date: 前215
+    end_date: 前210
+    place: 北疆/全帝国
+    description_zh: null
+    highlight: 蒙恬北击匈奴筑长城
   dilemmas: []
   keywords: []
   event_ids: []
@@ -5421,6 +6434,222 @@
   sources:
   - https://daizhige.org/史藏/正史/史记.html
   review_status: ai_filled
+- id: guji-苏武-endeavor-1
+  person_qid: guji-苏武
+  title_zh: 出使匈奴十九年不屈
+  domain: 外交/气节
+  start_date: 前100
+  end_date: 前81
+  start_precision: null
+  end_precision: null
+  places:
+  - 匈奴(今蒙古国)
+  - 北海(今贝加尔湖)
+  place_qids: []
+  status: 完成
+  description_zh: 苏武以汉使出使匈奴，副使张胜参与匈奴缑王谋反事败。匈奴单于欲杀苏武，苏武引刀自刺。又被幽禁大窖中断食，苏武啮雪吞旃不死。遂被流放北海牧羊，曰'羝乳乃得归'。十九年后汉匈和亲，苏武始归。
+  outcome: 苏武持节十九年不屈，成为中国忠义精神的永恒象征
+  lesson: 真正的忠诚经得起时间与苦难的考验
+  phases:
+  - name: 出使被扣
+    start_date: 前100
+    end_date: 前100
+    place: 匈奴王庭(今蒙古国)
+    description_zh: null
+    highlight: 副使张胜卷入内乱
+  - name: 宁死不降
+    start_date: 前100
+    end_date: 前100
+    place: 匈奴(今蒙古国)
+    description_zh: null
+    highlight: 引刀自刺宁死不屈
+  - name: 北海牧羊
+    start_date: 前100
+    end_date: 前81
+    place: 北海(今贝加尔湖)
+    description_zh: null
+    highlight: 十九年持节牧羊
+  - name: 持节归汉
+    start_date: 前81
+    end_date: 前81
+    place: 长安(今陕西西安)
+    description_zh: null
+    highlight: 须发尽白归汉
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-英布-endeavor-1
+  person_qid: guji-英布
+  title_zh: 从刑徒到九江王
+  domain: 军事
+  start_date: 前209
+  end_date: 前206
+  start_precision: null
+  end_precision: null
+  places:
+  - 六县(今安徽六安)
+  - 彭城(今江苏徐州)
+  place_qids: []
+  status: 完成
+  description_zh: 英布因犯秦法受黥刑，发配骊山修皇陵。陈胜起义后英布率骊山刑徒数千人起兵，后归项羽。巨鹿之战中英布为前锋，以少胜多破秦军。项羽灭秦后封英布为九江王。
+  outcome: 从刑徒到诸侯王，完成社会底层的逆袭
+  lesson: 时势造英雄，乱世中底层亦可崛起
+  phases:
+  - name: 骊山起兵
+    start_date: 前209
+    end_date: 前209
+    place: 骊山(今陕西临潼)
+    description_zh: null
+    highlight: 刑徒起兵数千人
+  - name: 归附项羽
+    start_date: 前208
+    end_date: 前206
+    place: 彭城(今江苏徐州)
+    description_zh: null
+    highlight: 巨鹿之战为前锋
+  - name: 封九江王
+    start_date: 前206
+    end_date: 前206
+    place: 六县(今安徽六安)
+    description_zh: null
+    highlight: 项羽分封为九江王
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-英布-endeavor-2
+  person_qid: guji-英布
+  title_zh: 楚汉争霸中的摇摆与归汉
+  domain: 政治军事
+  start_date: 前206
+  end_date: 前202
+  start_precision: null
+  end_precision: null
+  places:
+  - 六县(今安徽六安)
+  - 荥阳(今河南荥阳)
+  place_qids: []
+  status: 完成
+  description_zh: 项羽征兵英布不应，刘邦遣随何策反英布。英布杀楚使叛楚归汉，但因败于楚军，几乎全军覆没。后收集散兵归汉，在垓下之围中率军侧击，为歼灭项羽做出重要贡献。
+  outcome: 楚汉争霸中的关键摇摆人物，最终站在了胜利者一边
+  lesson: 乱世中的抉择往往决定生死存亡
+  phases:
+  - name: 暗通刘邦
+    start_date: 前205
+    end_date: 前205
+    place: 六县(今安徽六安)
+    description_zh: null
+    highlight: 项羽征兵不应
+  - name: 叛楚归汉
+    start_date: 前204
+    end_date: 前204
+    place: 荥阳(今河南荥阳)
+    description_zh: null
+    highlight: 随何策反
+  - name: 垓下围杀
+    start_date: 前202
+    end_date: 前202
+    place: 垓下(今安徽灵璧)
+    description_zh: null
+    highlight: 垓下之围有大功
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-英布-endeavor-3
+  person_qid: guji-英布
+  title_zh: 淮南王之乱
+  domain: 政治军事
+  start_date: 前196
+  end_date: 前196
+  start_precision: null
+  end_precision: null
+  places:
+  - 六县(今安徽六安)
+  - 蕲西(今安徽宿州)
+  place_qids: []
+  status: 完成
+  description_zh: 韩信、彭越先后被吕后设计诛杀，英布恐惧不安。部下贲赫告发英布谋反，英布遂起兵。刘邦亲征，英布军败，逃至番阳被长沙王吴臣诱杀。
+  outcome: 淮南王之乱被平定，英布身死族灭
+  lesson: 功臣与帝王之间的信任一旦瓦解，结局早已注定
+  phases:
+  - name: 恐惧观望
+    start_date: 前196
+    end_date: 前196
+    place: 六县(今安徽六安)
+    description_zh: null
+    highlight: 韩信彭越被杀
+  - name: 起兵反叛
+    start_date: 前196
+    end_date: 前196
+    place: 六县(今安徽六安)
+    description_zh: null
+    highlight: 淮南王之乱
+  - name: 兵败身死
+    start_date: 前196
+    end_date: 前196
+    place: 蕲西(今安徽宿州)
+    description_zh: null
+    highlight: 被长沙王吴臣诱杀
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-范增-endeavor-1
+  person_qid: guji-范增
+  title_zh: 辅佐项羽争天下
+  domain: 军事谋略
+  start_date: 前209
+  end_date: 前204
+  start_precision: null
+  end_precision: null
+  places:
+  - 彭城(今江苏徐州)
+  - 咸阳(今陕西西安)
+  place_qids: []
+  status: 完成
+  description_zh: 范增七十岁出山，为项梁、项羽出谋划策。鸿门宴上力劝项羽杀刘邦，项伯护之不果。后陈平施反间计离间项羽范增，项羽渐疑范增，范增愤然请归，途中疽发而死。
+  outcome: 楚国失去首席谋士，加速了项羽的败亡
+  lesson: 君臣互信是成就事业的基础，一旦瓦解则大势已去
+  phases:
+  - name: 初出茅庐
+    start_date: 前209
+    end_date: 前208
+    place: 居巢(今安徽巢湖)
+    description_zh: null
+    highlight: 七十岁出山投奔项梁
+  - name: 鸿门献策
+    start_date: 前206
+    end_date: 前206
+    place: 鸿门(今陕西临潼)
+    description_zh: null
+    highlight: 鸿门宴力劝杀刘邦
+  - name: 反间出走
+    start_date: 前204
+    end_date: 前204
+    place: 彭城(今江苏徐州)
+    description_zh: null
+    highlight: 被陈平反间出走病死
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
 - id: guji-蔺相如-endeavor-1
   person_qid: guji-蔺相如
   title_zh: 完璧归赵
@@ -5796,6 +7025,48 @@
     place: 沙丘(今河北广宗)
     description_zh: null
     highlight: 赵武灵王被围困饿死
+  dilemmas: []
+  keywords: []
+  event_ids: []
+  highlight_event_ids: []
+  sources:
+  - https://daizhige.org/史藏/正史/史记.html
+  review_status: ai_filled
+- id: guji-赵高-endeavor-1
+  person_qid: guji-赵高
+  title_zh: 操控秦朝权力中枢
+  domain: 政治阴谋
+  start_date: 前210
+  end_date: 前207
+  start_precision: null
+  end_precision: null
+  places:
+  - 沙丘(今河北广宗)
+  - 咸阳(今陕西咸阳)
+  place_qids: []
+  status: 完成
+  description_zh: 赵高从沙丘矫诏开始，先杀李斯取而代之为丞相，又以'指鹿为马'试探群臣顺逆。最终逼秦二世自杀于望夷宫，欲自立为帝不成，立子婴为秦王。子婴即位后诛杀赵高，夷三族。
+  outcome: 秦帝国在赵高操控下二世而亡，赵高亦身死族灭
+  lesson: 窃国者终被国灭，权谋终有尽时
+  phases:
+  - name: 沙丘矫诏
+    start_date: 前210
+    end_date: 前210
+    place: 沙丘(今河北广宗)
+    description_zh: null
+    highlight: 矫诏杀扶苏立胡亥
+  - name: 独揽朝政
+    start_date: 前210
+    end_date: 前207
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 指鹿为马
+  - name: 逼帝自尽
+    start_date: 前207
+    end_date: 前207
+    place: 咸阳(今陕西咸阳)
+    description_zh: null
+    highlight: 逼秦二世自杀
   dilemmas: []
   keywords: []
   event_ids: []

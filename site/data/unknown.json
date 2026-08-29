@@ -466,7 +466,7 @@
       {
         "id": "guji-光武帝-event-1",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-1",
         "date": "23",
         "date_precision": "year",
         "place_name": "昆阳(今河南叶县)",
@@ -488,7 +488,7 @@
       {
         "id": "guji-光武帝-event-8",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-1",
         "date": "23",
         "date_precision": "year",
         "place_name": "昆阳(今河南叶县)",
@@ -510,7 +510,7 @@
       {
         "id": "guji-光武帝-event-2",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "date": "25",
         "date_precision": "year",
         "place_name": "鄗(今河北柏乡)",
@@ -532,7 +532,7 @@
       {
         "id": "guji-光武帝-event-5",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "date": "25",
         "date_precision": "year",
         "place_name": "长安(今陕西西安)",
@@ -554,7 +554,7 @@
       {
         "id": "guji-光武帝-event-4",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "date": "35",
         "date_precision": "year",
         "place_name": "洛阳(今河南洛阳)",
@@ -576,7 +576,7 @@
       {
         "id": "guji-光武帝-event-3",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "date": "36",
         "date_precision": "year",
         "place_name": "洛阳(今河南洛阳)",
@@ -598,7 +598,7 @@
       {
         "id": "guji-光武帝-event-6",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "date": "36",
         "date_precision": "year",
         "place_name": "成都(今四川成都)",
@@ -620,7 +620,7 @@
       {
         "id": "guji-光武帝-event-7",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "date": "57",
         "date_precision": "year",
         "place_name": "洛阳(今河南洛阳)",
@@ -642,7 +642,7 @@
       {
         "id": "guji-光武帝-event-death",
         "person_qid": "guji-光武帝",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "date": "57",
         "date_precision": "year",
         "place_name": null,
@@ -684,7 +684,116 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-光武帝-endeavor-1",
+        "person_qid": "guji-光武帝",
+        "title_zh": "昆阳之战推翻新莽",
+        "domain": "军事",
+        "start_date": "23",
+        "end_date": "23",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "昆阳(今河南叶县)",
+          "长安(今陕西西安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "昆阳之战中，王莽四十二万大军围困昆阳。刘秀率十三骑突围求援，引万余援军回击。以精锐三千冲击敌阵，城内守军夹击，大破新莽军。此战为历史上以少胜多的经典战例。",
+        "outcome": "昆阳之战直接导致新莽政权崩溃",
+        "lesson": "以少胜多需要勇气与智慧的完美结合",
+        "phases": [
+          {
+            "name": "昆阳突围",
+            "start_date": "23",
+            "end_date": "23",
+            "place": "昆阳(今河南叶县)",
+            "description_zh": null,
+            "highlight": "以两万破四十二万"
+          },
+          {
+            "name": "推翻新莽",
+            "start_date": "23",
+            "end_date": "23",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "王莽被杀新莽灭亡"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-光武帝-event-1",
+          "guji-光武帝-event-8"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-光武帝-endeavor-2",
+        "person_qid": "guji-光武帝",
+        "title_zh": "光武中兴",
+        "domain": "政治",
+        "start_date": "25",
+        "end_date": "57",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "洛阳(今河南洛阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "刘秀称帝后用十二年统一天下。此后以柔道治天下，退功臣不任以吏事，减轻赋税刑罚，释放奴婢，裁并郡县。东汉初年社会经济恢复，史称光武中兴。",
+        "outcome": "重建汉室，开创光武中兴的太平盛世",
+        "lesson": "打天下靠武力，治天下靠仁政",
+        "phases": [
+          {
+            "name": "称帝建制",
+            "start_date": "25",
+            "end_date": "25",
+            "place": "鄗(今河北柏乡)",
+            "description_zh": null,
+            "highlight": "鄗城称帝建东汉"
+          },
+          {
+            "name": "统一天下",
+            "start_date": "25",
+            "end_date": "36",
+            "place": "全国",
+            "description_zh": null,
+            "highlight": "十二年削平群雄"
+          },
+          {
+            "name": "柔道治国",
+            "start_date": "36",
+            "end_date": "57",
+            "place": "洛阳(今河南洛阳)",
+            "description_zh": null,
+            "highlight": "退功臣进文吏"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-光武帝-event-2",
+          "guji-光武帝-event-3",
+          "guji-光武帝-event-4",
+          "guji-光武帝-event-5",
+          "guji-光武帝-event-6",
+          "guji-光武帝-event-7",
+          "guji-光武帝-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-光武帝",
@@ -693,7 +802,7 @@
         "highlight_type": "战役",
         "title_zh": "昆阳之战",
         "highlight_note": "昆阳之战——中国历史上最经典的以少胜多战例之一",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -705,7 +814,7 @@
         "highlight_type": "人物",
         "title_zh": "十三骑突围求援",
         "highlight_note": "十三骑突围——以勇气改变历史走向",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -717,7 +826,7 @@
         "highlight_type": "转折",
         "title_zh": "鄗城称帝",
         "highlight_note": "汉室复兴的起点",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -729,7 +838,7 @@
         "highlight_type": "政策",
         "title_zh": "释放奴婢",
         "highlight_note": "仁政惠民——光武中兴的根基",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -741,7 +850,7 @@
         "highlight_type": "制度",
         "title_zh": "退功臣进文吏",
         "highlight_note": "最完美的功臣处理方式——退功臣进文吏",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -753,7 +862,7 @@
         "highlight_type": "结局",
         "title_zh": "光武帝驾崩",
         "highlight_note": "最完美的皇帝之死——无益于百姓之事皆不得请",
-        "endeavor_id": null,
+        "endeavor_id": "guji-光武帝-endeavor-2",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -978,7 +1087,61 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-周亚夫-endeavor-1",
+        "person_qid": "guji-周亚夫",
+        "title_zh": "平定七国之乱",
+        "domain": "军事",
+        "start_date": "前154",
+        "end_date": "前154",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)",
+          "荥阳(今河南荥阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "七国之乱时，周亚夫被拜为太尉。他坚守荥阳不救梁国，断吴楚联军粮道。三个月内吴楚军粮尽自溃，七国之乱平定。周亚夫功居首位，被拜为丞相。",
+        "outcome": "三个月平定七国之乱，巩固了中央集权",
+        "lesson": "军事上的最优解未必是政治上的最优解",
+        "phases": [
+          {
+            "name": "受命出征",
+            "start_date": "前154",
+            "end_date": "前154",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "汉景帝拜为太尉"
+          },
+          {
+            "name": "坚守荥阳",
+            "start_date": "前154",
+            "end_date": "前154",
+            "place": "荥阳(今河南荥阳)",
+            "description_zh": null,
+            "highlight": "断吴楚粮道"
+          },
+          {
+            "name": "三个月平叛",
+            "start_date": "前154",
+            "end_date": "前154",
+            "place": "梁国→吴国",
+            "description_zh": null,
+            "highlight": "荡平七国叛军"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-周亚夫",
@@ -1260,7 +1423,61 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-彭越-endeavor-1",
+        "person_qid": "guji-彭越",
+        "title_zh": "以游击战搅动楚汉格局",
+        "domain": "军事",
+        "start_date": "前207",
+        "end_date": "前202",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "巨野泽(今山东巨野)",
+          "梁地(今河南商丘)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "彭越在巨野泽聚众起兵，楚汉争霸中以游击战术长期袭扰楚军后方粮道。项羽多次东征西讨，彭越在其后方反复出现，使楚军疲于奔命。垓下之围中率军参战，因功封梁王。",
+        "outcome": "游击战改变了楚汉战争的走向，但功臣终被诛灭",
+        "lesson": "非对称作战可以以弱胜强，但战后的政治博弈更为残酷",
+        "phases": [
+          {
+            "name": "泽中聚众",
+            "start_date": "前207",
+            "end_date": "前206",
+            "place": "巨野泽(今山东巨野)",
+            "description_zh": null,
+            "highlight": "渔盗聚众千余人"
+          },
+          {
+            "name": "游击楚军",
+            "start_date": "前205",
+            "end_date": "前204",
+            "place": "梁地(今河南商丘)",
+            "description_zh": null,
+            "highlight": "断项羽粮道"
+          },
+          {
+            "name": "垓下会战",
+            "start_date": "前202",
+            "end_date": "前202",
+            "place": "垓下(今安徽灵璧)",
+            "description_zh": null,
+            "highlight": "围杀项羽有功"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-彭越",
@@ -1564,7 +1781,61 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-李广-endeavor-1",
+        "person_qid": "guji-李广",
+        "title_zh": "戍边抗匈三十余年",
+        "domain": "军事",
+        "start_date": "前166",
+        "end_date": "前119",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "边塞(今甘肃宁夏)",
+          "漠北草原"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "李广自文帝时从军击匈奴，历经三朝七十余战。匈奴畏之号'飞将军'，闻其名不敢犯边。然数次大战皆因各种原因未能封侯。前119年漠北之战中因迷路失期，不堪受辱自刎。",
+        "outcome": "飞将军名震天下，但终生未封侯",
+        "lesson": "英雄的悲剧往往不在于战场，而在于命运",
+        "phases": [
+          {
+            "name": "初战成名",
+            "start_date": "前166",
+            "end_date": "前150",
+            "place": "边塞(今甘肃宁夏)",
+            "description_zh": null,
+            "highlight": "文帝时射虎没镞"
+          },
+          {
+            "name": "郡守守边",
+            "start_date": "前150",
+            "end_date": "前129",
+            "place": "上郡/陇西/北地",
+            "description_zh": null,
+            "highlight": "匈奴号'飞将军'"
+          },
+          {
+            "name": "漠北之战",
+            "start_date": "前119",
+            "end_date": "前119",
+            "place": "漠北草原",
+            "description_zh": null,
+            "highlight": "迷路自刎"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-李广",
@@ -1868,7 +2139,112 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-李斯-endeavor-2",
+        "person_qid": "guji-李斯",
+        "title_zh": "设计帝国制度",
+        "domain": "政治制度",
+        "start_date": "前221",
+        "end_date": "前208",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "统一后李斯力主废分封行郡县，统一文字为小篆，统一度量衡。然亦建议焚书，钳制思想。始皇崩后，李斯在赵高威逼下参与矫诏，最终身陷囹圄。",
+        "outcome": "帝国制度延续两千年，但个人身死族灭",
+        "lesson": "制度设计者未必能善终，权力场中品格最为重要",
+        "phases": [
+          {
+            "name": "废封建行郡县",
+            "start_date": "前221",
+            "end_date": "前221",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "力主废分封设郡县"
+          },
+          {
+            "name": "书同文",
+            "start_date": "前221",
+            "end_date": "前215",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "统一文字为小篆"
+          },
+          {
+            "name": "焚书",
+            "start_date": "前213",
+            "end_date": "前213",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "建议焚书钳制思想"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-李斯-endeavor-1",
+        "person_qid": "guji-李斯",
+        "title_zh": "辅佐秦始皇统一天下",
+        "domain": "政治",
+        "start_date": "前247",
+        "end_date": "前221",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "李斯入秦后为吕不韦舍人，渐得秦王嬴政信任。前237年秦下逐客令，李斯上《谏逐客书》力陈不可，秦王遂废逐客令。此后辅佐嬴政灭六国，功居首列。",
+        "outcome": "秦统一天下，李斯成为帝国首席文官",
+        "lesson": "抓住时代机遇，以才华换取舞台",
+        "phases": [
+          {
+            "name": "入秦从学",
+            "start_date": "前247",
+            "end_date": "前237",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "师从荀子学帝王之术"
+          },
+          {
+            "name": "谏逐客书",
+            "start_date": "前237",
+            "end_date": "前237",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "上《谏逐客书》留秦"
+          },
+          {
+            "name": "佐帝成业",
+            "start_date": "前237",
+            "end_date": "前221",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "献灭六国之策"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-李斯",
@@ -2196,7 +2572,113 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-秦始皇-endeavor-2",
+        "person_qid": "guji-秦始皇",
+        "title_zh": "创建帝国制度",
+        "domain": "政治制度",
+        "start_date": "前221",
+        "end_date": "前210",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "始皇帝废封建、设三十六郡，书同文、车同轨、统一度量衡货币，修驰道、筑长城、建阿房宫，以法家治天下，建立了一套影响两千年的帝国制度。",
+        "outcome": "中央集权制度延续两千余年，郡县制成为治国根基",
+        "lesson": "好的制度可以跨越时代，但制度需要人心来维护",
+        "phases": [
+          {
+            "name": "废封建设郡县",
+            "start_date": "前221",
+            "end_date": "前221",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "废分封行郡县"
+          },
+          {
+            "name": "书同文车同轨",
+            "start_date": "前221",
+            "end_date": "前215",
+            "place": "全帝国",
+            "description_zh": null,
+            "highlight": "统一度量衡、文字、货币"
+          },
+          {
+            "name": "筑长城驰道",
+            "start_date": "前215",
+            "end_date": "前210",
+            "place": "北疆/全帝国",
+            "description_zh": null,
+            "highlight": "蒙恬北击匈奴筑长城"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-秦始皇-endeavor-1",
+        "person_qid": "guji-秦始皇",
+        "title_zh": "灭六国统一天下",
+        "domain": "军事/政治",
+        "start_date": "前230",
+        "end_date": "前221",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)",
+          "六国故地"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "嬴政用李斯之谋、王翦之兵，十年间依次灭韩赵魏楚燕齐六国。前221年，天下一统，嬴政自号始皇帝，开创中国历史上第一个大一统王朝。",
+        "outcome": "结束战国五百年纷争，建立中国第一个中央集权帝国",
+        "lesson": "天下大势分久必合，但统一只是开始而非终点",
+        "phases": [
+          {
+            "name": "远交近攻",
+            "start_date": "前230",
+            "end_date": "前225",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "先后灭韩、赵、魏"
+          },
+          {
+            "name": "席卷南方",
+            "start_date": "前224",
+            "end_date": "前222",
+            "place": "楚国故地",
+            "description_zh": null,
+            "highlight": "王翦灭楚六十万大军"
+          },
+          {
+            "name": "一统海内",
+            "start_date": "前222",
+            "end_date": "前221",
+            "place": "齐国临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "齐王建不战而降，天下一统"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-秦始皇",
@@ -2490,7 +2972,69 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-苏武-endeavor-1",
+        "person_qid": "guji-苏武",
+        "title_zh": "出使匈奴十九年不屈",
+        "domain": "外交/气节",
+        "start_date": "前100",
+        "end_date": "前81",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "匈奴(今蒙古国)",
+          "北海(今贝加尔湖)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "苏武以汉使出使匈奴，副使张胜参与匈奴缑王谋反事败。匈奴单于欲杀苏武，苏武引刀自刺。又被幽禁大窖中断食，苏武啮雪吞旃不死。遂被流放北海牧羊，曰'羝乳乃得归'。十九年后汉匈和亲，苏武始归。",
+        "outcome": "苏武持节十九年不屈，成为中国忠义精神的永恒象征",
+        "lesson": "真正的忠诚经得起时间与苦难的考验",
+        "phases": [
+          {
+            "name": "出使被扣",
+            "start_date": "前100",
+            "end_date": "前100",
+            "place": "匈奴王庭(今蒙古国)",
+            "description_zh": null,
+            "highlight": "副使张胜卷入内乱"
+          },
+          {
+            "name": "宁死不降",
+            "start_date": "前100",
+            "end_date": "前100",
+            "place": "匈奴(今蒙古国)",
+            "description_zh": null,
+            "highlight": "引刀自刺宁死不屈"
+          },
+          {
+            "name": "北海牧羊",
+            "start_date": "前100",
+            "end_date": "前81",
+            "place": "北海(今贝加尔湖)",
+            "description_zh": null,
+            "highlight": "十九年持节牧羊"
+          },
+          {
+            "name": "持节归汉",
+            "start_date": "前81",
+            "end_date": "前81",
+            "place": "长安(今陕西西安)",
+            "description_zh": null,
+            "highlight": "须发尽白归汉"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-苏武",
@@ -2784,7 +3328,167 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-英布-endeavor-3",
+        "person_qid": "guji-英布",
+        "title_zh": "淮南王之乱",
+        "domain": "政治军事",
+        "start_date": "前196",
+        "end_date": "前196",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "六县(今安徽六安)",
+          "蕲西(今安徽宿州)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "韩信、彭越先后被吕后设计诛杀，英布恐惧不安。部下贲赫告发英布谋反，英布遂起兵。刘邦亲征，英布军败，逃至番阳被长沙王吴臣诱杀。",
+        "outcome": "淮南王之乱被平定，英布身死族灭",
+        "lesson": "功臣与帝王之间的信任一旦瓦解，结局早已注定",
+        "phases": [
+          {
+            "name": "恐惧观望",
+            "start_date": "前196",
+            "end_date": "前196",
+            "place": "六县(今安徽六安)",
+            "description_zh": null,
+            "highlight": "韩信彭越被杀"
+          },
+          {
+            "name": "起兵反叛",
+            "start_date": "前196",
+            "end_date": "前196",
+            "place": "六县(今安徽六安)",
+            "description_zh": null,
+            "highlight": "淮南王之乱"
+          },
+          {
+            "name": "兵败身死",
+            "start_date": "前196",
+            "end_date": "前196",
+            "place": "蕲西(今安徽宿州)",
+            "description_zh": null,
+            "highlight": "被长沙王吴臣诱杀"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-英布-endeavor-2",
+        "person_qid": "guji-英布",
+        "title_zh": "楚汉争霸中的摇摆与归汉",
+        "domain": "政治军事",
+        "start_date": "前206",
+        "end_date": "前202",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "六县(今安徽六安)",
+          "荥阳(今河南荥阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "项羽征兵英布不应，刘邦遣随何策反英布。英布杀楚使叛楚归汉，但因败于楚军，几乎全军覆没。后收集散兵归汉，在垓下之围中率军侧击，为歼灭项羽做出重要贡献。",
+        "outcome": "楚汉争霸中的关键摇摆人物，最终站在了胜利者一边",
+        "lesson": "乱世中的抉择往往决定生死存亡",
+        "phases": [
+          {
+            "name": "暗通刘邦",
+            "start_date": "前205",
+            "end_date": "前205",
+            "place": "六县(今安徽六安)",
+            "description_zh": null,
+            "highlight": "项羽征兵不应"
+          },
+          {
+            "name": "叛楚归汉",
+            "start_date": "前204",
+            "end_date": "前204",
+            "place": "荥阳(今河南荥阳)",
+            "description_zh": null,
+            "highlight": "随何策反"
+          },
+          {
+            "name": "垓下围杀",
+            "start_date": "前202",
+            "end_date": "前202",
+            "place": "垓下(今安徽灵璧)",
+            "description_zh": null,
+            "highlight": "垓下之围有大功"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-英布-endeavor-1",
+        "person_qid": "guji-英布",
+        "title_zh": "从刑徒到九江王",
+        "domain": "军事",
+        "start_date": "前209",
+        "end_date": "前206",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "六县(今安徽六安)",
+          "彭城(今江苏徐州)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "英布因犯秦法受黥刑，发配骊山修皇陵。陈胜起义后英布率骊山刑徒数千人起兵，后归项羽。巨鹿之战中英布为前锋，以少胜多破秦军。项羽灭秦后封英布为九江王。",
+        "outcome": "从刑徒到诸侯王，完成社会底层的逆袭",
+        "lesson": "时势造英雄，乱世中底层亦可崛起",
+        "phases": [
+          {
+            "name": "骊山起兵",
+            "start_date": "前209",
+            "end_date": "前209",
+            "place": "骊山(今陕西临潼)",
+            "description_zh": null,
+            "highlight": "刑徒起兵数千人"
+          },
+          {
+            "name": "归附项羽",
+            "start_date": "前208",
+            "end_date": "前206",
+            "place": "彭城(今江苏徐州)",
+            "description_zh": null,
+            "highlight": "巨鹿之战为前锋"
+          },
+          {
+            "name": "封九江王",
+            "start_date": "前206",
+            "end_date": "前206",
+            "place": "六县(今安徽六安)",
+            "description_zh": null,
+            "highlight": "项羽分封为九江王"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-英布",
@@ -3078,7 +3782,61 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-范增-endeavor-1",
+        "person_qid": "guji-范增",
+        "title_zh": "辅佐项羽争天下",
+        "domain": "军事谋略",
+        "start_date": "前209",
+        "end_date": "前204",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "彭城(今江苏徐州)",
+          "咸阳(今陕西西安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "范增七十岁出山，为项梁、项羽出谋划策。鸿门宴上力劝项羽杀刘邦，项伯护之不果。后陈平施反间计离间项羽范增，项羽渐疑范增，范增愤然请归，途中疽发而死。",
+        "outcome": "楚国失去首席谋士，加速了项羽的败亡",
+        "lesson": "君臣互信是成就事业的基础，一旦瓦解则大势已去",
+        "phases": [
+          {
+            "name": "初出茅庐",
+            "start_date": "前209",
+            "end_date": "前208",
+            "place": "居巢(今安徽巢湖)",
+            "description_zh": null,
+            "highlight": "七十岁出山投奔项梁"
+          },
+          {
+            "name": "鸿门献策",
+            "start_date": "前206",
+            "end_date": "前206",
+            "place": "鸿门(今陕西临潼)",
+            "description_zh": null,
+            "highlight": "鸿门宴力劝杀刘邦"
+          },
+          {
+            "name": "反间出走",
+            "start_date": "前204",
+            "end_date": "前204",
+            "place": "彭城(今江苏徐州)",
+            "description_zh": null,
+            "highlight": "被陈平反间出走病死"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-范增",
@@ -3382,7 +4140,61 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-赵高-endeavor-1",
+        "person_qid": "guji-赵高",
+        "title_zh": "操控秦朝权力中枢",
+        "domain": "政治阴谋",
+        "start_date": "前210",
+        "end_date": "前207",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "沙丘(今河北广宗)",
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "赵高从沙丘矫诏开始，先杀李斯取而代之为丞相，又以'指鹿为马'试探群臣顺逆。最终逼秦二世自杀于望夷宫，欲自立为帝不成，立子婴为秦王。子婴即位后诛杀赵高，夷三族。",
+        "outcome": "秦帝国在赵高操控下二世而亡，赵高亦身死族灭",
+        "lesson": "窃国者终被国灭，权谋终有尽时",
+        "phases": [
+          {
+            "name": "沙丘矫诏",
+            "start_date": "前210",
+            "end_date": "前210",
+            "place": "沙丘(今河北广宗)",
+            "description_zh": null,
+            "highlight": "矫诏杀扶苏立胡亥"
+          },
+          {
+            "name": "独揽朝政",
+            "start_date": "前210",
+            "end_date": "前207",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "指鹿为马"
+          },
+          {
+            "name": "逼帝自尽",
+            "start_date": "前207",
+            "end_date": "前207",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "逼秦二世自杀"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-赵高",

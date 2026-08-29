@@ -338,7 +338,7 @@
       {
         "id": "guji-关羽-event-7",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "184",
         "date_precision": "year",
         "place_name": "涿郡(今河北涿州)",
@@ -360,7 +360,7 @@
       {
         "id": "guji-关羽-event-1",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": "从许昌到荆州",
@@ -382,7 +382,7 @@
       {
         "id": "guji-关羽-event-4",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": "白马(今河南滑县)",
@@ -404,7 +404,7 @@
       {
         "id": "guji-关羽-event-2",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "219",
         "date_precision": "year",
         "place_name": "樊城(今湖北襄阳)",
@@ -426,7 +426,7 @@
       {
         "id": "guji-关羽-event-5",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "219",
         "date_precision": "year",
         "place_name": "荆州(今湖北荆州)",
@@ -448,7 +448,7 @@
       {
         "id": "guji-关羽-event-6",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "219",
         "date_precision": "year",
         "place_name": "樊城(今湖北襄阳)",
@@ -470,7 +470,7 @@
       {
         "id": "guji-关羽-event-3",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "220",
         "date_precision": "year",
         "place_name": "临沮(今湖北远安)",
@@ -492,7 +492,7 @@
       {
         "id": "guji-关羽-event-death",
         "person_qid": "guji-关羽",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "date": "220",
         "date_precision": "year",
         "place_name": null,
@@ -534,7 +534,168 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-关羽-endeavor-1",
+        "person_qid": "guji-关羽",
+        "title_zh": "桃园结义与追随刘备",
+        "domain": "人物关系",
+        "start_date": "184",
+        "end_date": "220",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "涿郡(今河北涿州)",
+          "各地"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "关羽与刘备、张飞桃园结义，誓同生死。一生追随刘备颠沛流离。曹操俘获关羽后厚待之，关羽仍不忘刘备，千里走单骑寻兄。后镇守荆州，独当一面。",
+        "outcome": "忠义成为关羽的永恒标签",
+        "lesson": "忠诚是最强大的精神力量",
+        "phases": [
+          {
+            "name": "桃园结义",
+            "start_date": "184",
+            "end_date": "184",
+            "place": "涿郡(今河北涿州)",
+            "description_zh": null,
+            "highlight": "与刘备张飞结义"
+          },
+          {
+            "name": "千里走单骑",
+            "start_date": "200",
+            "end_date": "200",
+            "place": "从许昌到荆州",
+            "description_zh": null,
+            "highlight": "过五关斩六将寻兄"
+          },
+          {
+            "name": "镇守荆州",
+            "start_date": "214",
+            "end_date": "220",
+            "place": "荆州(今湖北荆州)",
+            "description_zh": null,
+            "highlight": "独当一面镇守荆州"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-关羽-event-1",
+          "guji-关羽-event-2",
+          "guji-关羽-event-3",
+          "guji-关羽-event-4",
+          "guji-关羽-event-5",
+          "guji-关羽-event-6",
+          "guji-关羽-event-7",
+          "guji-关羽-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-关羽-endeavor-2",
+        "person_qid": "guji-关羽",
+        "title_zh": "水淹七军威震华夏",
+        "domain": "军事",
+        "start_date": "219",
+        "end_date": "219",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "樊城(今湖北襄阳)",
+          "荆州(今湖北荆州)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "关羽北伐襄樊，利用汉水暴涨水淹于禁七军，擒于禁斩庞德。一时间威震华夏，曹操甚至考虑迁都以避其锋芒。然关羽骄傲轻敌，后方荆州被吕蒙白衣渡江偷袭。",
+        "outcome": "水淹七军成为关羽军事生涯的巅峰",
+        "lesson": "功高震主往往是最危险的时刻",
+        "phases": [
+          {
+            "name": "北伐襄樊",
+            "start_date": "219",
+            "end_date": "219",
+            "place": "樊城(今湖北襄阳)",
+            "description_zh": null,
+            "highlight": "水淹七军擒于禁"
+          },
+          {
+            "name": "威震华夏",
+            "start_date": "219",
+            "end_date": "219",
+            "place": "中原各地",
+            "description_zh": null,
+            "highlight": "曹操欲迁都"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-关羽-endeavor-3",
+        "person_qid": "guji-关羽",
+        "title_zh": "败走麦城",
+        "domain": "军事",
+        "start_date": "219",
+        "end_date": "220",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "麦城(今湖北当阳)",
+          "临沮(今湖北远安)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "吕蒙白衣渡江袭取荆州，关羽腹背受敌。败走麦城，仅余数百骑。突围至临沮被伏兵所擒。孙权劝降不从，遂杀之。关羽首级被送至曹操，操以侯礼葬之。",
+        "outcome": "一代名将殒命麦城",
+        "lesson": "骄傲轻敌是英雄最大的敌人",
+        "phases": [
+          {
+            "name": "荆州失守",
+            "start_date": "219",
+            "end_date": "219",
+            "place": "荆州(今湖北荆州)",
+            "description_zh": null,
+            "highlight": "吕蒙白衣渡江"
+          },
+          {
+            "name": "败走麦城",
+            "start_date": "219",
+            "end_date": "219",
+            "place": "麦城(今湖北当阳)",
+            "description_zh": null,
+            "highlight": "孤城困守"
+          },
+          {
+            "name": "被擒遇害",
+            "start_date": "220",
+            "end_date": "220",
+            "place": "临沮(今湖北远安)",
+            "description_zh": null,
+            "highlight": "被孙权所杀"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-关羽",
@@ -543,7 +704,7 @@
         "highlight_type": "典故",
         "title_zh": "桃园结义",
         "highlight_note": "桃园结义——忠义精神的起点",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -555,7 +716,7 @@
         "highlight_type": "典故",
         "title_zh": "千里走单骑",
         "highlight_note": "千里走单骑——忠义精神的极致体现",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -567,7 +728,7 @@
         "highlight_type": "典故",
         "title_zh": "温酒斩华雄",
         "highlight_note": "温酒斩华雄——关羽武勇的标志性传说",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -579,7 +740,7 @@
         "highlight_type": "战役",
         "title_zh": "水淹七军",
         "highlight_note": "水淹七军——关羽军事生涯的巅峰",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -591,7 +752,7 @@
         "highlight_type": "转折",
         "title_zh": "吕蒙白衣渡江",
         "highlight_note": "白衣渡江——关羽败亡的直接原因",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -603,7 +764,7 @@
         "highlight_type": "典故",
         "title_zh": "刮骨疗毒",
         "highlight_note": "刮骨疗毒——英雄气概的极致体现",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -615,7 +776,7 @@
         "highlight_type": "悲剧",
         "title_zh": "败走麦城被杀",
         "highlight_note": "一代武圣的最后尊严",
-        "endeavor_id": null,
+        "endeavor_id": "guji-关羽-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -666,7 +827,7 @@
       {
         "id": "guji-刘备-event-1",
         "person_qid": "guji-刘备",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "date": "207",
         "date_precision": "year",
         "place_name": "隆中(今湖北襄阳)",
@@ -688,7 +849,7 @@
       {
         "id": "guji-刘备-event-6",
         "person_qid": "guji-刘备",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "date": "207",
         "date_precision": "year",
         "place_name": "隆中(今湖北襄阳)",
@@ -710,7 +871,7 @@
       {
         "id": "guji-刘备-event-3",
         "person_qid": "guji-刘备",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "date": "208",
         "date_precision": "year",
         "place_name": "赤壁(今湖北赤壁)",
@@ -732,7 +893,7 @@
       {
         "id": "guji-刘备-event-4",
         "person_qid": "guji-刘备",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "date": "219",
         "date_precision": "year",
         "place_name": "成都(今四川成都)",
@@ -754,7 +915,7 @@
       {
         "id": "guji-刘备-event-7",
         "person_qid": "guji-刘备",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "date": "220",
         "date_precision": "year",
         "place_name": "成都(今四川成都)",
@@ -840,7 +1001,121 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-刘备-endeavor-1",
+        "person_qid": "guji-刘备",
+        "title_zh": "从织席贩履到建立蜀汉",
+        "domain": "政治军事",
+        "start_date": "184",
+        "end_date": "221",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "涿郡(今河北涿州)",
+          "荆州(今湖北荆州)",
+          "成都(今四川成都)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "刘备以汉室宗亲身份号召天下，但半生漂泊寄人篱下。207年三顾茅庐得诸葛亮，如鱼得水。赤壁之战后取荆州、占益州，221年称帝建蜀汉。关羽被杀后伐吴兵败，白帝城托孤而死。",
+        "outcome": "从织席贩履到一方之主，建立蜀汉政权",
+        "lesson": "坚持与仁义最终会赢得回报",
+        "phases": [
+          {
+            "name": "半生漂泊",
+            "start_date": "184",
+            "end_date": "207",
+            "place": "各地",
+            "description_zh": null,
+            "highlight": "寄人篱下无立锥之地"
+          },
+          {
+            "name": "三顾茅庐",
+            "start_date": "207",
+            "end_date": "207",
+            "place": "隆中(今湖北襄阳)",
+            "description_zh": null,
+            "highlight": "三顾茅庐得诸葛亮"
+          },
+          {
+            "name": "赤壁之后",
+            "start_date": "208",
+            "end_date": "214",
+            "place": "荆州→益州",
+            "description_zh": null,
+            "highlight": "取益州建蜀汉"
+          },
+          {
+            "name": "称帝伐吴",
+            "start_date": "221",
+            "end_date": "223",
+            "place": "成都(今四川成都)",
+            "description_zh": null,
+            "highlight": "夷陵兵败白帝托孤"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-刘备-event-1",
+          "guji-刘备-event-3",
+          "guji-刘备-event-4",
+          "guji-刘备-event-6",
+          "guji-刘备-event-7"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-刘备-endeavor-2",
+        "person_qid": "guji-刘备",
+        "title_zh": "联孙抗曹赤壁大胜",
+        "domain": "军事外交",
+        "start_date": "208",
+        "end_date": "208",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "荆州(今湖北荆州)",
+          "赤壁(今湖北赤壁)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "曹操南下，刘备与孙权联盟抗曹。赤壁之战以火攻大破曹军，刘备趁势取荆州四郡，终于有了自己的根据地。",
+        "outcome": "赤壁之战使刘备从寄人篱下变为一方诸侯",
+        "lesson": "联盟是弱者生存的智慧",
+        "phases": [
+          {
+            "name": "联吴",
+            "start_date": "208",
+            "end_date": "208",
+            "place": "荆州(今湖北荆州)",
+            "description_zh": null,
+            "highlight": "孙刘联盟"
+          },
+          {
+            "name": "赤壁之战",
+            "start_date": "208",
+            "end_date": "208",
+            "place": "赤壁(今湖北赤壁)",
+            "description_zh": null,
+            "highlight": "火烧赤壁大破曹军"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-刘备",
@@ -849,7 +1124,7 @@
         "highlight_type": "典故",
         "title_zh": "三顾茅庐",
         "highlight_note": "三顾茅庐——中国礼贤下士的千古典范",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -861,7 +1136,7 @@
         "highlight_type": "决策",
         "title_zh": "隆中对",
         "highlight_note": "隆中对——三国战略的总纲领",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -873,7 +1148,7 @@
         "highlight_type": "战役",
         "title_zh": "赤壁之战",
         "highlight_note": "赤壁之战——刘备命运的转折点",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -885,7 +1160,7 @@
         "highlight_type": "转折",
         "title_zh": "取益州建蜀汉",
         "highlight_note": "从织席贩履到蜀汉之主",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -897,7 +1172,7 @@
         "highlight_type": "人物情感",
         "title_zh": "闻关羽之死",
         "highlight_note": "兄弟之义——刘备伐吴的真正原因",
-        "endeavor_id": null,
+        "endeavor_id": "guji-刘备-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -994,7 +1269,7 @@
       {
         "id": "guji-司马懿-event-4",
         "person_qid": "guji-司马懿",
-        "endeavor_id": null,
+        "endeavor_id": "guji-司马懿-endeavor-1",
         "date": "231",
         "date_precision": "year",
         "place_name": "祁山(今甘肃礼县)",
@@ -1016,7 +1291,7 @@
       {
         "id": "guji-司马懿-event-2",
         "person_qid": "guji-司马懿",
-        "endeavor_id": null,
+        "endeavor_id": "guji-司马懿-endeavor-1",
         "date": "234",
         "date_precision": "year",
         "place_name": "五丈原(今陕西岐山)",
@@ -1038,7 +1313,7 @@
       {
         "id": "guji-司马懿-event-8",
         "person_qid": "guji-司马懿",
-        "endeavor_id": null,
+        "endeavor_id": "guji-司马懿-endeavor-1",
         "date": "234",
         "date_precision": "year",
         "place_name": "五丈原(今陕西岐山)",
@@ -1168,7 +1443,57 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-司马懿-endeavor-1",
+        "person_qid": "guji-司马懿",
+        "title_zh": "抵御诸葛亮北伐",
+        "domain": "军事",
+        "start_date": "231",
+        "end_date": "234",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "长安(今陕西西安)",
+          "五丈原(今陕西岐山)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "司马懿以持久战抵御诸葛亮北伐。诸葛亮多次挑战，司马懿坚守不出。诸葛亮送女装羞辱之，司马懿不为所动。五丈原对峙百余日后，诸葛亮病逝，蜀军退去。",
+        "outcome": "成功抵御诸葛亮六次北伐",
+        "lesson": "有时候最聪明的策略就是等待",
+        "phases": [
+          {
+            "name": "对峙消耗",
+            "start_date": "231",
+            "end_date": "234",
+            "place": "关中(今陕西)",
+            "description_zh": null,
+            "highlight": "以守为攻消耗蜀军"
+          },
+          {
+            "name": "五丈原对峙",
+            "start_date": "234",
+            "end_date": "234",
+            "place": "五丈原(今陕西岐山)",
+            "description_zh": null,
+            "highlight": "诸葛亮病逝五丈原"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-司马懿-event-2",
+          "guji-司马懿-event-4",
+          "guji-司马懿-event-8"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-司马懿",
@@ -1189,7 +1514,7 @@
         "highlight_type": "人物互动",
         "title_zh": "第四次北伐退诸葛亮",
         "highlight_note": "死诸葛走生仲达——智者对决的千古佳话",
-        "endeavor_id": null,
+        "endeavor_id": "guji-司马懿-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1201,7 +1526,7 @@
         "highlight_type": "战役",
         "title_zh": "五丈原对峙诸葛亮病逝",
         "highlight_note": "两个绝世智者的终极对决",
-        "endeavor_id": null,
+        "endeavor_id": "guji-司马懿-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1213,7 +1538,7 @@
         "highlight_type": "人物互动",
         "title_zh": "送女装之辱",
         "highlight_note": "忍辱负重——司马懿最深的智慧",
-        "endeavor_id": null,
+        "endeavor_id": "guji-司马懿-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1300,7 +1625,7 @@
       {
         "id": "guji-孙权-event-1",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "date": "208",
         "date_precision": "year",
         "place_name": "赤壁(今湖北赤壁)",
@@ -1322,7 +1647,7 @@
       {
         "id": "guji-孙权-event-2",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "date": "208",
         "date_precision": "year",
         "place_name": "建业(今江苏南京)",
@@ -1344,7 +1669,7 @@
       {
         "id": "guji-孙权-event-4",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "date": "219",
         "date_precision": "year",
         "place_name": "荆州(今湖北荆州)",
@@ -1366,7 +1691,7 @@
       {
         "id": "guji-孙权-event-5",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "date": "222",
         "date_precision": "year",
         "place_name": "夷陵(今湖北宜昌)",
@@ -1388,7 +1713,7 @@
       {
         "id": "guji-孙权-event-7",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "date": "222",
         "date_precision": "year",
         "place_name": "夷陵(今湖北宜昌)",
@@ -1410,7 +1735,7 @@
       {
         "id": "guji-孙权-event-3",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "date": "229",
         "date_precision": "year",
         "place_name": "建业(今江苏南京)",
@@ -1432,7 +1757,7 @@
       {
         "id": "guji-孙权-event-6",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-2",
         "date": "245",
         "date_precision": "year",
         "place_name": "建业(今江苏南京)",
@@ -1454,7 +1779,7 @@
       {
         "id": "guji-孙权-event-death",
         "person_qid": "guji-孙权",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-2",
         "date": "252",
         "date_precision": "year",
         "place_name": null,
@@ -1474,7 +1799,123 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-孙权-endeavor-2",
+        "person_qid": "guji-孙权",
+        "title_zh": "经营东吴五十二年",
+        "domain": "政治",
+        "start_date": "200",
+        "end_date": "252",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "建业(今江苏南京)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "孙权在位五十二年，是三国时期在位最久的君主。他善于用人制衡，使东吴在三国中存续最久。但晚年因继承人问题引发宫廷乱政，二宫之争使东吴元气大伤。",
+        "outcome": "东吴存续最久，但晚年乱政埋下灭亡隐患",
+        "lesson": "守成之功不可没，但继承人问题是帝王最大的考验",
+        "phases": [
+          {
+            "name": "继承基业",
+            "start_date": "200",
+            "end_date": "208",
+            "place": "建业(今江苏南京)",
+            "description_zh": null,
+            "highlight": "十八岁承兄业"
+          },
+          {
+            "name": "称帝建吴",
+            "start_date": "229",
+            "end_date": "229",
+            "place": "建业(今江苏南京)",
+            "description_zh": null,
+            "highlight": "建立吴国"
+          },
+          {
+            "name": "晚年守成",
+            "start_date": "229",
+            "end_date": null,
+            "place": null,
+            "description_zh": null,
+            "highlight": null
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-孙权-event-6",
+          "guji-孙权-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "guji-孙权-endeavor-1",
+        "person_qid": "guji-孙权",
+        "title_zh": "赤壁之战联刘抗曹",
+        "domain": "军事外交",
+        "start_date": "208",
+        "end_date": "229",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "建业(今江苏南京)",
+          "赤壁(今湖北赤壁)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "曹操率大军南下，东吴群臣多主降。鲁肃引诸葛亮见孙权，周瑜力主抗曹。孙权决意联刘抗曹，以周瑜为大都督，火烧赤壁大破曹军。此后孙权稳固江东，229年称帝建吴。",
+        "outcome": "赤壁之战大胜，奠定三国鼎立格局",
+        "lesson": "关键时刻的决断可以改变历史走向",
+        "phases": [
+          {
+            "name": "战和之争",
+            "start_date": "208",
+            "end_date": "208",
+            "place": "建业(今江苏南京)",
+            "description_zh": null,
+            "highlight": "主战派鲁肃周瑜力排众议"
+          },
+          {
+            "name": "联刘抗曹",
+            "start_date": "208",
+            "end_date": "208",
+            "place": "赤壁(今湖北赤壁)",
+            "description_zh": null,
+            "highlight": "孙刘联军火烧赤壁"
+          },
+          {
+            "name": "奠定三分",
+            "start_date": "208",
+            "end_date": null,
+            "place": null,
+            "description_zh": null,
+            "highlight": null
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-孙权-event-1",
+          "guji-孙权-event-2",
+          "guji-孙权-event-3",
+          "guji-孙权-event-4",
+          "guji-孙权-event-5",
+          "guji-孙权-event-7"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-孙权",
@@ -1483,7 +1924,7 @@
         "highlight_type": "战役",
         "title_zh": "赤壁之战",
         "highlight_note": "赤壁之战——三国鼎立的起点",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1495,7 +1936,7 @@
         "highlight_type": "人物互动",
         "title_zh": "孙刘联盟",
         "highlight_note": "孙刘联盟——改变天下格局的外交决策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1507,7 +1948,7 @@
         "highlight_type": "转折",
         "title_zh": "袭取荆州",
         "highlight_note": "袭取荆州——孙刘联盟破裂的关键",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1519,7 +1960,7 @@
         "highlight_type": "战役",
         "title_zh": "夷陵之战",
         "highlight_note": "夷陵之战——三国格局的最终确立",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1531,7 +1972,7 @@
         "highlight_type": "战役",
         "title_zh": "陆逊火烧连营",
         "highlight_note": "火烧连营——以少胜多的又一经典",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1543,7 +1984,7 @@
         "highlight_type": "转折",
         "title_zh": "孙权称帝建吴",
         "highlight_note": "吴国建立——三国鼎立正式形成",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1555,7 +1996,7 @@
         "highlight_type": "转折",
         "title_zh": "二宫之争",
         "highlight_note": "二宫之争——东吴由盛转衰的转折",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙权-endeavor-2",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1606,7 +2047,7 @@
       {
         "id": "guji-孙策-event-2",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "195",
         "date_precision": "year",
         "place_name": "舒(今安徽庐江)",
@@ -1628,7 +2069,7 @@
       {
         "id": "guji-孙策-event-3",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "196",
         "date_precision": "year",
         "place_name": "会稽(今浙江绍兴)",
@@ -1650,7 +2091,7 @@
       {
         "id": "guji-孙策-event-5",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "197",
         "date_precision": "year",
         "place_name": "宛(今河南南阳)",
@@ -1672,7 +2113,7 @@
       {
         "id": "guji-孙策-event-6",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "198",
         "date_precision": "year",
         "place_name": "江东(今江苏浙江)",
@@ -1694,7 +2135,7 @@
       {
         "id": "guji-孙策-event-1",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": "建业(今江苏南京)",
@@ -1716,7 +2157,7 @@
       {
         "id": "guji-孙策-event-4",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": "吴郡(今江苏苏州)",
@@ -1738,7 +2179,7 @@
       {
         "id": "guji-孙策-event-7",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": "建业(今江苏南京)",
@@ -1760,7 +2201,7 @@
       {
         "id": "guji-孙策-event-death",
         "person_qid": "guji-孙策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": null,
@@ -1780,7 +2221,70 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-孙策-endeavor-1",
+        "person_qid": "guji-孙策",
+        "title_zh": "平定江东",
+        "domain": "军事",
+        "start_date": "194",
+        "end_date": "200",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "江东(今江苏浙江)",
+          "建业(今江苏南京)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "孙坚死后，孙策以十七岁之龄继承父亲旧部。以周瑜为辅，六年时间平定吴郡、会稽、丹阳、豫章、庐陵、庐江六郡。人称'小霸王'。正当北上争霸之际，被刺客所伤，不久身亡，年仅二十六岁。",
+        "outcome": "奠定东吴基业，为三国鼎立奠基",
+        "lesson": "少年英雄的锐气可以改变天下格局",
+        "phases": [
+          {
+            "name": "承父旧部",
+            "start_date": "194",
+            "end_date": "195",
+            "place": "江东(今江苏浙江)",
+            "description_zh": null,
+            "highlight": "十七岁继承孙坚旧部"
+          },
+          {
+            "name": "横扫六郡",
+            "start_date": "195",
+            "end_date": "200",
+            "place": "江东(今江苏浙江)",
+            "description_zh": null,
+            "highlight": "六年平定江东"
+          },
+          {
+            "name": "北上图霸",
+            "start_date": "200",
+            "end_date": "200",
+            "place": "建业(今江苏南京)",
+            "description_zh": null,
+            "highlight": "遇刺身亡"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-孙策-event-1",
+          "guji-孙策-event-2",
+          "guji-孙策-event-3",
+          "guji-孙策-event-4",
+          "guji-孙策-event-5",
+          "guji-孙策-event-6",
+          "guji-孙策-event-7",
+          "guji-孙策-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-孙策",
@@ -1789,7 +2293,7 @@
         "highlight_type": "人物互动",
         "title_zh": "孙策周瑜少年结义",
         "highlight_note": "少年知己——孙策周瑜的传奇友谊",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1801,7 +2305,7 @@
         "highlight_type": "战役",
         "title_zh": "攻破会稽",
         "highlight_note": "以锐气破坚城——小霸王的军事才能",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1813,7 +2317,7 @@
         "highlight_type": "转折",
         "title_zh": "孙策遇刺身亡",
         "highlight_note": "少年英雄英年早逝——东吴命运的转折点",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1825,7 +2329,7 @@
         "highlight_type": "人物互动",
         "title_zh": "托孤孙权",
         "highlight_note": "托孤——孙策对孙权的评价与期望",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1837,7 +2341,7 @@
         "highlight_type": "人物",
         "title_zh": "小霸王之名",
         "highlight_note": "小霸王——以锐气开创基业的少年英雄",
-        "endeavor_id": null,
+        "endeavor_id": "guji-孙策-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -1866,7 +2370,7 @@
       {
         "id": "guji-张飞-event-6",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "184",
         "date_precision": "year",
         "place_name": "涿郡(今河北涿州)",
@@ -1888,7 +2392,7 @@
       {
         "id": "guji-张飞-event-1",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "208",
         "date_precision": "year",
         "place_name": "当阳(今湖北当阳)",
@@ -1910,7 +2414,7 @@
       {
         "id": "guji-张飞-event-3",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "211",
         "date_precision": "year",
         "place_name": "巴郡(今重庆)",
@@ -1932,7 +2436,7 @@
       {
         "id": "guji-张飞-event-4",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "214",
         "date_precision": "year",
         "place_name": "成都(今四川成都)",
@@ -1954,7 +2458,7 @@
       {
         "id": "guji-张飞-event-5",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "219",
         "date_precision": "year",
         "place_name": "汉中(今陕西汉中)",
@@ -1976,7 +2480,7 @@
       {
         "id": "guji-张飞-event-2",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "221",
         "date_precision": "year",
         "place_name": "阆中(今四川阆中)",
@@ -1998,7 +2502,7 @@
       {
         "id": "guji-张飞-event-7",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "221",
         "date_precision": "year",
         "place_name": "阆中(今四川阆中)",
@@ -2020,7 +2524,7 @@
       {
         "id": "guji-张飞-event-death",
         "person_qid": "guji-张飞",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "date": "221",
         "date_precision": "year",
         "place_name": null,
@@ -2062,7 +2566,71 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-张飞-endeavor-1",
+        "person_qid": "guji-张飞",
+        "title_zh": "从涿郡到蜀汉的征战生涯",
+        "domain": "军事",
+        "start_date": "184",
+        "end_date": "221",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "涿郡(今河北涿州)",
+          "当阳(今湖北当阳)",
+          "成都(今四川成都)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "张飞一生追随刘备征战四方。当阳桥断后一声吼退曹军，是三国中最经典的个人武勇场面之一。入川作战势如破竹，为蜀汉建立立下大功。然性格暴躁，最终被部下所杀。",
+        "outcome": "蜀汉猛将，勇冠三军但结局悲惨",
+        "lesson": "性格决定命运，暴躁是最危险的致命弱点",
+        "phases": [
+          {
+            "name": "桃园起兵",
+            "start_date": "184",
+            "end_date": "184",
+            "place": "涿郡(今河北涿州)",
+            "description_zh": null,
+            "highlight": "与刘备关羽结义起兵"
+          },
+          {
+            "name": "当阳断后",
+            "start_date": "208",
+            "end_date": "208",
+            "place": "当阳(今湖北当阳)",
+            "description_zh": null,
+            "highlight": "当阳桥一声吼退曹军"
+          },
+          {
+            "name": "入川建功",
+            "start_date": "214",
+            "end_date": "221",
+            "place": "成都(今四川成都)",
+            "description_zh": null,
+            "highlight": "攻取益州"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-张飞-event-1",
+          "guji-张飞-event-2",
+          "guji-张飞-event-3",
+          "guji-张飞-event-4",
+          "guji-张飞-event-5",
+          "guji-张飞-event-6",
+          "guji-张飞-event-7",
+          "guji-张飞-event-death"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-张飞",
@@ -2071,7 +2639,7 @@
         "highlight_type": "典故",
         "title_zh": "桃园结义",
         "highlight_note": "桃园结义——三兄弟情义的起点",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2083,7 +2651,7 @@
         "highlight_type": "典故",
         "title_zh": "当阳桥一声吼退曹军",
         "highlight_note": "当阳桥一声吼——三国最经典的个人武勇场面",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2095,7 +2663,7 @@
         "highlight_type": "人物互动",
         "title_zh": "义释严颜",
         "highlight_note": "义释严颜——猛张飞也有敬重义士的一面",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2107,7 +2675,7 @@
         "highlight_type": "战役",
         "title_zh": "大破张郃",
         "highlight_note": "猛张飞也有智谋——宕渠之战",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2119,7 +2687,7 @@
         "highlight_type": "悲剧",
         "title_zh": "张飞被部下刺杀",
         "highlight_note": "猛将的致命弱点——暴躁驭下",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2131,7 +2699,7 @@
         "highlight_type": "教训",
         "title_zh": "鞭打士卒的致命弱点",
         "highlight_note": "暴躁驭下——张飞性格缺陷的致命后果",
-        "endeavor_id": null,
+        "endeavor_id": "guji-张飞-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2204,7 +2772,7 @@
       {
         "id": "guji-曹操-event-3",
         "person_qid": "guji-曹操",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "date": "196",
         "date_precision": "year",
         "place_name": "许昌(今河南许昌)",
@@ -2226,7 +2794,7 @@
       {
         "id": "guji-曹操-event-1",
         "person_qid": "guji-曹操",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": "官渡(今河南中牟)",
@@ -2248,7 +2816,7 @@
       {
         "id": "guji-曹操-event-8",
         "person_qid": "guji-曹操",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "date": "200",
         "date_precision": "year",
         "place_name": "官渡(今河南中牟)",
@@ -2270,7 +2838,7 @@
       {
         "id": "guji-曹操-event-4",
         "person_qid": "guji-曹操",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "date": "207",
         "date_precision": "year",
         "place_name": "碣石(今河北昌黎)",
@@ -2378,7 +2946,67 @@
         "needs_review_reason": null
       }
     ],
-    "endeavors": [],
+    "endeavors": [
+      {
+        "id": "guji-曹操-endeavor-1",
+        "person_qid": "guji-曹操",
+        "title_zh": "官渡之战统一北方",
+        "domain": "军事政治",
+        "start_date": "196",
+        "end_date": "207",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "许昌(今河南许昌)",
+          "官渡(今河南中牟)",
+          "邺(今河北临漳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "曹操196年迎汉献帝都许，挟天子以令诸侯。200年官渡之战以少胜多大破袁绍，此后陆续消灭袁氏势力，北征乌桓，统一了中国北方。赤壁之战败后转向经营北方，奠定魏国基业。",
+        "outcome": "统一中国北方，奠定魏国根基",
+        "lesson": "以弱胜强需要非凡的勇气与谋略",
+        "phases": [
+          {
+            "name": "挟天子以令诸侯",
+            "start_date": "196",
+            "end_date": "196",
+            "place": "许昌(今河南许昌)",
+            "description_zh": null,
+            "highlight": "迎汉献帝都许"
+          },
+          {
+            "name": "官渡决战",
+            "start_date": "200",
+            "end_date": "200",
+            "place": "官渡(今河南中牟)",
+            "description_zh": null,
+            "highlight": "以少胜多破袁绍"
+          },
+          {
+            "name": "统一北方",
+            "start_date": "200",
+            "end_date": "207",
+            "place": "邺(今河北临漳)",
+            "description_zh": null,
+            "highlight": "北征乌桓平定北方"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [
+          "guji-曹操-event-1",
+          "guji-曹操-event-3",
+          "guji-曹操-event-4",
+          "guji-曹操-event-8"
+        ],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      }
+    ],
     "highlights": [
       {
         "person_qid": "guji-曹操",
@@ -2387,7 +3015,7 @@
         "highlight_type": "决策",
         "title_zh": "迎汉献帝都许",
         "highlight_note": "挟天子以令诸侯——曹操一生最重要的政治决策",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2399,7 +3027,7 @@
         "highlight_type": "战役",
         "title_zh": "官渡之战",
         "highlight_note": "官渡之战——以少胜多改变天下格局",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2411,7 +3039,7 @@
         "highlight_type": "人物互动",
         "title_zh": "许攸来投",
         "highlight_note": "跣足迎许攸——曹操的求才若渴",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]
@@ -2423,7 +3051,7 @@
         "highlight_type": "文学",
         "title_zh": "观沧海",
         "highlight_note": "建安文学的巅峰之作",
-        "endeavor_id": null,
+        "endeavor_id": "guji-曹操-endeavor-1",
         "sources": [
           "https://daizhige.org/史藏/正史/史记.html"
         ]

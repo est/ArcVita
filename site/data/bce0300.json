@@ -362,6 +362,111 @@
           "https://www.wikidata.org/wiki/Q162427"
         ],
         "review_status": "ai_filled"
+      },
+      {
+        "id": "Q162427-endeavor-4",
+        "person_qid": "Q162427",
+        "title_zh": "创建帝国制度",
+        "domain": "政治制度",
+        "start_date": "前221",
+        "end_date": "前210",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "始皇帝废封建、设三十六郡，书同文、车同轨、统一度量衡货币，修驰道、筑长城、建阿房宫，以法家治天下，建立了一套影响两千年的帝国制度。",
+        "outcome": "中央集权制度延续两千余年，郡县制成为治国根基",
+        "lesson": "好的制度可以跨越时代，但制度需要人心来维护",
+        "phases": [
+          {
+            "name": "废封建设郡县",
+            "start_date": "前221",
+            "end_date": "前221",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "废分封行郡县"
+          },
+          {
+            "name": "书同文车同轨",
+            "start_date": "前221",
+            "end_date": "前215",
+            "place": "全帝国",
+            "description_zh": null,
+            "highlight": "统一度量衡、文字、货币"
+          },
+          {
+            "name": "筑长城驰道",
+            "start_date": "前215",
+            "end_date": "前210",
+            "place": "北疆/全帝国",
+            "description_zh": null,
+            "highlight": "蒙恬北击匈奴筑长城"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
+      },
+      {
+        "id": "Q162427-endeavor-3",
+        "person_qid": "Q162427",
+        "title_zh": "灭六国统一天下",
+        "domain": "军事/政治",
+        "start_date": "前230",
+        "end_date": "前221",
+        "start_precision": null,
+        "end_precision": null,
+        "places": [
+          "咸阳(今陕西咸阳)",
+          "六国故地"
+        ],
+        "place_qids": [],
+        "status": "完成",
+        "description_zh": "嬴政用李斯之谋、王翦之兵，十年间依次灭韩赵魏楚燕齐六国。前221年，天下一统，嬴政自号始皇帝，开创中国历史上第一个大一统王朝。",
+        "outcome": "结束战国五百年纷争，建立中国第一个中央集权帝国",
+        "lesson": "天下大势分久必合，但统一只是开始而非终点",
+        "phases": [
+          {
+            "name": "远交近攻",
+            "start_date": "前230",
+            "end_date": "前225",
+            "place": "咸阳(今陕西咸阳)",
+            "description_zh": null,
+            "highlight": "先后灭韩、赵、魏"
+          },
+          {
+            "name": "席卷南方",
+            "start_date": "前224",
+            "end_date": "前222",
+            "place": "楚国故地",
+            "description_zh": null,
+            "highlight": "王翦灭楚六十万大军"
+          },
+          {
+            "name": "一统海内",
+            "start_date": "前222",
+            "end_date": "前221",
+            "place": "齐国临淄(今山东淄博)",
+            "description_zh": null,
+            "highlight": "齐王建不战而降，天下一统"
+          }
+        ],
+        "dilemmas": [],
+        "keywords": [],
+        "event_ids": [],
+        "highlight_event_ids": [],
+        "sources": [
+          "https://daizhige.org/史藏/正史/史记.html"
+        ],
+        "review_status": "ai_filled"
       }
     ],
     "highlights": [

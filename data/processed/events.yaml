@@ -5662,7 +5662,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-1
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-1
   date: '23'
   date_precision: year
   place_name: 昆阳(今河南叶县)
@@ -5681,7 +5681,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-2
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-2
   date: '25'
   date_precision: year
   place_name: 鄗(今河北柏乡)
@@ -5700,7 +5700,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-3
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-2
   date: '36'
   date_precision: year
   place_name: 洛阳(今河南洛阳)
@@ -5719,7 +5719,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-4
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-2
   date: '35'
   date_precision: year
   place_name: 洛阳(今河南洛阳)
@@ -5738,7 +5738,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-5
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-2
   date: '25'
   date_precision: year
   place_name: 长安(今陕西西安)
@@ -5757,7 +5757,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-6
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-2
   date: '36'
   date_precision: year
   place_name: 成都(今四川成都)
@@ -5776,7 +5776,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-7
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-2
   date: '57'
   date_precision: year
   place_name: 洛阳(今河南洛阳)
@@ -5795,7 +5795,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-8
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-1
   date: '23'
   date_precision: year
   place_name: 昆阳(今河南叶县)
@@ -5814,7 +5814,7 @@
   needs_review_reason: null
 - id: guji-光武帝-event-death
   person_qid: guji-光武帝
-  endeavor_id: null
+  endeavor_id: guji-光武帝-endeavor-2
   date: '57'
   date_precision: year
   place_name: null
@@ -5852,7 +5852,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-1
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '200'
   date_precision: year
   place_name: 从许昌到荆州
@@ -5871,7 +5871,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-2
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '219'
   date_precision: year
   place_name: 樊城(今湖北襄阳)
@@ -5890,7 +5890,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-3
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '220'
   date_precision: year
   place_name: 临沮(今湖北远安)
@@ -5909,7 +5909,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-4
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '200'
   date_precision: year
   place_name: 白马(今河南滑县)
@@ -5928,7 +5928,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-5
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '219'
   date_precision: year
   place_name: 荆州(今湖北荆州)
@@ -5947,7 +5947,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-6
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '219'
   date_precision: year
   place_name: 樊城(今湖北襄阳)
@@ -5966,7 +5966,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-7
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '184'
   date_precision: year
   place_name: 涿郡(今河北涿州)
@@ -5985,7 +5985,7 @@
   needs_review_reason: null
 - id: guji-关羽-event-death
   person_qid: guji-关羽
-  endeavor_id: null
+  endeavor_id: guji-关羽-endeavor-1
   date: '220'
   date_precision: year
   place_name: null
@@ -6023,7 +6023,7 @@
   needs_review_reason: null
 - id: guji-刘备-event-1
   person_qid: guji-刘备
-  endeavor_id: null
+  endeavor_id: guji-刘备-endeavor-1
   date: '207'
   date_precision: year
   place_name: 隆中(今湖北襄阳)
@@ -6061,7 +6061,7 @@
   needs_review_reason: null
 - id: guji-刘备-event-3
   person_qid: guji-刘备
-  endeavor_id: null
+  endeavor_id: guji-刘备-endeavor-1
   date: '208'
   date_precision: year
   place_name: 赤壁(今湖北赤壁)
@@ -6080,7 +6080,7 @@
   needs_review_reason: null
 - id: guji-刘备-event-4
   person_qid: guji-刘备
-  endeavor_id: null
+  endeavor_id: guji-刘备-endeavor-1
   date: '219'
   date_precision: year
   place_name: 成都(今四川成都)
@@ -6118,7 +6118,7 @@
   needs_review_reason: null
 - id: guji-刘备-event-6
   person_qid: guji-刘备
-  endeavor_id: null
+  endeavor_id: guji-刘备-endeavor-1
   date: '207'
   date_precision: year
   place_name: 隆中(今湖北襄阳)
@@ -6137,7 +6137,7 @@
   needs_review_reason: null
 - id: guji-刘备-event-7
   person_qid: guji-刘备
-  endeavor_id: null
+  endeavor_id: guji-刘备-endeavor-1
   date: '220'
   date_precision: year
   place_name: 成都(今四川成都)
@@ -6213,7 +6213,7 @@
   needs_review_reason: null
 - id: guji-司马懿-event-2
   person_qid: guji-司马懿
-  endeavor_id: null
+  endeavor_id: guji-司马懿-endeavor-1
   date: '234'
   date_precision: year
   place_name: 五丈原(今陕西岐山)
@@ -6251,7 +6251,7 @@
   needs_review_reason: null
 - id: guji-司马懿-event-4
   person_qid: guji-司马懿
-  endeavor_id: null
+  endeavor_id: guji-司马懿-endeavor-1
   date: '231'
   date_precision: year
   place_name: 祁山(今甘肃礼县)
@@ -6327,7 +6327,7 @@
   needs_review_reason: null
 - id: guji-司马懿-event-8
   person_qid: guji-司马懿
-  endeavor_id: null
+  endeavor_id: guji-司马懿-endeavor-1
   date: '234'
   date_precision: year
   place_name: 五丈原(今陕西岐山)
@@ -7505,7 +7505,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-1
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-1
   date: '208'
   date_precision: year
   place_name: 赤壁(今湖北赤壁)
@@ -7524,7 +7524,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-2
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-1
   date: '208'
   date_precision: year
   place_name: 建业(今江苏南京)
@@ -7543,7 +7543,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-3
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-1
   date: '229'
   date_precision: year
   place_name: 建业(今江苏南京)
@@ -7562,7 +7562,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-4
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-1
   date: '219'
   date_precision: year
   place_name: 荆州(今湖北荆州)
@@ -7581,7 +7581,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-5
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-1
   date: '222'
   date_precision: year
   place_name: 夷陵(今湖北宜昌)
@@ -7600,7 +7600,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-6
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-2
   date: '245'
   date_precision: year
   place_name: 建业(今江苏南京)
@@ -7619,7 +7619,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-7
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-1
   date: '222'
   date_precision: year
   place_name: 夷陵(今湖北宜昌)
@@ -7638,7 +7638,7 @@
   needs_review_reason: null
 - id: guji-孙权-event-death
   person_qid: guji-孙权
-  endeavor_id: null
+  endeavor_id: guji-孙权-endeavor-2
   date: '252'
   date_precision: year
   place_name: null
@@ -7676,7 +7676,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-1
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '200'
   date_precision: year
   place_name: 建业(今江苏南京)
@@ -7695,7 +7695,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-2
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '195'
   date_precision: year
   place_name: 舒(今安徽庐江)
@@ -7714,7 +7714,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-3
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '196'
   date_precision: year
   place_name: 会稽(今浙江绍兴)
@@ -7733,7 +7733,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-4
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '200'
   date_precision: year
   place_name: 吴郡(今江苏苏州)
@@ -7752,7 +7752,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-5
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '197'
   date_precision: year
   place_name: 宛(今河南南阳)
@@ -7771,7 +7771,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-6
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '198'
   date_precision: year
   place_name: 江东(今江苏浙江)
@@ -7790,7 +7790,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-7
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '200'
   date_precision: year
   place_name: 建业(今江苏南京)
@@ -7809,7 +7809,7 @@
   needs_review_reason: null
 - id: guji-孙策-event-death
   person_qid: guji-孙策
-  endeavor_id: null
+  endeavor_id: guji-孙策-endeavor-1
   date: '200'
   date_precision: year
   place_name: null
@@ -7923,7 +7923,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-1
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '208'
   date_precision: year
   place_name: 当阳(今湖北当阳)
@@ -7942,7 +7942,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-2
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '221'
   date_precision: year
   place_name: 阆中(今四川阆中)
@@ -7961,7 +7961,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-3
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '211'
   date_precision: year
   place_name: 巴郡(今重庆)
@@ -7980,7 +7980,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-4
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '214'
   date_precision: year
   place_name: 成都(今四川成都)
@@ -7999,7 +7999,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-5
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '219'
   date_precision: year
   place_name: 汉中(今陕西汉中)
@@ -8018,7 +8018,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-6
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '184'
   date_precision: year
   place_name: 涿郡(今河北涿州)
@@ -8037,7 +8037,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-7
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '221'
   date_precision: year
   place_name: 阆中(今四川阆中)
@@ -8056,7 +8056,7 @@
   needs_review_reason: null
 - id: guji-张飞-event-death
   person_qid: guji-张飞
-  endeavor_id: null
+  endeavor_id: guji-张飞-endeavor-1
   date: '221'
   date_precision: year
   place_name: null
@@ -8455,7 +8455,7 @@
   needs_review_reason: null
 - id: guji-曹操-event-1
   person_qid: guji-曹操
-  endeavor_id: null
+  endeavor_id: guji-曹操-endeavor-1
   date: '200'
   date_precision: year
   place_name: 官渡(今河南中牟)
@@ -8493,7 +8493,7 @@
   needs_review_reason: null
 - id: guji-曹操-event-3
   person_qid: guji-曹操
-  endeavor_id: null
+  endeavor_id: guji-曹操-endeavor-1
   date: '196'
   date_precision: year
   place_name: 许昌(今河南许昌)
@@ -8512,7 +8512,7 @@
   needs_review_reason: null
 - id: guji-曹操-event-4
   person_qid: guji-曹操
-  endeavor_id: null
+  endeavor_id: guji-曹操-endeavor-1
   date: '207'
   date_precision: year
   place_name: 碣石(今河北昌黎)
@@ -8588,7 +8588,7 @@
   needs_review_reason: null
 - id: guji-曹操-event-8
   person_qid: guji-曹操
-  endeavor_id: null
+  endeavor_id: guji-曹操-endeavor-1
   date: '200'
   date_precision: year
   place_name: 官渡(今河南中牟)
@@ -9443,7 +9443,7 @@
   needs_review_reason: null
 - id: guji-班超-event-1
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '73'
   date_precision: year
   place_name: 鄯善(今新疆若羌)
@@ -9462,7 +9462,7 @@
   needs_review_reason: null
 - id: guji-班超-event-2
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '94'
   date_precision: year
   place_name: 西域(今新疆及中亚)
@@ -9481,7 +9481,7 @@
   needs_review_reason: null
 - id: guji-班超-event-3
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '102'
   date_precision: year
   place_name: 洛阳(今河南洛阳)
@@ -9500,7 +9500,7 @@
   needs_review_reason: null
 - id: guji-班超-event-4
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '73'
   date_precision: year
   place_name: 于阗(今新疆和田)
@@ -9519,7 +9519,7 @@
   needs_review_reason: null
 - id: guji-班超-event-5
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '74'
   date_precision: year
   place_name: 疏勒(今新疆喀什)
@@ -9538,7 +9538,7 @@
   needs_review_reason: null
 - id: guji-班超-event-6
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '75'
   date_precision: year
   place_name: 西域(今新疆库车)
@@ -9557,7 +9557,7 @@
   needs_review_reason: null
 - id: guji-班超-event-7
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '97'
   date_precision: year
   place_name: 大秦(今罗马帝国)
@@ -9576,7 +9576,7 @@
   needs_review_reason: null
 - id: guji-班超-event-8
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '73'
   date_precision: year
   place_name: 洛阳(今河南洛阳)
@@ -9595,7 +9595,7 @@
   needs_review_reason: null
 - id: guji-班超-event-death
   person_qid: guji-班超
-  endeavor_id: null
+  endeavor_id: guji-班超-endeavor-1
   date: '102'
   date_precision: year
   place_name: null

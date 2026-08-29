@@ -164,17 +164,44 @@ function renderTimeline(){
   else{zEl.textContent=`${zoomLevel.toFixed(1)}x (${Math.round(span)}年)`;zEl.style.color='var(--mist)'}
 
   const tip=document.getElementById('tip');
+  const同期=document.getElementById('同期');
   inner.querySelectorAll('.ev-dot').forEach(d=>{
     d.addEventListener('mouseenter',()=>{
+      // tooltip
       let t=`<div class="t-name">${d.dataset.title}</div><div class="t-date">${d.dataset.date}</div>`;
       if(d.dataset.age&&d.dataset.age!=='')t+=`<div class="t-age">${d.dataset.age}岁</div>`;
       if(d.dataset.place)t+=`<div class="t-place">📍 ${d.dataset.place}</div>`;
       if(d.dataset.desc)t+=`<div class="t-desc">${d.dataset.desc}</div>`;
       if(d.dataset.hl)t+=`<div class="t-hl">★ ${d.dataset.hl}</div>`;
       tip.innerHTML=t;tip.style.display='block';
+      // 同期人物年龄
+      const evtDate=py(d.dataset.date);
+      if(evtDate!==null){
+        let ch=`<h4>${d.dataset.date} · 同期人物</h4>`;
+        const ages=[];
+        DATA.persons.forEach(p=>{
+          const by=py(p.birth_date),dy=py(p.death_date);
+          if(!by)return;
+          const age=ageAt(by,evtDate);
+          const alive=!dy||evtDate<=dy;
+          ages.push({name:p.name_zh,era:p.era||'',age,alive,isMe:p.qid===d.dataset.qid});
+        });
+        ages.sort((a,b)=>(b.age===null?-1:a.age===null?1:b.age-a.age));
+        ages.forEach(a=>{
+          if(a.age===null||a.age<-50)return; // skip unknown or too far
+          const cls=a.isMe?'me':a.alive?'alive':'dead';
+          const ageStr=a.age<0?`${Math.abs(a.age)}年前出生`:`${a.age}岁`;
+          ch+=`<div class="yr ${cls}"><span class="nm">${a.name}</span><span class="age">${ageStr}</span><span class="era">${a.era}</span></div>`;
+        });
+        同期.innerHTML=ch;同期.classList.add('open');
+      }
     });
-    d.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px'});
-    d.addEventListener('mouseleave',()=>{tip.style.display='none'});
+    d.addEventListener('mousemove',e=>{
+      tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px';
+      // 同期面板跟随
+      同期.style.left=(e.clientX+320)+'px';
+    });
+    d.addEventListener('mouseleave',()=>{tip.style.display='none';同期.classList.remove('open')});
   });
 }
 
@@ -191,6 +218,7 @@ function showDetail(qid){
     h+=`<div class="section"><h3>成事儿周期</h3>`;
     p.endeavors.forEach(ed=>{
       h+=`<div class="ph"><b>${ed.title_zh}</b> <span style="color:var(--mist)">${ed.start_date||'?'}→${ed.end_date||'?'}</span>`;
+      if(ed.description_zh)h+=`<div style="font-style:italic;margin:4px 0">${ed.description_zh}</div>`;
       if(ed.phases&&ed.phases.length)ed.phases.forEach(ph=>{h+=`<div>· ${ph.name} <span style="color:var(--mist)">${ph.start_date||''}~${ph.end_date||''} ${ph.place||''}</span>`;if(ph.highlight)h+=`<span class="hl"> ${ph.highlight}</span>`;h+=`</div>`});
       if(ed.outcome)h+=`<div style="color:var(--jade)">结果: ${ed.outcome}</div>`;
       if(ed.lesson)h+=`<div style="color:var(--accent);font-size:11px">启发: ${ed.lesson}</div>`;
@@ -198,9 +226,21 @@ function showDetail(qid){
     });
     h+=`</div>`;
   }
-  if(p.highlights&&p.highlights.length){
-    h+=`<div class="section"><h3>名场面</h3>`;
-    p.highlights.forEach(hl=>{const col=HL_COLORS[hl.highlight_type]||'var(--gold)';h+=`<div><span class="hl-tag" style="background:${col}">${hl.highlight_type||''}</span>${hl.title_zh} <span style="color:var(--mist)">${hl.date||''} ${hl.place_name||''}</span>`;if(hl.highlight_note)h+=`<div style="font-style:italic;color:var(--gold);font-size:11px">${hl.highlight_note}</div>`;h+=`</div>`});
+  // 事件直接展开（不需悬停）
+  const pEvents=DATA.events.filter(e=>e.person_qid===p.qid);
+  if(pEvents.length){
+    h+=`<div class="section"><h3>事件时间线</h3>`;
+    pEvents.forEach(ev=>{
+      const col=ev.is_highlight?'var(--gold)':'var(--ink)';
+      h+=`<div style="padding:4px 0;border-bottom:1px solid #f5f0e8">`;
+      h+=`<span style="color:${ev.is_highlight?'var(--gold)':'var(--ink)'};font-weight:${ev.is_highlight?'bold':'normal'}">`;
+      if(ev.is_highlight&&ev.highlight_type)h+=`<span class="hl-tag" style="background:${HL_COLORS[ev.highlight_type]||'var(--gold)'};font-size:8px">${ev.highlight_type}</span> `;
+      h+=`${ev.title_zh}</span>`;
+      h+=` <span style="color:var(--mist);font-size:10px">${ev.date||''} ${ev.place_name||''}</span>`;
+      if(ev.highlight_note)h+=`<div style="font-style:italic;color:var(--gold);font-size:10px;margin-top:2px">${ev.highlight_note}</div>`;
+      else if(ev.description_zh)h+=`<div style="font-size:10px;color:var(--mist);margin-top:2px">${ev.description_zh}</div>`;
+      h+=`</div>`;
+    });
     h+=`</div>`;
   }
   el.innerHTML=h;document.getElementById('detail').classList.add('open');
