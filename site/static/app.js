@@ -139,7 +139,10 @@ function renderTimeline(){
     rows+=`<div class="p-row" data-qid="${p.qid}" style="height:${RH}px"><div class="p-label" onclick="focusPerson('${p.qid}')"><span class="dot ${roleClass}"></span>${p.name_zh}<span class="arch">${p.archetype||''}</span>${pEds.length?`<span style="font-size:8px;color:var(--gold);margin-left:auto">${isFocused?'▾':'▸'}${pEds.length}事</span>`:''}</div><div class="p-track" style="width:${W-LABEL_W}px">${track}</div></div>`;
   });
 
-  inner.innerHTML=`<div class="axis-row" style="width:${W}px">${ticks}</div>${rows}`;
+  // cursor overlay (hidden by default, positioned on hover)
+  const cursorHtml=`<div id="cursor" style="display:none;position:absolute;top:0;width:1px;height:${32+filtered.reduce((s,p)=>{const by=py(p.birth_date);if(!by)return s;if(focusedQid&&p.qid!==focusedQid)return s;return s+(focusedQid===p.qid?ROW_E:ROW_N)},0)}px;background:var(--gold);opacity:.35;pointer-events:none;z-index:6"></div>`;
+
+  inner.innerHTML=`<div class="axis-row" style="width:${W}px">${ticks}</div>${rows}${cursorHtml}`;
   inner.style.width=W+'px';
   const totalH=32+filtered.reduce((s,p)=>{const by=py(p.birth_date);if(!by)return s;if(focusedQid&&p.qid!==focusedQid)return s;return s+(focusedQid===p.qid?ROW_E:ROW_N)},0);
   inner.style.height=totalH+'px';
@@ -148,11 +151,10 @@ function renderTimeline(){
   if(focusedQid){const fp=DATA.persons.find(p=>p.qid===focusedQid);zEl.textContent=`聚焦 ${fp?.name_zh||''}`;zEl.style.color='var(--accent)'}
   else{zEl.textContent=`${zoomLevel.toFixed(1)}x (${Math.round(span)}年)`;zEl.style.color='var(--mist)'}
 
-  // tooltip + cursor age line
+  // tooltip + cursor
   const tip=document.getElementById('tip');
   const同期=document.getElementById('同期');
-  // remove old cursor line
-  document.querySelectorAll('.cursor-line,.age-badge').forEach(e=>e.remove());
+  const cursor=document.getElementById('cursor');
 
   inner.querySelectorAll('.ev-dot').forEach(d=>{
     d.addEventListener('mouseenter',()=>{
@@ -163,70 +165,36 @@ function renderTimeline(){
       if(d.dataset.hl)t+=`<div class="t-hl">★ ${d.dataset.hl}</div>`;
       tip.innerHTML=t;tip.style.display='block';
 
-      // 如果视图里只有一个人，不显示同期
-      if(filtered.length<=1){同期.style.display='none';return}
+      // show cursor line
+      if(cursor){
+        const dotLeft=parseFloat(d.style.left)||0;
+        cursor.style.display='block';
+        cursor.style.left=dotLeft+'px';
+      }
 
-      // 同期年龄：在每条p-row上放一个小年龄框
+      // 同期年龄: 仅视图>1人时显示
+      if(filtered.length<=1){同期.style.display='none';return}
       const evtDate=py(d.dataset.date);
       if(evtDate===null){同期.style.display='none';return}
 
-      // 先画一条竖线
-      const row=d.closest('.p-row');
-      if(!row)return;
-      const trackEl=row.querySelector('.p-track');
-      const dotLeft=parseFloat(d.style.left)||0;
-      const line=document.createElement('div');
-      line.className='cursor-line';
-      line.style.cssText=`position:absolute;left:${dotLeft}px;top:0;width:1px;height:100%;background:var(--gold);opacity:.3;pointer-events:none;z-index:1`;
-      trackEl.appendChild(line);
-
-      // 在每条p-row上放年龄框
-      const allRows=inner.querySelectorAll('.p-row');
-      allRows.forEach(r=>{
-        const qid=r.dataset.qid;
-        const p=DATA.persons.find(x=>x.qid===qid);
-        if(!p)return;
-        const by=py(p.birth_date),dy=py(p.death_date);
-        if(!by)return;
-        const age=ageAt(by,evtDate);
-        if(!alive)return;
-        if(age===null||age<-50)return;
-        const alive=!dy||evtDate<=dy;
-        const t2=r.querySelector('.p-track');
-        if(!t2)return;
-        const badge=document.createElement('div');
-        badge.className='age-badge';
-        const isMe=qid===d.dataset.qid;
-        badge.style.cssText=`position:absolute;left:${dotLeft}px;top:calc(var(--row-h)/2 - 10px);transform:translateX(-50%);z-index:4;font-size:9px;padding:2px 5px;border-radius:3px;white-space:nowrap;pointer-events:none;background:${isMe?'var(--accent)':alive?'#fff':'#f0f0f0'};color:${isMe?'#fff':alive?'var(--ink)':'#999'};border:1px solid ${isMe?'var(--accent)':alive?'var(--ruler)':'#ddd'};`;
-        badge.textContent=age<0?`${Math.abs(age)}前生`:`${age}岁`;
-        t2.appendChild(badge);
-      });
-
-      // 同期面板：显示存活人物列表
       let ch=`<h4>${d.dataset.date} · 同期人物</h4>`;
-      const alivePersons=[];
+      let aliveCount=0;
       filtered.forEach(p=>{
         const by=py(p.birth_date),dy=py(p.death_date);
         if(!by)return;
         const age=ageAt(by,evtDate);
         if(age===null||age<-50)return;
         const alive=!dy||evtDate<=dy;
-        if(alive)alivePersons.push({name:p.name_zh,era:p.era||'',age,isMe:p.qid===d.dataset.qid});
+        if(!alive)return; // 只显示活着的
+        aliveCount++;
+        const isMe=p.qid===d.dataset.qid;
+        ch+=`<div class="yr ${isMe?'me':''}"><span class="nm">${p.name_zh}</span><span class="age">${age}岁</span><span class="era">${p.era||''}</span></div>`;
       });
-      alivePersons.sort((a,b)=>(b.age===null?-1:a.age===null?1:b.age-a.age));
-      alivePersons.forEach(a=>{
-        const cls=a.isMe?'me':'';
-        ch+=`<div class="yr ${cls}"><span class="nm">${a.name}</span><span class="age">${a.age}岁</span><span class="era">${a.era}</span></div>`;
-      });
-      if(alivePersons.length<=1){同期.style.display='none'}
-      else{同期.innerHTML=ch;同期.style.display='block';同期.style.left=(d.closest('.p-track').getBoundingClientRect().right+8)+'px'}
+      if(aliveCount<=1){同期.style.display='none'}
+      else{同期.innerHTML=ch;同期.style.display='block'}
     });
     d.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY-8)+'px'});
-    d.addEventListener('mouseleave',()=>{
-      tip.style.display='none';
-      同期.style.display='none';
-      document.querySelectorAll('.cursor-line,.age-badge').forEach(e=>e.remove());
-    });
+    d.addEventListener('mouseleave',()=>{tip.style.display='none';同期.style.display='none';if(cursor)cursor.style.display='none'});
   });
 }
 

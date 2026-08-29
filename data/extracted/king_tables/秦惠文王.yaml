@@ -1,131 +1,263 @@
 person:
-  name_zh: "秦惠文王"
-  birth_date: "-356"
-  death_date: "-311"
-  birth_place: "咸阳(今陕西咸阳)"
-  era: "战国中期"
-  archetype: "承前启后的扩张之君"
-  summary_zh: "秦孝公之子嬴驷，少年时因犯法被商鞅刑其师傅，即位后车裂商鞅却尽用其法——这种'人死法存'的务实态度贯穿一生。任用张仪推行连横策略，破解六国合纵；南取巴蜀获得天府之国；东出函谷与六国争霸。在位期间秦国完成了从区域强国到天下霸主的关键跨越，首次称王，标志着秦国不再满足于诸侯之列。"
-  summary_first_person: "吾少时犯法，太傅被刑，此吾一生之耻。然吾深知商鞅之法利于秦国，故即位虽诛鞅而不废其法。张仪以连横说吾，吾用之，使六国各自为谋而不能合。又南取巴蜀，得天府之国。吾称惠文王，自此秦不复为诸侯之秦。"
-  lesson: "真正的政治家能超越个人恩怨，为国家利益做出最务实的选择。"
-
+  name_zh: 秦惠文王
+  birth_date: '-356'
+  death_date: '-311'
+  birth_place: 咸阳(今陕西咸阳)
+  era: 战国中期
+  archetype: 承前启后的扩张之君
+  summary_zh: 秦孝公之子嬴驷，少年时因犯法被商鞅刑其师傅，即位后车裂商鞅却尽用其法——这种'人死法存'的务实态度贯穿一生。任用张仪推行连横策略，破解六国合纵；南取巴蜀获得天府之国；东出函谷与六国争霸。在位期间秦国完成了从区域强国到天下霸主的关键跨越，首次称王，标志着秦国不再满足于诸侯之列。
+  summary_first_person: 吾少时犯法，太傅被刑，此吾一生之耻。然吾深知商鞅之法利于秦国，故即位虽诛鞅而不废其法。张仪以连横说吾，吾用之，使六国各自为谋而不能合。又南取巴蜀，得天府之国。吾称惠文王，自此秦不复为诸侯之秦。
+  lesson: 真正的政治家能超越个人恩怨，为国家利益做出最务实的选择。
 endeavors:
-  - title_zh: "诛商鞅而用其法"
-    domain: "政治"
-    start_date: "-338"
-    end_date: "-338"
-    places: ["咸阳(今陕西咸阳)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-338"
-        end_date: "-338"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "旧贵族要求诛杀商鞅"
-      - name: "破局"
-        start_date: "-338"
-        end_date: "-338"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "车裂商鞅"
-      - name: "高潮"
-        start_date: "-338"
-        end_date: "-338"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "明确宣布沿用秦法不变"
-      - name: "收束"
-        start_date: "-338"
-        end_date: "-337"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "旧贵族失望——法并未废除"
-    description_zh: "惠文王即位后，公子虔等人诬告商鞅谋反，请求诛杀。惠文王顺势车裂商鞅、灭其族，既满足了旧贵族的怨恨，又稳固了自身王位。但高明之处在于，他从未打算废除商鞅之法——因为正是这套制度让秦国强大起来。这种'杀其人而用其法'的做法，展现了超越个人恩怨的政治智慧。"
-    outcome: "平息旧贵族怨恨的同时，完整保留了变法成果"
-    lesson: "政治的最高境界是让所有人都觉得赢了，但规则不变"
-
-  - title_zh: "张仪连横，破六国合纵"
-    domain: "外交"
-    start_date: "-328"
-    end_date: "-311"
-    places: ["咸阳(今陕西咸阳)", "大梁(今河南开封)", "新郑(今河南新郑)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-328"
-        end_date: "-318"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "苏秦合纵，六国联军伐秦"
-      - name: "破局"
-        start_date: "-318"
-        end_date: "-315"
-        place: "各国都城"
-        highlight: "张仪以连横逐一瓦解"
-      - name: "高潮"
-        start_date: "-313"
-        end_date: "-311"
-        place: "各国都城"
-        highlight: "欺楚绝齐，六国再无合力"
-      - name: "收束"
-        start_date: "-311"
-        end_date: "-311"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "秦国成为天下最强"
-    description_zh: "面对苏秦组织的六国合纵伐秦，惠文王起用张仪推行连横策略。张仪凭三寸不烂之舌游说各国，以利诱、恐吓、欺诈等手段逐一瓦解合纵联盟。最精彩的是欺楚绝齐——张仪以商於六百里地诱楚怀王与齐绝交，待楚齐绝交后又称只许六里，楚怀王大怒伐秦，反被大败于丹阳、蓝田。"
-    outcome: "六国合纵瓦解，秦国各个击破的外交优势确立"
-    lesson: "在大国博弈中，外交策略的价值不亚于军事力量"
-
-  - title_zh: "南取巴蜀，得天府之国"
-    domain: "军事"
-    start_date: "-316"
-    end_date: "-314"
-    places: ["巴蜀(今四川盆地)", "苴(今四川广元)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-316"
-        end_date: "-316"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "巴蜀内乱，苴侯求援"
-      - name: "破局"
-        start_date: "-316"
-        end_date: "-316"
-        place: "巴蜀(今四川盆地)"
-        highlight: "司马错率军入蜀"
-      - name: "高潮"
-        start_date: "-316"
-        end_date: "-314"
-        place: "巴蜀(今四川盆地)"
-        highlight: "灭蜀灭巴，设郡管辖"
-      - name: "收束"
-        start_date: "-314"
-        end_date: "-314"
-        place: "巴蜀(今四川盆地)"
-        highlight: "成都平原成为秦国战略后方"
-    description_zh: "巴蜀内乱，苴侯求援于秦。朝堂上有两派意见：张仪主张先伐韩取周以震慑天下，司马错则主张先取巴蜀以广地富民。惠文王采纳司马错之策，一举灭蜀、继而灭巴。巴蜀归秦后，成都平原成为秦国最重要的粮食基地和战略后方，为日后统一六国提供了坚实的物质保障。"
-    outcome: "秦国获得巴蜀千里沃野，粮食产量倍增，战略纵深大为扩展"
-    lesson: "有时候迂回的棋比正面的棋更有价值——取巴蜀比争中原更明智"
-
-  - title_zh: "称王，与齐并立"
-    domain: "政治"
-    start_date: "-325"
-    end_date: "-323"
-    places: ["咸阳(今陕西咸阳)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-325"
-        end_date: "-325"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "秦国国力已可与齐楚并肩"
-      - name: "破局"
-        start_date: "-325"
-        end_date: "-325"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "自立为王"
-      - name: "高潮"
-        start_date: "-323"
-        end_date: "-323"
-        place: "徐州(今山东枣庄)"
-        highlight: "徐州相王，天下格局重塑"
-      - name: "收束"
-        start_date: "-323"
-        end_date: "-311"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "秦称王成定制"
-    description_zh: "前325年，秦惠文王正式称王，这是秦国历史上第一个称王的君主。此后韩、赵、魏、燕相继称王，到前323年徐州相王，战国七雄正式确立'王'的称号体系。惠文王称王标志着秦国不再以周室诸侯自居，而是以平等甚至更强势的姿态与天下争霸。"
-    outcome: "秦国正式跻身王者之列，为后续统一天下的政治叙事奠基"
-    lesson: "名分的改变往往是实力改变的信号"
+- title_zh: 诛商鞅而用其法
+  domain: 政治
+  start_date: '-338'
+  end_date: '-338'
+  places:
+  - 咸阳(今陕西咸阳)
+  phases:
+  - name: 酝酿
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    highlight: 旧贵族要求诛杀商鞅
+  - name: 破局
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    highlight: 车裂商鞅
+  - name: 高潮
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    highlight: 明确宣布沿用秦法不变
+  - name: 收束
+    start_date: '-338'
+    end_date: '-337'
+    place: 咸阳(今陕西咸阳)
+    highlight: 旧贵族失望——法并未废除
+  description_zh: 惠文王即位后，公子虔等人诬告商鞅谋反，请求诛杀。惠文王顺势车裂商鞅、灭其族，既满足了旧贵族的怨恨，又稳固了自身王位。但高明之处在于，他从未打算废除商鞅之法——因为正是这套制度让秦国强大起来。这种'杀其人而用其法'的做法，展现了超越个人恩怨的政治智慧。
+  outcome: 平息旧贵族怨恨的同时，完整保留了变法成果
+  lesson: 政治的最高境界是让所有人都觉得赢了，但规则不变
+- title_zh: 张仪连横，破六国合纵
+  domain: 外交
+  start_date: '-328'
+  end_date: '-311'
+  places:
+  - 咸阳(今陕西咸阳)
+  - 大梁(今河南开封)
+  - 新郑(今河南新郑)
+  phases:
+  - name: 酝酿
+    start_date: '-328'
+    end_date: '-318'
+    place: 咸阳(今陕西咸阳)
+    highlight: 苏秦合纵，六国联军伐秦
+  - name: 破局
+    start_date: '-318'
+    end_date: '-315'
+    place: 各国都城
+    highlight: 张仪以连横逐一瓦解
+  - name: 高潮
+    start_date: '-313'
+    end_date: '-311'
+    place: 各国都城
+    highlight: 欺楚绝齐，六国再无合力
+  - name: 收束
+    start_date: '-311'
+    end_date: '-311'
+    place: 咸阳(今陕西咸阳)
+    highlight: 秦国成为天下最强
+  description_zh: 面对苏秦组织的六国合纵伐秦，惠文王起用张仪推行连横策略。张仪凭三寸不烂之舌游说各国，以利诱、恐吓、欺诈等手段逐一瓦解合纵联盟。最精彩的是欺楚绝齐——张仪以商於六百里地诱楚怀王与齐绝交，待楚齐绝交后又称只许六里，楚怀王大怒伐秦，反被大败于丹阳、蓝田。
+  outcome: 六国合纵瓦解，秦国各个击破的外交优势确立
+  lesson: 在大国博弈中，外交策略的价值不亚于军事力量
+- title_zh: 南取巴蜀，得天府之国
+  domain: 军事
+  start_date: '-316'
+  end_date: '-314'
+  places:
+  - 巴蜀(今四川盆地)
+  - 苴(今四川广元)
+  phases:
+  - name: 酝酿
+    start_date: '-316'
+    end_date: '-316'
+    place: 咸阳(今陕西咸阳)
+    highlight: 巴蜀内乱，苴侯求援
+  - name: 破局
+    start_date: '-316'
+    end_date: '-316'
+    place: 巴蜀(今四川盆地)
+    highlight: 司马错率军入蜀
+  - name: 高潮
+    start_date: '-316'
+    end_date: '-314'
+    place: 巴蜀(今四川盆地)
+    highlight: 灭蜀灭巴，设郡管辖
+  - name: 收束
+    start_date: '-314'
+    end_date: '-314'
+    place: 巴蜀(今四川盆地)
+    highlight: 成都平原成为秦国战略后方
+  description_zh: 巴蜀内乱，苴侯求援于秦。朝堂上有两派意见：张仪主张先伐韩取周以震慑天下，司马错则主张先取巴蜀以广地富民。惠文王采纳司马错之策，一举灭蜀、继而灭巴。巴蜀归秦后，成都平原成为秦国最重要的粮食基地和战略后方，为日后统一六国提供了坚实的物质保障。
+  outcome: 秦国获得巴蜀千里沃野，粮食产量倍增，战略纵深大为扩展
+  lesson: 有时候迂回的棋比正面的棋更有价值——取巴蜀比争中原更明智
+- title_zh: 称王，与齐并立
+  domain: 政治
+  start_date: '-325'
+  end_date: '-323'
+  places:
+  - 咸阳(今陕西咸阳)
+  phases:
+  - name: 酝酿
+    start_date: '-325'
+    end_date: '-325'
+    place: 咸阳(今陕西咸阳)
+    highlight: 秦国国力已可与齐楚并肩
+  - name: 破局
+    start_date: '-325'
+    end_date: '-325'
+    place: 咸阳(今陕西咸阳)
+    highlight: 自立为王
+  - name: 高潮
+    start_date: '-323'
+    end_date: '-323'
+    place: 徐州(今山东枣庄)
+    highlight: 徐州相王，天下格局重塑
+  - name: 收束
+    start_date: '-323'
+    end_date: '-311'
+    place: 咸阳(今陕西咸阳)
+    highlight: 秦称王成定制
+  description_zh: 前325年，秦惠文王正式称王，这是秦国历史上第一个称王的君主。此后韩、赵、魏、燕相继称王，到前323年徐州相王，战国七雄正式确立'王'的称号体系。惠文王称王标志着秦国不再以周室诸侯自居，而是以平等甚至更强势的姿态与天下争霸。
+  outcome: 秦国正式跻身王者之列，为后续统一天下的政治叙事奠基
+  lesson: 名分的改变往往是实力改变的信号
+events:
+- date: '-338'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 旧贵族要求诛杀商鞅
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 旧贵族要求诛杀商鞅
+- date: '-338'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 破局
+  title_zh: 车裂商鞅
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 车裂商鞅
+- date: '-338'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 高潮
+  title_zh: 明确宣布沿用秦法不变
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 明确宣布沿用秦法不变
+- date: '-338'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 收束
+  title_zh: 旧贵族失望——法并未废除
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 旧贵族失望——法并未废除
+- date: '-328'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 苏秦合纵，六国联军伐秦
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 苏秦合纵，六国联军伐秦
+- date: '-318'
+  place_name: 各国都城
+  event_type: 破局
+  title_zh: 张仪以连横逐一瓦解
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 张仪以连横逐一瓦解
+- date: '-313'
+  place_name: 各国都城
+  event_type: 高潮
+  title_zh: 欺楚绝齐，六国再无合力
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 欺楚绝齐，六国再无合力
+- date: '-311'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 收束
+  title_zh: 秦国成为天下最强
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦国成为天下最强
+- date: '-316'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 巴蜀内乱，苴侯求援
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 巴蜀内乱，苴侯求援
+- date: '-316'
+  place_name: 巴蜀(今四川盆地)
+  event_type: 破局
+  title_zh: 司马错率军入蜀
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 司马错率军入蜀
+- date: '-316'
+  place_name: 巴蜀(今四川盆地)
+  event_type: 高潮
+  title_zh: 灭蜀灭巴，设郡管辖
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 灭蜀灭巴，设郡管辖
+- date: '-314'
+  place_name: 巴蜀(今四川盆地)
+  event_type: 收束
+  title_zh: 成都平原成为秦国战略后方
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 成都平原成为秦国战略后方
+- date: '-325'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 秦国国力已可与齐楚并肩
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦国国力已可与齐楚并肩
+- date: '-325'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 破局
+  title_zh: 自立为王
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 自立为王
+- date: '-323'
+  place_name: 徐州(今山东枣庄)
+  event_type: 高潮
+  title_zh: 徐州相王，天下格局重塑
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 徐州相王，天下格局重塑
+- date: '-323'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 收束
+  title_zh: 秦称王成定制
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦称王成定制

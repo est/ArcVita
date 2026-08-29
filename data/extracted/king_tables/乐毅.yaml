@@ -1,71 +1,139 @@
 person:
-  name_zh: "乐毅"
-  birth_date: "约-310"
-  death_date: "约-250"
-  birth_place: "中山国(今河北平山)"
-  era: "战国中晚期"
-  archetype: "以弱破强的传奇统帅"
-  summary_zh: "战国名将，中山国后裔，先仕赵、后仕魏、终至燕。受燕昭王知遇之恩，拜为上将军，率五国联军伐齐，连下七十余城，创造了战国时代最辉煌的军事胜利。其军事才能和政治智慧并重——围攻即墨五年而不强攻，以仁义感化齐人。然燕昭王薨后，新王中反间计换将，乐毅被迫出奔赵国。诸葛亮常自比乐毅，可见其在后世心目中的地位。"
-  summary_first_person: "吾中山之后，先仕赵魏，终至燕。燕昭王筑黄金台待吾，吾感其知遇，率五国之兵伐齐。济西一战大破齐军，吾独将燕师长驱七十余城，齐国几亡。围即墨五年，吾欲以仁义化齐人。然昭王薨，惠王中反间，吾遂去燕适赵。诸葛亮每自比管乐，吾之平生亦足慰矣。"
-  lesson: "被信任时倾力以报，被猜疑时全身而退——是名将的最高智慧。"
-
+  name_zh: 乐毅
+  birth_date: 约-310
+  death_date: 约-250
+  birth_place: 中山国(今河北平山)
+  era: 战国中晚期
+  archetype: 以弱破强的传奇统帅
+  summary_zh: 战国名将，中山国后裔，先仕赵、后仕魏、终至燕。受燕昭王知遇之恩，拜为上将军，率五国联军伐齐，连下七十余城，创造了战国时代最辉煌的军事胜利。其军事才能和政治智慧并重——围攻即墨五年而不强攻，以仁义感化齐人。然燕昭王薨后，新王中反间计换将，乐毅被迫出奔赵国。诸葛亮常自比乐毅，可见其在后世心目中的地位。
+  summary_first_person: 吾中山之后，先仕赵魏，终至燕。燕昭王筑黄金台待吾，吾感其知遇，率五国之兵伐齐。济西一战大破齐军，吾独将燕师长驱七十余城，齐国几亡。围即墨五年，吾欲以仁义化齐人。然昭王薨，惠王中反间，吾遂去燕适赵。诸葛亮每自比管乐，吾之平生亦足慰矣。
+  lesson: 被信任时倾力以报，被猜疑时全身而退——是名将的最高智慧。
 endeavors:
-  - title_zh: "伐齐之战，连下七十余城"
-    domain: "军事"
-    start_date: "-284"
-    end_date: "-280"
-    places: ["临淄(今山东淄博)", "即墨(今山东平度)", "莒(今山东莒县)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-284"
-        end_date: "-284"
-        place: "蓟(今北京)"
-        highlight: "拜为上将军，统率五国联军"
-      - name: "破局"
-        start_date: "-284"
-        end_date: "-284"
-        place: "济西(今山东聊城一带)"
-        highlight: "济西之战大破齐军"
-      - name: "高潮"
-        start_date: "-284"
-        end_date: "-280"
-        place: "临淄(今山东淄博)"
-        highlight: "连下七十余城，齐国几亡"
-      - name: "收束"
-        start_date: "-280"
-        end_date: "-279"
-        place: "即墨(今山东平度)"
-        highlight: "围攻即墨，以仁义化齐"
-    description_zh: "前284年，乐毅受燕昭王重拜为上将军，统率燕、秦、韩、赵、魏五国联军伐齐。在济西(今山东聊城一带)大破齐军后，乐毅遣返其他四国军队，独率燕军长驱直入。七十余城望风而降，齐国仅余即墨和莒两城。乐毅在已克之地施仁政、废苛令、礼待齐国旧臣，试图从根本上征服齐国人心。"
-    outcome: "创造了战国时代最辉煌的军事胜利，燕国从小国跃为大国"
-    lesson: "最伟大的军事胜利不是杀戮，而是征服人心"
-
-  - title_zh: "出奔赵国"
-    domain: "政治"
-    start_date: "-279"
-    end_date: "-279"
-    places: ["即墨(今山东平度)", "赵国邯郸(今河北邯郸)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-279"
-        end_date: "-279"
-        place: "蓟(今北京)"
-        highlight: "燕昭王薨，燕惠王即位"
-      - name: "破局"
-        start_date: "-279"
-        end_date: "-279"
-        place: "蓟(今北京)"
-        highlight: "田单施反间计，燕惠王中计"
-      - name: "高潮"
-        start_date: "-279"
-        end_date: "-279"
-        place: "即墨(今山东平度)"
-        highlight: "燕惠王以骑劫代乐毅"
-      - name: "收束"
-        start_date: "-279"
-        end_date: "-279"
-        place: "赵国邯郸(今河北邯郸)"
-        highlight: "乐毅奔赵，田单火牛阵复齐"
-    description_zh: "燕昭王薨后，继位的燕惠王为太子时就与乐毅有嫌隙。齐国即墨守将田单趁机施反间计，散布'乐毅欲自立为齐王'的谣言。燕惠王中计，派骑劫替代乐毅。乐毅知归燕必死，遂出奔赵国。赵惠文王以客卿之礼待之。此后田单以火牛阵大破燕军，齐国复国七十余城。"
-    outcome: "乐毅全身而退，但燕国二十八年伐齐之功尽丧"
-    lesson: "功高不赏则危，知进退者方能全身"
+- title_zh: 伐齐之战，连下七十余城
+  domain: 军事
+  start_date: '-284'
+  end_date: '-280'
+  places:
+  - 临淄(今山东淄博)
+  - 即墨(今山东平度)
+  - 莒(今山东莒县)
+  phases:
+  - name: 酝酿
+    start_date: '-284'
+    end_date: '-284'
+    place: 蓟(今北京)
+    highlight: 拜为上将军，统率五国联军
+  - name: 破局
+    start_date: '-284'
+    end_date: '-284'
+    place: 济西(今山东聊城一带)
+    highlight: 济西之战大破齐军
+  - name: 高潮
+    start_date: '-284'
+    end_date: '-280'
+    place: 临淄(今山东淄博)
+    highlight: 连下七十余城，齐国几亡
+  - name: 收束
+    start_date: '-280'
+    end_date: '-279'
+    place: 即墨(今山东平度)
+    highlight: 围攻即墨，以仁义化齐
+  description_zh: 前284年，乐毅受燕昭王重拜为上将军，统率燕、秦、韩、赵、魏五国联军伐齐。在济西(今山东聊城一带)大破齐军后，乐毅遣返其他四国军队，独率燕军长驱直入。七十余城望风而降，齐国仅余即墨和莒两城。乐毅在已克之地施仁政、废苛令、礼待齐国旧臣，试图从根本上征服齐国人心。
+  outcome: 创造了战国时代最辉煌的军事胜利，燕国从小国跃为大国
+  lesson: 最伟大的军事胜利不是杀戮，而是征服人心
+- title_zh: 出奔赵国
+  domain: 政治
+  start_date: '-279'
+  end_date: '-279'
+  places:
+  - 即墨(今山东平度)
+  - 赵国邯郸(今河北邯郸)
+  phases:
+  - name: 酝酿
+    start_date: '-279'
+    end_date: '-279'
+    place: 蓟(今北京)
+    highlight: 燕昭王薨，燕惠王即位
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 蓟(今北京)
+    highlight: 田单施反间计，燕惠王中计
+  - name: 高潮
+    start_date: '-279'
+    end_date: '-279'
+    place: 即墨(今山东平度)
+    highlight: 燕惠王以骑劫代乐毅
+  - name: 收束
+    start_date: '-279'
+    end_date: '-279'
+    place: 赵国邯郸(今河北邯郸)
+    highlight: 乐毅奔赵，田单火牛阵复齐
+  description_zh: 燕昭王薨后，继位的燕惠王为太子时就与乐毅有嫌隙。齐国即墨守将田单趁机施反间计，散布'乐毅欲自立为齐王'的谣言。燕惠王中计，派骑劫替代乐毅。乐毅知归燕必死，遂出奔赵国。赵惠文王以客卿之礼待之。此后田单以火牛阵大破燕军，齐国复国七十余城。
+  outcome: 乐毅全身而退，但燕国二十八年伐齐之功尽丧
+  lesson: 功高不赏则危，知进退者方能全身
+events:
+- date: '-284'
+  place_name: 蓟(今北京)
+  event_type: 酝酿
+  title_zh: 拜为上将军，统率五国联军
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 拜为上将军，统率五国联军
+- date: '-284'
+  place_name: 济西(今山东聊城一带)
+  event_type: 破局
+  title_zh: 济西之战大破齐军
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 济西之战大破齐军
+- date: '-284'
+  place_name: 临淄(今山东淄博)
+  event_type: 高潮
+  title_zh: 连下七十余城，齐国几亡
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 连下七十余城，齐国几亡
+- date: '-280'
+  place_name: 即墨(今山东平度)
+  event_type: 收束
+  title_zh: 围攻即墨，以仁义化齐
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 围攻即墨，以仁义化齐
+- date: '-279'
+  place_name: 蓟(今北京)
+  event_type: 酝酿
+  title_zh: 燕昭王薨，燕惠王即位
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 燕昭王薨，燕惠王即位
+- date: '-279'
+  place_name: 蓟(今北京)
+  event_type: 破局
+  title_zh: 田单施反间计，燕惠王中计
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 田单施反间计，燕惠王中计
+- date: '-279'
+  place_name: 即墨(今山东平度)
+  event_type: 高潮
+  title_zh: 燕惠王以骑劫代乐毅
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 燕惠王以骑劫代乐毅
+- date: '-279'
+  place_name: 赵国邯郸(今河北邯郸)
+  event_type: 收束
+  title_zh: 乐毅奔赵，田单火牛阵复齐
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 乐毅奔赵，田单火牛阵复齐

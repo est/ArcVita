@@ -1,131 +1,261 @@
 person:
-  name_zh: "商鞅"
-  birth_date: "约-390"
-  death_date: "-338"
-  birth_place: "卫国(今河南淇县)"
-  era: "战国中期"
-  archetype: "以身殉法的变法先驱"
-  summary_zh: "卫国公族后裔，初仕魏国不得志，携李悝《法经》入秦。以'霸道'说秦孝公，受命主持两次变法：废井田、开阡陌、奖耕战、行县制、统一度量衡。二十年间使秦国脱胎换骨。然变法触动旧贵族利益，孝公死后被车裂灭族。其法终被历代秦君沿用，堪称'法死而法存'的千古悲剧英雄。"
-  summary_first_person: "吾本卫国公孙，游历诸侯而无所遇。入秦以霸道说孝公，一语中的。变法十年，秦道不拾遗、山无盗贼。然吾深知法之所在即怨之所聚。太子犯法，刑其师傅以立威，吾与公子虔结仇已深。孝公薨，吾走不能，终被车裂。然吾法不废，秦终一天下，吾虽死犹生。"
-  lesson: "变法者终成变法的祭品，但法的精神可以超越个人存亡。"
-
+  name_zh: 商鞅
+  birth_date: 约-390
+  death_date: '-338'
+  birth_place: 卫国(今河南淇县)
+  era: 战国中期
+  archetype: 以身殉法的变法先驱
+  summary_zh: 卫国公族后裔，初仕魏国不得志，携李悝《法经》入秦。以'霸道'说秦孝公，受命主持两次变法：废井田、开阡陌、奖耕战、行县制、统一度量衡。二十年间使秦国脱胎换骨。然变法触动旧贵族利益，孝公死后被车裂灭族。其法终被历代秦君沿用，堪称'法死而法存'的千古悲剧英雄。
+  summary_first_person: 吾本卫国公孙，游历诸侯而无所遇。入秦以霸道说孝公，一语中的。变法十年，秦道不拾遗、山无盗贼。然吾深知法之所在即怨之所聚。太子犯法，刑其师傅以立威，吾与公子虔结仇已深。孝公薨，吾走不能，终被车裂。然吾法不废，秦终一天下，吾虽死犹生。
+  lesson: 变法者终成变法的祭品，但法的精神可以超越个人存亡。
 endeavors:
-  - title_zh: "第一次变法：富国强兵"
-    domain: "政治"
-    start_date: "-356"
-    end_date: "-350"
-    places: ["栎阳(今陕西富平)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-356"
-        end_date: "-356"
-        place: "栎阳(今陕西富平)"
-        highlight: "徙木立信，取信于民"
-      - name: "破局"
-        start_date: "-356"
-        end_date: "-355"
-        place: "栎阳(今陕西富平)"
-        highlight: "颁布废井田、奖耕战法令"
-      - name: "高潮"
-        start_date: "-355"
-        end_date: "-350"
-        place: "栎阳(今陕西富平)"
-        highlight: "秦国初见富强之效"
-      - name: "收束"
-        start_date: "-350"
-        end_date: "-350"
-        place: "栎阳(今陕西富平)"
-        highlight: "升为大良造，主持第二次变法"
-    description_zh: "商鞅入秦后，先以徙木立信——在都城南门立三丈之木，悬赏五十金迁木至北门，百姓观望后终有勇者尝试，商鞅如约赏金。此举令百姓知法令必行。随后颁布废井田、开阡陌、奖励耕织和军功、编户连坐等法令。旧贵族群起反对，商鞅刑太子师傅公子虔、公孙贾以儆效尤。"
-    outcome: "秦国农业产量和军事战力大幅提升，初步建立法治秩序"
-    lesson: "法律的权威在于必行，取信于民是变法的第一步"
-
-  - title_zh: "第二次变法：制度变革"
-    domain: "政治"
-    start_date: "-350"
-    end_date: "-340"
-    places: ["咸阳(今陕西咸阳)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-350"
-        end_date: "-350"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "迁都咸阳"
-      - name: "破局"
-        start_date: "-350"
-        end_date: "-345"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "推行县制，编户齐民"
-      - name: "高潮"
-        start_date: "-345"
-        end_date: "-340"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "统一度量衡，秦制大成"
-      - name: "收束"
-        start_date: "-340"
-        end_date: "-338"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "秦法完备，影响深远"
-    description_zh: "第二次变法更为深刻：迁都咸阳以远离旧贵族势力中心，推行郡县制取代分封，编户齐民使国家直接控制每一个百姓。统一度量衡为经济一体化奠基。商鞅被封于商地十五邑，号商君，权势煊赫一时。"
-    outcome: "建立了一整套中央集权的制度框架，奠定了秦朝统一后的政治体制"
-    lesson: "制度变革比政策变更更深远，真正的改革家改变的是规则本身"
-
-  - title_zh: "河西之战，以战立功"
-    domain: "军事"
-    start_date: "-340"
-    end_date: "-340"
-    places: ["河西(今陕西韩城一带)", "安邑(今山西夏县)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-341"
-        end_date: "-340"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "魏国马陵大败"
-      - name: "破局"
-        start_date: "-340"
-        end_date: "-340"
-        place: "河西(今陕西韩城一带)"
-        highlight: "设计俘获公子卬"
-      - name: "高潮"
-        start_date: "-340"
-        end_date: "-340"
-        place: "安邑(今山西夏县)"
-        highlight: "大破魏军"
-      - name: "收束"
-        start_date: "-340"
-        end_date: "-340"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "封商地十五邑"
-    description_zh: "魏国马陵之战惨败后，商鞅建议趁势伐魏。他利用与魏公子卬的旧交，以宴请为名诱其至军中，趁机俘虏。魏军群龙无首，大败而归。魏惠王被迫割让河西之地。商鞅因功封于商地，号商君。"
-    outcome: "秦国收复河西，商鞅获封商地"
-    lesson: "军事胜利有时需要超越常规的手段，但代价是信誉的透支"
-
-  - title_zh: "车裂殉法"
-    domain: "政治"
-    start_date: "-338"
-    end_date: "-338"
-    places: ["咸阳(今陕西咸阳)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-338"
-        end_date: "-338"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "秦孝公薨，旧贵族伺机反扑"
-      - name: "破局"
-        start_date: "-338"
-        end_date: "-338"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "公子虔等人诬告商鞅谋反"
-      - name: "高潮"
-        start_date: "-338"
-        end_date: "-338"
-        place: "郑(今陕西华县)"
-        highlight: "商鞅逃亡，宿客不纳"
-      - name: "收束"
-        start_date: "-338"
-        end_date: "-338"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "车裂灭族，法存身灭"
-    description_zh: "孝公薨，秦惠文王即位。旧贵族群起攻讦，公子虔诬商鞅谋反。商鞅欲逃，至关下欲宿旅店，旅店主人曰'商君之法，舍人无验者坐之'——商鞅自己制定的法律反困住了自己。最终商鞅被擒，车裂而死，灭其族。然秦惠文王虽杀商鞅，却终未废其法。"
-    outcome: "商鞅身死，但其法被秦国完整沿用，影响中国两千年"
-    lesson: "法不阿贵，绳不挠曲——但制定法律的人也终将被法律所约束"
+- title_zh: 第一次变法：富国强兵
+  domain: 政治
+  start_date: '-356'
+  end_date: '-350'
+  places:
+  - 栎阳(今陕西富平)
+  phases:
+  - name: 酝酿
+    start_date: '-356'
+    end_date: '-356'
+    place: 栎阳(今陕西富平)
+    highlight: 徙木立信，取信于民
+  - name: 破局
+    start_date: '-356'
+    end_date: '-355'
+    place: 栎阳(今陕西富平)
+    highlight: 颁布废井田、奖耕战法令
+  - name: 高潮
+    start_date: '-355'
+    end_date: '-350'
+    place: 栎阳(今陕西富平)
+    highlight: 秦国初见富强之效
+  - name: 收束
+    start_date: '-350'
+    end_date: '-350'
+    place: 栎阳(今陕西富平)
+    highlight: 升为大良造，主持第二次变法
+  description_zh: 商鞅入秦后，先以徙木立信——在都城南门立三丈之木，悬赏五十金迁木至北门，百姓观望后终有勇者尝试，商鞅如约赏金。此举令百姓知法令必行。随后颁布废井田、开阡陌、奖励耕织和军功、编户连坐等法令。旧贵族群起反对，商鞅刑太子师傅公子虔、公孙贾以儆效尤。
+  outcome: 秦国农业产量和军事战力大幅提升，初步建立法治秩序
+  lesson: 法律的权威在于必行，取信于民是变法的第一步
+- title_zh: 第二次变法：制度变革
+  domain: 政治
+  start_date: '-350'
+  end_date: '-340'
+  places:
+  - 咸阳(今陕西咸阳)
+  phases:
+  - name: 酝酿
+    start_date: '-350'
+    end_date: '-350'
+    place: 咸阳(今陕西咸阳)
+    highlight: 迁都咸阳
+  - name: 破局
+    start_date: '-350'
+    end_date: '-345'
+    place: 咸阳(今陕西咸阳)
+    highlight: 推行县制，编户齐民
+  - name: 高潮
+    start_date: '-345'
+    end_date: '-340'
+    place: 咸阳(今陕西咸阳)
+    highlight: 统一度量衡，秦制大成
+  - name: 收束
+    start_date: '-340'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    highlight: 秦法完备，影响深远
+  description_zh: 第二次变法更为深刻：迁都咸阳以远离旧贵族势力中心，推行郡县制取代分封，编户齐民使国家直接控制每一个百姓。统一度量衡为经济一体化奠基。商鞅被封于商地十五邑，号商君，权势煊赫一时。
+  outcome: 建立了一整套中央集权的制度框架，奠定了秦朝统一后的政治体制
+  lesson: 制度变革比政策变更更深远，真正的改革家改变的是规则本身
+- title_zh: 河西之战，以战立功
+  domain: 军事
+  start_date: '-340'
+  end_date: '-340'
+  places:
+  - 河西(今陕西韩城一带)
+  - 安邑(今山西夏县)
+  phases:
+  - name: 酝酿
+    start_date: '-341'
+    end_date: '-340'
+    place: 咸阳(今陕西咸阳)
+    highlight: 魏国马陵大败
+  - name: 破局
+    start_date: '-340'
+    end_date: '-340'
+    place: 河西(今陕西韩城一带)
+    highlight: 设计俘获公子卬
+  - name: 高潮
+    start_date: '-340'
+    end_date: '-340'
+    place: 安邑(今山西夏县)
+    highlight: 大破魏军
+  - name: 收束
+    start_date: '-340'
+    end_date: '-340'
+    place: 咸阳(今陕西咸阳)
+    highlight: 封商地十五邑
+  description_zh: 魏国马陵之战惨败后，商鞅建议趁势伐魏。他利用与魏公子卬的旧交，以宴请为名诱其至军中，趁机俘虏。魏军群龙无首，大败而归。魏惠王被迫割让河西之地。商鞅因功封于商地，号商君。
+  outcome: 秦国收复河西，商鞅获封商地
+  lesson: 军事胜利有时需要超越常规的手段，但代价是信誉的透支
+- title_zh: 车裂殉法
+  domain: 政治
+  start_date: '-338'
+  end_date: '-338'
+  places:
+  - 咸阳(今陕西咸阳)
+  phases:
+  - name: 酝酿
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    highlight: 秦孝公薨，旧贵族伺机反扑
+  - name: 破局
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    highlight: 公子虔等人诬告商鞅谋反
+  - name: 高潮
+    start_date: '-338'
+    end_date: '-338'
+    place: 郑(今陕西华县)
+    highlight: 商鞅逃亡，宿客不纳
+  - name: 收束
+    start_date: '-338'
+    end_date: '-338'
+    place: 咸阳(今陕西咸阳)
+    highlight: 车裂灭族，法存身灭
+  description_zh: 孝公薨，秦惠文王即位。旧贵族群起攻讦，公子虔诬商鞅谋反。商鞅欲逃，至关下欲宿旅店，旅店主人曰'商君之法，舍人无验者坐之'——商鞅自己制定的法律反困住了自己。最终商鞅被擒，车裂而死，灭其族。然秦惠文王虽杀商鞅，却终未废其法。
+  outcome: 商鞅身死，但其法被秦国完整沿用，影响中国两千年
+  lesson: 法不阿贵，绳不挠曲——但制定法律的人也终将被法律所约束
+events:
+- date: '-356'
+  place_name: 栎阳(今陕西富平)
+  event_type: 酝酿
+  title_zh: 徙木立信，取信于民
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 徙木立信，取信于民
+- date: '-356'
+  place_name: 栎阳(今陕西富平)
+  event_type: 破局
+  title_zh: 颁布废井田、奖耕战法令
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 颁布废井田、奖耕战法令
+- date: '-355'
+  place_name: 栎阳(今陕西富平)
+  event_type: 高潮
+  title_zh: 秦国初见富强之效
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦国初见富强之效
+- date: '-350'
+  place_name: 栎阳(今陕西富平)
+  event_type: 收束
+  title_zh: 升为大良造，主持第二次变法
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 升为大良造，主持第二次变法
+- date: '-350'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 迁都咸阳
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 迁都咸阳
+- date: '-350'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 破局
+  title_zh: 推行县制，编户齐民
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 推行县制，编户齐民
+- date: '-345'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 高潮
+  title_zh: 统一度量衡，秦制大成
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 统一度量衡，秦制大成
+- date: '-340'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 收束
+  title_zh: 秦法完备，影响深远
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦法完备，影响深远
+- date: '-341'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 魏国马陵大败
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 魏国马陵大败
+- date: '-340'
+  place_name: 河西(今陕西韩城一带)
+  event_type: 破局
+  title_zh: 设计俘获公子卬
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 设计俘获公子卬
+- date: '-340'
+  place_name: 安邑(今山西夏县)
+  event_type: 高潮
+  title_zh: 大破魏军
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 大破魏军
+- date: '-340'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 收束
+  title_zh: 封商地十五邑
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 封商地十五邑
+- date: '-338'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 秦孝公薨，旧贵族伺机反扑
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦孝公薨，旧贵族伺机反扑
+- date: '-338'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 破局
+  title_zh: 公子虔等人诬告商鞅谋反
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 公子虔等人诬告商鞅谋反
+- date: '-338'
+  place_name: 郑(今陕西华县)
+  event_type: 高潮
+  title_zh: 商鞅逃亡，宿客不纳
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 商鞅逃亡，宿客不纳
+- date: '-338'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 收束
+  title_zh: 车裂灭族，法存身灭
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 车裂灭族，法存身灭

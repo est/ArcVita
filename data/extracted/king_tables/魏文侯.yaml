@@ -1,101 +1,199 @@
 person:
-  name_zh: "魏文侯"
-  birth_date: "约-472"
-  death_date: "-396"
-  birth_place: "安邑(今山西夏县)"
-  era: "战国初期"
-  archetype: "开时代先河的霸主之君"
-  summary_zh: "魏国开国之君魏斯，是战国时代第一位真正的霸主。他以李悝变法开战国变法之先河，以吴起为将西取秦国河西之地，以乐羊伐灭中山国。礼贤下士，与段干木、田子方等贤者交游。在位期间魏国率先从三晋中脱颖而出，成为战国初期最强盛的国家，开创了战国时代的新格局。"
-  summary_first_person: "吾即位之初，晋室已衰，三家分晋已成定局。吾知欲霸天下，须先变法图强。用李悝尽地力之教，国以富强。拜吴起为将，西取河西。吾亦知用人之道——吾过段干木之闾而式之，非敬其人，敬其德也。吾朝多贤臣，田子方、西门豹各司其职，此魏所以为战国首霸。"
-  lesson: "率先变法者率先强盛，但先发优势需要用制度和人才持续维护。"
-
+  name_zh: 魏文侯
+  birth_date: 约-472
+  death_date: '-396'
+  birth_place: 安邑(今山西夏县)
+  era: 战国初期
+  archetype: 开时代先河的霸主之君
+  summary_zh: 魏国开国之君魏斯，是战国时代第一位真正的霸主。他以李悝变法开战国变法之先河，以吴起为将西取秦国河西之地，以乐羊伐灭中山国。礼贤下士，与段干木、田子方等贤者交游。在位期间魏国率先从三晋中脱颖而出，成为战国初期最强盛的国家，开创了战国时代的新格局。
+  summary_first_person: 吾即位之初，晋室已衰，三家分晋已成定局。吾知欲霸天下，须先变法图强。用李悝尽地力之教，国以富强。拜吴起为将，西取河西。吾亦知用人之道——吾过段干木之闾而式之，非敬其人，敬其德也。吾朝多贤臣，田子方、西门豹各司其职，此魏所以为战国首霸。
+  lesson: 率先变法者率先强盛，但先发优势需要用制度和人才持续维护。
 endeavors:
-  - title_zh: "李悝变法，战国变法之先"
-    domain: "政治"
-    start_date: "-422"
-    end_date: "-396"
-    places: ["安邑(今山西夏县)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-422"
-        end_date: "-400"
-        place: "安邑(今山西夏县)"
-        highlight: "任用李悝为相"
-      - name: "破局"
-        start_date: "-400"
-        end_date: "-390"
-        place: "安邑(今山西夏县)"
-        highlight: "推行'尽地力之教'"
-      - name: "高潮"
-        start_date: "-390"
-        end_date: "-396"
-        place: "安邑(今山西夏县)"
-        highlight: "魏国率先富强，冠绝诸侯"
-      - name: "收束"
-        start_date: "-396"
-        end_date: "-396"
-        place: "安邑(今山西夏县)"
-        highlight: "魏国霸业确立"
-    description_zh: "魏文侯任用李悝为相，推行战国时代第一次系统性变法。李悝提出'尽地力之教'，鼓励农民精耕细作以提高粮食产量；推行'平籴法'稳定粮价；制定《法经》六篇，以法治国。这些改革比商鞅变法早了近百年，为魏国在战国初期的霸业奠定了制度基础。"
-    outcome: "魏国成为战国初期第一个通过变法富强的国家"
-    lesson: "制度创新是国家竞争力的根本来源"
-
-  - title_zh: "吴起为将，西取河西"
-    domain: "军事"
-    start_date: "-409"
-    end_date: "-389"
-    places: ["河西(今陕西韩城一带)", "阴晋(今陕西华阴)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-409"
-        end_date: "-400"
-        place: "河西(今陕西韩城一带)"
-        highlight: "吴起在魏训练魏武卒"
-      - name: "破局"
-        start_date: "-400"
-        end_date: "-395"
-        place: "河西(今陕西韩城一带)"
-        highlight: "连年进攻秦国"
-      - name: "高潮"
-        start_date: "-389"
-        end_date: "-389"
-        place: "阴晋(今陕西华阴)"
-        highlight: "阴晋之战，五万魏武卒大破五十万秦军"
-      - name: "收束"
-        start_date: "-389"
-        end_date: "-387"
-        place: "河西(今陕西韩城一带)"
-        highlight: "秦国被逼退至洛水以西"
-    description_zh: "魏文侯任用吴起为将，训练出闻名天下的精锐部队'魏武卒'——士兵需全副甲胄操十二石之弩、负矢五十，日行百里方可入选。吴起率魏武卒连年进攻秦国，最终在阴晋之战中以五万人大破五十万秦军。秦国被迫退守洛水以西，失去了经营数百年的河西之地。"
-    outcome: "魏国夺取河西之地，秦国被封锁在关中，魏国成为战国初期最强国"
-    lesson: "精锐的军事制度比兵员数量更能决定战争胜负"
-
-  - title_zh: "礼贤下士，开养士之风"
-    domain: "政治文化"
-    start_date: "-422"
-    end_date: "-396"
-    places: ["安邑(今山西夏县)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-422"
-        end_date: "-410"
-        place: "安邑(今山西夏县)"
-        highlight: "招揽段干木、田子方、子夏等"
-      - name: "破局"
-        start_date: "-410"
-        end_date: "-400"
-        place: "安邑(今山西夏县)"
-        highlight: "西门豹治邺，各尽其才"
-      - name: "高潮"
-        start_date: "-400"
-        end_date: "-396"
-        place: "安邑(今山西夏县)"
-        highlight: "朝堂人才济济，天下归心"
-      - name: "收束"
-        start_date: "-396"
-        end_date: "-396"
-        place: "安邑(今山西夏县)"
-        highlight: "开创战国养士之风"
-    description_zh: "魏文侯礼贤下士，对贤者以师礼相待。他过段干木之闾必下车凭轼致敬，田子方与之对坐论道，子夏在魏传授儒学。西门豹治邺破除'河伯娶妇'的迷信，发展农业水利。魏国一时人才济济，成为天下士人向往之地，开创了战国养士之风。"
-    outcome: "魏国成为战国初期的文化和人才中心"
-    lesson: "一个国家最宝贵的资源不是土地和军队，而是人才"
+- title_zh: 李悝变法，战国变法之先
+  domain: 政治
+  start_date: '-422'
+  end_date: '-396'
+  places:
+  - 安邑(今山西夏县)
+  phases:
+  - name: 酝酿
+    start_date: '-422'
+    end_date: '-400'
+    place: 安邑(今山西夏县)
+    highlight: 任用李悝为相
+  - name: 破局
+    start_date: '-400'
+    end_date: '-390'
+    place: 安邑(今山西夏县)
+    highlight: 推行'尽地力之教'
+  - name: 高潮
+    start_date: '-390'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    highlight: 魏国率先富强，冠绝诸侯
+  - name: 收束
+    start_date: '-396'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    highlight: 魏国霸业确立
+  description_zh: 魏文侯任用李悝为相，推行战国时代第一次系统性变法。李悝提出'尽地力之教'，鼓励农民精耕细作以提高粮食产量；推行'平籴法'稳定粮价；制定《法经》六篇，以法治国。这些改革比商鞅变法早了近百年，为魏国在战国初期的霸业奠定了制度基础。
+  outcome: 魏国成为战国初期第一个通过变法富强的国家
+  lesson: 制度创新是国家竞争力的根本来源
+- title_zh: 吴起为将，西取河西
+  domain: 军事
+  start_date: '-409'
+  end_date: '-389'
+  places:
+  - 河西(今陕西韩城一带)
+  - 阴晋(今陕西华阴)
+  phases:
+  - name: 酝酿
+    start_date: '-409'
+    end_date: '-400'
+    place: 河西(今陕西韩城一带)
+    highlight: 吴起在魏训练魏武卒
+  - name: 破局
+    start_date: '-400'
+    end_date: '-395'
+    place: 河西(今陕西韩城一带)
+    highlight: 连年进攻秦国
+  - name: 高潮
+    start_date: '-389'
+    end_date: '-389'
+    place: 阴晋(今陕西华阴)
+    highlight: 阴晋之战，五万魏武卒大破五十万秦军
+  - name: 收束
+    start_date: '-389'
+    end_date: '-387'
+    place: 河西(今陕西韩城一带)
+    highlight: 秦国被逼退至洛水以西
+  description_zh: 魏文侯任用吴起为将，训练出闻名天下的精锐部队'魏武卒'——士兵需全副甲胄操十二石之弩、负矢五十，日行百里方可入选。吴起率魏武卒连年进攻秦国，最终在阴晋之战中以五万人大破五十万秦军。秦国被迫退守洛水以西，失去了经营数百年的河西之地。
+  outcome: 魏国夺取河西之地，秦国被封锁在关中，魏国成为战国初期最强国
+  lesson: 精锐的军事制度比兵员数量更能决定战争胜负
+- title_zh: 礼贤下士，开养士之风
+  domain: 政治文化
+  start_date: '-422'
+  end_date: '-396'
+  places:
+  - 安邑(今山西夏县)
+  phases:
+  - name: 酝酿
+    start_date: '-422'
+    end_date: '-410'
+    place: 安邑(今山西夏县)
+    highlight: 招揽段干木、田子方、子夏等
+  - name: 破局
+    start_date: '-410'
+    end_date: '-400'
+    place: 安邑(今山西夏县)
+    highlight: 西门豹治邺，各尽其才
+  - name: 高潮
+    start_date: '-400'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    highlight: 朝堂人才济济，天下归心
+  - name: 收束
+    start_date: '-396'
+    end_date: '-396'
+    place: 安邑(今山西夏县)
+    highlight: 开创战国养士之风
+  description_zh: 魏文侯礼贤下士，对贤者以师礼相待。他过段干木之闾必下车凭轼致敬，田子方与之对坐论道，子夏在魏传授儒学。西门豹治邺破除'河伯娶妇'的迷信，发展农业水利。魏国一时人才济济，成为天下士人向往之地，开创了战国养士之风。
+  outcome: 魏国成为战国初期的文化和人才中心
+  lesson: 一个国家最宝贵的资源不是土地和军队，而是人才
+events:
+- date: '-422'
+  place_name: 安邑(今山西夏县)
+  event_type: 酝酿
+  title_zh: 任用李悝为相
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 任用李悝为相
+- date: '-400'
+  place_name: 安邑(今山西夏县)
+  event_type: 破局
+  title_zh: 推行'尽地力之教'
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 推行'尽地力之教'
+- date: '-390'
+  place_name: 安邑(今山西夏县)
+  event_type: 高潮
+  title_zh: 魏国率先富强，冠绝诸侯
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 魏国率先富强，冠绝诸侯
+- date: '-396'
+  place_name: 安邑(今山西夏县)
+  event_type: 收束
+  title_zh: 魏国霸业确立
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 魏国霸业确立
+- date: '-409'
+  place_name: 河西(今陕西韩城一带)
+  event_type: 酝酿
+  title_zh: 吴起在魏训练魏武卒
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 吴起在魏训练魏武卒
+- date: '-400'
+  place_name: 河西(今陕西韩城一带)
+  event_type: 破局
+  title_zh: 连年进攻秦国
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 连年进攻秦国
+- date: '-389'
+  place_name: 阴晋(今陕西华阴)
+  event_type: 高潮
+  title_zh: 阴晋之战，五万魏武卒大破五十万秦军
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 阴晋之战，五万魏武卒大破五十万秦军
+- date: '-389'
+  place_name: 河西(今陕西韩城一带)
+  event_type: 收束
+  title_zh: 秦国被逼退至洛水以西
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦国被逼退至洛水以西
+- date: '-422'
+  place_name: 安邑(今山西夏县)
+  event_type: 酝酿
+  title_zh: 招揽段干木、田子方、子夏等
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 招揽段干木、田子方、子夏等
+- date: '-410'
+  place_name: 安邑(今山西夏县)
+  event_type: 破局
+  title_zh: 西门豹治邺，各尽其才
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 西门豹治邺，各尽其才
+- date: '-400'
+  place_name: 安邑(今山西夏县)
+  event_type: 高潮
+  title_zh: 朝堂人才济济，天下归心
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 朝堂人才济济，天下归心
+- date: '-396'
+  place_name: 安邑(今山西夏县)
+  event_type: 收束
+  title_zh: 开创战国养士之风
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 开创战国养士之风

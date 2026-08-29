@@ -1,101 +1,199 @@
 person:
-  name_zh: "孙膑"
-  birth_date: "约-380"
-  death_date: "约-316"
-  birth_place: "齐国阿城(今山东阳谷)"
-  era: "战国中期"
-  archetype: "以智驭勇的兵家传人"
-  summary_zh: "孙武后裔，与庞涓同师鬼谷子。被庞涓骗至魏国施以膑刑(挖去膝盖骨)，后装疯逃至齐国。以'围魏救赵'之桂陵之战和'减灶诱敌'之马陵之战两破魏军，终结了魏国的霸业。著有《孙膑兵法》八十九篇，是继《孙子兵法》之后最重要的兵学著作。其人生经历——从被害致残到复仇雪恨——堪称战国最戏剧性的传奇。"
-  summary_first_person: "吾与庞涓同窗鬼谷子，涓先去仕魏。吾至魏，涓恐吾见用，遂诬吾通齐，施以膑刑。吾忍辱装疯，齐使者窃载以归。田忌荐吾于齐王，桂陵一战围魏救赵，马陵一战减灶灭涓。此仇此恨，吾以天下之智报之。后著兵法八十九篇，传之后世。"
-  lesson: "最深的仇恨可以用最冷静的智慧来偿还，身体的残缺不能限制精神的高度。"
-
+  name_zh: 孙膑
+  birth_date: 约-380
+  death_date: 约-316
+  birth_place: 齐国阿城(今山东阳谷)
+  era: 战国中期
+  archetype: 以智驭勇的兵家传人
+  summary_zh: 孙武后裔，与庞涓同师鬼谷子。被庞涓骗至魏国施以膑刑(挖去膝盖骨)，后装疯逃至齐国。以'围魏救赵'之桂陵之战和'减灶诱敌'之马陵之战两破魏军，终结了魏国的霸业。著有《孙膑兵法》八十九篇，是继《孙子兵法》之后最重要的兵学著作。其人生经历——从被害致残到复仇雪恨——堪称战国最戏剧性的传奇。
+  summary_first_person: 吾与庞涓同窗鬼谷子，涓先去仕魏。吾至魏，涓恐吾见用，遂诬吾通齐，施以膑刑。吾忍辱装疯，齐使者窃载以归。田忌荐吾于齐王，桂陵一战围魏救赵，马陵一战减灶灭涓。此仇此恨，吾以天下之智报之。后著兵法八十九篇，传之后世。
+  lesson: 最深的仇恨可以用最冷静的智慧来偿还，身体的残缺不能限制精神的高度。
 endeavors:
-  - title_zh: "围魏救赵——桂陵之战"
-    domain: "军事"
-    start_date: "-354"
-    end_date: "-353"
-    places: ["大梁(今河南开封)", "桂陵(今河南长垣)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-354"
-        end_date: "-354"
-        place: "大梁(今河南开封)"
-        highlight: "魏国围赵邯郸，齐国出兵"
-      - name: "破局"
-        start_date: "-354"
-        end_date: "-354"
-        place: "大梁(今河南开封)"
-        highlight: "直攻大梁，逼庞涓回师"
-      - name: "高潮"
-        start_date: "-354"
-        end_date: "-353"
-        place: "桂陵(今河南长垣)"
-        highlight: "设伏大败魏军"
-      - name: "收束"
-        start_date: "-353"
-        end_date: "-353"
-        place: "邯郸(今河北邯郸)"
-        highlight: "赵国邯郸之围解除"
-    description_zh: "魏将庞涓率八万大军围攻赵国邯郸，赵国向齐求救。齐威王以田忌为将、孙膑为军师。孙膑献策'批亢捣虚'——不直接去邯郸与魏军硬拼，而是趁魏国国内空虚直攻大梁。庞涓被迫回师，在桂陵遭齐军伏击，大败而归。此即'围魏救赵'的千古经典。"
-    outcome: "齐国以较小代价解赵之围，确立了'以智取胜'的军事思想"
-    lesson: "解决问题的最好方法往往不是正面硬刚，而是直击要害"
-
-  - title_zh: "减灶诱敌——马陵之战"
-    domain: "军事"
-    start_date: "-342"
-    end_date: "-341"
-    places: ["马陵(今河南范县)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-342"
-        end_date: "-341"
-        place: "马陵(今河南范县)"
-        highlight: "魏国伐韩，齐国再度介入"
-      - name: "破局"
-        start_date: "-341"
-        end_date: "-341"
-        place: "马陵(今河南范县)"
-        highlight: "逐日减灶，制造溃逃假象"
-      - name: "高潮"
-        start_date: "-341"
-        end_date: "-341"
-        place: "马陵(今河南范县)"
-        highlight: "万弩齐发，庞涓自刎"
-      - name: "收束"
-        start_date: "-341"
-        end_date: "-340"
-        place: "临淄(今山东淄博)"
-        highlight: "魏国霸业终结"
-    description_zh: "前341年，魏伐韩，韩求救于齐。孙膑再任军师，用减灶之计：齐军撤退时第一天挖十万个灶，第二天五万，第三天三万——制造齐军士兵大量逃亡的假象。庞涓中计，以为齐军胆怯，率轻骑日夜追击。孙膑在马陵道狭窄处设伏，万弩齐发。庞涓在乱军中自刎，魏太子申被俘。"
-    outcome: "魏国精锐尽失，齐国成为东方最强国"
-    lesson: "最致命的武器不是刀剑，而是对手的骄傲和轻敌"
-
-  - title_zh: "著《孙膑兵法》"
-    domain: "军事理论"
-    start_date: "约-340"
-    end_date: "约-320"
-    places: ["临淄(今山东淄博)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-341"
-        end_date: "-340"
-        place: "临淄(今山东淄博)"
-        highlight: "马陵之战后总结战争经验"
-      - name: "破局"
-        start_date: "-340"
-        end_date: "-330"
-        place: "临淄(今山东淄博)"
-        highlight: "开始著述兵法"
-      - name: "高潮"
-        start_date: "-330"
-        end_date: "-320"
-        place: "临淄(今山东淄博)"
-        highlight: "完成兵法八十九篇"
-      - name: "收束"
-        start_date: "-320"
-        end_date: "-316"
-        place: "临淄(今山东淄博)"
-        highlight: "兵法传世"
-    description_zh: "马陵之战后，孙膑总结自己一生的军事实践和理论思考，著成兵法八十九篇。1972年在山东临沂银雀山汉墓中出土了《孙膑兵法》残简，证实了这部兵书的真实存在。其内容继承和发展了孙子的军事思想，强调'战胜而强立'——通过战争胜利来确立国家地位。"
-    outcome: "《孙膑兵法》传世，丰富了中国古代兵学思想体系"
-    lesson: "实践出真知，最好的理论来自最深刻的实战"
+- title_zh: 围魏救赵——桂陵之战
+  domain: 军事
+  start_date: '-354'
+  end_date: '-353'
+  places:
+  - 大梁(今河南开封)
+  - 桂陵(今河南长垣)
+  phases:
+  - name: 酝酿
+    start_date: '-354'
+    end_date: '-354'
+    place: 大梁(今河南开封)
+    highlight: 魏国围赵邯郸，齐国出兵
+  - name: 破局
+    start_date: '-354'
+    end_date: '-354'
+    place: 大梁(今河南开封)
+    highlight: 直攻大梁，逼庞涓回师
+  - name: 高潮
+    start_date: '-354'
+    end_date: '-353'
+    place: 桂陵(今河南长垣)
+    highlight: 设伏大败魏军
+  - name: 收束
+    start_date: '-353'
+    end_date: '-353'
+    place: 邯郸(今河北邯郸)
+    highlight: 赵国邯郸之围解除
+  description_zh: 魏将庞涓率八万大军围攻赵国邯郸，赵国向齐求救。齐威王以田忌为将、孙膑为军师。孙膑献策'批亢捣虚'——不直接去邯郸与魏军硬拼，而是趁魏国国内空虚直攻大梁。庞涓被迫回师，在桂陵遭齐军伏击，大败而归。此即'围魏救赵'的千古经典。
+  outcome: 齐国以较小代价解赵之围，确立了'以智取胜'的军事思想
+  lesson: 解决问题的最好方法往往不是正面硬刚，而是直击要害
+- title_zh: 减灶诱敌——马陵之战
+  domain: 军事
+  start_date: '-342'
+  end_date: '-341'
+  places:
+  - 马陵(今河南范县)
+  phases:
+  - name: 酝酿
+    start_date: '-342'
+    end_date: '-341'
+    place: 马陵(今河南范县)
+    highlight: 魏国伐韩，齐国再度介入
+  - name: 破局
+    start_date: '-341'
+    end_date: '-341'
+    place: 马陵(今河南范县)
+    highlight: 逐日减灶，制造溃逃假象
+  - name: 高潮
+    start_date: '-341'
+    end_date: '-341'
+    place: 马陵(今河南范县)
+    highlight: 万弩齐发，庞涓自刎
+  - name: 收束
+    start_date: '-341'
+    end_date: '-340'
+    place: 临淄(今山东淄博)
+    highlight: 魏国霸业终结
+  description_zh: 前341年，魏伐韩，韩求救于齐。孙膑再任军师，用减灶之计：齐军撤退时第一天挖十万个灶，第二天五万，第三天三万——制造齐军士兵大量逃亡的假象。庞涓中计，以为齐军胆怯，率轻骑日夜追击。孙膑在马陵道狭窄处设伏，万弩齐发。庞涓在乱军中自刎，魏太子申被俘。
+  outcome: 魏国精锐尽失，齐国成为东方最强国
+  lesson: 最致命的武器不是刀剑，而是对手的骄傲和轻敌
+- title_zh: 著《孙膑兵法》
+  domain: 军事理论
+  start_date: 约-340
+  end_date: 约-320
+  places:
+  - 临淄(今山东淄博)
+  phases:
+  - name: 酝酿
+    start_date: '-341'
+    end_date: '-340'
+    place: 临淄(今山东淄博)
+    highlight: 马陵之战后总结战争经验
+  - name: 破局
+    start_date: '-340'
+    end_date: '-330'
+    place: 临淄(今山东淄博)
+    highlight: 开始著述兵法
+  - name: 高潮
+    start_date: '-330'
+    end_date: '-320'
+    place: 临淄(今山东淄博)
+    highlight: 完成兵法八十九篇
+  - name: 收束
+    start_date: '-320'
+    end_date: '-316'
+    place: 临淄(今山东淄博)
+    highlight: 兵法传世
+  description_zh: 马陵之战后，孙膑总结自己一生的军事实践和理论思考，著成兵法八十九篇。1972年在山东临沂银雀山汉墓中出土了《孙膑兵法》残简，证实了这部兵书的真实存在。其内容继承和发展了孙子的军事思想，强调'战胜而强立'——通过战争胜利来确立国家地位。
+  outcome: 《孙膑兵法》传世，丰富了中国古代兵学思想体系
+  lesson: 实践出真知，最好的理论来自最深刻的实战
+events:
+- date: '-354'
+  place_name: 大梁(今河南开封)
+  event_type: 酝酿
+  title_zh: 魏国围赵邯郸，齐国出兵
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 魏国围赵邯郸，齐国出兵
+- date: '-354'
+  place_name: 大梁(今河南开封)
+  event_type: 破局
+  title_zh: 直攻大梁，逼庞涓回师
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 直攻大梁，逼庞涓回师
+- date: '-354'
+  place_name: 桂陵(今河南长垣)
+  event_type: 高潮
+  title_zh: 设伏大败魏军
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 设伏大败魏军
+- date: '-353'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 收束
+  title_zh: 赵国邯郸之围解除
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 赵国邯郸之围解除
+- date: '-342'
+  place_name: 马陵(今河南范县)
+  event_type: 酝酿
+  title_zh: 魏国伐韩，齐国再度介入
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 魏国伐韩，齐国再度介入
+- date: '-341'
+  place_name: 马陵(今河南范县)
+  event_type: 破局
+  title_zh: 逐日减灶，制造溃逃假象
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 逐日减灶，制造溃逃假象
+- date: '-341'
+  place_name: 马陵(今河南范县)
+  event_type: 高潮
+  title_zh: 万弩齐发，庞涓自刎
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 万弩齐发，庞涓自刎
+- date: '-341'
+  place_name: 临淄(今山东淄博)
+  event_type: 收束
+  title_zh: 魏国霸业终结
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 魏国霸业终结
+- date: '-341'
+  place_name: 临淄(今山东淄博)
+  event_type: 酝酿
+  title_zh: 马陵之战后总结战争经验
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 马陵之战后总结战争经验
+- date: '-340'
+  place_name: 临淄(今山东淄博)
+  event_type: 破局
+  title_zh: 开始著述兵法
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 开始著述兵法
+- date: '-330'
+  place_name: 临淄(今山东淄博)
+  event_type: 高潮
+  title_zh: 完成兵法八十九篇
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 完成兵法八十九篇
+- date: '-320'
+  place_name: 临淄(今山东淄博)
+  event_type: 收束
+  title_zh: 兵法传世
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 兵法传世

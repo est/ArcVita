@@ -1,71 +1,138 @@
 person:
-  name_zh: "燕昭王"
-  birth_date: "-335"
-  death_date: "-279"
-  birth_place: "蓟(今北京)"
-  era: "战国中晚期"
-  archetype: "卧薪尝胆式的复仇复兴之君"
-  summary_zh: "姬职，燕国历史上最伟大的君主。即位时燕国刚被齐国趁乱攻破，几乎亡国。他以'千金买骨'的姿态招揽天下贤才——筑黄金台、置千金于其上以待贤者。乐毅、邹衍、剧辛等名士纷至沓来。经过二十八年的卧薪尝胆，联合五国伐齐，乐毅连下齐国七十余城，几乎灭齐。燕国从战国最小最弱的国家一跃成为天下强国。"
-  summary_first_person: "吾即位时，燕国刚被齐国趁内乱攻破，国破家亡。吾深以为耻，立志复仇。筑黄金台、置千金以招贤士。乐毅自魏来，邹衍自齐来，剧辛自赵来。吾以乐毅为上将军，联合五国伐齐。乐毅连下七十余城，齐国几亡。吾二十八年之卧薪尝胆，燕国终于扬眉吐气。"
-  lesson: "最弱的国家也能成就最伟大的事业，关键是有耐心和人才。"
-
+  name_zh: 燕昭王
+  birth_date: '-335'
+  death_date: '-279'
+  birth_place: 蓟(今北京)
+  era: 战国中晚期
+  archetype: 卧薪尝胆式的复仇复兴之君
+  summary_zh: 姬职，燕国历史上最伟大的君主。即位时燕国刚被齐国趁乱攻破，几乎亡国。他以'千金买骨'的姿态招揽天下贤才——筑黄金台、置千金于其上以待贤者。乐毅、邹衍、剧辛等名士纷至沓来。经过二十八年的卧薪尝胆，联合五国伐齐，乐毅连下齐国七十余城，几乎灭齐。燕国从战国最小最弱的国家一跃成为天下强国。
+  summary_first_person: 吾即位时，燕国刚被齐国趁内乱攻破，国破家亡。吾深以为耻，立志复仇。筑黄金台、置千金以招贤士。乐毅自魏来，邹衍自齐来，剧辛自赵来。吾以乐毅为上将军，联合五国伐齐。乐毅连下七十余城，齐国几亡。吾二十八年之卧薪尝胆，燕国终于扬眉吐气。
+  lesson: 最弱的国家也能成就最伟大的事业，关键是有耐心和人才。
 endeavors:
-  - title_zh: "筑黄金台，招贤纳士"
-    domain: "政治"
-    start_date: "-311"
-    end_date: "-284"
-    places: ["蓟(今北京)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-311"
-        end_date: "-311"
-        place: "蓟(今北京)"
-        highlight: "即位时燕国破败不堪"
-      - name: "破局"
-        start_date: "-311"
-        end_date: "-300"
-        place: "蓟(今北京)"
-        highlight: "筑黄金台，置千金招贤"
-      - name: "高潮"
-        start_date: "-300"
-        end_date: "-284"
-        place: "蓟(今北京)"
-        highlight: "乐毅、邹衍、剧辛等人才齐聚"
-      - name: "收束"
-        start_date: "-284"
-        end_date: "-284"
-        place: "蓟(今北京)"
-        highlight: "人才济济，燕国复兴"
-    description_zh: "燕昭王即位后，以谦恭的态度和优厚的待遇招揽人才。他先拜郭隗为师，郭隗以'千金买骨'的故事建议昭王先重用自己这样的中等人才，以吸引更优秀的贤者。昭王从之，筑黄金台于蓟城之上，置千金于台上以待贤者。消息传开，天下贤士纷纷入燕。"
-    outcome: "燕国从人才荒漠变为人才汇聚之地"
-    lesson: "招揽人才不是等人才上门，而是主动释放诚意"
-
-  - title_zh: "五国伐齐，乐毅连下七十余城"
-    domain: "军事外交"
-    start_date: "-284"
-    end_date: "-279"
-    places: ["蓟(今北京)", "临淄(今山东淄博)", "即墨(今山东平度)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-284"
-        end_date: "-284"
-        place: "蓟(今北京)"
-        highlight: "联合秦、韩、赵、魏组成五国联军"
-      - name: "破局"
-        start_date: "-284"
-        end_date: "-283"
-        place: "临淄(今山东淄博)"
-        highlight: "乐毅率联军大破齐军"
-      - name: "高潮"
-        start_date: "-283"
-        end_date: "-279"
-        place: "即墨(今山东平度)"
-        highlight: "连下齐国七十余城，仅余即墨和莒"
-      - name: "收束"
-        start_date: "-279"
-        end_date: "-279"
-        place: "蓟(今北京)"
-        highlight: "昭王薨，田单复齐"
-    description_zh: "前284年，燕昭王以乐毅为上将军，联合秦、韩、赵、魏五国联军大举伐齐。齐国在齐湣王的暴政下已是强弩之末，联军一战大破齐军于济西。乐毅独率燕军长驱直入，连下齐国七十余城，仅剩即墨和莒两城未下。齐湣王逃亡被杀。齐国几乎灭亡，燕国报了当年被破国之仇。"
-    outcome: "燕国洗雪前耻，成为战国中后期的重要强国"
-    lesson: "长期隐忍加上精准出击，弱国也能覆灭强国"
+- title_zh: 筑黄金台，招贤纳士
+  domain: 政治
+  start_date: '-311'
+  end_date: '-284'
+  places:
+  - 蓟(今北京)
+  phases:
+  - name: 酝酿
+    start_date: '-311'
+    end_date: '-311'
+    place: 蓟(今北京)
+    highlight: 即位时燕国破败不堪
+  - name: 破局
+    start_date: '-311'
+    end_date: '-300'
+    place: 蓟(今北京)
+    highlight: 筑黄金台，置千金招贤
+  - name: 高潮
+    start_date: '-300'
+    end_date: '-284'
+    place: 蓟(今北京)
+    highlight: 乐毅、邹衍、剧辛等人才齐聚
+  - name: 收束
+    start_date: '-284'
+    end_date: '-284'
+    place: 蓟(今北京)
+    highlight: 人才济济，燕国复兴
+  description_zh: 燕昭王即位后，以谦恭的态度和优厚的待遇招揽人才。他先拜郭隗为师，郭隗以'千金买骨'的故事建议昭王先重用自己这样的中等人才，以吸引更优秀的贤者。昭王从之，筑黄金台于蓟城之上，置千金于台上以待贤者。消息传开，天下贤士纷纷入燕。
+  outcome: 燕国从人才荒漠变为人才汇聚之地
+  lesson: 招揽人才不是等人才上门，而是主动释放诚意
+- title_zh: 五国伐齐，乐毅连下七十余城
+  domain: 军事外交
+  start_date: '-284'
+  end_date: '-279'
+  places:
+  - 蓟(今北京)
+  - 临淄(今山东淄博)
+  - 即墨(今山东平度)
+  phases:
+  - name: 酝酿
+    start_date: '-284'
+    end_date: '-284'
+    place: 蓟(今北京)
+    highlight: 联合秦、韩、赵、魏组成五国联军
+  - name: 破局
+    start_date: '-284'
+    end_date: '-283'
+    place: 临淄(今山东淄博)
+    highlight: 乐毅率联军大破齐军
+  - name: 高潮
+    start_date: '-283'
+    end_date: '-279'
+    place: 即墨(今山东平度)
+    highlight: 连下齐国七十余城，仅余即墨和莒
+  - name: 收束
+    start_date: '-279'
+    end_date: '-279'
+    place: 蓟(今北京)
+    highlight: 昭王薨，田单复齐
+  description_zh: 前284年，燕昭王以乐毅为上将军，联合秦、韩、赵、魏五国联军大举伐齐。齐国在齐湣王的暴政下已是强弩之末，联军一战大破齐军于济西。乐毅独率燕军长驱直入，连下齐国七十余城，仅剩即墨和莒两城未下。齐湣王逃亡被杀。齐国几乎灭亡，燕国报了当年被破国之仇。
+  outcome: 燕国洗雪前耻，成为战国中后期的重要强国
+  lesson: 长期隐忍加上精准出击，弱国也能覆灭强国
+events:
+- date: '-311'
+  place_name: 蓟(今北京)
+  event_type: 酝酿
+  title_zh: 即位时燕国破败不堪
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 即位时燕国破败不堪
+- date: '-311'
+  place_name: 蓟(今北京)
+  event_type: 破局
+  title_zh: 筑黄金台，置千金招贤
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 筑黄金台，置千金招贤
+- date: '-300'
+  place_name: 蓟(今北京)
+  event_type: 高潮
+  title_zh: 乐毅、邹衍、剧辛等人才齐聚
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 乐毅、邹衍、剧辛等人才齐聚
+- date: '-284'
+  place_name: 蓟(今北京)
+  event_type: 收束
+  title_zh: 人才济济，燕国复兴
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 人才济济，燕国复兴
+- date: '-284'
+  place_name: 蓟(今北京)
+  event_type: 酝酿
+  title_zh: 联合秦、韩、赵、魏组成五国联军
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 联合秦、韩、赵、魏组成五国联军
+- date: '-284'
+  place_name: 临淄(今山东淄博)
+  event_type: 破局
+  title_zh: 乐毅率联军大破齐军
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 乐毅率联军大破齐军
+- date: '-283'
+  place_name: 即墨(今山东平度)
+  event_type: 高潮
+  title_zh: 连下齐国七十余城，仅余即墨和莒
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 连下齐国七十余城，仅余即墨和莒
+- date: '-279'
+  place_name: 蓟(今北京)
+  event_type: 收束
+  title_zh: 昭王薨，田单复齐
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 昭王薨，田单复齐

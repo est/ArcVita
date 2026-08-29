@@ -1,101 +1,200 @@
 person:
-  name_zh: "赵惠文王"
-  birth_date: "-308"
-  death_date: "-266"
-  birth_place: "邯郸(今河北邯郸)"
-  era: "战国中晚期"
-  archetype: "守成有余的中庸之君"
-  summary_zh: "赵何，赵武灵王之子。在其父推行胡服骑射的遗产基础上，维持了赵国作为战国第二强国的地位。在位期间最辉煌的篇章是廉颇、蔺相如'将相和'——蔺相如完璧归赵、渑池之会维护了赵国尊严，廉颇负荆请罪传为千古佳话。但长平之战前临阵换将、以赵括替廉颇，直接导致四十万赵军被坑杀，成为赵国由盛转衰的转折点。"
-  summary_first_person: "吾即位时，赵国尚承父王胡服骑射之盛。蔺相如完璧归赵，渑池之会不辱使命，廉颇负荆请罪，吾之朝廷将相和睦。然长平之役，吾惑于秦人间谍之言，以赵括替廉颇，四十万将士尽丧。此吾一生之大过也。"
-  lesson: "用人不疑是治国根本，临阵换将是最大的失策。"
-
+  name_zh: 赵惠文王
+  birth_date: '-308'
+  death_date: '-266'
+  birth_place: 邯郸(今河北邯郸)
+  era: 战国中晚期
+  archetype: 守成有余的中庸之君
+  summary_zh: 赵何，赵武灵王之子。在其父推行胡服骑射的遗产基础上，维持了赵国作为战国第二强国的地位。在位期间最辉煌的篇章是廉颇、蔺相如'将相和'——蔺相如完璧归赵、渑池之会维护了赵国尊严，廉颇负荆请罪传为千古佳话。但长平之战前临阵换将、以赵括替廉颇，直接导致四十万赵军被坑杀，成为赵国由盛转衰的转折点。
+  summary_first_person: 吾即位时，赵国尚承父王胡服骑射之盛。蔺相如完璧归赵，渑池之会不辱使命，廉颇负荆请罪，吾之朝廷将相和睦。然长平之役，吾惑于秦人间谍之言，以赵括替廉颇，四十万将士尽丧。此吾一生之大过也。
+  lesson: 用人不疑是治国根本，临阵换将是最大的失策。
 endeavors:
-  - title_zh: "将相和——廉颇蔺相如共保赵国"
-    domain: "政治外交"
-    start_date: "-283"
-    end_date: "-270"
-    places: ["邯郸(今河北邯郸)", "渑池(今河南渑池)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-283"
-        end_date: "-283"
-        place: "邯郸(今河北邯郸)"
-        highlight: "蔺相如完璧归赵"
-      - name: "破局"
-        start_date: "-279"
-        end_date: "-279"
-        place: "渑池(今河南渑池)"
-        highlight: "渑池之会，相如维护赵王尊严"
-      - name: "高潮"
-        start_date: "-279"
-        end_date: "-279"
-        place: "邯郸(今河北邯郸)"
-        highlight: "廉颇负荆请罪，将相和"
-      - name: "收束"
-        start_date: "-279"
-        end_date: "-270"
-        place: "邯郸(今河北邯郸)"
-        highlight: "赵国将相和睦，国力维持"
-    description_zh: "前283年，蔺相如持和氏璧出使秦国，以'璧有瑕请指示王'之计完璧归赵。前279年渑池之会，秦王令赵王鼓瑟，蔺相如以死相逼请秦王击缶，维护了赵国尊严。廉颇不服蔺相如位居其上，相如以'先国家之急而后私仇'回避。廉颇深感惭愧，负荆请罪，二人结为生死之交。"
-    outcome: "赵国将相和睦，外交上不输秦国，维持了大国地位"
-    lesson: "国家利益高于个人恩怨，将相和睦是国家安定的基石"
-
-  - title_zh: "长平之战换将之失"
-    domain: "军事决策"
-    start_date: "-260"
-    end_date: "-260"
-    places: ["长平(今山西高平)", "邯郸(今河北邯郸)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-262"
-        end_date: "-260"
-        place: "长平(今山西高平)"
-        highlight: "廉颇坚守不出，与秦军对峙三年"
-      - name: "破局"
-        start_date: "-260"
-        end_date: "-260"
-        place: "邯郸(今河北邯郸)"
-        highlight: "秦国间谍散布谣言，赵王中计"
-      - name: "高潮"
-        start_date: "-260"
-        end_date: "-260"
-        place: "长平(今山西高平)"
-        highlight: "赵括替廉颇，中白起之计"
-      - name: "收束"
-        start_date: "-260"
-        end_date: "-260"
-        place: "长平(今山西高平)"
-        highlight: "四十万赵军被坑杀"
-    description_zh: "长平之战初期，老将廉颇采取坚壁清野策略，与秦军对峙三年不败。秦国见正面无法取胜，遂施反间计，散布'秦之所畏，独赵奢之子赵括耳'的谣言。赵惠文王中计，不顾蔺相如病重劝阻，以赵括替换廉颇。赵括出击中白起之计，四十万赵军被围断粮四十六日后投降，全部被坑杀。"
-    outcome: "赵国四十万精锐尽丧，从此再无力与秦国争锋"
-    lesson: "临阵换将，自古为兵家大忌"
-
-  - title_zh: "邯郸之战，艰难守国"
-    domain: "军事"
-    start_date: "-259"
-    end_date: "-257"
-    places: ["邯郸(今河北邯郸)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-259"
-        end_date: "-259"
-        place: "邯郸(今河北邯郸)"
-        highlight: "秦国乘胜围攻邯郸"
-      - name: "破局"
-        start_date: "-258"
-        end_date: "-258"
-        place: "邯郸(今河北邯郸)"
-        highlight: "平原君求救于楚魏"
-      - name: "高潮"
-        start_date: "-257"
-        end_date: "-257"
-        place: "邯郸(今河北邯郸)"
-        highlight: "信陵君窃符救赵，楚国春申君援军至"
-      - name: "收束"
-        start_date: "-257"
-        end_date: "-257"
-        place: "邯郸(今河北邯郸)"
-        highlight: "秦军撤围，赵国幸免于亡"
-    description_zh: "长平之战后，秦国趁势围攻赵国都城邯郸。赵国命悬一线，平原君赵胜赴楚求救，毛遂自荐说服楚王出兵。同时魏国信陵君魏无忌窃取兵符，率军救赵。在赵、楚、魏三国联军夹击下，秦国大将王陵战败，被迫撤围。赵国虽保住邯郸，但国力已大不如前。"
-    outcome: "赵国暂时保住国都，但已无力恢复长平之前的实力"
-    lesson: "危难时刻需要冒险的勇气和广泛的外交支持"
+- title_zh: 将相和——廉颇蔺相如共保赵国
+  domain: 政治外交
+  start_date: '-283'
+  end_date: '-270'
+  places:
+  - 邯郸(今河北邯郸)
+  - 渑池(今河南渑池)
+  phases:
+  - name: 酝酿
+    start_date: '-283'
+    end_date: '-283'
+    place: 邯郸(今河北邯郸)
+    highlight: 蔺相如完璧归赵
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 渑池(今河南渑池)
+    highlight: 渑池之会，相如维护赵王尊严
+  - name: 高潮
+    start_date: '-279'
+    end_date: '-279'
+    place: 邯郸(今河北邯郸)
+    highlight: 廉颇负荆请罪，将相和
+  - name: 收束
+    start_date: '-279'
+    end_date: '-270'
+    place: 邯郸(今河北邯郸)
+    highlight: 赵国将相和睦，国力维持
+  description_zh: 前283年，蔺相如持和氏璧出使秦国，以'璧有瑕请指示王'之计完璧归赵。前279年渑池之会，秦王令赵王鼓瑟，蔺相如以死相逼请秦王击缶，维护了赵国尊严。廉颇不服蔺相如位居其上，相如以'先国家之急而后私仇'回避。廉颇深感惭愧，负荆请罪，二人结为生死之交。
+  outcome: 赵国将相和睦，外交上不输秦国，维持了大国地位
+  lesson: 国家利益高于个人恩怨，将相和睦是国家安定的基石
+- title_zh: 长平之战换将之失
+  domain: 军事决策
+  start_date: '-260'
+  end_date: '-260'
+  places:
+  - 长平(今山西高平)
+  - 邯郸(今河北邯郸)
+  phases:
+  - name: 酝酿
+    start_date: '-262'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    highlight: 廉颇坚守不出，与秦军对峙三年
+  - name: 破局
+    start_date: '-260'
+    end_date: '-260'
+    place: 邯郸(今河北邯郸)
+    highlight: 秦国间谍散布谣言，赵王中计
+  - name: 高潮
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    highlight: 赵括替廉颇，中白起之计
+  - name: 收束
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    highlight: 四十万赵军被坑杀
+  description_zh: 长平之战初期，老将廉颇采取坚壁清野策略，与秦军对峙三年不败。秦国见正面无法取胜，遂施反间计，散布'秦之所畏，独赵奢之子赵括耳'的谣言。赵惠文王中计，不顾蔺相如病重劝阻，以赵括替换廉颇。赵括出击中白起之计，四十万赵军被围断粮四十六日后投降，全部被坑杀。
+  outcome: 赵国四十万精锐尽丧，从此再无力与秦国争锋
+  lesson: 临阵换将，自古为兵家大忌
+- title_zh: 邯郸之战，艰难守国
+  domain: 军事
+  start_date: '-259'
+  end_date: '-257'
+  places:
+  - 邯郸(今河北邯郸)
+  phases:
+  - name: 酝酿
+    start_date: '-259'
+    end_date: '-259'
+    place: 邯郸(今河北邯郸)
+    highlight: 秦国乘胜围攻邯郸
+  - name: 破局
+    start_date: '-258'
+    end_date: '-258'
+    place: 邯郸(今河北邯郸)
+    highlight: 平原君求救于楚魏
+  - name: 高潮
+    start_date: '-257'
+    end_date: '-257'
+    place: 邯郸(今河北邯郸)
+    highlight: 信陵君窃符救赵，楚国春申君援军至
+  - name: 收束
+    start_date: '-257'
+    end_date: '-257'
+    place: 邯郸(今河北邯郸)
+    highlight: 秦军撤围，赵国幸免于亡
+  description_zh: 长平之战后，秦国趁势围攻赵国都城邯郸。赵国命悬一线，平原君赵胜赴楚求救，毛遂自荐说服楚王出兵。同时魏国信陵君魏无忌窃取兵符，率军救赵。在赵、楚、魏三国联军夹击下，秦国大将王陵战败，被迫撤围。赵国虽保住邯郸，但国力已大不如前。
+  outcome: 赵国暂时保住国都，但已无力恢复长平之前的实力
+  lesson: 危难时刻需要冒险的勇气和广泛的外交支持
+events:
+- date: '-283'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 酝酿
+  title_zh: 蔺相如完璧归赵
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 蔺相如完璧归赵
+- date: '-279'
+  place_name: 渑池(今河南渑池)
+  event_type: 破局
+  title_zh: 渑池之会，相如维护赵王尊严
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 渑池之会，相如维护赵王尊严
+- date: '-279'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 高潮
+  title_zh: 廉颇负荆请罪，将相和
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 廉颇负荆请罪，将相和
+- date: '-279'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 收束
+  title_zh: 赵国将相和睦，国力维持
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 赵国将相和睦，国力维持
+- date: '-262'
+  place_name: 长平(今山西高平)
+  event_type: 酝酿
+  title_zh: 廉颇坚守不出，与秦军对峙三年
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 廉颇坚守不出，与秦军对峙三年
+- date: '-260'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 破局
+  title_zh: 秦国间谍散布谣言，赵王中计
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦国间谍散布谣言，赵王中计
+- date: '-260'
+  place_name: 长平(今山西高平)
+  event_type: 高潮
+  title_zh: 赵括替廉颇，中白起之计
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 赵括替廉颇，中白起之计
+- date: '-260'
+  place_name: 长平(今山西高平)
+  event_type: 收束
+  title_zh: 四十万赵军被坑杀
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 四十万赵军被坑杀
+- date: '-259'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 酝酿
+  title_zh: 秦国乘胜围攻邯郸
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦国乘胜围攻邯郸
+- date: '-258'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 破局
+  title_zh: 平原君求救于楚魏
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 平原君求救于楚魏
+- date: '-257'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 高潮
+  title_zh: 信陵君窃符救赵，楚国春申君援军至
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 信陵君窃符救赵，楚国春申君援军至
+- date: '-257'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 收束
+  title_zh: 秦军撤围，赵国幸免于亡
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦军撤围，赵国幸免于亡

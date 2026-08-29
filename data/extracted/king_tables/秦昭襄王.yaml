@@ -1,131 +1,264 @@
 person:
-  name_zh: "秦昭襄王"
-  birth_date: "-325"
-  death_date: "-251"
-  birth_place: "咸阳(今陕西咸阳)"
-  era: "战国中晚期"
-  archetype: "雄吞天下的铁腕之君"
-  summary_zh: "嬴稷，在位五十六年，是秦国历史上在位最久的君主。早年由宣太后和魏冉把持朝政，后用范雎'远交近攻'之策夺回实权。在位期间灭义渠、破郢都、坑赵卒四十余万于长平——白起、司马错、王翦等名将悉数为其所用。虽然晚年的邯郸之战失利暴露了秦国的短板，但其五十六年的经营已为曾孙嬴政统一天下铺平了最后的道路。"
-  summary_first_person: "吾即位时年少，母宣太后临朝，舅魏冉用事。吾隐忍多年，待范雎入秦说'远交近攻'，吾始知天下可图。白起为将，长平一战坑赵卒四十余万，东方六国胆寒。然邯郸之围不克，白起谏而不听，终赐死之。吾晚年深悔，然大势已定，秦并天下不过旦夕之间。"
-  lesson: "能用人者得天下，能忍者成大事，但多疑和好大喜功是帝王的致命伤。"
-
+  name_zh: 秦昭襄王
+  birth_date: '-325'
+  death_date: '-251'
+  birth_place: 咸阳(今陕西咸阳)
+  era: 战国中晚期
+  archetype: 雄吞天下的铁腕之君
+  summary_zh: 嬴稷，在位五十六年，是秦国历史上在位最久的君主。早年由宣太后和魏冉把持朝政，后用范雎'远交近攻'之策夺回实权。在位期间灭义渠、破郢都、坑赵卒四十余万于长平——白起、司马错、王翦等名将悉数为其所用。虽然晚年的邯郸之战失利暴露了秦国的短板，但其五十六年的经营已为曾孙嬴政统一天下铺平了最后的道路。
+  summary_first_person: 吾即位时年少，母宣太后临朝，舅魏冉用事。吾隐忍多年，待范雎入秦说'远交近攻'，吾始知天下可图。白起为将，长平一战坑赵卒四十余万，东方六国胆寒。然邯郸之围不克，白起谏而不听，终赐死之。吾晚年深悔，然大势已定，秦并天下不过旦夕之间。
+  lesson: 能用人者得天下，能忍者成大事，但多疑和好大喜功是帝王的致命伤。
 endeavors:
-  - title_zh: "长平之战，重创赵国"
-    domain: "军事"
-    start_date: "-262"
-    end_date: "-260"
-    places: ["长平(今山西高平)", "咸阳(今陕西咸阳)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-262"
-        end_date: "-260"
-        place: "上党(今山西长治)"
-        highlight: "韩国上党郡降赵，秦赵争夺"
-      - name: "破局"
-        start_date: "-260"
-        end_date: "-260"
-        place: "长平(今山西高平)"
-        highlight: "王龁vs廉颇对峙"
-      - name: "高潮"
-        start_date: "-260"
-        end_date: "-260"
-        place: "长平(今山西高平)"
-        highlight: "白起换将，赵括中伏，坑卒四十余万"
-      - name: "收束"
-        start_date: "-260"
-        end_date: "-259"
-        place: "长平(今山西高平)"
-        highlight: "赵国元气大伤，东方六国震恐"
-    description_zh: "前262年，秦国攻韩上党，韩国欲献上党于秦以求和，上党郡守冯亭不愿降秦，转而将上党献于赵国。赵国接纳，秦赵大战由此爆发。秦将王龁与赵将廉颇在长平对峙三年。赵国换将赵括，秦国秘密换上白起。白起佯败诱敌，包围赵军四十余日，最终四十万赵卒被坑杀。此战是战国规模最大的战役，赵国从此一蹶不振。"
-    outcome: "赵国四十万精锐尽丧，东方六国再无力单独抗秦"
-    lesson: "一场决定性的战役可以改变整个时代的格局"
-
-  - title_zh: "远交近攻，统一天下的大战略"
-    domain: "外交军事"
-    start_date: "-266"
-    end_date: "-251"
-    places: ["咸阳(今陕西咸阳)", "各国"]
-    phases:
-      - name: "酝酿"
-        start_date: "-271"
-        end_date: "-266"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "范雎入秦，献远交近攻之策"
-      - name: "破局"
-        start_date: "-266"
-        end_date: "-260"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "驱逐魏冉，拜范雎为相"
-      - name: "高潮"
-        start_date: "-260"
-        end_date: "-253"
-        place: "各国"
-        highlight: "交好齐燕，蚕食韩魏赵楚"
-      - name: "收束"
-        start_date: "-253"
-        end_date: "-251"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "秦国版图已占天下之半"
-    description_zh: "范雎入秦，以'远交近攻'四字概括了秦国统一天下的总战略：与远方的齐国、燕国交好，集中力量蚕食邻近的韩、魏、赵。昭襄王采纳此策，驱逐了把持朝政多年的魏冉和宣太后势力，夺回实权。此后秦国的扩张变得有章有法：先灭义渠稳固后方，再逐步蚕食三晋，长平之战后赵国再难翻身。"
-    outcome: "秦国确立了统一天下的总路线图，此后历代秦王皆沿此推进"
-    lesson: "伟大的战略不在于一城一池的得失，而在于方向的正确"
-
-  - title_zh: "白起攻楚，破郢都"
-    domain: "军事"
-    start_date: "-279"
-    end_date: "-278"
-    places: ["鄢(今湖北宜城)", "郢(今湖北荆州)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-280"
-        end_date: "-279"
-        place: "鄢(今湖北宜城)"
-        highlight: "白起伐楚，先取鄢城"
-      - name: "破局"
-        start_date: "-279"
-        end_date: "-279"
-        place: "鄢(今湖北宜城)"
-        highlight: "水淹鄢城，楚军大败"
-      - name: "高潮"
-        start_date: "-278"
-        end_date: "-278"
-        place: "郢(今湖北荆州)"
-        highlight: "攻破郢都，烧夷陵"
-      - name: "收束"
-        start_date: "-278"
-        end_date: "-278"
-        place: "郢(今湖北荆州)"
-        highlight: "楚国被迫东迁，屈原投江"
-    description_zh: "昭襄王派白起大举伐楚。白起采取避实击虚之策，先以水攻破鄢城，斩楚军数万。次年长驱直入，攻破楚国都城郢，烧毁楚先王陵墓夷陵。楚顷襄王仓皇东迁至陈(今河南淮阳)。楚国从此一蹶不振。屈原闻郢都失陷，投汨罗江而死。"
-    outcome: "楚国丧失半壁江山，从战国最强之一沦为二流国家"
-    lesson: "骄兵必败，楚国的覆灭源于内部腐朽而非外部力量"
-
-  - title_zh: "赐死白起"
-    domain: "政治"
-    start_date: "-257"
-    end_date: "-257"
-    places: ["咸阳(今陕西咸阳)", "杜邮(今陕西咸阳东)"]
-    phases:
-      - name: "酝酿"
-        start_date: "-260"
-        end_date: "-259"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "白起反对邯郸之战"
-      - name: "破局"
-        start_date: "-259"
-        end_date: "-258"
-        place: "邯郸(今河北邯郸)"
-        highlight: "邯郸之战失利"
-      - name: "高潮"
-        start_date: "-257"
-        end_date: "-257"
-        place: "咸阳(今陕西咸阳)"
-        highlight: "赐死白起"
-      - name: "收束"
-        start_date: "-257"
-        end_date: "-257"
-        place: "杜邮(今陕西咸阳东)"
-        highlight: "白起自刎，秦失一帅"
-    description_zh: "长平之战后，白起主张乘胜灭赵，昭襄王初许后又听范雎之言受韩赵游说而退兵。次年再攻赵国邯郸时，白起多次称病推辞。邯郸之战失利后，昭襄王迁怒于白起，先是免其爵位，后赐剑令其自裁。白起叹曰'我固当死，长平之战赵卒降者数十万人，我诈而尽坑之，是足以死'，遂自刎。"
-    outcome: "秦国失去最优秀的军事统帅"
-    lesson: "功高震主是千古不变的危机，但杀将自毁更是帝王的大忌"
+- title_zh: 长平之战，重创赵国
+  domain: 军事
+  start_date: '-262'
+  end_date: '-260'
+  places:
+  - 长平(今山西高平)
+  - 咸阳(今陕西咸阳)
+  phases:
+  - name: 酝酿
+    start_date: '-262'
+    end_date: '-260'
+    place: 上党(今山西长治)
+    highlight: 韩国上党郡降赵，秦赵争夺
+  - name: 破局
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    highlight: 王龁vs廉颇对峙
+  - name: 高潮
+    start_date: '-260'
+    end_date: '-260'
+    place: 长平(今山西高平)
+    highlight: 白起换将，赵括中伏，坑卒四十余万
+  - name: 收束
+    start_date: '-260'
+    end_date: '-259'
+    place: 长平(今山西高平)
+    highlight: 赵国元气大伤，东方六国震恐
+  description_zh: 前262年，秦国攻韩上党，韩国欲献上党于秦以求和，上党郡守冯亭不愿降秦，转而将上党献于赵国。赵国接纳，秦赵大战由此爆发。秦将王龁与赵将廉颇在长平对峙三年。赵国换将赵括，秦国秘密换上白起。白起佯败诱敌，包围赵军四十余日，最终四十万赵卒被坑杀。此战是战国规模最大的战役，赵国从此一蹶不振。
+  outcome: 赵国四十万精锐尽丧，东方六国再无力单独抗秦
+  lesson: 一场决定性的战役可以改变整个时代的格局
+- title_zh: 远交近攻，统一天下的大战略
+  domain: 外交军事
+  start_date: '-266'
+  end_date: '-251'
+  places:
+  - 咸阳(今陕西咸阳)
+  - 各国
+  phases:
+  - name: 酝酿
+    start_date: '-271'
+    end_date: '-266'
+    place: 咸阳(今陕西咸阳)
+    highlight: 范雎入秦，献远交近攻之策
+  - name: 破局
+    start_date: '-266'
+    end_date: '-260'
+    place: 咸阳(今陕西咸阳)
+    highlight: 驱逐魏冉，拜范雎为相
+  - name: 高潮
+    start_date: '-260'
+    end_date: '-253'
+    place: 各国
+    highlight: 交好齐燕，蚕食韩魏赵楚
+  - name: 收束
+    start_date: '-253'
+    end_date: '-251'
+    place: 咸阳(今陕西咸阳)
+    highlight: 秦国版图已占天下之半
+  description_zh: 范雎入秦，以'远交近攻'四字概括了秦国统一天下的总战略：与远方的齐国、燕国交好，集中力量蚕食邻近的韩、魏、赵。昭襄王采纳此策，驱逐了把持朝政多年的魏冉和宣太后势力，夺回实权。此后秦国的扩张变得有章有法：先灭义渠稳固后方，再逐步蚕食三晋，长平之战后赵国再难翻身。
+  outcome: 秦国确立了统一天下的总路线图，此后历代秦王皆沿此推进
+  lesson: 伟大的战略不在于一城一池的得失，而在于方向的正确
+- title_zh: 白起攻楚，破郢都
+  domain: 军事
+  start_date: '-279'
+  end_date: '-278'
+  places:
+  - 鄢(今湖北宜城)
+  - 郢(今湖北荆州)
+  phases:
+  - name: 酝酿
+    start_date: '-280'
+    end_date: '-279'
+    place: 鄢(今湖北宜城)
+    highlight: 白起伐楚，先取鄢城
+  - name: 破局
+    start_date: '-279'
+    end_date: '-279'
+    place: 鄢(今湖北宜城)
+    highlight: 水淹鄢城，楚军大败
+  - name: 高潮
+    start_date: '-278'
+    end_date: '-278'
+    place: 郢(今湖北荆州)
+    highlight: 攻破郢都，烧夷陵
+  - name: 收束
+    start_date: '-278'
+    end_date: '-278'
+    place: 郢(今湖北荆州)
+    highlight: 楚国被迫东迁，屈原投江
+  description_zh: 昭襄王派白起大举伐楚。白起采取避实击虚之策，先以水攻破鄢城，斩楚军数万。次年长驱直入，攻破楚国都城郢，烧毁楚先王陵墓夷陵。楚顷襄王仓皇东迁至陈(今河南淮阳)。楚国从此一蹶不振。屈原闻郢都失陷，投汨罗江而死。
+  outcome: 楚国丧失半壁江山，从战国最强之一沦为二流国家
+  lesson: 骄兵必败，楚国的覆灭源于内部腐朽而非外部力量
+- title_zh: 赐死白起
+  domain: 政治
+  start_date: '-257'
+  end_date: '-257'
+  places:
+  - 咸阳(今陕西咸阳)
+  - 杜邮(今陕西咸阳东)
+  phases:
+  - name: 酝酿
+    start_date: '-260'
+    end_date: '-259'
+    place: 咸阳(今陕西咸阳)
+    highlight: 白起反对邯郸之战
+  - name: 破局
+    start_date: '-259'
+    end_date: '-258'
+    place: 邯郸(今河北邯郸)
+    highlight: 邯郸之战失利
+  - name: 高潮
+    start_date: '-257'
+    end_date: '-257'
+    place: 咸阳(今陕西咸阳)
+    highlight: 赐死白起
+  - name: 收束
+    start_date: '-257'
+    end_date: '-257'
+    place: 杜邮(今陕西咸阳东)
+    highlight: 白起自刎，秦失一帅
+  description_zh: 长平之战后，白起主张乘胜灭赵，昭襄王初许后又听范雎之言受韩赵游说而退兵。次年再攻赵国邯郸时，白起多次称病推辞。邯郸之战失利后，昭襄王迁怒于白起，先是免其爵位，后赐剑令其自裁。白起叹曰'我固当死，长平之战赵卒降者数十万人，我诈而尽坑之，是足以死'，遂自刎。
+  outcome: 秦国失去最优秀的军事统帅
+  lesson: 功高震主是千古不变的危机，但杀将自毁更是帝王的大忌
+events:
+- date: '-262'
+  place_name: 上党(今山西长治)
+  event_type: 酝酿
+  title_zh: 韩国上党郡降赵，秦赵争夺
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 韩国上党郡降赵，秦赵争夺
+- date: '-260'
+  place_name: 长平(今山西高平)
+  event_type: 破局
+  title_zh: 王龁vs廉颇对峙
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 王龁vs廉颇对峙
+- date: '-260'
+  place_name: 长平(今山西高平)
+  event_type: 高潮
+  title_zh: 白起换将，赵括中伏，坑卒四十余万
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 白起换将，赵括中伏，坑卒四十余万
+- date: '-260'
+  place_name: 长平(今山西高平)
+  event_type: 收束
+  title_zh: 赵国元气大伤，东方六国震恐
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 赵国元气大伤，东方六国震恐
+- date: '-271'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 范雎入秦，献远交近攻之策
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 范雎入秦，献远交近攻之策
+- date: '-266'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 破局
+  title_zh: 驱逐魏冉，拜范雎为相
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 驱逐魏冉，拜范雎为相
+- date: '-260'
+  place_name: 各国
+  event_type: 高潮
+  title_zh: 交好齐燕，蚕食韩魏赵楚
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 交好齐燕，蚕食韩魏赵楚
+- date: '-253'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 收束
+  title_zh: 秦国版图已占天下之半
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 秦国版图已占天下之半
+- date: '-280'
+  place_name: 鄢(今湖北宜城)
+  event_type: 酝酿
+  title_zh: 白起伐楚，先取鄢城
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 白起伐楚，先取鄢城
+- date: '-279'
+  place_name: 鄢(今湖北宜城)
+  event_type: 破局
+  title_zh: 水淹鄢城，楚军大败
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 水淹鄢城，楚军大败
+- date: '-278'
+  place_name: 郢(今湖北荆州)
+  event_type: 高潮
+  title_zh: 攻破郢都，烧夷陵
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 攻破郢都，烧夷陵
+- date: '-278'
+  place_name: 郢(今湖北荆州)
+  event_type: 收束
+  title_zh: 楚国被迫东迁，屈原投江
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 楚国被迫东迁，屈原投江
+- date: '-260'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 酝酿
+  title_zh: 白起反对邯郸之战
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 白起反对邯郸之战
+- date: '-259'
+  place_name: 邯郸(今河北邯郸)
+  event_type: 破局
+  title_zh: 邯郸之战失利
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 邯郸之战失利
+- date: '-257'
+  place_name: 咸阳(今陕西咸阳)
+  event_type: 高潮
+  title_zh: 赐死白起
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 赐死白起
+- date: '-257'
+  place_name: 杜邮(今陕西咸阳东)
+  event_type: 收束
+  title_zh: 白起自刎，秦失一帅
+  description_zh: null
+  is_highlight: true
+  highlight_type: 名场面
+  highlight_note: 白起自刎，秦失一帅
