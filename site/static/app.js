@@ -189,6 +189,7 @@ function renderTimeline(){
         const by=py(p.birth_date),dy=py(p.death_date);
         if(!by)return;
         const age=ageAt(by,evtDate);
+        if(!alive)return;
         if(age===null||age<-50)return;
         const alive=!dy||evtDate<=dy;
         const t2=r.querySelector('.p-track');
