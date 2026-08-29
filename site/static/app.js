@@ -1,44 +1,65 @@
 let DATA={persons:[],events:[],highlights:[]};
 let activeRole=null,filtered=[];
+let zoomLevel=0; // 0=auto, >0 = pixels per year
 
 function py(s){if(!s)return null;const m=s.replace(/约/g,'').match(/^-?\d+/);return m?parseInt(m[0]):null}
 function ageAt(b,y){return b&&y?y-b:null}
 function poicare(t,k=2.2){return(Math.tanh(k*(t*2-1))/Math.tanh(k)+1)/2}
 const HL_COLORS={'成语':'var(--c-成语)','代表作':'var(--c-代表作)','战役':'var(--c-战役)','决策':'var(--c-决策)','至暗时刻':'var(--c-至暗时刻)','名言':'var(--c-名言)','发明':'var(--c-发明)','制度':'var(--c-制度)','演讲':'var(--c-演讲)','奖项':'var(--c-奖项)','远航':'var(--c-远航)'};
 
-async function fetchJSON(url){
-  const r=await fetch(url+'?'+Date.now());
-  if(!r.ok)throw new Error(`${url} ${r.status}`);
-  return r.json();
+// adaptive tick interval based on event density in visible range
+function adaptiveStep(minY,maxY,events){
+  const span=maxY-minY||1;
+  // count events per century
+  const buckets={};
+  events.forEach(e=>{
+    const y=py(e.date);if(!y)return;
+    const c=Math.floor(y/100)*100;
+    buckets[c]=(buckets[c]||0)+1;
+  });
+  const vals=Object.values(buckets);
+  const maxDensity=vals.length?Math.max(...vals):0;
+  const avgDensity=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:0;
+  // dense: fine ticks; sparse: coarse ticks
+  if(span<100)return 10;
+  if(span<300)return avgDensity>5?10:20;
+  if(span<800)return avgDensity>3?10:20;
+  if(span<2000)return avgDensity>2?20:50;
+  return 50;
 }
-async function fetchText(url){
-  const r=await fetch(url+'?'+Date.now());
-  if(!r.ok)throw new Error(`${url} ${r.status}`);
-  return r.text();
-}
+
+async function fetchJSON(url){const r=await fetch(url+'?'+Date.now());if(!r.ok)throw new Error(`${url} ${r.status}`);return r.json()}
+async function fetchText(url){const r=await fetch(url+'?'+Date.now());if(!r.ok)throw new Error(`${url} ${r.status}`);return r.text()}
 
 async function init(){
   try{
     DATA.index=await fetchJSON('data/index.json');
-    // load person files from year_dir
     for(const p of DATA.index.persons){
-      try{
-        const d=await fetchJSON(`data/${p.year_dir}/${p.name_zh}.yaml`);
-        DATA.persons.push(d);
-      }catch(e){console.warn('skip',p.name_zh,e.message)}
+      try{DATA.persons.push(await fetchJSON(`data/${p.year_dir}/${p.name_zh}.json`))}catch(e){console.warn('skip',p.name_zh)}
     }
-    // load events from JSONL
     const text=await fetchText('data/timeline.jsonl');
     DATA.events=text.trim().split('\n').filter(Boolean).map(l=>JSON.parse(l));
     DATA.highlights=await fetchJSON('data/highlights.json');
     DATA.events.sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999'));
-    document.getElementById('stats').innerHTML=
-      `${DATA.persons.length}人物 · ${DATA.events.length}事件 · ${DATA.highlights.length}名场面`;
-    renderFilters();applyFilter();
-  }catch(e){
-    console.error('init failed',e);
-    document.getElementById('stats').innerHTML='加载失败: '+e.message;
-  }
+    document.getElementById('stats').innerHTML=`${DATA.persons.length}人物 · ${DATA.events.length}事件 · ${DATA.highlights.length}名场面`;
+    renderFilters();applyFilter();setupZoom();
+  }catch(e){document.getElementById('stats').innerHTML='加载失败: '+e.message}
+}
+
+function setupZoom(){
+  const wrap=document.getElementById('wrap');
+  // mouse wheel zoom
+  wrap.addEventListener('wheel',e=>{
+    if(e.ctrlKey||e.metaKey){
+      e.preventDefault();
+      zoomLevel=Math.max(0.5,Math.min(20,zoomLevel+(e.deltaY<0?0.5:-0.5)));
+      renderTimeline();
+    }
+  },{passive:false});
+  // zoom buttons
+  document.getElementById('zoomIn').onclick=()=>{zoomLevel=Math.min(20,zoomLevel+0.5);renderTimeline()};
+  document.getElementById('zoomOut').onclick=()=>{zoomLevel=Math.max(0.5,zoomLevel-0.5);renderTimeline()};
+  document.getElementById('zoomReset').onclick=()=>{zoomLevel=0;renderTimeline()};
 }
 
 function renderFilters(){
@@ -49,8 +70,7 @@ function renderFilters(){
   document.getElementById('filters').innerHTML=h;
   document.querySelectorAll('.fb').forEach(b=>{b.addEventListener('click',()=>{
     if(b.dataset.role){activeRole=b.dataset.role==='all'?null:b.dataset.role;document.querySelectorAll('.fb[data-role]').forEach(x=>x.classList.remove('active'));b.classList.add('active')}
-    applyFilter();
-  })});
+    applyFilter();})});
 }
 
 function applyFilter(){
@@ -64,10 +84,13 @@ function renderTimeline(){
   if(!allYears.length)return;
   const minY=Math.min(...allYears),maxY=Math.max(...allYears);
   const span=maxY-minY||100;
-  const W=Math.max(2400,span*2);
+
+  // auto zoom: 1.5px/year, manual override
+  const ppx=zoomLevel>0?zoomLevel:1.5;
+  const W=Math.max(1600,span*ppx);
   const LH=42,RH=50,LABEL_W=160;
 
-  const step=span>2000?500:span>500?100:span>100?20:10;
+  const step=adaptiveStep(minY,maxY,DATA.events);
   let ticks='';
   for(let y=Math.ceil(minY/step)*step;y<=maxY;y+=step){
     const x=80+poicare((y-minY)/span)*(W-160);
@@ -85,8 +108,8 @@ function renderTimeline(){
   });
   hlRow+=`</div></div>`;
 
-  let rows='';
-  if(!filtered.length)filtered=DATA.persons;
+  // person rows
+  let rows='';if(!filtered.length)filtered=DATA.persons;
   filtered.forEach(p=>{
     const by=py(p.birth_date),dy=py(p.death_date);
     if(!by)return;
@@ -119,6 +142,10 @@ function renderTimeline(){
   inner.style.width=W+'px';
   inner.style.height=(32+LH+filtered.length*RH)+'px';
 
+  // update zoom display
+  document.getElementById('zoomLevel').textContent=zoomLevel>0?`${zoomLevel.toFixed(1)}x`:'自适应';
+
+  // tooltips
   const tip=document.getElementById('tip');
   inner.querySelectorAll('.ev-dot,.hl-dot').forEach(d=>{
     d.addEventListener('mouseenter',()=>{
@@ -181,8 +208,6 @@ function showDetail(qid){
 }
 function closeDetail(){document.getElementById('detail').classList.remove('open')}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail()});
-
-// drag scroll
 (function(){const el=document.getElementById('wrap');let d=false,sx,sl;
 el.addEventListener('mousedown',e=>{d=true;sx=e.pageX-el.offsetLeft;sl=el.scrollLeft});
 el.addEventListener('mouseleave',()=>d=false);el.addEventListener('mouseup',()=>d=false);

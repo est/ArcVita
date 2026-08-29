@@ -11,12 +11,16 @@
 <header>
   <h1>ArcVita</h1>
   <span class="sub">成事儿时间轴 · 名场面×人物×公元</span>
+  <div style="display:flex;align-items:center;gap:6px;margin-left:12px">
+    <button id="zoomOut" style="font-size:14px;padding:2px 8px;border:1px solid var(--ruler);border-radius:4px;background:var(--paper);cursor:pointer">−</button>
+    <span id="zoomLevel" style="font-size:10px;color:var(--mist);min-width:36px;text-align:center">自适应</span>
+    <button id="zoomIn" style="font-size:14px;padding:2px 8px;border:1px solid var(--ruler);border-radius:4px;background:var(--paper);cursor:pointer">+</button>
+    <button id="zoomReset" style="font-size:10px;padding:2px 6px;border:1px solid var(--ruler);border-radius:4px;background:var(--paper);cursor:pointer;color:var(--mist)">重置</button>
+  </div>
   <span class="stats" id="stats"></span>
 </header>
 <div class="filters" id="filters"></div>
-<div class="timeline-wrap" id="wrap">
-  <div class="tl-inner" id="inner"></div>
-</div>
+<div class="timeline-wrap" id="wrap"><div class="tl-inner" id="inner"></div></div>
 <div class="tip" id="tip"></div>
 <div class="detail" id="detail"><span class="close" onclick="closeDetail()">×</span><div id="dc"></div></div>
 <script src="static/app.js"></script>
