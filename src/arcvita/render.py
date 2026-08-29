@@ -35,14 +35,36 @@ def build_highlights():
             }
         )
     # 合并历史背景事件（王表/朝代更替/社会变革等）
-    ctx_path = Path("data/processed/historical_contexts.yaml")
-    if ctx_path.exists():
-        ctx = yaml.safe_load(ctx_path.read_text(encoding="utf-8")) or []
-        for c in ctx:
-            c["is_highlight"] = True
-            if "person_qid" not in c:
-                c["person_qid"] = "_context"
-            out.append(c)
+    for src in ("historical_contexts.yaml", "king_tables.yaml"):
+        src_path = Path(f"data/processed/{src}")
+        if not src_path.exists():
+            continue
+        data = yaml.safe_load(src_path.read_text(encoding="utf-8")) or []
+        for item in data:
+            if not isinstance(item, dict):
+                continue
+            # handle nested dynasty → kings structure
+            if "kings" in item and "dynasty" in item:
+                dynasty = item["dynasty"]
+                period = item.get("period", "")
+                for king in item.get("kings", []):
+                    reign = king.get("reign", "")
+                    y = reign.replace("约", "").replace("前", "-").split("-")[0].strip()
+                    out.append({
+                        "date": y,
+                        "place_name": king.get("place", ""),
+                        "event_type": "王表",
+                        "title_zh": f"{king['name']} {dynasty}",
+                        "highlight_type": "王表",
+                        "highlight_note": f"{king.get('note', '')} ({period})",
+                        "person_qid": "_context",
+                        "is_highlight": True,
+                    })
+            elif "date" in item:
+                item["is_highlight"] = True
+                if "person_qid" not in item:
+                    item["person_qid"] = "_context"
+                out.append(item)
     p = Path("data/processed/highlights.yaml")
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(yaml.safe_dump(out, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")

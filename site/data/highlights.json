@@ -1526,6 +1526,16 @@
     "is_highlight": true
   },
   {
+    "date": "105(改良造纸)",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "蔡伦 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "改进造纸术，推动知识传播 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "date": "1088",
     "place_name": "伦敦",
     "event_type": "制度",
@@ -1616,6 +1626,16 @@
     "title_zh": "拜占庭帝国灭亡",
     "highlight_type": "朝代更替",
     "highlight_note": "中世纪终结，文艺复兴加速",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "146",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "汉桓帝 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "党锢之祸，宦官专权 (25-220)",
     "person_qid": "_context",
     "is_highlight": true
   },
@@ -1720,6 +1740,16 @@
     "sources": [
       "https://www.wikidata.org/wiki/Q935"
     ]
+  },
+  {
+    "date": "168",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "汉灵帝 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "黄巾起义爆发 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
   },
   {
     "date": "1687",
@@ -1832,6 +1862,16 @@
     "is_highlight": true
   },
   {
+    "date": "189",
+    "place_name": "洛阳→许昌",
+    "event_type": "王表",
+    "title_zh": "汉献帝 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "董卓之乱，曹操挟天子以令诸侯，汉室倾覆 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "person_qid": "Q7186",
     "date": "1898-12-26",
     "place_name": "巴黎",
@@ -1842,6 +1882,16 @@
     "sources": [
       "https://www.wikidata.org/wiki/Q7186"
     ]
+  },
+  {
+    "date": "190",
+    "place_name": "邺(今河北临漳)",
+    "event_type": "王表",
+    "title_zh": "袁绍 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "四世三公，官渡之战败于曹操 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
   },
   {
     "person_qid": "Q7186",
@@ -1956,6 +2006,16 @@
     "is_highlight": true
   },
   {
+    "date": "194",
+    "place_name": "建业(今江苏南京)",
+    "event_type": "王表",
+    "title_zh": "孙策 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "小霸王，奠定东吴基业，被刺身亡 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "person_qid": "Q8016",
     "date": "1940-06-04",
     "place_name": "伦敦",
@@ -1998,6 +2058,16 @@
     "sources": [
       "https://www.wikidata.org/wiki/Q184080"
     ]
+  },
+  {
+    "date": "196",
+    "place_name": "许昌(今河南许昌)",
+    "event_type": "王表",
+    "title_zh": "曹操 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "挟天子以令诸侯，统一北方。赤壁之战败于孙刘联军 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
   },
   {
     "date": "1969",
@@ -2148,6 +2218,36 @@
     ]
   },
   {
+    "date": "200",
+    "place_name": "建业(今江苏南京)",
+    "event_type": "王表",
+    "title_zh": "孙权 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "赤壁之战联刘抗曹，建立吴国 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "200",
+    "place_name": "荆州(今湖北荆州)",
+    "event_type": "王表",
+    "title_zh": "关羽 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "败走麦城被杀 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "200",
+    "place_name": "官渡(今河南中牟)",
+    "event_type": "王表",
+    "title_zh": "官渡之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "曹操以少胜多击败袁绍，统一北方奠基 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "date": "2001",
     "place_name": "纽约",
     "event_type": "战役",
@@ -2180,6 +2280,16 @@
     ]
   },
   {
+    "date": "201",
+    "place_name": "阆中(今四川阆中)",
+    "event_type": "王表",
+    "title_zh": "张飞 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "被部下所杀 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "person_qid": "Q179544",
     "date": "207",
     "place_name": "隆中",
@@ -2204,12 +2314,42 @@
     ]
   },
   {
+    "date": "208",
+    "place_name": "成都(今四川成都)",
+    "event_type": "王表",
+    "title_zh": "刘备 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "三顾茅庐得诸葛亮，建立蜀汉 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "208",
+    "place_name": "赤壁(今湖北赤壁)",
+    "event_type": "王表",
+    "title_zh": "赤壁之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "孙刘联军5万破曹操20万，三国鼎立格局形成 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "date": "220",
     "place_name": "洛阳",
     "event_type": "朝代更替",
     "title_zh": "三国鼎立",
     "highlight_type": "朝代更替",
     "highlight_note": "汉室倾覆，群雄逐鹿",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "221",
+    "place_name": "成都→五丈原",
+    "event_type": "王表",
+    "title_zh": "诸葛亮 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "六出祁山北伐，五丈原病逝 (25-220)",
     "person_qid": "_context",
     "is_highlight": true
   },
@@ -2226,6 +2366,26 @@
     ]
   },
   {
+    "date": "23",
+    "place_name": "昆阳(今河南叶县)",
+    "event_type": "王表",
+    "title_zh": "昆阳之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "刘秀以2万破王莽42万，中兴汉室起点 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "231",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "司马懿 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "抵御诸葛亮，高平陵政变夺权 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "person_qid": "Q179544",
     "date": "234-10-08",
     "place_name": "五丈原",
@@ -2238,12 +2398,62 @@
     ]
   },
   {
+    "date": "25",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "光武帝 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "光武中兴，昆阳之战以少胜多。柔道治天下 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "263",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "司马昭 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "灭蜀汉，司马昭之心路人皆知 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "265",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "司马炎 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "篡魏建晋，统一三国。八王之乱埋祸根 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "date": "317",
     "place_name": "建康",
     "event_type": "朝代更替",
     "title_zh": "东晋建立",
     "highlight_type": "朝代更替",
     "highlight_note": "衣冠南渡，文化重心南移",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "32",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "班固 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "著《汉书》，断代史开创者 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "57",
+    "place_name": "洛阳(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "汉明帝 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "白马驮经，佛教东传。班超通西域 (25-220)",
     "person_qid": "_context",
     "is_highlight": true
   },
@@ -2264,6 +2474,16 @@
     "title_zh": "唐朝建立",
     "highlight_type": "朝代更替",
     "highlight_note": "中国封建社会鼎盛期开端",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "73",
+    "place_name": "洛阳→西域",
+    "event_type": "王表",
+    "title_zh": "班超 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "投笔从戎，经营西域30年，36人定50国 (25-220)",
     "person_qid": "_context",
     "is_highlight": true
   },
@@ -2302,12 +2522,1022 @@
     "is_highlight": true
   },
   {
+    "date": "78",
+    "place_name": "南阳→洛阳",
+    "event_type": "王表",
+    "title_zh": "张衡 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "浑天仪地动仪，《二京赋》 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "89",
+    "place_name": "洛阳→燕然山",
+    "event_type": "王表",
+    "title_zh": "窦宪 东汉",
+    "highlight_type": "王表",
+    "highlight_note": "燕然勒石，大破北匈奴 (25-220)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
     "date": "960",
     "place_name": "开封",
     "event_type": "朝代更替",
     "title_zh": "宋朝建立",
     "highlight_type": "朝代更替",
     "highlight_note": "重文轻武，经济文化达到巅峰",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "阳城(今河南登封)",
+    "event_type": "王表",
+    "title_zh": "禹 夏",
+    "highlight_type": "王表",
+    "highlight_note": "治水有功，禅让变世袭 (约前2070-约前1600)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "阳翟(今河南禹州)",
+    "event_type": "王表",
+    "title_zh": "启 夏",
+    "highlight_type": "王表",
+    "highlight_note": "家天下始 (约前2070-约前1600)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "斟鄩(今河南偃师)",
+    "event_type": "王表",
+    "title_zh": "太康 夏",
+    "highlight_type": "王表",
+    "highlight_note": "失国于后羿 (约前2070-约前1600)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "阳翟(今河南禹州)",
+    "event_type": "王表",
+    "title_zh": "少康 夏",
+    "highlight_type": "王表",
+    "highlight_note": "中兴夏室 (约前2070-约前1600)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "斟鄩(今河南偃师)",
+    "event_type": "王表",
+    "title_zh": "桀 夏",
+    "highlight_type": "王表",
+    "highlight_note": "暴君，亡于商汤 (约前2070-约前1600)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "亳(今河南商丘)",
+    "event_type": "王表",
+    "title_zh": "汤 商",
+    "highlight_type": "王表",
+    "highlight_note": "灭夏建商，与伊尹共治 (约前1600-约前1046)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "亳(今河南商丘)",
+    "event_type": "王表",
+    "title_zh": "伊尹 商",
+    "highlight_type": "王表",
+    "highlight_note": "辅佐五代商王，名相 (约前1600-约前1046)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "殷(今河南安阳)",
+    "event_type": "王表",
+    "title_zh": "盘庚 商",
+    "highlight_type": "王表",
+    "highlight_note": "迁都殷墟，商朝中兴 (约前1600-约前1046)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "殷(今河南安阳)",
+    "event_type": "王表",
+    "title_zh": "武丁 商",
+    "highlight_type": "王表",
+    "highlight_note": "武丁中兴，傅说为相 (约前1600-约前1046)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "朝歌(今河南淇县)",
+    "event_type": "王表",
+    "title_zh": "纣 商",
+    "highlight_type": "王表",
+    "highlight_note": "暴君，与妲己，亡于周武王 (约前1600-约前1046)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "周武王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "灭商建周，与姜子牙共谋 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "齐(今山东淄博)",
+    "event_type": "王表",
+    "title_zh": "姜子牙 西周",
+    "highlight_type": "王表",
+    "highlight_note": "封齐，辅佐武王/成王 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "洛邑(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "周公旦 西周",
+    "highlight_type": "王表",
+    "highlight_note": "制礼作乐，摄政七年，平三监之乱 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "成王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "周公辅政，成康之治 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "康王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "成康之治，天下安宁 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "昭王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "南征楚国，溺死汉水 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "穆王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "西征犬戎，会西王母 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "厉王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "暴虐被逐，国人暴动 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "宣王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "宣王中兴 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "镐京(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "幽王 西周",
+    "highlight_type": "王表",
+    "highlight_note": "烽火戏诸侯，西周亡 (约前1046-前771)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "洛邑(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "周平王 东周(春秋)",
+    "highlight_type": "王表",
+    "highlight_note": "东迁洛邑，王室衰微 (前770-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "洛邑(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "周桓王 东周(春秋)",
+    "highlight_type": "王表",
+    "highlight_note": "繻葛之战败于郑庄王 (前770-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "洛邑(今河南洛阳)",
+    "event_type": "王表",
+    "title_zh": "周襄王 东周(春秋)",
+    "highlight_type": "王表",
+    "highlight_note": "王子带之乱，齐桓公勤王 (前770-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "临淄(今山东淄博)",
+    "event_type": "王表",
+    "title_zh": "齐桓公 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "尊王攘夷，九合诸侯，与管仲共治。葵丘会盟(前651) (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "临淄(今山东淄博)",
+    "event_type": "王表",
+    "title_zh": "管仲 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "辅佐齐桓公称霸，相地而衰征 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "商丘(今河南商丘)",
+    "event_type": "王表",
+    "title_zh": "宋襄公 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "泓水之战，仁义之师。盂地会盟被楚囚 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "绛(今山西翼城)",
+    "event_type": "王表",
+    "title_zh": "晋文公 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "城濮之战退避三舍，践土会盟称霸。与秦穆公联盟后反目 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "雍(今陕西凤翔)",
+    "event_type": "王表",
+    "title_zh": "秦穆公 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "称霸西戎，崤之战败于晋。与晋文公联盟又反目 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "郢(今湖北荆州)",
+    "event_type": "王表",
+    "title_zh": "楚庄王 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "一鸣惊人，问鼎中原。邲之战(前597)大败晋国 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "姑苏(今江苏苏州)",
+    "event_type": "王表",
+    "title_zh": "吴王阖闾 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "用孙武/伍子胥，柏举之战破楚郢都 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "姑苏(今江苏苏州)",
+    "event_type": "王表",
+    "title_zh": "吴王夫差 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "败越后骄傲，被勾践灭国 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "会稽(今浙江绍兴)",
+    "event_type": "王表",
+    "title_zh": "越王勾践 春秋五霸",
+    "highlight_type": "王表",
+    "highlight_note": "卧薪尝胆灭吴，范蠡辞去，文种被杀 (前685-前476)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "安邑(今山西夏县)",
+    "event_type": "王表",
+    "title_zh": "魏文侯 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "李悝变法，战国首霸。与秦战于河西 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "秦孝公 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "用商鞅变法。与魏战于河西，收复失地 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "商鞅 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "两次变法强秦，最终车裂。与公子虔冲突 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "临淄(今山东淄博)",
+    "event_type": "王表",
+    "title_zh": "齐威王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "邹忌讽齐王纳谏。马陵之战(前341)与魏决战 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "大梁(今河南开封)",
+    "event_type": "王表",
+    "title_zh": "魏惠王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "桂陵之战(前354)马陵之战(前341)两败于齐。庞涓vs孙膑 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "邯郸(今河北邯郸)",
+    "event_type": "王表",
+    "title_zh": "赵武灵王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "胡服骑射，灭中山。沙丘之变被饿死 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "秦惠文王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "车裂商鞅但用其法。张仪连横破纵。与蜀交战 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "秦昭襄王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "长平之战(前260)坑赵卒40万，白起为将。与赵/楚/齐连年交战 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "邯郸(今河北邯郸)",
+    "event_type": "王表",
+    "title_zh": "赵惠文王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "廉颇蔺相如将相和。长平之战用赵括替换廉颇 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "蓟(今北京)",
+    "event_type": "王表",
+    "title_zh": "燕昭王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "黄金台招贤，乐毅伐齐连下70城 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "临淄(今山东淄博)",
+    "event_type": "王表",
+    "title_zh": "齐湣王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "五国伐齐，乐毅破齐70城 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "郢(今湖北荆州)",
+    "event_type": "王表",
+    "title_zh": "楚顷襄王 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "白起破郢(前278)，楚国东迁 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "秦始皇 战国七雄",
+    "highlight_type": "王表",
+    "highlight_note": "13岁即位，嫪毐之乱，逐吕不韦。统一六国 (前475-前221)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "秦始皇 秦朝",
+    "highlight_type": "王表",
+    "highlight_note": "始皇帝，统一度量衡文字，修长城。与李斯/蒙恬共治 (前221-前207)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "李斯 秦朝",
+    "highlight_type": "王表",
+    "highlight_note": "书同文，焚书坑儒。与赵高斗争失败被腰斩 (前221-前207)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "赵高 秦朝",
+    "highlight_type": "王表",
+    "highlight_note": "指鹿为马，杀李斯，逼秦二世自杀 (前221-前207)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳(今陕西咸阳)",
+    "event_type": "王表",
+    "title_zh": "秦二世 秦朝",
+    "highlight_type": "王表",
+    "highlight_note": "胡亥，赵高指鹿为马，被逼自杀 (前221-前207)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "大泽乡(今安徽宿州)",
+    "event_type": "王表",
+    "title_zh": "陈胜 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "大泽乡起义，王侯将相宁有种乎。与吴广共举义 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "大泽乡(今安徽宿州)",
+    "event_type": "王表",
+    "title_zh": "吴广 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "与陈胜共举义，被部下所杀 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "吴(今江苏苏州)",
+    "event_type": "王表",
+    "title_zh": "项梁 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "项羽叔父，定陶之战阵亡 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "彭城(今江苏徐州)",
+    "event_type": "王表",
+    "title_zh": "项羽 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "巨鹿之战破秦军，鸿门宴放刘邦，垓下之围自刎。与刘邦楚汉争霸 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "汉中(今陕西汉中)",
+    "event_type": "王表",
+    "title_zh": "刘邦 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "约法三章得民心，明修栈道暗度陈仓。与项羽争霸，最终垓下围杀 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "汉中→齐→楚",
+    "event_type": "王表",
+    "title_zh": "韩信 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "明修栈道暗度陈仓，背水一战，垓下围杀项羽。被吕后所杀 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "下邳(今江苏邳州)",
+    "event_type": "王表",
+    "title_zh": "张良 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "圯上受书，鸿门宴救刘邦，运筹帷幄决胜千里 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "咸阳→长安",
+    "event_type": "王表",
+    "title_zh": "萧何 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "月下追韩信，萧规曹随。汉初三杰之一 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "彭城(今江苏徐州)",
+    "event_type": "王表",
+    "title_zh": "范增 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "鸿门宴劝杀刘邦未果，被离间出走 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "九江(今安徽六安)",
+    "event_type": "王表",
+    "title_zh": "英布 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "九江王，后归汉。淮南王之乱被杀 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "梁(今河南商丘)",
+    "event_type": "王表",
+    "title_zh": "彭越 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "游击战专家，后被刘邦所杀 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "齐(今山东)",
+    "event_type": "王表",
+    "title_zh": "田横 秦末/楚汉",
+    "highlight_type": "王表",
+    "highlight_note": "田氏齐王后裔，五百壮士殉义 (前209-前202)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "汉高祖 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "刘邦，布衣天子。杀韩信/彭越/英布 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "吕后 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "临朝称制，杀韩信，毒杀赵王如意 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "周勃 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "北军左袒，诛诸吕迎文帝 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "陈平 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "反间计去范增，白登解围。平诸吕功臣 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "汉文帝 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "文景之治，轻徭薄赋。与贾谊/晁错共治 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "汉景帝 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "七国之乱平定，削藩加强中央 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "周亚夫 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "周勃之子，平七国之乱。后饿死狱中 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "汉武帝 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "罢黜百家，张骞通西域，卫青霍去病击匈奴。李广难封 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安→漠北",
+    "event_type": "王表",
+    "title_zh": "卫青 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "龙城首捷，七击匈奴，娶平阳公主 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安→漠北",
+    "event_type": "王表",
+    "title_zh": "霍去病 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "封狼居胥，匈奴失河西之歌。24岁早逝 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "边塞→漠北",
+    "event_type": "王表",
+    "title_zh": "李广 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "飞将军，一生70余战未封侯，漠北之战迷路自刎 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安→大宛→大月氏",
+    "event_type": "王表",
+    "title_zh": "张骞 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "凿空西域，丝绸之路开拓者。两次出使13年 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安",
+    "event_type": "王表",
+    "title_zh": "司马迁 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "受李陵之祸受宫刑，忍辱著《史记》 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安",
+    "event_type": "王表",
+    "title_zh": "董仲舒 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "天人三策，罢黜百家独尊儒术 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "匈奴→北海(今贝加尔湖)",
+    "event_type": "王表",
+    "title_zh": "苏武 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "牧羊19年不降，持节不屈 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安",
+    "event_type": "王表",
+    "title_zh": "张汤 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "酷吏代表，办淮南王案 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安",
+    "event_type": "王表",
+    "title_zh": "主父偃 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "推恩令削弱诸侯，后被汉武帝诛杀 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安",
+    "event_type": "王表",
+    "title_zh": "霍光 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "汉武帝托孤重臣，废昌邑王立宣帝 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "汉宣帝 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "昭宣中兴，匈奴归降。与霍光共治 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长安(今陕西西安)",
+    "event_type": "王表",
+    "title_zh": "王莽 西汉",
+    "highlight_type": "王表",
+    "highlight_note": "篡汉建新，改革失败导致绿林赤眉起义 (前202-8)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "牧野(今河南新乡)",
+    "event_type": "王表",
+    "title_zh": "牧野之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "周武王联合八百诸侯灭商 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "繻葛(今河南长葛)",
+    "event_type": "王表",
+    "title_zh": "繻葛之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "郑庄王打败周桓王，王室权威丧失 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "城濮(今山东鄄城)",
+    "event_type": "王表",
+    "title_zh": "城濮之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "晋文公退避三舍大败楚军，称霸中原 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "崤山(今河南洛宁)",
+    "event_type": "王表",
+    "title_zh": "崤之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "秦穆公伐郑途中被晋军伏击，秦东进受阻 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "邲(今河南郑州)",
+    "event_type": "王表",
+    "title_zh": "邲之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "楚庄王大败晋国，问鼎中原 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "柏举(今湖北麻城)",
+    "event_type": "王表",
+    "title_zh": "柏举之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "孙武率吴军五战入楚郢都，春秋最大远征 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "桂陵(今河南长垣)",
+    "event_type": "王表",
+    "title_zh": "桂陵之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "围魏救赵，孙膑败庞涓 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "马陵(今河南范县)",
+    "event_type": "王表",
+    "title_zh": "马陵之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "减灶诱敌，孙膑再败庞涓 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "长平(今山西高平)",
+    "event_type": "王表",
+    "title_zh": "长平之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "白起坑赵卒40万，战国最大规模战役 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "巨鹿(今河北平乡)",
+    "event_type": "王表",
+    "title_zh": "巨鹿之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "项羽破釜沉舟大败秦军主力 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "垓下(今安徽灵璧)",
+    "event_type": "王表",
+    "title_zh": "垓下之战 关键战役",
+    "highlight_type": "王表",
+    "highlight_note": "韩信十面埋伏，项羽乌江自刎，楚汉争霸终结 (先秦-汉)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "北杏(今山东东阿)",
+    "event_type": "王表",
+    "title_zh": "北杏会盟 关键会盟",
+    "highlight_type": "王表",
+    "highlight_note": "齐桓公首次会盟，春秋霸业起点 (春秋-战国)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "葵丘(今河南民权)",
+    "event_type": "王表",
+    "title_zh": "葵丘会盟 关键会盟",
+    "highlight_type": "王表",
+    "highlight_note": "齐桓公霸业巅峰，九合诸侯 (春秋-战国)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "践土(今河南原阳)",
+    "event_type": "王表",
+    "title_zh": "践土会盟 关键会盟",
+    "highlight_type": "王表",
+    "highlight_note": "晋文公称霸，周襄王亲临 (春秋-战国)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "宋(今河南商丘)",
+    "event_type": "王表",
+    "title_zh": "弭兵会盟 关键会盟",
+    "highlight_type": "王表",
+    "highlight_note": "晋楚争霸暂停，中原和平15年 (春秋-战国)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "黄池(今河南封丘)",
+    "event_type": "王表",
+    "title_zh": "黄池会盟 关键会盟",
+    "highlight_type": "王表",
+    "highlight_note": "吴王夫差与晋争霸，后方被越偷袭 (春秋-战国)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "徐州(今山东枣庄)",
+    "event_type": "王表",
+    "title_zh": "徐州相王 关键会盟",
+    "highlight_type": "王表",
+    "highlight_note": "齐魏互王，战国格局正式形成 (春秋-战国)",
+    "person_qid": "_context",
+    "is_highlight": true
+  },
+  {
+    "date": "",
+    "place_name": "临淄(今山东淄博)",
+    "event_type": "王表",
+    "title_zh": "五国伐齐 关键会盟",
+    "highlight_type": "王表",
+    "highlight_note": "燕秦韩赵魏联合伐齐，乐毅破齐70城 (春秋-战国)",
     "person_qid": "_context",
     "is_highlight": true
   },
