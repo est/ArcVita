@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><title>ArcVita — 待重写</title></head>
-<body style="font-family:serif;padding:40px;max-width:720px;line-height:1.6">
-<h1>ArcVita 实现已清空</h1>
-<p>设计需求见 <code>site/design.md</code>。请新开 session 按该文档重写 <code>site/static/app.js</code> 与 <code>site/static/style.css</code>（单文件、无构建、可 <code>python -m http.server -d site</code> 直开）。</p>
-<p><code>site/data/*</code> 为只读真源，不要删除。</p>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArcVita · 成事儿时间轴</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📜</text></svg>">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>ArcVita</h1>
+    <span class="sub">成事儿时间轴 · 名场面 × 事业周期 × 同期年龄</span>
+  </div>
+  <div class="search-box">
+    <input id="q" type="search" placeholder="搜索 人物 / 原型 / 境遇…  按 / 聚焦" autocomplete="off" spellcheck="false">
+    <button id="clearSearch" aria-label="清除搜索" title="清除">×</button>
+  </div>
+  <div class="hdr-zoom">
+    <button id="zoomOut" aria-label="缩小">−</button>
+    <span id="zoomLevel">1.0x · 150年</span>
+    <button id="zoomIn" aria-label="放大">+</button>
+    <button id="zoomReset">重置</button>
+  </div>
+  <span class="stats" id="stats"></span>
+</header>
+
+<div class="timeline-wrap" id="wrap" tabindex="0" aria-label="横向时间轴，横向滚动查看，Ctrl+滚轮缩放">
+  <div class="tl-inner" id="inner"></div>
+</div>
+
+<div class="tip" id="tip" role="tooltip"></div>
+
+<aside class="detail" id="detail" aria-label="人物详情">
+  <button class="close" onclick="closeDetail()" aria-label="关闭">×</button>
+  <div id="dc"></div>
+</aside>
+
+<script src="static/app.js"></script>
 </body>
 </html>
