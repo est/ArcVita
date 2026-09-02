@@ -96,7 +96,7 @@ async function loadTimelineData() {
       let d = parseYear(p.death_date);
       const est = d == null && b != null;
       if (est) d = b + 60;
-      return { ...p, b, d, est };
+      return { ...p, name: p.name_zh, b, d, est };
     })
     .filter(p => p.b != null)   // 生年可考即可入轴；卒年不详者以虚化尾段示之
     .sort((a, b2) => a.b - b2.b);
@@ -227,6 +227,8 @@ function draw() {
     ctx.globalAlpha = 1;
   }
 
+  if (!persons.length) return;   // 数据未就绪（loading 期状态浮层遮盖）
+
   /* 可见行范围 */
   const r0 = clamp(Math.floor((view.y - RULER_H) / ROW_H), 0, persons.length - 1);
   const r1 = clamp(Math.ceil((view.y - RULER_H + H) / ROW_H), 0, persons.length - 1);
@@ -244,7 +246,7 @@ function draw() {
     let alpha = 1;
     if (hover != null) {
       const yr = hover.yr;
-      if (yr < p.b || yr > p.d) alpha = 0.22;
+      if (yr < p.b || yr > p.d) alpha = 0.55;
     }
     if (spotlight && !focused) alpha = Math.min(alpha, 0.25);
 
@@ -354,7 +356,7 @@ function draw() {
     const focused = focusQ === p.qid;
 
     let alpha = 1;
-    if (hover != null && (hover.yr < p.b || hover.yr > p.d)) alpha = 0.3;
+    if (hover != null && (hover.yr < p.b || hover.yr > p.d)) alpha = 0.55;
     if (spotlight && !focused) alpha = Math.min(alpha, 0.3);
 
     ctx.font = F_NAME;
@@ -928,6 +930,23 @@ function showError(err) {
   $('#tl-retry').addEventListener('click', boot);
 }
 
+/* ---- 顶栏数据规模 + 首访提示 ---- */
+
+function fillCounts() {
+  const el = $('#tl-counts');
+  if (!el) return;
+  const hl = events.filter(e => e.isHl).length;
+  el.innerHTML = `<b>${persons.length}</b> 人 · <b>${events.length}</b> 事 · <b>${hl}</b> 幕名场面`;
+}
+
+function armHints() {
+  const hints = $('.tl-hints');
+  if (!hints || hints.classList.contains('gone')) return;
+  const hide = () => hints.classList.add('gone');
+  setTimeout(hide, 7000);
+  frame.addEventListener('pointerdown', hide, { once: true });
+}
+
 /* ---- 启动 ---- */
 
 async function boot() {
@@ -936,11 +955,14 @@ async function boot() {
     await loadTimelineData();
     statusEl.hidden = true;
     resize();
+    fillCounts();
+    armHints();
+    const ppy0 = clamp(W / 200, MIN_PPY, MAX_PPY);   // 默认视野 ≈ 200 年（1920px 屏 ≈ README 1x）
     if (RM) {
-      Object.assign(view, { x: -820, ppy: 0.62, y: 0 });
+      Object.assign(view, { x: -820, ppy: ppy0, y: 0 });
     } else {
       Object.assign(view, { x: -2050, ppy: 0.085, y: 0 });
-      tweenTo({ x: -820, ppy: 0.62, y: 0 }, 1600, easeOut);
+      tweenTo({ x: -820, ppy: ppy0, y: 0 }, 1600, easeOut);
     }
     needs = true;
   } catch (err) {
@@ -952,60 +974,3 @@ new ResizeObserver(() => resize()).observe(frame);
 buildLegend();
 requestAnimationFrame(loop);
 boot();
-
-/* ============================================================
-   页面细节：进场、数字、终端复制
-   ============================================================ */
-
-/* 滚动进场 */
-const io = new IntersectionObserver(entries => {
-  for (const en of entries) {
-    if (en.isIntersecting) { en.target.classList.add('on'); io.unobserve(en.target); }
-  }
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-$$('.rv').forEach(el => io.observe(el));
-
-/* 印章按下 */
-setTimeout(() => $('#hero-eyebrow')?.classList.add('on'), RM ? 0 : 150);
-
-/* 数字滚动 */
-function countUp(el) {
-  const target = +el.dataset.count;
-  if (RM) { el.textContent = target.toLocaleString('en-US'); return; }
-  const t0 = performance.now(), dur = 1100;
-  (function tick(now) {
-    const t = clamp((now - t0) / dur, 0, 1);
-    el.textContent = Math.round(target * easeOut(t)).toLocaleString('en-US');
-    if (t < 1) requestAnimationFrame(tick);
-  })(t0);
-}
-const statsIO = new IntersectionObserver(entries => {
-  for (const en of entries) {
-    if (en.isIntersecting) {
-      $$('#hero-stats [data-count]').forEach(countUp);
-      statsIO.disconnect();
-    }
-  }
-}, { threshold: 0.4 });
-if ($('#hero-stats')) statsIO.observe($('#hero-stats'));
-
-/* 终端点击复制 */
-$$('.term-line[data-cmd]').forEach(line => {
-  line.addEventListener('click', async () => {
-    const cmd = line.dataset.cmd;
-    const tip = $('.tip', line);
-    try {
-      await navigator.clipboard.writeText(cmd);
-    } catch {
-      const ta = document.createElement('textarea');
-      ta.value = cmd; document.body.appendChild(ta);
-      ta.select(); document.execCommand('copy'); ta.remove();
-    }
-    line.classList.add('copied');
-    if (tip) { tip.textContent = '已复制 ✓'; }
-    setTimeout(() => {
-      line.classList.remove('copied');
-      if (tip) tip.textContent = '复制';
-    }, 1400);
-  });
-});
