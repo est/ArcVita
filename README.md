@@ -72,11 +72,14 @@ hover 任何一个事件点，所有存活人物的名字旁会显示他们当�
 ```
 ArcVita/
 ├── src/           # Python 采集流水线，构建脚本
-├── site/                  # 前端源码
-├── data/                  # 数据源
-├── tests/                 # 校验测试
-└── .github/workflows/     # GitHub Actions 自动部署
+├── site/          # 前端源码
+├── data/          # 数据子模块 -> CloudSettler/ArcVita-Data (CC BY-SA 4.0)
+├── tests/         # 校验测试
+└── .github/workflows/  # GitHub Actions 自动部署
 ```
+
+> 数据已拆至独立仓库 **git@github.com:CloudSettler/ArcVita-Data.git**（`data/` 作为 git submodule 挂载）。
+> 克隆需 `git clone --recursive` 或 `git submodule update --init --recursive`。
 
 ## 快速开始
 
