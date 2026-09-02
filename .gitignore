@@ -19,3 +19,4 @@ data.bak/
 # 本地调试图/浏览器快照产物
 output/
 .playwright-cli/
+*.swp

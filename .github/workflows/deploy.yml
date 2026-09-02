@@ -18,6 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # .gitmodules 用 SSH URL，CI 无 deploy key，改写为 HTTPS（公有仓库可匿名拉取）
+      - name: Rewrite submodule SSH URL to HTTPS
+        run: git config --global url."https://github.com/".insteadOf "git@github.com:"
+
       - uses: actions/checkout@v4
         with:
           submodules: recursive
