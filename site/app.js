@@ -94,7 +94,8 @@ const PHASE_COLORS = { '酝酿': '#7E8CA0', '破局': '#D9A441', '高潮': '#E85
 /* ---------------- 数据 ---------------- */
 
 let persons = [];                 // {qid,name,era,archetype,role,b,d,est,row,nw}
-let events = [];                  // {qid,row,year,title,type,isHl,htype,place,desc,note}
+let events = [];                  // {qid,row,year,wy,title,type,isHl,htype,place,desc,note}
+let contexts = [];                // 时代大事（_context）：{year,wy,dateStr,title,htype,place,desc,isHl}
 const eventsByQ = new Map();
 const centuryCache = new Map();   // century → json
 
@@ -125,7 +126,27 @@ async function loadTimelineData() {
     .sort((a, b2) => a.b - b2.b);
   persons.forEach((p, i) => { p.row = i; });
 
-  events = tlText.trim().split('\n').map(JSON.parse)
+  const rows = tlText.trim().split('\n').map(JSON.parse);
+
+  /* 时代大事（_context，无人物行）：标尺顶部的时代标记层 */
+  contexts = rows.filter(r => r.person_qid === '_context')
+    .map(r => {
+      const y = parseYear(r.date);
+      return {
+        year: y, wy: y == null ? 0 : warpY(y),
+        dateStr: r.date || '',
+        title: r.title || '（未名大事）',
+        type: r.type || '',
+        isHl: true,
+        htype: r.highlight_type || '大事',
+        place: r.place || '',
+        desc: r.description || r.highlight_note || '',
+      };
+    })
+    .filter(c => c.year != null)
+    .sort((a, b) => a.year - b.year);
+
+  events = rows.filter(r => r.person_qid !== '_context')
     .map(e => {
       const row = persons.findIndex(p => p.qid === e.person_qid);
       const y = parseYear(e.date);
@@ -506,6 +527,22 @@ function drawRuler(viewL, viewR) {
     }
   }
   ctx.textAlign = 'left';
+
+  /* 时代大事标记（标尺顶部一排朱砂菱形，hover 出 popover） */
+  if (contexts.length) {
+    ctx.fillStyle = '#E8502F';
+    for (const c of contexts) {
+      const x = yearX(c.wy);
+      if (x < -4 || x > W + 4) continue;
+      ctx.beginPath();
+      ctx.moveTo(x, 4);
+      ctx.lineTo(x + 3.2, 8.5);
+      ctx.lineTo(x, 13);
+      ctx.lineTo(x - 3.2, 8.5);
+      ctx.closePath();
+      ctx.fill();
+    }
+  }
 }
 
 /* ---- 主循环 ---- */
@@ -570,6 +607,16 @@ function hitDot(px, py) {
     const d = Math.hypot(dx, dy);
     const radius = ev.isHl ? 9 : 7;
     if (d < radius && d < bestD) { best = ev; bestD = d; }
+  }
+  return best;
+}
+
+function hitCtx(px, py) {
+  if (!contexts.length || py > 15) return null;   // 大事菱形在标尺顶部 y≈4..13
+  let best = null, bestD = 7;
+  for (const c of contexts) {
+    const d = Math.abs(px - yearX(c.wy));
+    if (d < bestD) { best = c; bestD = d; }
   }
   return best;
 }
@@ -640,8 +687,8 @@ canvas.addEventListener('pointermove', e => {
     return;
   }
 
-  /* 悬停：准线跟随光标；命中事件点则准线锁到事件年份并弹 popover */
-  const ev = hitDot(e.offsetX, e.offsetY);
+  /* 悬停：准线跟随光标；命中事件点/时代大事则准线锁定并弹 popover */
+  const ev = hitCtx(e.offsetX, e.offsetY) || hitDot(e.offsetX, e.offsetY);
   const yr = ev ? ev.year : Math.round(unwarpY(xYear(e.offsetX)));
   const changed = (ev?.title !== hoverDot?.title) || (hover?.yr !== yr);
   hover = { px: e.offsetX, py: e.offsetY, yr };
@@ -720,6 +767,12 @@ canvas.addEventListener('wheel', e => {
 }, { passive: false });
 
 function onClick(px, py) {
+  const ctxEv = hitCtx(px, py);
+  if (ctxEv) {
+    pinned = ctxEv;
+    showPop(ctxEv, px, py, true);
+    return;
+  }
   const dot = hitDot(px, py);
   if (dot) {
     pinned = dot;
@@ -1047,7 +1100,7 @@ function fillCounts() {
   const el = $('#tl-counts');
   if (!el) return;
   const hl = events.filter(e => e.isHl).length;
-  el.innerHTML = `<b>${persons.length}</b> 人 · <b>${events.length}</b> 事 · <b>${hl}</b> 幕名场面`;
+  el.innerHTML = `<b>${persons.length}</b> 人 · <b>${events.length}</b> 事 · <b>${hl}</b> 幕名场面 · <b>${contexts.length}</b> 大事`;
 }
 
 function armHints() {

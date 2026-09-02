@@ -71,22 +71,29 @@ def build_site(processed_dir: Path, site_data_dir: Path) -> dict:
 
     pmap = {p["qid"]: p for p in persons}
 
-    # === timeline.jsonl (events sorted by date) ===
-    events_sorted = sorted(events, key=lambda e: e.get("date") or "9999")
+    # === timeline.jsonl（人物事件 + _context 时代大事，按日期排序） ===
+    def _row(e, person_name):
+        pq = e.get("person_qid")
+        return {
+            "date": e.get("date"), "place": e.get("place_name"),
+            "title": e.get("title_zh"), "type": e.get("event_type"),
+            "is_highlight": bool(e.get("is_highlight")),
+            "highlight_type": e.get("highlight_type"),
+            "highlight_note": e.get("highlight_note"),
+            "person_qid": pq, "person": person_name,
+            "archetype": pmap.get(pq, {}).get("archetype"),
+            "era": pmap.get(pq, {}).get("era"),
+            "description": e.get("description_zh"),
+        }
+
+    rows = [_row(e, pmap.get(e["person_qid"], {}).get("name_zh")) for e in events]
+    # 时代大事（historical_contexts，person_qid=_context）：数据注释明确「用于名场面轨道」
+    rows += [_row(h, None) for h in highlights if h.get("person_qid") == "_context"]
+    rows.sort(key=lambda r: r["date"] or "9999")
     tl = site_data_dir / "timeline.jsonl"
     with tl.open("w", encoding="utf-8") as f:
-        for e in events_sorted:
-            p = pmap.get(e["person_qid"], {})
-            f.write(json.dumps({
-                "date": e.get("date"), "place": e.get("place_name"),
-                "title": e.get("title_zh"), "type": e.get("event_type"),
-                "is_highlight": bool(e.get("is_highlight")),
-                "highlight_type": e.get("highlight_type"),
-                "highlight_note": e.get("highlight_note"),
-                "person_qid": e.get("person_qid"), "person": p.get("name_zh"),
-                "archetype": p.get("archetype"), "era": p.get("era"),
-                "description": e.get("description_zh"),
-            }, ensure_ascii=False) + "\n")
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
     # === highlights.json ===
     (site_data_dir / "highlights.json").write_text(

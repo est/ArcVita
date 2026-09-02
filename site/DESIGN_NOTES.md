@@ -44,10 +44,12 @@
 - 数据只预载 `index.json + timeline.jsonl`（事件点），世纪分片 `data/<century>.json` 在聚焦时惰性拉取并缓存。
 - 全部动效有 `prefers-reduced-motion` 分支；canvas DPR ≤ 2。
 
-## 数据口径（顶栏计数 vs 构建输出）
+## 数据口径（2026-09-02 修复后）
 
-- 顶栏「99 人 · 626 事 · 366 幕名场面」= **实际渲染在轴上**的数字：事件流过滤掉无年份/所属人物无生年的条目（627→626）；朱砂点只画 `is_highlight=true` 的事件（366）。
-- 构建输出「627 events / 517 highlights」是 YAML 条目总数：highlights.yaml 有 151 条未挂进事件流。两边口径不同，别当 bug 对齐。
+- 顶栏「100 人 · 628 事 · 366 幕名场面 · 55 大事」：**events.yaml 条数 == 轴上渲染条数**，无静默过滤。
+- **时代大事图层**：highlights.yaml 中 `person_qid=_context` 的 151 条是天下大事（数据注释：「用于名场面轨道」）。55 条有日期 → build_site 写入 timeline.jsonl，前端渲染为标尺顶部朱砂菱形（hover/click 出 popover，同期年龄联动）；96 条无日期的是王表君主副本（禹/启/太康…仅王朝区间无在位年），这些人已是人物行，过滤即正确。
+- historical_contexts.yaml（38 条）是 _context 的精选子集，build 未消费（留作去重参照）。
+- 卫青/霍去病已拆为独立人物（data 26a5ca1；原合传生卒是复合字符串，严格解析失败曾入「年代不详」）。
 
 ## 踩过的坑
 
@@ -72,6 +74,5 @@
 
 - 同龄对比（不同朝代同年龄对齐）与境遇检索：README 路线图 04/05。
 - 名场面落地页（popover 内的成语/代表作跳专述）。
-- 数据对账：highlights.yaml 517 条仅 366 挂进事件流；「卫青与霍去病」年代不详被轴过滤（拆分或补约略生卒）。
 - 触控板横扫（deltaX）漫游方向真机手感确认。
 - playwright-cli 走 msedge（本机无 Chrome；`--browser msedge`）。
