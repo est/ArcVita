@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArcVita · 成事儿时间轴 — 把伟大人生当做事来读</title>
+  <meta name="description" content="把历史上值得记住的人按「做事」记录完整周期：一件事怎么缘起、经历什么阶段、在什么地方、做了什么决定。悬停看同期年龄，点击聚焦做事流。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='12' fill='%23E8502F'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='40' font-family='serif' font-weight='700' fill='%23EFE3CC'%3E%E4%BA%8B%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 顶栏 -->
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <svg class="brand-seal" viewBox="0 0 64 64" aria-hidden="true">
+        <rect x="2" y="2" width="60" height="60" rx="12" fill="#E8502F"/>
+        <rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="rgba(22,16,10,.30)" stroke-width="2"/>
+        <text x="32" y="45" text-anchor="middle" font-size="36" font-family="Kaiti SC, KaiTi, STKaiti, serif" font-weight="700" fill="#EFE3CC">事</text>
+      </svg>
+      <span class="brand-name">ArcVita<em>成事儿时间轴</em></span>
+    </a>
+    <nav class="topnav" aria-label="页面导航">
+      <a href="#origin">出发点</a>
+      <a href="#idea">设计理念</a>
+      <a href="#interaction">交互</a>
+      <a href="#data">数据</a>
+      <a class="nav-keep" href="#start">快速开始</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- 首屏：设问 + 数字 -->
+    <section class="hero">
+      <p class="hero-eyebrow rv-stamp" id="hero-eyebrow">
+        <span class="seal-inline">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="2" y="2" width="60" height="60" rx="12" fill="#E8502F"/>
+            <rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="rgba(22,16,10,.30)" stroke-width="2"/>
+            <text x="32" y="45" text-anchor="middle" font-size="36" font-family="Kaiti SC, KaiTi, STKaiti, serif" font-weight="700" fill="#EFE3CC">事</text>
+          </svg>
+          ARC VITA · 把人生当作事来读
+        </span>
+      </p>
+
+      <h1 class="rv" style="--d:.06s">李世民<mark>十八岁</mark>，<br>在干嘛？</h1>
+
+      <p class="hero-questions rv" style="--d:.14s">
+        <span>爱因斯坦最早何时迷上物理？</span><span class="dot">·</span>
+        <span>商鞅变法那年，其他人几岁？</span>
+      </p>
+
+      <p class="hero-sub rv" style="--d:.2s">
+        历史上的伟大人物，浩若烟海。把 TA 们放进<strong>同一个框架</strong>，按「做事」读完整人生——
+        一件事怎么<strong>缘起</strong>、经历什么<strong>阶段</strong>、在什么地方、做了什么<strong>决定</strong>。
+        下面这条轴上有 4000 年，现在就可以玩。
+      </p>
+
+      <div class="hero-cta rv" style="--d:.26s">
+        <a class="btn btn-primary" href="#timeline">进入时间轴 ↓</a>
+        <a class="btn btn-ghost" href="#idea">读设计理念</a>
+      </div>
+
+      <dl class="hero-stats rv" style="--d:.34s" id="hero-stats">
+        <div><dt><span data-count="99">0</span><span class="unit">人</span></dt><dd>值得记住的人</dd></div>
+        <div><dt><span data-count="627">0</span><span class="unit">件</span></dt><dd>记录在案的事</dd></div>
+        <div><dt><span data-count="517">0</span><span class="unit">幕</span></dt><dd>名场面</dd></div>
+        <div><dt><span data-count="4100">0</span><span class="unit">年</span></dt><dd>从大禹到乔布斯</dd></div>
+      </dl>
+    </section>
+
+    <!-- 签名元素：可玩时间轴 -->
+    <section class="tl-section" id="timeline" aria-label="可交互时间轴">
+      <div class="tl-frame" id="tl-frame">
+        <canvas id="tl-canvas" tabindex="0"
+          aria-label="历史人物时间轴。左右拖拽漫游四千年，滚轮缩放，悬停查看同期年龄，点击人物行聚焦其做事流，按 ESC 返回。"></canvas>
+
+        <div class="tl-hints" aria-hidden="true">
+          <span class="hint"><b>拖拽</b> 漫游四千年</span>
+          <span class="hint"><b>滚轮</b> 缩放年代</span>
+          <span class="hint"><b>悬停</b> 看同期年龄</span>
+          <span class="hint"><b>点击人物</b> 聚焦做事流</span>
+        </div>
+
+        <div class="tl-search">
+          <input id="tl-search" type="text" placeholder="搜人物…" autocomplete="off" aria-label="按人名搜索">
+          <div class="tl-suggest" id="tl-suggest" hidden></div>
+        </div>
+
+        <div class="tl-zoom" role="group" aria-label="缩放控制">
+          <button data-z="in" aria-label="放大">＋</button>
+          <button data-z="out" aria-label="缩小">－</button>
+          <button data-z="fit" aria-label="全览四千年" title="全览四千年">全</button>
+        </div>
+
+        <div class="tl-legend" id="tl-legend" aria-hidden="true"></div>
+
+        <div class="tl-pop" id="tl-pop" hidden role="dialog" aria-label="事件详情"></div>
+        <aside class="tl-panel" id="tl-panel" hidden aria-label="人物详情"></aside>
+
+        <div class="tl-status" id="tl-status" hidden>
+          <div class="ring" aria-hidden="true"></div>
+          <p class="msg">正在展开四千年……</p>
+        </div>
+
+        <noscript>
+          <div class="tl-status" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#16100A;">
+            <p class="msg">时间轴需要启用 JavaScript。</p>
+          </div>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- 出发点 -->
+    <section class="section" id="origin" data-rail="出发点">
+      <p class="kicker rv">WHY · 出发点</p>
+      <h2 class="rv" style="--d:.05s">人物传记只能一本一本读，<span class="thin">同时期一多，就理不清。</span></h2>
+      <p class="lede rv" style="--d:.1s">
+        时间跨度一长就得来回翻，同期人物一多关系就成了一团乱麻。所以做一条轴：
+        <strong>以「做事」为主线</strong>，让人生变成可以横着走、可以聚焦、可以对比的东西。
+      </p>
+
+      <ol class="roadmap">
+        <li class="rv">
+          <span class="no" aria-hidden="true">01</span>
+          <div>
+            <h3>记完整周期 <span class="tag now">已就绪</span></h3>
+            <p>把值得记住的人——<strong>模范或教训</strong>——按「做事」记录完整周期：怎么缘起，经历什么阶段，在什么地方，做了什么决定。</p>
+          </div>
+        </li>
+        <li class="rv" style="--d:.05s">
+          <span class="no" aria-hidden="true">02</span>
+          <div>
+            <h3>穿插名场面 <span class="tag now">已就绪</span></h3>
+            <p>成语诞生的那一刻、代表作公布的那一天、关键决策的转折点——让历史有<strong>画面感</strong>。轴上的朱砂色圆点就是它们。</p>
+          </div>
+        </li>
+        <li class="rv" style="--d:.1s">
+          <span class="no" aria-hidden="true">03</span>
+          <div>
+            <h3>天下共主世系 <span class="tag now">已就绪</span></h3>
+            <p>公元纪年普及之前，当时的人说日期得有参考系——所以君主世系必须<strong>不间断</strong>，每个人物至少能对上一个当时的「天下共主」。</p>
+          </div>
+        </li>
+        <li class="later rv" style="--d:.15s">
+          <span class="no" aria-hidden="true">04</span>
+          <div>
+            <h3>同龄对比 <span class="tag">后期</span></h3>
+            <p>不同朝代的人在同一「年龄」在做什么？同一时代发生了什么大事？<strong>横向对比人生刻度</strong>。</p>
+          </div>
+        </li>
+        <li class="later rv" style="--d:.2s">
+          <span class="no" aria-hidden="true">05</span>
+          <div>
+            <h3>境遇检索 <span class="tag">后期</span></h3>
+            <p>人生迷茫的时候，找到类似境遇的历史人物，看他的做事周期，<strong>得到启发</strong>。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 设计理念 -->
+    <section class="section" id="idea" data-rail="设计理念">
+      <p class="kicker rv">HOW · 设计理念</p>
+      <h2 class="rv" style="--d:.05s">做事流，<span class="thin">不是流水账。</span></h2>
+      <p class="lede rv" style="--d:.1s">
+        传统传记按时间罗列事件，是上帝视角的第三人称观察。但主角是<strong>第一人称在做事</strong>——
+        当时的他不知道未来，也受时代与身边人的限制。所以每件事都拆成四个阶段来看。
+      </p>
+
+      <div class="principle rv">
+        <figure aria-hidden="true">
+          <!-- 图示：做事流四阶段 vs 平铺流水账 -->
+          <svg viewBox="0 0 220 112" role="img">
+            <text x="0" y="12" font-size="9" fill="#857761" font-family="SF Mono,monospace">做事流</text>
+            <g>
+              <rect x="0"  y="20" width="46" height="16" rx="3" fill="#7E8CA0" opacity=".85"/>
+              <rect x="50" y="20" width="46" height="16" rx="3" fill="#D9A441" opacity=".85"/>
+              <rect x="100" y="20" width="64" height="16" rx="3" fill="#E8502F" opacity=".85"/>
+              <rect x="168" y="20" width="52" height="16" rx="3" fill="#3FA083" opacity=".85"/>
+              <text x="23" y="31" font-size="8.5" fill="#16100A" text-anchor="middle">酝酿</text>
+              <text x="73" y="31" font-size="8.5" fill="#16100A" text-anchor="middle">破局</text>
+              <text x="132" y="31" font-size="8.5" fill="#16100A" text-anchor="middle">高潮</text>
+              <text x="194" y="31" font-size="8.5" fill="#16100A" text-anchor="middle">收束</text>
+            </g>
+            <path d="M4 66 C 40 64, 60 52, 96 46 S 160 44, 216 56" fill="none" stroke="#EFE3CC" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="96" cy="46" r="3" fill="#E8502F"/>
+            <text x="0" y="94" font-size="9" fill="#857761" font-family="SF Mono,monospace">流水账</text>
+            <line x1="0" y1="104" x2="220" y2="104" stroke="#3A2D1E" stroke-width="1.4" stroke-dasharray="2 5"/>
+          </svg>
+        </figure>
+        <div>
+          <h3>拆阶段，看见起伏 <small>酝酿 · 破局 · 高潮 · 收束</small></h3>
+          <p>聚焦一个人物，TA 的每件事展开为<strong>四色阶段条</strong>：灰蓝的酝酿、鎏金的破局、朱砂的高潮、玉绿的收束。
+          起伏一眼可见，而不是一串等权重的年份。</p>
+        </div>
+      </div>
+
+      <div class="principle rv" style="--d:.05s">
+        <figure aria-hidden="true">
+          <!-- 图示：同期年龄对比 -->
+          <svg viewBox="0 0 220 112" role="img">
+            <g font-family="SF Mono,monospace" font-size="9" fill="#B4A488">
+              <text x="0" y="30">孔子</text>
+              <text x="0" y="58">孙武</text>
+              <text x="0" y="86">句践</text>
+            </g>
+            <rect x="34" y="22" width="176" height="10" rx="3" fill="#4E96C8" opacity=".8"/>
+            <rect x="46" y="50" width="150" height="10" rx="3" fill="#4E96C8" opacity=".55"/>
+            <rect x="20" y="78" width="184" height="10" rx="3" fill="#4E96C8" opacity=".55"/>
+            <line x1="110" y1="12" x2="110" y2="98" stroke="#D9A441" stroke-width="1.4" stroke-dasharray="3 3"/>
+            <circle cx="110" cy="27" r="4" fill="#E8502F" stroke="#EFE3CC" stroke-width="1"/>
+            <g font-family="SF Mono,monospace" font-size="8.5" fill="#D9A441">
+              <text x="118" y="31">40岁</text>
+              <text x="118" y="59">31岁</text>
+              <text x="118" y="87">54岁</text>
+            </g>
+            <text x="104" y="10" font-size="8" fill="#857761" text-anchor="end" font-family="SF Mono,monospace">前500年</text>
+          </svg>
+        </figure>
+        <div>
+          <h3>同期年龄对比 <small>同一时刻，各自几岁</small></h3>
+          <p>悬停任何一个事件点，一根金色时间线落下，<strong>所有存活人物的名字旁亮出他们当时的年龄</strong>；
+          死了的不显示，本人用棕色高亮，鼠标移开自动清除。
+          「公元前 356 年商鞅变法时，大家分别几岁」——一眼就知道。</p>
+          <a class="try" href="#timeline">去时间轴上试一试 ↑</a>
+        </div>
+      </div>
+
+      <div class="principle rv" style="--d:.1s">
+        <figure aria-hidden="true">
+          <!-- 图示：天下共主世系 -->
+          <svg viewBox="0 0 220 112" role="img">
+            <g>
+              <rect x="0" y="88" width="40" height="12" rx="2" fill="#3FA083" opacity=".8"/>
+              <rect x="44" y="88" width="52" height="12" rx="2" fill="#4E96C8" opacity=".8"/>
+              <rect x="100" y="88" width="52" height="12" rx="2" fill="#D25544" opacity=".8"/>
+              <rect x="156" y="88" width="64" height="12" rx="2" fill="#DFA03C" opacity=".8"/>
+            </g>
+            <g stroke="#B4A488" stroke-width="1" stroke-dasharray="2 3">
+              <line x1="30" y1="88" x2="30" y2="34"/>
+              <line x1="92" y1="88" x2="92" y2="52"/>
+              <line x1="168" y1="88" x2="168" y2="26"/>
+            </g>
+            <g fill="#EFE3CC" font-size="10.5" font-family="PingFang SC,sans-serif">
+              <text x="38" y="38">禹</text>
+              <text x="100" y="56">商鞅</text>
+              <text x="176" y="30">汉武帝</text>
+            </g>
+            <g font-size="8" fill="#857761" font-family="SF Mono,monospace">
+              <text x="20" y="111">夏</text><text x="64" y="111">春秋</text><text x="120" y="111">战国</text><text x="180" y="111">两汉</text>
+            </g>
+          </svg>
+        </figure>
+        <div>
+          <h3>天下共主世系 <small>时间轴不许间断</small></h3>
+          <p>轴的底部是<strong>不间断的世系条</strong>。在纪年没能普及的古代，君主的世系就是当时的「日历」——
+          每个人物、每件事，都能挂回到某个天下共主的年头上。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 时间轴交互 -->
+    <section class="section" id="interaction" data-rail="时间轴交互">
+      <p class="kicker rv">SPEC · 交互规格</p>
+      <h2 class="rv" style="--d:.05s">四种玩法，<span class="thin">一条对角线。</span></h2>
+      <p class="lede rv" style="--d:.1s">
+        人物按出生年从上往下排：最古老在<strong>左上</strong>，最新在<strong>右下</strong>。
+        沿对角线拖拽，时间就流过你的手指。
+      </p>
+
+      <ul class="spec">
+        <li class="rv">
+          <h3>基础漫游</h3>
+          <p class="s-body">水平滚动浏览全部历史，<strong>1× = 10px/年</strong>，1920px 宽的屏幕约看 200 年。
+          每个人从出生到死亡是一根朝代色横条，人生大事是条上的圆点。拖拽带惯性，滚轮以光标为锚缩放。</p>
+          <span class="state live">已上线</span>
+        </li>
+        <li class="rv" style="--d:.05s">
+          <h3>聚焦模式</h3>
+          <p class="s-body">点击人物行 → 自动缩放到 TA 的人生范围（<strong>±15% 缓冲</strong>），
+          展开事业周期条、四色阶段标注与事件详情；<kbd>ESC</kbd> 或再次点击 → 返回全局概览。</p>
+          <span class="state live">已上线</span>
+        </li>
+        <li class="rv" style="--d:.1s">
+          <h3>同期年龄</h3>
+          <p class="s-body">悬停事件点，同时代<strong>所有存活人物</strong>的名字旁显示当时年龄；本人棕色高亮，
+          已故的不显示，鼠标移走自动清除。</p>
+          <span class="state live">已上线</span>
+        </li>
+        <li class="rv" style="--d:.15s">
+          <h3>非欧几里得滚动</h3>
+          <p class="s-body">仿 <strong>Poincaré 盘</strong>的时间压缩：不做常规 Web 滚动，而是斜向拖拽。
+          人物众多处局部纵横滚动；人少处持续一拖，就看到时间流逝、人物此消彼长。</p>
+          <span class="state plan">规划中</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 数据来源 -->
+    <section class="section" id="data" data-rail="数据来源">
+      <p class="kicker rv">DATA · 数据来源</p>
+      <h2 class="rv" style="--d:.05s">两千卷古籍，<span class="thin">熬成一条轴。</span></h2>
+      <p class="lede rv" style="--d:.1s">
+        文言文由 <strong>MiMoCode subagent 批量提取</strong>，日期与地点经 Wikidata 对齐，
+        每一条都带着出处。以下是目前的数据底盘：
+      </p>
+
+      <div class="table-scroll rv" style="--d:.12s">
+        <table class="almanac">
+          <thead>
+            <tr><th>来源</th><th>用途</th><th>规模</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="src">离线精编</td><td class="use">25 个核心人物的完整做事周期</td><td class="scale">curated.yaml</td></tr>
+            <tr><td class="src">史记 · AI 提取</td><td class="use">先秦人物传记</td><td class="scale">11 人 / 5 章节</td></tr>
+            <tr><td class="src">史记 · AI 提取</td><td class="use">秦汉人物传记</td><td class="scale">15 人 / 8 章节</td></tr>
+            <tr><td class="src">王表 · AI 提取</td><td class="use">夏商周秦汉君主 + 名将</td><td class="scale">43 人</td></tr>
+            <tr><td class="src">Wikidata / Wikipedia</td><td class="use">日期精确化、地点 QID 对齐</td><td class="scale">可选在线增量</td></tr>
+            <tr><td class="src">古籍库 daizhigev20</td><td class="use">按朝代批量扩展传记</td><td class="scale">23,178 卷 / 2,157 传</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="data-note rv" style="--d:.16s">已构建：<span id="data-built">99 位人物 · 627 件事 · 517 幕名场面</span>，随 <code style="font-family:var(--f-mono);font-size:12px;color:var(--gold)">scripts/build_site.py</code> 重新生成。</p>
+    </section>
+
+    <!-- 快速开始 -->
+    <section class="section" id="start" data-rail="快速开始">
+      <p class="kicker rv">RUN · 快速开始</p>
+      <h2 class="rv" style="--d:.05s">一分钟，<span class="thin">本地跑起来。</span></h2>
+      <p class="lede rv" style="--d:.1s">点击任意一行即可复制。</p>
+
+      <div class="term rv" style="--d:.12s">
+        <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>arcvita — zsh</span></div>
+        <div class="term-body">
+          <div class="term-line" data-cmd="uv sync" title="点击复制"><span class="pr">$</span><span>uv sync</span><span class="tip">复制</span></div>
+          <div class="term-line" data-cmd="uv run python -m arcvita.cli" title="点击复制"><span class="pr">$</span><span>uv run python -m arcvita.cli<span class="cm">        # 全量采集</span></span><span class="tip">复制</span></div>
+          <div class="term-line" data-cmd="uv run python scripts/build_site.py" title="点击复制"><span class="pr">$</span><span>uv run python scripts/build_site.py<span class="cm">   # 构建前端数据</span></span><span class="tip">复制</span></div>
+          <div class="term-line" data-cmd="uv run python -m http.server -d site 8080" title="点击复制"><span class="pr">$</span><span>uv run python -m http.server -d site 8080<span class="cm">  # 本地预览</span></span><span class="tip">复制</span></div>
+          <div class="term-line" style="cursor:default"><span class="pr">$</span><span><span class="cursor"></span></span></div>
+        </div>
+      </div>
+
+      <p class="stack-note rv" style="--d:.16s">
+        <b>技术栈</b> — 采集：Python + httpx + pydantic + SQLite ·
+        前端：纯 HTML/CSS/JS，无框架，canvas 渲染 · 部署：GitHub Actions → GitHub Pages
+      </p>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <svg class="f-seal" viewBox="0 0 64 64" aria-hidden="true">
+      <rect x="2" y="2" width="60" height="60" rx="12" fill="#E8502F"/>
+      <rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="rgba(22,16,10,.30)" stroke-width="2"/>
+      <text x="32" y="45" text-anchor="middle" font-size="36" font-family="Kaiti SC, KaiTi, STKaiti, serif" font-weight="700" fill="#EFE3CC">事</text>
+    </svg>
+    <p class="f-line">ArcVita · 成事儿时间轴</p>
+    <p class="f-quote">「左上最古老，右下最新——沿对角线，走过四千年。」</p>
+    <p class="f-meta">
+      代码 MIT · 数据 CC BY-SA 4.0<br>
+      把人生当作事来读 · <a href="#top">回到顶部 ↑</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

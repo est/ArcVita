@@ -4,13 +4,13 @@ __pycache__/
 .uv/
 dist/
 .ruff_cache/
-data/raw/
-!data/processed/
-data/processed/_report.md
-data/curated/
+# data/ 由子模块 CloudSettler/ArcVita-Data 提供（见 .gitmodules）
+# 子模块内部的 .gitignore 负责 raw/ 与 biography.db 的忽略
+# 本库不再直接忽略 data/ 下文件
 _tmp/
 .mimocode/.cron-lock
 .mimocode/scheduled_tasks.json
 daizhigev20
 .mimocode/plans/
-site/data/persons.json
+# site/data/ 为构建产物（CI: uv run python scripts/build_site.py 重新生成）
+site/data/
