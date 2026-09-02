@@ -196,6 +196,7 @@ def test_cache_store_dual_probe():
     legacy_data = {"qid": legacy_probe_qid, "zhwiki_title": "测试", "first_para": "测试首段"}
     # 模拟旧路径写入
     legacy_path = Path("data/raw") / f"{legacy_probe_qid}.wikipedia.json"
+    legacy_path.parent.mkdir(parents=True, exist_ok=True)   # 克隆后 data/raw 可能不存在
     try:
         import json
 
