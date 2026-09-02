@@ -148,9 +148,10 @@ let worldH = 0;
 let RAIL = 100;   // 固定人名列宽度（userstory：横向滚动时名字不消失）
 
 const view = { x: -2050, ppy: 0.085, y: 0 };   // x：左缘年份；y：纵向滚动 px
-let mode = 'rest';                              // rest | drag | inertia | tween
+let mode = 'rest';                              // rest | drag | inertia | tween | flow
 let tween = null;
 let vel = { x: 0, y: 0 };                       // inertia：年/s 与 px/s
+let navV = 0;                                   // flow：斜向漫游时间速度（年/s，滚轮冲量积累）
 let needs = true;
 
 let hover = null;          // {px, py, yr} 时间准线
@@ -184,6 +185,31 @@ function clampView() {
   view.x = clamp(view.x, MIN_YEAR - over, MAX_YEAR + over - span);
   view.y = clamp(view.y, 0, Math.max(0, worldH - H));
 }
+
+/* ---- 非欧几里得斜向漫游：滚动路径被弯回「有人存在的带」 ---- */
+
+function rowForTime(t) {
+  // 目标：t 时刻 ~40 岁 cohort 所在行；附近无存活者则沿 cohort 线走（空旷段自然走平 = 纯水平快进）
+  let lo = 0, hi = persons.length;
+  const probe = t - 40;
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (persons[mid].b < probe) lo = mid + 1; else hi = mid; }
+  const i0 = clamp(lo, 0, Math.max(0, persons.length - 1));
+  for (let k = 0; k <= 60; k++) {          // 就近落回存活者（±60 行内）
+    for (const i of (k === 0 ? [i0] : [i0 + k, i0 - k])) {
+      const p = persons[i];
+      if (p && p.b <= t && t <= p.d) return i;
+    }
+  }
+  return i0;
+}
+
+function bandY(t) {
+  if (!persons.length) return 0;
+  const yT = rowForTime(t) * ROW_H + ROW_H / 2 - (H - RULER_H) / 2;
+  return clamp(yT, 0, Math.max(0, worldH - H));
+}
+
+function maxNavV() { return (W / view.ppy) * 1.5; }   // 每秒最多漫游 1.5 屏的年数
 
 function tweenTo(to, dur = 700, ease = easeInOut) {
   if (RM || dur <= 0) { Object.assign(view, to); mode = 'rest'; needs = true; return; }
@@ -481,6 +507,15 @@ function loop(now) {
     vel.x *= k; vel.y *= k;
     if (Math.hypot(vel.x, vel.y) < 3) mode = 'rest';
     needs = true;
+  } else if (mode === 'flow') {
+    /* 斜向漫游：时间匀速前进，y 追贴存活带（人多坡陡、人少走平快进） */
+    view.x += navV * dt;
+    navV *= Math.exp(-dt * 2.8);
+    if (Math.abs(navV) < 2) navV = 0;
+    const yT = bandY(view.x + (W - RAIL) / (2 * view.ppy));
+    view.y += (yT - view.y) * (RM ? 1 : 1 - Math.exp(-dt * 5));
+    if (navV === 0 && Math.abs(yT - view.y) < 0.5) mode = 'rest';
+    needs = true;
   }
 
   if (needs) {
@@ -543,6 +578,7 @@ canvas.addEventListener('pointerdown', e => {
   };
   mode = 'drag';
   vel = { x: 0, y: 0 };
+  navV = 0;
   canvas.classList.add('dragging');
   hidePop();
   canvas.style.cursor = 'grabbing';
@@ -636,8 +672,24 @@ function zoomAt(px, py, factor) {
 
 canvas.addEventListener('wheel', e => {
   e.preventDefault();
-  const factor = Math.exp(-e.deltaY * (e.deltaMode === 1 ? 0.05 : 0.0016));
-  zoomAt(e.offsetX, e.offsetY, factor);
+  if (e.ctrlKey || e.metaKey) {   // ⌘滚轮 / 触控板捏合 → 缩放
+    const factor = Math.exp(-e.deltaY * (e.deltaMode === 1 ? 0.05 : 0.0016));
+    zoomAt(e.offsetX, e.offsetY, factor);
+    return;
+  }
+  if (focusQ || mode === 'drag' || mode === 'tween') return;
+  const d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+  if (!d) return;
+  if (RM) {                       // 直映位移：前进 + 立即贴带
+    view.x += d / view.ppy;
+    view.y = bandY(view.x + (W - RAIL) / (2 * view.ppy));
+    needs = true;
+    return;
+  }
+  navV = clamp(navV + d / view.ppy * 3, -maxNavV(), maxNavV());
+  tween = null;
+  mode = 'flow';
+  needs = true;
 }, { passive: false });
 
 function onClick(px, py) {
