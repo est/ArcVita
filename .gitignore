@@ -14,3 +14,4 @@ daizhigev20
 .mimocode/plans/
 # site/data/ 为构建产物（CI: uv run python scripts/build_site.py 重新生成）
 site/data/
+data.bak/
