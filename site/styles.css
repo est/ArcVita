@@ -119,6 +119,33 @@ a { color: inherit; }
   letter-spacing: 0.28em;
 }
 
+/* 缩放比例控件（顶栏） */
+.tl-zoomctl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  max-width: 300px;
+  margin-left: clamp(14px, 2.5vw, 30px);
+}
+
+.tl-zoomctl input[type="range"] {
+  flex: 1;
+  height: 3px;
+  accent-color: var(--cinnabar);
+  cursor: pointer;
+  min-width: 60px;
+}
+
+.tl-zoomctl output {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
 /* ---------------- 应用壳：全屏时间轴 ---------------- */
 
 .tl-counts {
@@ -206,7 +233,7 @@ a { color: inherit; }
   max-width: calc(100% - 24px);
 }
 
-.tl-legend .era-dot {
+.tl-legend .era-chip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -217,32 +244,22 @@ a { color: inherit; }
   border: 1px solid var(--line);
   border-radius: 99px;
   padding: 3px 10px;
-  pointer-events: none;
-}
-
-.tl-legend .era-dot i {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  flex: none;
-}
-
-.tl-legend .era-jump {
-  font-size: 11.5px;
-  letter-spacing: 0.08em;
-  color: var(--paper);
-  background: rgba(32, 23, 16, 0.85);
-  border: 1px solid var(--line-strong);
-  border-radius: 99px;
-  padding: 3px 12px;
   cursor: pointer;
   font-family: var(--f-body);
   transition: border-color 0.25s var(--ease-out), color 0.25s var(--ease-out),
               transform 0.25s var(--ease-out);
 }
 
-.tl-legend .era-jump:hover {
-  border-color: var(--cinnabar);
-  color: var(--cinnabar);
+.tl-legend .era-chip i {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex: none;
+  background: var(--ec);
+}
+
+.tl-legend .era-chip:hover {
+  border-color: var(--ec, var(--cinnabar));
+  color: var(--paper);
   transform: translateY(-1px);
 }
 
@@ -659,6 +676,7 @@ a { color: inherit; }
   .topbar { height: 52px; padding: 0 14px; }
   .brand-name em { display: none; }
   .tl-counts { display: none; }
+  .tl-zoomctl { display: none; }
   .tl-search { width: 128px; top: 6px; right: 8px; }
   .tl-search input:focus { width: 100%; }
   .tl-zoom { right: 8px; bottom: 8px; gap: 5px; }
@@ -674,7 +692,7 @@ a { color: inherit; }
   .tl-hints { top: 42px; right: 8px; gap: 4px; }
   .tl-hints .hint { font-size: 10.5px; padding: 2px 9px; }
   .tl-legend { left: 8px; bottom: 8px; gap: 4px; }
-  .tl-legend .era-dot { display: none; }
+  .tl-legend .era-chip { font-size: 10px; padding: 2px 8px; }
 }
 
 /* ---------------- 降低动效 ---------------- */

@@ -58,15 +58,38 @@ function eraOfYear(y) {
   return ERAS[ERAS.length - 1];
 }
 
-const PHASE_COLORS = { '酝酿': '#7E8CA0', '破局': '#D9A441', '高潮': '#E8502F', '收束': '#3FA083' };
+/* ---- Poincaré 简化时间压缩：分段线性 年↔warp ----
+   中段 W_CORE（春秋战国→秦汉三国）斜率 1 = 正常比例；
+   两侧斜率 W_EDGE（1/3：时间 3 倍密集）。视图 {x, ppy} 全程以 warp 年为单位。 */
+const W_CORE = [-800, 250];
+const W_EDGE = 1 / 3;
 
-const JUMPS = [
-  { label: '上古',     cy: -1600, ppy: 0.5 },
-  { label: '春秋战国', cy: -390,  ppy: 1.3 },
-  { label: '秦汉',     cy: 10,    ppy: 1.7 },
-  { label: '三国',     cy: 250,   ppy: 2.4 },
-  { label: '近世',     cy: 1400,  ppy: 0.42 },
-];
+function warpY(y) {
+  if (y < W_CORE[0]) return W_CORE[0] + (y - W_CORE[0]) * W_EDGE;
+  if (y > W_CORE[1]) return W_CORE[1] + (y - W_CORE[1]) * W_EDGE;
+  return y;
+}
+function unwarpY(w) {
+  if (w < W_CORE[0]) return W_CORE[0] + (w - W_CORE[0]) / W_EDGE;
+  if (w > W_CORE[1]) return W_CORE[1] + (w - W_CORE[1]) / W_EDGE;
+  return w;
+}
+
+ERAS.forEach(e => { e.wf = warpY(e.f); e.wu = warpY(e.u); });
+
+/* 图例即快跳：每个朝代色块可点击（ppy 为 px/warp年） */
+const ERA_JUMPS = {
+  '上古':      { cy: -1600, ppy: 0.5 },
+  '西周·春秋': { cy: -700,  ppy: 1.2 },
+  '战国':      { cy: -350,  ppy: 2.2 },
+  '秦':        { cy: -215,  ppy: 5 },
+  '两汉':      { cy: 0,     ppy: 2.2 },
+  '三国':      { cy: 250,   ppy: 3.5 },
+  '帝制之后':  { cy: 1100,  ppy: 0.8 },
+  '近现代':    { cy: 1960,  ppy: 2.2 },
+};
+
+const PHASE_COLORS = { '酝酿': '#7E8CA0', '破局': '#D9A441', '高潮': '#E8502F', '收束': '#3FA083' };
 
 /* ---------------- 数据 ---------------- */
 
@@ -96,7 +119,7 @@ async function loadTimelineData() {
       let d = parseYear(p.death_date);
       const est = d == null && b != null;
       if (est) d = b + 60;
-      return { ...p, name: p.name_zh, b, d, est };
+      return { ...p, name: p.name_zh, b, d, est, wb: warpY(b), wd: warpY(d) };
     })
     .filter(p => p.b != null)   // 生年可考即可入轴；卒年不详者以虚化尾段示之
     .sort((a, b2) => a.b - b2.b);
@@ -105,9 +128,11 @@ async function loadTimelineData() {
   events = tlText.trim().split('\n').map(JSON.parse)
     .map(e => {
       const row = persons.findIndex(p => p.qid === e.person_qid);
+      const y = parseYear(e.date);
       return {
         qid: e.person_qid, row,
-        year: parseYear(e.date),
+        year: y,
+        wy: y == null ? 0 : warpY(y),
         dateStr: e.date || '',
         title: e.title || '（未命名事件）',
         type: e.type || '',
@@ -142,6 +167,7 @@ const ROW_H = 36;
 const MIN_PPY = 0.09, MAX_PPY = 64;
 
 const MIN_YEAR = -2160, MAX_YEAR = 2020;
+const WMIN = warpY(MIN_YEAR), WMAX = warpY(MAX_YEAR);   // 视图坐标（warp 年）边界
 
 let W = 0, H = 0, dpr = 1;
 let worldH = 0;
@@ -182,7 +208,7 @@ function resize() {
 function clampView() {
   const span = W / view.ppy;
   const over = span * 0.3;
-  view.x = clamp(view.x, MIN_YEAR - over, MAX_YEAR + over - span);
+  view.x = clamp(view.x, WMIN - over, WMAX + over - span);
   view.y = clamp(view.y, 0, Math.max(0, worldH - H));
 }
 
@@ -235,6 +261,7 @@ function draw() {
 
   const viewL = view.x, viewR = xYear(W);
   const spotlight = !!focusQ;
+  syncZoomCtl();
 
   /* ---- 内容区（固定人名列右侧，裁剪） ---- */
   ctx.save();
@@ -244,7 +271,7 @@ function draw() {
 
   /* 朝代色带（颜色 = 时间） */
   for (const e of ERAS) {
-    const a = Math.max(viewL, e.f), b = Math.min(viewR, e.u);
+    const a = Math.max(viewL, e.wf), b = Math.min(viewR, e.wu);
     if (a >= b) continue;
     const x0 = yearX(a), x1 = yearX(b);
     ctx.fillStyle = e.c;
@@ -268,19 +295,13 @@ function draw() {
     const focused = focusQ === p.qid;
     const barH = focused ? 12 : 8;
 
-    /* 时间准线悬停（含事件点）时：不在场的行淡出（README：死了的不显示） */
-    let alpha = 1;
-    if (hover != null) {
-      const yr = hover.yr;
-      if (yr < p.b || yr > p.d) alpha = 0.55;
-    }
-    if (spotlight && !focused) alpha = Math.min(alpha, 0.25);
+    let alpha = spotlight && !focused ? 0.25 : 1;   // 聚焦聚光灯；hover 不变暗（只留准线+年龄，用户定稿）
 
-    const barX = yearX(p.b);
+    const barX = yearX(p.wb);
 
     /* 人生横条 */
     const eBar = eraOfYear(p.b);
-    const bx1 = yearX(p.d);
+    const bx1 = yearX(p.wd);
     ctx.globalAlpha = alpha;
     ctx.fillStyle = eBar.c;
     rr(barX, barY, Math.max(3, bx1 - barX), barH, barH / 2);
@@ -302,8 +323,8 @@ function draw() {
       }
       phases.sort((a, b) => a.s - b.s);
       for (const ph of phases) {
-        const px0 = Math.max(barX, yearX(ph.s));
-        const px1 = Math.min(bx1, yearX(ph.e));
+        const px0 = Math.max(barX, yearX(warpY(ph.s)));
+        const px1 = Math.min(bx1, yearX(warpY(ph.e)));
         if (px1 <= px0) continue;
         ctx.globalAlpha = 0.85;
         ctx.fillStyle = ph.c;
@@ -313,8 +334,8 @@ function draw() {
 
     /* 事件点 */
     for (const ev of eventsByQ.get(p.qid) || []) {
-      if (ev.year < viewL - 5 || ev.year > viewR + 5) continue;
-      const cx = yearX(ev.year);
+      if (ev.wy < viewL - 5 || ev.wy > viewR + 5) continue;
+      const cx = yearX(ev.wy);
       const cy = barY + barH / 2;
       const inLife = ev.year >= p.b && ev.year <= p.d;
       ctx.globalAlpha = alpha;
@@ -335,7 +356,7 @@ function draw() {
   /* 时间准线 + 年份章 */
   if (hover != null) {
     const yr = hover.yr;
-    const cx = yearX(yr);
+    const cx = yearX(warpY(yr));
     ctx.globalAlpha = 1;
     ctx.strokeStyle = 'rgba(217,164,65,.5)';
     ctx.lineWidth = 1;
@@ -359,7 +380,7 @@ function draw() {
   if (hoverDot) {
     const top = rowTop(hoverDot.row) + 13 + ((focusQ === hoverDot.qid) ? 12 : 8) / 2;
     ctx.beginPath();
-    ctx.arc(yearX(hoverDot.year), top, 8, 0, Math.PI * 2);
+    ctx.arc(yearX(hoverDot.wy), top, 8, 0, Math.PI * 2);
     ctx.strokeStyle = 'rgba(239,227,204,.85)';
     ctx.lineWidth = 1.4;
     ctx.stroke();
@@ -381,9 +402,7 @@ function draw() {
     const top = rowTop(r);
     const focused = focusQ === p.qid;
 
-    let alpha = 1;
-    if (hover != null && (hover.yr < p.b || hover.yr > p.d)) alpha = 0.55;
-    if (spotlight && !focused) alpha = Math.min(alpha, 0.3);
+    let alpha = spotlight && !focused ? 0.3 : 1;
 
     ctx.font = F_NAME;
     if (p.nw == null) p.nw = ctx.measureText(p.name).width;
@@ -436,7 +455,7 @@ function drawRuler(viewL, viewR) {
 
   /* 朝代段落 */
   for (const e of ERAS) {
-    const a = Math.max(viewL, e.f), b = Math.min(viewR, e.u);
+    const a = Math.max(viewL, e.wf), b = Math.min(viewR, e.wu);
     if (a >= b) continue;
     const x0 = yearX(a), x1 = yearX(b);
     ctx.fillStyle = e.c;
@@ -451,30 +470,38 @@ function drawRuler(viewL, viewR) {
   }
   ctx.globalAlpha = 1;
 
-  /* 自适应刻度 */
+  /* 自适应刻度（按压缩区段分别选步长：边缘区时间 3 倍密集，步长 ×3 保持可读） */
   const steps = [1000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
-  const step = steps.find(s => s * view.ppy >= 78) || 1;
-  const y0 = Math.ceil(viewL / step) * step;
+  const zones = [
+    [viewL, Math.min(viewR, W_CORE[0]), W_EDGE],
+    [Math.max(viewL, W_CORE[0]), Math.min(viewR, W_CORE[1]), 1],
+    [Math.max(viewL, W_CORE[1]), viewR, W_EDGE],
+  ];
   ctx.font = F_TICK;
   ctx.textAlign = 'center';
-  for (let y = y0; y <= viewR; y += step) {
-    const x = yearX(y);
-    ctx.strokeStyle = 'rgba(239,227,204,.3)';
-    ctx.beginPath();
-    ctx.moveTo(x + 0.5, RULER_H - 14);
-    ctx.lineTo(x + 0.5, RULER_H - 5);
-    ctx.stroke();
-    ctx.fillStyle = '#B4A488';
-    ctx.fillText(fmtYear(y), x, RULER_H - 20);
-    if (step * view.ppy > 120) {   // 细分刻度
-      const sub = step / 5;
-      for (let k = 1; k < 5; k++) {
-        const sx = yearX(y - step + sub * k);
-        ctx.strokeStyle = 'rgba(239,227,204,.12)';
-        ctx.beginPath();
-        ctx.moveTo(sx + 0.5, RULER_H - 9);
-        ctx.lineTo(sx + 0.5, RULER_H - 5);
-        ctx.stroke();
+  for (const [za, zb, slope] of zones) {
+    if (zb <= za) continue;
+    const step = steps.find(s => s * view.ppy * slope >= 78) || 1;
+    const y0 = Math.ceil(unwarpY(za) / step) * step;
+    for (let y = y0; y <= unwarpY(zb); y += step) {
+      const x = yearX(warpY(y));
+      ctx.strokeStyle = 'rgba(239,227,204,.3)';
+      ctx.beginPath();
+      ctx.moveTo(x + 0.5, RULER_H - 14);
+      ctx.lineTo(x + 0.5, RULER_H - 5);
+      ctx.stroke();
+      ctx.fillStyle = '#B4A488';
+      ctx.fillText(fmtYear(y), x, RULER_H - 20);
+      if (step * view.ppy * slope > 120) {   // 细分刻度
+        const sub = step / 5;
+        for (let k = 1; k < 5; k++) {
+          const sx = yearX(warpY(y - step + sub * k));
+          ctx.strokeStyle = 'rgba(239,227,204,.12)';
+          ctx.beginPath();
+          ctx.moveTo(sx + 0.5, RULER_H - 9);
+          ctx.lineTo(sx + 0.5, RULER_H - 5);
+          ctx.stroke();
+        }
       }
     }
   }
@@ -512,7 +539,7 @@ function loop(now) {
     view.x += navV * dt;
     navV *= Math.exp(-dt * 2.8);
     if (Math.abs(navV) < 2) navV = 0;
-    const yT = bandY(view.x + (W - RAIL) / (2 * view.ppy));
+    const yT = bandY(unwarpY(view.x + (W - RAIL) / (2 * view.ppy)));
     view.y += (yT - view.y) * (RM ? 1 : 1 - Math.exp(-dt * 5));
     if (navV === 0 && Math.abs(yT - view.y) < 0.5) mode = 'rest';
     needs = true;
@@ -539,7 +566,7 @@ function hitDot(px, py) {
     const top = rowTop(r);
     if (py < top - 2 || py > top + ROW_H - 4) continue;
     const cy = top + 13 + ((focusQ === ev.qid) ? 12 : 8) / 2;
-    const dx = px - yearX(ev.year), dy = py - cy;
+    const dx = px - yearX(ev.wy), dy = py - cy;
     const d = Math.hypot(dx, dy);
     const radius = ev.isHl ? 9 : 7;
     if (d < radius && d < bestD) { best = ev; bestD = d; }
@@ -615,7 +642,7 @@ canvas.addEventListener('pointermove', e => {
 
   /* 悬停：准线跟随光标；命中事件点则准线锁到事件年份并弹 popover */
   const ev = hitDot(e.offsetX, e.offsetY);
-  const yr = ev ? ev.year : Math.round(xYear(e.offsetX));
+  const yr = ev ? ev.year : Math.round(unwarpY(xYear(e.offsetX)));
   const changed = (ev?.title !== hoverDot?.title) || (hover?.yr !== yr);
   hover = { px: e.offsetX, py: e.offsetY, yr };
   hoverDot = ev;
@@ -682,7 +709,7 @@ canvas.addEventListener('wheel', e => {
   if (!d) return;
   if (RM) {                       // 直映位移：前进 + 立即贴带
     view.x += d / view.ppy;
-    view.y = bandY(view.x + (W - RAIL) / (2 * view.ppy));
+    view.y = bandY(unwarpY(view.x + (W - RAIL) / (2 * view.ppy)));
     needs = true;
     return;
   }
@@ -753,10 +780,10 @@ async function focusPerson(p) {
   focusQ = p.qid;
   focusData = null;
 
-  const span = Math.max(p.d - p.b, 8);
-  const from = p.b - span * 0.15, to = p.d + span * 0.15;
+  const span = Math.max(p.wd - p.wb, 8);
+  const from = p.wb - span * 0.15, to = p.wd + span * 0.15;
   const ppyT = clamp((W * 0.82) / (to - from), MIN_PPY, MAX_PPY);
-  const xT = clamp(from - W * 0.08 / ppyT, MIN_YEAR, MAX_YEAR);
+  const xT = clamp(from - W * 0.08 / ppyT, WMIN, WMAX);
   /* 行中心（世界坐标）对到视口中心：screenY = RULER_H + worldY - view.y */
   const yT = clamp(p.row * ROW_H + ROW_H / 2 - (H - RULER_H) / 2, 0, Math.max(0, worldH - H));
   tweenTo({ x: xT, ppy: ppyT, y: yT }, RM ? 0 : 720, easeInOut);
@@ -892,25 +919,57 @@ canvas.addEventListener('keydown', e => {
   if (e.key === '-') zoomAt(W / 2, H / 2, 1 / 1.3);
 });
 
-/* ---- 图例与快跳 ---- */
+/* ---- 图例即快跳：朝代色块 chip，颜色 = 数据编码，点击 = 跳转 ---- */
 
 function buildLegend() {
   const box = $('#tl-legend');
-  const dots = ERAS.map(e =>
-    `<span class="era-dot"><i style="background:${e.c}"></i>${e.name}</span>`).join('');
-  const jumps = JUMPS.map((j, i) =>
-    `<button class="era-jump" data-i="${i}">${j.label}</button>`).join('');
-  box.innerHTML = jumps + dots;
-  box.addEventListener('click', e => {
-    const btn = e.target.closest('.era-jump');
+  box.innerHTML = ERAS.map((e, i) =>
+    `<button class="era-chip" data-i="${i}" aria-label="跳转到${e.name}" style="--ec:${e.c}"><i></i>${e.name}</button>`).join('');
+  box.addEventListener('click', ev => {
+    const btn = ev.target.closest('.era-chip');
     if (!btn) return;
-    const j = JUMPS[+btn.dataset.i];
+    const e = ERAS[+btn.dataset.i];
+    const j = ERA_JUMPS[e.name] || { cy: (e.f + e.u) / 2, ppy: 1.2 };
     tweenTo({
-      x: clamp(j.cy - W / 2 / j.ppy, MIN_YEAR, MAX_YEAR - W / j.ppy),
+      x: clamp(warpY(j.cy) - (W - RAIL) / (2 * j.ppy), WMIN, WMAX - W / j.ppy),
       ppy: j.ppy,
-      y: view.y,
+      y: bandY(j.cy),
     }, RM ? 0 : 800, easeInOut);
   });
+}
+
+/* ---- 顶栏缩放比例控件（log 刻度滑杆 + 视野读数） ---- */
+
+const zoomSlider = $('#zoom-slider');
+const zoomReadout = $('#zoom-readout');
+let lastZoomSync = -1;
+
+function ppyToSlider(p) {
+  const t = (Math.log(p) - Math.log(MIN_PPY)) / (Math.log(MAX_PPY) - Math.log(MIN_PPY));
+  return Math.round(clamp(t, 0, 1) * 1000);
+}
+function sliderToPpy(v) {
+  return Math.exp(Math.log(MIN_PPY) + (v / 1000) * (Math.log(MAX_PPY) - Math.log(MIN_PPY)));
+}
+
+if (zoomSlider) zoomSlider.addEventListener('input', () => {
+  const c = (RAIL + W) / 2;                       // 以内容区中心的时间为锚
+  const yearC = unwarpY(view.x + c / view.ppy);
+  view.ppy = sliderToPpy(+zoomSlider.value);
+  view.x = warpY(yearC) - c / view.ppy;
+  clampView();
+  needs = true;
+});
+
+function syncZoomCtl() {
+  if (!zoomSlider) return;
+  if (Math.abs(view.ppy - lastZoomSync) > view.ppy * 0.001) {
+    lastZoomSync = view.ppy;
+    zoomSlider.value = ppyToSlider(view.ppy);
+  }
+  const span = unwarpY(view.x + W / view.ppy) - unwarpY(view.x);
+  const text = `视野 ${span >= 100 ? Math.round(span / 10) * 10 : Math.round(span)} 年`;
+  if (zoomReadout && zoomReadout.textContent !== text) zoomReadout.textContent = text;
 }
 
 /* ---- 搜索（按人名快速定位） ---- */
@@ -957,8 +1016,8 @@ $$('.tl-zoom button').forEach(btn => btn.addEventListener('click', () => {
   else if (z === 'out') zoomAt(W / 2, H / 2, 1 / 1.4);
   else if (z === 'fit') {
     tweenTo({
-      x: MIN_YEAR - 30,
-      ppy: clamp((W * 0.96) / (MAX_YEAR - MIN_YEAR + 60), MIN_PPY, MAX_PPY),
+      x: WMIN - 10,
+      ppy: clamp((W * 0.96) / (WMAX - WMIN + 20), MIN_PPY, MAX_PPY),
       y: 0,
     }, RM ? 0 : 800, easeInOut);
   }
@@ -1009,12 +1068,12 @@ async function boot() {
     resize();
     fillCounts();
     armHints();
-    const ppy0 = clamp(W / 200, MIN_PPY, MAX_PPY);   // 默认视野 ≈ 200 年（1920px 屏 ≈ README 1x）
+    const ppy0 = clamp(W / 200, MIN_PPY, MAX_PPY);   // 默认视野 ≈ 200 年（核心带 1:1）
     if (RM) {
-      Object.assign(view, { x: -820, ppy: ppy0, y: 0 });
+      Object.assign(view, { x: warpY(-820), ppy: ppy0, y: 0 });
     } else {
-      Object.assign(view, { x: -2050, ppy: 0.085, y: 0 });
-      tweenTo({ x: -820, ppy: ppy0, y: 0 }, 1600, easeOut);
+      Object.assign(view, { x: warpY(-2050), ppy: 0.085, y: 0 });
+      tweenTo({ x: warpY(-820), ppy: ppy0, y: 0 }, 1600, easeOut);
     }
     needs = true;
   } catch (err) {
