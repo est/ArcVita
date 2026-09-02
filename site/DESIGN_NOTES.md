@@ -32,6 +32,8 @@
 ## 交互实现要点（改版前先读）
 
 - 视图模型 `{x: 左缘年份, ppy: px/年, y}`；拖拽直控，释放转惯性（`exp(-4.5t)` 衰减），滚轮/聚焦/快跳走 tween（easeInOutCubic）。
+- **默认视野 ≈ 200 年**：boot 目标 `ppy = W/200`（1920px 屏 ≈ README 1x = 10px/年）。用户反馈：一屏只看 2–3 个人、一辈子的事件点稀疏可点，比全局密铺好用。
+- **hover 变暗要 subtle**：不在场行/条 alpha 0.55（用户反馈 0.2x 太暗）。
 - 人物行 = 按生年排序；聚焦缩放 = 人生范围 ±15% 缓冲，行中心对视口中心：`view.y = row*ROW_H + ROW_H/2 - (H-RULER_H)/2`。
 - 日期解析兼容「约-2100 / 前5 / -100-07-12 / 32」；卒年不详（曹沫）→ 生年+60 虚化尾段。
 - 数据只预载 `index.json + timeline.jsonl`（事件点），世纪分片 `data/<century>.json` 在聚焦时惰性拉取并缓存。
@@ -52,21 +54,14 @@
 
 ## 本地开发 / 数据
 
-- `data/` 是 submodule（CloudSettler/ArcVita-Data），当前为**空骨架**，旧数据等待批量导入；`data.bak/` 备份不在本机。
-- 本机调试数据从主仓 git 历史恢复（b3c6716）：
-  ```bash
-  mkdir -p .tmp/dev-data
-  for f in persons events endeavors highlights; do
-    git show b3c6716:data/processed/$f.yaml > .tmp/dev-data/$f.yaml
-  done
-  uv run python -c "import sys; sys.path.insert(0,'scripts'); from pathlib import Path; from build_site import build_site; build_site(Path('.tmp/dev-data'), Path('site/data'))"
-  ```
-- `site/data/` 是 gitignore 的构建产物；正式构建等 submodule 批量导入后跑 `uv run python scripts/build_site.py`。
+- `data/` 是 submodule（CloudSettler/ArcVita-Data），**已含 bulk-import 的旧数据**（0bd879d：extracted 76 + processed 109，99 人/627 事/517 幕；主仓 ac0b3c8 pin）。代码与数据各司其职：数据改动进子模块并推送，代码改动进主仓。
+- 构建前端数据（读 data/processed → 写 gitignore 的 site/data/）：`uv run python scripts/build_site.py`。
 - 预览：`uv run python -m http.server -d site 8080`。
+- 历史备注：旧数据一度只能从主仓 git 历史（b3c6716）恢复到 .tmp/dev-data 做调试，bulk import 落地后该流程作废。
 
 ## 测试现状（2026-09）
 
-- `uv run pytest tests/` 30 过 2 失败，失败均为数据迁移存量问题（`test_processed_yamls_exist`、`test_cache_store_dual_probe` 依赖 data/processed、data/raw 的实体文件，空骨架里没有），与 site 无关，批量导入后自愈。
+- `uv run pytest tests/` **32 全过**。此前 `test_processed_yamls_exist` 因空骨架失败（bulk import 自愈）、`test_cache_store_dual_probe` 因 data/raw 目录缺失失败（测试已改为自建目录；子模块 .gitignore 改 `raw/* + !raw/.gitkeep` 让 raw/.gitkeep 可入库）。
 
 ## 未做 / 留给下一轮
 
