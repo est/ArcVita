@@ -8,15 +8,13 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-import yaml
-
+from arcvita.core.yaml_utils import dump_block_yaml
 from arcvita.models import Endeavor, Event, Person
 
 
 def _dump_yaml(path: Path, items: list[Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    data = [it.model_dump(exclude_none=False) if hasattr(it, "model_dump") else it for it in items]
-    path.write_text(yaml.safe_dump(data, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
+    data = [it.model_dump(exclude_none=True) if hasattr(it, "model_dump") else it for it in items]
+    dump_block_yaml(path, data, strip_empty=True)
 
 
 def write_stage(

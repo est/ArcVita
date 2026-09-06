@@ -8,14 +8,14 @@ dist/
 # 子模块内部的 .gitignore 负责 raw/ 与 biography.db 的忽略
 # 本库不再直接忽略 data/ 下文件
 _tmp/
-.mimocode/.cron-lock
-.mimocode/scheduled_tasks.json
+.mimocode/
 daizhigev20
-.mimocode/plans/
 # site/data/ 为构建产物（CI: uv run python scripts/build_site.py 重新生成）
 site/data/
 data.bak/
 .tmp
+tmp/
+.env
 # 本地调试图/浏览器快照产物
 output/
 .playwright-cli/

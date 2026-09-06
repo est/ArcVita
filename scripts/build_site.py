@@ -165,12 +165,6 @@ def build_site(processed_dir: Path, site_data_dir: Path) -> dict:
     }
     (site_data_dir / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # === YAML copy (archive) ===
-    for name in ("persons.yaml", "events.yaml", "endeavors.yaml", "highlights.yaml"):
-        src = processed_dir / name
-        if src.exists():
-            (site_data_dir / name).write_bytes(src.read_bytes())
-
     # === post-build validation ===
     _validate_index(index, site_data_dir)
 

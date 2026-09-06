@@ -5,6 +5,8 @@ import pathlib
 
 import yaml
 
+from arcvita.core.yaml_utils import dump_block_yaml
+
 EXTRACTED_DIRS = [pathlib.Path("data/extracted/pre_qin"), pathlib.Path("data/extracted/qin_han"), pathlib.Path("data/extracted/king_tables")]
 CURATED_DIR = pathlib.Path("data/curated/classical")
 
@@ -72,9 +74,9 @@ def merge_to_curated():
         data["_score"] = score_person(data)
         data["_issues"] = issues
 
-        # Write to curated
+        # Write to curated（块式、无流式、无双引号，空集合省略）
         out = CURATED_DIR / f"{name}.yaml"
-        out.write_text(yaml.safe_dump(data, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
+        dump_block_yaml(out, data, strip_empty=True)
 
         status = "✓" if not issues else f"⚠ {', '.join(issues)}"
         print(f"  {name}: score={data['_score']:.1f} {status}")
@@ -109,7 +111,7 @@ def update_seed_and_pipeline(extracted: list[dict]):
         })
         existing_qids.add(qid)
 
-    seed_path.write_text(yaml.safe_dump(seed, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
+    dump_block_yaml(seed_path, seed, strip_empty=True)
     print(f"seed updated: {len(seed['persons'])} persons")
 
 

@@ -6,6 +6,8 @@ from pathlib import Path
 
 import yaml
 
+from arcvita.core.yaml_utils import dump_block_yaml
+
 DB = Path("data/biography.db")
 
 
@@ -82,8 +84,7 @@ def build_highlights(db_path: Path | None = None, out_path: Path | None = None):
                     item["person_qid"] = "_context"
                 out.append(item)
     p = Path(out_path) if out_path else Path("data/processed/highlights.yaml")
-    p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(yaml.safe_dump(out, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
+    dump_block_yaml(p, out, strip_empty=True)
     return len(out)
 
 

@@ -70,3 +70,51 @@ def test_no_stale_year_dirs():
 def test_processed_yamls_exist():
     for name in ("persons.yaml", "events.yaml", "highlights.yaml"):
         assert (PROCESSED / name).exists(), f"{name} not found"
+
+
+def test_persons_no_duplicate_and_dates_parseable():
+    import yaml
+    from arcvita.core.dates import year_of
+
+    persons = yaml.safe_load((PROCESSED / "persons.yaml").read_text(encoding="utf-8"))
+    names = [p["name_zh"] for p in persons]
+    assert len(names) == len(set(names)), f"duplicate name_zh: {[n for n in names if names.count(n) > 1]}"
+    qids = [p["qid"] for p in persons]
+    assert len(qids) == len(set(qids)), f"duplicate qid"
+    # 合传已拆：不应再有复合日期含 "/"
+    for p in persons:
+        bd = p.get("birth_date") or ""
+        dd = p.get("death_date") or ""
+        assert "/" not in bd and "/" not in dd, f"composite date still present: {p['name_zh']} {bd}/{dd}"
+        assert year_of(bd) is not None, f"birth_date unparsable: {p['name_zh']} {bd}"
+    # 卫青/霍去病已拆为两条
+    assert any(p["name_zh"] == "卫青" for p in persons), "卫青 missing after split"
+    assert any(p["name_zh"] == "霍去病" for p in persons), "霍去病 missing after split"
+    assert sum(1 for p in persons if p["name_zh"] == "秦始皇") == 1, "秦始皇 still duplicated"
+
+
+def test_events_dates_parseable():
+    import yaml
+    from arcvita.core.dates import year_of
+
+    events = yaml.safe_load((PROCESSED / "events.yaml").read_text(encoding="utf-8"))
+    # 仅允许曹沫不详一条未知
+    unknowns = [e for e in events if year_of(e.get("date")) is None]
+    assert len(unknowns) <= 1, f"too many unparsable event dates: {unknowns[:5]}"
+    for e in events:
+        if year_of(e.get("date")) is None:
+            assert e["person_qid"] == "guji-曹沫", f"unexpected unparsable: {e}"
+
+
+def test_yaml_block_style():
+    # 块式标准：无流式 [] {}、外层无双引号
+    import re
+
+    for name in ("persons.yaml", "events.yaml", "endeavors.yaml", "highlights.yaml"):
+        text = (PROCESSED / name).read_text(encoding="utf-8")
+        # 空流式 [] 应被 strip_empty 省略，若残留则为违规
+        assert "[]\n" not in text and ": []" not in text, f"{name} contains flow []"
+        assert "{}\n" not in text, f"{name} contains flow {{}}"
+        # 外层双引号包裹的 value（块式应为 plain 或单引号）
+        # 检测行末 ": \"...\"" 形式
+        assert not re.search(r':\s+\"[^\"]*\"', text), f"{name} contains double-quoted scalar"
