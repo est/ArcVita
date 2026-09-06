@@ -52,6 +52,7 @@ def save_manifest(data, lines):
     open(MANIFEST, "w", encoding="utf-8").write(header + body)
 
 def git_push(msg):
+    # 注意：.mimocode（manifest/plan）不入库，仅推送 data 子模块
     try:
         subprocess.run(["git", "-C", "data", "add", "extracted/"], check=False, timeout=120)
         r = subprocess.run(["git", "-C", "data", "diff", "--cached", "--stat"], capture_output=True, text=True, timeout=60)
@@ -59,11 +60,6 @@ def git_push(msg):
             subprocess.run(["git", "-C", "data", "commit", "-m", msg], check=False, timeout=120)
             p = subprocess.run(["git", "-C", "data", "push"], capture_output=True, text=True, timeout=300)
             print(f"push data: rc={p.returncode}")
-        subprocess.run(["git", "add", ".mimocode/daizhige_manifest.yaml", ".mimocode/daizhige_screen_plan.yaml"], check=False, timeout=60)
-        r2 = subprocess.run(["git", "diff", "--cached", "--stat"], capture_output=True, text=True, timeout=60)
-        if r2.stdout.strip():
-            subprocess.run(["git", "commit", "-m", msg + " (manifest)"], check=False, timeout=120)
-            subprocess.run(["git", "push"], capture_output=True, text=True, timeout=300)
     except Exception as e:
         print(f"git fail: {e}")
 
