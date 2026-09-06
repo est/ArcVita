@@ -3,6 +3,14 @@ name: Build & Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    # 仅在影响站点产物时部署；采集脚本/文档改动不触发
+    paths:
+      - 'site/**'
+      - 'scripts/build_site.py'
+      - 'src/**'
+      - 'tests/**'
+      - '.github/workflows/deploy.yml'
+      - 'data'   # 子模块指针更新（数据推进→站点重构建）
   workflow_dispatch: {}
 
 permissions:
