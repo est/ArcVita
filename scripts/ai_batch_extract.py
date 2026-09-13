@@ -88,7 +88,20 @@ def call_ai(text: str, person_hint: str) -> str:
         ],
     }
     # 兼容 openai 风格：responses 失败（404/500等）则回落 chat/completions
-    headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+    # opencode zen 网关要求 x-opencode-session 头做路由，否则 400 MissingSessionID
+    import uuid
+    _sess_file = ROOT / "tmp" / ".opencode_session"
+    try:
+        _sess = _sess_file.read_text().strip() or str(uuid.uuid4())
+    except Exception:
+        _sess = str(uuid.uuid4())
+    try:
+        _sess_file.parent.mkdir(parents=True, exist_ok=True)
+        _sess_file.write_text(_sess)
+    except Exception:
+        pass
+    headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json",
+               "x-opencode-session": _sess}
     for attempt in range(5):
         try:
             r = httpx.post(url, json=payload, headers=headers, timeout=300)
