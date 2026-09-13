@@ -98,7 +98,11 @@ def call_ai(text: str, person_hint: str) -> str:
                 payload2 = {"model": model, "messages": [{"role":"system","content":PROMPT_TEMPLATE},{"role":"user","content": f"人名提示：{person_hint}\n\n古文：\n{text[:8000]}"}]}
                 r = httpx.post(url2, json=payload2, headers=headers, timeout=300)
             r.raise_for_status()
-            j = r.json()
+            try:
+                j = r.json()
+            except Exception:
+                print(f"non-JSON 200 response: {r.text[:300]}", file=sys.stderr)
+                raise
             # responses API: output[0].content[0].text
             if "output" in j:
                 out = j["output"]
@@ -118,6 +122,12 @@ def call_ai(text: str, person_hint: str) -> str:
             return json.dumps(j, ensure_ascii=False)
         except Exception as e:
             msg = str(e)
+            # 4xx 时打印响应体定位（截断，不含密钥）
+            try:
+                if "Bad Request" in msg or "400" in msg or "422" in msg:
+                    print(f"  4xx body: {r.text[:500]}", file=sys.stderr)
+            except Exception:
+                pass
             # 429 限流 / 超时：指数退避更长等待（5次，最长 ~80s）
             if "429" in msg or "timed out" in msg:
                 max_attempts = 5
