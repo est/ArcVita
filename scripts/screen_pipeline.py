@@ -22,7 +22,7 @@ EXTRACT_OUT = ROOT / "data/extracted/daizhige"
 KNOWN_PERSONS = ROOT / "data/processed/persons.yaml"
 
 BATCH = 5
-WORKERS = 5
+WORKERS = 3
 MIN_SCORE = 7
 PUSH_EVERY = 1  # 每批 push
 
@@ -101,7 +101,58 @@ rejections:
     why_not: 传文仅数十字无做事周期
 
 candidates 至多 15 人。若文献为正史/大部头，可凭目录与你的史学知识列出其中最值得录入者。不要包裹 ```。
+
+【格式铁律】
+键名必须用英文：name_zh / score / worth_why / why_not / verdict / candidates / rejections / skip_reason / era / dates_known
+冒号必须用英文半角冒号（: 后跟空格），禁止全角冒号
+【示例】
+verdict: has_candidates
+candidates:
+  - name_zh: 张良
+    score: 9
+    worth_why: 运筹帷幄决胜千里又功成身退
+    era: 秦末汉初
+    dates_known: true
+rejections:
+  - name_zh: 某某
+    why_not: 无事迹文本
 """
+
+KEY_MAP = {
+    "中文名": "name_zh", "中文名称": "name_zh", "姓名": "name_zh", "name": "name_zh",
+    "评分": "score", "得分": "score", "分数": "score",
+    "价值原因": "worth_why", "入选理由": "worth_why", "推荐理由": "worth_why",
+    "值得入选理由": "worth_why", "入选原因": "worth_why",
+    "时代": "era", "朝代": "era",
+    "生卒可考": "dates_known", "时间可考": "dates_known", "年代可考": "dates_known",
+    "为何不录": "why_not", "不录理由": "why_not", "拒绝理由": "why_not", "原因": "why_not",
+    "裁定": "verdict", "判决": "verdict", "候选者": "candidates", "候选对象": "candidates",
+    "候选人": "candidates",
+}
+
+def _norm_keys(obj):
+    if isinstance(obj, dict):
+        return {KEY_MAP.get(str(k).strip(), k): _norm_keys(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_norm_keys(x) for x in obj]
+    return obj
+
+def _tolerant_load(text):
+    """容错 YAML 解析：先直接解析，失败则修全角冒号再试，最后归一键名"""
+    try:
+        return _norm_keys(y.safe_load(text))
+    except Exception:
+        pass
+    fixed = text.replace("：//", "://").replace("：", ": ")
+    fixed = re.sub(r": +", ": ", fixed)
+    return _norm_keys(y.safe_load(fixed))
+
+def _coerce_score(v):
+    try:
+        return int(v)
+    except Exception:
+        m = re.search(r"\d+", str(v))
+        return int(m.group(0)) if m else 0
 
 def _strip_fence(t):
     t = t.strip()
@@ -122,9 +173,21 @@ def screen_one(entry, known):
     prompt = SCREEN_PROMPT + f"\n\n【已有库人物】（已在库勿重复列）\n{'、'.join(sorted(known))[:800]}\n"
     prompt += f"\n【文献】{entry['category']} / {Path(entry['source']).name}\n{head}"
     out = _strip_fence(call_ai("", prompt))
-    data = y.safe_load(out)
+    try:
+        data = _tolerant_load(out)
+    except Exception:
+        # 重试一次：明确提醒格式
+        out2 = _strip_fence(call_ai("", prompt + "\n\n上次输出格式不对。请严格只输出英文键名+英文半角冒号的 YAML，不要中文键名，不要全角冒号。"))
+        data = _tolerant_load(out2)
+        out = out2
     if not isinstance(data, dict) or "verdict" not in data:
         raise ValueError(f"筛选输出不合规: {out[:120]}")
+    # verdict 归一（模型可能输出中文）
+    v = str(data.get("verdict", "")).strip()
+    if "无" in v or v.lower().startswith("no"):
+        data["verdict"] = "no_value"
+    elif "有" in v or v.lower().startswith("has"):
+        data["verdict"] = "has_candidates"
     # 落盘筛选结论
     rel = Path(entry["source"]).with_suffix(".yaml")
     dst = SCREEN_OUT / rel
@@ -136,7 +199,7 @@ def screen_one(entry, known):
     cands = [c for c in (data.get("candidates") or []) if c.get("name_zh")]
     if not cands:
         return {"status": "rejected", "reason": (data.get("skip_reason") or "筛选无候选人")[:300]}
-    entry["candidates"] = [{"name_zh": c["name_zh"], "score": int(c.get("score") or 0), "worth_why": (c.get("worth_why") or "")[:200]} for c in cands]
+    entry["candidates"] = [{"name_zh": str(c["name_zh"]).strip(), "score": _coerce_score(c.get("score")), "worth_why": (str(c.get("worth_why") or ""))[:200]} for c in cands]
     entry["candidates_total"] = len(entry["candidates"])
     entry["extracted_qids"] = []
     return {"status": "screened", "n_candidates": len(cands)}
@@ -154,7 +217,11 @@ def extract_one(entry, cand, taken_names, known):
     idx = body.find(name)
     window = body[max(0, idx - 2000): idx + 6000] if idx >= 0 else body[:8000]
     out = _strip_fence(call_ai("", f"人名提示：{name}\n\n古文：\n{window}"))
-    parsed = y.safe_load(out)
+    try:
+        parsed = _tolerant_load(out)
+    except Exception:
+        out = _strip_fence(call_ai("", f"人名提示：{name}\n\n古文：\n{window}\n\n上次输出格式不对。请严格只输出英文键名+英文半角冒号的 YAML。"))
+        parsed = _tolerant_load(out)
     if not isinstance(parsed, dict) or "person" not in parsed:
         raise ValueError(f"抽取输出不合规: {out[:120]}")
     if "insufficient" in out.lower():
