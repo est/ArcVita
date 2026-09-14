@@ -29,14 +29,14 @@ while true; do
   if [ "$ALIVE" -eq 0 ]; then
     log "pipeline dead -> restart (restarts=$RESTARTS)"
     rm -f "$HB"
-    nohup uv run python -u scripts/screen_pipeline.py > tmp/screen_pipeline.log 2>&1 &
+    nohup uv run python -u scripts/screen_pipeline.py >> tmp/screen_pipeline.log 2>&1 &
     RESTARTS=$((RESTARTS + 1))
   elif [ "$STALE" -eq 1 ]; then
     log "pipeline STALE (heartbeat age ${HB_AGE}s) -> kill + restart (restarts=$RESTARTS)"
     pkill -9 -f "[s]creen_pipeline\.py"
     sleep 3
     rm -f "$HB"
-    nohup uv run python -u scripts/screen_pipeline.py > tmp/screen_pipeline.log 2>&1 &
+    nohup uv run python -u scripts/screen_pipeline.py >> tmp/screen_pipeline.log 2>&1 &
     RESTARTS=$((RESTARTS + 1))
   fi
   sleep 120

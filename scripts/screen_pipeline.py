@@ -10,6 +10,7 @@ sys.path.insert(0, "src")
 sys.path.insert(0, "scripts")
 import yaml as y
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
 from arcvita.core.yaml_utils import BlockDumper, dump_block_yaml
 from collections import Counter
 
@@ -161,6 +162,7 @@ def _tolerant_load(text):
         pass
     fixed = text.replace("：//", "://").replace("：", ": ")
     fixed = re.sub(r": +", ": ", fixed)
+    fixed = re.sub(r":(?=[\u4e00-\u9fff])", ": ", fixed)
     return _norm_keys(y.safe_load(fixed))
 
 def _coerce_score(v):
@@ -263,6 +265,24 @@ def pick(entries, status, n):
     pool.sort(key=lambda e: (e.get("priority", 5), e.get("source", "")))
     return pool[:n]
 
+def _qid_to_name(q):
+    """extracted_qids 条目 → 候选人名：skip:名:原因 → 名；guji-名 → 名；其余原样"""
+    q = str(q)
+    if q.startswith("skip:"):
+        parts = q.split(":")
+        return parts[1] if len(parts) > 1 else ""
+    if q.startswith("guji-"):
+        return q[len("guji-"):]
+    return q
+
+def extracted_names(e):
+    names = set()
+    for q in (e.get("extracted_qids") or []):
+        n = _qid_to_name(q)
+        if n:
+            names.add(n)
+    return names
+
 def main():
     known = known_names()
     taken = set()
@@ -295,7 +315,6 @@ def main():
                     e["reason"] = str(ex)[:400]
                 e["updated_at"] = now()
                 return e
-            from concurrent.futures import ThreadPoolExecutor
             with ThreadPoolExecutor(max_workers=WORKERS) as ex:
                 list(ex.map(_do, todo))
             t1 = time.time()
@@ -311,8 +330,11 @@ def main():
         screened = [e for e in data if e.get("status") == "screened" and e.get("candidates")]
         job = None
         for e in sorted(screened, key=lambda x: (x.get("priority", 5), x.get("source", ""))):
-            done_names = set(e.get("extracted_qids") or [])
-            todo_c = [c for c in e["candidates"] if c["score"] >= MIN_SCORE and c["name_zh"] not in done_names]
+            have = extracted_names(e)
+            for c in e["candidates"]:
+                if c["score"] >= MIN_SCORE and (EXTRACT_OUT / e.get("category", "") / f"{c['name_zh']}.yaml").exists():
+                    have.add(c["name_zh"])
+            todo_c = [c for c in e["candidates"] if c["score"] >= MIN_SCORE and c["name_zh"] not in have]
             if todo_c:
                 job = (e, todo_c)
                 break
@@ -329,16 +351,34 @@ def main():
                         print(f"extracted {e['source']} -> {c['name_zh']} ({c['score']})")
                     else:
                         e.setdefault("extracted_qids", []).append(f"skip:{c['name_zh']}:{r.get('skip','')}")
+                except (ValueError, y.YAMLError) as ex:
+                    # 单人格式错误是确定性的，重试无用：记 skip 让整批继续推进
+                    traceback.print_exc()
+                    e.setdefault("extracted_qids", []).append(f"skip:{c['name_zh']}:parse_err:{str(ex)[:120]}")
+                    print(f"parse-skip {e['source']} -> {c['name_zh']}: {str(ex)[:100]}")
                 except Exception as ex:
+                    # 网络/API 类异常是 transient 的：整 source 置 error 待人工复核
                     traceback.print_exc()
                     e["status"] = "error"
                     e["reason"] = f"extract {c['name_zh']}: {str(ex)[:300]}"
                     e["updated_at"] = now()
             with ThreadPoolExecutor(max_workers=WORKERS) as ex:
                 list(ex.map(_ex, todo_c[:BATCH]))
-            # 该 source 候选采完则 done
+            # 该 source 候选采完则 done（文件已存在也算完成，避免空转）
             scored = {c["name_zh"] for c in e["candidates"] if c["score"] >= MIN_SCORE}
-            if scored <= set(x.split(":")[1] for x in (e.get("extracted_qids") or []) if ":" in x):
+            have = extracted_names(e)
+            for c in e["candidates"]:
+                if c["score"] >= MIN_SCORE and (EXTRACT_OUT / e.get("category", "") / f"{c['name_zh']}.yaml").exists():
+                    have.add(c["name_zh"])
+            # 去重 extracted_qids（同名只留首次，防 manifest 膨胀）
+            seen, deduped = set(), []
+            for q in (e.get("extracted_qids") or []):
+                k = _qid_to_name(q)
+                if k not in seen:
+                    seen.add(k)
+                    deduped.append(q)
+            e["extracted_qids"] = deduped
+            if scored <= have:
                 e["status"] = "done"
             t1 = time.time()
             save_manifest(data, lines)
