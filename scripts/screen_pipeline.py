@@ -126,13 +126,20 @@ KEY_MAP = {
     "时代": "era", "朝代": "era",
     "生卒可考": "dates_known", "时间可考": "dates_known", "年代可考": "dates_known",
     "为何不录": "why_not", "不录理由": "why_not", "拒绝理由": "why_not", "原因": "why_not",
-    "裁定": "verdict", "判决": "verdict", "候选者": "candidates", "候选对象": "candidates",
-    "候选人": "candidates",
+    "裁定": "verdict", "判决": "verdict", "验证结果": "verdict", "结论": "verdict",
+    "判词": "verdict", "判断结果": "verdict", "判定": "verdict",
+    "候选者": "candidates", "候选对象": "candidates", "候选人": "candidates",
+    "候选项": "candidates", "候选": "candidates",
 }
+
+_INVISIBLE = re.compile("[\u200b\u200c\u200d\u200e\u200f\ufeff\u00a0]")
+
+def _clean_key(k):
+    return _INVISIBLE.sub("", str(k)).strip()
 
 def _norm_keys(obj):
     if isinstance(obj, dict):
-        return {KEY_MAP.get(str(k).strip(), k): _norm_keys(v) for k, v in obj.items()}
+        return {KEY_MAP.get(_clean_key(k), _clean_key(k)): _norm_keys(v) for k, v in obj.items()}
     if isinstance(obj, list):
         return [_norm_keys(x) for x in obj]
     return obj
@@ -181,7 +188,18 @@ def screen_one(entry, known):
         data = _tolerant_load(out2)
         out = out2
     if not isinstance(data, dict) or "verdict" not in data:
-        raise ValueError(f"筛选输出不合规: {out[:120]}")
+        # 兜底：verdict 缺失但顶层有候选人列表 → 视为有候选
+        found = None
+        if isinstance(data, dict):
+            for v in data.values():
+                if isinstance(v, list) and v and isinstance(v[0], dict) and "name_zh" in v[0]:
+                    found = v
+                    break
+        if found is not None:
+            data["verdict"] = "has_candidates"
+            data["candidates"] = found
+        else:
+            raise ValueError(f"筛选输出不合规: {out[:120]}")
     # verdict 归一（模型可能输出中文）
     v = str(data.get("verdict", "")).strip()
     if "无" in v or v.lower().startswith("no"):
@@ -199,7 +217,7 @@ def screen_one(entry, known):
     cands = [c for c in (data.get("candidates") or []) if c.get("name_zh")]
     if not cands:
         return {"status": "rejected", "reason": (data.get("skip_reason") or "筛选无候选人")[:300]}
-    entry["candidates"] = [{"name_zh": str(c["name_zh"]).strip(), "score": _coerce_score(c.get("score")), "worth_why": (str(c.get("worth_why") or ""))[:200]} for c in cands]
+    entry["candidates"] = [{"name_zh": _INVISIBLE.sub("", str(c["name_zh"])).strip(), "score": _coerce_score(c.get("score")), "worth_why": (str(c.get("worth_why") or ""))[:200]} for c in cands]
     entry["candidates_total"] = len(entry["candidates"])
     entry["extracted_qids"] = []
     return {"status": "screened", "n_candidates": len(cands)}
