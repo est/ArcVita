@@ -66,6 +66,15 @@ def git_push(msg):
 def now():
     return datetime.datetime.now().isoformat()
 
+HEARTBEAT = ROOT / "tmp" / "pipeline_heartbeat.json"
+
+def heartbeat(stage, detail=""):
+    try:
+        HEARTBEAT.parent.mkdir(parents=True, exist_ok=True)
+        HEARTBEAT.write_text(json.dumps({"time": now(), "stage": stage, "detail": detail, "pid": os.getpid()}, ensure_ascii=False))
+    except Exception:
+        pass
+
 # ---------- 已有人物（防重） ----------
 def known_names():
     try:
@@ -257,13 +266,19 @@ def pick(entries, status, n):
 def main():
     known = known_names()
     taken = set()
-    print(f"screen pipeline start {now()} batch={BATCH} workers={WORKERS} min_score={MIN_SCORE}")
+    print(f"screen pipeline start {now()} batch={BATCH} workers={WORKERS} min_score={MIN_SCORE}", flush=True)
+    heartbeat("start")
     n_push = 0
     while True:
+        t0 = time.time()
         data, lines = load_manifest()
+        print(f"[{now()}] manifest loaded {len(data)} entries in {time.time()-t0:.1f}s", flush=True)
+        heartbeat("loaded", f"{len(data)} entries")
         # --- 筛选批 ---
         todo = pick(data, "pending_screen", BATCH)
         if todo:
+            print(f"[{now()}] screen batch start: {[e['source'] for e in todo]}", flush=True)
+            heartbeat("screening", f"{len(todo)} files")
             def _do(e):
                 e["status"] = "processing_screen"
                 try:
@@ -283,10 +298,14 @@ def main():
             from concurrent.futures import ThreadPoolExecutor
             with ThreadPoolExecutor(max_workers=WORKERS) as ex:
                 list(ex.map(_do, todo))
+            t1 = time.time()
             save_manifest(data, lines)
+            print(f"[{now()}] screen batch done + manifest saved in {time.time()-t1:.1f}s", flush=True)
+            heartbeat("screened_saved")
             n_push += 1
             if n_push % PUSH_EVERY == 0:
                 git_push(f"daizhige screen batch {now()}")
+                heartbeat("pushed")
             continue
         # --- 抽取批（score>=MIN_SCORE） ---
         screened = [e for e in data if e.get("status") == "screened" and e.get("candidates")]
@@ -299,6 +318,8 @@ def main():
                 break
         if job:
             e, todo_c = job
+            print(f"[{now()}] extract batch start: {e['source']} {[c['name_zh'] for c in todo_c[:BATCH]]}", flush=True)
+            heartbeat("extracting", e["source"])
             def _ex(c):
                 try:
                     r = extract_one(e, c, taken, known)
@@ -319,12 +340,17 @@ def main():
             scored = {c["name_zh"] for c in e["candidates"] if c["score"] >= MIN_SCORE}
             if scored <= set(x.split(":")[1] for x in (e.get("extracted_qids") or []) if ":" in x):
                 e["status"] = "done"
+            t1 = time.time()
             save_manifest(data, lines)
+            print(f"[{now()}] extract batch done + manifest saved in {time.time()-t1:.1f}s", flush=True)
+            heartbeat("extracted_saved")
             n_push += 1
             if n_push % PUSH_EVERY == 0:
                 git_push(f"daizhige extract batch {now()}")
+                heartbeat("pushed")
             continue
-        print(f"idle: {Counter(e['status'] for e in data)}")
+        print(f"idle: {Counter(e['status'] for e in data)}", flush=True)
+        heartbeat("idle")
         time.sleep(60)
 
 if __name__ == "__main__":

@@ -104,12 +104,12 @@ def call_ai(text: str, person_hint: str) -> str:
                "x-opencode-session": _sess}
     for attempt in range(5):
         try:
-            r = httpx.post(url, json=payload, headers=headers, timeout=300)
+            r = httpx.post(url, json=payload, headers=headers, timeout=180)
             if r.status_code != 200 and "responses" in url:
                 # fallback chat/completions
                 url2 = base.replace("/responses","/chat/completions")
                 payload2 = {"model": model, "messages": [{"role":"system","content":PROMPT_TEMPLATE},{"role":"user","content": f"人名提示：{person_hint}\n\n古文：\n{text[:8000]}"}]}
-                r = httpx.post(url2, json=payload2, headers=headers, timeout=300)
+                r = httpx.post(url2, json=payload2, headers=headers, timeout=180)
             r.raise_for_status()
             try:
                 j = r.json()
