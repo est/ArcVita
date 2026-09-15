@@ -25,6 +25,8 @@ KNOWN_PERSONS = ROOT / "data/processed/persons.yaml"
 BATCH = 5
 WORKERS = 3
 MIN_SCORE = 7
+DEFERRED_MIN_SCORE = 9  # deferred 只筛高分：仅 9 分以上进抽取
+PROMOTE_N = 100  # 每次从 deferred 自动放行数
 PUSH_EVERY = 1  # 每批 push
 
 from ai_batch_extract import call_ai
@@ -231,6 +233,14 @@ def screen_one(entry, known):
     entry["candidates"] = [{"name_zh": _INVISIBLE.sub("", str(c["name_zh"])).strip(), "score": _coerce_score(c.get("score")), "worth_why": (str(c.get("worth_why") or ""))[:200]} for c in cands]
     entry["candidates_total"] = len(entry["candidates"])
     entry["extracted_qids"] = []
+    if entry.get("deferred_origin"):
+        # deferred 只筛高分：9 分以下直接不要
+        hi = [c for c in entry["candidates"] if c["score"] >= DEFERRED_MIN_SCORE]
+        if not hi:
+            top = max((c["score"] for c in entry["candidates"]), default=0)
+            return {"status": "rejected", "reason": f"deferred 只筛高分：最高{top}分，无 score>={DEFERRED_MIN_SCORE}"}
+        entry["candidates"] = hi
+        return {"status": "screened", "n_candidates": len(hi)}
     return {"status": "screened", "n_candidates": len(cands)}
 
 def extract_one(entry, cand, taken_names, known):
@@ -406,6 +416,18 @@ def main():
             if n_push % PUSH_EVERY == 0:
                 git_push(f"daizhige extract batch {now()}")
                 heartbeat("pushed")
+            continue
+        # --- deferred 自动放行（只筛高分策略）：无筛无采时才放一批 ---
+        deferred = [e for e in data if e.get("status") == "deferred"]
+        deferred.sort(key=lambda e: (e.get("priority", 5), e.get("source", "")))
+        if deferred:
+            for e in deferred[:PROMOTE_N]:
+                e["status"] = "pending_screen"
+                e["deferred_origin"] = True
+                e["updated_at"] = now()
+            save_manifest(data, lines)
+            print(f"[{now()}] promoted {min(PROMOTE_N, len(deferred))} deferred -> pending_screen (rest {len(deferred) - min(PROMOTE_N, len(deferred))})", flush=True)
+            heartbeat("promoted", f"{min(PROMOTE_N, len(deferred))} files")
             continue
         print(f"idle: {Counter(e['status'] for e in data)}", flush=True)
         heartbeat("idle")
