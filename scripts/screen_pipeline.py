@@ -329,15 +329,33 @@ def main():
         # --- 抽取批（score>=MIN_SCORE） ---
         screened = [e for e in data if e.get("status") == "screened" and e.get("candidates")]
         job = None
+        swept = 0
         for e in sorted(screened, key=lambda x: (x.get("priority", 5), x.get("source", ""))):
             have = extracted_names(e)
             for c in e["candidates"]:
                 if c["score"] >= MIN_SCORE and (EXTRACT_OUT / e.get("category", "") / f"{c['name_zh']}.yaml").exists():
                     have.add(c["name_zh"])
+            scored = {c["name_zh"] for c in e["candidates"] if c["score"] >= MIN_SCORE}
+            if not scored or scored <= have:
+                # 无高分候选，或高分已全部落盘：直接 done，免得 idle 空转
+                e["status"] = "done"
+                e["reason"] = None if scored else "无 score>=7 候选"
+                e["updated_at"] = now()
+                swept += 1
+                continue
             todo_c = [c for c in e["candidates"] if c["score"] >= MIN_SCORE and c["name_zh"] not in have]
             if todo_c:
                 job = (e, todo_c)
                 break
+        if swept:
+            save_manifest(data, lines)
+            print(f"[{now()}] swept {swept} screened -> done", flush=True)
+            heartbeat("swept", f"{swept} done")
+            n_push += 1
+            if n_push % PUSH_EVERY == 0:
+                git_push(f"daizhige sweep batch {now()}")
+                heartbeat("pushed")
+            continue
         if job:
             e, todo_c = job
             print(f"[{now()}] extract batch start: {e['source']} {[c['name_zh'] for c in todo_c[:BATCH]]}", flush=True)
